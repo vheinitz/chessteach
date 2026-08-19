@@ -94,6 +94,18 @@ def san_de(board, move):
     return board.san(move).replace("N", "S").replace("B", "L").replace("Q", "D").replace("R", "T")
 
 
+def mainline_moves(game):
+    """Hauptvariante als Zugliste — kompatibel mit alten und neuen python-chess-Versionen."""
+    if hasattr(game, "mainline_moves"):
+        return list(game.mainline_moves())
+    moves = []
+    node = game
+    while node.variations:
+        node = node.variations[0]
+        moves.append(node.move)
+    return moves
+
+
 # ---------------------------------------------------------------------------
 # Figuren
 # ---------------------------------------------------------------------------
@@ -615,7 +627,7 @@ class ChessTeachApp(tk.Tk):
             messagebox.showerror("PGN-Fehler", "PGN konnte nicht gelesen werden.")
             return
         self.game_base = g.board()
-        self.game_moves = list(g.mainline_moves())
+        self.game_moves = mainline_moves(g)
         self.game_index = len(self.game_moves)
         self.loaded_fen = self.game_base.fen()
         self._rebuild_game_board()
