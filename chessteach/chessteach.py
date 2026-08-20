@@ -13,7 +13,9 @@ ChessTeach — Schach-Lehrbrett für Kinder
 import os
 import io
 import json
+import queue
 import threading
+import time
 import tkinter as tk
 from tkinter import ttk, messagebox, simpledialog
 
@@ -41,6 +43,7 @@ THREAT_COLOR = "#e53935"
 MARK_COLOR = "#ffd54f"
 ARROW_COLOR = "#1e88e5"
 BESTMOVE_COLOR = "#8e24aa"
+SUGGEST_COLOR = "#1e88e5"
 LAST_COLOR = "#f9a825"
 CHECK_COLOR = "#d32f2f"
 
@@ -300,9 +303,10 @@ class BoardCanvas(tk.Canvas):
         for a, b in self.app.arrows:
             self.draw_arrow(a, b, ARROW_COLOR, draft=False)
 
-        if self.app.best_move is not None:
-            self.draw_arrow(self.app.best_move.from_square, self.app.best_move.to_square,
-                            BESTMOVE_COLOR, draft=False, width=6)
+        for i, move in enumerate(self.app.best_moves):
+            color = BESTMOVE_COLOR if i == 0 else SUGGEST_COLOR
+            width = 6 if i == 0 else 4
+            self.draw_arrow(move.from_square, move.to_square, color, draft=False, width=width)
 
     def draw_coords(self):
         sq = self.sq
@@ -352,7 +356,8 @@ class ChessTeachApp(tk.Tk):
         self.marks = set()
         self.arrow_start = None
         self.arrow_cur = None
-        self.best_move = None
+        self.best_moves = []
+        self.best_scores = []
         self.show_threats = False
         self.show_coords = True
         self.mark_mode = False
@@ -361,6 +366,11 @@ class ChessTeachApp(tk.Tk):
         self.palette_tool = None
         self.palette_buttons = {}
         self.engine = None
+        self.engine_time = 1.5
+        self.engine_multi = 1
+        self.analyse_on = False
+        self._analyse_thread = None
+        self._result_queue = queue.Queue()
         self._engine_lock = threading.Lock()
         self._closing = False
 
@@ -456,7 +466,10 @@ class ChessTeachApp(tk.Tk):
         ttk.Button(bar, text="Mark. weg", command=self.clear_marks).pack(side="left", padx=2)
 
         ttk.Separator(bar, orient="vertical").pack(side="left", fill="y", padx=4)
-        self.analyse_btn = ttk.Button(bar, text="🔍 Analyse", command=self.analyse)
+        ttk.Button(bar, text="⚙ Einstellungen", command=self.open_settings).pack(side="left", padx=2)
+        self.analyse_var = tk.BooleanVar(value=False)
+        self.analyse_btn = ttk.Checkbutton(bar, text="Analyse", variable=self.analyse_var,
+                                           command=self.toggle_analyse)
         self.analyse_btn.pack(side="left", padx=2)
 
         self.status_lbl = tk.Label(bar, text="", font=("DejaVu Sans", 13, "bold"),
@@ -660,7 +673,7 @@ class ChessTeachApp(tk.Tk):
         self.last_move = None
         self.arrows = []
         self.marks = set()
-        self.best_move = None
+        self.best_moves = []
         self.update_content_field()
         self._sync_move_list()
         self.board_canvas.redraw()
@@ -679,7 +692,7 @@ class ChessTeachApp(tk.Tk):
         self.selected = None
         self.arrows = []
         self.marks = set()
-        self.best_move = None
+        self.best_moves = []
         self._populate_move_list()
         self.update_content_field()
         self.board_canvas.redraw()
@@ -698,7 +711,7 @@ class ChessTeachApp(tk.Tk):
         self.game_index = max(0, min(len(self.game_moves), i))
         self._rebuild_game_board()
         self.selected = None
-        self.best_move = None
+        self.best_moves = []
         self._sync_move_list_selection()
         self.update_content_field()
         self.board_canvas.redraw()
@@ -754,7 +767,7 @@ class ChessTeachApp(tk.Tk):
                     self.board.push(m)
                     self.last_move = m
                     self.selected = None
-                    self.best_move = None
+                    self.best_moves = []
                     self.update_content_field()
                     self.board_canvas.redraw()
                     self.update_status()
@@ -783,7 +796,11 @@ class ChessTeachApp(tk.Tk):
     def toggle_edit_mode(self):
         self.edit_mode = self.edit_var.get()
         self.selected = None
-        self.best_move = None
+        self.best_moves = []
+        self.best_scores = []
+        if self.edit_mode and self.analyse_on:
+            self.analyse_var.set(False)
+            self.analyse_on = False
         if not self.edit_mode:
             self.palette_tool = None
         self._refresh_palette_buttons()
@@ -794,7 +811,7 @@ class ChessTeachApp(tk.Tk):
         self.board.clear_board()
         self.selected = None
         self.last_move = None
-        self.best_move = None
+        self.best_moves = []
         self.update_content_field()
         self.board_canvas.redraw()
         self.update_status()
@@ -816,7 +833,7 @@ class ChessTeachApp(tk.Tk):
                     self.board.set_piece_at(sq, moving)
                 self.selected = None
         self.last_move = None
-        self.best_move = None
+        self.best_moves = []
         self.update_content_field()
         self.board_canvas.redraw()
         self.update_status()
@@ -828,7 +845,7 @@ class ChessTeachApp(tk.Tk):
             self.board.pop()
             self.last_move = self.board.peek() if self.board.move_stack else None
             self.selected = None
-            self.best_move = None
+            self.best_moves = []
             self.update_content_field()
             self.board_canvas.redraw()
             self.update_status()
@@ -861,7 +878,8 @@ class ChessTeachApp(tk.Tk):
 
     def clear_arrows(self):
         self.arrows = []
-        self.best_move = None
+        self.best_moves = []
+        self.best_scores = []
         self.board_canvas.redraw()
 
     def clear_marks(self):
@@ -953,45 +971,119 @@ class ChessTeachApp(tk.Tk):
         self.content_text.insert("1.0", self.board.fen())
 
     # -- Engine -------------------------------------------------------------
-    def analyse(self):
-        if self.edit_mode:
-            self.status_lbl.config(text="Analyse im Bearbeiten-Modus nicht möglich.")
-            return
-        if self.best_move is not None:
-            return
-        fen = self.board.fen()
-        self.analyse_btn.config(state="disabled", text="🔍 Analysiere…")
-        threading.Thread(target=self._analyse_worker, args=(fen,), daemon=True).start()
+    def toggle_analyse(self):
+        self.analyse_on = self.analyse_var.get()
+        if self.analyse_on:
+            if self.edit_mode:
+                self.analyse_var.set(False)
+                self.analyse_on = False
+                self.status_lbl.config(text="Analyse im Bearbeiten-Modus nicht möglich.")
+                return
+            if self._analyse_thread is None or not self._analyse_thread.is_alive():
+                self._analyse_thread = threading.Thread(target=self._analyse_loop, daemon=True)
+                self._analyse_thread.start()
+                self.after(100, self._poll_results)
+        else:
+            self.best_moves = []
+            self.best_scores = []
+            self.board_canvas.redraw()
+            self.update_status()
 
-    def _analyse_worker(self, fen):
+    def _analyse_loop(self):
+        last_fen = None
+        while self.analyse_on:
+            fen = self.board.fen()
+            if fen != last_fen:
+                last_fen = fen
+                try:
+                    with self._engine_lock:
+                        if self.engine is None:
+                            self.engine = chess.engine.SimpleEngine.popen_uci(STOCKFISH)
+                        board = chess.Board(fen)
+                        if self.engine_multi > 1:
+                            infos = self.engine.analyse(board, chess.engine.Limit(time=self.engine_time),
+                                                        multipv=self.engine_multi)
+                        else:
+                            infos = [self.engine.analyse(board, chess.engine.Limit(time=self.engine_time))]
+                    results = []
+                    for info in infos:
+                        pv = info.get("pv", [])
+                        if pv:
+                            results.append((pv[0], info.get("score")))
+                    self._result_queue.put(("ok", (results, fen)))
+                except Exception as e:
+                    self._result_queue.put(("error", str(e)))
+            time.sleep(0.2)
+
+    def _poll_results(self):
+        if not self.analyse_on:
+            return
         try:
-            with self._engine_lock:
-                if self.engine is None:
-                    self.engine = chess.engine.SimpleEngine.popen_uci(STOCKFISH)
-                board = chess.Board(fen)
-                info = self.engine.analyse(board, chess.engine.Limit(time=1.5))
-            best = info.get("pv", [None])[0]
-            score = info.get("score")
-            self.after(0, self._apply_analysis, best, score, fen)
-        except Exception as e:
-            self.after(0, self._analysis_error, str(e))
+            while True:
+                kind, payload = self._result_queue.get_nowait()
+                if kind == "ok":
+                    results, fen = payload
+                    self._apply_analysis(results, fen)
+                else:
+                    self._analysis_error(payload)
+        except queue.Empty:
+            pass
+        self.after(100, self._poll_results)
 
-    def _apply_analysis(self, best, score, fen):
-        self.analyse_btn.config(state="normal", text="🔍 Analyse")
-        if best is None or fen != self.board.fen():
+    def _apply_analysis(self, results, fen):
+        if fen != self.board.fen():
             return
-        self.best_move = best
-        if score is not None:
-            pov = score.pov(chess.WHITE)
-            if pov.is_mate():
-                self.status_lbl.config(text=f"Bewertung: Matt in {abs(pov.mate())} — Bester Zug: {san_de(self.board, best)}")
-            else:
-                self.status_lbl.config(text=f"Bewertung: {pov.score()/100:+.2f} — Bester Zug: {san_de(self.board, best)}")
+        self.best_moves = [m for m, s in results]
+        self.best_scores = [s for m, s in results]
+        parts = []
+        for i, (m, s) in enumerate(results):
+            txt = f"{i + 1}. {san_de(self.board, m)}"
+            if s is not None:
+                pov = s.pov(chess.WHITE)
+                if pov.is_mate():
+                    ev = f"M{abs(pov.mate())}" if pov.mate() > 0 else f"−M{abs(pov.mate())}"
+                else:
+                    ev = f"{pov.score() / 100:+.2f}"
+                txt += f" ({ev})"
+            parts.append(txt)
+        if parts:
+            self.status_lbl.config(text="  ·  ".join(parts))
         self.board_canvas.redraw()
 
     def _analysis_error(self, msg):
-        self.analyse_btn.config(state="normal", text="🔍 Analyse")
         self.status_lbl.config(text=f"Analyse nicht möglich: {msg[:60]}")
+
+    def open_settings(self):
+        win = tk.Toplevel(self)
+        win.title("Einstellungen")
+        win.transient(self)
+        win.grab_set()
+        win.resizable(False, False)
+        frm = ttk.Frame(win, padding=12)
+        frm.pack(fill="both", expand=True)
+        ttk.Label(frm, text="Engine-Denkzeit (Sekunden):").grid(row=0, column=0, sticky="w", pady=4)
+        time_var = tk.StringVar(value=str(self.engine_time))
+        ttk.Spinbox(frm, from_=0.2, to=10.0, increment=0.1, textvariable=time_var, width=8).grid(row=0, column=1, padx=8)
+        ttk.Label(frm, text="Anzahl Zugvorschläge (1–5):").grid(row=1, column=0, sticky="w", pady=4)
+        multi_var = tk.StringVar(value=str(self.engine_multi))
+        ttk.Spinbox(frm, from_=1, to=5, increment=1, textvariable=multi_var, width=8).grid(row=1, column=1, padx=8)
+
+        def save():
+            try:
+                t = float(time_var.get().replace(",", "."))
+                m = int(float(multi_var.get()))
+            except Exception:
+                messagebox.showerror("Einstellungen", "Bitte gültige Zahlen eingeben.", parent=win)
+                return
+            self.engine_time = max(0.1, t)
+            self.engine_multi = max(1, min(5, m))
+            self.save_config()
+            win.destroy()
+
+        btns = ttk.Frame(frm)
+        btns.grid(row=2, column=0, columnspan=2, pady=10)
+        ttk.Button(btns, text="Speichern", command=save).pack(side="left", padx=4)
+        ttk.Button(btns, text="Abbrechen", command=win.destroy).pack(side="left", padx=4)
 
     # -- Vollbild & Konfig --------------------------------------------------
     def toggle_fullscreen(self):
@@ -1019,6 +1111,8 @@ class ChessTeachApp(tk.Tk):
             self.after(100, lambda: self.attributes("-fullscreen", True))
         self.flipped = bool(cfg.get("flipped", False))
         self.flip_var.set(self.flipped)
+        self.engine_time = float(cfg.get("engine_time", 1.5))
+        self.engine_multi = int(cfg.get("engine_multi", 1))
         if cfg.get("last_fen"):
             try:
                 self.board = chess.Board(cfg["last_fen"])
@@ -1027,7 +1121,7 @@ class ChessTeachApp(tk.Tk):
                 self.last_move = None
                 self.arrows = []
                 self.marks = set()
-                self.best_move = None
+                self.best_moves = []
                 self.board_canvas.redraw()
             except Exception:
                 pass
@@ -1040,6 +1134,8 @@ class ChessTeachApp(tk.Tk):
             "width": self.winfo_width(), "height": self.winfo_height(),
             "fullscreen": fs,
             "flipped": self.flipped,
+            "engine_time": self.engine_time,
+            "engine_multi": self.engine_multi,
             "last_fen": self.loaded_fen,
         }
         with open(CONFIG_FILE, "w", encoding="utf-8") as f:
@@ -1047,6 +1143,7 @@ class ChessTeachApp(tk.Tk):
 
     def on_close(self):
         self._closing = True
+        self.analyse_on = False
         try:
             if self.engine is not None:
                 self.engine.quit()
