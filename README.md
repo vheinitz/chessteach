@@ -13,9 +13,12 @@ markings and engine analysis.
 ## Features
 
 - **Positions (FEN)** and **games (PGN)** organised in **lessons** and
-  **exercises** (two tabs)
+  **exercises** (tabs: *Positionen*, *Partien*)
 - **Replay PGN games** move by move (⏮ ◀ ▶ ⏭) with a clickable German move list
 - **Flip the board** (black at the bottom)
+- **Free edit mode** (*Figuren* tab + *Bearbeiten* toggle): place or remove any
+  pieces (any number, any colour) and move pieces freely — no rule checks, no
+  engine — ideal for teaching piece movement
 - Make moves (click piece → click target), undo, reset
 - **Stockfish analysis** — best move + evaluation, drawn as an arrow
 - Draw **arrows** (right-drag), **mark squares**, highlight **threats** and
@@ -98,6 +101,7 @@ exercises can also be added from within the app.
 | Draw an arrow       | right-drag on the board            |
 | Mark a square       | enable *Markieren*, then click     |
 | Flip board          | *Brett drehen* checkbox            |
+| Free edit mode      | *Bearbeiten* checkbox + *Figuren* tab |
 | Fullscreen          | `F11`                              |
 | Exit fullscreen     | `Esc`                              |
 | Undo / previous move| `Ctrl+Z` or `←`                    |
