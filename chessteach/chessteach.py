@@ -106,6 +106,14 @@ def mainline_moves(game):
     return moves
 
 
+def symbol_to_piece(sym):
+    """Paletten-Symbol (z.B. "wK", "bQ") in eine Figur umwandeln."""
+    color = chess.WHITE if sym[0] == "w" else chess.BLACK
+    ptype = {"K": chess.KING, "Q": chess.QUEEN, "R": chess.ROOK,
+             "B": chess.BISHOP, "N": chess.KNIGHT, "P": chess.PAWN}[sym[1].upper()]
+    return chess.Piece(ptype, color)
+
+
 # ---------------------------------------------------------------------------
 # Figuren
 # ---------------------------------------------------------------------------
@@ -254,13 +262,13 @@ class BoardCanvas(tk.Canvas):
             self.create_rectangle(x0, y0, x0 + sq, y0 + sq, fill=MARK_COLOR, width=0, stipple="gray50")
             self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=MARK_COLOR, width=3)
 
-        if self.app.show_threats:
+        if self.app.show_threats and not self.app.edit_mode:
             for s, piece in board.piece_map().items():
                 if piece.color == board.turn and board.is_attacked_by(not board.turn, s):
                     x0, y0 = self.sq_origin(s)
                     self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=THREAT_COLOR, width=4)
 
-        if board.is_check():
+        if board.is_check() and not self.app.edit_mode:
             king_sq = board.king(board.turn)
             if king_sq is not None:
                 x0, y0 = self.sq_origin(king_sq)
@@ -269,7 +277,8 @@ class BoardCanvas(tk.Canvas):
         if self.app.selected is not None:
             x0, y0 = self.sq_origin(self.app.selected)
             self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=SELECT_COLOR, width=4)
-            for move in board.legal_moves:
+            legal = [] if self.app.edit_mode else board.legal_moves
+            for move in legal:
                 if move.from_square == self.app.selected:
                     ts = move.to_square
                     tx, ty = self.center(ts)
@@ -348,6 +357,9 @@ class ChessTeachApp(tk.Tk):
         self.show_coords = True
         self.mark_mode = False
         self.flipped = False
+        self.edit_mode = False
+        self.palette_tool = None
+        self.palette_buttons = {}
         self.engine = None
         self._engine_lock = threading.Lock()
         self._closing = False
@@ -419,6 +431,10 @@ class ChessTeachApp(tk.Tk):
         ttk.Checkbutton(bar, text="Brett drehen", variable=self.flip_var,
                         command=self.toggle_flip).pack(side="left", padx=2)
 
+        self.edit_var = tk.BooleanVar(value=False)
+        ttk.Checkbutton(bar, text="Bearbeiten", variable=self.edit_var,
+                        command=self.toggle_edit_mode).pack(side="left", padx=2)
+
         # Replay-Knöpfe
         ttk.Separator(bar, orient="vertical").pack(side="left", fill="y", padx=4)
         ttk.Button(bar, text="⏮", width=3, command=self.game_start).pack(side="left", padx=1)
@@ -477,6 +493,34 @@ class ChessTeachApp(tk.Tk):
                                     exportselection=False)
         self.move_list.pack(fill="x", padx=2, pady=2)
         self.move_list.bind("<<ListboxSelect>>", self.on_move_list_select)
+
+        # Tab 3: Figuren (nur im Bearbeiten-Modus)
+        fig_tab = ttk.Frame(self.notebook)
+        self.notebook.add(fig_tab, text="Figuren")
+        ttk.Label(fig_tab, text="Figur wählen, dann aufs Brett klicken.",
+                  font=("DejaVu Sans", 11, "bold")).pack(anchor="w", padx=6, pady=(6, 0))
+        for label, prefix in [("Weiß", "w"), ("Schwarz", "b")]:
+            ttk.Label(fig_tab, text=label).pack(anchor="w", padx=6, pady=(8, 0))
+            row = ttk.Frame(fig_tab)
+            row.pack(anchor="w", padx=6)
+            for ptype in "KQRBNP":
+                tool = prefix + ptype
+                piece_sym = ptype if prefix == "w" else ptype.lower()
+                btn = tk.Button(row, image=PIECES.get(piece_sym, 44), width=48, height=48,
+                                command=lambda s=tool: self.set_palette_tool(s))
+                btn.pack(side="left", padx=1)
+                self.palette_buttons[tool] = btn
+        tools = ttk.Frame(fig_tab)
+        tools.pack(anchor="w", padx=6, pady=10)
+        self.remove_btn = tk.Button(tools, text="✕ Entfernen", width=11,
+                                    command=lambda: self.set_palette_tool("remove"))
+        self.remove_btn.pack(side="left", padx=2)
+        self.palette_buttons["remove"] = self.remove_btn
+        tk.Button(tools, text="Leeres Brett", command=self.clear_board).pack(side="left", padx=2)
+        ttk.Label(fig_tab, text="Mit ausgewählter Figur: Klick setzt die Figur.\n"
+                  "Mit ✕: Klick entfernt eine Figur.\n"
+                  "Ohne Auswahl: Figur anklicken und frei verschieben.",
+                  wraplength=230, justify="left").pack(anchor="w", padx=6, pady=8)
 
         # Eingabebereich
         add = ttk.LabelFrame(side, text="Neu", padding=4)
@@ -598,8 +642,9 @@ class ChessTeachApp(tk.Tk):
 
     def on_tab_changed(self, event):
         idx = self.notebook.index("current")
-        self.current_tab = "positions" if idx == 0 else "games"
-        self.render_tab(self.current_tab)
+        self.current_tab = {0: "positions", 1: "games", 2: "figures"}.get(idx, "positions")
+        if self.current_tab in ("positions", "games"):
+            self.render_tab(self.current_tab)
 
     # -- Laden --------------------------------------------------------------
     def load_fen(self, fen):
@@ -698,6 +743,9 @@ class ChessTeachApp(tk.Tk):
 
     # -- Züge / Aktionen ----------------------------------------------------
     def board_click(self, sq):
+        if self.edit_mode:
+            self.edit_click(sq)
+            return
         board = self.board
         piece = board.piece_at(sq)
         if self.selected is not None:
@@ -723,6 +771,55 @@ class ChessTeachApp(tk.Tk):
         else:
             self.marks.add(sq)
         self.board_canvas.redraw()
+
+    def set_palette_tool(self, sym):
+        self.palette_tool = None if self.palette_tool == sym else sym
+        self._refresh_palette_buttons()
+
+    def _refresh_palette_buttons(self):
+        for s, btn in self.palette_buttons.items():
+            btn.config(relief="sunken" if s == self.palette_tool else "raised")
+
+    def toggle_edit_mode(self):
+        self.edit_mode = self.edit_var.get()
+        self.selected = None
+        self.best_move = None
+        if not self.edit_mode:
+            self.palette_tool = None
+        self._refresh_palette_buttons()
+        self.board_canvas.redraw()
+        self.update_status()
+
+    def clear_board(self):
+        self.board.clear_board()
+        self.selected = None
+        self.last_move = None
+        self.best_move = None
+        self.update_content_field()
+        self.board_canvas.redraw()
+        self.update_status()
+
+    def edit_click(self, sq):
+        if self.palette_tool == "remove":
+            self.board.remove_piece_at(sq)
+            self.selected = None
+        elif self.palette_tool is not None:
+            self.board.set_piece_at(sq, symbol_to_piece(self.palette_tool))
+            self.selected = None
+        else:
+            if self.selected is None:
+                self.selected = sq
+            else:
+                moving = self.board.piece_at(self.selected)
+                if moving is not None:
+                    self.board.remove_piece_at(self.selected)
+                    self.board.set_piece_at(sq, moving)
+                self.selected = None
+        self.last_move = None
+        self.best_move = None
+        self.update_content_field()
+        self.board_canvas.redraw()
+        self.update_status()
 
     def undo(self):
         if self.game_moves:
@@ -792,6 +889,8 @@ class ChessTeachApp(tk.Tk):
 
     def add_node(self):
         tab = self.current_tab
+        if tab == "figures":
+            tab = "positions"
         title = self.name_var.get().strip() or "Ohne Namen"
         content = self.content_text.get("1.0", "end").strip()
         if not content:
@@ -822,6 +921,8 @@ class ChessTeachApp(tk.Tk):
 
     def new_lesson(self):
         tab = self.current_tab
+        if tab == "figures":
+            tab = "positions"
         title = simpledialog.askstring("Neue Lektion", "Titel der Lektion:", parent=self)
         if title:
             self.data[tab].setdefault("lessons", []).append({"title": title, "exercises": []})
@@ -830,6 +931,9 @@ class ChessTeachApp(tk.Tk):
 
     # -- Status / Content ---------------------------------------------------
     def update_status(self):
+        if self.edit_mode:
+            self.status_lbl.config(text="Bearbeiten-Modus — freies Spiel")
+            return
         b = self.board
         if b.is_checkmate():
             winner = "Weiß" if not b.turn else "Schwarz"
@@ -850,6 +954,9 @@ class ChessTeachApp(tk.Tk):
 
     # -- Engine -------------------------------------------------------------
     def analyse(self):
+        if self.edit_mode:
+            self.status_lbl.config(text="Analyse im Bearbeiten-Modus nicht möglich.")
+            return
         if self.best_move is not None:
             return
         fen = self.board.fen()
