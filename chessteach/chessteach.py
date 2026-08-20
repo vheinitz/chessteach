@@ -386,6 +386,7 @@ class ChessTeachApp(tk.Tk):
         self.selected_lesson = None
         self.list_canvases = {}
         self.list_hits = {}
+        self.del_hits = {}
 
         self.load_data()
         self.build_ui()
@@ -563,6 +564,9 @@ class ChessTeachApp(tk.Tk):
         canvas.pack(side="left", fill="both", expand=True)
         canvas.bind("<Button-1>", lambda e, t=tab: self.on_list_click(t, e))
         canvas.bind("<Configure>", lambda e, t=tab: self.render_tab(t))
+        canvas.bind("<Button-4>", lambda e, c=canvas: c.yview_scroll(-1, "units"))
+        canvas.bind("<Button-5>", lambda e, c=canvas: c.yview_scroll(1, "units"))
+        canvas.bind("<MouseWheel>", lambda e, c=canvas: c.yview_scroll(-1 if e.delta > 0 else 1, "units"))
         return canvas
 
     # -- Liste rendern ------------------------------------------------------
@@ -586,9 +590,11 @@ class ChessTeachApp(tk.Tk):
         canvas = self.list_canvases[tab]
         canvas.delete("all")
         hits = []
+        del_hits = []
         x, y = 6, 6
         size = 84
         ind = 26
+        del_x = 396
         data = self.data.get(tab, {})
 
         lessons = data.get("lessons", []) or []
@@ -605,35 +611,53 @@ class ChessTeachApp(tk.Tk):
                                    anchor="w", font=("DejaVu Sans", 12), fill="#333")
                 canvas.create_text(x + 30, y + 12, text=lesson.get("title", "?"),
                                    anchor="w", font=("DejaVu Sans", 12, "bold"), fill="#222")
+                canvas.create_text(del_x, y + 12, text="✕", anchor="center",
+                                   font=("DejaVu Sans", 12, "bold"), fill="#c62828")
                 hits.append((y, y + 24, "lesson", li))
+                del_hits.append((y, y + 24, ("lesson", li)))
                 y += 28
                 if exp:
-                    for node in lesson.get("exercises", []):
+                    for ni, node in enumerate(lesson.get("exercises", [])):
                         fen = self._node_preview_fen(node)
                         draw_mini_board(canvas, x + ind, y, size, fen)
                         canvas.create_text(x + ind + size + 8, y + size // 2,
                                            text=node.get("title", "?"), anchor="w",
                                            font=("DejaVu Sans", 12), fill="#222")
+                        canvas.create_text(del_x, y + size // 2, text="✕", anchor="center",
+                                           font=("DejaVu Sans", 12, "bold"), fill="#c62828")
                         hits.append((y, y + size, "exercise", node))
+                        del_hits.append((y, y + size, ("lesson_ex", li, ni)))
                         y += size + 8
 
         if exercises:
             y += 6
             y = self._section_header(canvas, x, y, "Übungen")
-            for node in exercises:
+            for ei, node in enumerate(exercises):
                 fen = self._node_preview_fen(node)
                 draw_mini_board(canvas, x, y, size, fen)
                 canvas.create_text(x + size + 8, y + size // 2,
                                    text=node.get("title", "?"), anchor="w",
                                    font=("DejaVu Sans", 12), fill="#222")
+                canvas.create_text(del_x, y + size // 2, text="✕", anchor="center",
+                                   font=("DejaVu Sans", 12, "bold"), fill="#c62828")
                 hits.append((y, y + size, "exercise", node))
+                del_hits.append((y, y + size, ("ex", ei)))
                 y += size + 8
 
         canvas.configure(scrollregion=(0, 0, max(420, canvas.winfo_width()), max(y + 8, canvas.winfo_height())))
         self.list_hits[tab] = hits
+        self.del_hits[tab] = del_hits
 
     def on_list_click(self, tab, event):
-        cy = self.list_canvases[tab].canvasy(event.y)
+        canvas = self.list_canvases[tab]
+        cx = canvas.canvasx(event.x)
+        cy = canvas.canvasy(event.y)
+        # Löschen-Knopf (✕) rechts neben jeder Zeile
+        if 380 <= cx <= 412:
+            for y0, y1, spec in self.del_hits.get(tab, []):
+                if y0 <= cy <= y1:
+                    self._delete_node(tab, spec)
+                    return
         for y0, y1, kind, data in self.list_hits.get(tab, []):
             if y0 <= cy <= y1:
                 if kind == "lesson":
@@ -652,6 +676,40 @@ class ChessTeachApp(tk.Tk):
                     elif "pgn" in node:
                         self.load_pgn(node["pgn"])
                 return
+
+    def _delete_node(self, tab, spec):
+        kind = spec[0]
+        if kind == "lesson":
+            li = spec[1]
+            lessons = self.data[tab].get("lessons", [])
+            if 0 <= li < len(lessons):
+                title = lessons[li].get("title", "?")
+                if messagebox.askyesno("Löschen", f"Lektion „{title}“ mit allen Übungen löschen?", parent=self):
+                    del lessons[li]
+                    if self.selected_lesson == (tab, li):
+                        self.selected_lesson = None
+                    self.save_data()
+                    self.render_tab(tab)
+        elif kind == "lesson_ex":
+            _, li, ni = spec
+            lessons = self.data[tab].get("lessons", [])
+            if 0 <= li < len(lessons):
+                exs = lessons[li].get("exercises", [])
+                if 0 <= ni < len(exs):
+                    title = exs[ni].get("title", "?")
+                    if messagebox.askyesno("Löschen", f"Übung „{title}“ löschen?", parent=self):
+                        del exs[ni]
+                        self.save_data()
+                        self.render_tab(tab)
+        elif kind == "ex":
+            ei = spec[1]
+            exs = self.data[tab].get("exercises", [])
+            if 0 <= ei < len(exs):
+                title = exs[ei].get("title", "?")
+                if messagebox.askyesno("Löschen", f"Übung „{title}“ löschen?", parent=self):
+                    del exs[ei]
+                    self.save_data()
+                    self.render_tab(tab)
 
     def on_tab_changed(self, event):
         idx = self.notebook.index("current")
