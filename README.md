@@ -20,7 +20,8 @@ markings and engine analysis.
   pieces (any number, any colour) and move pieces freely — no rule checks, no
   engine — ideal for teaching piece movement
 - Make moves (click piece → click target), undo, reset
-- **Stockfish analysis** — best move + evaluation, drawn as an arrow
+- **Stockfish analysis** — continuous (toggle), configurable **think time** and
+  **number of move suggestions** (multi-PV), drawn as arrows
 - Draw **arrows** (right-drag), **mark squares**, highlight **threats** and
   **legal moves**
 - Toggle **coordinates** (a–h / 1–8) with a clean frame around the board
@@ -102,6 +103,8 @@ exercises can also be added from within the app.
 | Mark a square       | enable *Markieren*, then click     |
 | Flip board          | *Brett drehen* checkbox            |
 | Free edit mode      | *Bearbeiten* checkbox + *Figuren* tab |
+| Continuous analysis | *Analyse* checkbox                 |
+| Settings            | *⚙ Einstellungen* button           |
 | Fullscreen          | `F11`                              |
 | Exit fullscreen     | `Esc`                              |
 | Undo / previous move| `Ctrl+Z` or `←`                    |
