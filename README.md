@@ -103,6 +103,8 @@ exercises can also be added from within the app.
 | Mark a square       | enable *Markieren*, then click     |
 | Flip board          | *Brett drehen* checkbox            |
 | Free edit mode      | *Bearbeiten* checkbox + *Figuren* tab |
+| Delete lesson/exercise | ✕ button in the list            |
+| Scroll lists        | mouse wheel                        |
 | Continuous analysis | *Analyse* checkbox                 |
 | Settings            | *⚙ Einstellungen* button           |
 | Fullscreen          | `F11`                              |
