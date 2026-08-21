@@ -3,17 +3,19 @@
 """
 ChessTeach — Schach-Lehrbrett für Kinder
 =========================================
-- Stellungen (FEN) und Partien (PGN) in Lektionen/Übungen organisiert (Tabs)
-- Partien nachspielen (PGN-Replay)
-- Brett drehen
-- Fenstergröße/-position und zuletzt geladene Stellung werden gemerkt
-- Züge, Angriff/Gewinnbar-Anzeige (rot/grün), Pfeile, Markierungen, Koordinaten, Stockfish-Analyse
+- Lektionen als Verzeichnisstruktur: lektionen/<Tab>/<Lektion>/NNNN_Name.fen|.pgn
+- Unterverzeichnisse mit _meta.txt (Titel), sonst Verzeichnisname
+- .fen  = Zeile 1 Titel, Zeile 2 FEN
+- .pgn  = Partie (Titel im [Event]-Header)
+- Tabs werden dynamisch aus den Ordnern erzeugt
 """
 
 import os
 import io
+import re
 import json
 import queue
+import shutil
 import threading
 import time
 import tkinter as tk
@@ -29,7 +31,7 @@ from PIL import Image, ImageTk
 # ---------------------------------------------------------------------------
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 PIECES_DIR = os.path.join(APP_DIR, "pieces")
-DATA_FILE = os.path.join(APP_DIR, "stellungen.json")
+DATA_DIR = os.path.join(APP_DIR, "lektionen")
 CONFIG_DIR = os.path.expanduser("~/.config/chessteach")
 CONFIG_FILE = os.path.join(CONFIG_DIR, "config.json")
 STOCKFISH = "/usr/games/stockfish"
@@ -48,58 +50,90 @@ WINNABLE_COLOR = "#00a651"
 LAST_COLOR = "#f9a825"
 CHECK_COLOR = "#d32f2f"
 
-DEFAULT_DATA = {
-    "positions": {
-        "lessons": [
-            {
-                "title": "Matt in 1",
-                "exercises": [
-                    {"title": "Dame-Matt in 1", "fen": "6k1/5ppp/8/8/8/8/8/R5K1 w - - 0 1"},
-                    {"title": "Turm-Matt in 1", "fen": "6k1/5ppp/8/8/8/8/PPP2PPP/4R1K1 w - - 0 1"},
-                ],
-            },
-            {
-                "title": "Taktik-Grundlagen",
-                "exercises": [
-                    {"title": "Springer-Gabel (Sf7!)", "fen": "3q3k/6pp/8/4N3/8/8/5PPP/6K1 w - - 0 1"},
-                    {"title": "Fesselung (Läufer)", "fen": "r1bqkbnr/pppp1ppp/2n5/1B6/8/8/PPPP1PPP/RNBQK1NR w KQkq - 0 1"},
-                    {"title": "Spieß (Turm)", "fen": "3q4/8/3k4/8/8/8/PPP3P1/R5K1 w - - 0 1"},
-                    {"title": "Abzugsschach", "fen": "r3k2r/p6p/8/8/4B3/8/PPPP1PPP/4R1K1 w - - 0 1"},
-                ],
-            },
-        ],
-        "exercises": [
-            {"title": "Grundstellung", "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"},
-            {"title": "Rochade", "fen": "r3k2r/pppppppp/8/8/8/8/PPPPPPPP/R3K2R w KQkq - 0 1"},
-            {"title": "En passant", "fen": "rnbqkbnr/ppp1pppp/8/3pP3/8/8/PPPP1PPP/RNBQKBNR w KQkq d6 0 1"},
-            {"title": "Bauernumwandlung", "fen": "4k3/4P3/8/8/8/8/8/6K1 w - - 0 1"},
-            {"title": "Patt", "fen": "7k/5Q2/6K1/8/8/8/8/8 b - - 0 1"},
-        ],
-    },
-    "games": {
-        "lessons": [
-            {
-                "title": "Kurze Matts",
-                "exercises": [
-                    {"title": "Schäfermatt", "pgn": "1. e4 e5 2. Bc4 Nc6 3. Qh5 Nf6 4. Qxf7#"},
-                    {"title": "Narrenmatt", "pgn": "1. f3 e5 2. g4 Qh4#"},
-                ],
-            }
-        ],
-        "exercises": [
-            {"title": "Italienische Partie", "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+"},
-        ],
-    },
-}
+FILE_EXTS = (".fen", ".pgn")
+
+
+def sanitize(s):
+    s = (s.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue")
+          .replace("Ä", "Ae").replace("Ö", "Oe").replace("Ü", "Ue").replace("ß", "ss"))
+    s = re.sub(r"[^A-Za-z0-9]+", "-", s).strip("-")
+    return s or "ohne-name"
+
+
+def title_from_name(name):
+    name = os.path.splitext(name)[0]
+    name = re.sub(r"^\d+[_\-\s]*", "", name)
+    return name.replace("-", " ").replace("_", " ").strip()
+
+
+def read_meta(directory):
+    meta = os.path.join(directory, "_meta.txt")
+    if os.path.exists(meta):
+        try:
+            with open(meta, encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        return line
+        except Exception:
+            pass
+    return None
+
+
+def next_number(directory, dirs_only=False):
+    best = 0
+    try:
+        for fn in os.listdir(directory):
+            m = re.match(r"^(\d+)", fn)
+            if not m:
+                continue
+            full = os.path.join(directory, fn)
+            if dirs_only != os.path.isdir(full):
+                continue
+            best = max(best, int(m.group(1)))
+    except Exception:
+        pass
+    return best + 1
+
+
+def load_node(path):
+    """Liest eine .fen- oder .pgn-Datei -> dict {title, fen|pgn}."""
+    ext = os.path.splitext(path)[1].lower()
+    if ext == ".fen":
+        lines = []
+        try:
+            with open(path, encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        lines.append(line)
+        except Exception:
+            lines = []
+        title = lines[0] if lines else title_from_name(os.path.basename(path))
+        fen = lines[1] if len(lines) > 1 else ""
+        return {"title": title, "fen": fen, "_path": path}
+    # .pgn
+    text = ""
+    try:
+        with open(path, encoding="utf-8") as f:
+            text = f.read()
+    except Exception:
+        pass
+    title = title_from_name(os.path.basename(path))
+    try:
+        g = chess.pgn.read_game(io.StringIO(text))
+        if g is not None:
+            title = g.headers.get("Event") or title
+    except Exception:
+        pass
+    return {"title": title, "pgn": text, "_path": path}
 
 
 def san_de(board, move):
-    """Englische SAN-Figuren in deutsche Figuren übersetzen."""
     return board.san(move).replace("N", "S").replace("B", "L").replace("Q", "D").replace("R", "T")
 
 
 def mainline_moves(game):
-    """Hauptvariante als Zugliste — kompatibel mit alten und neuen python-chess-Versionen."""
     if hasattr(game, "mainline_moves"):
         return list(game.mainline_moves())
     moves = []
@@ -111,7 +145,6 @@ def mainline_moves(game):
 
 
 def symbol_to_piece(sym):
-    """Paletten-Symbol (z.B. "wK", "bQ") in eine Figur umwandeln."""
     color = chess.WHITE if sym[0] == "w" else chess.BLACK
     ptype = {"K": chess.KING, "Q": chess.QUEEN, "R": chess.ROOK,
              "B": chess.BISHOP, "N": chess.KNIGHT, "P": chess.PAWN}[sym[1].upper()]
@@ -144,7 +177,6 @@ PIECES = PieceSet(PIECES_DIR)
 
 
 def draw_mini_board(canvas, x0, y0, size, fen):
-    """Mini-Brett als Canvas-Items zeichnen."""
     sq = size // 8
     board = chess.Board(fen)
     for s in range(64):
@@ -176,7 +208,6 @@ class BoardCanvas(tk.Canvas):
         self.bind("<B3-Motion>", self.on_right_motion)
         self.bind("<ButtonRelease-3>", self.on_right_release)
 
-    # -- Geometrie ----------------------------------------------------------
     def on_resize(self, event):
         self.sq = max(16, int(min(event.width, event.height) / 8.5))
         self.margin = max(6, int(self.sq * 0.25))
@@ -192,9 +223,7 @@ class BoardCanvas(tk.Canvas):
             col, row = 7 - file, rank
         else:
             col, row = file, 7 - rank
-        x0 = self.off_x + self.margin + col * self.sq
-        y0 = self.off_y + self.margin + row * self.sq
-        return x0, y0
+        return self.off_x + self.margin + col * self.sq, self.off_y + self.margin + row * self.sq
 
     def square_of(self, x, y):
         col = (x - self.off_x - self.margin) // self.sq
@@ -211,7 +240,6 @@ class BoardCanvas(tk.Canvas):
         x0, y0 = self.sq_origin(sq)
         return x0 + self.sq / 2, y0 + self.sq / 2
 
-    # -- Interaktion --------------------------------------------------------
     def on_left_click(self, event):
         sq = self.square_of(event.x, event.y)
         if sq is None:
@@ -244,7 +272,6 @@ class BoardCanvas(tk.Canvas):
             self.app.arrow_cur = None
             self.redraw()
 
-    # -- Zeichnen -----------------------------------------------------------
     def redraw(self):
         self.delete("all")
         board = self.app.board
@@ -281,8 +308,6 @@ class BoardCanvas(tk.Canvas):
                     ts = move.to_square
                     tx, ty = self.center(ts)
                     if board.piece_at(ts):
-                        # Figur wird von der gewählten Figur angegriffen:
-                        # grün = gewinnbar (Angreifer > Verteidiger), rot = nur Angriff (gedeckt)
                         atk, deff = self.app.defense_counts(ts)
                         color = WINNABLE_COLOR if atk > deff else THREAT_COLOR
                         m = sq * 0.14
@@ -347,7 +372,6 @@ class ChessTeachApp(tk.Tk):
         self.title("ChessTeach — Schach-Lehrbrett")
         self.configure(bg="#eceff1")
 
-        # Zustand
         self.board = chess.Board()
         self.loaded_fen = self.board.fen()
         self.selected = None
@@ -373,19 +397,18 @@ class ChessTeachApp(tk.Tk):
         self._engine_lock = threading.Lock()
         self._closing = False
 
-        # Partie-Replay
         self.game_base = chess.Board()
         self.game_moves = []
         self.game_index = 0
 
-        # Daten & UI
-        self.data = DEFAULT_DATA
-        self.current_tab = "positions"
-        self.expanded = {"positions": set(), "games": set()}
+        self.tabs = []
+        self.current_tab_index = 0
+        self.figures_index = 0
+        self.expanded = {}
         self.selected_lesson = None
-        self.list_canvases = {}
-        self.list_hits = {}
-        self.del_hits = {}
+        self.tab_canvases = {}
+        self.tab_hits = {}
+        self.tab_del_hits = {}
 
         self.load_data()
         self.build_ui()
@@ -401,31 +424,34 @@ class ChessTeachApp(tk.Tk):
         self.bind("r", lambda e: self.reset())
         self.protocol("WM_DELETE_WINDOW", self.on_close)
 
-    # -- Daten --------------------------------------------------------------
+    # -- Daten (Verzeichnisstruktur) ---------------------------------------
     def load_data(self):
-        if os.path.exists(DATA_FILE):
-            try:
-                with open(DATA_FILE, "r", encoding="utf-8") as f:
-                    raw = json.load(f)
-                if isinstance(raw, dict) and "positions" in raw:
-                    self.data = raw
-                else:  # alte flache Liste -> migrieren
-                    self.data = {
-                        "positions": {"lessons": [], "exercises": [
-                            {"title": p.get("name", "?"), "fen": p["fen"]} for p in raw
-                        ]},
-                        "games": {"lessons": [], "exercises": []},
-                    }
-                self.data.setdefault("positions", {"lessons": [], "exercises": []})
-                self.data.setdefault("games", {"lessons": [], "exercises": []})
-            except Exception:
-                self.data = DEFAULT_DATA
-        else:
-            self.data = DEFAULT_DATA
-
-    def save_data(self):
-        with open(DATA_FILE, "w", encoding="utf-8") as f:
-            json.dump(self.data, f, ensure_ascii=False, indent=2)
+        self.tabs = []
+        if not os.path.isdir(DATA_DIR):
+            os.makedirs(DATA_DIR, exist_ok=True)
+        for tabname in sorted(os.listdir(DATA_DIR)):
+            tabpath = os.path.join(DATA_DIR, tabname)
+            if not os.path.isdir(tabpath) or tabname.startswith("."):
+                continue
+            tab = {"id": tabpath,
+                   "title": read_meta(tabpath) or title_from_name(tabname),
+                   "lessons": [], "exercises": []}
+            for entry in sorted(os.listdir(tabpath)):
+                epath = os.path.join(tabpath, entry)
+                if os.path.isdir(epath):
+                    lesson = {"id": epath,
+                              "title": read_meta(epath) or title_from_name(entry),
+                              "exercises": []}
+                    for fn in sorted(os.listdir(epath)):
+                        if fn.startswith("."):
+                            continue
+                        fpath = os.path.join(epath, fn)
+                        if fn.lower().endswith(FILE_EXTS):
+                            lesson["exercises"].append(load_node(fpath))
+                    tab["lessons"].append(lesson)
+                elif entry.lower().endswith(FILE_EXTS):
+                    tab["exercises"].append(load_node(epath))
+            self.tabs.append(tab)
 
     # -- UI -----------------------------------------------------------------
     def build_ui(self):
@@ -440,12 +466,10 @@ class ChessTeachApp(tk.Tk):
         self.flip_var = tk.BooleanVar(value=False)
         ttk.Checkbutton(bar, text="Brett drehen", variable=self.flip_var,
                         command=self.toggle_flip).pack(side="left", padx=2)
-
         self.edit_var = tk.BooleanVar(value=False)
         ttk.Checkbutton(bar, text="Bearbeiten", variable=self.edit_var,
                         command=self.toggle_edit_mode).pack(side="left", padx=2)
 
-        # Replay-Knöpfe
         ttk.Separator(bar, orient="vertical").pack(side="left", fill="y", padx=4)
         ttk.Button(bar, text="⏮", width=3, command=self.game_start).pack(side="left", padx=1)
         ttk.Button(bar, text="◀", width=3, command=self.game_prev).pack(side="left", padx=1)
@@ -474,7 +498,6 @@ class ChessTeachApp(tk.Tk):
                                    fg="#1a237e", anchor="w")
         self.status_lbl.pack(side="left", padx=10, fill="x", expand=True)
 
-        # Hauptbereich
         paned = ttk.PanedWindow(self, orient="horizontal")
         paned.pack(side="top", fill="both", expand=True, padx=4, pady=4)
 
@@ -490,24 +513,18 @@ class ChessTeachApp(tk.Tk):
         self.notebook.pack(fill="both", expand=True)
         self.notebook.bind("<<NotebookTabChanged>>", self.on_tab_changed)
 
-        # Tab 1: Positionen
-        pos_tab = ttk.Frame(self.notebook)
-        self.notebook.add(pos_tab, text="Positionen")
-        self.list_canvases["positions"] = self._make_list_canvas(pos_tab, "positions")
+        # dynamische Tabs aus der Verzeichnisstruktur
+        for i, tab in enumerate(self.tabs):
+            frame = ttk.Frame(self.notebook)
+            self.notebook.add(frame, text=tab["title"])
+            self.tab_canvases[i] = self._make_list_canvas(frame, i)
+            self.expanded[i] = set()
+            self.render_tab(i)
 
-        # Tab 2: Partien
-        game_tab = ttk.Frame(self.notebook)
-        self.notebook.add(game_tab, text="Partien")
-        self.list_canvases["games"] = self._make_list_canvas(game_tab, "games")
-        ttk.Label(game_tab, text="Züge", font=("DejaVu Sans", 11, "bold")).pack(anchor="w")
-        self.move_list = tk.Listbox(game_tab, height=8, font=("DejaVu Sans Mono", 10),
-                                    exportselection=False)
-        self.move_list.pack(fill="x", padx=2, pady=2)
-        self.move_list.bind("<<ListboxSelect>>", self.on_move_list_select)
-
-        # Tab 3: Figuren (nur im Bearbeiten-Modus)
+        # Figuren-Palette (fester Tab)
         fig_tab = ttk.Frame(self.notebook)
         self.notebook.add(fig_tab, text="Figuren")
+        self.figures_index = len(self.tabs)
         ttk.Label(fig_tab, text="Figur wählen, dann aufs Brett klicken.",
                   font=("DejaVu Sans", 11, "bold")).pack(anchor="w", padx=6, pady=(6, 0))
         for label, prefix in [("Weiß", "w"), ("Schwarz", "b")]:
@@ -533,7 +550,14 @@ class ChessTeachApp(tk.Tk):
                   "Ohne Auswahl: Figur anklicken und frei verschieben.",
                   wraplength=230, justify="left").pack(anchor="w", padx=6, pady=8)
 
-        # Eingabebereich
+        # Züge (gemeinsam für alle Tabs)
+        ttk.Label(side, text="Züge", font=("DejaVu Sans", 11, "bold")).pack(anchor="w")
+        self.move_list = tk.Listbox(side, height=7, font=("DejaVu Sans Mono", 10),
+                                    exportselection=False)
+        self.move_list.pack(fill="x", padx=2, pady=2)
+        self.move_list.bind("<<ListboxSelect>>", self.on_move_list_select)
+
+        # Neu
         add = ttk.LabelFrame(side, text="Neu", padding=4)
         add.pack(fill="x", padx=2, pady=4)
         ttk.Label(add, text="Titel").pack(anchor="w")
@@ -548,10 +572,7 @@ class ChessTeachApp(tk.Tk):
         ttk.Button(btns, text="Hinzufügen", command=self.add_node).pack(side="left", padx=2)
         ttk.Button(btns, text="Neue Lektion", command=self.new_lesson).pack(side="left", padx=2)
 
-        self.render_tab("positions")
-        self.render_tab("games")
-
-    def _make_list_canvas(self, parent, tab):
+    def _make_list_canvas(self, parent, tab_index):
         wrap = ttk.Frame(parent)
         wrap.pack(fill="both", expand=True)
         canvas = tk.Canvas(wrap, highlightthickness=0, bg="#fafafa", cursor="hand2")
@@ -559,14 +580,13 @@ class ChessTeachApp(tk.Tk):
         canvas.configure(yscrollcommand=scroll.set)
         scroll.pack(side="right", fill="y")
         canvas.pack(side="left", fill="both", expand=True)
-        canvas.bind("<Button-1>", lambda e, t=tab: self.on_list_click(t, e))
-        canvas.bind("<Configure>", lambda e, t=tab: self.render_tab(t))
+        canvas.bind("<Button-1>", lambda e, t=tab_index: self.on_list_click(t, e))
+        canvas.bind("<Configure>", lambda e, t=tab_index: self.render_tab(t))
         canvas.bind("<Button-4>", lambda e, c=canvas: c.yview_scroll(-1, "units"))
         canvas.bind("<Button-5>", lambda e, c=canvas: c.yview_scroll(1, "units"))
         canvas.bind("<MouseWheel>", lambda e, c=canvas: c.yview_scroll(-1 if e.delta > 0 else 1, "units"))
         return canvas
 
-    # -- Liste rendern ------------------------------------------------------
     def _section_header(self, canvas, x, y, text):
         canvas.create_text(x + 6, y + 12, text=text, anchor="w",
                            font=("DejaVu Sans", 11, "bold"), fill="#455a64")
@@ -583,8 +603,10 @@ class ChessTeachApp(tk.Tk):
             pass
         return chess.STARTING_FEN
 
-    def render_tab(self, tab):
-        canvas = self.list_canvases[tab]
+    def render_tab(self, tab_index):
+        if tab_index not in self.tab_canvases:
+            return
+        canvas = self.tab_canvases[tab_index]
         canvas.delete("all")
         hits = []
         del_hits = []
@@ -592,44 +614,40 @@ class ChessTeachApp(tk.Tk):
         size = 84
         ind = 26
         del_x = 396
-        data = self.data.get(tab, {})
+        tab = self.tabs[tab_index]
+        expanded = self.expanded.get(tab_index, set())
 
-        lessons = data.get("lessons", []) or []
-        exercises = data.get("exercises", []) or []
+        for li, lesson in enumerate(tab["lessons"]):
+            exp = li in expanded
+            sel = self.selected_lesson == (tab_index, li)
+            bg = "#cfe0f0" if sel else "#e6ecef"
+            canvas.create_rectangle(x, y, x + 400, y + 24, fill=bg, width=0)
+            canvas.create_text(x + 10, y + 12, text="▾" if exp else "▸",
+                               anchor="w", font=("DejaVu Sans", 12), fill="#333")
+            canvas.create_text(x + 30, y + 12, text=lesson["title"],
+                               anchor="w", font=("DejaVu Sans", 12, "bold"), fill="#222")
+            canvas.create_text(del_x, y + 12, text="✕", anchor="center",
+                               font=("DejaVu Sans", 12, "bold"), fill="#c62828")
+            hits.append((y, y + 24, "lesson", li))
+            del_hits.append((y, y + 24, ("lesson", li)))
+            y += 28
+            if exp:
+                for ni, node in enumerate(lesson["exercises"]):
+                    fen = self._node_preview_fen(node)
+                    draw_mini_board(canvas, x + ind, y, size, fen)
+                    canvas.create_text(x + ind + size + 8, y + size // 2,
+                                       text=node.get("title", "?"), anchor="w",
+                                       font=("DejaVu Sans", 12), fill="#222")
+                    canvas.create_text(del_x, y + size // 2, text="✕", anchor="center",
+                                       font=("DejaVu Sans", 12, "bold"), fill="#c62828")
+                    hits.append((y, y + size, "exercise", node))
+                    del_hits.append((y, y + size, ("lesson_ex", li, ni)))
+                    y += size + 8
 
-        if lessons:
-            y = self._section_header(canvas, x, y, "Lektionen")
-            for li, lesson in enumerate(lessons):
-                exp = li in self.expanded[tab]
-                sel = self.selected_lesson == (tab, li)
-                bg = "#cfe0f0" if sel else "#e6ecef"
-                canvas.create_rectangle(x, y, x + 400, y + 24, fill=bg, width=0)
-                canvas.create_text(x + 10, y + 12, text="▾" if exp else "▸",
-                                   anchor="w", font=("DejaVu Sans", 12), fill="#333")
-                canvas.create_text(x + 30, y + 12, text=lesson.get("title", "?"),
-                                   anchor="w", font=("DejaVu Sans", 12, "bold"), fill="#222")
-                canvas.create_text(del_x, y + 12, text="✕", anchor="center",
-                                   font=("DejaVu Sans", 12, "bold"), fill="#c62828")
-                hits.append((y, y + 24, "lesson", li))
-                del_hits.append((y, y + 24, ("lesson", li)))
-                y += 28
-                if exp:
-                    for ni, node in enumerate(lesson.get("exercises", [])):
-                        fen = self._node_preview_fen(node)
-                        draw_mini_board(canvas, x + ind, y, size, fen)
-                        canvas.create_text(x + ind + size + 8, y + size // 2,
-                                           text=node.get("title", "?"), anchor="w",
-                                           font=("DejaVu Sans", 12), fill="#222")
-                        canvas.create_text(del_x, y + size // 2, text="✕", anchor="center",
-                                           font=("DejaVu Sans", 12, "bold"), fill="#c62828")
-                        hits.append((y, y + size, "exercise", node))
-                        del_hits.append((y, y + size, ("lesson_ex", li, ni)))
-                        y += size + 8
-
-        if exercises:
+        if tab["exercises"]:
             y += 6
             y = self._section_header(canvas, x, y, "Übungen")
-            for ei, node in enumerate(exercises):
+            for ei, node in enumerate(tab["exercises"]):
                 fen = self._node_preview_fen(node)
                 draw_mini_board(canvas, x, y, size, fen)
                 canvas.create_text(x + size + 8, y + size // 2,
@@ -642,29 +660,28 @@ class ChessTeachApp(tk.Tk):
                 y += size + 8
 
         canvas.configure(scrollregion=(0, 0, max(420, canvas.winfo_width()), max(y + 8, canvas.winfo_height())))
-        self.list_hits[tab] = hits
-        self.del_hits[tab] = del_hits
+        self.tab_hits[tab_index] = hits
+        self.tab_del_hits[tab_index] = del_hits
 
-    def on_list_click(self, tab, event):
-        canvas = self.list_canvases[tab]
+    def on_list_click(self, tab_index, event):
+        canvas = self.tab_canvases[tab_index]
         cx = canvas.canvasx(event.x)
         cy = canvas.canvasy(event.y)
-        # Löschen-Knopf (✕) rechts neben jeder Zeile
         if 380 <= cx <= 412:
-            for y0, y1, spec in self.del_hits.get(tab, []):
+            for y0, y1, spec in self.tab_del_hits.get(tab_index, []):
                 if y0 <= cy <= y1:
-                    self._delete_node(tab, spec)
+                    self._delete_node(tab_index, spec)
                     return
-        for y0, y1, kind, data in self.list_hits.get(tab, []):
+        for y0, y1, kind, data in self.tab_hits.get(tab_index, []):
             if y0 <= cy <= y1:
                 if kind == "lesson":
                     li = data
-                    self.selected_lesson = (tab, li)
-                    if li in self.expanded[tab]:
-                        self.expanded[tab].discard(li)
+                    self.selected_lesson = (tab_index, li)
+                    if li in self.expanded.get(tab_index, set()):
+                        self.expanded[tab_index].discard(li)
                     else:
-                        self.expanded[tab].add(li)
-                    self.render_tab(tab)
+                        self.expanded[tab_index].add(li)
+                    self.render_tab(tab_index)
                 else:
                     self.selected_lesson = None
                     node = data
@@ -674,49 +691,48 @@ class ChessTeachApp(tk.Tk):
                         self.load_pgn(node["pgn"])
                 return
 
-    def _delete_node(self, tab, spec):
+    def _delete_node(self, tab_index, spec):
         kind = spec[0]
         if kind == "lesson":
             li = spec[1]
-            lessons = self.data[tab].get("lessons", [])
+            lessons = self.tabs[tab_index]["lessons"]
             if 0 <= li < len(lessons):
-                title = lessons[li].get("title", "?")
+                title = lessons[li]["title"]
                 if messagebox.askyesno("Löschen", f"Lektion „{title}“ mit allen Übungen löschen?", parent=self):
-                    del lessons[li]
-                    if self.selected_lesson == (tab, li):
-                        self.selected_lesson = None
-                    self.save_data()
-                    self.render_tab(tab)
+                    shutil.rmtree(lessons[li]["id"], ignore_errors=True)
+                    self.selected_lesson = None
+                    self.load_data()
+                    self.render_tab(tab_index)
         elif kind == "lesson_ex":
             _, li, ni = spec
-            lessons = self.data[tab].get("lessons", [])
+            lessons = self.tabs[tab_index]["lessons"]
             if 0 <= li < len(lessons):
-                exs = lessons[li].get("exercises", [])
+                exs = lessons[li]["exercises"]
                 if 0 <= ni < len(exs):
-                    title = exs[ni].get("title", "?")
-                    if messagebox.askyesno("Löschen", f"Übung „{title}“ löschen?", parent=self):
-                        del exs[ni]
-                        self.save_data()
-                        self.render_tab(tab)
+                    if messagebox.askyesno("Löschen", f"Übung „{exs[ni]['title']}“ löschen?", parent=self):
+                        os.remove(exs[ni]["_path"])
+                        self.load_data()
+                        self.render_tab(tab_index)
         elif kind == "ex":
             ei = spec[1]
-            exs = self.data[tab].get("exercises", [])
+            exs = self.tabs[tab_index]["exercises"]
             if 0 <= ei < len(exs):
-                title = exs[ei].get("title", "?")
-                if messagebox.askyesno("Löschen", f"Übung „{title}“ löschen?", parent=self):
-                    del exs[ei]
-                    self.save_data()
-                    self.render_tab(tab)
+                if messagebox.askyesno("Löschen", f"Übung „{exs[ei]['title']}“ löschen?", parent=self):
+                    os.remove(exs[ei]["_path"])
+                    self.load_data()
+                    self.render_tab(tab_index)
 
     def on_tab_changed(self, event):
         idx = self.notebook.index("current")
-        self.current_tab = {0: "positions", 1: "games", 2: "figures"}.get(idx, "positions")
-        if self.current_tab != "figures" and self.edit_mode:
+        if idx == self.figures_index:
+            self.current_tab_index = "figures"
+        else:
+            self.current_tab_index = idx
+            self.render_tab(idx)
+        if self.current_tab_index != "figures" and self.edit_mode:
             self.exit_edit_mode()
             self.board_canvas.redraw()
             self.update_status()
-        if self.current_tab in ("positions", "games"):
-            self.render_tab(self.current_tab)
 
     # -- Laden --------------------------------------------------------------
     def load_fen(self, fen):
@@ -806,7 +822,7 @@ class ChessTeachApp(tk.Tk):
             self.move_list.see(self.game_index - 1)
             self.move_lbl.config(text=f"Zug {self.game_index}/{len(self.game_moves)}")
         else:
-            self.move_lbl.config(text=f"Start")
+            self.move_lbl.config(text="Start")
 
     def on_move_list_select(self, event):
         sel = self.move_list.curselection()
@@ -815,7 +831,7 @@ class ChessTeachApp(tk.Tk):
 
     # -- Züge / Aktionen ----------------------------------------------------
     def board_click(self, sq):
-        if self.edit_mode and self.current_tab == "figures":
+        if self.edit_mode and self.current_tab_index == "figures":
             self.edit_click(sq)
             return
         board = self.board
@@ -864,8 +880,9 @@ class ChessTeachApp(tk.Tk):
         self.best_moves = []
         self.best_scores = []
         if self.edit_mode:
-            if self.current_tab != "figures":
-                self.notebook.select(2)
+            if self.current_tab_index != "figures":
+                self.notebook.select(self.figures_index)
+                self.current_tab_index = "figures"
             if self.analyse_on:
                 self.analyse_var.set(False)
                 self.analyse_on = False
@@ -940,16 +957,6 @@ class ChessTeachApp(tk.Tk):
         self.show_coords = not self.show_coords
         self.board_canvas.redraw()
 
-    def defense_counts(self, s):
-        """(Angreifer, Verteidiger) eines Feldes, ohne Könige."""
-        b = self.board
-        turn = b.turn
-        attackers = sum(1 for a in b.attackers(turn, s)
-                        if b.piece_at(a) is not None and b.piece_at(a).piece_type != chess.KING)
-        defenders = sum(1 for d in b.attackers(not turn, s)
-                        if b.piece_at(d) is not None and b.piece_at(d).piece_type != chess.KING)
-        return attackers, defenders
-
     def toggle_mark_mode(self):
         self.mark_mode = not self.mark_mode
         self.selected = None
@@ -985,46 +992,58 @@ class ChessTeachApp(tk.Tk):
         messagebox.showerror("Fehler", "Das ist weder eine gültige FEN noch eine gültige PGN.")
 
     def add_node(self):
-        tab = self.current_tab
-        if tab == "figures":
-            tab = "positions"
+        if not self.tabs or self.current_tab_index == "figures":
+            messagebox.showinfo("Hinzufügen", "Bitte zuerst einen Inhalts-Tab wählen.")
+            return
+        tab = self.tabs[self.current_tab_index]
         title = self.name_var.get().strip() or "Ohne Namen"
         content = self.content_text.get("1.0", "end").strip()
         if not content:
             return
-        if tab == "positions":
-            try:
-                chess.Board(content)
-                node = {"title": title, "fen": content}
-            except Exception:
-                messagebox.showerror("FEN-Fehler", "Keine gültige FEN.")
-                return
-        else:
+        try:
+            chess.Board(content)
+            kind = "fen"
+        except Exception:
             try:
                 g = chess.pgn.read_game(io.StringIO(content))
                 if g is None:
                     raise ValueError
-                node = {"title": title, "pgn": content}
+                kind = "pgn"
             except Exception:
-                messagebox.showerror("PGN-Fehler", "Keine gültige PGN.")
+                messagebox.showerror("Fehler", "Keine gültige FEN oder PGN.")
                 return
-        if self.selected_lesson and self.selected_lesson[0] == tab:
-            li = self.selected_lesson[1]
-            self.data[tab].setdefault("lessons", [] )[li].setdefault("exercises", []).append(node)
+        if self.selected_lesson and self.selected_lesson[0] == self.current_tab_index:
+            target = tab["lessons"][self.selected_lesson[1]]["id"]
         else:
-            self.data[tab].setdefault("exercises", []).append(node)
-        self.save_data()
-        self.render_tab(tab)
+            target = tab["id"]
+        num = next_number(target)
+        fname = f"{num:04d}_{sanitize(title)}.{kind}"
+        path = os.path.join(target, fname)
+        if kind == "fen":
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(title + "\n" + content + "\n")
+        else:
+            g = chess.pgn.read_game(io.StringIO(content))
+            g.headers["Event"] = title
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(str(g) + "\n")
+        self.load_data()
+        self.render_tab(self.current_tab_index)
 
     def new_lesson(self):
-        tab = self.current_tab
-        if tab == "figures":
-            tab = "positions"
+        if not self.tabs or self.current_tab_index == "figures":
+            messagebox.showinfo("Neue Lektion", "Bitte zuerst einen Inhalts-Tab wählen.")
+            return
+        tab = self.tabs[self.current_tab_index]
         title = simpledialog.askstring("Neue Lektion", "Titel der Lektion:", parent=self)
         if title:
-            self.data[tab].setdefault("lessons", []).append({"title": title, "exercises": []})
-            self.save_data()
-            self.render_tab(tab)
+            num = next_number(tab["id"], dirs_only=True)
+            d = os.path.join(tab["id"], f"{num:02d}_{sanitize(title)}")
+            os.makedirs(d, exist_ok=True)
+            with open(os.path.join(d, "_meta.txt"), "w", encoding="utf-8") as f:
+                f.write(title + "\n")
+            self.load_data()
+            self.render_tab(self.current_tab_index)
 
     # -- Status / Content ---------------------------------------------------
     def update_status(self):
@@ -1050,6 +1069,15 @@ class ChessTeachApp(tk.Tk):
         self.content_text.insert("1.0", self.board.fen())
 
     # -- Engine -------------------------------------------------------------
+    def defense_counts(self, s):
+        b = self.board
+        turn = b.turn
+        attackers = sum(1 for a in b.attackers(turn, s)
+                        if b.piece_at(a) is not None and b.piece_at(a).piece_type != chess.KING)
+        defenders = sum(1 for d in b.attackers(not turn, s)
+                        if b.piece_at(d) is not None and b.piece_at(d).piece_type != chess.KING)
+        return attackers, defenders
+
     def toggle_analyse(self):
         self.analyse_on = self.analyse_var.get()
         if self.analyse_on:
