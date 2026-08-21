@@ -570,6 +570,7 @@ class ChessTeachApp(tk.Tk):
         btns.pack(fill="x", pady=4)
         ttk.Button(btns, text="Laden", command=self.load_from_entry).pack(side="left", padx=2)
         ttk.Button(btns, text="Hinzufügen", command=self.add_node).pack(side="left", padx=2)
+        ttk.Button(btns, text="💾 Board speichern", command=self.save_current_board).pack(side="left", padx=2)
         ttk.Button(btns, text="Neue Lektion", command=self.new_lesson).pack(side="left", padx=2)
 
     def _make_list_canvas(self, parent, tab_index):
@@ -1044,6 +1045,28 @@ class ChessTeachApp(tk.Tk):
                 f.write(title + "\n")
             self.load_data()
             self.render_tab(self.current_tab_index)
+
+    def save_current_board(self):
+        """Speichert das aktuelle Brett (FEN) als neue Übung im aktuellen Tab/Lektion."""
+        if not self.tabs or self.current_tab_index == "figures":
+            messagebox.showinfo("Speichern", "Bitte zuerst einen Inhalts-Tab wählen.")
+            return
+        title = self.name_var.get().strip()
+        if not title:
+            title = simpledialog.askstring("Board speichern", "Titel der Übung:", parent=self)
+        if not title:
+            return
+        tab = self.tabs[self.current_tab_index]
+        if self.selected_lesson and self.selected_lesson[0] == self.current_tab_index:
+            target = tab["lessons"][self.selected_lesson[1]]["id"]
+        else:
+            target = tab["id"]
+        num = next_number(target)
+        fname = f"{num:04d}_{sanitize(title)}.fen"
+        with open(os.path.join(target, fname), "w", encoding="utf-8") as f:
+            f.write(title + "\n" + self.board.fen() + "\n")
+        self.load_data()
+        self.render_tab(self.current_tab_index)
 
     # -- Status / Content ---------------------------------------------------
     def update_status(self):
