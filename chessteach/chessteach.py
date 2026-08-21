@@ -200,7 +200,8 @@ def load_pgn_games(path):
                           "_path": path, "_index": i, "_total": len(games)})
         else:
             nodes.append({"title": title, "pgn": str(g), "meta": meta,
-                          "_path": path, "_index": i, "_total": len(games)})
+                          "_path": path, "_index": i, "_total": len(games),
+                          "_preview_fen": g.board().fen()})
     return nodes
 
 
@@ -685,6 +686,8 @@ class ChessTeachApp(tk.Tk):
     def _node_preview_fen(self, node):
         if "fen" in node:
             return node["fen"]
+        if node.get("_preview_fen"):
+            return node["_preview_fen"]
         try:
             g = chess.pgn.read_game(io.StringIO(node.get("pgn", "")))
             if g:
