@@ -1,0 +1,12 @@
+[Event "Dovetail Mate"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "Decatur Chess"]
+[SetUp "1"]
+[FEN "2k5/2P5/2K5/8/5Q2/8/8/8 w - - 0 1"]
+
+1. Qb4+! Ka8 (1... Kd8 2. Qb8#) 2. Qb7# 1-0
