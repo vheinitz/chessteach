@@ -140,7 +140,12 @@
         ]
       }
     ],
-    "exercises": []
+    "exercises": [
+      {
+        "title": "En passant - Schlagen im Vorbeigehen",
+        "fen": "7k/3p1K2/8/4P3/8/8/8/8 w - - 0 1"
+      }
+    ]
   },
   "games": {
     "lessons": [
