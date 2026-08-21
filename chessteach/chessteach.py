@@ -63,7 +63,23 @@ def sanitize(s):
 def title_from_name(name):
     name = os.path.splitext(name)[0]
     name = re.sub(r"^\d+[_\-\s]*", "", name)
-    return name.replace("-", " ").replace("_", " ").strip()
+    name = name.replace("-", " ").replace("_", " ").replace("+", " ")
+    return " ".join(name.split()).strip()
+
+
+def truncate(s, n):
+    s = str(s)
+    return s if len(s) <= n else s[:n - 1] + "…"
+
+
+def read_text(path):
+    for enc in ("utf-8", "cp1252"):
+        try:
+            with open(path, encoding=enc) as f:
+                return f.read()
+        except UnicodeDecodeError:
+            continue
+    return ""
 
 
 def read_meta(directory):
@@ -101,14 +117,11 @@ def load_node(path):
     ext = os.path.splitext(path)[1].lower()
     if ext == ".fen":
         lines = []
-        try:
-            with open(path, encoding="utf-8") as f:
-                for line in f:
-                    line = line.strip()
-                    if line:
-                        lines.append(line)
-        except Exception:
-            lines = []
+        text = read_text(path)
+        for line in text.splitlines():
+            line = line.strip()
+            if line:
+                lines.append(line)
         title = lines[0] if lines else title_from_name(os.path.basename(path))
         fen = lines[1] if len(lines) > 1 else ""
         return {"title": title, "fen": fen, "_path": path}
@@ -127,6 +140,68 @@ def load_node(path):
     except Exception:
         pass
     return {"title": title, "pgn": text, "_path": path}
+
+
+def load_pgn_games(path):
+    """Liest alle Partien/Stellungen aus einer PGN-Datei -> Liste von Knoten."""
+    nodes = []
+    games = []
+    try:
+        text = read_text(path)
+        pgn_io = io.StringIO(text)
+        while True:
+            g = chess.pgn.read_game(pgn_io)
+            if g is None:
+                break
+            games.append(g)
+    except Exception:
+        pass
+    if not games:
+        return nodes
+    from collections import Counter
+    event_counts = Counter((g.headers.get("Event") or "").strip() for g in games)
+    used = Counter()
+    for i, g in enumerate(games):
+        h = g.headers
+        white = (h.get("White") or "").strip()
+        black = (h.get("Black") or "").strip()
+        event = (h.get("Event") or "").strip()
+        result = (h.get("Result") or "").strip()
+        date = (h.get("Date") or "").strip()
+        eco = (h.get("ECO") or "").strip()
+        moves = list(g.mainline_moves())
+        has_fen = h.get("SetUp") == "1" and bool(h.get("FEN"))
+
+        if event and event_counts[event] > 1:
+            used[event] += 1
+            title = f"{event} {used[event]}"
+        elif event:
+            title = event
+        elif white and black and white != "?" and black != "?":
+            title = f"{white} – {black}"
+        elif white and white != "?":
+            title = white
+        else:
+            title = f"Partie {i + 1}"
+
+        meta_parts = []
+        if white and black and white != "?" and black != "?":
+            meta_parts.append(f"{white} – {black}")
+        if result and result != "*":
+            meta_parts.append(result)
+        if date and date not in ("????.??.??", ""):
+            meta_parts.append(date[:4])
+        elif eco:
+            meta_parts.append(eco)
+        meta = " · ".join(meta_parts)
+
+        if has_fen and not moves:
+            nodes.append({"title": title, "fen": h["FEN"], "meta": meta,
+                          "_path": path, "_index": i, "_total": len(games)})
+        else:
+            nodes.append({"title": title, "pgn": str(g), "meta": meta,
+                          "_path": path, "_index": i, "_total": len(games)})
+    return nodes
 
 
 def san_de(board, move):
@@ -429,7 +504,8 @@ class ChessTeachApp(tk.Tk):
         self.tabs = []
         if not os.path.isdir(DATA_DIR):
             os.makedirs(DATA_DIR, exist_ok=True)
-        for tabname in sorted(os.listdir(DATA_DIR)):
+        entries = sorted(os.listdir(DATA_DIR))
+        for tabname in entries:
             tabpath = os.path.join(DATA_DIR, tabname)
             if not os.path.isdir(tabpath) or tabname.startswith("."):
                 continue
@@ -446,12 +522,25 @@ class ChessTeachApp(tk.Tk):
                         if fn.startswith("."):
                             continue
                         fpath = os.path.join(epath, fn)
-                        if fn.lower().endswith(FILE_EXTS):
+                        if fn.lower().endswith(".pgn"):
+                            lesson["exercises"].extend(load_pgn_games(fpath))
+                        elif fn.lower().endswith(".fen"):
                             lesson["exercises"].append(load_node(fpath))
                     tab["lessons"].append(lesson)
-                elif entry.lower().endswith(FILE_EXTS):
+                elif entry.lower().endswith(".pgn"):
+                    tab["lessons"].append({"id": epath, "title": title_from_name(entry),
+                                           "exercises": load_pgn_games(epath), "_is_file": True})
+                elif entry.lower().endswith(".fen"):
                     tab["exercises"].append(load_node(epath))
             self.tabs.append(tab)
+        # .pgn-Dateien auf oberster Ebene -> je ein Tab mit einer Lektion
+        for fn in entries:
+            fpath = os.path.join(DATA_DIR, fn)
+            if os.path.isfile(fpath) and fn.lower().endswith(".pgn"):
+                self.tabs.append({"id": fpath, "title": title_from_name(fn),
+                                  "lessons": [{"id": fpath, "title": "Spiele",
+                                               "exercises": load_pgn_games(fpath), "_is_file": True}],
+                                  "exercises": []})
 
     # -- UI -----------------------------------------------------------------
     def build_ui(self):
@@ -604,6 +693,20 @@ class ChessTeachApp(tk.Tk):
             pass
         return chess.STARTING_FEN
 
+    def _draw_node_row(self, canvas, x, y, size, node):
+        fen = self._node_preview_fen(node)
+        draw_mini_board(canvas, x, y, size, fen)
+        tx = x + size + 8
+        meta = node.get("meta", "")
+        if meta:
+            canvas.create_text(tx, y + 20, text=truncate(node.get("title", "?"), 28),
+                               anchor="w", font=("DejaVu Sans", 12, "bold"), fill="#222")
+            canvas.create_text(tx, y + 44, text=truncate(meta, 40),
+                               anchor="w", font=("DejaVu Sans", 9), fill="#666")
+        else:
+            canvas.create_text(tx, y + size // 2, text=truncate(node.get("title", "?"), 30),
+                               anchor="w", font=("DejaVu Sans", 12), fill="#222")
+
     def render_tab(self, tab_index):
         if tab_index not in self.tab_canvases:
             return
@@ -634,11 +737,7 @@ class ChessTeachApp(tk.Tk):
             y += 28
             if exp:
                 for ni, node in enumerate(lesson["exercises"]):
-                    fen = self._node_preview_fen(node)
-                    draw_mini_board(canvas, x + ind, y, size, fen)
-                    canvas.create_text(x + ind + size + 8, y + size // 2,
-                                       text=node.get("title", "?"), anchor="w",
-                                       font=("DejaVu Sans", 12), fill="#222")
+                    self._draw_node_row(canvas, x + ind, y, size, node)
                     canvas.create_text(del_x, y + size // 2, text="✕", anchor="center",
                                        font=("DejaVu Sans", 12, "bold"), fill="#c62828")
                     hits.append((y, y + size, "exercise", node))
@@ -649,11 +748,7 @@ class ChessTeachApp(tk.Tk):
             y += 6
             y = self._section_header(canvas, x, y, "Übungen")
             for ei, node in enumerate(tab["exercises"]):
-                fen = self._node_preview_fen(node)
-                draw_mini_board(canvas, x, y, size, fen)
-                canvas.create_text(x + size + 8, y + size // 2,
-                                   text=node.get("title", "?"), anchor="w",
-                                   font=("DejaVu Sans", 12), fill="#222")
+                self._draw_node_row(canvas, x, y, size, node)
                 canvas.create_text(del_x, y + size // 2, text="✕", anchor="center",
                                    font=("DejaVu Sans", 12, "bold"), fill="#c62828")
                 hits.append((y, y + size, "exercise", node))
@@ -692,6 +787,37 @@ class ChessTeachApp(tk.Tk):
                         self.load_pgn(node["pgn"])
                 return
 
+    def _remove_node(self, node):
+        path = node["_path"]
+        if path.lower().endswith(".pgn") and "_index" in node:
+            games = []
+            try:
+                text = read_text(path)
+                pgn_io = io.StringIO(text)
+                while True:
+                    g = chess.pgn.read_game(pgn_io)
+                    if g is None:
+                        break
+                    games.append(g)
+            except Exception:
+                pass
+            if node["_index"] < len(games):
+                del games[node["_index"]]
+            if games:
+                with open(path, "w", encoding="utf-8") as f:
+                    for g in games:
+                        f.write(str(g) + "\n\n")
+            else:
+                try:
+                    os.remove(path)
+                except Exception:
+                    pass
+        else:
+            try:
+                os.remove(path)
+            except Exception:
+                pass
+
     def _delete_node(self, tab_index, spec):
         kind = spec[0]
         if kind == "lesson":
@@ -700,7 +826,14 @@ class ChessTeachApp(tk.Tk):
             if 0 <= li < len(lessons):
                 title = lessons[li]["title"]
                 if messagebox.askyesno("Löschen", f"Lektion „{title}“ mit allen Übungen löschen?", parent=self):
-                    shutil.rmtree(lessons[li]["id"], ignore_errors=True)
+                    target = lessons[li]["id"]
+                    if os.path.isdir(target):
+                        shutil.rmtree(target, ignore_errors=True)
+                    else:
+                        try:
+                            os.remove(target)
+                        except Exception:
+                            pass
                     self.selected_lesson = None
                     self.load_data()
                     self.render_tab(tab_index)
@@ -711,7 +844,7 @@ class ChessTeachApp(tk.Tk):
                 exs = lessons[li]["exercises"]
                 if 0 <= ni < len(exs):
                     if messagebox.askyesno("Löschen", f"Übung „{exs[ni]['title']}“ löschen?", parent=self):
-                        os.remove(exs[ni]["_path"])
+                        self._remove_node(exs[ni])
                         self.load_data()
                         self.render_tab(tab_index)
         elif kind == "ex":
@@ -719,7 +852,7 @@ class ChessTeachApp(tk.Tk):
             exs = self.tabs[tab_index]["exercises"]
             if 0 <= ei < len(exs):
                 if messagebox.askyesno("Löschen", f"Übung „{exs[ei]['title']}“ löschen?", parent=self):
-                    os.remove(exs[ei]["_path"])
+                    self._remove_node(exs[ei])
                     self.load_data()
                     self.render_tab(tab_index)
 
