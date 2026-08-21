@@ -64,35 +64,27 @@ X-GNOME-Autostart-enabled=true
 
 ## Data format
 
-All content lives in `chessteach/stellungen.json`:
+All content lives in the `chessteach/lektionen/` directory tree:
 
-```json
-{
-  "positions": {
-    "lessons": [
-      {"title": "Mate in 1", "exercises": [
-        {"title": "Queen mate", "fen": "6k1/5ppp/8/8/8/8/8/R5K1 w - - 0 1"}
-      ]}
-    ],
-    "exercises": [
-      {"title": "Start position", "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"}
-    ]
-  },
-  "games": {
-    "lessons": [
-      {"title": "Quick mates", "exercises": [
-        {"title": "Scholar's mate", "pgn": "1. e4 e5 2. Bc4 Nc6 3. Qh5 Nf6 4. Qxf7#"}
-      ]}
-    ],
-    "exercises": [
-      {"title": "Italian Game", "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6"}
-    ]
-  }
-}
+```text
+lektionen/
+└── 01_Grundlagen/              ← tab (name from _meta.txt or folder name)
+    ├── _meta.txt               ← tab title (optional)
+    ├── 01_Das-Schachbrett/     ← lesson (subfolder)
+    │   ├── _meta.txt           ← lesson title (optional)
+    │   ├── 0001_Grundstellung.fen
+    │   └── 0002_Reihen.fen
+    └── 0003_Freie-Uebung.fen   ← standalone exercise (directly in the tab)
 ```
 
-Lessons are expandable groups; exercises are single entries. New lessons and
-exercises can also be added from within the app.
+- Tabs are created **dynamically** from the top-level folders (sorted by the
+  numeric filename prefix).
+- **Subfolders** are lessons; a `_meta.txt` (first line) names them, otherwise
+  the folder name is used.
+- **`.fen`** files store positions: line 1 = title, line 2 = FEN.
+- **`.pgn`** files store games: title in the `[Event]` header.
+- `.fen` and `.pgn` can be freely mixed; the list marks them as position/game.
+- New lessons and exercises can be added from within the app.
 
 ## Controls
 
