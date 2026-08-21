@@ -714,6 +714,10 @@ class ChessTeachApp(tk.Tk):
     def on_tab_changed(self, event):
         idx = self.notebook.index("current")
         self.current_tab = {0: "positions", 1: "games", 2: "figures"}.get(idx, "positions")
+        if self.current_tab != "figures" and self.edit_mode:
+            self.exit_edit_mode()
+            self.board_canvas.redraw()
+            self.update_status()
         if self.current_tab in ("positions", "games"):
             self.render_tab(self.current_tab)
 
@@ -814,7 +818,7 @@ class ChessTeachApp(tk.Tk):
 
     # -- Züge / Aktionen ----------------------------------------------------
     def board_click(self, sq):
-        if self.edit_mode:
+        if self.edit_mode and self.current_tab == "figures":
             self.edit_click(sq)
             return
         board = self.board
@@ -851,15 +855,24 @@ class ChessTeachApp(tk.Tk):
         for s, btn in self.palette_buttons.items():
             btn.config(relief="sunken" if s == self.palette_tool else "raised")
 
+    def exit_edit_mode(self):
+        self.edit_mode = False
+        self.edit_var.set(False)
+        self.palette_tool = None
+        self._refresh_palette_buttons()
+
     def toggle_edit_mode(self):
         self.edit_mode = self.edit_var.get()
         self.selected = None
         self.best_moves = []
         self.best_scores = []
-        if self.edit_mode and self.analyse_on:
-            self.analyse_var.set(False)
-            self.analyse_on = False
-        if not self.edit_mode:
+        if self.edit_mode:
+            if self.current_tab != "figures":
+                self.notebook.select(2)
+            if self.analyse_on:
+                self.analyse_var.set(False)
+                self.analyse_on = False
+        else:
             self.palette_tool = None
         self._refresh_palette_buttons()
         self.board_canvas.redraw()
@@ -916,6 +929,11 @@ class ChessTeachApp(tk.Tk):
 
     def new_game(self):
         self.load_fen(chess.STARTING_FEN)
+        self.exit_edit_mode()
+        self.mark_mode = False
+        self.mark_btn.state(["!selected"])
+        self.board_canvas.redraw()
+        self.update_status()
 
     def toggle_flip(self):
         self.flipped = self.flip_var.get()
