@@ -7,7 +7,7 @@ ChessTeach — Schach-Lehrbrett für Kinder
 - Partien nachspielen (PGN-Replay)
 - Brett drehen
 - Fenstergröße/-position und zuletzt geladene Stellung werden gemerkt
-- Züge, Bedrohungen, Pfeile, Markierungen, Koordinaten, Stockfish-Analyse
+- Züge, Angriff/Gewinnbar-Anzeige (rot/grün), Pfeile, Markierungen, Koordinaten, Stockfish-Analyse
 """
 
 import os
@@ -266,23 +266,6 @@ class BoardCanvas(tk.Canvas):
             self.create_rectangle(x0, y0, x0 + sq, y0 + sq, fill=MARK_COLOR, width=0, stipple="gray50")
             self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=MARK_COLOR, width=3)
 
-        if self.app.show_threats and not self.app.edit_mode:
-            for s, piece in board.piece_map().items():
-                if piece.color == board.turn and board.is_attacked_by(not board.turn, s):
-                    x0, y0 = self.sq_origin(s)
-                    self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=THREAT_COLOR, width=4)
-
-        # Gewinnbar: gegnerische Figuren mit mehr Angreifern als Verteidigern (grüner Kreis)
-        if self.app.show_winnable and not self.app.edit_mode:
-            for s, piece in board.piece_map().items():
-                if piece.color != board.turn and piece.piece_type != chess.KING:
-                    atk, deff = self.app.defense_counts(s)
-                    if atk > deff:
-                        x0, y0 = self.sq_origin(s)
-                        m = sq * 0.14
-                        self.create_oval(x0 + m, y0 + m, x0 + sq - m, y0 + sq - m,
-                                         outline=WINNABLE_COLOR, width=5)
-
         if board.is_check() and not self.app.edit_mode:
             king_sq = board.king(board.turn)
             if king_sq is not None:
@@ -298,9 +281,14 @@ class BoardCanvas(tk.Canvas):
                     ts = move.to_square
                     tx, ty = self.center(ts)
                     if board.piece_at(ts):
-                        self.create_oval(tx - sq/2 + 2, ty - sq/2 + 2,
-                                         tx + sq/2 - 2, ty + sq/2 - 2,
-                                         outline=CAPTURE_COLOR, width=4)
+                        # Figur wird von der gewählten Figur angegriffen:
+                        # grün = gewinnbar (Angreifer > Verteidiger), rot = nur Angriff (gedeckt)
+                        atk, deff = self.app.defense_counts(ts)
+                        color = WINNABLE_COLOR if atk > deff else THREAT_COLOR
+                        m = sq * 0.14
+                        self.create_oval(tx - sq/2 + m, ty - sq/2 + m,
+                                         tx + sq/2 - m, ty + sq/2 - m,
+                                         outline=color, width=5)
                     else:
                         rr = max(4, sq // 6)
                         self.create_oval(tx - rr, ty - rr, tx + rr, ty + rr, fill=LEGAL_COLOR)
@@ -370,8 +358,6 @@ class ChessTeachApp(tk.Tk):
         self.arrow_cur = None
         self.best_moves = []
         self.best_scores = []
-        self.show_threats = False
-        self.show_winnable = False
         self.show_coords = True
         self.mark_mode = False
         self.flipped = False
@@ -472,10 +458,6 @@ class ChessTeachApp(tk.Tk):
         self.coord_btn = ttk.Checkbutton(bar, text="Koordinaten", command=self.toggle_coords)
         self.coord_btn.pack(side="left", padx=2)
         self.coord_btn.state(["selected"])
-        self.threat_btn = ttk.Checkbutton(bar, text="Bedrohungen", command=self.toggle_threats)
-        self.threat_btn.pack(side="left", padx=2)
-        self.winnable_btn = ttk.Checkbutton(bar, text="Gewinnbar", command=self.toggle_winnable)
-        self.winnable_btn.pack(side="left", padx=2)
         self.mark_btn = ttk.Checkbutton(bar, text="Markieren", command=self.toggle_mark_mode)
         self.mark_btn.pack(side="left", padx=2)
         ttk.Button(bar, text="Pfeile weg", command=self.clear_arrows).pack(side="left", padx=2)
@@ -956,14 +938,6 @@ class ChessTeachApp(tk.Tk):
 
     def toggle_coords(self):
         self.show_coords = not self.show_coords
-        self.board_canvas.redraw()
-
-    def toggle_threats(self):
-        self.show_threats = not self.show_threats
-        self.board_canvas.redraw()
-
-    def toggle_winnable(self):
-        self.show_winnable = not self.show_winnable
         self.board_canvas.redraw()
 
     def defense_counts(self, s):
