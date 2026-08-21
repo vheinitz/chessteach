@@ -44,6 +44,7 @@ MARK_COLOR = "#ffd54f"
 ARROW_COLOR = "#1e88e5"
 BESTMOVE_COLOR = "#8e24aa"
 SUGGEST_COLOR = "#1e88e5"
+WINNABLE_COLOR = "#00a651"
 LAST_COLOR = "#f9a825"
 CHECK_COLOR = "#d32f2f"
 
@@ -271,6 +272,17 @@ class BoardCanvas(tk.Canvas):
                     x0, y0 = self.sq_origin(s)
                     self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=THREAT_COLOR, width=4)
 
+        # Gewinnbar: gegnerische Figuren mit mehr Angreifern als Verteidigern (grüner Kreis)
+        if self.app.show_winnable and not self.app.edit_mode:
+            for s, piece in board.piece_map().items():
+                if piece.color != board.turn and piece.piece_type != chess.KING:
+                    atk, deff = self.app.defense_counts(s)
+                    if atk > deff:
+                        x0, y0 = self.sq_origin(s)
+                        m = sq * 0.14
+                        self.create_oval(x0 + m, y0 + m, x0 + sq - m, y0 + sq - m,
+                                         outline=WINNABLE_COLOR, width=5)
+
         if board.is_check() and not self.app.edit_mode:
             king_sq = board.king(board.turn)
             if king_sq is not None:
@@ -359,6 +371,7 @@ class ChessTeachApp(tk.Tk):
         self.best_moves = []
         self.best_scores = []
         self.show_threats = False
+        self.show_winnable = False
         self.show_coords = True
         self.mark_mode = False
         self.flipped = False
@@ -461,6 +474,8 @@ class ChessTeachApp(tk.Tk):
         self.coord_btn.state(["selected"])
         self.threat_btn = ttk.Checkbutton(bar, text="Bedrohungen", command=self.toggle_threats)
         self.threat_btn.pack(side="left", padx=2)
+        self.winnable_btn = ttk.Checkbutton(bar, text="Gewinnbar", command=self.toggle_winnable)
+        self.winnable_btn.pack(side="left", padx=2)
         self.mark_btn = ttk.Checkbutton(bar, text="Markieren", command=self.toggle_mark_mode)
         self.mark_btn.pack(side="left", padx=2)
         ttk.Button(bar, text="Pfeile weg", command=self.clear_arrows).pack(side="left", padx=2)
@@ -946,6 +961,20 @@ class ChessTeachApp(tk.Tk):
     def toggle_threats(self):
         self.show_threats = not self.show_threats
         self.board_canvas.redraw()
+
+    def toggle_winnable(self):
+        self.show_winnable = not self.show_winnable
+        self.board_canvas.redraw()
+
+    def defense_counts(self, s):
+        """(Angreifer, Verteidiger) eines Feldes, ohne Könige."""
+        b = self.board
+        turn = b.turn
+        attackers = sum(1 for a in b.attackers(turn, s)
+                        if b.piece_at(a) is not None and b.piece_at(a).piece_type != chess.KING)
+        defenders = sum(1 for d in b.attackers(not turn, s)
+                        if b.piece_at(d) is not None and b.piece_at(d).piece_type != chess.KING)
+        return attackers, defenders
 
     def toggle_mark_mode(self):
         self.mark_mode = not self.mark_mode
