@@ -162,46 +162,53 @@ def load_pgn_games(path):
     event_counts = Counter((g.headers.get("Event") or "").strip() for g in games)
     used = Counter()
     for i, g in enumerate(games):
-        h = g.headers
-        white = (h.get("White") or "").strip()
-        black = (h.get("Black") or "").strip()
-        event = (h.get("Event") or "").strip()
-        result = (h.get("Result") or "").strip()
-        date = (h.get("Date") or "").strip()
-        eco = (h.get("ECO") or "").strip()
-        moves = list(g.mainline_moves())
-        has_fen = h.get("SetUp") == "1" and bool(h.get("FEN"))
+        try:
+            h = g.headers
+            white = (h.get("White") or "").strip()
+            black = (h.get("Black") or "").strip()
+            event = (h.get("Event") or "").strip()
+            result = (h.get("Result") or "").strip()
+            date = (h.get("Date") or "").strip()
+            eco = (h.get("ECO") or "").strip()
+            moves = list(g.mainline_moves())
+            has_fen = h.get("SetUp") == "1" and bool(h.get("FEN"))
 
-        if event and event_counts[event] > 1:
-            used[event] += 1
-            title = f"{event} {used[event]}"
-        elif event:
-            title = event
-        elif white and black and white != "?" and black != "?":
-            title = f"{white} – {black}"
-        elif white and white != "?":
-            title = white
-        else:
-            title = f"Partie {i + 1}"
+            if event and event_counts[event] > 1:
+                used[event] += 1
+                title = f"{event} {used[event]}"
+            elif event:
+                title = event
+            elif white and black and white != "?" and black != "?":
+                title = f"{white} – {black}"
+            elif white and white != "?":
+                title = white
+            else:
+                title = f"Partie {i + 1}"
 
-        meta_parts = []
-        if white and black and white != "?" and black != "?":
-            meta_parts.append(f"{white} – {black}")
-        if result and result != "*":
-            meta_parts.append(result)
-        if date and date not in ("????.??.??", ""):
-            meta_parts.append(date[:4])
-        elif eco:
-            meta_parts.append(eco)
-        meta = " · ".join(meta_parts)
+            meta_parts = []
+            if white and black and white != "?" and black != "?":
+                meta_parts.append(f"{white} – {black}")
+            if result and result != "*":
+                meta_parts.append(result)
+            if date and date not in ("????.??.??", ""):
+                meta_parts.append(date[:4])
+            elif eco:
+                meta_parts.append(eco)
+            meta = " · ".join(meta_parts)
 
-        if has_fen and not moves:
-            nodes.append({"title": title, "fen": h["FEN"], "meta": meta,
-                          "_path": path, "_index": i, "_total": len(games)})
-        else:
-            nodes.append({"title": title, "pgn": str(g), "meta": meta,
-                          "_path": path, "_index": i, "_total": len(games),
-                          "_preview_fen": g.board().fen()})
+            if has_fen and not moves:
+                nodes.append({"title": title, "fen": h["FEN"], "meta": meta,
+                              "_path": path, "_index": i, "_total": len(games)})
+            else:
+                try:
+                    pgn_text = str(g)
+                except Exception:
+                    continue  # Spiel mit ungültigem Zug überspringen
+                nodes.append({"title": title, "pgn": pgn_text, "meta": meta,
+                              "_path": path, "_index": i, "_total": len(games),
+                              "_preview_fen": g.board().fen()})
+        except Exception:
+            continue  # defektes Spiel überspringen
     return nodes
 
 
@@ -809,7 +816,10 @@ class ChessTeachApp(tk.Tk):
             if games:
                 with open(path, "w", encoding="utf-8") as f:
                     for g in games:
-                        f.write(str(g) + "\n\n")
+                        try:
+                            f.write(str(g) + "\n\n")
+                        except Exception:
+                            pass
             else:
                 try:
                     os.remove(path)
