@@ -1,0 +1,6 @@
+[Event "Zwei Türme: Treppenmatt"]
+[SetUp "1"]
+[FEN "4k3/8/8/8/8/8/R7/1R5K w - - 0 1"]
+[Result "1-0"]
+
+1. Ra7 { [Rank 7] [Ar a2a7] Der eine Turm schneidet die 7. Reihe ab. } Kf8 { [Ar e8f8] } 2. Rb8# { [Ar b1b8] [Sq f8] Der zweite Turm gibt Matt — wie auf einer Treppe! } 1-0

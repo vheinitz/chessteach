@@ -1,0 +1,6 @@
+[Event "König + Dame: Abschneiden"]
+[SetUp "1"]
+[FEN "8/8/8/8/8/2k5/8/Q3K3 w - - 0 1"]
+[Result "1-0"]
+
+1. Qa4 { [Rank 4] [Ar a1a4] Die Dame schneidet die 4. Reihe ab. } Kd3 { [Ar c3d3] } 2. Kf2 { [Ar e1f2] Der König hilft. } Kc3 3. Ke2 { [Ar f2e2] } Kb2 4. Kd2 { [Ar e2d2] } Kb1 5. Kc3 { [Ar d2c3] } Kc1 6. Qa1# { [Ar a4a1] [Sq c1] Matt! } 1-0
