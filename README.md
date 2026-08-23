@@ -86,6 +86,28 @@ lektionen/
 - `.fen` and `.pgn` can be freely mixed; the list marks them as position/game.
 - New lessons and exercises can be added from within the app.
 
+## Learning mode: annotations in PGN comments
+
+PGN comments (`{ … }`) can contain board-annotation commands that appear
+**step by step** while replaying (▶ / ◀), without changing the position.
+
+| Command            | Effect                                   |
+|--------------------|------------------------------------------|
+| `[Sq e4,d5]`       | highlight squares (blue)                 |
+| `[Mk e4]`          | mark squares (yellow)                    |
+| `[Ar e2e4,g1f3]`   | draw arrows                              |
+| `[Rank 4]`         | highlight rank 4 (horizontal line)       |
+| `[File e]`         | highlight file e (vertical line)         |
+| `[Clear]`          | remove all annotations                   |
+
+Example:
+
+```pgn
+1. e4 { [Sq e4] [Ar f1b5] } e5 { [Mk e5] [Rank 4] } 2. Nf3 { [File e] }
+```
+
+Replay: each move and each `[ … ]` command is one step (⏮ ◀ ▶ ⏭).
+
 ## Controls
 
 | Action              | Input                              |

@@ -47,6 +47,8 @@ ARROW_COLOR = "#1e88e5"
 BESTMOVE_COLOR = "#8e24aa"
 SUGGEST_COLOR = "#1e88e5"
 WINNABLE_COLOR = "#00a651"
+HIGHLIGHT_COLOR = "#4fc3f7"
+LINE_COLOR = "#ffb74d"
 LAST_COLOR = "#f9a825"
 CHECK_COLOR = "#d32f2f"
 
@@ -234,6 +236,59 @@ def symbol_to_piece(sym):
     return chess.Piece(ptype, color)
 
 
+def parse_annotation_comment(text):
+    """Extrahiert [Befehl ...]-Markup aus einem PGN-Kommentar -> Liste von Schritten.
+
+    Befehle (case-insensitiv):
+      [Sq e4,d5]   Quadrate hervorheben
+      [Mk e4]      Felder markieren (gelb)
+      [Ar e2e4]    Pfeil von e2 nach e4
+      [Rank 4]     Reihe 4 hervorheben (horizontal)
+      [File e]     Linie e hervorheben (vertikal)
+      [Clear]      alle Markierungen löschen
+    """
+    steps = []
+    if not text:
+        return steps
+    for m in re.finditer(r"\[([A-Za-z]+)\s*([^\]]*)\]", text):
+        cmd = m.group(1).lower()
+        arg = m.group(2).strip()
+        tokens = [t for t in re.split(r"[\s,]+", arg) if t]
+        if cmd in ("x", "clear", "c"):
+            steps.append(("clear",))
+        elif cmd in ("a", "ar", "arrow", "pfeil"):
+            for a in tokens:
+                if len(a) >= 4:
+                    try:
+                        f = chess.parse_square(a[0:2])
+                        t = chess.parse_square(a[2:4])
+                        steps.append(("arrow", f, t))
+                    except ValueError:
+                        pass
+        elif cmd in ("s", "sq", "hi", "highlight", "quadrat"):
+            for s in tokens:
+                try:
+                    steps.append(("highlight", chess.parse_square(s)))
+                except ValueError:
+                    pass
+        elif cmd in ("m", "mk", "mark", "feld"):
+            for s in tokens:
+                try:
+                    steps.append(("mark", chess.parse_square(s)))
+                except ValueError:
+                    pass
+        elif cmd in ("r", "rank", "reihe"):
+            for r in tokens:
+                if r.isdigit() and 1 <= int(r) <= 8:
+                    steps.append(("rank", int(r) - 1))
+        elif cmd in ("f", "file", "linie"):
+            for f in tokens:
+                f = f.lower()
+                if len(f) == 1 and f in "abcdefgh":
+                    steps.append(("file", "abcdefgh".index(f)))
+    return steps
+
+
 # ---------------------------------------------------------------------------
 # Figuren
 # ---------------------------------------------------------------------------
@@ -376,6 +431,27 @@ class BoardCanvas(tk.Canvas):
             self.create_rectangle(x0, y0, x0 + sq, y0 + sq, fill=MARK_COLOR, width=0, stipple="gray50")
             self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=MARK_COLOR, width=3)
 
+        # Hervorgehobene Quadrate (Lernmodus)
+        for s in self.app.highlights:
+            x0, y0 = self.sq_origin(s)
+            self.create_rectangle(x0, y0, x0 + sq, y0 + sq, fill=HIGHLIGHT_COLOR, width=0, stipple="gray50")
+            self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=HIGHLIGHT_COLOR, width=3)
+
+        # Reihen/Linien hervorheben (Lernmodus)
+        for kind, idx in self.app.lines:
+            if kind == "rank":
+                row = idx if self.app.flipped else 7 - idx
+                y0 = self.off_y + self.margin + row * sq
+                self.create_rectangle(self.off_x + self.margin, y0,
+                                      self.off_x + self.margin + 8 * sq, y0 + sq,
+                                      fill=LINE_COLOR, width=0, stipple="gray50")
+            else:
+                col = 7 - idx if self.app.flipped else idx
+                x0 = self.off_x + self.margin + col * sq
+                self.create_rectangle(x0, self.off_y + self.margin,
+                                      x0 + sq, self.off_y + self.margin + 8 * sq,
+                                      fill=LINE_COLOR, width=0, stipple="gray50")
+
         if board.is_check() and not self.app.edit_mode:
             king_sq = board.king(board.turn)
             if king_sq is not None:
@@ -481,8 +557,12 @@ class ChessTeachApp(tk.Tk):
         self._closing = False
 
         self.game_base = chess.Board()
-        self.game_moves = []
+        self.game_steps = []
+        self.step_index = 0
         self.game_index = 0
+        self.highlights = []
+        self.lines = []
+        self.move_step_index = []
 
         self.tabs = []
         self.current_tab_index = 0
@@ -889,8 +969,12 @@ class ChessTeachApp(tk.Tk):
             messagebox.showerror("FEN-Fehler", str(e))
             return
         self.loaded_fen = fen
-        self.game_moves = []
+        self.game_steps = []
+        self.step_index = 0
         self.game_index = 0
+        self.highlights = []
+        self.lines = []
+        self.move_step_index = []
         self.selected = None
         self.last_move = None
         self.arrows = []
@@ -907,31 +991,65 @@ class ChessTeachApp(tk.Tk):
             messagebox.showerror("PGN-Fehler", "PGN konnte nicht gelesen werden.")
             return
         self.game_base = g.board()
-        self.game_moves = mainline_moves(g)
-        self.game_index = len(self.game_moves)
+        self.game_steps = self._build_steps(g)
         self.loaded_fen = self.game_base.fen()
-        self._rebuild_game_board()
         self.selected = None
         self.arrows = []
         self.marks = set()
+        self.highlights = []
+        self.lines = []
         self.best_moves = []
         self._populate_move_list()
+        self._rebuild_to_step(len(self.game_steps))
         self.update_content_field()
         self.board_canvas.redraw()
         self.update_status()
 
-    def _rebuild_game_board(self):
+    def _build_steps(self, game):
+        steps = []
+        node = game
+        for st in parse_annotation_comment(node.comment):
+            steps.append(st)
+        while node.variations:
+            node = node.variations[0]
+            steps.append(("move", node.move))
+            for st in parse_annotation_comment(node.comment):
+                steps.append(st)
+        return steps
+
+    def _rebuild_to_step(self, i):
+        i = max(0, min(len(self.game_steps), i))
         b = self.game_base.copy()
-        for m in self.game_moves[:self.game_index]:
-            b.push(m)
+        self.arrows = []
+        self.marks = set()
+        self.highlights = []
+        self.lines = []
+        self.last_move = None
+        move_count = 0
+        for st in self.game_steps[:i]:
+            kind = st[0]
+            if kind == "move":
+                b.push(st[1]); self.last_move = st[1]; move_count += 1
+            elif kind == "arrow":
+                self.arrows.append((st[1], st[2]))
+            elif kind == "mark":
+                self.marks.add(st[1])
+            elif kind == "highlight":
+                self.highlights.append(st[1])
+            elif kind == "rank":
+                self.lines.append(("rank", st[1]))
+            elif kind == "file":
+                self.lines.append(("file", st[1]))
+            elif kind == "clear":
+                self.arrows = []; self.marks = set(); self.highlights = []; self.lines = []
         self.board = b
-        self.last_move = self.game_moves[self.game_index - 1] if self.game_index > 0 else None
+        self.step_index = i
+        self.game_index = move_count
 
     def game_replay_to(self, i):
-        if not self.game_moves:
+        if not self.game_steps:
             return
-        self.game_index = max(0, min(len(self.game_moves), i))
-        self._rebuild_game_board()
+        self._rebuild_to_step(i)
         self.selected = None
         self.best_moves = []
         self._sync_move_list_selection()
@@ -940,41 +1058,50 @@ class ChessTeachApp(tk.Tk):
         self.update_status()
 
     def game_prev(self):
-        self.game_replay_to(self.game_index - 1)
+        self.game_replay_to(self.step_index - 1)
 
     def game_next(self):
-        self.game_replay_to(self.game_index + 1)
+        self.game_replay_to(self.step_index + 1)
 
     def game_start(self):
         self.game_replay_to(0)
 
     def game_end(self):
-        self.game_replay_to(len(self.game_moves))
+        self.game_replay_to(len(self.game_steps))
 
     def _populate_move_list(self):
         self.move_list.delete(0, "end")
+        self.move_step_index = []
         b = self.game_base.copy()
-        for i, m in enumerate(self.game_moves):
-            prefix = f"{i // 2 + 1}." if i % 2 == 0 else f"{i // 2 + 1}..."
-            self.move_list.insert("end", f"{prefix} {san_de(b, m)}")
-            b.push(m)
+        moves = 0
+        step = 0
+        for st in self.game_steps:
+            if st[0] == "move":
+                m = st[1]
+                prefix = f"{moves // 2 + 1}." if moves % 2 == 0 else f"{moves // 2 + 1}..."
+                self.move_list.insert("end", f"{prefix} {san_de(b, m)}")
+                b.push(m)
+                moves += 1
+                self.move_step_index.append(step + 1)
+            step += 1
 
     def _sync_move_list(self):
         self.move_list.delete(0, "end")
 
     def _sync_move_list_selection(self):
         self.move_list.selection_clear(0, "end")
+        total = len(self.move_step_index)
         if self.game_index > 0:
             self.move_list.selection_set(self.game_index - 1)
             self.move_list.see(self.game_index - 1)
-            self.move_lbl.config(text=f"Zug {self.game_index}/{len(self.game_moves)}")
+            self.move_lbl.config(text=f"Zug {self.game_index}/{total}")
         else:
             self.move_lbl.config(text="Start")
 
     def on_move_list_select(self, event):
         sel = self.move_list.curselection()
-        if sel:
-            self.game_replay_to(sel[0] + 1)
+        if sel and sel[0] < len(self.move_step_index):
+            self.game_replay_to(self.move_step_index[sel[0]])
 
     # -- Züge / Aktionen ----------------------------------------------------
     def board_click(self, sq):
@@ -1071,7 +1198,7 @@ class ChessTeachApp(tk.Tk):
         self.update_status()
 
     def undo(self):
-        if self.game_moves:
+        if self.game_steps:
             self.game_prev()
         elif self.board.move_stack:
             self.board.pop()
@@ -1083,7 +1210,7 @@ class ChessTeachApp(tk.Tk):
             self.update_status()
 
     def reset(self):
-        if self.game_moves:
+        if self.game_steps:
             self.game_start()
         else:
             self.load_fen(self.loaded_fen)
