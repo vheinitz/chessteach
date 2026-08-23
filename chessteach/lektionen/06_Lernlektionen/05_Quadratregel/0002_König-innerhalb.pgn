@@ -1,0 +1,6 @@
+[Event "Quadratregel: König innerhalb"]
+[SetUp "1"]
+[FEN "6k1/8/8/p7/8/8/3K4/8 w - - 0 1"]
+[Result "*"]
+
+1. Kc3 { [Sq a5] [Sq a1] [Sq d5] [Sq d1] [Ar d2c3] Der weiße König ist innerhalb des Quadrats — er holt den Bauern ein. } a4 2. Kb4 { [Ar c3b4] } a3 3. Kxa3 { [Sq a3] [Ar b4a3] Der Bauer ist aufgehalten! } *

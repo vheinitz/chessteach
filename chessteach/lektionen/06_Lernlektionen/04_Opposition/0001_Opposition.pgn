@@ -1,0 +1,6 @@
+[Event "Oppositionsregel"]
+[SetUp "1"]
+[FEN "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1"]
+[Result "1-0"]
+
+1. Kd6 { [Sq d6] [Sq e8] Weiß nimmt die Opposition: die Könige stehen sich direkt gegenüber. } Kf7 { [Ar e8f7] } 2. e6+ { [Ar e5e6] Der Bauer rückt mit Schach vor. } Kf6 { [Ar f7f6] } 3. e7 { [Ar e6e7] } Kf7 4. Kd7 { [Ar d6d7] } Kf6 5. e8=Q { [Sq e8] [Ar e7e8] Der Bauer wird zur Dame! } 1-0
