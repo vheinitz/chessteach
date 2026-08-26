@@ -440,10 +440,10 @@ class BoardCanvas(tk.Canvas):
                 x0, y0 = self.sq_origin(s)
                 self.create_rectangle(x0, y0, x0 + sq, y0 + sq, fill=LAST_COLOR, width=0, stipple="gray50")
 
-        for s in self.app.marks:
+        for s, color in self.app.marks.items():
             x0, y0 = self.sq_origin(s)
-            self.create_rectangle(x0, y0, x0 + sq, y0 + sq, fill=MARK_COLOR, width=0, stipple="gray50")
-            self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=MARK_COLOR, width=3)
+            self.create_rectangle(x0, y0, x0 + sq, y0 + sq, fill=color, width=0, stipple="gray50")
+            self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=color, width=3)
 
         # Hervorgehobene Quadrate (Lernmodus)
         for s in self.app.highlights:
@@ -494,9 +494,10 @@ class BoardCanvas(tk.Canvas):
         if self.app.show_coords:
             self.draw_coords()
 
-        for s, piece in board.piece_map().items():
-            x0, y0 = self.sq_origin(s)
-            self.create_image(x0, y0, image=PIECES.get(piece.symbol(), sq), anchor="nw")
+        if not self.app.hide_pieces:
+            for s, piece in board.piece_map().items():
+                x0, y0 = self.sq_origin(s)
+                self.create_image(x0, y0, image=PIECES.get(piece.symbol(), sq), anchor="nw")
 
         for a, b in self.app.arrows:
             self.draw_arrow(a, b, ARROW_COLOR, draft=False)
@@ -550,13 +551,17 @@ class ChessTeachApp(tk.Tk):
         self.selected = None
         self.last_move = None
         self.arrows = []
-        self.marks = set()
+        self.marks = {}
         self.arrow_start = None
         self.arrow_cur = None
         self.best_moves = []
         self.best_scores = []
         self.show_coords = True
         self.board_hidden = False
+        self.hide_pieces = False
+        self.mark_colors = ["#ffd54f", "#f44336", "#2196f3", "#4caf50", "#9c27b0"]
+        self.mark_color_index = 0
+        self.current_node = None
         self.mark_mode = False
         self.flipped = False
         self.edit_mode = False
@@ -597,11 +602,23 @@ class ChessTeachApp(tk.Tk):
         self.bind("<F11>", lambda e: self.toggle_fullscreen())
         self.bind("<Escape>", lambda e: self.exit_fullscreen())
         self.bind("<F2>", lambda e: self.toggle_cover_key())
-        self.bind("<Control-z>", lambda e: self.undo())
-        self.bind("<Left>", lambda e: self.undo())
-        self.bind("<Right>", lambda e: self.game_next())
-        self.bind("r", lambda e: self.reset())
+        self.bind("<Control-z>", lambda e: self._prev_kb(e))
+        self.bind("<Left>", lambda e: self._prev_kb(e))
+        self.bind("<Right>", lambda e: self._next_kb(e))
+        self.bind("<Home>", lambda e: self._goto_start_kb(e))
+        self.bind("<End>", lambda e: self._goto_end_kb(e))
+        self.bind("<Up>", lambda e: self._exercise_kb(e, -1))
+        self.bind("<Down>", lambda e: self._exercise_kb(e, 1))
+        self.bind("<Prior>", lambda e: self._tab_kb(e, -1))
+        self.bind("<Next>", lambda e: self._tab_kb(e, 1))
+        self.bind("r", lambda e: self._reset_kb(e))
+        self.bind("n", lambda e: self._new_game_kb(e))
+        self.bind("h", lambda e: self._toggle_hide_kb(e))
+        self.bind("m", lambda e: self._toggle_mark_kb(e))
+        self.bind("c", lambda e: self._cycle_mark_color_kb(e))
+        self.bind("a", lambda e: self._toggle_analyse_kb(e))
         self.protocol("WM_DELETE_WINDOW", self.on_close)
+        self.board_canvas.focus_set()
 
     # -- Daten (Verzeichnisstruktur) ---------------------------------------
     def load_data(self):
@@ -681,6 +698,9 @@ class ChessTeachApp(tk.Tk):
         self.cover_btn = ttk.Checkbutton(bar, text="Brett verdecken", variable=self.cover_var,
                                          command=self.toggle_cover)
         self.cover_btn.pack(side="left", padx=2)
+        self.hide_var = tk.BooleanVar(value=False)
+        ttk.Checkbutton(bar, text="Figuren verstecken", variable=self.hide_var,
+                        command=self.toggle_hide_pieces).pack(side="left", padx=2)
         ttk.Button(bar, text="Pfeile weg", command=self.clear_arrows).pack(side="left", padx=2)
         ttk.Button(bar, text="Mark. weg", command=self.clear_marks).pack(side="left", padx=2)
 
@@ -891,6 +911,7 @@ class ChessTeachApp(tk.Tk):
                 else:
                     self.selected_lesson = None
                     node = data
+                    self.current_node = node
                     if "fen" in node:
                         self.load_fen(node["fen"])
                     elif "pgn" in node:
@@ -998,7 +1019,7 @@ class ChessTeachApp(tk.Tk):
         self.selected = None
         self.last_move = None
         self.arrows = []
-        self.marks = set()
+        self.marks = {}
         self.best_moves = []
         self.update_content_field()
         self._sync_move_list()
@@ -1015,7 +1036,7 @@ class ChessTeachApp(tk.Tk):
         self.loaded_fen = self.game_base.fen()
         self.selected = None
         self.arrows = []
-        self.marks = set()
+        self.marks = {}
         self.highlights = []
         self.lines = []
         self.best_moves = []
@@ -1041,7 +1062,7 @@ class ChessTeachApp(tk.Tk):
         i = max(0, min(len(self.game_steps), i))
         b = self.game_base.copy()
         self.arrows = []
-        self.marks = set()
+        self.marks = {}
         self.highlights = []
         self.lines = []
         self.last_move = None
@@ -1053,7 +1074,7 @@ class ChessTeachApp(tk.Tk):
             elif kind == "arrow":
                 self.arrows.append((st[1], st[2]))
             elif kind == "mark":
-                self.marks.add(st[1])
+                self.marks[st[1]] = self.mark_colors[self.mark_color_index]
             elif kind == "highlight":
                 self.highlights.append(st[1])
             elif kind == "rank":
@@ -1061,7 +1082,7 @@ class ChessTeachApp(tk.Tk):
             elif kind == "file":
                 self.lines.append(("file", st[1]))
             elif kind == "clear":
-                self.arrows = []; self.marks = set(); self.highlights = []; self.lines = []
+                self.arrows = []; self.marks = {}; self.highlights = []; self.lines = []
         self.board = b
         self.step_index = i
         self.game_index = move_count
@@ -1149,10 +1170,107 @@ class ChessTeachApp(tk.Tk):
 
     def toggle_mark(self, sq):
         if sq in self.marks:
-            self.marks.discard(sq)
+            del self.marks[sq]
         else:
-            self.marks.add(sq)
+            self.marks[sq] = self.mark_colors[self.mark_color_index]
         self.board_canvas.redraw()
+
+    def cycle_mark_color(self):
+        if self.mark_colors:
+            self.mark_color_index = (self.mark_color_index + 1) % len(self.mark_colors)
+            self.board_canvas.redraw()
+
+    def toggle_hide_pieces(self):
+        self.hide_pieces = not self.hide_pieces
+        self.hide_var.set(self.hide_pieces)
+        self.board_canvas.redraw()
+
+    # -- Tastatur-Shortcuts ---------------------------------------
+    def _typing(self):
+        w = self.focus_get()
+        return isinstance(w, (tk.Entry, tk.Text, ttk.Entry, ttk.Spinbox, tk.Listbox))
+
+    def _prev_kb(self, e):
+        if not self._typing(): self.undo()
+
+    def _next_kb(self, e):
+        if not self._typing(): self.game_next()
+
+    def _goto_start_kb(self, e):
+        if not self._typing(): self.game_start()
+
+    def _goto_end_kb(self, e):
+        if not self._typing(): self.game_end()
+
+    def _reset_kb(self, e):
+        if not self._typing(): self.reset()
+
+    def _new_game_kb(self, e):
+        if not self._typing(): self.new_game()
+
+    def _toggle_hide_kb(self, e):
+        if not self._typing(): self.toggle_hide_pieces()
+
+    def _toggle_mark_kb(self, e):
+        if not self._typing(): self.toggle_mark_mode()
+
+    def _cycle_mark_color_kb(self, e):
+        if not self._typing(): self.cycle_mark_color()
+
+    def _toggle_analyse_kb(self, e):
+        if not self._typing():
+            self.analyse_var.set(not self.analyse_var.get())
+            self.toggle_analyse()
+
+    def _exercise_kb(self, e, delta):
+        if not self._typing(): self.goto_relative(delta)
+
+    def _tab_kb(self, e, delta):
+        if not self._typing(): self.goto_tab_relative(delta)
+
+    def _flatten_tab(self):
+        if self.current_tab_index == "figures" or not (0 <= self.current_tab_index < len(self.tabs)):
+            return []
+        tab = self.tabs[self.current_tab_index]
+        nodes = []
+        for lesson in tab["lessons"]:
+            nodes.extend(lesson["exercises"])
+        nodes.extend(tab["exercises"])
+        return nodes
+
+    def goto_relative(self, delta):
+        nodes = self._flatten_tab()
+        if not nodes:
+            return
+        idx = None
+        if self.current_node is not None:
+            for i, n in enumerate(nodes):
+                if (n.get("_path") == self.current_node.get("_path")
+                        and n.get("_index") == self.current_node.get("_index")):
+                    idx = i
+                    break
+        if idx is None:
+            idx = 0 if delta > 0 else len(nodes) - 1
+        else:
+            idx = (idx + delta) % len(nodes)
+        node = nodes[idx]
+        self.current_node = node
+        if "fen" in node:
+            self.load_fen(node["fen"])
+        elif "pgn" in node:
+            self.load_pgn(node["pgn"])
+
+    def goto_tab_relative(self, delta):
+        n = len(self.tabs)
+        if n == 0:
+            return
+        cur = self.current_tab_index
+        if cur == "figures":
+            cur = n if delta < 0 else -1
+        cur = (cur + delta) % n
+        self.current_tab_index = cur
+        self.notebook.select(cur)
+        self.render_tab(cur)
 
     def set_palette_tool(self, sym):
         self.palette_tool = None if self.palette_tool == sym else sym
@@ -1272,7 +1390,7 @@ class ChessTeachApp(tk.Tk):
         self.board_canvas.redraw()
 
     def clear_marks(self):
-        self.marks = set()
+        self.marks = {}
         self.board_canvas.redraw()
 
     def load_from_entry(self):
@@ -1548,6 +1666,8 @@ class ChessTeachApp(tk.Tk):
         self.flip_var.set(self.flipped)
         self.engine_time = float(cfg.get("engine_time", 1.5))
         self.engine_multi = int(cfg.get("engine_multi", 1))
+        self.mark_colors = cfg.get("mark_colors", ["#ffd54f", "#f44336", "#2196f3", "#4caf50", "#9c27b0"])
+        self.mark_color_index = int(cfg.get("mark_color_index", 0)) % max(1, len(self.mark_colors))
         if cfg.get("last_fen"):
             try:
                 self.board = chess.Board(cfg["last_fen"])
@@ -1555,7 +1675,7 @@ class ChessTeachApp(tk.Tk):
                 self.selected = None
                 self.last_move = None
                 self.arrows = []
-                self.marks = set()
+                self.marks = {}
                 self.best_moves = []
                 self.board_canvas.redraw()
             except Exception:
@@ -1571,6 +1691,8 @@ class ChessTeachApp(tk.Tk):
             "flipped": self.flipped,
             "engine_time": self.engine_time,
             "engine_multi": self.engine_multi,
+            "mark_colors": self.mark_colors,
+            "mark_color_index": self.mark_color_index,
             "last_fen": self.loaded_fen,
         }
         with open(CONFIG_FILE, "w", encoding="utf-8") as f:
