@@ -1252,7 +1252,7 @@ class ChessTeachApp(tk.Tk):
         if idx is None:
             idx = 0 if delta > 0 else len(nodes) - 1
         else:
-            idx = (idx + delta) % len(nodes)
+            idx = max(0, min(len(nodes) - 1, idx + delta))
         node = nodes[idx]
         self.current_node = node
         if "fen" in node:
@@ -1267,7 +1267,7 @@ class ChessTeachApp(tk.Tk):
         cur = self.current_tab_index
         if cur == "figures":
             cur = n if delta < 0 else -1
-        cur = (cur + delta) % n
+        cur = max(0, min(n - 1, cur + delta))
         self.current_tab_index = cur
         self.notebook.select(cur)
         self.render_tab(cur)
