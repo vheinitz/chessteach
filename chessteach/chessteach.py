@@ -63,44 +63,48 @@ FILE_EXTS = (".fen", ".pgn")
 
 HELP_TEXT = """ChessTeach — Hilfe
 
-Tastatur-Shortcuts
-──────────────────
-←  /  →         vorheriger / nächster Zug (Schritt)
-Home / Ende     an den Anfang / ans Ende
-↑  /  ↓        vorherige / nächste Übung laden
-Bild↑ / Bild↓  vorheriger / nächster Tab
-n               Neue Partie
-r               Stellung zurücksetzen
-h               Figuren verstecken / anzeigen
-m               Markieren an/aus
-c               Markierungsfarbe wechseln
-a               Analyse an/aus
-F1              Diese Hilfe
-F2              Brett verdecken
-F11 / Esc       Vollbild an/aus
-Strg+Z          Rückgängig
+Navigation: erst Modus wählen, dann ← / →
+──────────────────────────────────────────
+t   Tabs (Bibliothek rechts)
+z   Züge (Partie/Stellung durchgehen)
+l   Lektionen (aufklappen + erste Übung laden)
+u   Übungen/Stellungen (nacheinander laden)
+← / →   im gewählten Modus zurück / weiter
+
+Weitere Tastatur
+────────────────
+Home / Ende   an den Anfang / ans Ende
+n             Neue Partie
+r             Stellung zurücksetzen
+h             Figuren verstecken / anzeigen
+m             Markieren an/aus
+c             Markierungsfarbe wechseln
+a             Analyse an/aus
+F1            Diese Hilfe
+F2            Brett verdecken
+F11 / Esc     Vollbild an/aus
+Strg+Z        Rückgängig
 
 Maus
 ────
-Linksklick      Figur auswählen, dann Zielfeld anklicken (Zug)
+Linksklick        Figur auswählen, dann Zielfeld anklicken (Zug)
 Rechtsklick+Ziehen  Pfeil zeichnen
-„Markieren“ an  → Linksklick markiert Felder (aktuelle Farbe)
+„Markieren“ an → Linksklick markiert Felder (aktuelle Farbe)
 
 Markierungsfarben (Wechsel mit c)
-───────────────────────────────
+────────────────────────────────
 gelb, rot, blau, grün, lila
-(Liste in ~/.config/chessteach/config.json unter „mark_colors“ änderbar)
+(Liste in ~/.config/chessteach/config.json unter „mark_colors“)
 
 Lernmodus: Befehle in PGN-Kommentaren
-──────────────────────────────────────
-[Sq e4,d5]     Quadrate hervorheben (blau)
-[Mk e4]        Felder markieren
-[Ar e2e4]      Pfeil zeichnen
-[Rank 4]       Reihe 4 hervorheben (horizontal)
-[File e]       Linie e hervorheben (vertikal)
-[Clear]        alle Markierungen löschen
-
-Jeder Zug und jedes [ … ] erscheint als eigener Schritt (▶ / ◀).
+─────────────────────────────────────
+[Sq e4,d5]   Quadrate hervorheben (blau)
+[Mk e4]      Felder markieren
+[Ar e2e4]    Pfeil zeichnen
+[Rank 4]     Reihe 4 hervorheben (horizontal)
+[File e]     Linie e hervorheben (vertikal)
+[Clear]      alle Markierungen löschen
+Jeder Zug und jedes [ … ] = ein Schritt (▶ / ◀).
 """
 
 
@@ -605,6 +609,7 @@ class ChessTeachApp(tk.Tk):
         self.mark_colors = ["#ffd54f", "#f44336", "#2196f3", "#4caf50", "#9c27b0"]
         self.mark_color_index = 0
         self.current_node = None
+        self.nav_mode = "moves"
         self.mark_mode = False
         self.flipped = False
         self.edit_mode = False
@@ -651,16 +656,19 @@ class ChessTeachApp(tk.Tk):
         self.bind("<Right>", lambda e: self._next_kb(e))
         self.bind("<Home>", lambda e: self._goto_start_kb(e))
         self.bind("<End>", lambda e: self._goto_end_kb(e))
-        self.bind("<Up>", lambda e: self._exercise_kb(e, -1))
-        self.bind("<Down>", lambda e: self._exercise_kb(e, 1))
-        self.bind("<Prior>", lambda e: self._tab_kb(e, -1))
-        self.bind("<Next>", lambda e: self._tab_kb(e, 1))
         self.bind("r", lambda e: self._reset_kb(e))
         self.bind("n", lambda e: self._new_game_kb(e))
         self.bind("h", lambda e: self._toggle_hide_kb(e))
         self.bind("m", lambda e: self._toggle_mark_kb(e))
         self.bind("c", lambda e: self._cycle_mark_color_kb(e))
         self.bind("a", lambda e: self._toggle_analyse_kb(e))
+        self.bind("t", lambda e: self._set_nav_mode(e, "tabs"))
+        self.bind("z", lambda e: self._set_nav_mode(e, "moves"))
+        self.bind("l", lambda e: self._set_nav_mode(e, "lessons"))
+        self.bind("u", lambda e: self._set_nav_mode(e, "exercises"))
+        # Tab-Fokus-Traversal deaktivieren (kein Hängenbleiben in Eingabefeldern)
+        self.bind_all("<Tab>", lambda e: "break")
+        self.bind_all("<Shift-Tab>", lambda e: "break")
         self.protocol("WM_DELETE_WINDOW", self.on_close)
         self.board_canvas.focus_set()
 
@@ -755,6 +763,8 @@ class ChessTeachApp(tk.Tk):
                                            command=self.toggle_analyse)
         self.analyse_btn.pack(side="left", padx=2)
 
+        self.nav_lbl = tk.Label(bar, text="Nav: Züge", font=("DejaVu Sans", 10), fg="#555555")
+        self.nav_lbl.pack(side="left", padx=4)
         self.status_lbl = tk.Label(bar, text="", font=("DejaVu Sans", 13, "bold"),
                                    fg="#1a237e", anchor="w")
         self.status_lbl.pack(side="left", padx=10, fill="x", expand=True)
@@ -827,6 +837,7 @@ class ChessTeachApp(tk.Tk):
         ttk.Label(add, text="FEN oder PGN").pack(anchor="w", pady=(4, 0))
         self.content_text = tk.Text(add, height=3, font=("DejaVu Sans Mono", 9), wrap="none")
         self.content_text.pack(fill="x")
+        self.content_text.bind("<Tab>", lambda e: "break")
         btns = ttk.Frame(add)
         btns.pack(fill="x", pady=4)
         ttk.Button(btns, text="Laden", command=self.load_from_entry).pack(side="left", padx=2)
@@ -867,7 +878,9 @@ class ChessTeachApp(tk.Tk):
             pass
         return chess.STARTING_FEN
 
-    def _draw_node_row(self, canvas, x, y, size, node):
+    def _draw_node_row(self, canvas, x, y, size, node, selected=False):
+        if selected:
+            canvas.create_rectangle(x - 2, y - 2, x + 398, y + size + 2, fill="#fff59d", width=0)
         fen = self._node_preview_fen(node)
         draw_mini_board(canvas, x, y, size, fen)
         tx = x + size + 8
@@ -911,7 +924,9 @@ class ChessTeachApp(tk.Tk):
             y += 28
             if exp:
                 for ni, node in enumerate(lesson["exercises"]):
-                    self._draw_node_row(canvas, x + ind, y, size, node)
+                    sel = (self.current_node is not None
+                           and self._node_key(node) == self._node_key(self.current_node))
+                    self._draw_node_row(canvas, x + ind, y, size, node, sel)
                     canvas.create_text(del_x, y + size // 2, text="✕", anchor="center",
                                        font=("DejaVu Sans", 12, "bold"), fill="#c62828")
                     hits.append((y, y + size, "exercise", node))
@@ -922,7 +937,9 @@ class ChessTeachApp(tk.Tk):
             y += 6
             y = self._section_header(canvas, x, y, "Übungen")
             for ei, node in enumerate(tab["exercises"]):
-                self._draw_node_row(canvas, x, y, size, node)
+                sel = (self.current_node is not None
+                       and self._node_key(node) == self._node_key(self.current_node))
+                self._draw_node_row(canvas, x, y, size, node, sel)
                 canvas.create_text(del_x, y + size // 2, text="✕", anchor="center",
                                    font=("DejaVu Sans", 12, "bold"), fill="#c62828")
                 hits.append((y, y + size, "exercise", node))
@@ -956,10 +973,8 @@ class ChessTeachApp(tk.Tk):
                     self.selected_lesson = None
                     node = data
                     self.current_node = node
-                    if "fen" in node:
-                        self.load_fen(node["fen"])
-                    elif "pgn" in node:
-                        self.load_pgn(node["pgn"])
+                    self._load_node(node)
+                    self.render_tab(tab_index)
                 return
 
     def _remove_node(self, node):
@@ -1234,11 +1249,43 @@ class ChessTeachApp(tk.Tk):
         w = self.focus_get()
         return isinstance(w, (tk.Entry, tk.Text, ttk.Entry, ttk.Spinbox, tk.Listbox))
 
+    def _node_key(self, node):
+        return (node.get("_path"), node.get("_index"))
+
+    def _load_node(self, node):
+        if "fen" in node:
+            self.load_fen(node["fen"])
+        elif "pgn" in node:
+            self.load_pgn(node["pgn"])
+
+    def _update_nav_label(self):
+        names = {"tabs": "Tabs", "moves": "Züge", "lessons": "Lektionen", "exercises": "Übungen"}
+        self.nav_lbl.config(text="Nav: " + names.get(self.nav_mode, "?"))
+
+    def _set_nav_mode(self, e, mode):
+        if self._typing():
+            return
+        self.nav_mode = mode
+        self._update_nav_label()
+
+    def _nav(self, delta):
+        if self.nav_mode == "tabs":
+            self.goto_tab_relative(delta)
+        elif self.nav_mode == "lessons":
+            self.goto_lesson_relative(delta)
+        elif self.nav_mode == "exercises":
+            self.goto_relative(delta)
+        else:  # moves
+            if delta < 0:
+                self.undo()
+            else:
+                self.game_next()
+
     def _prev_kb(self, e):
-        if not self._typing(): self.undo()
+        if not self._typing(): self._nav(-1)
 
     def _next_kb(self, e):
-        if not self._typing(): self.game_next()
+        if not self._typing(): self._nav(1)
 
     def _goto_start_kb(self, e):
         if not self._typing(): self.game_start()
@@ -1266,43 +1313,60 @@ class ChessTeachApp(tk.Tk):
             self.analyse_var.set(not self.analyse_var.get())
             self.toggle_analyse()
 
-    def _exercise_kb(self, e, delta):
-        if not self._typing(): self.goto_relative(delta)
-
-    def _tab_kb(self, e, delta):
-        if not self._typing(): self.goto_tab_relative(delta)
-
     def _flatten_tab(self):
         if self.current_tab_index == "figures" or not (0 <= self.current_tab_index < len(self.tabs)):
             return []
         tab = self.tabs[self.current_tab_index]
-        nodes = []
-        for lesson in tab["lessons"]:
-            nodes.extend(lesson["exercises"])
-        nodes.extend(tab["exercises"])
-        return nodes
+        items = []
+        for li, lesson in enumerate(tab["lessons"]):
+            for node in lesson["exercises"]:
+                items.append((node, li))
+        for node in tab["exercises"]:
+            items.append((node, None))
+        return items
 
     def goto_relative(self, delta):
-        nodes = self._flatten_tab()
-        if not nodes:
+        items = self._flatten_tab()
+        if not items:
             return
         idx = None
         if self.current_node is not None:
-            for i, n in enumerate(nodes):
-                if (n.get("_path") == self.current_node.get("_path")
-                        and n.get("_index") == self.current_node.get("_index")):
+            for i, (n, _) in enumerate(items):
+                if self._node_key(n) == self._node_key(self.current_node):
                     idx = i
                     break
         if idx is None:
-            idx = 0 if delta > 0 else len(nodes) - 1
+            idx = 0 if delta > 0 else len(items) - 1
         else:
-            idx = max(0, min(len(nodes) - 1, idx + delta))
-        node = nodes[idx]
+            idx = max(0, min(len(items) - 1, idx + delta))
+        node, li = items[idx]
         self.current_node = node
-        if "fen" in node:
-            self.load_fen(node["fen"])
-        elif "pgn" in node:
-            self.load_pgn(node["pgn"])
+        if li is not None:
+            self.expanded.setdefault(self.current_tab_index, set()).add(li)
+            self.selected_lesson = (self.current_tab_index, li)
+        self._load_node(node)
+        self.render_tab(self.current_tab_index)
+
+    def goto_lesson_relative(self, delta):
+        if self.current_tab_index == "figures" or not (0 <= self.current_tab_index < len(self.tabs)):
+            return
+        lessons = self.tabs[self.current_tab_index]["lessons"]
+        if not lessons:
+            return
+        cur = None
+        if self.selected_lesson and self.selected_lesson[0] == self.current_tab_index:
+            cur = self.selected_lesson[1]
+        if cur is None:
+            cur = 0 if delta > 0 else len(lessons) - 1
+        else:
+            cur = max(0, min(len(lessons) - 1, cur + delta))
+        self.expanded.setdefault(self.current_tab_index, set()).add(cur)
+        self.selected_lesson = (self.current_tab_index, cur)
+        exs = lessons[cur]["exercises"]
+        if exs:
+            self.current_node = exs[0]
+            self._load_node(exs[0])
+        self.render_tab(self.current_tab_index)
 
     def goto_tab_relative(self, delta):
         n = len(self.tabs)
@@ -1686,7 +1750,9 @@ class ChessTeachApp(tk.Tk):
         win = tk.Toplevel(self)
         win.title("ChessTeach — Hilfe")
         win.transient(self)
-        win.geometry("760x660")
+        sh = self.winfo_screenheight()
+        sw = self.winfo_screenwidth()
+        win.geometry(f"820x{max(600, sh - 60)}+{(sw - 820)//2}+20")
         body = ttk.Frame(win)
         body.pack(fill="both", expand=True, padx=8, pady=8)
         txt = tk.Text(body, wrap="word", font=("DejaVu Sans", 11), padx=10, pady=6)
