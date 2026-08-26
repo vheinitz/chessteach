@@ -52,6 +52,12 @@ LINE_COLOR = "#ffb74d"
 LAST_COLOR = "#f9a825"
 CHECK_COLOR = "#d32f2f"
 
+
+def square_color(s):
+    """Farbe des Feldes s (0 = a1). a1 ist dunkel, h1 hell (weißes Feld unten rechts)."""
+    return DARK if (s % 8 + s // 8) % 2 == 0 else LIGHT
+
+
 FILE_EXTS = (".fen", ".pgn")
 
 
@@ -319,7 +325,7 @@ def draw_mini_board(canvas, x0, y0, size, fen):
     board = chess.Board(fen)
     for s in range(64):
         f, r = s % 8, s // 8
-        color = LIGHT if (f + r) % 2 == 0 else DARK
+        color = square_color(s)
         canvas.create_rectangle(x0 + f * sq, y0 + (7 - r) * sq,
                                 x0 + (f + 1) * sq, y0 + (7 - r + 1) * sq,
                                 fill=color, width=0)
@@ -417,9 +423,17 @@ class BoardCanvas(tk.Canvas):
 
         for s in range(64):
             x0, y0 = self.sq_origin(s)
-            f, r = s % 8, s // 8
-            color = LIGHT if (f + r) % 2 == 0 else DARK
+            color = square_color(s)
             self.create_rectangle(x0, y0, x0 + sq, y0 + sq, fill=color, width=0)
+
+        if self.app.board_hidden:
+            # Abgedeckt: nur die Felder zeichnen, Figuren/Markierungen ausblenden.
+            cx = self.off_x + self.margin + 4 * sq
+            cy = self.off_y + self.margin + 4 * sq
+            self.create_text(cx, cy, text="Brett verdeckt",
+                             fill="#9e9e9e",
+                             font=("DejaVu Sans", max(14, sq // 2), "bold"))
+            return
 
         if self.app.last_move:
             for s in [self.app.last_move.from_square, self.app.last_move.to_square]:
@@ -542,6 +556,7 @@ class ChessTeachApp(tk.Tk):
         self.best_moves = []
         self.best_scores = []
         self.show_coords = True
+        self.board_hidden = False
         self.mark_mode = False
         self.flipped = False
         self.edit_mode = False
@@ -581,6 +596,7 @@ class ChessTeachApp(tk.Tk):
 
         self.bind("<F11>", lambda e: self.toggle_fullscreen())
         self.bind("<Escape>", lambda e: self.exit_fullscreen())
+        self.bind("<F2>", lambda e: self.toggle_cover_key())
         self.bind("<Control-z>", lambda e: self.undo())
         self.bind("<Left>", lambda e: self.undo())
         self.bind("<Right>", lambda e: self.game_next())
@@ -661,6 +677,10 @@ class ChessTeachApp(tk.Tk):
         self.coord_btn.state(["selected"])
         self.mark_btn = ttk.Checkbutton(bar, text="Markieren", command=self.toggle_mark_mode)
         self.mark_btn.pack(side="left", padx=2)
+        self.cover_var = tk.BooleanVar(value=False)
+        self.cover_btn = ttk.Checkbutton(bar, text="Brett verdecken", variable=self.cover_var,
+                                         command=self.toggle_cover)
+        self.cover_btn.pack(side="left", padx=2)
         ttk.Button(bar, text="Pfeile weg", command=self.clear_arrows).pack(side="left", padx=2)
         ttk.Button(bar, text="Mark. weg", command=self.clear_marks).pack(side="left", padx=2)
 
@@ -1231,6 +1251,15 @@ class ChessTeachApp(tk.Tk):
         self.show_coords = not self.show_coords
         self.board_canvas.redraw()
 
+    def toggle_cover(self):
+        self.board_hidden = self.cover_var.get()
+        self.board_canvas.redraw()
+        self.update_status()
+
+    def toggle_cover_key(self):
+        self.cover_var.set(not self.cover_var.get())
+        self.toggle_cover()
+
     def toggle_mark_mode(self):
         self.mark_mode = not self.mark_mode
         self.selected = None
@@ -1343,6 +1372,9 @@ class ChessTeachApp(tk.Tk):
 
     # -- Status / Content ---------------------------------------------------
     def update_status(self):
+        if self.board_hidden:
+            self.status_lbl.config(text="Brett verdeckt — Züge/Aufbau weiter möglich")
+            return
         if self.edit_mode:
             self.status_lbl.config(text="Bearbeiten-Modus — freies Spiel")
             return
