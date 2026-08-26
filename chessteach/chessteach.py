@@ -61,6 +61,49 @@ def square_color(s):
 FILE_EXTS = (".fen", ".pgn")
 
 
+HELP_TEXT = """ChessTeach — Hilfe
+
+Tastatur-Shortcuts
+──────────────────
+←  /  →         vorheriger / nächster Zug (Schritt)
+Home / Ende     an den Anfang / ans Ende
+↑  /  ↓        vorherige / nächste Übung laden
+Bild↑ / Bild↓  vorheriger / nächster Tab
+n               Neue Partie
+r               Stellung zurücksetzen
+h               Figuren verstecken / anzeigen
+m               Markieren an/aus
+c               Markierungsfarbe wechseln
+a               Analyse an/aus
+F1              Diese Hilfe
+F2              Brett verdecken
+F11 / Esc       Vollbild an/aus
+Strg+Z          Rückgängig
+
+Maus
+────
+Linksklick      Figur auswählen, dann Zielfeld anklicken (Zug)
+Rechtsklick+Ziehen  Pfeil zeichnen
+„Markieren“ an  → Linksklick markiert Felder (aktuelle Farbe)
+
+Markierungsfarben (Wechsel mit c)
+───────────────────────────────
+gelb, rot, blau, grün, lila
+(Liste in ~/.config/chessteach/config.json unter „mark_colors“ änderbar)
+
+Lernmodus: Befehle in PGN-Kommentaren
+──────────────────────────────────────
+[Sq e4,d5]     Quadrate hervorheben (blau)
+[Mk e4]        Felder markieren
+[Ar e2e4]      Pfeil zeichnen
+[Rank 4]       Reihe 4 hervorheben (horizontal)
+[File e]       Linie e hervorheben (vertikal)
+[Clear]        alle Markierungen löschen
+
+Jeder Zug und jedes [ … ] erscheint als eigener Schritt (▶ / ◀).
+"""
+
+
 def sanitize(s):
     s = (s.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue")
           .replace("Ä", "Ae").replace("Ö", "Oe").replace("Ü", "Ue").replace("ß", "ss"))
@@ -599,6 +642,7 @@ class ChessTeachApp(tk.Tk):
         self.update_status()
         self.update_content_field()
 
+        self.bind("<F1>", lambda e: self.show_help())
         self.bind("<F11>", lambda e: self.toggle_fullscreen())
         self.bind("<Escape>", lambda e: self.exit_fullscreen())
         self.bind("<F2>", lambda e: self.toggle_cover_key())
@@ -1637,6 +1681,25 @@ class ChessTeachApp(tk.Tk):
         btns.grid(row=2, column=0, columnspan=2, pady=10)
         ttk.Button(btns, text="Speichern", command=save).pack(side="left", padx=4)
         ttk.Button(btns, text="Abbrechen", command=win.destroy).pack(side="left", padx=4)
+
+    def show_help(self, event=None):
+        win = tk.Toplevel(self)
+        win.title("ChessTeach — Hilfe")
+        win.transient(self)
+        win.geometry("760x660")
+        body = ttk.Frame(win)
+        body.pack(fill="both", expand=True, padx=8, pady=8)
+        txt = tk.Text(body, wrap="word", font=("DejaVu Sans", 11), padx=10, pady=6)
+        scroll = ttk.Scrollbar(body, orient="vertical", command=txt.yview)
+        txt.configure(yscrollcommand=scroll.set)
+        scroll.pack(side="right", fill="y")
+        txt.pack(side="left", fill="both", expand=True)
+        txt.insert("1.0", HELP_TEXT)
+        txt.configure(state="disabled")
+        ttk.Button(win, text="Schließen", command=win.destroy).pack(pady=6)
+        win.bind("<Escape>", lambda e: win.destroy())
+        win.bind("<F1>", lambda e: win.destroy())
+        win.focus_set()
 
     # -- Vollbild & Konfig --------------------------------------------------
     def toggle_fullscreen(self):
