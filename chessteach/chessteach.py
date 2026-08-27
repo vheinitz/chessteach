@@ -1346,6 +1346,9 @@ class ChessTeachApp(tk.Tk):
             self.selected_lesson = (self.current_tab_index, li)
         self._load_node(node)
         self.render_tab(self.current_tab_index)
+        y = self._find_item_y(self.current_tab_index, "exercise", node)
+        if y is not None:
+            self._scroll_into_view(self.current_tab_index, y)
 
     def goto_lesson_relative(self, delta):
         if self.current_tab_index == "figures" or not (0 <= self.current_tab_index < len(self.tabs)):
@@ -1367,6 +1370,9 @@ class ChessTeachApp(tk.Tk):
             self.current_node = exs[0]
             self._load_node(exs[0])
         self.render_tab(self.current_tab_index)
+        y = self._find_item_y(self.current_tab_index, "lesson", cur)
+        if y is not None:
+            self._scroll_to_top(self.current_tab_index, y)
 
     def goto_tab_relative(self, delta):
         n = len(self.tabs)
@@ -1379,6 +1385,45 @@ class ChessTeachApp(tk.Tk):
         self.current_tab_index = cur
         self.notebook.select(cur)
         self.render_tab(cur)
+
+    def _find_item_y(self, tab_index, kind, data):
+        for y0, y1, k, d in self.tab_hits.get(tab_index, []):
+            if k != kind:
+                continue
+            if kind == "lesson" and d == data:
+                return y0
+            if kind == "exercise" and self._node_key(d) == self._node_key(data):
+                return y0
+        return None
+
+    def _scroll_to_top(self, tab_index, y):
+        canvas = self.tab_canvases.get(tab_index)
+        if not canvas:
+            return
+        try:
+            parts = [float(x) for x in canvas.cget("scrollregion").split()]
+            total = parts[3]
+            if total > 0:
+                canvas.yview_moveto(max(0.0, min(1.0, y / total)))
+        except Exception:
+            pass
+
+    def _scroll_into_view(self, tab_index, y, height=84):
+        canvas = self.tab_canvases.get(tab_index)
+        if not canvas:
+            return
+        try:
+            parts = [float(x) for x in canvas.cget("scrollregion").split()]
+            total = parts[3]
+            if total <= 0:
+                return
+            top, bottom = canvas.yview()
+            item_top = y / total
+            item_bottom = (y + height) / total
+            if item_top < top or item_bottom > bottom:
+                canvas.yview_moveto(max(0.0, min(1.0, item_top)))
+        except Exception:
+            pass
 
     def set_palette_tool(self, sym):
         self.palette_tool = None if self.palette_tool == sym else sym
