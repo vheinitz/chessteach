@@ -3,4 +3,8 @@
 [FEN "6k1/8/8/p7/8/8/8/7K w - - 0 1"]
 [Result "0-1"]
 
-1. Kg2 { [Sq a5] [Sq a1] [Sq d5] [Sq d1] [Ar h1g2] Der weiße König ist außerhalb des Quadrats a5-a1-d1-d5 — er kann den Bauern nicht einholen. } a4 2. Kf3 a3 3. Ke4 a2 4. Kd5 a1=Q { [Sq a1] [Ar a2a1] Der Bauer wird zur Dame! } 0-1
+1. Kf6 { [Sq a5] [Sq a1] [Sq d5] [Sq d1] [Ar h1g2] Der weiße König ist außerhalb des Quadrats a5-a1-d1-d5 — er 
+kann den Bauern nicht einholen. } a4 
+2. Ke5 e3 
+3. Ke4 a2 
+4. Kd5 a1=Q { [Sq a1] [Ar a2a1] Der Bauer wird zur Dame! } 0-1
