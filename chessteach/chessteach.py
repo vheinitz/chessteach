@@ -76,12 +76,12 @@ Weitere Tastatur
 Home / Ende   an den Anfang / ans Ende
 n             Neue Partie
 r             Stellung zurücksetzen
-h             Figuren verstecken / anzeigen
+h             Brett verdecken
+k             Koordinaten an/aus
 m             Markieren an/aus
 c             Markierungsfarbe wechseln
 a             Analyse an/aus
 F1            Diese Hilfe
-F2            Brett verdecken
 F11 / Esc     Vollbild an/aus
 Strg+Z        Rückgängig
 
@@ -541,10 +541,9 @@ class BoardCanvas(tk.Canvas):
         if self.app.show_coords:
             self.draw_coords()
 
-        if not self.app.hide_pieces:
-            for s, piece in board.piece_map().items():
-                x0, y0 = self.sq_origin(s)
-                self.create_image(x0, y0, image=PIECES.get(piece.symbol(), sq), anchor="nw")
+        for s, piece in board.piece_map().items():
+            x0, y0 = self.sq_origin(s)
+            self.create_image(x0, y0, image=PIECES.get(piece.symbol(), sq), anchor="nw")
 
         for a, b in self.app.arrows:
             self.draw_arrow(a, b, ARROW_COLOR, draft=False)
@@ -605,7 +604,6 @@ class ChessTeachApp(tk.Tk):
         self.best_scores = []
         self.show_coords = True
         self.board_hidden = False
-        self.hide_pieces = False
         self.mark_colors = ["#ffd54f", "#f44336", "#2196f3", "#4caf50", "#9c27b0"]
         self.mark_color_index = 0
         self.current_node = None
@@ -650,7 +648,6 @@ class ChessTeachApp(tk.Tk):
         self.bind("<F1>", lambda e: self.show_help())
         self.bind("<F11>", lambda e: self.toggle_fullscreen())
         self.bind("<Escape>", lambda e: self.exit_fullscreen())
-        self.bind("<F2>", lambda e: self.toggle_cover_key())
         self.bind("<Control-z>", lambda e: self._prev_kb(e))
         self.bind("<Left>", lambda e: self._prev_kb(e))
         self.bind("<Right>", lambda e: self._next_kb(e))
@@ -658,7 +655,8 @@ class ChessTeachApp(tk.Tk):
         self.bind("<End>", lambda e: self._goto_end_kb(e))
         self.bind("r", lambda e: self._reset_kb(e))
         self.bind("n", lambda e: self._new_game_kb(e))
-        self.bind("h", lambda e: self._toggle_hide_kb(e))
+        self.bind("h", lambda e: self.toggle_cover_key())
+        self.bind("k", lambda e: self._toggle_coords_kb(e))
         self.bind("m", lambda e: self._toggle_mark_kb(e))
         self.bind("c", lambda e: self._cycle_mark_color_kb(e))
         self.bind("a", lambda e: self._toggle_analyse_kb(e))
@@ -751,9 +749,6 @@ class ChessTeachApp(tk.Tk):
         self.cover_btn = ttk.Checkbutton(bar, text="Brett verdecken", variable=self.cover_var,
                                          command=self.toggle_cover)
         self.cover_btn.pack(side="left", padx=2)
-        self.hide_var = tk.BooleanVar(value=False)
-        ttk.Checkbutton(bar, text="Figuren verstecken", variable=self.hide_var,
-                        command=self.toggle_hide_pieces).pack(side="left", padx=2)
         ttk.Button(bar, text="Pfeile weg", command=self.clear_arrows).pack(side="left", padx=2)
         ttk.Button(bar, text="Mark. weg", command=self.clear_marks).pack(side="left", padx=2)
 
@@ -1240,11 +1235,6 @@ class ChessTeachApp(tk.Tk):
             self.mark_color_index = (self.mark_color_index + 1) % len(self.mark_colors)
             self.board_canvas.redraw()
 
-    def toggle_hide_pieces(self):
-        self.hide_pieces = not self.hide_pieces
-        self.hide_var.set(self.hide_pieces)
-        self.board_canvas.redraw()
-
     # -- Tastatur-Shortcuts ---------------------------------------
     def _typing(self):
         w = self.focus_get()
@@ -1300,8 +1290,8 @@ class ChessTeachApp(tk.Tk):
     def _new_game_kb(self, e):
         if not self._typing(): self.new_game()
 
-    def _toggle_hide_kb(self, e):
-        if not self._typing(): self.toggle_hide_pieces()
+    def _toggle_coords_kb(self, e):
+        if not self._typing(): self.toggle_coords()
 
     def _toggle_mark_kb(self, e):
         if not self._typing(): self.toggle_mark_mode()
@@ -1521,6 +1511,7 @@ class ChessTeachApp(tk.Tk):
 
     def toggle_coords(self):
         self.show_coords = not self.show_coords
+        self.coord_btn.state(["selected"] if self.show_coords else ["!selected"])
         self.board_canvas.redraw()
 
     def toggle_cover(self):
