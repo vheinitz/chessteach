@@ -1146,9 +1146,10 @@ class ChessTeachApp(tk.Tk):
             steps.append(st)
         while node.variations:
             node = node.variations[0]
-            steps.append(("move", node.move))
+            # Markierungen VOR dem Zug zeigen (sie erklären den Plan)
             for st in parse_annotation_comment(node.comment):
                 steps.append(st)
+            steps.append(("move", node.move))
         return steps
 
     def _rebuild_to_step(self, i):
@@ -1164,6 +1165,7 @@ class ChessTeachApp(tk.Tk):
             kind = st[0]
             if kind == "move":
                 b.push(st[1]); self.last_move = st[1]; move_count += 1
+                self.arrows = []; self.marks = {}; self.highlights = []; self.lines = []
             elif kind == "arrow":
                 self.arrows.append((st[1], st[2]))
             elif kind == "mark":
