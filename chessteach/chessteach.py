@@ -1567,6 +1567,7 @@ class ChessTeachApp(tk.Tk):
     def toggle_flip(self):
         self.flipped = self.flip_var.get()
         self.board_canvas.redraw()
+        self.draw_eval_bar()
 
     def toggle_coords(self):
         self.show_coords = not self.show_coords
@@ -1803,9 +1804,15 @@ class ChessTeachApp(tk.Tk):
             c.create_text(w / 2, h / 2, text="?", fill="#fff", font=("DejaVu Sans", 11, "bold"))
             return
         frac = max(0.0, min(1.0, self.eval_fraction))
-        c.create_rectangle(0, 0, w, h, fill="#3a3a3a", width=0)   # Schwarz unten
         wh = int(h * frac)
-        c.create_rectangle(0, 0, w, wh, fill="#f5f5f5", width=0)  # Weiß oben
+        if self.flipped:
+            # Brett gedreht: Weiß oben, Schwarz unten
+            c.create_rectangle(0, 0, w, h, fill="#3a3a3a", width=0)
+            c.create_rectangle(0, 0, w, wh, fill="#f5f5f5", width=0)
+        else:
+            # Weiß unten (Reihe 1), Schwarz oben (Reihe 8)
+            c.create_rectangle(0, 0, w, h, fill="#f5f5f5", width=0)
+            c.create_rectangle(0, 0, w, h - wh, fill="#3a3a3a", width=0)
         c.create_rectangle(0, 0, w - 1, h - 1, outline="#888888", width=1)
         color = "#222222" if frac >= 0.5 else "#ffffff"
         c.create_text(w / 2, h / 2, text=self.eval_text, fill=color, font=("DejaVu Sans", 11, "bold"))
