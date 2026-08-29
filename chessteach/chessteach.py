@@ -82,6 +82,7 @@ m             Markieren an/aus
 c             Markierungsfarbe wechseln
 a             Analyse an/aus
 F1            Diese Hilfe
+F5            Lektionen neu laden
 F11 / Esc     Vollbild an/aus
 Strg+Z        Rückgängig
 
@@ -689,6 +690,7 @@ class ChessTeachApp(tk.Tk):
         self.bind("<Right>", lambda e: self._next_kb(e))
         self.bind("<Home>", lambda e: self._goto_start_kb(e))
         self.bind("<End>", lambda e: self._goto_end_kb(e))
+        self.bind("<F5>", lambda e: self._reload_db_kb(e))
         self.bind("r", lambda e: self._reset_kb(e))
         self.bind("n", lambda e: self._new_game_kb(e))
         self.bind("h", lambda e: self.toggle_cover_key())
@@ -1326,6 +1328,14 @@ class ChessTeachApp(tk.Tk):
 
     def _reset_kb(self, e):
         if not self._typing(): self.reset()
+
+    def _reload_db_kb(self, e):
+        if not self._typing(): self.reload_lessons()
+
+    def reload_lessons(self):
+        self.load_data()
+        self._rebuild_tabs()
+        self.update_status()
 
     def _new_game_kb(self, e):
         if not self._typing(): self.new_game()
