@@ -12,6 +12,7 @@ ChessTeach — Schach-Lehrbrett für Kinder
 
 import os
 import io
+import math
 import re
 import json
 import queue
@@ -638,6 +639,8 @@ class ChessTeachApp(tk.Tk):
         self.arrow_cur = None
         self.best_moves = []
         self.best_scores = []
+        self.eval_fraction = None
+        self.eval_text = "?"
         self.show_coords = True
         self.show_legal_moves = True
         self.board_hidden = False
@@ -809,7 +812,10 @@ class ChessTeachApp(tk.Tk):
         self.board_frame = ttk.Frame(self.paned)
         self.paned.add(self.board_frame, weight=3)
         self.board_canvas = BoardCanvas(self.board_frame, self)
-        self.board_canvas.pack(fill="both", expand=True)
+        self.board_canvas.pack(side="left", fill="both", expand=True)
+        self.eval_canvas = tk.Canvas(self.board_frame, width=40, highlightthickness=0, bg="#f2ede2")
+        self.eval_canvas.pack(side="right", fill="y", padx=(2, 0))
+        self.eval_canvas.bind("<Configure>", lambda e: self.draw_eval_bar())
 
         side = ttk.Frame(self.paned)
         self.paned.add(side, weight=2)
@@ -1116,6 +1122,7 @@ class ChessTeachApp(tk.Tk):
         self.arrows = []
         self.marks = {}
         self.best_moves = []
+        self._reset_eval()
         self.update_content_field()
         self._sync_move_list()
         self.board_canvas.redraw()
@@ -1135,6 +1142,7 @@ class ChessTeachApp(tk.Tk):
         self.highlights = []
         self.lines = []
         self.best_moves = []
+        self._reset_eval()
         self._populate_move_list()
         self._rebuild_to_step(0)
         self._sync_move_list_selection()
@@ -1583,6 +1591,7 @@ class ChessTeachApp(tk.Tk):
         self.arrows = []
         self.best_moves = []
         self.best_scores = []
+        self._reset_eval()
         self.board_canvas.redraw()
 
     def clear_marks(self):
@@ -1735,6 +1744,7 @@ class ChessTeachApp(tk.Tk):
         else:
             self.best_moves = []
             self.best_scores = []
+            self._reset_eval()
             self.board_canvas.redraw()
             self.update_status()
 
@@ -1779,11 +1789,57 @@ class ChessTeachApp(tk.Tk):
             pass
         self.after(100, self._poll_results)
 
+    def draw_eval_bar(self):
+        if not hasattr(self, "eval_canvas"):
+            return
+        c = self.eval_canvas
+        c.delete("all")
+        w = c.winfo_width()
+        h = c.winfo_height()
+        if w <= 5 or h <= 5:
+            return
+        if self.eval_fraction is None:
+            c.create_rectangle(0, 0, w, h, fill="#bdbdbd", width=0)
+            c.create_text(w / 2, h / 2, text="?", fill="#fff", font=("DejaVu Sans", 11, "bold"))
+            return
+        frac = max(0.0, min(1.0, self.eval_fraction))
+        c.create_rectangle(0, 0, w, h, fill="#3a3a3a", width=0)   # Schwarz unten
+        wh = int(h * frac)
+        c.create_rectangle(0, 0, w, wh, fill="#f5f5f5", width=0)  # Weiß oben
+        c.create_rectangle(0, 0, w - 1, h - 1, outline="#888888", width=1)
+        color = "#222222" if frac >= 0.5 else "#ffffff"
+        c.create_text(w / 2, h / 2, text=self.eval_text, fill=color, font=("DejaVu Sans", 11, "bold"))
+
+    def _reset_eval(self):
+        self.eval_fraction = None
+        self.eval_text = "?"
+        self.draw_eval_bar()
+
+    def _update_eval(self, score):
+        if score is None:
+            self._reset_eval()
+            return
+        pov = score.pov(chess.WHITE)
+        if pov.is_mate():
+            m = pov.mate()
+            if m > 0:
+                self.eval_fraction = 1.0
+                self.eval_text = f"M{m}"
+            else:
+                self.eval_fraction = 0.0
+                self.eval_text = f"-M{abs(m)}"
+        else:
+            cp = pov.score()
+            self.eval_fraction = 1.0 / (1.0 + math.exp(-cp / 400.0))
+            self.eval_text = f"{cp / 100:+.1f}"
+        self.draw_eval_bar()
+
     def _apply_analysis(self, results, fen):
         if fen != self.board.fen():
             return
         self.best_moves = [m for m, s in results]
         self.best_scores = [s for m, s in results]
+        self._update_eval(self.best_scores[0] if self.best_scores else None)
         parts = []
         for i, (m, s) in enumerate(results):
             txt = f"{i + 1}. {san_de(self.board, m)}"
