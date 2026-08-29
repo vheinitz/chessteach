@@ -1136,7 +1136,8 @@ class ChessTeachApp(tk.Tk):
         self.lines = []
         self.best_moves = []
         self._populate_move_list()
-        self._rebuild_to_step(len(self.game_steps))
+        self._rebuild_to_step(0)
+        self._sync_move_list_selection()
         self.update_content_field()
         self.board_canvas.redraw()
         self.update_status()
