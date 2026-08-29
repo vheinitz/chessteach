@@ -197,6 +197,41 @@ def load_node(path):
     return {"title": title, "pgn": text, "_path": path}
 
 
+def find_usb_roots():
+    """Eingehängte USB-Laufwerke suchen (ohne Root-Rechte)."""
+    roots = []
+    for base in ("/media", "/run/media", "/mnt"):
+        if not os.path.isdir(base):
+            continue
+        try:
+            for user in os.listdir(base):
+                p1 = os.path.join(base, user)
+                if not os.path.isdir(p1):
+                    continue
+                if base in ("/media", "/run/media"):
+                    for vol in os.listdir(p1):
+                        p2 = os.path.join(p1, vol)
+                        if os.path.isdir(p2):
+                            roots.append(p2)
+                else:
+                    roots.append(p1)
+        except Exception:
+            pass
+    return sorted(set(roots))
+
+
+def merge_dir(src, dst):
+    """Kopiert den Inhalt von src nach dst (überschreibt gleichnamige Dateien, fügt Neues hinzu)."""
+    os.makedirs(dst, exist_ok=True)
+    for name in os.listdir(src):
+        s = os.path.join(src, name)
+        d = os.path.join(dst, name)
+        if os.path.isdir(s):
+            shutil.copytree(s, d, dirs_exist_ok=True)
+        else:
+            shutil.copy2(s, d)
+
+
 def load_pgn_games(path):
     """Liest alle Partien/Stellungen aus einer PGN-Datei -> Liste von Knoten."""
     nodes = []
@@ -782,9 +817,11 @@ class ChessTeachApp(tk.Tk):
         self.notebook.bind("<<NotebookTabChanged>>", self.on_tab_changed)
 
         # dynamische Tabs aus der Verzeichnisstruktur
+        self.content_tab_frames = []
         for i, tab in enumerate(self.tabs):
             frame = ttk.Frame(self.notebook)
             self.notebook.add(frame, text=tab["title"])
+            self.content_tab_frames.append(frame)
             self.tab_canvases[i] = self._make_list_canvas(frame, i)
             self.expanded[i] = set()
             self.render_tab(i)
@@ -1787,6 +1824,10 @@ class ChessTeachApp(tk.Tk):
         btns.grid(row=3, column=0, columnspan=2, pady=10)
         ttk.Button(btns, text="Speichern", command=save).pack(side="left", padx=4)
         ttk.Button(btns, text="Abbrechen", command=win.destroy).pack(side="left", padx=4)
+        usb_row = ttk.Frame(frm)
+        usb_row.grid(row=4, column=0, columnspan=2, pady=(0, 4))
+        ttk.Button(usb_row, text="🔄 Lektionen per USB aktualisieren",
+                   command=lambda: (win.destroy(), self.open_usb_sync())).pack()
 
     def show_help(self, event=None):
         win = tk.Toplevel(self)
@@ -1808,6 +1849,123 @@ class ChessTeachApp(tk.Tk):
         win.bind("<Escape>", lambda e: win.destroy())
         win.bind("<F1>", lambda e: win.destroy())
         win.focus_set()
+
+    def _rebuild_tabs(self):
+        for frame in self.content_tab_frames:
+            self.notebook.forget(frame)
+            frame.destroy()
+        self.content_tab_frames = []
+        self.tab_canvases = {}
+        self.tab_hits = {}
+        self.tab_del_hits = {}
+        self.expanded = {}
+        self.selected_lesson = None
+        self.current_node = None
+        for i, tab in enumerate(self.tabs):
+            frame = ttk.Frame(self.notebook)
+            self.notebook.insert(i, frame, text=tab["title"])
+            self.content_tab_frames.append(frame)
+            self.tab_canvases[i] = self._make_list_canvas(frame, i)
+            self.expanded[i] = set()
+            self.render_tab(i)
+        self.figures_index = len(self.tabs)
+        cur = self.current_tab_index
+        if not self.tabs:
+            cur = "figures"
+        elif isinstance(cur, int) and cur >= len(self.tabs):
+            cur = 0
+        self.current_tab_index = cur
+        if cur == "figures":
+            self.notebook.select(self.figures_index)
+        else:
+            self.notebook.select(cur)
+            self.render_tab(cur)
+
+    def open_usb_sync(self):
+        roots = find_usb_roots()
+        win = tk.Toplevel(self)
+        win.title("Lektionen per USB aktualisieren")
+        win.transient(self)
+        win.grab_set()
+        win.geometry("680x400")
+        frm = ttk.Frame(win, padding=12)
+        frm.pack(fill="both", expand=True)
+
+        ttk.Label(frm, text="USB-Stick einstecken, dann Lektionen übertragen.",
+                  font=("DejaVu Sans", 11)).pack(anchor="w")
+        ttk.Label(frm, text="USB-Laufwerk:").pack(anchor="w", pady=(12, 0))
+        self.usb_var = tk.StringVar()
+        combo = ttk.Combobox(frm, textvariable=self.usb_var, values=roots, state="readonly", width=64)
+        combo.pack(anchor="w", fill="x", pady=4)
+        if roots:
+            combo.current(0)
+        self.usb_status = tk.Label(frm, text="", fg="#555555")
+        self.usb_status.pack(anchor="w", pady=4)
+
+        def update_status(*_a):
+            root = self.usb_var.get()
+            if not root:
+                self.usb_status.config(text="Kein USB-Laufwerk gefunden.")
+                return
+            ldir = os.path.join(root, "lektionen")
+            if os.path.isdir(ldir):
+                n = sum(len(fs) for _, _, fs in os.walk(ldir))
+                self.usb_status.config(text=f"OK — „lektionen“-Ordner gefunden ({n} Dateien).")
+            else:
+                self.usb_status.config(text="Noch kein „lektionen“-Ordner auf dem USB.")
+        self.usb_var.trace_add("write", update_status)
+        update_status()
+
+        def refresh():
+            r = find_usb_roots()
+            combo["values"] = r
+            if r:
+                combo.current(0)
+            update_status()
+
+        def do_import():
+            root = self.usb_var.get()
+            if not root:
+                messagebox.showerror("USB", "Kein USB-Laufwerk gefunden.", parent=win)
+                return
+            src = os.path.join(root, "lektionen")
+            if not os.path.isdir(src):
+                messagebox.showerror("USB", "Kein „lektionen“-Ordner auf dem USB gefunden.", parent=win)
+                return
+            if messagebox.askyesno("Importieren", "Lektionen vom USB auf dieses Gerät kopieren?", parent=win):
+                try:
+                    merge_dir(src, DATA_DIR)
+                except Exception as e:
+                    messagebox.showerror("Fehler", str(e), parent=win)
+                    return
+                self.load_data()
+                self._rebuild_tabs()
+                self.update_status()
+                messagebox.showinfo("Fertig", "Lektionen wurden importiert.", parent=win)
+                win.destroy()
+
+        def do_export():
+            root = self.usb_var.get()
+            if not root:
+                messagebox.showerror("USB", "Kein USB-Laufwerk gefunden.", parent=win)
+                return
+            dst = os.path.join(root, "lektionen")
+            os.makedirs(dst, exist_ok=True)
+            if messagebox.askyesno("Exportieren", "Alle Lektionen dieses Geräts auf den USB kopieren?", parent=win):
+                try:
+                    merge_dir(DATA_DIR, dst)
+                except Exception as e:
+                    messagebox.showerror("Fehler", str(e), parent=win)
+                    return
+                messagebox.showinfo("Fertig", "Lektionen wurden auf den USB kopiert.", parent=win)
+
+        btns = ttk.Frame(frm)
+        btns.pack(pady=14)
+        ttk.Button(btns, text="Vom USB importieren", command=do_import).pack(side="left", padx=4)
+        ttk.Button(btns, text="Auf USB exportieren", command=do_export).pack(side="left", padx=4)
+        ttk.Button(btns, text="Aktualisieren", command=refresh).pack(side="left", padx=4)
+        ttk.Button(btns, text="Schließen", command=win.destroy).pack(side="left", padx=4)
+        win.bind("<Escape>", lambda e: win.destroy())
 
     # -- Vollbild & Konfig --------------------------------------------------
     def toggle_fullscreen(self):
