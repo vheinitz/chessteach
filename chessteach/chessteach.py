@@ -671,6 +671,7 @@ class ChessTeachApp(tk.Tk):
         self.bind_all("<Shift-Tab>", lambda e: "break")
         self.protocol("WM_DELETE_WINDOW", self.on_close)
         self.board_canvas.focus_set()
+        self.after(200, self._relayout)
 
     # -- Daten (Verzeichnisstruktur) ---------------------------------------
     def load_data(self):
@@ -769,16 +770,16 @@ class ChessTeachApp(tk.Tk):
                                    fg="#1a237e", anchor="w")
         self.status_lbl.pack(side="left", padx=10, fill="x", expand=True)
 
-        paned = ttk.PanedWindow(self, orient="horizontal")
-        paned.pack(side="top", fill="both", expand=True, padx=4, pady=4)
+        self.paned = ttk.PanedWindow(self, orient="horizontal")
+        self.paned.pack(side="top", fill="both", expand=True, padx=4, pady=4)
 
-        board_frame = ttk.Frame(paned)
-        paned.add(board_frame, weight=3)
-        self.board_canvas = BoardCanvas(board_frame, self)
+        self.board_frame = ttk.Frame(self.paned)
+        self.paned.add(self.board_frame, weight=3)
+        self.board_canvas = BoardCanvas(self.board_frame, self)
         self.board_canvas.pack(fill="both", expand=True)
 
-        side = ttk.Frame(paned)
-        paned.add(side, weight=2)
+        side = ttk.Frame(self.paned)
+        self.paned.add(side, weight=2)
 
         self.notebook = ttk.Notebook(side)
         self.notebook.pack(fill="both", expand=True)
@@ -1815,6 +1816,16 @@ class ChessTeachApp(tk.Tk):
     # -- Vollbild & Konfig --------------------------------------------------
     def toggle_fullscreen(self):
         self.attributes("-fullscreen", not self.attributes("-fullscreen"))
+        self.after(250, self._relayout)
+
+    def _relayout(self):
+        try:
+            self.update_idletasks()
+            w = self.paned.winfo_width()
+            if w > 100:
+                self.paned.sashpos(0, int(w * 0.6))
+        except Exception:
+            pass
 
     def exit_fullscreen(self):
         self.attributes("-fullscreen", False)
