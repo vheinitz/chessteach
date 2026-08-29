@@ -1,0 +1,9 @@
+[Event "Umwandlungsreflex: Springer statt Dame"]
+[SetUp "1"]
+[FEN "8/P1q5/1k6/8/8/8/5PPP/6K1 w - - 0 1"]
+[Result "1-0"]
+
+{ [Ar a7a8] [Mk a8] Wieder der Reflex zur Dame. Aber Schwarz droht Dc1 matt - eine neue Dame auf a8 hält das nicht auf, Weiss wird im nächsten Zug mattgesetzt. }
+{ [Clear] Der Springer ist die einzige Figur, die etwas kann, was die Dame nicht kann. Er ist die richtige Wahl, wenn er mit Schach gabelt. }
+1. a8=N+ { [Ar a7a8] [Sq a8] Springer mit Schach - und er gabelt König und Dame. } Kc6 { [Ar b6c6] }
+2. Nxc7 { [Ar a8c7] Der Springer holt die Dame ab. Die Mattdrohung ist vom Brett. } 1-0

@@ -1,0 +1,10 @@
+[Event "Zwischenschlag statt Abtausch"]
+[SetUp "1"]
+[FEN "r1b1k2r/1p2bppp/p1n2q2/8/8/5B2/PPPQ1P1P/2KRR3 w kq - 2 16"]
+[Result "1-0"]
+
+{ [Ar e1e7] [Mk e7] Der Handzug ist Txe7+ - Turm schlaegt Läufer mit Schach. Nach Dxe7 hat Weiss nur getauscht und steht schlechter. }
+{ [Clear] Ein Schlag mit Schach fuehlt sich richtig an. Trotzdem: gibt es einen besseren? }
+16. Bxc6+ { [Ar f3c6] [Sq c6] Der Läufer schlaegt den Springer - auch mit Schach, aber viel stärker.
+} Bd7 { [Ar c8d7] Der einzige Block. } 17. Qxd7+ { [Ar d2d7] Die Dame nimmt mit Schach. Weiss
+gewinnt eine Figur und setzt bald matt. } 1-0

@@ -1,0 +1,10 @@
+[Event "Kein Schach um jeden Preis: der ruhige Zug"]
+[SetUp "1"]
+[FEN "6k1/5pbp/8/5P2/8/8/8/6RK w - - 0 2"]
+[Result "1-0"]
+
+{ [Ar g1g7] [Mk g7] Der Läufer g7 ist gefesselt und hängt. Der Handzug ist Txg7+ - schlagen mit Schach. Nach Kxg7 bleibt Weiss ein Bauer gegen zwei und verliert. }
+{ [Clear] Der Zwischenzug darf nicht zum neuen Handzug werden. Eine gefesselte Figur läuft nicht weg - man kann sie in Ruhe angreifen. }
+2. f6 { [Ar f5f6] [Sq f6] Der ruhige Zug. Der Bauer greift den gefesselten Läufer ein zweites Mal
+an. } Kf8 { [Ar g8f8] } 3. Rxg7 { [Ar g1g7] Jetzt fällt der Läufer, und der Turm bleibt auf dem
+Brett. } 1-0

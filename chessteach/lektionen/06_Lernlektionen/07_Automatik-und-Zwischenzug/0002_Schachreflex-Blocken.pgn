@@ -1,0 +1,10 @@
+[Event "Schachreflex: blocken statt fliehen"]
+[SetUp "1"]
+[FEN "2r2k2/pN5Q/1p3p2/4q3/7P/8/P4PPK/1B6 w - - 1 32"]
+[Result "1-0"]
+
+{ [Ar h2h1] [Mk h1] Die schwarze Dame gibt Schach auf der Diagonale e5-h2. Der Handzug ist Kh1 - und nach Tc1 ist es matt. Weglaufen ist hier der Verlustzug. }
+{ [Clear] Bei Schach immer alle drei Antworten aufzählen: W wie Wegziehen, S wie Schlagen des Schachbieters, B wie Blocken. Blocken heisst dazwischenziehen und die Angriffslinie unterbrechen - das ist etwas anderes als decken. }
+32. g3 { [Ar g2g3] [Sq g3] [Sq h2] [Sq e5] Der Bauer stellt sich dazwischen. Er ist von f2 und h4
+gedeckt: Dxg3+ kostet Schwarz die Dame. } Rc7 { [Ar c8c7] } 33. Qh8+ { [Ar h7h8] Weiss behaelt die
+Dame und greift selbst an. } 1-0

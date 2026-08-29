@@ -1,0 +1,10 @@
+[Event "Fluchtreflex: die Dame wird vom Bauern angegriffen"]
+[SetUp "1"]
+[FEN "1k6/1n6/3q4/4P3/8/p6P/PQ5K/8 w - - 0 2"]
+[Result "1-0"]
+
+{ [Ar b2c3] [Mk c3] Der Bauer a3 greift die Dame an. Der Handzug ist wegziehen - die Dame ist ja wertvoll. Nach Dc3 ist die Stellung nur noch ausgeglichen. }
+{ [Clear] Eine angegriffene Figur hat fünf Antworten: wegziehen, den Angreifer schlagen, decken, die Linie blocken, Gegenangriff. Und bevor die Dame flieht: gibt es einen Zug mit Schach? }
+2. Qxb7+ { [Ar b2b7] [Sq b7] Die Dame schlaegt mit Schach! Schwarz muss zurueckschlagen und hat
+keine Zeit fuer den Bauern a3. } Kxb7 { [Ar b8b7] } 3. exd6 { [Ar e5d6] Jetzt fällt die schwarze
+Dame. Ohne das Schach vorher wäre exd6 verloren gegangen. } 1-0

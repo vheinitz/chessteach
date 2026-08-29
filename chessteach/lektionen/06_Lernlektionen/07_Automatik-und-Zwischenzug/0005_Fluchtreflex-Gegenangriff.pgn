@@ -1,0 +1,10 @@
+[Event "Fluchtreflex: Gegenangriff statt Flucht"]
+[SetUp "1"]
+[FEN "4R3/4q1kp/6p1/1Q3b2/1P1b1P2/6KP/8/8 b - - 0 1"]
+[Result "0-1"]
+
+{ [Ar e7f7] [Mk f7] Der Turm e8 greift die schwarze Dame an. Der Handzug ist Df7 - Dame in Sicherheit. Damit ist der Angriff vorbei und Weiss kommt davon. }
+{ [Clear] Die stärkste Antwort auf einen Angriff ist oft ein groesserer Gegenangriff. Wer nur seine eigene Figur rettet, gibt die Fuehrung ab. }
+1... Qh4+ { [Ar e7h4] [Sq h4] Dameopfer mit Schach - die Dame laesst sich schlagen, statt zu
+fliehen. } 2. Kxh4 { [Ar g3h4] Der König muss nehmen. } Bf2+ { [Ar d4f2] Jetzt kommt der Läufer mit
+Schach nach. } 3. Kg5 { [Ar h4g5] } h6# { [Ar h7h6] Matt. Der Bauer gibt das letzte Schach. } 0-1

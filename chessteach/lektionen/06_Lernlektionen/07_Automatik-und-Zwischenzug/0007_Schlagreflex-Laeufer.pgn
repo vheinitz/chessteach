@@ -1,0 +1,9 @@
+[Event "Schlagreflex: der Läufer ist vergiftet"]
+[SetUp "1"]
+[FEN "2b1Qr2/6k1/p7/1p1p4/5r2/1P1B4/1P3qPP/7K w - - 0 4"]
+[Result "1-0"]
+
+{ [Ar e8c8] [Mk c8] Der Läufer c8 hängt. Der Handzug ist Dxc8 - was hängt, wird genommen. Danach setzt Schwarz mit De1+ und Txf1 matt. }
+{ [Clear] Eine Figur, die einfach so herumsteht, ist oft ein Koeder. Erst prüfen, was der Gegner danach hat. }
+4. Qg6+ { [Ar e8g6] [Sq g6] Statt zu schlagen: Schach. Der König hat nur ein Feld. } Kh8 { [Ar g7h8]
+} 5. Qh7# { [Ar g6h7] Matt. Der Läufer c8 war völlig unwichtig. } 1-0

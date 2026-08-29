@@ -1,0 +1,9 @@
+[Event "Zwischenschlag mit Schach"]
+[SetUp "1"]
+[FEN "4r1k1/8/6pQ/8/8/8/b6K/bB6 w - - 0 12"]
+[Result "1-0"]
+
+{ [Ar b1g6] [Mk g6] Es gibt zwei Schläge. Der Handzug Lxg6 nimmt den Bauern - naheliegend, weil der Bauer in der Naehe des Königs steht. Er bringt fast nichts. }
+{ [Clear] Wenn mehrere Schläge möglich sind: welcher davon gibt Schach? }
+12. Bxa2+ { [Ar b1a2] [Sq a2] Der andere Schlag - und er gibt Schach auf der Diagonale a2-g8. } Re6
+{ [Ar e8e6] Der einzige Zug: Schwarz muss die Diagonale blocken. } 13. Bxe6# { [Ar a2e6] Matt. } 1-0

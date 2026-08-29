@@ -1,0 +1,10 @@
+[Event "Schachreflex: schlagen statt fliehen"]
+[SetUp "1"]
+[FEN "5nk1/5ppp/8/8/2B5/8/6PP/3Rr1K1 w - - 0 1"]
+[Result "1-0"]
+
+{ [Ar g1f2] [Mk f2] Schwarz hat gerade Te1 gespielt und bietet Schach. Der Handzug ist die Flucht Kf2 - der König rennt, weil Schach 'gefährlich' klingt. Danach fällt der Turm d1 und Weiss steht auf Verlust. }
+{ [Clear] Bei Schach immer alle drei Antworten aufzählen: W wie Wegziehen, S wie Schlagen des Schachbieters, B wie Blocken. Hier passt S: der Schachbieter steht ungedeckt. }
+1. Rxe1 { [Ar d1e1] [Sq e1] Der Turm nimmt den Schachbieter einfach weg. Schach beendet, Turm
+gewonnen. } h6 { [Ar h7h6] } 2. Re7 { [Ar e1e7] Weiss ist einen ganzen Turm vorn und macht in aller
+Ruhe Luft fuer den König. } 1-0

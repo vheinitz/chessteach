@@ -1,0 +1,10 @@
+[Event "Zwischenschach lenkt die Dame ab"]
+[SetUp "1"]
+[FEN "5r1k/7p/6p1/8/4Qp2/3B4/5B1K/q7 w - - 0 2"]
+[Result "1-0"]
+
+{ [Ar e4g6] [Mk g6] Der Handzug Dxg6 schlaegt einen Bauern vor dem König. Nach hxg6 gewinnt Schwarz. }
+{ [Clear] Vor jedem Wiedernehmen und jedem Tausch: Schach? Schlagen? Drohen? Ein Zwischenschach zwingt den Gegner - er darf nicht ausweichen. }
+2. Bd4+ { [Ar f2d4] [Sq d4] Zwischenschach auf der langen Diagonale. Die schwarze Dame muss den
+Läufer nehmen und verlaesst dabei ihren Posten. } Qxd4 { [Ar a1d4] Erzwungen. } 3. Qxd4+ { [Ar e4d4]
+Weiss nimmt die Dame mit Schach zurück und ist eine Dame vorn. } 1-0

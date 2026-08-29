@@ -1,0 +1,8 @@
+[Event "Fluchtreflex: der Springer bleibt stehen"]
+[SetUp "1"]
+[FEN "kr6/pp6/N7/P7/6q1/8/8/4K3 w - - 0 7"]
+[Result "1-0"]
+
+{ [Ar a6c5] [Mk c5] Der Bauer b7 greift den Springer a6 an. Der Handzug ist Sc5 - Springer retten. Danach gewinnt Schwarz mit der Dame. }
+{ [Clear] Bevor eine angegriffene Figur wegzieht: Was kann sie stattdessen anrichten? Eine angegriffene Figur darf trotzdem der wichtigste Angreifer sein. }
+7. Nc7# { [Ar a6c7] [Sq c7] Matt. Der Springer war nicht bedroht - er war der Mattsetzer. } 1-0
