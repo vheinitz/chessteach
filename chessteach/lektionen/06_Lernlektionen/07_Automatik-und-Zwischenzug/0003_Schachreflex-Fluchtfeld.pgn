@@ -1,0 +1,10 @@
+[Event "Schachreflex: das richtige Fluchtfeld"]
+[SetUp "1"]
+[FEN "r5kr/p3PR1p/4Q1p1/1p2p3/8/3Bq3/P5PP/6K1 w - - 2 3"]
+[Result "1-0"]
+
+{ [Ar g1f1] [Mk f1] Hier hilft nur Wegziehen - aber wohin? Der Handzug Kf1 geht dorthin, wo die schwarze Dame schon hinsieht: nach Dxd3+ ist der Läufer mit Schach weg. }
+{ [Clear] Auch beim Wegziehen gilt: erst alle Fluchtfelder prüfen, dann ziehen. Frag bei jedem Feld: Was greift die gegnerische Dame von dort aus an? }
+3. Kh1 { [Ar g1h1] [Sq h1] In die Ecke - dort steht der König auf keiner Linie der schwarzen Dame. }
+Qc1+ { [Ar e3c1] } 4. Rf1+ { [Ar f7f1] Der Läufer blockt das Schach. Auf h1 steht der König sicher -
+nach Kf1 wäre genau dieser Läufer mit Schach gefallen. } 1-0

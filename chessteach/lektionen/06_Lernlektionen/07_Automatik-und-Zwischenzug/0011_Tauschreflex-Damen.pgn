@@ -1,0 +1,10 @@
+[Event "Tauschreflex: Damentausch ist kein Automatismus"]
+[SetUp "1"]
+[FEN "8/4Q3/6p1/6qp/7k/8/7K/8 w - - 2 2"]
+[Result "1-0"]
+
+{ [Ar e7g5] [Mk g5] Dame trifft Dame - der Handzug ist der Tausch mit Schach. Nach Kxg5 hat Weiss nur noch den nackten König gegen zwei Bauern und verliert. }
+{ [Clear] Tauschen ist ein Zug wie jeder andere. Vorher fragen: Wie sieht die Stellung danach aus? }
+2. Qe4+ { [Ar e7e4] [Sq e4] Statt zu tauschen: Schach. Die weisse Dame jagt den König. } Qg4 { [Ar
+g5g4] } 3. Qe3 { [Ar e4e3] Weiss behaelt die Dame und treibt den König weiter. Der Tausch haette
+alles verschenkt. } 1-0

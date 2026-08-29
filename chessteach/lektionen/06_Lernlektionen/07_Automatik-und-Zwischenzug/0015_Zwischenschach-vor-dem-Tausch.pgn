@@ -1,0 +1,10 @@
+[Event "Zwischenschach vor dem Damentausch"]
+[SetUp "1"]
+[FEN "7k/2R3p1/7p/8/4q3/P5nP/1P4P1/1QK5 b - - 1 7"]
+[Result "0-1"]
+
+{ [Ar e4b1] [Mk b1] Schwarz kann die weisse Dame mit Schach schlagen - der Handzug. Aber nach Kxb1 steht Schwarz schlechter: der Turm c7 ist stark. }
+{ [Clear] Auch ein Schlag mit Schach kann ein Handzug sein. Vor jedem Wiedernehmen und jedem Tausch: Schach? Schlagen? Drohen? }
+7... Qe1+ { [Ar e4e1] [Sq e1] Erst dieses Schach - der weisse König wird aus der Deckung geholt. }
+8. Kc2 { [Ar c1c2] } Qe4+ { [Ar e1e4] Noch ein Schach. Schwarz behaelt die Initiative - und die
+weisse Dame bleibt ein Ziel. } 0-1

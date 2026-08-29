@@ -1,0 +1,10 @@
+[Event "Zwischenschach in der Eröffnung"]
+[SetUp "1"]
+[FEN "rnb1kb1r/pp3ppp/2p5/4q3/4n3/3Q4/PPPB1PPP/2KR1BNR w kq - 0 9"]
+[Result "1-0"]
+
+{ [Ar d3e4] [Mk e4] Der Springer e4 hängt, der Handzug ist Dxe4. Aber die schwarze Dame nimmt zurück: Dxe4 - nur ein Abtausch, und Weiss steht schlechter. }
+{ [Clear] Auch mitten in der Eröffnung gilt: erst nach Schachs suchen, dann schlagen. }
+9. Qd8+ { [Ar d3d8] [Sq d8] Dameopfer mit Schach. Der König muss nehmen. } Kxd8 { [Ar e8d8]
+Erzwungen. } 10. Bg5+ { [Ar d2g5] Jetzt der Läufer mit Schach. } Kc7 { [Ar d8c7] } 11. Bd8# { [Ar
+g5d8] Matt. } 1-0

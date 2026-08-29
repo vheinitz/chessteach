@@ -1,0 +1,8 @@
+[Event "Schlagreflex: erst das Matt suchen"]
+[SetUp "1"]
+[FEN "5R2/1n2R3/1p1p1ppk/3P4/1PP2P1q/r6B/8/6K1 w - - 2 4"]
+[Result "1-0"]
+
+{ [Ar e7b7] [Mk b7] Der Springer b7 hängt. Der Handzug ist Txb7 - eine Figur geschenkt. Danach dreht Schwarz mit De1+ den Spiess um und gewinnt. }
+{ [Clear] Material einsammeln ist der haeufigste Handzug. Erst matt suchen, dann schlagen. }
+4. Rh8# { [Ar f8h8] [Sq h8] Matt in einem Zug. Der Turm h8 wird vom Läufer h3 gedeckt. } 1-0

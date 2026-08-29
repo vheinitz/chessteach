@@ -1,0 +1,10 @@
+[Event "Tauschreflex: der Damentausch verliert"]
+[SetUp "1"]
+[FEN "1k2r1r1/pp6/4N3/P7/6q1/8/4Q3/4K3 w - - 0 1"]
+[Result "1-0"]
+
+{ [Ar e2g4] [Mk g4] Die Damen stehen sich gegenüber, der Handzug ist Dxg4. Aber die schwarze Dame ist vom Turm g8 gedeckt: nach Txg4 verliert Weiss. }
+{ [Clear] Vor jedem Damentausch zählen: Wer deckt die gegnerische Dame? Ist sie gedeckt, ist der Tausch kein Gewinn. }
+1. Qe5+ { [Ar e2e5] [Sq e5] Zwischenschach statt Tausch. Der König muss in die Ecke. } Ka8 { [Ar
+b8a8] } 2. Nc7+ { [Ar e6c7] Und jetzt die Gabel: König und Turm. } Kb8 { [Ar a8b8] } 3. Nxe8+ { [Ar
+c7e8] Der Springer holt den Turm ab. Weiss gewinnt. } 1-0

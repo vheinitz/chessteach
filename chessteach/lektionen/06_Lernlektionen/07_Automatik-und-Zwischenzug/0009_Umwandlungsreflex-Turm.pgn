@@ -1,0 +1,9 @@
+[Event "Umwandlungsreflex: Turm statt Dame"]
+[SetUp "1"]
+[FEN "8/k1P5/2K5/8/8/8/8/8 w - - 0 1"]
+[Result "1-0"]
+
+{ [Ar c7c8] [Mk c8] Der Bauer geht auf die 8. Reihe. Der Handzug ist die Dame - immer die Dame. Hier steht Schwarz danach patt: kein Zug, kein Schach, remis. }
+{ [Clear] Die Dame ist nicht immer die richtige Wahl. Wenn der gegnerische König kaum Felder hat: erst prüfen, ob die Dame ihn patt setzt. }
+1. c8=R { [Ar c7c8] [Sq c8] Der Turm nimmt ein Feld weniger weg - Schwarz muss ziehen. } Ka6 { [Ar
+a7a6] Der einzige Zug. } 2. Ra8# { [Ar c8a8] Matt. } 1-0

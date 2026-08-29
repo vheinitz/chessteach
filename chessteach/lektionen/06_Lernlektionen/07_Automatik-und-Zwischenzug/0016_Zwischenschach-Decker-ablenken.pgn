@@ -1,0 +1,10 @@
+[Event "Zwischenschach: den Decker der Dame ablenken"]
+[SetUp "1"]
+[FEN "6k1/pp3p1p/2p3p1/3p4/1P1P1q2/P4N1P/3Qn1B1/1RR2n1K b - - 0 1"]
+[Result "0-1"]
+
+{ [Ar f4d2] [Mk d2] Dame greift Dame an - der Handzug ist Dxd2. Aber die weisse Dame ist gedeckt: nach Sxd2 hat Schwarz nur getauscht und steht schlechter. }
+{ [Clear] Wenn die gegnerische Dame gedeckt ist: erst den Decker mit einem Zwischenschach weglocken, dann die Dame nehmen. }
+1... Qh2+ { [Ar f4h2] [Sq h2] Zwischenschach. Der Springer f3 - der Decker der Dame d2 - muss
+schlagen. } 2. Nxh2 { [Ar f3h2] Erzwungen. Damit ist die weisse Dame ungedeckt. } Nfg3# { [Ar f1g3]
+Matt. Noch besser als die Dame. } 0-1

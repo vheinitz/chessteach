@@ -1,0 +1,10 @@
+[Event "Kein Schach um jeden Preis: den richtigen nehmen"]
+[SetUp "1"]
+[FEN "bR3rk1/P7/K3p3/4P3/8/8/8/8 w - - 2 2"]
+[Result "1-0"]
+
+{ [Ar b8f8] [Mk f8] Zwei Schläge stehen bereit. Der Handzug ist Txf8+ - mit Schach. Danach kann der Bauer a7 nie umwandeln, und Weiss verliert. }
+{ [Clear] Zum Schluss die Gegenprobe: Schach ist ein Werkzeug, kein Ziel. Frag immer, was der Zug wirklich erreicht. }
+2. Rxa8 { [Ar b8a8] [Sq a8] Der andere Schlag, ohne Schach: er räumt das Umwandlungsfeld a8 frei. }
+Rxa8 { [Ar f8a8] Schwarz nimmt zurück. } 3. Kb7 { [Ar a6b7] Der König deckt a8. Der Bauer wird Dame.
+} 1-0
