@@ -522,7 +522,7 @@ class BoardCanvas(tk.Canvas):
         if self.app.selected is not None:
             x0, y0 = self.sq_origin(self.app.selected)
             self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=SELECT_COLOR, width=4)
-            legal = [] if self.app.edit_mode else board.legal_moves
+            legal = [] if self.app.edit_mode or not self.app.show_legal_moves else board.legal_moves
             for move in legal:
                 if move.from_square == self.app.selected:
                     ts = move.to_square
@@ -603,6 +603,7 @@ class ChessTeachApp(tk.Tk):
         self.best_moves = []
         self.best_scores = []
         self.show_coords = True
+        self.show_legal_moves = True
         self.board_hidden = False
         self.mark_colors = ["#ffd54f", "#f44336", "#2196f3", "#4caf50", "#9c27b0"]
         self.mark_color_index = 0
@@ -1765,6 +1766,9 @@ class ChessTeachApp(tk.Tk):
         ttk.Label(frm, text="Anzahl Zugvorschläge (1–5):").grid(row=1, column=0, sticky="w", pady=4)
         multi_var = tk.StringVar(value=str(self.engine_multi))
         ttk.Spinbox(frm, from_=1, to=5, increment=1, textvariable=multi_var, width=8).grid(row=1, column=1, padx=8)
+        legal_var = tk.BooleanVar(value=self.show_legal_moves)
+        ttk.Checkbutton(frm, text="Mögliche Züge anzeigen", variable=legal_var).grid(
+            row=2, column=0, columnspan=2, sticky="w", pady=6)
 
         def save():
             try:
@@ -1775,11 +1779,12 @@ class ChessTeachApp(tk.Tk):
                 return
             self.engine_time = max(0.1, t)
             self.engine_multi = max(1, min(5, m))
+            self.show_legal_moves = legal_var.get()
             self.save_config()
             win.destroy()
 
         btns = ttk.Frame(frm)
-        btns.grid(row=2, column=0, columnspan=2, pady=10)
+        btns.grid(row=3, column=0, columnspan=2, pady=10)
         ttk.Button(btns, text="Speichern", command=save).pack(side="left", padx=4)
         ttk.Button(btns, text="Abbrechen", command=win.destroy).pack(side="left", padx=4)
 
@@ -1844,6 +1849,7 @@ class ChessTeachApp(tk.Tk):
         self.engine_multi = int(cfg.get("engine_multi", 1))
         self.mark_colors = cfg.get("mark_colors", ["#ffd54f", "#f44336", "#2196f3", "#4caf50", "#9c27b0"])
         self.mark_color_index = int(cfg.get("mark_color_index", 0)) % max(1, len(self.mark_colors))
+        self.show_legal_moves = bool(cfg.get("show_legal_moves", True))
         if cfg.get("last_fen"):
             try:
                 self.board = chess.Board(cfg["last_fen"])
@@ -1869,6 +1875,7 @@ class ChessTeachApp(tk.Tk):
             "engine_multi": self.engine_multi,
             "mark_colors": self.mark_colors,
             "mark_color_index": self.mark_color_index,
+            "show_legal_moves": self.show_legal_moves,
             "last_fen": self.loaded_fen,
         }
         with open(CONFIG_FILE, "w", encoding="utf-8") as f:
