@@ -82,6 +82,7 @@ k             Koordinaten an/aus
 m             Markieren an/aus
 c             Markierungsfarbe wechseln
 a             Analyse an/aus
+d             Erledigt markieren (aktuelle Übung/Lektion)
 F1            Diese Hilfe
 F5            Lektionen neu laden
 F11 / Esc     Vollbild an/aus
@@ -678,10 +679,17 @@ class ChessTeachApp(tk.Tk):
         self.tab_canvases = {}
         self.tab_hits = {}
         self.tab_del_hits = {}
+        self.tab_mark_hits = {}
+        self.done_lessons = set()
+        self.done_exercises = set()
+        self.hide_done = False
 
         self.load_data()
+        self.load_done()
         self.build_ui()
         self.load_config()
+        for i in self.tab_canvases:
+            self.render_tab(i)
         self.update_status()
         self.update_content_field()
 
@@ -705,6 +713,7 @@ class ChessTeachApp(tk.Tk):
         self.bind("z", lambda e: self._set_nav_mode(e, "moves"))
         self.bind("l", lambda e: self._set_nav_mode(e, "lessons"))
         self.bind("u", lambda e: self._set_nav_mode(e, "exercises"))
+        self.bind("d", lambda e: self._toggle_done_kb(e))
         # Tab-Fokus-Traversal deaktivieren (kein Hängenbleiben in Eingabefeldern)
         self.bind_all("<Tab>", lambda e: "break")
         self.bind_all("<Shift-Tab>", lambda e: "break")
@@ -943,14 +952,19 @@ class ChessTeachApp(tk.Tk):
         canvas.delete("all")
         hits = []
         del_hits = []
+        mark_hits = []
         x, y = 6, 6
         size = 84
         ind = 26
         del_x = 396
+        mark_x = 360
         tab = self.tabs[tab_index]
         expanded = self.expanded.get(tab_index, set())
 
         for li, lesson in enumerate(tab["lessons"]):
+            lesson_done = lesson["id"] in self.done_lessons
+            if self.hide_done and lesson_done:
+                continue
             exp = li in expanded
             sel = self.selected_lesson == (tab_index, li)
             bg = "#cfe0f0" if sel else "#e6ecef"
@@ -958,39 +972,62 @@ class ChessTeachApp(tk.Tk):
             canvas.create_text(x + 10, y + 12, text="▾" if exp else "▸",
                                anchor="w", font=("DejaVu Sans", 12), fill="#333")
             canvas.create_text(x + 30, y + 12, text=lesson["title"],
-                               anchor="w", font=("DejaVu Sans", 12, "bold"), fill="#222")
+                               anchor="w", font=("DejaVu Sans", 12, "bold"),
+                               fill="#888888" if lesson_done else "#222222")
+            mark_char = "✓" if lesson_done else "○"
+            mark_color = "#2e7d32" if lesson_done else "#9e9e9e"
+            canvas.create_text(mark_x, y + 12, text=mark_char, anchor="center",
+                               font=("DejaVu Sans", 12, "bold"), fill=mark_color)
             canvas.create_text(del_x, y + 12, text="✕", anchor="center",
                                font=("DejaVu Sans", 12, "bold"), fill="#c62828")
             hits.append((y, y + 24, "lesson", li))
             del_hits.append((y, y + 24, ("lesson", li)))
+            mark_hits.append((y, y + 24, ("lesson", li)))
             y += 28
             if exp:
                 for ni, node in enumerate(lesson["exercises"]):
+                    node_done = self._node_key(node) in self.done_exercises
+                    if self.hide_done and node_done:
+                        continue
                     sel = (self.current_node is not None
                            and self._node_key(node) == self._node_key(self.current_node))
                     self._draw_node_row(canvas, x + ind, y, size, node, sel)
+                    mark_char = "✓" if node_done else "○"
+                    mark_color = "#2e7d32" if node_done else "#9e9e9e"
+                    canvas.create_text(mark_x, y + size // 2, text=mark_char, anchor="center",
+                                       font=("DejaVu Sans", 12, "bold"), fill=mark_color)
                     canvas.create_text(del_x, y + size // 2, text="✕", anchor="center",
                                        font=("DejaVu Sans", 12, "bold"), fill="#c62828")
                     hits.append((y, y + size, "exercise", node))
                     del_hits.append((y, y + size, ("lesson_ex", li, ni)))
+                    mark_hits.append((y, y + size, ("lesson_ex", li, ni)))
                     y += size + 8
 
         if tab["exercises"]:
             y += 6
             y = self._section_header(canvas, x, y, "Übungen")
             for ei, node in enumerate(tab["exercises"]):
+                node_done = self._node_key(node) in self.done_exercises
+                if self.hide_done and node_done:
+                    continue
                 sel = (self.current_node is not None
                        and self._node_key(node) == self._node_key(self.current_node))
                 self._draw_node_row(canvas, x, y, size, node, sel)
+                mark_char = "✓" if node_done else "○"
+                mark_color = "#2e7d32" if node_done else "#9e9e9e"
+                canvas.create_text(mark_x, y + size // 2, text=mark_char, anchor="center",
+                                   font=("DejaVu Sans", 12, "bold"), fill=mark_color)
                 canvas.create_text(del_x, y + size // 2, text="✕", anchor="center",
                                    font=("DejaVu Sans", 12, "bold"), fill="#c62828")
                 hits.append((y, y + size, "exercise", node))
                 del_hits.append((y, y + size, ("ex", ei)))
+                mark_hits.append((y, y + size, ("ex", ei)))
                 y += size + 8
 
         canvas.configure(scrollregion=(0, 0, max(420, canvas.winfo_width()), max(y + 8, canvas.winfo_height())))
         self.tab_hits[tab_index] = hits
         self.tab_del_hits[tab_index] = del_hits
+        self.tab_mark_hits[tab_index] = mark_hits
 
     def on_list_click(self, tab_index, event):
         canvas = self.tab_canvases[tab_index]
@@ -1000,6 +1037,11 @@ class ChessTeachApp(tk.Tk):
             for y0, y1, spec in self.tab_del_hits.get(tab_index, []):
                 if y0 <= cy <= y1:
                     self._delete_node(tab_index, spec)
+                    return
+        if 352 <= cx <= 374:
+            for y0, y1, spec in self.tab_mark_hits.get(tab_index, []):
+                if y0 <= cy <= y1:
+                    self._toggle_done_spec(tab_index, spec)
                     return
         for y0, y1, kind, data in self.tab_hits.get(tab_index, []):
             if y0 <= cy <= y1:
@@ -1293,6 +1335,78 @@ class ChessTeachApp(tk.Tk):
 
     def _node_key(self, node):
         return (node.get("_path"), node.get("_index"))
+
+    def _done_file(self):
+        return os.path.join(CONFIG_DIR, "done.json")
+
+    def load_done(self):
+        try:
+            with open(self._done_file(), encoding="utf-8") as f:
+                d = json.load(f)
+            self.done_lessons = set(d.get("lessons", []))
+            self.done_exercises = set(tuple(x) for x in d.get("exercises", []))
+        except Exception:
+            self.done_lessons = set()
+            self.done_exercises = set()
+
+    def save_done(self):
+        try:
+            os.makedirs(CONFIG_DIR, exist_ok=True)
+            with open(self._done_file(), "w", encoding="utf-8") as f:
+                json.dump({
+                    "lessons": sorted(self.done_lessons),
+                    "exercises": [list(x) for x in self.done_exercises],
+                }, f)
+        except Exception:
+            pass
+
+    def toggle_done_lesson(self, lesson_id):
+        if lesson_id in self.done_lessons:
+            self.done_lessons.discard(lesson_id)
+        else:
+            self.done_lessons.add(lesson_id)
+        self.save_done()
+
+    def toggle_done_exercise(self, node):
+        key = self._node_key(node)
+        if key in self.done_exercises:
+            self.done_exercises.discard(key)
+        else:
+            self.done_exercises.add(key)
+        self.save_done()
+
+    def _toggle_done_spec(self, tab_index, spec):
+        kind = spec[0]
+        if kind == "lesson":
+            li = spec[1]
+            lessons = self.tabs[tab_index]["lessons"]
+            if 0 <= li < len(lessons):
+                self.toggle_done_lesson(lessons[li]["id"])
+        elif kind == "lesson_ex":
+            _, li, ni = spec
+            lessons = self.tabs[tab_index]["lessons"]
+            if 0 <= li < len(lessons) and 0 <= ni < len(lessons[li]["exercises"]):
+                self.toggle_done_exercise(lessons[li]["exercises"][ni])
+        elif kind == "ex":
+            ei = spec[1]
+            exs = self.tabs[tab_index]["exercises"]
+            if 0 <= ei < len(exs):
+                self.toggle_done_exercise(exs[ei])
+        self.render_tab(tab_index)
+
+    def _toggle_done_kb(self, e):
+        if self._typing():
+            return
+        if self.current_node is not None and isinstance(self.current_tab_index, int):
+            self.toggle_done_exercise(self.current_node)
+            self.render_tab(self.current_tab_index)
+        elif (self.selected_lesson and isinstance(self.selected_lesson[0], int)
+              and 0 <= self.selected_lesson[0] < len(self.tabs)):
+            tab_index, li = self.selected_lesson
+            lessons = self.tabs[tab_index]["lessons"]
+            if 0 <= li < len(lessons):
+                self.toggle_done_lesson(lessons[li]["id"])
+                self.render_tab(tab_index)
 
     def _load_node(self, node):
         if "fen" in node:
@@ -1882,6 +1996,9 @@ class ChessTeachApp(tk.Tk):
         legal_var = tk.BooleanVar(value=self.show_legal_moves)
         ttk.Checkbutton(frm, text="Mögliche Züge anzeigen", variable=legal_var).grid(
             row=2, column=0, columnspan=2, sticky="w", pady=6)
+        hide_done_var = tk.BooleanVar(value=self.hide_done)
+        ttk.Checkbutton(frm, text="Erledigte Lektionen/Übungen ausblenden", variable=hide_done_var).grid(
+            row=3, column=0, columnspan=2, sticky="w", pady=6)
 
         def save():
             try:
@@ -1893,15 +2010,18 @@ class ChessTeachApp(tk.Tk):
             self.engine_time = max(0.1, t)
             self.engine_multi = max(1, min(5, m))
             self.show_legal_moves = legal_var.get()
+            self.hide_done = hide_done_var.get()
             self.save_config()
+            for i in self.tab_canvases:
+                self.render_tab(i)
             win.destroy()
 
         btns = ttk.Frame(frm)
-        btns.grid(row=3, column=0, columnspan=2, pady=10)
+        btns.grid(row=4, column=0, columnspan=2, pady=10)
         ttk.Button(btns, text="Speichern", command=save).pack(side="left", padx=4)
         ttk.Button(btns, text="Abbrechen", command=win.destroy).pack(side="left", padx=4)
         usb_row = ttk.Frame(frm)
-        usb_row.grid(row=4, column=0, columnspan=2, pady=(0, 4))
+        usb_row.grid(row=5, column=0, columnspan=2, pady=(0, 4))
         ttk.Button(usb_row, text="🔄 Lektionen per USB aktualisieren",
                    command=lambda: (win.destroy(), self.open_usb_sync())).pack()
 
@@ -2084,6 +2204,7 @@ class ChessTeachApp(tk.Tk):
         self.mark_colors = cfg.get("mark_colors", ["#ffd54f", "#f44336", "#2196f3", "#4caf50", "#9c27b0"])
         self.mark_color_index = int(cfg.get("mark_color_index", 0)) % max(1, len(self.mark_colors))
         self.show_legal_moves = bool(cfg.get("show_legal_moves", True))
+        self.hide_done = bool(cfg.get("hide_done", False))
         if cfg.get("last_fen"):
             try:
                 self.board = chess.Board(cfg["last_fen"])
@@ -2110,6 +2231,7 @@ class ChessTeachApp(tk.Tk):
             "mark_colors": self.mark_colors,
             "mark_color_index": self.mark_color_index,
             "show_legal_moves": self.show_legal_moves,
+            "hide_done": self.hide_done,
             "last_fen": self.loaded_fen,
         }
         with open(CONFIG_FILE, "w", encoding="utf-8") as f:
