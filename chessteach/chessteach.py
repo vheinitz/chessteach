@@ -20,6 +20,7 @@ import shutil
 import threading
 import time
 import tkinter as tk
+import tkinter.font as tkfont
 from tkinter import ttk, messagebox, simpledialog
 
 import chess
@@ -62,6 +63,21 @@ def square_color(s):
 FILE_EXTS = (".fen", ".pgn")
 
 
+def apply_font_scale(scale):
+    """Erhöht alle Tk-Standardschriften um scale Punkte (Buttons, Tabs, Labels ...)."""
+    try:
+        base = tkfont.nametofont("TkDefaultFont").cget("size")
+        new = max(8, base + int(scale))
+        for name in ("TkDefaultFont", "TkTextFont", "TkMenuFont", "TkHeadingFont",
+                     "TkCaptionFont", "TkSmallCaptionFont", "TkIconFont", "TkTooltipFont"):
+            try:
+                tkfont.nametofont(name).configure(size=new)
+            except Exception:
+                pass
+    except Exception:
+        pass
+
+
 HELP_TEXT = """ChessTeach — Hilfe
 
 Navigation: erst Modus wählen, dann ← / →
@@ -98,6 +114,13 @@ Markierungsfarben (Wechsel mit c)
 ────────────────────────────────
 gelb, rot, blau, grün, lila
 (Liste in ~/.config/chessteach/config.json unter „mark_colors“)
+
+Repertoire-Training
+───────────────────
+Häkchen „Repertoire-Training“ setzen, wenn eine PGN mit Zügen geladen ist.
+Du spielst die Farbe, die unten am Brett steht. Richtiger Zug → grünes
+Aufblinken + Ton, danach zieht der Gegner automatisch nach 1 Sekunde.
+✓/✗ zählt richtige und falsche Versuche. Falsche Züge werden rot angezeigt.
 
 Lernmodus: Befehle in PGN-Kommentaren
 ─────────────────────────────────────
@@ -551,6 +574,13 @@ class BoardCanvas(tk.Canvas):
                                       x0 + sq, self.off_y + self.margin + 8 * sq,
                                       fill=LINE_COLOR, width=0, stipple="gray50")
 
+        # Kurzes Aufblinken (Repertoire-Training: richtig/falsch)
+        for s in self.app.flash_sq_list:
+            x0, y0 = self.sq_origin(s)
+            self.create_rectangle(x0, y0, x0 + sq, y0 + sq, fill=self.app.flash_color,
+                                  width=0, stipple="gray50")
+            self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=self.app.flash_color, width=3)
+
         if board.is_check() and not self.app.edit_mode:
             king_sq = board.king(board.turn)
             if king_sq is not None:
@@ -630,6 +660,15 @@ class ChessTeachApp(tk.Tk):
         self.title("ChessTeach — Schach-Lehrbrett")
         self.configure(bg="#eceff1")
 
+        # Schriftgröße früh anpassen (vor dem Erzeugen der Widgets)
+        try:
+            with open(CONFIG_FILE, encoding="utf-8") as f:
+                _cfg = json.load(f)
+            self.font_scale = int(_cfg.get("font_scale", 2))
+        except Exception:
+            self.font_scale = 2
+        apply_font_scale(self.font_scale)
+
         self.board = chess.Board()
         self.loaded_fen = self.board.fen()
         self.selected = None
@@ -670,6 +709,21 @@ class ChessTeachApp(tk.Tk):
         self.highlights = []
         self.lines = []
         self.move_step_index = []
+
+        self.pgn_moves = []
+        self.pgn_base = chess.Board()
+        self.repertoire_mode = False
+        self.repertoire_moves = []
+        self.repertoire_start_board = chess.Board()
+        self.repertoire_index = 0
+        self.repertoire_player_color = chess.WHITE
+        self.repertoire_correct = 0
+        self.repertoire_wrong = 0
+        self.repertoire_pending = False
+        self.repertoire_after_id = None
+        self.flash_sq_list = []
+        self.flash_color = "#66bb6a"
+        self.flash_after_id = None
 
         self.tabs = []
         self.current_tab_index = 0
@@ -772,6 +826,11 @@ class ChessTeachApp(tk.Tk):
         ttk.Button(bar, text="↩", width=4, command=self.undo).pack(side="left", padx=1)
         ttk.Button(bar, text="⟲", width=4, command=self.reset).pack(side="left", padx=1)
         ttk.Button(bar, text="Neue Partie", command=self.new_game).pack(side="left", padx=2)
+        self.rep_var = tk.BooleanVar(value=False)
+        ttk.Checkbutton(bar, text="Repertoire-Training", variable=self.rep_var,
+                        command=self.toggle_repertoire).pack(side="left", padx=2)
+        self.rep_lbl = tk.Label(bar, text="", font=("DejaVu Sans", 11, "bold"), fg="#2e7d32")
+        self.rep_lbl.pack(side="left", padx=4)
         ttk.Separator(bar, orient="vertical").pack(side="left", fill="y", padx=4)
 
         self.flip_var = tk.BooleanVar(value=False)
@@ -874,7 +933,7 @@ class ChessTeachApp(tk.Tk):
 
         # Züge (gemeinsam für alle Tabs)
         ttk.Label(side, text="Züge", font=("DejaVu Sans", 11, "bold")).pack(anchor="w")
-        self.move_list = tk.Listbox(side, height=7, font=("DejaVu Sans Mono", 10),
+        self.move_list = tk.Listbox(side, height=7, font=("DejaVu Sans Mono", 12),
                                     exportselection=False)
         self.move_list.pack(fill="x", padx=2, pady=2)
         self.move_list.bind("<<ListboxSelect>>", self.on_move_list_select)
@@ -886,7 +945,7 @@ class ChessTeachApp(tk.Tk):
         self.name_var = tk.StringVar()
         ttk.Entry(add, textvariable=self.name_var).pack(fill="x")
         ttk.Label(add, text="FEN oder PGN").pack(anchor="w", pady=(4, 0))
-        self.content_text = tk.Text(add, height=3, font=("DejaVu Sans Mono", 9), wrap="none")
+        self.content_text = tk.Text(add, height=3, font=("DejaVu Sans Mono", 11), wrap="none")
         self.content_text.pack(fill="x")
         self.content_text.bind("<Tab>", lambda e: "break")
         btns = ttk.Frame(add)
@@ -940,7 +999,7 @@ class ChessTeachApp(tk.Tk):
             canvas.create_text(tx, y + 20, text=truncate(node.get("title", "?"), 28),
                                anchor="w", font=("DejaVu Sans", 12, "bold"), fill="#222")
             canvas.create_text(tx, y + 44, text=truncate(meta, 40),
-                               anchor="w", font=("DejaVu Sans", 9), fill="#666")
+                               anchor="w", font=("DejaVu Sans", 11), fill="#666")
         else:
             canvas.create_text(tx, y + size // 2, text=truncate(node.get("title", "?"), 30),
                                anchor="w", font=("DejaVu Sans", 12), fill="#222")
@@ -1147,12 +1206,15 @@ class ChessTeachApp(tk.Tk):
 
     # -- Laden --------------------------------------------------------------
     def load_fen(self, fen):
+        self._stop_repertoire_state()
+        self.pgn_moves = []
         try:
             self.board = chess.Board(fen)
         except Exception as e:
             messagebox.showerror("FEN-Fehler", str(e))
             return
         self.loaded_fen = fen
+        self.game_base = self.board.copy()
         self.game_steps = []
         self.step_index = 0
         self.game_index = 0
@@ -1171,12 +1233,15 @@ class ChessTeachApp(tk.Tk):
         self.update_status()
 
     def load_pgn(self, pgn_text):
+        self._stop_repertoire_state()
         g = chess.pgn.read_game(io.StringIO(pgn_text))
         if g is None:
             messagebox.showerror("PGN-Fehler", "PGN konnte nicht gelesen werden.")
             return
         self.game_base = g.board()
         self.game_steps = self._build_steps(g)
+        self.pgn_moves = mainline_moves(g)
+        self.pgn_base = g.board()
         self.loaded_fen = self.game_base.fen()
         self.selected = None
         self.arrows = []
@@ -1247,16 +1312,28 @@ class ChessTeachApp(tk.Tk):
         self.update_status()
 
     def game_prev(self):
-        self.game_replay_to(self.step_index - 1)
+        if self.repertoire_mode:
+            self.repertoire_prev()
+        else:
+            self.game_replay_to(self.step_index - 1)
 
     def game_next(self):
-        self.game_replay_to(self.step_index + 1)
+        if self.repertoire_mode:
+            self.repertoire_next()
+        else:
+            self.game_replay_to(self.step_index + 1)
 
     def game_start(self):
-        self.game_replay_to(0)
+        if self.repertoire_mode:
+            self.repertoire_start()
+        else:
+            self.game_replay_to(0)
 
     def game_end(self):
-        self.game_replay_to(len(self.game_steps))
+        if self.repertoire_mode:
+            self.repertoire_end()
+        else:
+            self.game_replay_to(len(self.game_steps))
 
     def _populate_move_list(self):
         self.move_list.delete(0, "end")
@@ -1276,6 +1353,9 @@ class ChessTeachApp(tk.Tk):
 
     def _sync_move_list(self):
         self.move_list.delete(0, "end")
+        self.move_step_index = []
+        self.move_list.selection_clear(0, "end")
+        self.move_lbl.config(text="Start")
 
     def _sync_move_list_selection(self):
         self.move_list.selection_clear(0, "end")
@@ -1290,10 +1370,16 @@ class ChessTeachApp(tk.Tk):
     def on_move_list_select(self, event):
         sel = self.move_list.curselection()
         if sel and sel[0] < len(self.move_step_index):
-            self.game_replay_to(self.move_step_index[sel[0]])
+            if self.repertoire_mode:
+                self.repertoire_goto(self.move_step_index[sel[0]])
+            else:
+                self.game_replay_to(self.move_step_index[sel[0]])
 
     # -- Züge / Aktionen ----------------------------------------------------
     def board_click(self, sq):
+        if self.repertoire_mode:
+            self.repertoire_click(sq)
+            return
         if self.edit_mode and self.current_tab_index == "figures":
             self.edit_click(sq)
             return
@@ -1302,10 +1388,17 @@ class ChessTeachApp(tk.Tk):
         if self.selected is not None:
             for m in board.legal_moves:
                 if m.from_square == self.selected and m.to_square == sq:
+                    # Pfad an der aktuellen Stelle abschneiden und neuen Zug aufzeichnen
+                    self.game_steps = self.game_steps[:self.step_index]
+                    self.game_steps.append(("move", m))
                     self.board.push(m)
                     self.last_move = m
+                    self.step_index = len(self.game_steps)
+                    self.game_index += 1
                     self.selected = None
                     self.best_moves = []
+                    self._populate_move_list()
+                    self._sync_move_list_selection()
                     self.update_content_field()
                     self.board_canvas.redraw()
                     self.update_status()
@@ -1314,6 +1407,264 @@ class ChessTeachApp(tk.Tk):
             self.selected = sq
         else:
             self.selected = None
+        self.board_canvas.redraw()
+
+    # -- Repertoire-Training -------------------------------------------------
+    def _stop_repertoire_state(self):
+        if not self.repertoire_mode:
+            return
+        self.repertoire_mode = False
+        self._repertoire_cancel_auto()
+        self._clear_flash()
+        self.update_repertoire_label()
+        if hasattr(self, "rep_var"):
+            self.rep_var.set(False)
+
+    def toggle_repertoire(self):
+        if self.rep_var.get():
+            self.start_repertoire()
+        else:
+            self.stop_repertoire()
+
+    def start_repertoire(self):
+        if not self.pgn_moves:
+            messagebox.showinfo("Repertoire-Training",
+                                "Bitte zuerst eine PGN-Datei mit Zügen laden.")
+            self.rep_var.set(False)
+            return
+        self.repertoire_mode = True
+        self.repertoire_moves = list(self.pgn_moves)
+        self.repertoire_start_board = self.pgn_base.copy()
+        self.repertoire_player_color = chess.BLACK if self.flipped else chess.WHITE
+        self.repertoire_correct = 0
+        self.repertoire_wrong = 0
+        self.repertoire_pending = False
+        if self.edit_mode:
+            self.edit_mode = False
+            self.edit_var.set(False)
+            self.palette_tool = None
+            self._refresh_palette_buttons()
+        self.mark_mode = False
+        if hasattr(self, "mark_btn"):
+            self.mark_btn.state(["!selected"])
+        self._repertoire_cancel_auto()
+        self._clear_flash()
+        self.repertoire_index = 0
+        self.board = self.repertoire_start_board.copy()
+        self.last_move = None
+        self.selected = None
+        self.arrows = []
+        self.marks = {}
+        self.highlights = []
+        self.lines = []
+        self.best_moves = []
+        self.best_scores = []
+        self._reset_eval()
+        self._sync_repertoire_move_list()
+        self.update_repertoire_label()
+        self.board_canvas.redraw()
+        self._schedule_opponent()
+        self.update_status()
+
+    def stop_repertoire(self):
+        if not self.repertoire_mode:
+            return
+        self.repertoire_mode = False
+        self._repertoire_cancel_auto()
+        self._clear_flash()
+        self.update_repertoire_label()
+        self._populate_move_list()
+        self.game_replay_to(self.step_index)
+
+    def _repertoire_cancel_auto(self):
+        if self.repertoire_after_id is not None:
+            try:
+                self.after_cancel(self.repertoire_after_id)
+            except Exception:
+                pass
+            self.repertoire_after_id = None
+        self.repertoire_pending = False
+
+    def repertoire_goto(self, i):
+        self._repertoire_cancel_auto()
+        i = max(0, min(len(self.repertoire_moves), i))
+        self.board = self.repertoire_start_board.copy()
+        for m in self.repertoire_moves[:i]:
+            self.board.push(m)
+        self.repertoire_index = i
+        self.last_move = self.board.peek() if self.board.move_stack else None
+        self.selected = None
+        self.best_moves = []
+        self._sync_repertoire_move_list()
+        self.board_canvas.redraw()
+        self.update_status()
+
+    def repertoire_prev(self):
+        self.repertoire_goto(self.repertoire_index - 1)
+
+    def repertoire_next(self):
+        self.repertoire_goto(self.repertoire_index + 1)
+
+    def repertoire_start(self):
+        self.repertoire_goto(0)
+
+    def repertoire_end(self):
+        self.repertoire_goto(len(self.repertoire_moves))
+
+    def repertoire_reset(self):
+        self.repertoire_correct = 0
+        self.repertoire_wrong = 0
+        self.repertoire_index = 0
+        self.board = self.repertoire_start_board.copy()
+        self.last_move = None
+        self.selected = None
+        self.arrows = []
+        self.marks = {}
+        self.highlights = []
+        self.lines = []
+        self.best_moves = []
+        self._repertoire_cancel_auto()
+        self._clear_flash()
+        self._sync_repertoire_move_list()
+        self.update_repertoire_label()
+        self.board_canvas.redraw()
+        self._schedule_opponent()
+        self.update_status()
+
+    def repertoire_click(self, sq):
+        if self.repertoire_pending:
+            return
+        if self.repertoire_index >= len(self.repertoire_moves):
+            return
+        board = self.board
+        if board.turn != self.repertoire_player_color:
+            return
+        piece = board.piece_at(sq)
+        if self.selected is not None:
+            if sq == self.selected:
+                self.selected = None
+                self.board_canvas.redraw()
+                return
+            try:
+                move = board.find_move(self.selected, sq)
+            except ValueError:
+                if piece is not None and piece.color == self.repertoire_player_color:
+                    self.selected = sq
+                else:
+                    self.selected = None
+                self.board_canvas.redraw()
+                return
+            expected = self.repertoire_moves[self.repertoire_index]
+            self.selected = None
+            if move == expected:
+                self._repertoire_apply_correct(move)
+            else:
+                self._repertoire_apply_wrong(move)
+            return
+        if piece is not None and piece.color == self.repertoire_player_color:
+            self.selected = sq
+        else:
+            self.selected = None
+        self.board_canvas.redraw()
+
+    def _repertoire_apply_correct(self, move):
+        self.board.push(move)
+        self.last_move = move
+        self.repertoire_index += 1
+        self.repertoire_correct += 1
+        self.best_moves = []
+        self._sync_repertoire_move_list()
+        self.update_repertoire_label()
+        self.flash_squares([move.from_square, move.to_square], "#66bb6a", 500)
+        self.bell()
+        self._schedule_opponent()
+        self.update_status()
+
+    def _repertoire_apply_wrong(self, move):
+        self.repertoire_wrong += 1
+        self.update_repertoire_label()
+        self.flash_squares([move.from_square, move.to_square], "#e53935", 600)
+        self.update_status()
+
+    def _schedule_opponent(self):
+        if self.repertoire_index >= len(self.repertoire_moves):
+            self.repertoire_pending = False
+            self.update_status()
+            return
+        if self.board.turn == self.repertoire_player_color:
+            self.repertoire_pending = False
+            self.update_status()
+            return
+        self._repertoire_cancel_auto()
+        self.repertoire_pending = True
+        self.repertoire_after_id = self.after(1000, self._repertoire_play_opponent)
+
+    def _repertoire_play_opponent(self):
+        self.repertoire_after_id = None
+        if not self.repertoire_mode:
+            return
+        if self.repertoire_index >= len(self.repertoire_moves):
+            self.repertoire_pending = False
+            self.update_status()
+            return
+        if self.board.turn == self.repertoire_player_color:
+            self.repertoire_pending = False
+            return
+        move = self.repertoire_moves[self.repertoire_index]
+        self.board.push(move)
+        self.last_move = move
+        self.repertoire_index += 1
+        self.best_moves = []
+        self._sync_repertoire_move_list()
+        self.board_canvas.redraw()
+        self.update_status()
+        self._schedule_opponent()
+
+    def _sync_repertoire_move_list(self):
+        self.move_list.delete(0, "end")
+        self.move_step_index = []
+        b = self.repertoire_start_board.copy()
+        for i, m in enumerate(self.repertoire_moves):
+            prefix = f"{i // 2 + 1}." if i % 2 == 0 else f"{i // 2 + 1}..."
+            self.move_list.insert("end", f"{prefix} {san_de(b, m)}")
+            b.push(m)
+            self.move_step_index.append(i + 1)
+        self.move_list.selection_clear(0, "end")
+        total = len(self.repertoire_moves)
+        if self.repertoire_index > 0:
+            self.move_list.selection_set(self.repertoire_index - 1)
+            self.move_list.see(self.repertoire_index - 1)
+            self.move_lbl.config(text=f"Zug {self.repertoire_index}/{total}")
+        else:
+            self.move_lbl.config(text="Start")
+
+    def update_repertoire_label(self):
+        if not hasattr(self, "rep_lbl"):
+            return
+        if self.repertoire_mode:
+            self.rep_lbl.config(text=f"✓ {self.repertoire_correct}   ✗ {self.repertoire_wrong}")
+        else:
+            self.rep_lbl.config(text="")
+
+    def flash_squares(self, squares, color="#66bb6a", ms=500):
+        if self.flash_after_id is not None:
+            try:
+                self.after_cancel(self.flash_after_id)
+            except Exception:
+                pass
+        self.flash_sq_list = list(squares)
+        self.flash_color = color
+        self.board_canvas.redraw()
+        self.flash_after_id = self.after(ms, self._clear_flash)
+
+    def _clear_flash(self):
+        if self.flash_after_id is not None:
+            try:
+                self.after_cancel(self.flash_after_id)
+            except Exception:
+                pass
+            self.flash_after_id = None
+        self.flash_sq_list = []
         self.board_canvas.redraw()
 
     def toggle_mark(self, sq):
@@ -1597,11 +1948,27 @@ class ChessTeachApp(tk.Tk):
         for s, btn in self.palette_buttons.items():
             btn.config(relief="sunken" if s == self.palette_tool else "raised")
 
+    def _rebase_live_path(self):
+        """Macht das aktuelle Brett zum Ausgangspunkt der Zugnavigation."""
+        self.game_base = self.board.copy()
+        self.game_steps = []
+        self.step_index = 0
+        self.game_index = 0
+        self.move_step_index = []
+        self.selected = None
+        self.last_move = None
+        self.best_moves = []
+        self.best_scores = []
+        self._reset_eval()
+        self._sync_move_list()
+        self.update_content_field()
+
     def exit_edit_mode(self):
         self.edit_mode = False
         self.edit_var.set(False)
         self.palette_tool = None
         self._refresh_palette_buttons()
+        self._rebase_live_path()
 
     def toggle_edit_mode(self):
         self.edit_mode = self.edit_var.get()
@@ -1616,7 +1983,7 @@ class ChessTeachApp(tk.Tk):
                 self.analyse_var.set(False)
                 self.analyse_on = False
         else:
-            self.palette_tool = None
+            self.exit_edit_mode()
         self._refresh_palette_buttons()
         self.board_canvas.redraw()
         self.update_status()
@@ -1653,7 +2020,9 @@ class ChessTeachApp(tk.Tk):
         self.update_status()
 
     def undo(self):
-        if self.game_steps:
+        if self.repertoire_mode:
+            self.repertoire_prev()
+        elif self.game_steps:
             self.game_prev()
         elif self.board.move_stack:
             self.board.pop()
@@ -1665,12 +2034,15 @@ class ChessTeachApp(tk.Tk):
             self.update_status()
 
     def reset(self):
-        if self.game_steps:
+        if self.repertoire_mode:
+            self.repertoire_reset()
+        elif self.game_steps:
             self.game_start()
         else:
             self.load_fen(self.loaded_fen)
 
     def new_game(self):
+        self._stop_repertoire_state()
         self.load_fen(chess.STARTING_FEN)
         self.exit_edit_mode()
         self.mark_mode = False
@@ -1680,6 +2052,10 @@ class ChessTeachApp(tk.Tk):
 
     def toggle_flip(self):
         self.flipped = self.flip_var.get()
+        if self.repertoire_mode:
+            self.repertoire_player_color = chess.BLACK if self.flipped else chess.WHITE
+            self._repertoire_cancel_auto()
+            self._schedule_opponent()
         self.board_canvas.redraw()
         self.draw_eval_bar()
 
@@ -1809,6 +2185,18 @@ class ChessTeachApp(tk.Tk):
         self.render_tab(self.current_tab_index)
 
     # -- Status / Content ---------------------------------------------------
+    def _board_status_text(self, b):
+        if b.is_checkmate():
+            winner = "Weiß" if not b.turn else "Schwarz"
+            return f"Schachmatt! {winner} gewinnt."
+        if b.is_stalemate():
+            return "Patt — unentschieden."
+        if b.is_insufficient_material():
+            return "Remis — zu wenig Material."
+        if b.is_check():
+            return "Schach!"
+        return "Weiß am Zug." if b.turn else "Schwarz am Zug."
+
     def update_status(self):
         if self.board_hidden:
             self.status_lbl.config(text="Brett verdeckt — Züge/Aufbau weiter möglich")
@@ -1817,17 +2205,17 @@ class ChessTeachApp(tk.Tk):
             self.status_lbl.config(text="Bearbeiten-Modus — freies Spiel")
             return
         b = self.board
-        if b.is_checkmate():
-            winner = "Weiß" if not b.turn else "Schwarz"
-            txt = f"Schachmatt! {winner} gewinnt."
-        elif b.is_stalemate():
-            txt = "Patt — unentschieden."
-        elif b.is_insufficient_material():
-            txt = "Remis — zu wenig Material."
-        elif b.is_check():
-            txt = "Schach!"
-        else:
-            txt = "Weiß am Zug." if b.turn else "Schwarz am Zug."
+        txt = self._board_status_text(b)
+        if self.repertoire_mode:
+            if self.repertoire_index >= len(self.repertoire_moves):
+                txt = (f"Repertoire fertig! ✓ {self.repertoire_correct} richtig · "
+                       f"✗ {self.repertoire_wrong} falsch")
+            elif self.repertoire_pending:
+                txt += "  ·  Gegner zieht…"
+            elif b.turn == self.repertoire_player_color:
+                txt += "  ·  Dein Zug"
+            else:
+                txt += "  ·  Gegner am Zug"
         self.status_lbl.config(text=txt)
 
     def update_content_field(self):
@@ -2207,14 +2595,8 @@ class ChessTeachApp(tk.Tk):
         self.hide_done = bool(cfg.get("hide_done", False))
         if cfg.get("last_fen"):
             try:
-                self.board = chess.Board(cfg["last_fen"])
-                self.loaded_fen = cfg["last_fen"]
-                self.selected = None
-                self.last_move = None
-                self.arrows = []
-                self.marks = {}
-                self.best_moves = []
-                self.board_canvas.redraw()
+                chess.Board(cfg["last_fen"])
+                self.load_fen(cfg["last_fen"])
             except Exception:
                 pass
 
@@ -2232,6 +2614,7 @@ class ChessTeachApp(tk.Tk):
             "mark_color_index": self.mark_color_index,
             "show_legal_moves": self.show_legal_moves,
             "hide_done": self.hide_done,
+            "font_scale": self.font_scale,
             "last_fen": self.loaded_fen,
         }
         with open(CONFIG_FILE, "w", encoding="utf-8") as f:
