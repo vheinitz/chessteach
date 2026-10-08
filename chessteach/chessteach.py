@@ -98,6 +98,7 @@ k             Koordinaten an/aus
 m             Markieren an/aus
 c             Markierungsfarbe wechseln
 a             Analyse an/aus
+g             Analyse nur für den Gegner (Seite oben) an/aus
 d             Erledigt markieren (aktuelle Übung/Lektion)
 F1            Diese Hilfe
 F5            Lektionen neu laden
@@ -582,11 +583,15 @@ def make_icon(name, size, color=None):
             pts.append((c + r * math.cos(a), c + r * math.sin(a)))
         d.polygon(pts, fill="#607d8b")
         d.ellipse([c - s * 0.12, c - s * 0.12, c + s * 0.12, c + s * 0.12], fill=(0, 0, 0, 0))
-    elif name == "analyse":  # Lupe
+    elif name in ("analyse", "analyse_opp"):  # Lupe; _opp: mit gegnerischem Bauern
         r = s * 0.25
         cx, cy = s * 0.4, s * 0.4
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill="#e3f2fd", outline=ICON_FG, width=w)
         d.line([(cx + r * 0.7, cy + r * 0.7), (s - m, s - m)], fill=ICON_FG, width=int(w * 1.6))
+        pawn = PIECES._pil.get("p")
+        if name == "analyse_opp" and pawn is not None:
+            p = pawn.resize((int(r * 1.5), int(r * 1.5)), Image.LANCZOS)
+            img.alpha_composite(p, (int(cx - p.width / 2), int(cy - p.height / 2)))
     return ImageTk.PhotoImage(img.resize((size, size), Image.LANCZOS))
 
 
@@ -885,6 +890,7 @@ class ChessTeachApp(tk.Tk):
         self.eval_text = "?"
         self.show_coords = True
         self.show_legal_moves = True
+        self.analyse_opp_only = False
         self.board_hidden = False
         self.mark_colors = ["#ffd54f", "#f44336", "#2196f3", "#4caf50", "#9c27b0"]
         self.mark_color_index = 0
@@ -966,6 +972,7 @@ class ChessTeachApp(tk.Tk):
         self.bind("m", lambda e: self._toggle_mark_kb(e))
         self.bind("c", lambda e: self._cycle_mark_color_kb(e))
         self.bind("a", lambda e: self._toggle_analyse_kb(e))
+        self.bind("g", lambda e: self._toggle_analyse_opp_kb(e))
         self.bind("t", lambda e: self._set_nav_mode(e, "tabs"))
         self.bind("z", lambda e: self._set_nav_mode(e, "moves"))
         self.bind("l", lambda e: self._set_nav_mode(e, "lessons"))
@@ -1088,6 +1095,9 @@ class ChessTeachApp(tk.Tk):
         tbtn("settings", "Einstellungen", self.open_settings)
         self.analyse_var = tk.BooleanVar(value=False)
         self.analyse_btn = ttoggle("analyse", "Analyse an/aus (a)", self.toggle_analyse, self.analyse_var)
+        self.analyse_opp_var = tk.BooleanVar(value=False)
+        ttoggle("analyse_opp", "Analyse nur, wenn der Gegner (Seite oben) am Zug ist (g)",
+                self.toggle_analyse_opp, self.analyse_opp_var)
 
         self.nav_lbl = tk.Label(bar, text="Nav: Züge", font=("DejaVu Sans", 10), fg="#555555")
         self.nav_lbl.pack(side="left", padx=4)
@@ -2086,6 +2096,11 @@ class ChessTeachApp(tk.Tk):
     def _cycle_mark_color_kb(self, e):
         if not self._typing(): self.cycle_mark_color()
 
+    def _toggle_analyse_opp_kb(self, e):
+        if not self._typing():
+            self.analyse_opp_var.set(not self.analyse_opp_var.get())
+            self.toggle_analyse_opp()
+
     def _toggle_analyse_kb(self, e):
         if not self._typing():
             self.analyse_var.set(not self.analyse_var.get())
@@ -2319,6 +2334,9 @@ class ChessTeachApp(tk.Tk):
             self.repertoire_player_color = chess.BLACK if self.flipped else chess.WHITE
             self._repertoire_cancel_auto()
             self._schedule_opponent()
+        last = getattr(self, "_last_analysis", None)
+        if self.analyse_on and self.analyse_opp_only and last:
+            self._apply_analysis(*last)  # Gegnerseite hat gewechselt
         self.board_canvas.redraw()
         self.draw_eval_bar()
 
@@ -2479,6 +2497,8 @@ class ChessTeachApp(tk.Tk):
                 txt += "  ·  Dein Zug"
             else:
                 txt += "  ·  Gegner am Zug"
+        if self.analyse_on and self.analyse_opp_only and b.turn != self._opponent_color():
+            txt += "  ·  Analyse nur für Gegnerzüge"
         self.status_lbl.config(text=txt)
 
     def update_content_field(self):
@@ -2513,6 +2533,20 @@ class ChessTeachApp(tk.Tk):
             self._reset_eval()
             self.board_canvas.redraw()
             self.update_status()
+
+    def toggle_analyse_opp(self):
+        """Analyse nur für den Gegner: eigene Züge ohne Hilfe, Gegnerzüge mit Pfeilen."""
+        self.analyse_opp_only = self.analyse_opp_var.get()
+        if self.analyse_opp_only and not self.analyse_on:
+            self.analyse_var.set(True)
+            self.toggle_analyse()
+        last = getattr(self, "_last_analysis", None)
+        if last and self.analyse_on:
+            self._apply_analysis(*last)  # Stellung unverändert -> letztes Ergebnis neu filtern
+        self.update_status()
+
+    def _opponent_color(self):
+        return chess.WHITE if self.flipped else chess.BLACK  # Gegner = Seite oben
 
     def _analyse_loop(self):
         last_fen = None
@@ -2608,6 +2642,14 @@ class ChessTeachApp(tk.Tk):
 
     def _apply_analysis(self, results, fen):
         if fen != self.board.fen():
+            return
+        self._last_analysis = (results, fen)
+        if getattr(self, "analyse_opp_only", False) and self.board.turn != self._opponent_color():
+            self.best_moves = []
+            self.best_scores = []
+            self._reset_eval()
+            self.board_canvas.redraw()
+            self.update_status()
             return
         results = filter_alternatives(results)
         self.best_moves = [m for m, s in results]
@@ -2857,6 +2899,8 @@ class ChessTeachApp(tk.Tk):
         self.mark_color_index = int(cfg.get("mark_color_index", 0)) % max(1, len(self.mark_colors))
         self.show_legal_moves = bool(cfg.get("show_legal_moves", True))
         self.hide_done = bool(cfg.get("hide_done", False))
+        self.analyse_opp_only = bool(cfg.get("analyse_opp_only", False))
+        self.analyse_opp_var.set(self.analyse_opp_only)
         if cfg.get("last_fen"):
             try:
                 chess.Board(cfg["last_fen"])
@@ -2878,6 +2922,7 @@ class ChessTeachApp(tk.Tk):
             "mark_color_index": self.mark_color_index,
             "show_legal_moves": self.show_legal_moves,
             "hide_done": self.hide_done,
+            "analyse_opp_only": getattr(self, "analyse_opp_only", False),
             "font_scale": self.font_scale,
             "last_fen": self.loaded_fen,
         }
