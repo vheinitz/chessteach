@@ -1,0 +1,4472 @@
+[Event "Weiß am Zug · Zug 38 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.10.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "8/8/7R/2pP1kp1/2B5/1P6/P4P1P/2r1N1K1 w - - 1 38"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 38. Kf1 { [Sq e1] Richtig: 38.Kf1. In der Partie geschah 38.a4?? — danach 38…Txe1+ 39.Kg2 Td1 (Springer verloren). Auch gut: Te6. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 18 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.10.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "3q1rk1/1p3ppp/r1p1bn2/p3R1B1/2P5/P2P1PP1/2P3BP/R2Q2K1 w - - 3 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 18. Re1 { [Sq a1] Richtig: 18.Te1. In der Partie geschah 18.Dd2?? — danach 18…Dd4+ 19.Kh1 Dxa1+ (Turm verloren). Auch gut: c3, De1, Kh1. } 1-0
+
+[Event "Schwarz am Zug · Zug 10 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.10.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rnb1kb1r/ppp2ppp/3p4/8/5PN1/3PB3/PPP3BP/RN2K2n b Qkq - 1 10"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 10... Nc6 { [Sq b7] Richtig: 10…Sc6. In der Partie geschah 10…Lxg4?? — danach 11.Lxb7 Le7 12.Kd2 (Turm verloren). Auch gut: c6, h5, f5. } 0-1
+
+[Event "Weiß am Zug · Zug 35 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.10.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "8/R4pk1/4p1p1/4P2p/P4P2/6PK/4r2P/8 w - - 3 35"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 35. Ra8 { [Sq h2] Richtig: 35.Ta8. In der Partie geschah 35.Kh4?? — danach 35…Txh2+ 36.Kg5 Th3 (Bauer verloren). Auch gut: a5, Ta5, Ta6. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 14 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqrk2/ppppbp2/5n2/4R1Q1/2BP4/2P5/PP3PPP/RN4K1 w - - 1 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 14. Qh6+ { [Sq g6] Richtig: 14.Dh6+. In der Partie geschah 14.Dg6?? — danach 14…fxg6 15.Sd2 d6 (Dame verloren). Auch gut: Tf5. } 0-1
+
+[Event "Schwarz am Zug · Zug 11 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn1qr1k1/pp2ppbp/3p1np1/3P2Bb/8/2NB3P/PPP1NPP1/R1Q2RK1 b - - 0 11"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 11... Bxe2 { [Sq d5] Richtig: 11…Lxe2. In der Partie geschah 11…Sxd5?? — danach 12.Sxd5 Lxe2 13.Lxe2 (Springer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 15 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3q1k1r/4nppp/4p3/r1ppPb2/p6Q/P1P1P3/1P2BPPP/RN2K2R b KQ - 1 15"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 15... Qb6 { [Sq d8] Richtig: 15…Db6. In der Partie geschah 15…Sg6?? — danach 16.Dxd8#. Auch gut: Db8. } 0-1
+
+[Event "Schwarz am Zug · Zug 16 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3q1k1r/5ppp/4p1n1/r1ppPbQ1/p7/P1P1P3/1P2BPPP/RN2K2R b KQ - 3 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 16... Qxg5 { [Sq d8] Richtig: 16…Dxg5. In der Partie geschah 16…Sxe5?? — danach 17.Dxd8#. } 0-1
+
+[Event "Weiß am Zug · Zug 20 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rq3rk1/2p2pbR/b2p2p1/p2P2N1/2P1p1P1/4Q3/PP1N1P2/2KR4 w - - 0 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 20. Rxg7+ { [Sq b2] Richtig: 20.Txg7+. In der Partie geschah 20.Dh3?? — danach 20…Dxb2#. } 0-1
+
+[Event "Weiß am Zug · Zug 26 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "4r2r/p2nBppk/1p4qp/3p4/3P1P2/1Q3BP1/P3P2P/4R1K1 w - - 6 26"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 26. Bh4 { [Sq d6] Richtig: 26.Lh4. In der Partie geschah 26.Ld6?? — danach 26…Dxd6 27.Lxd5 f5 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 27 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2r4r/p2n1ppk/1p1B2qp/3p4/3P1P2/1Q3BP1/P3P2P/4R1K1 w - - 8 27"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 27. Qxd5 { [Sq d6] Richtig: 27.Dxd5. In der Partie geschah 27.Lxd5?? — danach 27…Dxd6 28.Le4+ Kg8 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 32 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3r4/p4Bpk/1p5p/4B3/3PnP2/P5P1/2r1P2P/4R1K1 w - - 3 32"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 32. Be6 { [Sq c7] Richtig: 32.Le6. In der Partie geschah 32.Lc7?? — danach 32…Txc7 33.Le6 Kh8 (Läufer verloren). Auch gut: Lb3, Kg2, a4. } 0-1
+
+[Event "Schwarz am Zug · Zug 18 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr1b1r/p4p1p/1p3p2/2n1p3/8/4BB2/PP3PPP/2R2RK1 b - - 0 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 18... Kb8 { [Sq c5] Richtig: 18…Kb8. In der Partie geschah 18…Ld6?? — danach 19.b4 f5 20.bxc5 (Springer verloren). Auch gut: Kd7. } 1-0
+
+[Event "Schwarz am Zug · Zug 27 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r7/p4pkp/2pN2p1/4r1P1/8/7n/PPP4P/1K1R1R2 b - - 3 27"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 27... Rf8 { [Sq f7] Richtig: 27…Tf8. In der Partie geschah 27…Txg5?? — danach 28.Txf7+ Kg8 29.a4. Auch gut: Te7. } 1-0
+
+[Event "Schwarz am Zug · Zug 31 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r7/p1R4p/3N2pk/3p4/8/1P5n/P1P4P/1K6 b - - 0 31"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 31... Nf4 { [Sq d8] Richtig: 31…Sf4. In der Partie geschah 31…Td8?? — danach 32.Sf7+ Kh5 33.Sxd8 (Turm verloren). Auch gut: Sg5, g5, a5. } 1-0
+
+[Event "Weiß am Zug · Zug 12 · Deckung/Linie geöffnet – andere Figur hängt danach"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rnbqk2r/ppp1b1Rp/8/4p3/4Pp2/3B1P2/PPP1NK1P/RNBQ4 w kq - 0 12"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Zug nimmt einer anderen Figur die Deckung. Finde einen sicheren Zug! } 12. Bb5+ { [Sq d1] Richtig: 12.Lb5+. In der Partie geschah 12.Lc4?? — danach 12…Dxd1 13.Txe7+ Kxe7 (Dame verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 22 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2kr1b2/pppb3p/8/3B4/4P3/1PN2P2/P1P2K1P/R7 w - - 1 22"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 22. Nd1 { [Sq d5] Richtig: 22.Sd1. In der Partie geschah 22.Tg1?? — danach 22…Lc5+ 23.Kg2 c6 (Läufer verloren). Auch gut: Se2, Td1. } 0-1
+
+[Event "Weiß am Zug · Zug 30 · Deckung/Linie geöffnet – andere Figur hängt danach"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "kq5r/1pR1R2p/p2Q1p2/3p1np1/3P4/1P1b1P2/P4BPP/6K1 w - - 8 30"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Zug nimmt einer anderen Figur die Deckung. Finde einen sicheren Zug! } 30. Qxf6 { [Sq d6] Richtig: 30.Dxf6. In der Partie geschah 30.Txb7?? — danach 30…Dxd6 31.Tec7 Dxc7 (Dame verloren). Auch gut: Dxd5, De6. } 0-1
+
+[Event "Weiß am Zug · Zug 9 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qk2r/pppnpp1p/4b1pb/4N3/3PP3/5Q2/PPP3PP/RN2KB1R w KQkq - 0 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 9. Nxd7 { [Sq f7] Richtig: 9.Sxd7. In der Partie geschah 9.Dxf7+?? — danach 9…Lxf7 10.Sf3 e5 (Dame verloren). Auch gut: Sd3, Sc4. } 0-1
+
+[Event "Weiß am Zug · Zug 36 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/kb4Q1/6Np/7r/PP6/7P/6P1/6RK w - - 1 36"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 36. Qd4+ { [Sq h3] Richtig: 36.Dd4+. In der Partie geschah 36.b5?? — danach 36…Txh3#. Auch gut: Tf1. } 1-0
+
+[Event "Weiß am Zug · Zug 38 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/1b4Q1/1k5p/1P6/P4N1r/7P/6P1/6RK w - - 3 38"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 38. Qd4+ { [Sq h3] Richtig: 38.Dd4+. In der Partie geschah 38.Se6?? — danach 38…Txh3#. Auch gut: a5+, Df6+. } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3kb1r/pRpbp1p1/1n3p2/1q5p/3NN2R/3P4/P1PQ1P2/2B1K3 b kq - 1 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 18... Qd5 { [Sq b5] Richtig: 18…Dd5. In der Partie geschah 18…e5?? — danach 19.Sxb5 Lxb5 20.Da5 (Dame verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 28 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "3b2k1/3P3p/1p1Qp1p1/1P6/1Pq5/4BP2/6PP/6K1 b - - 3 28"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 28... Qd5 { [Sq e6] Richtig: 28…Dd5. In der Partie geschah 28…Dxb5?? — danach 29.Dxe6+ Kg7 30.Ld4+. } 1-0
+
+[Event "Schwarz am Zug · Zug 21 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2kr1b2/pp1n1p2/2p2n2/4p3/2P1q2R/2P5/P3Q1P1/R3K3 b Q - 1 21"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 21... Qxh4+ { [Sq e2] Richtig: 21…Dxh4+. In der Partie geschah 21…Dxe2+?? — danach 22.Kxe2 Te8 23.Thh1 (Dame verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 16 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1qr1k1/pppb1pbp/3p2p1/P5P1/1P1nP2P/N4P2/1B2B2R/R2QK1N1 b Q - 1 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 16... c5 { [Sq f3] Richtig: 16…c5. In der Partie geschah 16…Sxf3+?? — danach 17.Lxf3 Lxb2 18.Txb2 (Springer verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 10 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.10.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qk1nr/p1p2ppp/2Qbp3/6N1/7P/3b4/PP1P1PP1/R1B1K1NR b KQkq - 1 10"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 10... Kf8 { [Sq a8] Richtig: 10…Kf8. In der Partie geschah 10…Dd7?? — danach 11.Dxa8+ Ke7 12.Df3 (Turm verloren). Auch gut: Ke7. } 0-1
+
+[Event "Schwarz am Zug · Zug 31 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.10.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/p1pk2pp/8/8/3pb2P/6bR/P2P1r2/R1B1K3 b - - 11 31"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 31... Bd3 { [Sq g3] Richtig: 31…Ld3. In der Partie geschah 31…Th2+?? — danach 32.Txg3 Th1+ 33.Kf2 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 16 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.10.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "3r1rk1/ppp2ppp/8/6q1/2b1P1N1/2NP1P2/1PP3PP/R2QR1K1 w - - 0 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 16. Qe2 { [Sq a7] Richtig: 16.De2. In der Partie geschah 16.Txa7?? — danach 16…Dc5+ 17.Se3 Dxa7 (Turm verloren). Auch gut: Dc1, Se3, Sf2. } 1-0
+
+[Event "Schwarz am Zug · Zug 16 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr2r1/1pp1p3/p1qpb1pb/3P1p2/8/1PN2Q2/PBP3PP/R4RK1 b - - 0 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 16... Qc5+ { [Sq d5] Richtig: 16…Dc5+. In der Partie geschah 16…Lxd5?? — danach 17.Sxd5 Tge8 18.Tae1 (Läufer verloren). Auch gut: Db6+. } 1-0
+
+[Event "Weiß am Zug · Zug 19 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4r2/1ppq2kp/p2b1pn1/3B1R2/3P2Q1/4P1P1/PPP4P/R1B3K1 w - - 3 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 19. Bxb7 { [Sq f5] Richtig: 19.Lxb7. In der Partie geschah 19.h4?? — danach 19…Kh8 20.e4 Se7 (Turm verloren). Auch gut: Lf3, Lg2, e4. } 1-0
+
+[Event "Schwarz am Zug · Zug 36 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1R6/7p/1P2p1pk/5p2/3b4/rBn2P2/P5PP/5K2 b - - 0 36"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 36... Nxa2 { [Sq b6] Richtig: 36…Sxa2. In der Partie geschah 36…Lxb6?? — danach 37.Txb6 e5 38.Tb7 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 22 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2r1r1k1/pp3p1p/2q2p2/5b2/3PN2R/1P2Q1P1/P3P2P/R5K1 w - - 3 22"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 22. d5 { [Sq e4] Richtig: 22.d5. In der Partie geschah 22.Dh6?? — danach 22…Txe4 23.Txe4 Dxe4 (Turm verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 29 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "1k5r/p3b3/Pp5p/4p1p1/3rBp2/1R3P1P/5P2/2R3K1 b - - 3 29"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 29... Rhd8 { [Sq c5] Richtig: 29…Thd8. In der Partie geschah 29…Lc5?? — danach 30.Txc5 Tc8 31.Txc8+ (Turm verloren). Auch gut: Tc8, Tf8. } 1-0
+
+[Event "Weiß am Zug · Zug 13 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rnb2rk1/ppp2ppp/8/4P2q/3P1B2/2P2NP1/P1P5/R2QKB2 w Q - 1 13"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 13. Kf2 { [Sq f3] Richtig: 13.Kf2. In der Partie geschah 13.Dd2?? — danach 13…Dxf3 14.Lg2 Dh5 (Springer verloren). Auch gut: Ld3, Tb1, Le2. } 0-1
+
+[Event "Schwarz am Zug · Zug 24 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3r1k1/pp1R2bR/2p3p1/4p3/4q3/1P2PN2/P1P2K2/8 b - - 0 24"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 24... Qxc2+ { [Sq e4] Richtig: 24…Dxc2+. In der Partie geschah 24…Kxh7?? — danach 25.Sg5+ Kg8 26.Sxe4 (Dame verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 7 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b1kbnr/ppp1pppp/2n5/q3P3/3P4/2P5/P2N1PPP/R1BQKBNR w KQkq - 3 7"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 7. Ne2 { [Sq c3] Richtig: 7.Se2. In der Partie geschah 7.Ld3?? — danach 7…Dxc3 8.Le4 Dxa1 (Turm verloren). Auch gut: Lb2, Df3, Dc2. } 0-1
+
+[Event "Schwarz am Zug · Zug 32 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3Q2k1/pp5p/2p3p1/4b3/2P2q2/2n5/P5PP/4R1K1 b - - 1 32"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 32... Kf7 { [Sq e5] Richtig: 32…Kf7. In der Partie geschah 32…Kg7?? — danach 33.De7+ Kh6 34.Dxe5 (Dame verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 37 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/pp2Q2p/2p3pk/8/2Pq4/8/P4nPP/4R1K1 b - - 6 37"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 37... Nh3+ { [Sq e3] Richtig: 37…Sh3+. In der Partie geschah 37…Sd3+?? — danach 38.De3+ Dxe3+ 39.Txe3. Auch gut: Se4+. } 0-1
+
+[Event "Schwarz am Zug · Zug 38 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/pp2Q2p/2p3pk/8/2Pq4/3n4/P5PP/4RK2 b - - 8 38"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 38... Qf2# { [Sq e1] Richtig: 38…Df2#. In der Partie geschah 38…Sxe1?? — danach 39.Kxe1 Dg1+ 40.Kd2 (Springer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 11 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qk2r/2pb1ppp/p1n1pn2/1p6/Bb6/2NP1N2/PPPB1PPP/R2QR1K1 w kq - 0 11"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 11. Bb3 { [Sq b5] Richtig: 11.Lb3. In der Partie geschah 11.Lxb5?? — danach 11…axb5 12.Sxb5 Lxd2 (Läufer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 15 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/2p2ppp/p1b1pn2/3qN3/8/2BP4/PPP2PPP/R2QR1K1 w - - 3 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 15. Nxc6 { [Sq g2] Richtig: 15.Sxc6. In der Partie geschah 15.f4?? — danach 15…Dxg2#. } 1-0
+
+[Event "Schwarz am Zug · Zug 8 · Deckung/Linie geöffnet – andere Figur hängt danach"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn1qkb1r/pppbp2p/3p2p1/5pB1/3P4/3B4/PPP2PPP/RN1Q1RK1 b kq - 1 8"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Zug nimmt einer anderen Figur die Deckung. Finde einen sicheren Zug! } 8... h6 { [Sq d8] Richtig: 8…h6. In der Partie geschah 8…e6?? — danach 9.Lxd8 Kxd8 10.c3 (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 8 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bqkbnr/1ppp1p2/p6p/4P3/2B1P1p1/8/PPP2PPP/RNBQ1RK1 w kq - 0 8"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 8. Nc3 { [Sq c4] Richtig: 8.Sc3. In der Partie geschah 8.Dxg4?? — danach 8…d5 9.Dg3 dxc4 (Läufer verloren). Auch gut: Le3, De2, Lf4. } 1-0
+
+[Event "Schwarz am Zug · Zug 24 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2b2rk1/1p5p/p3p1p1/3pNp2/3P1n2/1Pq5/P1P2PPP/2Q1RK2 b - - 4 24"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 24... Nh5 { [Sq f4] Richtig: 24…Sh5. In der Partie geschah 24…Dxd4?? — danach 25.c3 Dc5 26.Dxf4 (Springer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 10 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn2k2r/pp4pp/2p1pn2/3p1bN1/3P4/8/PPP2PPP/RN2KB1R w KQkq - 0 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 10. Bd3 { [Sq e6] Richtig: 10.Ld3. In der Partie geschah 10.Sxe6?? — danach 10…Lxe6 11.Ld3 Lf7 (Springer verloren). Auch gut: c3, Sa3, c4. } 1-0
+
+[Event "Weiß am Zug · Zug 12 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn5r/pp1k2Np/2p2n2/3p4/3P4/8/PPb2PPP/RN2KB1R w KQ - 0 12"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 12. g3 { [Sq g7] Richtig: 12.g3. In der Partie geschah 12.Sc3?? — danach 12…Tg8 13.f3 Txg7 (Springer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.01"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bq2k1/pp4bN/6p1/3p4/4p1n1/2N3Q1/PPn1BPP1/R4K1R b - - 1 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 18... Be5 { [Sq e3] Richtig: 18…Le5. In der Partie geschah 18…Sce3+?? — danach 19.fxe3 Le5 20.Dh4 (Dame verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 19 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.10.01"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bq2k1/pp4bN/6p1/3p4/4p1n1/2N1P1Q1/PP2B1P1/R4K1R b - - 0 19"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 19... Be5 { [Sq e3] Richtig: 19…Le5. In der Partie geschah 19…Sxe3+?? — danach 20.Dxe3 Le6 21.Dg3 (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 63 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.10.01"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "8/8/3n4/K7/q7/3k4/8/8 w - - 12 63"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 63. Kxa4 { Richtig: 63.Kxa4. In der Partie geschah 63.Kb6?? — danach 63…Dc4 64.Ka7 Dc6. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 18 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2kr3r/ppp3pp/2n2p2/4p3/1b2P1P1/1P2B2P/b1PNBP2/2KR3R b - - 0 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 18... Ba3# { [Sq d2] Richtig: 18…La3#. In der Partie geschah 18…Lxd2+?? — danach 19.Txd2 Txd2 20.Lxd2 (Turm verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 15 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1k3/p4p1p/2pp1n2/8/8/P2B4/1PP2PPP/R3K2R w KQq - 0 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 15. O-O { [Sq h7] Richtig: 15.O-O. In der Partie geschah 15.Lxh7?? — danach 15…Sxh7 16.h4 Le6 (Läufer verloren). Auch gut: Le2, O-O-O, f3. } 1-0
+
+[Event "Weiß am Zug · Zug 25 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "4r3/ppp3Q1/2kp4/8/3P4/1P2n1Pp/P1P1K2P/RN6 w - - 2 25"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 25. Qf7 { [Sq g7] Richtig: 25.Df7. In der Partie geschah 25.Sc3?? — danach 25…Sf5+ 26.Kd3 Sxg7 (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 32 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/ppp3n1/2kp2P1/8/2KP4/1PN2r1p/P1P4P/6R1 w - - 3 32"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 32. d5+ { [Sq e4] Richtig: 32.d5+. In der Partie geschah 32.Se4?? — danach 32…d5+ 33.Kb4 dxe4 (Springer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 37 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/p1p3n1/2k3P1/1p1p4/1K1P1N2/1P6/P1r5/6R1 w - - 0 37"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 37. a3 { [Sq e6] Richtig: 37.a3. In der Partie geschah 37.Se6?? — danach 37…Kb6 38.Ka3 Sxe6 (Springer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 16 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.27"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3kb1r/p2n1pp1/1q2p3/3pP1B1/1ppP2n1/3Q1NPp/PPP1NP1P/R3K2R w KQkq - 0 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 16. Qd2 { [Sq e3] Richtig: 16.Dd2. In der Partie geschah 16.De3?? — danach 16…Sxe3 17.Lxe3 f6 (Dame verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 10 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.27"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "B2qkb1r/p1pb1ppp/8/4P3/4n3/2p5/PPPP1PPP/R1BQK2R w KQk - 1 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 10. Bxe4 { [Sq b2] Richtig: 10.Lxe4. In der Partie geschah 10.d3?? — danach 10…cxb2 11.Lxb2 Lb4+ (Läufer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 38 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.26"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/6k1/5Rp1/r7/6PK/8/7P/8 w - - 3 38"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 38. Rd6 { [Sq f4] Richtig: 38.Td6. In der Partie geschah 38.Tf4?? — danach 38…g5+ 39.Kg3 gxf4+ (Turm verloren). Auch gut: Te6, Tb6, Tc6. } 0-1
+
+[Event "Schwarz am Zug · Zug 30 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.26"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "1r3k2/1b5R/p5p1/1p2Rp2/1r6/7P/P4PP1/5BK1 b - - 0 30"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 30... Kg8 { [Sq b8] Richtig: 30…Kg8. In der Partie geschah 30…Tb2?? — danach 31.Th8+ Kg7 32.Txb8 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.26"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1k1r1/ppp2p1p/4p3/7N/2P5/2P2P2/P4P1P/R4R1K b q - 0 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 18... Ke7 { [Sq g8] Richtig: 18…Ke7. In der Partie geschah 18…Ld7?? — danach 19.Sf6+ Ke7 20.Sxg8+ (Turm verloren). Auch gut: Tg6, Tg5. } 1-0
+
+[Event "Schwarz am Zug · Zug 6 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.26"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr1bnr/pppqpppp/2n5/1B1pNb2/5P2/1P2P3/P1PP2PP/RNBQK2R b KQ - 6 6"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 6... Qe8 { [Sq c6] Richtig: 6…De8. In der Partie geschah 6…Lg4?? — danach 7.Lxc6 bxc6 8.Dxg4 (Dame verloren). Auch gut: De6. } 1-0
+
+[Event "Schwarz am Zug · Zug 37 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.24"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/4Bpb1/4n1p1/7p/7P/3k1K2/r4P2/4R3 b - - 1 37"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 37... Nd4+ { [Sq a3] Richtig: 37…Sd4+. In der Partie geschah 37…Ta3?? — danach 38.Te3+ Kd4 39.Txa3 (Turm verloren). Auch gut: Te2, Ld4, Ta5. } 0-1
+
+[Event "Weiß am Zug · Zug 6 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.24"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "r1bqk2r/ppp2ppp/2p2n2/2b1P3/8/8/PPPP1PPP/RNBQKB1R w KQkq - 1 6"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 6. exf6 { [Sq g1] Richtig: 6.exf6. In der Partie geschah 6.f3?? — danach 6…Se4 7.De2 Sf2 (Turm verloren). } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 31 · Deckung/Linie geöffnet – andere Figur hängt danach"]
+[Site "?"]
+[Date "2026.09.24"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "1r5k/1p4R1/1p2r3/p2pP3/3Pb3/2P1B3/PP1K4/6R1 w - - 1 31"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Zug nimmt einer anderen Figur die Deckung. Finde einen sicheren Zug! } 31. R7g4 { [Sq g7] Richtig: 31.T7g4. In der Partie geschah 31.Lg5?? — danach 31…Kxg7 32.Lf6+ Kf8 (Turm verloren). Auch gut: T7g3. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 40 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.24"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "5k2/8/3R1P2/3p4/3Pb3/P1P5/P2K4/8 w - - 3 40"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 40. a4 { [Sq d5] Richtig: 40.a4. In der Partie geschah 40.Txd5?? — danach 40…Lxd5 41.Kd3 Kf7 (Turm verloren). Auch gut: Tb6. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 7 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.23"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bqkb1r/ppp1pppp/8/4P3/3np3/8/PPP1QPPP/R1B1KBNR w KQkq - 0 7"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 7. Qd2 { [Sq f5] Richtig: 7.Dd2. In der Partie geschah 7.Dxe4?? — danach 7…Lf5 8.Dxf5 Sxf5 (Dame verloren). Auch gut: Dd1, Dc4. } 1-0
+
+[Event "Schwarz am Zug · Zug 17 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.23"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3k2r/p2Qppbp/6p1/3p4/4n1bP/3N1N2/PP1B1PP1/R3K2R b KQkq - 0 17"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 17... Bxd7 { [Sq g4] Richtig: 17…Lxd7. In der Partie geschah 17…Kxd7?? — danach 18.Sfe5+ Ke6 19.Sxg4 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 19 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.23"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r5k1/ppp2rb1/2n1p1p1/1NB4p/2P2pb1/5NP1/PP4BP/R3R1K1 w - - 0 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 19. Ng5 { [Sq e6] Richtig: 19.Sg5. In der Partie geschah 19.Txe6?? — danach 19…Lxe6 20.Sg5 Lxc4 (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 20 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.23"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r5k1/ppp2rb1/2n1R1p1/1NB4p/2P3b1/5Np1/PP4BP/R5K1 w - - 0 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 20. Re3 { [Sq e6] Richtig: 20.Te3. In der Partie geschah 20.hxg3?? — danach 20…Lxe6 21.Sg5 Lxc4 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 25 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1r5/p2R2p1/np3pk1/2p5/5pR1/B1P5/P1P3PP/6K1 b - - 1 25"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 25... Kf5 { [Sq g7] Richtig: 25…Kf5. In der Partie geschah 25…Kh7?? — danach 26.Tgxg7+ Kh8 27.Th7+. } 0-1
+
+[Event "Weiß am Zug · Zug 15 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.21"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qkb1r/pQ1n3p/3pp1p1/8/3P4/2N5/PP3PPP/R1B2RK1 w kq - 0 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 15. Re1 { [Sq g5] Richtig: 15.Te1. In der Partie geschah 15.Lg5?? — danach 15…Tb8 16.Dc6 Dxg5 (Läufer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 20 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b4r/p1qp1kb1/1p3p2/2p1pN1p/P1P1P1n1/1NPQ2B1/1P3PP1/R4RK1 w - - 2 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 20. Qd5+ { [Sq g7] Richtig: 20.Dd5+. In der Partie geschah 20.Sxg7?? — danach 20…Kxg7 21.f3 Sh6 (Springer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 34 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3r4/5qk1/2R1bp2/4p2p/2P1P1nB/5Q2/r2N1PP1/3R2K1 w - - 4 34"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 34. Nf1 { [Sq e6] Richtig: 34.Sf1. In der Partie geschah 34.De2?? — danach 34…Dd7 35.Txe6 Dxe6 (Turm verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 37 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/5qk1/2R1bp1n/2P1p2p/r2rP2B/5P2/3NQ1P1/3R2K1 w - - 1 37"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 37. Nf1 { [Sq c8] Richtig: 37.Sf1. In der Partie geschah 37.Tc8?? — danach 37…Lxc8 38.Sf1 Txd1 (Turm verloren). Auch gut: Lf2, De1. } 0-1
+
+[Event "Weiß am Zug · Zug 43 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/Qb4k1/2q2p1n/4p2p/r3P2B/5P2/3N2P1/3R2K1 w - - 2 43"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 43. Qe3 { [Sq c1] Richtig: 43.De3. In der Partie geschah 43.Tc1?? — danach 43…Dxc1+ 44.Kh2 Txa7 (Dame verloren). Auch gut: Df2. } 0-1
+
+[Event "Weiß am Zug · Zug 14 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn2kb1Q/pp2p3/2p2np1/1B4p1/6q1/8/PPPPR1PP/RNBK4 w q - 4 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 14. Bd3 { [Sq c6] Richtig: 14.Ld3. In der Partie geschah 14.Lxc6+?? — danach 14…Sxc6 15.Dh3 Sd4 (Dame verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 36 · Deckung/Linie geöffnet – andere Figur hängt danach"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/p7/2k2p2/1R1N4/8/6KP/r5P1/8 w - - 3 36"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Zug nimmt einer anderen Figur die Deckung. Finde einen sicheren Zug! } 36. Nb4+ { [Sq d5] Richtig: 36.Sb4+. In der Partie geschah 36.Tb4?? — danach 36…Kxd5 37.h4 Ke6 (Springer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 49 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "4k3/5R1P/6K1/8/6P1/8/p6r/8 w - - 2 49"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 49. Ra7 { [Sq f7] Richtig: 49.Ta7. In der Partie geschah 49.Kf6?? — danach 49…Th6+ 50.Ke5 Kxf7 (Dame verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 34 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2k4q/2p5/3b4/PR2p1p1/1p1pPpPr/1P1P1P2/1P1B2K1/6Q1 w - - 1 34"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 34. a6 { [Sq h1] Richtig: 34.a6. In der Partie geschah 34.Kf2?? — danach 34…Th2+ 35.Kf1 Dh3+ (Dame verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 7 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qkb1r/ppp1pppp/2n2n2/8/2BP4/2N1PQ2/PP3PPP/R1B1K2R b KQkq - 0 7"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 7... e6 { [Sq d4] Richtig: 7…e6. In der Partie geschah 7…Sxd4?? — danach 8.exd4 c6 9.Lb3 (Springer verloren). Auch gut: a6, Dd7, Tb8. } 1-0
+
+[Event "Weiß am Zug · Zug 16 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bqk2r/pppn1p1p/4p1pb/3nP1N1/3P4/1P4P1/PBPQ2BP/RN2R1K1 w kq - 3 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 16. h4 { [Sq g5] Richtig: 16.h4. In der Partie geschah 16.Lxd5?? — danach 16…Lxg5 17.Df2 exd5 (Springer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 25 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bk3B/ppqn3p/6p1/2bP4/8/1P4P1/P4Q1P/RN2R1K1 w - - 0 25"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 25. Bd4 { [Sq e3] Richtig: 25.Ld4. In der Partie geschah 25.Te3?? — danach 25…Db6 26.Kg2 Lxe3 (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 26 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bk3B/ppq4p/6p1/2bPn3/8/1P2R1P1/P4Q1P/RN4K1 w - - 2 26"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 26. Bf6+ { [Sq f8] Richtig: 26.Lf6+. In der Partie geschah 26.Df8+?? — danach 26…Lxf8 27.Sd2 Lc5 (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 28 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bk3B/ppq3Qp/6p1/2bPn3/8/1P2R1P1/P6P/RN4K1 w - - 6 28"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 28. Qg8+ { [Sq e5] Richtig: 28.Dg8+. In der Partie geschah 28.Dxe5?? — danach 28…Dxe5 29.Lxe5 Lxe3+ (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 30 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bk3B/pp5p/6p1/3P4/8/1P2Q1P1/P6P/RNq3K1 w - - 1 30"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 30. Qxc1 { [Sq e3] Richtig: 30.Dxc1. In der Partie geschah 30.Kg2?? — danach 30…Dxe3 31.Lf6+ Kc7 (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 14 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "r2qk2r/ppp2pp1/7p/8/2Bpn1b1/5N2/PP3PP1/R2Q1RK1 w kq - 0 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 14. Re1 { [Sq d4] Richtig: 14.Te1. In der Partie geschah 14.Dxd4?? — danach 14…Dxd4 15.Sxd4 O-O-O (Dame verloren). } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 43 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "8/8/4n3/3k2p1/6R1/8/PP4PK/8 w - - 5 43"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 43. a3 { [Sq g5] Richtig: 43.a3. In der Partie geschah 43.Txg5+?? — danach 43…Sxg5 44.Kg3 Se6 (Turm verloren). Auch gut: Kh1, Tg3, b3. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 22 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b2rk1/p2nQ2p/1pp2pp1/3p4/N1PP3q/5P2/PP4P1/4RRK1 b - - 0 22"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 22... Qxd4+ { [Sq d7] Richtig: 22…Dxd4+. In der Partie geschah 22…La6?? — danach 23.Dxd7 Tad8 24.Dxa7 (Springer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 23 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/p2nQ2p/bpp2pp1/3p4/N1PP3q/1P3P2/P5P1/4RRK1 b - - 0 23"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 23... Qxd4+ { [Sq d7] Richtig: 23…Dxd4+. In der Partie geschah 23…dxc4?? — danach 24.Dxd7 Tf7 25.Te8+ (Turm verloren). Auch gut: Tf7. } 1-0
+
+[Event "Schwarz am Zug · Zug 39 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "3r1rk1/Q1Rb3p/1p3pp1/8/3q4/P4Pn1/5NP1/6K1 b - - 4 39"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 39... Rde8 { [Sq d1] Richtig: 39…Tde8. In der Partie geschah 39…Dd1+?? — danach 40.Sxd1 Tf7 41.Se3 (Dame verloren). Auch gut: Se2+, Tfe8. } 1-0
+
+[Event "Schwarz am Zug · Zug 21 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.17"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qr1k1/pb5p/3p1np1/1pp3P1/1P2P3/P1N2Q1P/2P2P2/R3R1K1 b - - 0 21"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 21... Nh5 { [Sq e4] Richtig: 21…Sh5. In der Partie geschah 21…Sxe4?? — danach 22.Sxe4 Lxe4 23.Txe4 (Turm verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 32 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.17"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/p4rkp/6p1/1p6/1Pq5/P2Q4/2P1KP2/R7 b - - 5 32"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 32... Qe6+ { [Sq d3] Richtig: 32…De6+. In der Partie geschah 32…Dxd3+?? — danach 33.cxd3 a6 34.Tc1 (Dame verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 29 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.17"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5r2/5p1k/6Rp/p1p1q3/2Q5/2P3P1/Pr1N3P/3R2K1 w - - 1 29"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 29. Rg4 { [Sq f3] Richtig: 29.Tg4. In der Partie geschah 29.Sf3?? — danach 29…De3+ 30.Kh1 Dxf3+. Auch gut: Ta6. } 0-1
+
+[Event "Weiß am Zug · Zug 10 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.17"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qk1r1/ppp2pBp/2nb4/3p1p2/3P2n1/4PN2/PPP2PPP/RN1Q1RK1 w q - 1 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 10. Be5 { [Sq h6] Richtig: 10.Le5. In der Partie geschah 10.Lh6?? — danach 10…Sxh6 11.Sbd2 Dd7 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 14 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.17"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2kr2r1/ppp2p1p/5q2/3pnp2/5Bn1/4P3/PPP2PPP/RN1Q1RK1 w - - 0 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 14. f3 { [Sq e5] Richtig: 14.f3. In der Partie geschah 14.Lxe5?? — danach 14…Dxe5 15.g3 Sxe3 (Turm verloren). Auch gut: h3. } 0-1
+
+[Event "Weiß am Zug · Zug 10 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk2r/pppp4/2n2p2/2b1p1p1/2B1P1np/2NP1NBP/PPP2PP1/R2QK2R w KQkq - 0 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 10. hxg4 { [Sq f2] Richtig: 10.hxg4. In der Partie geschah 10.Lh2?? — danach 10…Sxf2 11.Dd2 Sxh1 (Turm verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 21 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk2r/8/2p5/ppN1p1p1/1n1pP2p/1B5P/PPPQ2PB/1K3R2 w kq - 0 21"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 21. Bf7+ { [Sq g5] Richtig: 21.Lf7+. In der Partie geschah 21.Dxg5?? — danach 21…Dxg5 22.Tc1 De7 (Dame verloren). Auch gut: Lxe5. } 0-1
+
+[Event "Weiß am Zug · Zug 4 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk1nr/pppp1ppp/2n5/2b1N3/4P3/8/PPPP1PPP/RNBQKB1R w KQkq - 1 4"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 4. Nf3 { [Sq f3] Richtig: 4.Sf3. In der Partie geschah 4.Sxf7?? — danach 4…Df6 5.Df3 Dxf3 (Dame verloren). Auch gut: Sxc6. } 0-1
+
+[Event "Weiß am Zug · Zug 17 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2nk2r/1ppb1qpp/1b2p3/pP1pP1B1/P1PP2n1/N2B1N2/6PP/R2Q1RK1 w kq - 3 17"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 17. h3 { [Sq d4] Richtig: 17.h3. In der Partie geschah 17.Sh4?? — danach 17…Lxd4+ 18.Kh1 Dxf1+ (Dame verloren). Auch gut: c5, Dd2. } 1-0
+
+[Event "Weiß am Zug · Zug 19 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2nk2r/1ppb1Rp1/1b2p3/pP1pP1p1/P1PP2nN/N2B4/6PP/R2Q2K1 w kq - 0 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 19. Re7+ { [Sq d4] Richtig: 19.Te7+. In der Partie geschah 19.Sg6?? — danach 19…Lxd4+ 20.Kf1 Se3+ (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 20 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3k2r/1ppb1np1/1b2p1N1/pP1pP1p1/P1PP2n1/N2B4/6PP/R2Q2K1 w kq - 0 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 20. Qxg4 { [Sq d4] Richtig: 20.Dxg4. In der Partie geschah 20.Sxh8?? — danach 20…Lxd4+ 21.Kf1 Se3+ (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 17 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b2rk1/3q1pp1/p1p1p2p/1p1n4/3P1B2/1Q1BP3/P4PPP/1R3RK1 w - - 0 17"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 17. Bg3 { [Sq f4] Richtig: 17.Lg3. In der Partie geschah 17.e4?? — danach 17…Sxf4 18.Tfd1 Dd8 (Läufer verloren). Auch gut: Le5. } 0-1
+
+[Event "Schwarz am Zug · Zug 13 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn1qr1k1/p2n1pbp/bp2p1p1/1B1p4/3P4/2N2N2/PPP1QPPP/R1B2RK1 b - - 2 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 13... Bxb5 { [Sq a6] Richtig: 13…Lxb5. In der Partie geschah 13…Dc7?? — danach 14.Lxa6 Sxa6 15.Dxa6 (Läufer verloren). Auch gut: Lb7, Lc8. } 1-0
+
+[Event "Schwarz am Zug · Zug 43 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "5Q2/7R/6p1/5pkp/5q2/6PP/2P2P1K/8 b - - 0 43"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 43... Qxf2+ { Richtig: 43…Dxf2+. In der Partie geschah 43…Dd2?? — danach 44.De7#. } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqr1k1/p1p2n1p/2p3p1/2P2p2/1b2PB2/3B4/P2N2PP/2RQ1RK1 b - - 0 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 18... Qxd3 { [Sq d2] Richtig: 18…Dxd3. In der Partie geschah 18…Lxd2?? — danach 19.Dxd2 g5 20.exf5 (Läufer verloren). Auch gut: Dd4+. } 0-1
+
+[Event "Schwarz am Zug · Zug 34 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "5rk1/5p2/pp6/2pP1Pp1/2P3np/1P2q3/P5B1/3Q3K b - - 1 34"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 34... Nf2+ { [Sq g4] Richtig: 34…Sf2+. In der Partie geschah 34…Te8?? — danach 35.Dxg4 Kf8 36.d6 (Springer verloren). Auch gut: Dg3, Df4. } 1-0
+
+[Event "Schwarz am Zug · Zug 51 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/8/1p2Kp2/1B3Pk1/1rP5/8/8/8 b - - 9 51"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 51... Rb3 { [Sq c4] Richtig: 51…Tb3. In der Partie geschah 51…Txc4?? — danach 52.Lxc4 Kf4 53.Kxf6 (Turm verloren). Auch gut: Tb1. } 1-0
+
+[Event "Schwarz am Zug · Zug 13 · Deckung/Linie geöffnet – andere Figur hängt danach"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/p1q1ppbp/1pnpbnp1/1Q6/2NP1B2/3BPN1P/PP3PP1/R4RK1 b - - 4 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Zug nimmt einer anderen Figur die Deckung. Finde einen sicheren Zug! } 13... Nd5 { [Sq c7] Richtig: 13…Sd5. In der Partie geschah 13…d5?? — danach 14.Lxc7 dxc4 15.Lxc4 (Dame verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 28 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1r3rk1/p3pp2/1p4p1/6q1/Q5B1/4P3/PP3P2/R2R2K1 b - - 0 28"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 28... f5 { [Sq g4] Richtig: 28…f5. In der Partie geschah 28…Dxg4+?? — danach 29.Dxg4 Tbd8 30.Dd4 (Dame verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 40 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1r1r2k1/Q3pp2/3q2p1/Kp6/8/4P3/PP6/8 b - - 3 40"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 40... Qd2+ { [Sq b6] Richtig: 40…Dd2+. In der Partie geschah 40…Db6+?? — danach 41.Dxb6 Txb6 42.Kxb6 (Dame verloren). Auch gut: Tdc8, Dd5, e5. } 0-1
+
+[Event "Schwarz am Zug · Zug 42 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/r4k2/1RP1p2p/1K4pr/5p2/8/8/6R1 b - - 0 42"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 42... Rh2 { [Sq b7] Richtig: 42…Th2. In der Partie geschah 42…f3?? — danach 43.Tb7+ Txb7+ 44.cxb7. } 1-0
+
+[Event "Weiß am Zug · Zug 18 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/pp3pp1/2p4p/4nB2/4N3/6P1/Pq4PP/R2Q1R1K w - - 0 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 18. Qh5 { [Sq f6] Richtig: 18.Dh5. In der Partie geschah 18.Sf6+?? — danach 18…gxf6 19.Dd6 Kg7 (Springer verloren). Auch gut: h3, Tf2, Tb1. } 1-0
+
+[Event "Schwarz am Zug · Zug 16 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnbq2k1/pp4b1/2p2r1p/4BpNQ/4p3/2P1P2P/PP3PP1/RN2K2R b KQ - 3 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 16... hxg5 { [Sq g6] Richtig: 16…hxg5. In der Partie geschah 16…Tg6?? — danach 17.Dxg6 Dxg5 18.De8+ (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 8 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qk2r/pppb1ppp/3bpn2/1B1pn3/3P1B2/4P3/PPP2PPP/RN1Q1RK1 w kq - 0 8"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 8. dxe5 { [Sq d7] Richtig: 8.dxe5. In der Partie geschah 8.Lxd7+?? — danach 8…Sexd7 9.Sd2 Lxf4 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 17 · Deckung/Linie geöffnet – andere Figur hängt danach"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2krr3/pp3ppp/3pp3/5P2/1q1p4/1PN5/P1PQ1PPP/R3R1K1 w - - 0 17"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Zug nimmt einer anderen Figur die Deckung. Finde einen sicheren Zug! } 17. Ne4 { [Sq d2] Richtig: 17.Se4. In der Partie geschah 17.Sa4?? — danach 17…Dxd2 18.Ted1 Dh6 (Dame verloren). Auch gut: Sb1. } 0-1
+
+[Event "Schwarz am Zug · Zug 12 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnbq2nN/3p1Q1p/pppkp3/4P3/2B5/8/PPP2PPP/RNb1K2R b KQ - 0 12"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 12... Kc7 { [Sq d8] Richtig: 12…Kc7. In der Partie geschah 12…Kxe5?? — danach 13.Dg7+ Kd6 14.Sf7+ (Dame verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 14 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnbq2nN/3p1Q1p/ppp1p3/4k3/2B5/8/PbP2PPP/RN2R1K1 b - - 1 14"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 14... Kd6 { [Sq d8] Richtig: 14…Kd6. In der Partie geschah 14…Kd4?? — danach 15.Df4+ Kc5 16.Sf7 (Dame verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 15 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn1q1rk1/pp3pbp/2p1p1pB/8/2B5/2PP1R2/P1PQ2PP/5RK1 b - - 0 15"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 15... Nd7 { [Sq e6] Richtig: 15…Sd7. In der Partie geschah 15…b5?? — danach 16.Lxe6 fxe6 17.Txf8+ (Dame verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 20 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2q2k1/5rbp/2p1B1pB/pp2n3/5Q2/P1PP4/2P3PP/5RK1 b - - 2 20"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 20... Qe7 { [Sq f6] Richtig: 20…De7. In der Partie geschah 20…Df6?? — danach 21.Dxf6 Lxf6 22.Txf6 (Dame verloren). Auch gut: Dd7, De8. } 1-0
+
+[Event "Schwarz am Zug · Zug 39 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/7p/6pk/Q1K5/3P4/2P5/1q6/8 b - - 4 39"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 39... g5 { [Sq c3] Richtig: 39…g5. In der Partie geschah 39…Dxc3+?? — danach 40.Dxc3 g5 41.d5 (Dame verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 21 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/pp2p2p/1n1pNpp1/2P5/q7/3Q3P/P1P2PP1/1R2R1K1 b - - 0 21"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 21... dxc5 { [Sq f8] Richtig: 21…dxc5. In der Partie geschah 21…Dc4?? — danach 22.Sxf8 Dxd3 23.cxd3 (Dame verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 29 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2r2k2/p3p2p/1p3pp1/P7/3n4/7P/2PR1PP1/1R4K1 b - - 2 29"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 29... Rc4 { [Sq c2] Richtig: 29…Tc4. In der Partie geschah 29…Sxc2?? — danach 30.Tc1 bxa5 31.Tcxc2 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 4 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppp1pp1p/3p1np1/6N1/2B1P3/8/PPPP1PPP/RNBQK2R b KQkq - 1 4"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 4... e6 { [Sq f7] Richtig: 4…e6. In der Partie geschah 4…Lg7?? — danach 5.Sxf7 Dd7 6.Sxh8 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 16 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3nrk1/1bqn1pbp/2p1p1p1/1p1pP1N1/p2P4/PPN2Q1P/B1PB1PP1/R4RK1 b - - 0 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 16... axb3 { [Sq e6] Richtig: 16…axb3. In der Partie geschah 16…f6?? — danach 17.Sxe6 Db6 18.Sxf8 (Turm verloren). Auch gut: h6, c5, Sxe5. } 1-0
+
+[Event "Schwarz am Zug · Zug 29 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "6k1/1b1n3p/2pR1np1/1p1p4/p7/PP4NP/B1P2PP1/6K1 b - - 0 29"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 29... axb3 { [Sq f6] Richtig: 29…axb3. In der Partie geschah 29…Sf8?? — danach 30.Txf6 b4 31.bxa4 (Springer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 4 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 4. Ba4 { [Sq b5] Richtig: 4.La4. In der Partie geschah 4.O-O?? — danach 4…axb5 5.d4 d6 (Läufer verloren). Auch gut: Lc4, Lxc6. } 0-1
+
+[Event "Weiß am Zug · Zug 28 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5rk1/2p3pp/p1p5/8/5r2/3R4/PP1R2PP/6K1 w - - 0 28"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 28. g3 { Richtig: 28.g3. In der Partie geschah 28.Td7?? — danach 28…Tf1#. Auch gut: h3, h4, Td1. } 0-1
+
+[Event "Schwarz am Zug · Zug 22 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "5rk1/pb1n3p/3B2p1/3p4/Pp6/5B2/2P2PPP/R5K1 b - - 1 22"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 22... Rc8 { [Sq f4] Richtig: 22…Tc8. In der Partie geschah 22…Tf4?? — danach 23.Lxf4 Sc5 24.Le3 (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 28 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3k3/p4pp1/3p1r2/2p1p1q1/1pP1PnPp/1P1PB2P/1P4P1/R1Q1R1K1 w q - 5 28"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 28. Kh2 { [Sq c1] Richtig: 28.Kh2. In der Partie geschah 28.Tf1?? — danach 28…Se2+ 29.Kh2 Sxc1 (Dame verloren). Auch gut: Kh1, Ta6, Ta5. } 0-1
+
+[Event "Schwarz am Zug · Zug 29 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2r3k1/p4p1p/4PBp1/8/1b6/1P3P2/P4KPP/4r3 b - - 1 29"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 29... Rc2+ { [Sq f7] Richtig: 29…Tc2+. In der Partie geschah 29…Ta1?? — danach 30.exf7+ Kf8 31.Lxa1 (Turm verloren). Auch gut: Txe6. } 0-1
+
+[Event "Schwarz am Zug · Zug 9 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2k3r/pppb1ppp/2n2n2/3Np1B1/1b2P3/5N2/PPP2PPP/2KR1B1R b - - 5 9"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 9... Be7 { [Sq f6] Richtig: 9…Le7. In der Partie geschah 9…h6?? — danach 10.Sxf6 hxg5 11.Sxd7 (Springer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 15 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/2p1ppbp/p4np1/1p2P3/1n3B2/2N2N1P/PPPR1PP1/2K4R b - - 0 15"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 15... Nh5 { [Sq d7] Richtig: 15…Sh5. In der Partie geschah 15…Sd7?? — danach 16.Txd7 Tfd8 17.Tdd1 (Springer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 8 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1qkbnr/p1p2ppp/1p1pp3/4P3/3PBP2/5Q2/PPP4P/RNB1K3 b Qkq - 0 8"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 8... d5 { [Sq c6] Richtig: 8…d5. In der Partie geschah 8…c6?? — danach 9.Lxc6+ Sxc6 10.Dxc6+. } 0-1
+
+[Event "Schwarz am Zug · Zug 11 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1bnr/p3kppp/1pQpp3/4P3/3P1P2/1P6/P1P4P/RNB1K3 b Q - 0 11"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 11... Qc8 { Richtig: 11…Dc8. In der Partie geschah 11…dxe5?? — danach 12.Db7+ Ke8 13.Dc6+. Auch gut: Tc8, f5. } 0-1
+
+[Event "Schwarz am Zug · Zug 13 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn1qr1k1/pb1p2pp/1p3pn1/3N4/2BP4/5N2/PPPQ1PPP/R2K3R b - - 2 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 13... Kh8 { [Sq d5] Richtig: 13…Kh8. In der Partie geschah 13…Lxd5?? — danach 14.Lxd5+ Kf8 15.Lxa8 (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 26 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2k2r1r/1p2q3/p3pp2/P2pP3/1Rp5/2P3Pp/2P1P2P/2Q2K1R w - - 0 26"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 26. Qe3 { [Sq f6] Richtig: 26.De3. In der Partie geschah 26.exf6?? — danach 26…Dxf6+ 27.Ke1 Dxc3+ (Bauer verloren). Auch gut: Ke1. } 1-0
+
+[Event "Weiß am Zug · Zug 14 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/ppp1nppp/2n5/3q4/1b1PQ3/1PN1P1P1/PBP4P/R3K1NR w KQ - 1 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 14. Qxd5 { [Sq c3] Richtig: 14.Dxd5. In der Partie geschah 14.O-O-O?? — danach 14…Lxc3 15.Dxd5 Lxb2+ (Dame verloren). Auch gut: Df3. } 0-1
+
+[Event "Weiß am Zug · Zug 22 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r5k1/pp3ppp/3p4/3Pn3/1nP1r2P/1P4P1/PB6/2KR2NR w - - 1 22"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 22. Kb1 { [Sq d1] Richtig: 22.Kb1. In der Partie geschah 22.a3?? — danach 22…Sbd3+ 23.Kc2 Sf2 (Turm verloren). Auch gut: Lxe5, Th2. } 0-1
+
+[Event "Weiß am Zug · Zug 24 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r5k1/pp3ppp/n2p4/3Pn3/2P4P/PP2r1PN/1B6/2KR3R w - - 3 24"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 24. Bxe5 { [Sq e1] Richtig: 24.Lxe5. In der Partie geschah 24.Tde1?? — danach 24…Txe1+ 25.Txe1 Sd3+ (Turm verloren). Auch gut: Kc2. } 0-1
+
+[Event "Weiß am Zug · Zug 14 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b2rk1/ppp1npb1/1qn1p1pp/8/4NP2/3B1N2/PPP3PP/R1BQ1R1K w - - 2 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 14. Qe2 { [Sq a1] Richtig: 14.De2. In der Partie geschah 14.b3?? — danach 14…f5 15.Sed2 Lxa1 (Turm verloren). Auch gut: c3, a4, a3. } 0-1
+
+[Event "Weiß am Zug · Zug 19 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b2r2/ppp2pk1/2n1pNpp/5n2/1P3P2/2PB1N2/q5PP/b1BQR2K w - - 2 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 19. Re2 { [Sq c3] Richtig: 19.Te2. In der Partie geschah 19.Lxf5?? — danach 19…Lxc3 20.Te2 Da1 (Springer verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 13 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bq1r2/pp1n2kp/2pp2p1/8/3NP1n1/3B4/PPPQ1PP1/RN2K2R b KQ - 0 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 13... Qf6 { [Sq d8] Richtig: 13…Df6. In der Partie geschah 13…Txf2?? — danach 14.Se6+ Kg8 15.Sxd8 (Dame verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 19 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2rqr1k1/p4pbp/3p2p1/4p1N1/3P4/1Qn1P3/PB3PPP/R4RK1 b - - 1 19"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 19... Ne2+ { [Sq f7] Richtig: 19…Se2+. In der Partie geschah 19…exd4?? — danach 20.Sxf7 Df6 21.Sxd6+ (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 20 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2rqr1k1/p4pbp/3p2p1/6N1/3P4/1Qn5/PB3PPP/R4RK1 b - - 0 20"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 20... Ne2+ { [Sq f7] Richtig: 20…Se2+. In der Partie geschah 20…Lxd4?? — danach 21.Dxf7+ Kh8 22.Dxh7#. } 1-0
+
+[Event "Schwarz am Zug · Zug 22 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2rqr1k1/p4p1p/3p2p1/6N1/3b4/1Q6/PB2nPPP/2R2R1K b - - 3 22"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 22... Qxg5 { [Sq f7] Richtig: 22…Dxg5. In der Partie geschah 22…Sxc1?? — danach 23.Dxf7+ Kh8 24.Dxh7#. } 1-0
+
+[Event "Schwarz am Zug · Zug 32 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/p5kp/6p1/4q3/3p3P/1Q4P1/P4N1K/2r5 b - - 0 32"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 32... Qe2 { [Sq d4] Richtig: 32…De2. In der Partie geschah 32…Tf1?? — danach 33.Db7+ Kf8 34.Dc8+. Auch gut: Tc3. } 1-0
+
+[Event "Schwarz am Zug · Zug 33 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/pQ4kp/6p1/4q3/3p3P/6P1/P4N1K/5r2 b - - 2 33"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 33... Kh8 { [Sq e5] Richtig: 33…Kh8. In der Partie geschah 33…Kh6?? — danach 34.Sg4+ Kh5 35.Sxe5 (Dame verloren). Auch gut: Kf8, Kg8. } 1-0
+
+[Event "Schwarz am Zug · Zug 34 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/p6p/6pk/4q3/3p3P/6P1/PQ3N1K/5r2 b - - 4 34"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 34... Qe1 { [Sq e3] Richtig: 34…De1. In der Partie geschah 34…De3?? — danach 35.Sg4+ Kh5 36.Sxe3 (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 10 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppp1bppp/3p1n2/4p3/2BnP3/1PNP1P2/PBPQ1P1P/R3K2R w KQ - 1 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 10. O-O-O { [Sq c2] Richtig: 10.O-O-O. In der Partie geschah 10.De3?? — danach 10…Sxc2+ 11.Ke2 Sxe3 (Dame verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 8 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1kbnr/ppppqppp/8/3pP3/1nP2P2/8/PP1B2PP/RN1QKBNR w KQkq - 0 8"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 8. a3 { [Sq b4] Richtig: 8.a3. In der Partie geschah 8.Lxb4?? — danach 8…Dxb4+ 9.Dd2 Dxd2+ (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 10 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1kbnr/pppp1ppp/1q6/3pP3/2P2P2/8/PP1Q2PP/RN2KBNR w KQkq - 2 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 10. Nc3 { [Sq b2] Richtig: 10.Sc3. In der Partie geschah 10.Dxd5?? — danach 10…Dxb2 11.Db5 Dxa1 (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 12 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1k1nr/pppp1ppp/8/3QP3/1bP2P2/2N1q3/PP4PP/R3KBNR w KQkq - 3 12"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 12. Ne2 { [Sq c3] Richtig: 12.Se2. In der Partie geschah 12.Le2?? — danach 12…Lxc3+ 13.bxc3 Dxc3+ (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 27 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1r1k1/pp3ppp/2pp4/8/2PN4/3Q1R1P/PP2BnP1/4R2K w - - 1 27"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 27. Rxf2 { [Sq d3] Richtig: 27.Txf2. In der Partie geschah 27.Kg1?? — danach 27…Sxd3 28.Txd3 Le6 (Dame verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 17 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rnb2rk1/p4p1p/1pp3p1/6q1/8/2Q4P/PPP1NPP1/RN3RK1 b - - 5 17"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 17... c5 { [Sq h3] Richtig: 17…c5. In der Partie geschah 17…Lxh3?? — danach 18.Dxh3 Db5 19.Sbc3 (Läufer verloren). Auch gut: Lb7, La6, Td8. } 0-1
+
+[Event "Schwarz am Zug · Zug 19 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn3rk1/p4p1p/1pp1b1p1/6q1/8/2Q3N1/PPPN1PP1/R4RK1 b - - 3 19"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 19... Nd7 { [Sq f8] Richtig: 19…Sd7. In der Partie geschah 19…c5?? — danach 20.Sde4 Dh6 21.Sf6+ (Turm verloren). Auch gut: Dc5, Df4, f5. } 0-1
+
+[Event "Weiß am Zug · Zug 15 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "rn2r1k1/ppb2ppp/3q4/5bB1/3pp2N/1B1P4/PPP2PPP/R2QR1K1 w - - 0 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 15. g3 { [Sq h2] Richtig: 15.g3. In der Partie geschah 15.Sxf5?? — danach 15…Dxh2+ 16.Kf1 Dh1+ (Läufer verloren). Auch gut: f4. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 20 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qr1k1/1pp4p/n4ppB/Q2p1b2/2P5/PP3B2/5PPP/R4RK1 b - - 1 20"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 20... c6 { [Sq d5] Richtig: 20…c6. In der Partie geschah 20…b6?? — danach 21.Dxd5+ Le6 22.Dxa8 (Dame verloren). Auch gut: Le4. } 0-1
+
+[Event "Weiß am Zug · Zug 34 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "6r1/1k6/pP1p1p1r/2pPp3/B1q5/2P2QP1/6KP/R7 w - - 0 34"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 34. Bc6+ { [Sq h2] Richtig: 34.Lc6+. In der Partie geschah 34.Df5?? — danach 34…De2+ 35.Kg1 Dxh2+. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 42 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2Q5/8/pkBp1p1r/2pPp3/8/2P3Pq/8/R4K2 w - - 7 42"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 42. Qxh3 { [Sq c8] Richtig: 42.Dxh3. In der Partie geschah 42.Kf2?? — danach 42…Dxc8 43.Tb1+ Kc7 (Dame verloren). } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 44 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2Q5/8/pkBp1p1r/2pPp2q/8/2P2KP1/8/R7 w - - 11 44"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 44. Ke3 { Richtig: 44.Ke3. In der Partie geschah 44.Kf2?? — danach 44…Dh2+ 45.Kf1 Dh1+. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 46 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2Q5/8/pkBp1p1r/2pPp2q/8/2P2KP1/8/R7 w - - 15 46"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 46. Ke3 { Richtig: 46.Ke3. In der Partie geschah 46.Kf2?? — danach 46…Dh2+. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 21 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2r4/pbp2ppp/1p3k2/2P2p2/N5Pn/P7/1P2B2P/4RRK1 b - - 0 21"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 21... Rd2 { [Sq f5] Richtig: 21…Td2. In der Partie geschah 21…Sg2?? — danach 22.Txf5+ Ke7 23.Tc1. Auch gut: Td4. } 0-1
+
+[Event "Weiß am Zug · Zug 15 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/1pp2pp1/p1npb1Np/4p3/8/1BPPP3/PP1Q2PP/R4RK1 w - - 1 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 15. Bxe6 { [Sq b3] Richtig: 15.Lxe6. In der Partie geschah 15.Sxf8?? — danach 15…Lxb3 16.axb3 Dxf8 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 25 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5rnk/pp1r1pp1/7p/5PN1/4p3/2P3PQ/PP3P1P/6K1 w - - 2 25"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 25. Nxe4 { [Sq f6] Richtig: 25.Sxe4. In der Partie geschah 25.f6?? — danach 25…Td1+ 26.Kg2 Sxf6. } 0-1
+
+[Event "Schwarz am Zug · Zug 21 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5r1k/2p4p/1p2n1p1/p2N4/4n3/2P1BP2/P1P3PP/3R2K1 b - - 0 21"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 21... N4c5 { [Sq e4] Richtig: 21…S4c5. In der Partie geschah 21…Td8?? — danach 22.fxe4 c6 23.Lxb6 (Springer verloren). Auch gut: Sf6. } 0-1
+
+[Event "Schwarz am Zug · Zug 20 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r5k1/p2n3p/1p3rp1/3b1p2/4P3/1P3Pq1/P2NB1P1/2RQ1RK1 b - - 0 20"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 20... Be6 { [Sq e4] Richtig: 20…Le6. In der Partie geschah 20…fxe4?? — danach 21.Sxe4 Lxe4 22.Dxd7 (Turm verloren). Auch gut: Lc6, Lb7, Lf7. } 1-0
+
+[Event "Weiß am Zug · Zug 22 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3r1k1/1p1n1p1p/2p3pB/p7/8/1P2pPQ1/q2N2PP/1N3RK1 w - - 0 22"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 22. Ne4 { [Sq d2] Richtig: 22.Se4. In der Partie geschah 22.Sc3?? — danach 22…Dxd2 23.Se4 Dd4 (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 25 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r5k1/1p1n1p1p/2p3pB/p7/4P3/1P4Q1/3qp1PP/5RK1 w - - 0 25"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 25. Bxd2 { [Sq f1] Richtig: 25.Lxd2. In der Partie geschah 25.De1?? — danach 25…exf1=T+ 26.Dxf1 Dxh6 (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 26 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r5k1/1p1n1p1p/2p3pB/p7/4P3/1P2q3/4p1PP/4QRK1 w - - 2 26"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 26. Bxe3 { [Sq f1] Richtig: 26.Lxe3. In der Partie geschah 26.Kh1?? — danach 26…exf1=D+ 27.Dxf1 Dxh6 (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 28 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1knr3r/4n3/p4p1b/6pp/8/1N6/P1R2PPP/2Q3K1 w - - 0 28"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 28. Nc5 { Richtig: 28.Sc5. In der Partie geschah 28.Db2?? — danach 28…Td1#. Auch gut: g3, Db1. } 0-1
+
+[Event "Weiß am Zug · Zug 30 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1k1r3r/4n3/p4p1b/1n4pp/3N4/8/PQR2PPP/6K1 w - - 4 30"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 30. Rc4 { Richtig: 30.Tc4. In der Partie geschah 30.Sxb5?? — danach 30…Td1#. } 0-1
+
+[Event "Weiß am Zug · Zug 21 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r7/ppp2pk1/6pp/8/2BPQ1bq/3PB3/PP3PPb/R4R1K w - - 0 21"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 21. Qxg4 { [Sq g3] Richtig: 21.Dxg4. In der Partie geschah 21.g3?? — danach 21…Lxg3+ 22.Kg2 Dh2#. } 0-1
+
+[Event "Schwarz am Zug · Zug 12 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.07"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/pppbppbp/6p1/4n1Nn/6PQ/2N2P2/PPP4P/R1B1KB1R b KQ - 0 12"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 12... f6 { [Sq f3] Richtig: 12…f6. In der Partie geschah 12…Sxf3+?? — danach 13.Sxf3 Sf6 14.h3 (Springer verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 20 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/p4p1p/4p1pP/4n3/1b2Q1b1/2NP1P2/PP1B2P1/R3K2R b KQ - 2 20"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 20... Nxd3+ { [Sq g4] Richtig: 20…Sxd3+. In der Partie geschah 20…f6?? — danach 21.fxg4 Dd6 22.O-O (Dame verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 25 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/p7/6p1/Pp1qb2p/3pN1bQ/P7/2PB1PPP/R3R1K1 b - - 2 25"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 25... Rae8 { [Sq f4] Richtig: 25…Tae8. In der Partie geschah 25…Tf4?? — danach 26.Lxf4 Tf8 27.Lxe5 (Turm verloren). Auch gut: Tac8, d3. } 1-0
+
+[Event "Weiß am Zug · Zug 15 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/p4ppp/1pQ5/2b1p1N1/6n1/2Pq4/PP1N1PPP/R1B2RK1 w - - 2 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 15. Nge4 { [Sq e6] Richtig: 15.Sge4. In der Partie geschah 15.Se6?? — danach 15…Dg6 16.Se4 Tfc8 (Dame verloren). Auch gut: Sde4, De4. } 0-1
+
+[Event "Weiß am Zug · Zug 27 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/p2r1kpp/1p6/8/3N4/2PK4/PP1B1rPP/R7 w - - 5 27"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 27. Rg1 { [Sq f4] Richtig: 27.Tg1. In der Partie geschah 27.Lf4?? — danach 27…Txf4 28.Ke3 g5 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 39 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/6p1/7k/7p/2N4P/K1P3r1/8/5R2 w - - 0 39"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 39. Kb4 { [Sq c3] Richtig: 39.Kb4. In der Partie geschah 39.Td1?? — danach 39…Txc3+ 40.Kb4 Th3. Auch gut: Kb2, Kb3. } 0-1
+
+[Event "Weiß am Zug · Zug 20 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3q1rk1/1b2n1bp/4ppp1/2p3B1/Q3P3/2P2NN1/1P3PPP/4R1K1 w - - 0 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 20. Be3 { [Sq g5] Richtig: 20.Le3. In der Partie geschah 20.Da7?? — danach 20…fxg5 21.Sxg5 Dd2 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 24 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3r2k1/Qb2n1bp/2q1p1p1/2p1p1N1/8/2P1B1N1/1P3PPP/4R1K1 w - - 2 24"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 24. f3 { [Sq g2] Richtig: 24.f3. In der Partie geschah 24.Lxc5?? — danach 24…Dxg2#. } 0-1
+
+[Event "Schwarz am Zug · Zug 6 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnbqk2r/ppp1ppbp/5np1/4P3/8/2N2N2/PPP2PPP/R1BQKB1R b KQkq - 0 6"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 6... Qxd1+ { [Sq d5] Richtig: 6…Dxd1+. In der Partie geschah 6…Sd5?? — danach 7.Dxd5 O-O 8.Le3 (Springer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 28 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/pp4b1/2pp2p1/4p2p/4P1n1/2PB2N1/PP3NK1/5R1R b - - 1 28"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 28... Ne3+ { [Sq f2] Richtig: 28…Se3+. In der Partie geschah 28…Sxf2?? — danach 29.Txf2 Txf2+ 30.Kxf2 (Turm verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 27 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "4r2k/4qn2/pp1b1nQ1/2p3N1/P1b2P2/2P3P1/1P1B3P/R5K1 w - - 1 27"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 27. Re1 { [Sq f7] Richtig: 27.Te1. In der Partie geschah 27.Sxf7+?? — danach 27…Dxf7 28.Dh6+ Kg8 (Springer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 12 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.05"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qk2r/ppb2ppp/2p1pn2/4P3/2P1N3/3Q4/PP3PPP/R1B2RK1 b kq - 0 12"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 12... Qxd3 { [Sq e4] Richtig: 12…Dxd3. In der Partie geschah 12…Sxe4?? — danach 13.Dxe4 De7 14.Le3 (Springer verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 53 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.05"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/2PQ2pk/7p/8/4q2P/6PK/8/8 b - - 8 53"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 53... Qh1+ { [Sq c8] Richtig: 53…Dh1+. In der Partie geschah 53…Dc4?? — danach 54.Df5+ Kg8 55.c8=D+ (Dame verloren). Auch gut: h5. } 0-1
+
+[Event "Weiß am Zug · Zug 17 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2b2rk1/Q1p2ppp/1pp5/5N2/8/8/PqP1nPPP/R4R1K w - - 0 17"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 17. Ne7+ { [Sq f5] Richtig: 17.Se7+. In der Partie geschah 17.Dxc7?? — danach 17…Lxf5 18.Tfb1 Dc3 (Springer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 18 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2b2rk1/2Q2ppp/1pp5/5N2/8/8/P1q1nPPP/R4R1K w - - 0 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 18. Ne7+ { [Sq f5] Richtig: 18.Se7+. In der Partie geschah 18.Dxb6?? — danach 18…Dxf5 19.Dxc6 h5 (Springer verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 29 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "4r1k1/p4qp1/1p5p/2p1B2b/5P1Q/P1P5/2P3PP/4R1K1 b - - 4 29"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 29... Bg6 { [Sq h5] Richtig: 29…Lg6. In der Partie geschah 29…g6?? — danach 30.g4 g5 31.Dxh5 (Dame verloren). Auch gut: Df5, Te6, Dg6. } 1-0
+
+[Event "Weiß am Zug · Zug 20 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "5q1k/ppQ1p1bp/6p1/6B1/4p3/2N3P1/PPPr3P/R5K1 w - - 2 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 20. Bf4 { Richtig: 20.Lf4. In der Partie geschah 20.Lxd2?? — danach 20…Ld4+ 21.Kg2 Df3+. } 1-0
+
+[Event "Weiß am Zug · Zug 9 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn1qk2r/pp2bp2/2pp1npp/4p3/Q1B1P1b1/2PP1N2/PP1N1PPP/R1B2RK1 w kq - 0 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 9. Qb3 { [Sq f7] Richtig: 9.Db3. In der Partie geschah 9.Lxf7+?? — danach 9…Kxf7 10.d4 Sbd7 (Läufer verloren). Auch gut: Dd1, Dc2. } 1-0
+
+[Event "Weiß am Zug · Zug 29 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2q4/p7/6pQ/5k2/4N3/8/Pr3PPP/R4RK1 w - - 2 29"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 29. g4+ { [Sq g5] Richtig: 29.g4+. In der Partie geschah 29.Dg5+?? — danach 29…Dxg5 30.Sxg5 Kxg5 (Dame verloren). Auch gut: Sg3+. } 1-0
+
+[Event "Weiß am Zug · Zug 52 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "8/8/5P2/6p1/6Pp/K2Nk2P/4p3/8 w - - 2 52"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 52. Ne1 { [Sq d3] Richtig: 52.Se1. In der Partie geschah 52.f7?? — danach 52…Kxd3 53.f8=D e1=D (Springer verloren). } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 6 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rnbqk2r/pppnbppp/3pp3/6B1/3PP3/5N2/PPPN1PPP/R2QKB1R w KQkq - 5 6"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 6. Bxe7 { [Sq g5] Richtig: 6.Lxe7. In der Partie geschah 6.Lb5?? — danach 6…Lxg5 7.e5 Lh6 (Läufer verloren). Auch gut: Le3, h4, Lf4. } 0-1
+
+[Event "Schwarz am Zug · Zug 3 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bqkbnr/ppp1pppp/2n5/3p4/3P3P/4P3/PPP2PP1/RNBQKBNR b KQkq - 0 3"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 3... e5 { [Sq g4] Richtig: 3…e5. In der Partie geschah 3…Lg4?? — danach 4.Dxg4 e5 5.dxe5 (Läufer verloren). Auch gut: Sf6. } 1-0
+
+[Event "Schwarz am Zug · Zug 36 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/8/1p3p1R/1r2k3/5P2/6KP/8/8 b - - 0 36"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 36... Ke6 { [Sq b5] Richtig: 36…Ke6. In der Partie geschah 36…Kf5?? — danach 37.Th5+ Ke4 38.Txb5 (Turm verloren). Auch gut: Ke4, Kd6, Kd4. } 0-1
+
+[Event "Schwarz am Zug · Zug 13 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bqk2r/pp4pp/3bpp2/4n3/Q2p1B2/3P2P1/PP3PBP/RN2R1K1 b kq - 3 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 13... Kf7 { [Sq c6] Richtig: 13…Kf7. In der Partie geschah 13…Sc6?? — danach 14.Lxc6+ bxc6 15.Dxc6+ (Dame verloren). Auch gut: Dd7, Ld7, Ke7. } 1-0
+
+[Event "Schwarz am Zug · Zug 23 · Deckung/Linie geöffnet – andere Figur hängt danach"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2r2r1k/pp2q1pp/8/n2Bbp2/8/N2PQ1P1/PP1B1P1P/R5K1 b - - 1 23"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Zug nimmt einer anderen Figur die Deckung. Finde einen sicheren Zug! } 23... Qd6 { [Sq e7] Richtig: 23…Dd6. In der Partie geschah 23…Ld6?? — danach 24.Dxe7 Lxe7 25.Lxa5 (Dame verloren). Auch gut: f4, Df6. } 1-0
+
+[Event "Schwarz am Zug · Zug 27 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "5r1k/pB4pp/3b4/r4p2/2N5/3PP1P1/PP5P/R5K1 b - - 1 27"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 27... Rb5 { [Sq d6] Richtig: 27…Tb5. In der Partie geschah 27…Tc5?? — danach 28.Sxd6 Tb8 29.b3 (Läufer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 10 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2q1rk1/pp2ppbp/2n3p1/2pp1b2/2P1n3/1PN2NP1/PR1PPPBP/2BQ1RK1 w - - 3 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 10. cxd5 { [Sq e4] Richtig: 10.cxd5. In der Partie geschah 10.Sxe4?? — danach 10…Lxe4 11.d3 Lxb2 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 3 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/4N3/4p3/4P3/PPPP1PPP/RNBQKB1R b KQkq - 1 3"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 3... c6 { Richtig: 3…c6. In der Partie geschah 3…f6?? — danach 4.Dh5+ Ke7 5.Df7+. Auch gut: d6, h5, Sf6. } 1-0
+
+[Event "Weiß am Zug · Zug 24 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r7/2p5/p2pk3/2b1p1p1/1p1nP1N1/P2P1P2/1PPKB3/R7 w - - 0 24"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 24. a4 { [Sq a1] Richtig: 24.a4. In der Partie geschah 24.c3?? — danach 24…Sb3+ 25.Kd1 Sxa1 (Turm verloren). Auch gut: Th1, Tb1. } 0-1
+
+[Event "Weiß am Zug · Zug 25 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "1k5r/1pp3pp/p4p2/2P1b3/1P1Q4/P2P1q2/4RP2/4KB2 w - - 1 25"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 25. Qe4 { [Sq e5] Richtig: 25.De4. In der Partie geschah 25.Txe5?? — danach 25…fxe5 26.Dxe5 Tf8 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1kb2/pp1p3Q/8/2p3q1/8/8/PPPR1PPP/2KNrB1R b q - 4 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 18... Bh6 { [Sq e1] Richtig: 18…Lh6. In der Partie geschah 18…d6?? — danach 19.Lb5+ Kd8 20.Txe1 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 26 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3kb2/pQ6/3p4/2p5/7P/5qP1/PPP2P2/2KR4 b q - 0 26"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 26... Qxb7 { [Sq e3] Richtig: 26…Dxb7. In der Partie geschah 26…Td8?? — danach 27.Te1+ De3+ 28.Txe3+. Auch gut: Lh6+. } 1-0
+
+[Event "Schwarz am Zug · Zug 17 · Deckung/Linie geöffnet – andere Figur hängt danach"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr1n1r/pp2qpp1/2p1bn1p/4p2P/1b2P1PB/2N2Q1B/PPP1NP2/R3K2R b KQ - 0 17"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Zug nimmt einer anderen Figur die Deckung. Finde einen sicheren Zug! } 17... N8h7 { [Sq e7] Richtig: 17…S8h7. In der Partie geschah 17…Sxe4?? — danach 18.Lxe7 Sd2 19.O-O-O (Dame verloren). Auch gut: Dd6, Dd7, La5. } 1-0
+
+[Event "Weiß am Zug · Zug 4 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 4. c3 { [Sq e5] Richtig: 4.c3. In der Partie geschah 4.Sxe5?? — danach 4…Sxe5 5.Le2 Sc6 (Springer verloren). Auch gut: a4, O-O, d3. } 0-1
+
+[Event "Weiß am Zug · Zug 10 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b1k1nr/ppp2ppp/3p4/2P5/4PPnq/8/PPP1Q1PP/RNB2RK1 w kq - 1 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 10. h3 { [Sq h2] Richtig: 10.h3. In der Partie geschah 10.cxd6?? — danach 10…Dxh2#. } 0-1
+
+[Event "Schwarz am Zug · Zug 24 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2r1r3/R3bk1p/p1b2p2/1p6/2p2B2/7P/PPP2PP1/4R1K1 b - - 6 24"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 24... Rcd8 { [Sq e7] Richtig: 24…Tcd8. In der Partie geschah 24…Kg6?? — danach 25.Texe7 Txe7 26.Txe7 (Turm verloren). } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 25 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2r1r3/4b2p/R1b2pk1/1p6/2p2B2/7P/PPP2PP1/4R1K1 b - - 0 25"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 25... Bc5 { [Sq e7] Richtig: 25…Lc5. In der Partie geschah 25…Tg8?? — danach 26.Txe7 Kf5 27.Lg3 (Läufer verloren). Auch gut: Ld7, c3, Lf8. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 20 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2kr3b/p1p2p1p/2p3p1/5b2/2B2B2/2PP1P2/PPK1Nn1q/RN6 b - - 4 20"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 20... Qh1 { [Sq h2] Richtig: 20…Dh1. In der Partie geschah 20…Sxd3?? — danach 21.La6+ Kb8 22.Lxh2 (Dame verloren). Auch gut: Dg2, Dh4. } 0-1
+
+[Event "Weiß am Zug · Zug 10 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk2r/ppp2pp1/1b1p3p/n2PN3/2B5/3PB3/PPP2PPP/R2QK2R w KQkq - 0 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 10. Bxb6 { [Sq f7] Richtig: 10.Lxb6. In der Partie geschah 10.Sxf7?? — danach 10…Kxf7 11.Lb5 Lxe3 (Dame verloren). Auch gut: Lb5+, Sf3. } 0-1
+
+[Event "Weiß am Zug · Zug 15 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1q4/ppp2kpp/4rnb1/3N2B1/2Q1P1P1/2b2P2/P1P4P/1R2KB1R w K - 2 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 15. Nxc3 { [Sq d5] Richtig: 15.Sxc3. In der Partie geschah 15.Dxc3?? — danach 15…Sxd5 16.Dd2 Dd6 (Springer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 33 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5rk1/ppp4p/3qr3/3N4/2B1PP2/5K2/PQP5/1R5R w - - 13 33"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 33. Nf6+ { [Sq f4] Richtig: 33.Sf6+. In der Partie geschah 33.Sxc7?? — danach 33…Txf4+ 34.Kg3 Txe4+ (Bauer verloren). Auch gut: Tbg1+, Thg1+. } 0-1
+
+[Event "Schwarz am Zug · Zug 21 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4n1k/pp4pp/3p4/6q1/2BQp3/P3P2b/1PPR2P1/6K1 b - - 1 21"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 21... Be6 { [Sq f6] Richtig: 21…Le6. In der Partie geschah 21…Df6?? — danach 22.Dxf6 gxf6 23.gxh3 (Dame verloren). Auch gut: Sg6, Sd7. } 0-1
+
+[Event "Schwarz am Zug · Zug 14 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2q1rk1/pp3ppp/2pp4/4p1Nn/2P1P1b1/2P1BP2/P1PQ2PP/R3R1K1 b - - 0 14"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 14... Bc8 { [Sq g4] Richtig: 14…Lc8. In der Partie geschah 14…f6?? — danach 15.fxg4 Sf4 16.Sf3 (Läufer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 8 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnbk1b1r/pppp1Bpp/8/4q1n1/8/3P4/PPP2PPP/RNBQR1K1 b - - 2 8"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 8... Qxe1+ { Richtig: 8…Dxe1+. In der Partie geschah 8…Df6?? — danach 9.Te8#. } 1-0
+
+[Event "Weiß am Zug · Zug 9 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qkb1r/pp1bnppp/3p4/1BpPp3/4P3/5N2/PP1P1PPP/R1BQ1RK1 w kq - 1 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 9. a4 { [Sq b5] Richtig: 9.a4. In der Partie geschah 9.d3?? — danach 9…Lxb5 10.b4 cxb4 (Läufer verloren). Auch gut: Lxd7+, Da4, Db3. } 1-0
+
+[Event "Weiß am Zug · Zug 38 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.09.01"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/8/5R1Q/4p2p/4P2k/1KPP4/PP2q3/8 w - - 15 38"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 38. Rf5 { [Sq f4] Richtig: 38.Tf5. In der Partie geschah 38.Tf4+?? — danach 38…exf4 39.Dxf4+ Kh3 (Turm verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 10 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1k1nr/pppp1pp1/7p/2q5/1nBpP3/4PN2/PPPNQ1PP/R3K2R w KQkq - 0 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 10. O-O { [Sq c2] Richtig: 10.O-O. In der Partie geschah 10.exd4?? — danach 10…Sxc2+ 11.Kd1 Sxd4. } 1-0
+
+[Event "Weiß am Zug · Zug 29 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1Q3/p1kp4/1pp4p/2N3p1/3PP3/8/PP4KP/5R2 w - - 0 29"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 29. Qe5+ { [Sq a5] Richtig: 29.De5+. In der Partie geschah 29.Sb3?? — danach 29…Kb7 30.Sa5+ bxa5 (Springer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 9 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3kb1r/ppp1p1pp/2bq1p2/3pN2Q/3Pn3/P1P1P3/1P3PPP/RNB1K2R b KQkq - 1 9"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 9... g6 { [Sq d6] Richtig: 9…g6. In der Partie geschah 9…Kd8?? — danach 10.Sf7+ Kd7 11.Sxd6 (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 18 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr3r/pppq2p1/1n1b1p2/7p/2PN1Rn1/1P2P1PB/PB1P3P/R2Q2K1 w - - 5 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 18. Rxg4 { [Sq g4] Richtig: 18.Txg4. In der Partie geschah 18.Lxg4?? — danach 18…hxg4 19.Tf2 Le5 (Läufer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/1bq2ppp/p2p1b2/2pNp3/P3P3/3P1N2/2PQ1PPP/RR4K1 b - - 3 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 18... Bxd5 { [Sq b7] Richtig: 18…Lxd5. In der Partie geschah 18…Dd8?? — danach 19.Txb7 Tb8 20.Txb8 (Turm verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 52 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "8/3k4/5Q2/3N4/8/8/1PK4r/8 w - - 3 52"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 52. Kd3 { [Sq d5] Richtig: 52.Kd3. In der Partie geschah 52.Kb1?? — danach 52…Te2 53.Dg7+ Kd6 (Springer verloren). } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 12 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3kbnr/1b1p1ppp/p1n1p3/8/3P1P2/2P2NP1/Pq1B2BP/RN1Q1RK1 w kq - 1 12"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 12. Qb3 { [Sq a1] Richtig: 12.Db3. In der Partie geschah 12.Lc1?? — danach 12…Dxa1 13.Dc2 Tc8 (Turm verloren). Auch gut: Sa3. } 0-1
+
+[Event "Weiß am Zug · Zug 28 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2Q5/5pk1/p7/2bp4/5P2/6P1/P3q2P/5R1K w - - 1 28"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 28. Qh3 { Richtig: 28.Dh3. In der Partie geschah 28.Tc1?? — danach 28…Df3#. } 0-1
+
+[Event "Weiß am Zug · Zug 9 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qkb1r/ppp2ppp/4p3/3pP2n/5B2/7P/PPP1PPP1/R2QKB1R w KQkq - 1 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 9. Be3 { [Sq g5] Richtig: 9.Le3. In der Partie geschah 9.Lg5?? — danach 9…Dxg5 10.Dd4 Df4 (Dame verloren). Auch gut: Ld2, Lh2. } 1-0
+
+[Event "Weiß am Zug · Zug 13 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bq1rk1/p4ppp/3b1n2/1ppNp3/2Pn4/1P1P2P1/P2BNPBP/R2Q1RK1 w - - 0 13"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 13. Nxf6+ { [Sq d1] Richtig: 13.Sxf6+. In der Partie geschah 13.f4?? — danach 13…Lg4 14.Sxd4 Lxd1 (Dame verloren). Auch gut: Sxd4. } 0-1
+
+[Event "Weiß am Zug · Zug 14 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bq1rk1/p4ppp/3b1n2/2pNp3/2pn1P2/1P1P2P1/P2BN1BP/R2Q1RK1 w - - 0 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 14. Nxf6+ { [Sq d1] Richtig: 14.Sxf6+. In der Partie geschah 14.bxc4?? — danach 14…Lg4 15.Sxd4 Lxd1 (Dame verloren). Auch gut: Sxd4. } 0-1
+
+[Event "Weiß am Zug · Zug 15 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bq1rk1/p4ppp/3b4/2pnp3/2Pn1P2/3P2P1/P2BN1BP/R2Q1RK1 w - - 0 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 15. Nxd4 { [Sq d1] Richtig: 15.Sxd4. In der Partie geschah 15.cxd5?? — danach 15…Lg4 16.Sxd4 Lxd1 (Dame verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 11 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr1bnr/ppqn1ppp/2p5/4p1Nb/4N3/P2P3P/1PPBBPP1/R2QK2R b KQ - 3 11"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 11... Bg6 { [Sq h5] Richtig: 11…Lg6. In der Partie geschah 11…Sh6?? — danach 12.Lxh5 Sf6 13.O-O (Läufer verloren). Auch gut: Lxe2. } 1-0
+
+[Event "Schwarz am Zug · Zug 33 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "7r/pp6/2pk2q1/3P4/7P/P1B2pP1/1PP2P1K/R3R3 b - - 0 33"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 33... Rxh4+ { [Sq h8] Richtig: 33…Txh4+. In der Partie geschah 33…Dxc2?? — danach 34.Lxh8 Dxf2+ 35.Kh3 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 10 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2q1rk1/pppb1ppp/4pn2/3pP3/8/2PBP1P1/PP3PP1/RN1QK2R b KQ - 0 10"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 10... Ne4 { [Sq h7] Richtig: 10…Se4. In der Partie geschah 10…Sg4?? — danach 11.Lxh7+ Kh8 12.Dxg4 (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 10 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk2r/pp3ppp/2n2n2/4p3/N2p4/8/PPPNPPPP/R2QKB1R w KQkq - 1 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 10. e4 { [Sq e4] Richtig: 10.e4. In der Partie geschah 10.Se4?? — danach 10…Sxe4 11.e3 Da5+ (Springer verloren). Auch gut: g3, e3. } 0-1
+
+[Event "Weiß am Zug · Zug 14 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3k2r/1pp1qppp/p1n1b3/3p1p2/3P3N/2PQP3/2PKBPPP/3R3R w kq - 0 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 14. Nxf5 { [Sq e4] Richtig: 14.Sxf5. In der Partie geschah 14.e4?? — danach 14…fxe4 15.Dg3 g5 (Springer verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 11 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr3r/pppq1ppp/2np1n2/4p3/1PP5/2BPP3/P3BPPP/R2QK2R b KQ - 0 11"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 11... Ne7 { [Sq g4] Richtig: 11…Se7. In der Partie geschah 11…Sg4?? — danach 12.Lxg4 f5 13.Le2 (Springer verloren). Auch gut: h5, De6, g5. } 1-0
+
+[Event "Weiß am Zug · Zug 5 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qkbnr/ppp1pppp/8/3p1bB1/1n1P4/2N2N2/PPP1PPPP/R2QKB1R w KQkq - 6 5"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 5. Rc1 { [Sq c2] Richtig: 5.Tc1. In der Partie geschah 5.a3?? — danach 5…Sxc2+ 6.Kd2 Sxa1 (Turm verloren). Auch gut: e4. } 0-1
+
+[Event "Schwarz am Zug · Zug 5 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnbqk2r/pppp1ppp/5n2/8/1b1P4/7P/PPPB1PP1/RN1QKBNR b KQkq - 2 5"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 5... Bxd2+ { [Sq b4] Richtig: 5…Lxd2+. In der Partie geschah 5…d6?? — danach 6.Lxb4 Sc6 7.La3 (Läufer verloren). Auch gut: De7+, Le7, a5. } 1-0
+
+[Event "Schwarz am Zug · Zug 34 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3r2k1/p5pp/5p2/R1bb4/2p2R1B/2P4P/1r4P1/7K b - - 2 34"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 34... Bxg2+ { [Sq c5] Richtig: 34…Lxg2+. In der Partie geschah 34…Txg2?? — danach 35.Txc5 La8 36.Td4 (Turm verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 35 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3r2k1/p5pp/5p2/2Rb4/2p2R1B/2P4P/6r1/7K b - - 0 35"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 35... Ba8 { [Sq d5] Richtig: 35…La8. In der Partie geschah 35…Tf2+?? — danach 36.Txd5 Txf4 37.Txd8+ (Turm verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 19 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3r3/pp1knBbp/1npB1p2/3p4/3P4/2N1Q2P/P1q2PP1/R4RK1 w - - 5 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 19. Qe6+ { [Sq e8] Richtig: 19.De6+. In der Partie geschah 19.Lxe8+?? — danach 19…Txe8 20.Lh2 Lf8 (Läufer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 18 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r6r/pppk1pp1/3p3p/3PP2q/3n2bB/3B1NP1/PP1N1K1P/R2Q4 w - - 1 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 18. Qa4+ { [Sq f3] Richtig: 18.Da4+. In der Partie geschah 18.e6+?? — danach 18…Kc8 19.Da4 Sxf3 (Springer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 23 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "4rr2/pppk2p1/3p3p/7q/3NN1bB/3B2P1/PP3K1P/R3Q3 w - - 5 23"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 23. Kg1 { [Sq e4] Richtig: 23.Kg1. In der Partie geschah 23.Kg2?? — danach 23…Lf3+ 24.Kg1 Lxe4 (Springer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 27 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "4r3/pp4p1/2kp3p/1Np4q/4N1bB/6P1/PP4KP/R3Q3 w - - 2 27"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 27. Kg1 { [Sq a7] Richtig: 27.Kg1. In der Partie geschah 27.Sxa7+?? — danach 27…Kb6 28.Dc3 Kxa7 (Springer verloren). Auch gut: Da5. } 1-0
+
+[Event "Weiß am Zug · Zug 23 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2k3rr/ppp2p2/2n1pR2/6B1/4N2q/3P4/PPP1N1K1/R2Q4 w - - 0 23"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 23. Qd2 { [Sq g5] Richtig: 23.Dd2. In der Partie geschah 23.S2g3?? — danach 23…Txg5 24.Sxg5 Dh2+ (Läufer verloren). Auch gut: Dc1. } 0-1
+
+[Event "Weiß am Zug · Zug 27 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2k3r1/ppp2p2/4pRn1/6B1/4N3/3PK1Nr/PPP4q/R2Q4 w - - 8 27"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 27. Qg1 { [Sq g3] Richtig: 27.Dg1. In der Partie geschah 27.Txf7?? — danach 27…Txg3+ 28.Sxg3 Dxg3+ (Springer verloren). Auch gut: Dg4. } 0-1
+
+[Event "Weiß am Zug · Zug 32 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2k3r1/ppp5/4p3/4n3/7q/3P1R2/PPP1K3/R2Q4 w - - 4 32"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 32. Rf2 { Richtig: 32.Tf2. In der Partie geschah 32.Te3?? — danach 32…Tg2+ 33.Kf1 Dh1#. } 0-1
+
+[Event "Schwarz am Zug · Zug 32 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "6k1/pp4pp/3p4/PPp1p2q/2P2p1r/3R1Pr1/2P3RN/5Q1K b - - 9 32"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 32... Qg6 { [Sq f3] Richtig: 32…Dg6. In der Partie geschah 32…Txf3?? — danach 33.Dxf3 Dxf3 34.Txf3 (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 8 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3kbnr/ppp1qppp/8/5b2/1n1P4/2N2N2/PPP1BPPP/R1BQK2R w KQkq - 3 8"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 8. O-O { [Sq c2] Richtig: 8.O-O. In der Partie geschah 8.Lf4?? — danach 8…Sxc2+ 9.Kf1 Sxa1 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 19 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r6r/pbp1k1pp/3b1p2/2p5/4PP2/1BPR2P1/PP5P/4R1K1 b - - 2 19"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 19... c4 { [Sq e5] Richtig: 19…c4. In der Partie geschah 19…Tab8?? — danach 20.e5 Lxe5 21.fxe5 (Läufer verloren). Auch gut: La6, The8, c6. } 0-1
+
+[Event "Weiß am Zug · Zug 10 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b2rk1/1pppnpp1/p1n2q1p/4p3/1bB1P2P/2NPBN2/PPPQ1PP1/2KR3R w - - 0 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 10. d4 { [Sq f3] Richtig: 10.d4. In der Partie geschah 10.g4?? — danach 10…Dxf3 11.Thg1 d5 (Springer verloren). Auch gut: a3. } 0-1
+
+[Event "Schwarz am Zug · Zug 8 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bqk2r/ppp3pp/2n2p2/3np3/1bB1N3/2PP4/PP3PPP/RNBQK2R b KQkq - 0 8"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 8... Be7 { [Sq c3] Richtig: 8…Le7. In der Partie geschah 8…Sxc3?? — danach 9.Sbxc3 Le7 10.O-O (Springer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 26 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr1br1/p1p4p/4p2Q/pPP2p2/3P4/3b1PP1/P5BP/R1R3K1 w - - 1 26"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 26. Qxe6+ { [Sq d4] Richtig: 26.Dxe6+. In der Partie geschah 26.Dd2?? — danach 26…Lg7 27.Kh1 Lxd4 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 15 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2kr1b1r/pbq3pp/1ppp1nn1/8/4P3/2N2NQ1/PPP1BPPP/R2R2K1 b - - 4 15"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 15... Kb8 { [Sq h5] Richtig: 15…Kb8. In der Partie geschah 15…Sh5?? — danach 16.Dh3+ Kb8 17.Dxh5 (Springer verloren). Auch gut: Te8, d5, a6. } 0-1
+
+[Event "Schwarz am Zug · Zug 32 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/p6r/1pkbr1pp/8/2p3P1/1NR5/PPP2P1P/R5K1 b - - 1 32"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 32... Re4 { [Sq e6] Richtig: 32…Te4. In der Partie geschah 32…b5?? — danach 33.Sd4+ Kd7 34.Sxe6 (Turm verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 44 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/p3r3/6p1/3k2Pp/2p4P/4RP2/P1P2K2/8 b - - 0 44"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 44... Rb7 { [Sq e3] Richtig: 44…Tb7. In der Partie geschah 44…Txe3?? — danach 45.Kxe3 c3 46.f4 (Turm verloren). Auch gut: Tf7. } 0-1
+
+[Event "Weiß am Zug · Zug 16 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1qkr2/pp1bb2p/3p4/2pP4/2P1PQp1/2N2P2/PP2B2P/R3K1NR w KQq - 1 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 16. Qh6 { [Sq g3] Richtig: 16.Dh6. In der Partie geschah 16.Dg3?? — danach 16…Lh4 17.f4 Lxg3+ (Dame verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 18 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2kr1bnr/ppp2p1p/8/3p1bN1/8/1Pq1P1Q1/P1nB1PPP/3K1B1R b - - 3 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 18... Qa1+ { [Sq e3] Richtig: 18…Da1+. In der Partie geschah 18…Sxe3+?? — danach 19.fxe3 Da1+ 20.Ke2 (Springer verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 45 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.27"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/N7/1p6/3P4/5k1p/5b1K/PP6/8 b - - 1 45"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 45... Bxd5 { [Sq g2] Richtig: 45…Lxd5. In der Partie geschah 45…Lg2+?? — danach 46.Kxg2 Ke5 47.Sc8 (Läufer verloren). Auch gut: Kg5, Ke5, Le4. } 0-1
+
+[Event "Weiß am Zug · Zug 16 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qk2r/1b1p1ppp/2p5/pp1nP3/3NN3/1P6/1PPQ1PPP/R3R1K1 w kq - 1 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 16. Nd6+ { [Sq a5] Richtig: 16.Sd6+. In der Partie geschah 16.Txa5?? — danach 16…Dxa5 17.Sd6+ Kf8 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 19 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1q2k1/pb2r2p/2p1p1B1/3pb3/1P6/2N4P/P1Q3PN/R4RK1 b - - 0 19"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 19... Nd7 { [Sq g6] Richtig: 19…Sd7. In der Partie geschah 19…hxg6?? — danach 20.Dxg6+ Tg7 21.Dxe6+ (Läufer verloren). Auch gut: Tg7. } 0-1
+
+[Event "Schwarz am Zug · Zug 37 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "6r1/p2RR3/2p3r1/8/1P1N3k/3b4/P4K2/8 b - - 1 37"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 37... Rg2+ { [Sq d3] Richtig: 37…Tg2+. In der Partie geschah 37…Tf8+?? — danach 38.Sf3+ Kh5 39.Txd3 (Läufer verloren). Auch gut: Lc4, Lb5, Lb1. } 0-1
+
+[Event "Schwarz am Zug · Zug 60 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/1R6/8/1P6/6r1/1r6/2K1N1k1/8 b - - 18 60"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 60... Rbb4 { [Sq g3] Richtig: 60…Tbb4. In der Partie geschah 60…Tgg3?? — danach 61.Sxg3 Txg3 62.Td7 (Turm verloren). Auch gut: Te3, Th3, Tf3. } 0-1
+
+[Event "Schwarz am Zug · Zug 61 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/1R6/1P6/8/8/1r4r1/2K1N1k1/8 b - - 0 61"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 61... Rge3 { [Sq g3] Richtig: 61…Tge3. In der Partie geschah 61…Tbe3?? — danach 62.Sxg3 Kxg3 63.Tc7 (Turm verloren). Auch gut: Tgf3, Txb6. } 0-1
+
+[Event "Weiß am Zug · Zug 16 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnb1k2r/pp4R1/4p3/3pP3/3P1p1q/8/PP2P1B1/RNBQ2K1 w kq - 1 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 16. Nd2 { [Sq c1] Richtig: 16.Sd2. In der Partie geschah 16.Da4+?? — danach 16…Kf8 17.Tg6 De1+ (Läufer verloren). Auch gut: Dd2. } 1-0
+
+[Event "Schwarz am Zug · Zug 23 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r6r/pbpk3p/3p1p2/3P2b1/8/2N2pB1/PPP4P/3KR1R1 b - - 3 23"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 23... Rag8 { [Sq f4] Richtig: 23…Tag8. In der Partie geschah 23…Lf4?? — danach 24.Lxf4 Thg8 25.Tgf1 (Turm verloren). Auch gut: f5, Tae8. } 1-0
+
+[Event "Weiß am Zug · Zug 23 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bqk2r/ppp1b3/3p3n/2nP1p2/2P1P2N/P1N3BP/1PQ5/2KR1B1R w kq - 0 23"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 23. Ng6 { [Sq h4] Richtig: 23.Sg6. In der Partie geschah 23.exf5?? — danach 23…Lg5+ 24.Kb1 Lxh4 (Springer verloren). Auch gut: Sg2. } 1-0
+
+[Event "Weiß am Zug · Zug 53 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/8/1BBk4/p7/2P5/P7/KP6/8 w - - 3 53"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 53. Ba4 { [Sq c6] Richtig: 53.La4. In der Partie geschah 53.Lxa5?? — danach 53…Kxc6 54.Kb3 Kb7 (Läufer verloren). Auch gut: Lb5. } 1-0
+
+[Event "Weiß am Zug · Zug 28 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "4rr2/1kpR4/ppn1Pp2/6p1/5n2/2P3BP/PP4B1/2KR4 w - - 6 28"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 28. Bxf4 { [Sq c6] Richtig: 28.Lxf4. In der Partie geschah 28.Lxc6+?? — danach 28…Kxc6 29.Lxf4 gxf4 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 30 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "4r3/2pRPr2/ppk2p2/6p1/5n2/2P3BP/PP6/2KR4 w - - 1 30"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 30. Bxf4 { [Sq g3] Richtig: 30.Lxf4. In der Partie geschah 30.h4?? — danach 30…Se2+ 31.Kb1 Sxg3. } 0-1
+
+[Event "Schwarz am Zug · Zug 16 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.24"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3k2r/ppp1bppp/5q2/8/2Pp2P1/1P3NP1/P3Q3/RNB2K2 b kq - 2 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 16... d3 { [Sq d8] Richtig: 16…d3. In der Partie geschah 16…O-O-O?? — danach 17.Dd3 The8 18.Lf4 (Turm verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 27 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.24"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2kr4/pp3N1p/2p3p1/8/2P3P1/1PN1r1PK/P2p4/3R4 b - - 0 27"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 27... Rd7 { [Sq d8] Richtig: 27…Td7. In der Partie geschah 27…Te1?? — danach 28.Sxd8 Txd1 29.Sxd1 (Turm verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 11 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.23"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1qk1nr/1pp3pp/p2p4/3Pp1p1/4P2R/5Q2/PPP2PP1/RN2KB2 w Qkq - 0 11"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 11. Rh1 { [Sq h7] Richtig: 11.Th1. In der Partie geschah 11.Dh5+?? — danach 11…g6 12.Dxh7 Txh7 (Dame verloren). Auch gut: Th2, Th5, Th3. } 0-1
+
+[Event "Schwarz am Zug · Zug 9 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/P1NP1Q1P/1PP2PP1/R1B2RK1 b - - 0 9"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 9... Nd4 { [Sq b4] Richtig: 9…Sd4. In der Partie geschah 9…Lb4?? — danach 10.axb4 Sxb4 11.Lb3 (Läufer verloren). Auch gut: Kh8. } 1-0
+
+[Event "Schwarz am Zug · Zug 11 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppp2ppp/2np4/3Pp3/1bB5/P2P1Q1P/1PP2PP1/R1B2RK1 b - - 0 11"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 11... Nd4 { [Sq c6] Richtig: 11…Sd4. In der Partie geschah 11…Lc5?? — danach 12.dxc6 bxc6 13.La2 (Springer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 13 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppp1nppp/3p3B/2bPp3/2B5/P2P2QP/1PP2PP1/R4RK1 b - - 4 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 13... Nf5 { [Sq g7] Richtig: 13…Sf5. In der Partie geschah 13…Kh8?? — danach 14.Dxg7#. } 1-0
+
+[Event "Weiß am Zug · Zug 19 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1r1qk2r/Q1p2ppp/4p1n1/3p2N1/3P2P1/2N5/2P1P3/2KR1B1R w k - 1 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 19. Qa4+ { [Sq g5] Richtig: 19.Da4+. In der Partie geschah 19.Lg2?? — danach 19…Dxg5+ 20.Td2 O-O (Springer verloren). Auch gut: Sxh7. } 0-1
+
+[Event "Weiß am Zug · Zug 18 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1r4k1/2p1qpp1/B1n1pn1p/3p4/3P1B2/P1P1PP1P/2P1QP2/R5K1 w - - 1 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 18. Bd3 { [Sq b5] Richtig: 18.Ld3. In der Partie geschah 18.Db5?? — danach 18…Txb5 19.Lxb5 Sa5 (Dame verloren). Auch gut: a4, Lh2, Lb5. } 0-1
+
+[Event "Schwarz am Zug · Zug 21 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/pp3ppp/2p3n1/3p3R/8/1B6/PPP3PP/2K2R2 b - - 3 21"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 21... Rfe8 { [Sq f4] Richtig: 21…Tfe8. In der Partie geschah 21…Sf4?? — danach 22.Txf4 Tfe8 23.c4 (Springer verloren). Auch gut: Tae8, b5. } 1-0
+
+[Event "Schwarz am Zug · Zug 23 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/pp3ppp/2p5/3pR3/2P5/1B6/PP4nP/2K2R2 b - - 0 23"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 23... Rae8 { [Sq c4] Richtig: 23…Tae8. In der Partie geschah 23…dxc4?? — danach 24.Lxc4 b5 25.Lb3 (Bauer verloren). Auch gut: Tfe8. } 1-0
+
+[Event "Schwarz am Zug · Zug 25 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/p4ppp/2p5/1p5R/2p5/8/PPB3nP/2K2R2 b - - 1 25"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 25... g6 { [Sq h7] Richtig: 25…g6. In der Partie geschah 25…c5?? — danach 26.Lxh7+ Kh8 27.Le4+ (Springer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 11 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppp2pp1/2n2n1p/3p4/6b1/2N1PNP1/PPP1P1BP/R2Q1RK1 w - - 0 11"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 11. Ne1 { [Sq d4] Richtig: 11.Se1. In der Partie geschah 11.Dd4?? — danach 11…Sxd4 12.Sxd4 Te8 (Dame verloren). Auch gut: h3, Sh4, Dd2. } 0-1
+
+[Event "Schwarz am Zug · Zug 19 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2krr3/ppp1bpp1/3pb2p/5P2/4P3/N7/PPP1N1PP/R4RK1 b - - 0 19"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 19... Bd7 { [Sq e6] Richtig: 19…Ld7. In der Partie geschah 19…d5?? — danach 20.fxe6 Lc5+ 21.Kh1 (Läufer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 22 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr4/ppp2pp1/4r2p/3P4/8/P7/P1P1N1PP/R4RK1 b - - 0 22"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 22... Rxe2 { [Sq e6] Richtig: 22…Txe2. In der Partie geschah 22…Txd5?? — danach 23.Sf4 Ta5 24.Sxe6 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 2 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p2Q/4P3/8/PPPP1PPP/RNB1KBNR b KQkq - 1 2"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 2... Nc6 { [Sq e5] Richtig: 2…Sc6. In der Partie geschah 2…g6?? — danach 3.Dxe5+ De7 4.Dxh8 (Turm verloren). Auch gut: d6, Sf6, De7. } 1-0
+
+[Event "Weiß am Zug · Zug 5 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rnb1k1nr/pppp2pp/5q2/2b5/8/3Q4/PPP1PPPP/RNB1KBNR w KQkq - 2 5"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 5. Nf3 { [Sq f2] Richtig: 5.Sf3. In der Partie geschah 5.Dc3?? — danach 5…Dxf2+ 6.Kd2 Df4+. Auch gut: e3. } 0-1
+
+[Event "Schwarz am Zug · Zug 9 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qk1nr/ppp2ppp/2n1p3/bB2Pb2/8/N1PP1N1P/P4PP1/R1BQK2R b KQkq - 2 9"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 9... Bxc3+ { [Sq d3] Richtig: 9…Lxc3+. In der Partie geschah 9…Dxd3?? — danach 10.Lxd3 Lxc3+ 11.Ld2 (Dame verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 12 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppp2ppp/4b3/1Bb1n3/P2pp3/6Q1/1PP2PPP/RNB1R1K1 b - - 1 12"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 12... a6 { [Sq e5] Richtig: 12…a6. In der Partie geschah 12…f5?? — danach 13.Dxe5 Ld5 14.Lc4 (Springer verloren). Auch gut: Sg6, f6, Dd5. } 0-1
+
+[Event "Schwarz am Zug · Zug 13 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppp3pp/4b3/1Bb1npB1/P2pp3/6Q1/1PP2PPP/RN2R1K1 b - - 1 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 13... Qd5 { [Sq e7] Richtig: 13…Dd5. In der Partie geschah 13…Le7?? — danach 14.Lxe7 Sf3+ 15.Dxf3 (Läufer verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 25 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/pp4p1/2p4q/3b1p1Q/P2p1P2/3Bn3/1PPN1K2/R6R b - - 6 25"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 25... Qxf4+ { [Sq h5] Richtig: 25…Dxf4+. In der Partie geschah 25…Dxh5?? — danach 26.Txh5 g6 27.Tg1 (Dame verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 14 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn3rk1/p1p2pp1/1p2pn1p/3p4/3Pb1PQ/2BB1N2/qPP2P1P/2KR3R w - - 0 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 14. g5 { [Sq e4] Richtig: 14.g5. In der Partie geschah 14.Lxe4?? — danach 14…Sxe4 15.Sd2 Da1+ (Läufer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 5 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.12"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1kbnr/pp1ppppp/n1p5/8/Nq2P3/5N2/PPPP1PPP/R1BQKB1R w KQkq - 6 5"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 5. Nc3 { [Sq e4] Richtig: 5.Sc3. In der Partie geschah 5.c3?? — danach 5…Dxe4+ 6.Le2 b5 (Springer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 51 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.11"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "8/8/1p2kp1p/6pP/PPKRr1P1/8/8/8 b - - 8 51"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 51... Re5 { [Sq d4] Richtig: 51…Te5. In der Partie geschah 51…Txd4+?? — danach 52.Kxd4 Kd7 53.a5 (Turm verloren). } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 14 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/ppp2p2/2np2qp/2b1pNp1/2B1P1n1/1P1P2P1/PBPQ1P1P/R4RK1 w - - 2 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 14. Kg2 { [Sq e7] Richtig: 14.Kg2. In der Partie geschah 14.Se7+?? — danach 14…Sxe7 15.h3 Sf6 (Springer verloren). Auch gut: Kh1. } 0-1
+
+[Event "Schwarz am Zug · Zug 14 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "r1bk1b1r/ppppnppq/7p/1N6/5B2/P1N5/1P2BPPP/R4RK1 b - - 9 14"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 14... d6 { Richtig: 14…d6. In der Partie geschah 14…c6?? — danach 15.Lc7+ Ke8 16.Sd6#. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 32 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "7r/3NR1k1/7p/pp3B1q/8/b7/5PKP/4R3 b - - 2 32"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 32... Bxe7 { [Sq f7] Richtig: 32…Lxe7. In der Partie geschah 32…Kg8?? — danach 33.Le6+ Df7 34.Txf7. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 5 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnb1k1nr/pppp1ppp/8/2b1p2Q/2B1P3/8/PPPPNqPP/RNBK3R b kq - 1 5"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 5... Nc6 { [Sq e5] Richtig: 5…Sc6. In der Partie geschah 5…g6?? — danach 6.Dxe5+ Kf8 7.d4 (Turm verloren). Auch gut: d6, d5, Se7. } 1-0
+
+[Event "Schwarz am Zug · Zug 16 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr3r/pp3p1p/2pp1np1/2b5/4P1b1/P1NP1nNP/BPPB4/R2K3R b - - 0 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 16... Nh5 { [Sq g4] Richtig: 16…Sh5. In der Partie geschah 16…Sd4+?? — danach 17.hxg4 Sxg4 18.Tf1 (Läufer verloren). Auch gut: Le6, Sxd2+. } 1-0
+
+[Event "Schwarz am Zug · Zug 17 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr3r/pp3p1p/2pp1np1/2b5/3nP1b1/P1NP2NP/BPPB4/R1K4R b - - 2 17"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 17... Bf3 { [Sq g4] Richtig: 17…Lf3. In der Partie geschah 17…d5?? — danach 18.hxg4 Sxg4 19.exd5 (Läufer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 33 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/kpr4p/6p1/5p2/1P4n1/1KNP4/2P1R3/8 b - - 3 33"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 33... Rc8 { [Sq c7] Richtig: 33…Tc8. In der Partie geschah 33…Kb6?? — danach 34.Sd5+ Kc6 35.Sxc7 (Turm verloren). Auch gut: Tc6, Kb8, Td7. } 1-0
+
+[Event "Weiß am Zug · Zug 21 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1r3rk1/3Q1ppp/2p1p1q1/p3P3/3PN2b/1P2PB1P/P3K1P1/6RR w - - 0 21"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 21. g3 { [Sq e4] Richtig: 21.g3. In der Partie geschah 21.Lg4?? — danach 21…Dxe4 22.Tc1 Lg5 (Springer verloren). Auch gut: Tc1, Td1. } 0-1
+
+[Event "Weiß am Zug · Zug 26 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5rk1/5pp1/2Q1p1q1/4P3/3PN1pb/1r2PKPP/8/6RR w - - 0 26"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 26. hxg4 { Richtig: 26.hxg4. In der Partie geschah 26.Kf4?? — danach 26…Df5#. } 0-1
+
+[Event "Weiß am Zug · Zug 28 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5rk1/5pp1/2Q1p2q/4P3/3PNK1P/1r2P2p/8/6RR w - - 1 28"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 28. Rg5 { [Sq e3] Richtig: 28.Tg5. In der Partie geschah 28.Kg3?? — danach 28…Dxe3+ 29.Kh2 De2+. Auch gut: Sg5. } 0-1
+
+[Event "Schwarz am Zug · Zug 5 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppp1ppp/8/8/2B1P3/8/PB3PPP/RN1QK1NR b KQkq - 0 5"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 5... Nf6 { [Sq g7] Richtig: 5…Sf6. In der Partie geschah 5…Ld6?? — danach 6.Lxg7 b5 7.Le2 (Turm verloren). Auch gut: Sc6, Lb4+, c6. } 0-1
+
+[Event "Schwarz am Zug · Zug 29 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "6k1/1p1N1ppp/p1p2n2/4R1P1/1P6/7r/5P2/6K1 b - - 0 29"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 29... Nxd7 { [Sq f6] Richtig: 29…Sxd7. In der Partie geschah 29…Th5?? — danach 30.gxf6 Txe5 31.Sxe5 (Turm verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 5 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnbqk1nr/ppp3pp/3p4/2b1pp2/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 5. Nc3 { [Sq e5] Richtig: 5.Sc3. In der Partie geschah 5.Sxe5?? — danach 5…dxe5 6.c3 Sf6 (Springer verloren). Auch gut: b4, Sg5, Lg5. } 1-0
+
+[Event "Weiß am Zug · Zug 17 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr1q1r/ppp5/2nP1n1p/5bp1/2B2B2/2P5/PP3PPP/RN1QR1K1 w - - 1 17"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 17. Bg3 { [Sq e6] Richtig: 17.Lg3. In der Partie geschah 17.Le6+?? — danach 17…Lxe6 18.Lg3 Df7 (Läufer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 27 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "5q2/ppk5/2n5/4R2p/4Q3/2P2pP1/PP1r1P1P/R5K1 w - - 1 27"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 27. Rf5 { [Sq f4] Richtig: 27.Tf5. In der Partie geschah 27.Df4?? — danach 27…Dxf4 28.gxf4 Sxe5 (Dame verloren). Auch gut: Txh5. } 1-0
+
+[Event "Schwarz am Zug · Zug 10 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk2r/ppppn1pp/5p2/n2P4/4P3/5N2/PP1NBPPP/R2QK2R b KQkq - 2 10"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 10... c5 { [Sq a5] Richtig: 10…c5. In der Partie geschah 10…d6?? — danach 11.b4 f5 12.bxa5 (Springer verloren). Auch gut: b6. } 0-1
+
+[Event "Schwarz am Zug · Zug 34 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5r1k/6p1/2QR2r1/pP2p3/P3P2p/4qPP1/7P/5R1K b - - 2 34"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 34... Qe2 { [Sq g6] Richtig: 34…De2. In der Partie geschah 34…Txf3?? — danach 35.De8+ Kh7 36.Dxg6+. } 0-1
+
+[Event "Schwarz am Zug · Zug 12 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qkn1r/ppb2ppp/2p1p3/3p3P/3P2nR/2NQPNB1/PPP2PP1/2KR4 b kq - 2 12"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 12... f5 { [Sq f2] Richtig: 12…f5. In der Partie geschah 12…Sxf2?? — danach 13.Lxf2 Sd7 14.Thh1 (Springer verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 24 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5k2/2r2ppB/p3p3/1p2P3/1Pb5/P3P3/6PP/5RK1 w - - 1 24"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 24. Rf2 { [Sq g6] Richtig: 24.Tf2. In der Partie geschah 24.Tc1?? — danach 24…g6 25.g4 Td7 (Läufer verloren). Auch gut: Tf4, Tf3. } 0-1
+
+[Event "Weiß am Zug · Zug 9 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk2r/ppp1n1pp/3p1p2/2b1p3/2B1P3/2PPBQ1P/PP3PP1/RN2K2R w KQkq - 1 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 9. d4 { [Sq g5] Richtig: 9.d4. In der Partie geschah 9.Lg5?? — danach 9…d5 10.exd5 fxg5 (Läufer verloren). Auch gut: Dh5+, Sd2. } 0-1
+
+[Event "Schwarz am Zug · Zug 7 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1k1nr/pppp1pQp/3b1q1B/8/4P3/8/PPP2PPP/RN2KB1R b KQkq - 2 7"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 7... Qxh6 { [Sq f2] Richtig: 7…Dxh6. In der Partie geschah 7…Dxf2+?? — danach 8.Kxf2 Sxh6 9.Dxh8+ (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 25 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2k2B2/1pp5/pb6/3p3p/3Pp1p1/2n1P1P1/P2N2BP/R5K1 w - - 0 25"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 25. Bf1 { [Sq c1] Richtig: 25.Lf1. In der Partie geschah 25.Tc1?? — danach 25…Se2+ 26.Kf2 Sxc1 (Turm verloren). Auch gut: Lb4, Kh1, Sb3. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 43 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "8/8/p3B3/p7/3kp3/P7/2K5/8 w - - 0 43"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 43. Bc8 { Richtig: 43.Lc8. In der Partie geschah 43.Kd2?? — danach 43…e3+ 44.Ke2 a4. Auch gut: Lg4, Ld7, Lh3. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 17 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2k2b1r/ppq1ppp1/2p5/4n2p/3rN3/2B1Q1P1/PPP1RP1P/R5K1 b - - 2 17"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 17... Rd5 { [Sq d4] Richtig: 17…Td5. In der Partie geschah 17…Sc4?? — danach 18.Dxd4 b5 19.Sg5 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 16 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/1pp3pp/pbn3q1/4p3/1PP2p2/P4NPb/1B1PBP2/R2QR1K1 b - - 0 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 16... Qxg3+ { [Sq f2] Richtig: 16…Dxg3+. In der Partie geschah 16…fxg3?? — danach 17.c5 Kh8 18.Lf1 (Läufer verloren). Auch gut: Lxf2+. } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/1pp3pp/pbn3q1/4p3/1PP4N/P6b/1B1PBp1K/R2QR3 b - - 1 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 18... Qh6 { [Sq f1] Richtig: 18…Dh6. In der Partie geschah 18…f1=D?? — danach 19.Txf1 Dg5 20.Kxh3 (Dame verloren). Auch gut: Dg5. } 1-0
+
+[Event "Schwarz am Zug · Zug 19 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/1pp3pp/pbn3q1/4p3/1PP4N/P6b/1B1P3K/R2QRB2 b - - 0 19"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 19... Qg1+ { [Sq h3] Richtig: 19…Dg1+. In der Partie geschah 19…Tf2+?? — danach 20.Kxh3 Dh6 21.c5 (Läufer verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 33 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "6k1/1pp4p/p7/8/1PPbRq2/P2B2p1/2KR4/8 b - - 0 33"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 33... Qg5 { [Sq d2] Richtig: 33…Dg5. In der Partie geschah 33…Dxd2+?? — danach 34.Kxd2 c5 35.Tg4+ (Dame verloren). } 1-0
+
+[Event "Weiß am Zug · Zug 17 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppbn3p/2p1p1n1/P2p2N1/1P1P3P/2PQ4/3N1PP1/R4RK1 w - - 1 17"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 17. Nxe6 { [Sq e5] Richtig: 17.Sxe6. In der Partie geschah 17.Tfe1?? — danach 17…Df6 18.Sdf3 e5 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2kr3r/ppp3pp/3q4/Qb3p2/3P4/5N2/PP3PPP/R3R1K1 b - - 1 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 18... Qb6 { [Sq b5] Richtig: 18…Db6. In der Partie geschah 18…Kb8?? — danach 19.Dxb5 g5 20.Dxf5 (Läufer verloren). Auch gut: Da6, a6. } 0-1
+
+[Event "Weiß am Zug · Zug 17 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b5/ppp1n1pp/3q1k2/4Nn2/8/2N5/PPP1Q1PP/R3K2R w KQ - 2 17"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 17. Ne4+ { [Sq e5] Richtig: 17.Se4+. In der Partie geschah 17.Td1?? — danach 17…Dxe5 18.Dxe5+ Kxe5 (Dame verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 41 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.08.05"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5k2/p6R/r2p4/2pPp2P/2P3P1/1P1P3K/8/4q3 b - - 2 41"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 41... Ra2 { Richtig: 41…Ta2. In der Partie geschah 41…Ta3?? — danach 42.Th8+ Kg7 43.Ta8. Auch gut: Dh1+, Ta1, De3+. } 0-1
+
+[Event "Weiß am Zug · Zug 9 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "rn1qkbnr/p5pp/2pp1p2/1p2p3/2B1P3/1Q6/PPPP1PPP/RNB2RK1 w kq - 0 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 9. Bxg8 { [Sq b5] Richtig: 9.Lxg8. In der Partie geschah 9.Lxb5?? — danach 9…cxb5 10.d4 Dd7 (Läufer verloren). Auch gut: Lf7+. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 18 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2kr2r1/pp3p1p/2pp1p2/4p3/1PPbP3/P2P2Pq/R4PQ1/2B2RK1 b - - 1 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 18... Rxg3 { [Sq g2] Richtig: 18…Txg3. In der Partie geschah 18…Dxg2+?? — danach 19.Kxg2 h5 20.Th1 (Dame verloren). } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 5 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 5"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 5. Be2 { [Sq h4] Richtig: 5.Le2. In der Partie geschah 5.Sh4?? — danach 5…Dxh4 6.c3 De4+ (Dame verloren). Auch gut: c3, a3, Sc3. } 0-1
+
+[Event "Schwarz am Zug · Zug 18 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "4r1k1/ppB2pp1/2n4p/2p5/2B5/2P5/P3bPPP/4R1K1 b - - 2 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 18... Rc8 { [Sq e2] Richtig: 18…Tc8. In der Partie geschah 18…Se5?? — danach 19.Txe2 Sxc4 20.Txe8+ (Turm verloren). Auch gut: Te7. } 1-0
+
+[Event "Weiß am Zug · Zug 13 · Mehrzügige Taktik des Gegners übersehen"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "r2q1rk1/1pp1nppp/3p1n2/pPb1p3/2P1P3/3P1N2/1P1B1PPP/RN1Q1RK1 w - - 1 13"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner hat eine Kombination. Finde einen sicheren Zug! } 13. Rxa5 { [Sq b4] Richtig: 13.Txa5. In der Partie geschah 13.Lxa5?? — danach 13…b6 14.b4 Lxb4 (Turm verloren). } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 14 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "r2q1rk1/1pp1nppp/3p4/BPb1p3/2P1P1n1/3P1N2/1P3PPP/RN1Q1RK1 w - - 1 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 14. Nbd2 { [Sq c7] Richtig: 14.Sbd2. In der Partie geschah 14.Lxc7?? — danach 14…Dxc7 15.Txa8 Txa8 (Turm verloren). Auch gut: Ta4. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 25 · Schach mit Folgen übersehen"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "3B1rk1/1R3ppp/3R4/1P6/2P1Pn2/4n3/1P5P/1N4K1 w - - 1 25"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein Schach des Gegners gewinnt Material. Finde einen sicheren Zug! } 25. Kf2 { Richtig: 25.Kf2. In der Partie geschah 25.Tdd7?? — danach 25…Sh3+ 26.Kh1 Sf2+. Auch gut: h4, Kh1. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 17 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2kr2r1/p1pq1pb1/1p3n1p/3P2p1/3Q4/2P1BP1P/PP1N2P1/R4RK1 w - - 3 17"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 17. d6 { [Sq d5] Richtig: 17.d6. In der Partie geschah 17.a4?? — danach 17…Sxd5 18.Dd3 Sxe3 (Läufer verloren). Auch gut: c4. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 13 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pp4pp/4np2/1B1p1Q2/6P1/8/PPP2P1P/RN2K2R b KQkq - 1 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 13... Kf7 { [Sq e6] Richtig: 13…Kf7. In der Partie geschah 13…Ld7?? — danach 14.Dxe6+ Le7 15.Dxd5 (Dame verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 31 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "q6r/3Q1ppp/2r2k2/8/P4P2/1P6/6KP/R1BR4 w - - 1 31"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 31. Bb2+ { [Sq d6] Richtig: 31.Lb2+. In der Partie geschah 31.Td6+?? — danach 31…Txd6+ 32.Kf2 Txd7 (Dame verloren). } 0-1
+
+[Event "Schwarz am Zug · Zug 5 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqkbnr/ppp1pppp/8/8/3nN3/2P5/PP3PPP/R1BQKBNR b KQkq - 0 5"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 5... Nc6 { [Sq d4] Richtig: 5…Sc6. In der Partie geschah 5…Lg4?? — danach 6.Dxd4 Dxd4 7.cxd4 (Dame verloren). Auch gut: Sf5, Lf5. } 0-1
+
+[Event "Schwarz am Zug · Zug 34 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "6k1/R3R2p/p4np1/8/8/7P/b4PPK/3r4 b - - 4 34"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 34... Kf8 { [Sq d8] Richtig: 34…Kf8. In der Partie geschah 34…Td2?? — danach 35.Ta8+ Td8 36.Txd8+. Auch gut: Td8, Kh8. } 1-0
+
+[Event "Weiß am Zug · Zug 10 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b1k1nr/1ppq3p/p1n1pp2/1Bbp4/3P2p1/4P1B1/PPP2PPP/RN1QK2R w KQkq - 0 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 10. Bxc6 { [Sq b5] Richtig: 10.Lxc6. In der Partie geschah 10.dxc5?? — danach 10…axb5 11.Sc3 b4 (Läufer verloren). } 0-1
+
+[Event "Weiß am Zug · Zug 31 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1k4r1/n2bn1qp/1p1N4/1p6/1P3P2/2PQP1P1/P6P/R3R1K1 w - - 5 31"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 31. a4 { [Sq b5] Richtig: 31.a4. In der Partie geschah 31.Sxb5?? — danach 31…Lxb5 32.c4 Lc6 (Springer verloren). Auch gut: Dd4, e4, Tad1. } 0-1
+
+[Event "Weiß am Zug · Zug 38 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1k5r/2n1n3/8/Pp4Q1/1P3P2/4P1P1/3q3P/R3R1K1 w - - 3 38"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 38. h4 { [Sq h2] Richtig: 38.h4. In der Partie geschah 38.Dxe7?? — danach 38…Dxh2+ 39.Kf1 Dh1+. } 0-1
+
+[Event "Weiß am Zug · Zug 15 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/ppp2ppp/8/2bqn3/8/4P1P1/PPPP3P/RNB1QRK1 w - - 3 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 15. d4 { [Sq f3] Richtig: 15.d4. In der Partie geschah 15.Sc3?? — danach 15…Sf3+ 16.Txf3 Dxf3 (Turm verloren). } 1-0
+
+[Event "Schwarz am Zug · Zug 12 · Gezogene Figur ungedeckt/ungünstig hingestellt"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2k1b1r/ppp2Qpp/2nq1n2/4p1N1/4P1b1/2N5/PPPP2PP/R1B2RK1 b - - 7 12"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: ein naheliegender Zug stellt die Figur ungedeckt hin. Finde einen sicheren Zug! } 12... h6 { [Sq e6] Richtig: 12…h6. In der Partie geschah 12…Le6?? — danach 13.Sxe6+ Kc8 14.Sxg7 (Läufer verloren). Auch gut: Kc8, Lh5. } 1-0
+
+[Event "Schwarz am Zug · Zug 10 · Bestehende Drohung übersehen"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qkbnr/pQ3ppp/2n1p3/2p5/3pP3/2PP1P2/PP4PP/RNB1K1NR b KQkq - 0 10"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: eine Figur steht angegriffen. Finde einen sicheren Zug! } 10... Nge7 { [Sq c6] Richtig: 10…Sge7. In der Partie geschah 10…dxc3?? — danach 11.Dxc6+ Ke7 12.Dxc5+ (Dame verloren). Auch gut: Tc8. } 1-0
+
+[Event "Schwarz am Zug · Zug 7 · Gabel/Doppelangriff zugelassen"]
+[Site "?"]
+[Date "2026.08.01"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/ppp2p1p/2n2np1/3P4/2B1pQ2/1P6/P1PP1PPP/RNB1K1NR b KQkq - 1 7"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Vorsicht: der Gegner droht einen Doppelangriff. Finde einen sicheren Zug! } 7... Nb4 { [Sq d4] Richtig: 7…Sb4. In der Partie geschah 7…Sd4?? — danach 8.De5+ Le6 9.Dxd4 (Springer verloren). Auch gut: Ld6. } 0-1
+
+[Event "Weiß am Zug · Zug 20 · Matt zugelassen"]
+[Site "?"]
+[Date "2026.08.01"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn4rk/p4p1p/1p2p1qp/1P1pP3/R2P4/2P2N1P/5PP1/3Q1RK1 w - - 1 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Vorsicht: es droht Matt. Finde einen sicheren Zug! } 20. g3 { [Sq g2] Richtig: 20.g3. In der Partie geschah 20.Da1?? — danach 20…Dxg2#. Auch gut: Se1. } 0-1
+

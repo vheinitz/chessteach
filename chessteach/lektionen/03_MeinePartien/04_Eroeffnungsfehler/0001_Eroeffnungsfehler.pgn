@@ -1,0 +1,1386 @@
+[Event "Weiß: 1.d3 d5 2.g3 e6 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. d3 d5 2. g3 e6 3. e3 Bd6 4. Nc3 Ne7 5. b3 O-O 6. Bb2 Bb4 7. d4 Nbc6 8. Bd3 e5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9. a3 { Besser: 9.a3. Gespielt wurde 9.f3? (kostet 1,2 Bauern). Auch gut: dxe5. } 0-1
+
+[Event "Weiß: 1.d4 c5 2.dxc5 d5 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. d4 c5 2. dxc5 d5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3. cxd6 { Besser: 3.cxd6. Gespielt wurde 3.Sc3? (kostet 1,1 Bauern). Auch gut: e4. } 0-1
+
+[Event "Weiß: 1.d4 d5 2.Lf4 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. d4 d5 2. Bf4 Nc6 3. Nf3 Nf6 4. e3 e6 5. Bb5 Bd7 6. O-O Bd6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7. Nbd2 { Besser: 7.Sbd2. Gespielt wurde 7.Se5? (kostet 1,9 Bauern). Auch gut: Te1, a4, Ld3. } 0-1
+
+[Event "Weiß: 1.d4 d5 2.Lf4 Sc6 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.17"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. d4 d5 2. Bf4 Nc6 3. Nf3 Bf5 4. e3 Nf6 5. Bd3 e6 6. Bxf5 exf5 7. O-O Bd6 8. Be5 Ng4 9. Bxg7 Rg8 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. Be5 { Besser: 10.Le5. Gespielt wurde 10.Lh6? (kostet 3,4 Bauern). } 0-1
+
+[Event "Weiß: 1.d4 d5 2.Lf4 Dd7 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. d4 d5 2. Bf4 Qd7 3. Nf3 f6 4. e3 Nc6 5. Bb5 g5 6. Bg3 g4 7. Nfd2 e6 8. Nb3 a6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9. Bxc6 { Besser: 9.Lxc6. Gespielt wurde 9.Sc5? (kostet 2,4 Bauern). Auch gut: Le2, Ld3. } 0-1
+
+[Event "Weiß: 1.d4 d5 2.Lg5 Sc6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. d4 d5 2. Bg5 Nc6 3. Nc3 Bf5 4. Nf3 Nb4 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5. Rc1 { Besser: 5.Tc1. Gespielt wurde 5.a3? (kostet 4,4 Bauern). Auch gut: e4. } 0-1
+
+[Event "Weiß: 1.d4 e5 2.Sc3 exd4 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. d4 e5 2. Nc3 exd4 3. Qxd4 Nc6 4. Qd2 Bb4 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5. a3 { Besser: 5.a3. Gespielt wurde 5.Dd1? (kostet 1,4 Bauern). } 0-1
+
+[Event "Weiß: 1.d4 e5 2.Sc3 exd4 · Fehler bei Zug 2"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 2 passierte der erste Fehler — was ist dort besser? } 1. d4 e5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 2. dxe5 { Besser: 2.dxe5. Gespielt wurde 2.Sc3? (kostet 1,1 Bauern). } 0-1
+
+[Event "Weiß: 1.d4 e5 2.dxe5 f6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. d4 e5 2. dxe5 f6 3. exf6 Qxf6 4. Qd3 Bc5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5. Nf3 { Besser: 5.Sf3. Gespielt wurde 5.Dc3? (kostet 5,7 Bauern). Auch gut: e3. } 0-1
+
+[Event "Weiß: 1.d4 e6 2.Lf4 b6 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. d4 e6 2. Bf4 b6 3. Nf3 Bb7 4. e3 Qe7 5. Bd3 Qb4+ 6. Nbd2 Qxb2 7. O-O Qb4 8. Rb1 Qe7 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9. Bxc7 { Besser: 9.Lxc7. Gespielt wurde 9.Se5? (kostet 2,1 Bauern). } 0-1
+
+[Event "Weiß: 1.d4 g6 2.Lf4 Lg7 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. d4 g6 2. Bf4 Bg7 3. Nf3 Nf6 4. Nbd2 d5 5. Ne5 O-O 6. Ndf3 Nc6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7. e3 { Besser: 7.e3. Gespielt wurde 7.Dd2? (kostet 1,1 Bauern). Auch gut: c3, Sxc6, h4. } 0-1
+
+[Event "Weiß: 1.e4 Sc6 2.Sf3 e5 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 Nc6 2. Nf3 e5 3. Bc4 h6 4. O-O Nf6 5. c3 d6 6. Re1 Be7 7. d4 Bg4 8. d5 Na5 9. Be2 O-O { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. b4 { Besser: 10.b4. Gespielt wurde 10.Sh4? (kostet 1,2 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 c5 2.Sf3 d6 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 c5 2. Nf3 d6 3. Nc3 e6 4. d4 cxd4 5. Qxd4 Nc6 6. Qa4 Bd7 7. Bb5 g6 8. e5 d5 9. Bg5 Nge7 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. Bf6 { Besser: 10.Lf6. Gespielt wurde 10.Sd4? (kostet 2,1 Bauern). Auch gut: O-O. } 0-1
+
+[Event "Weiß: 1.e4 c5 2.Sf3 e6 · Fehler bei Zug 8"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 8 passierte der erste Fehler — was ist dort besser? } 1. e4 c5 2. Nf3 e6 3. e5 Nc6 4. c3 a6 5. d4 cxd4 6. cxd4 Qc7 7. a3 d6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 8. Bf4 { Besser: 8.Lf4. Gespielt wurde 8.Le2? (kostet 1 Bauern). Auch gut: exd6. } 0-1
+
+[Event "Weiß: 1.e4 c5 2.Sf3 e6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 c5 2. Nf3 e6 3. Bc4 g6 4. c3 Bg7 5. O-O Nc6 6. d3 Ne5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7. Nxe5 { Besser: 7.Sxe5. Gespielt wurde 7.Le3? (kostet 1,2 Bauern). Auch gut: Lb3. } 0-1
+
+[Event "Weiß: 1.e4 c6 2.Sf3 a6 · Fehler bei Zug 8"]
+[Site "?"]
+[Date "2026.08.01"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 8 passierte der erste Fehler — was ist dort besser? } 1. e4 c6 2. Nf3 a6 3. Bc4 b5 4. Bb3 e6 5. O-O c5 6. a3 Be7 7. c3 Bb7 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 8. Re1 { Besser: 8.Te1. Gespielt wurde 8.a4? (kostet 1,7 Bauern). Auch gut: De2, d3, Lc2. } 0-1
+
+[Event "Weiß: 1.e4 c6 2.Sf3 d5 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 c6 2. Nf3 d5 3. e5 Bf5 4. d4 e6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5. Be2 { Besser: 5.Le2. Gespielt wurde 5.Sh4? (kostet 4,8 Bauern). Auch gut: c3, a3, Sc3. } 0-1
+
+[Event "Weiß: 1.e4 c6 2.Sf3 d5 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 c6 2. Nf3 d5 3. e5 Bf5 4. d4 e6 5. Bd3 Bxd3 6. Qxd3 c5 7. Qb5+ Nc6 8. Qxb7 Qc8 9. Qxc8+ Rxc8 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. dxc5 { Besser: 10.dxc5. Gespielt wurde 10.O-O? (kostet 1,4 Bauern). Auch gut: Sbd2. } 0-1
+
+[Event "Weiß: 1.e4 c6 2.Sf3 d5 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 c6 2. Nf3 d5 3. exd5 cxd5 4. d4 Nc6 5. Bf4 Nf6 6. Nc3 Bf5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7. Ne5 { Besser: 7.Se5. Gespielt wurde 7.Db1? (kostet 1,4 Bauern). Auch gut: Lb5, Ld3, a3. } 0-1
+
+[Event "Weiß: 1.e4 d5 2.exd5 Dxd5 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 2. exd5 Qxd5 3. Nc3 Qe6+ 4. Nge2 Qg6 5. g3 Bf5 6. d3 Nc6 7. Bg2 e6 8. O-O Nge7 9. Nf4 Qf6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. Ne4 { Besser: 10.Se4. Gespielt wurde 10.Le4? (kostet 1,8 Bauern). Auch gut: Tb1, Te1, Sh5. } 0-1
+
+[Event "Weiß: 1.e4 d5 2.exd5 Dxd5 · Fehler bei Zug 8"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 8 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 2. exd5 Qxd5 3. Nc3 Qe6+ 4. Nge2 Nc6 5. g3 Bd7 6. Bg2 O-O-O 7. O-O h5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 8. d4 { Besser: 8.d4. Gespielt wurde 8.Ld5? (kostet 2,3 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 d5 2.e5 d4 · Fehler bei Zug 2"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 2 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 2. exd5 { Besser: 2.exd5. Gespielt wurde 2.e5? (kostet 1 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 d5 2.Sf3 dxe4 · Fehler bei Zug 2"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 2 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 2. exd5 { Besser: 2.exd5. Gespielt wurde 2.Sf3? (kostet 1,8 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 d5 2.Sf3 dxe4 · Fehler bei Zug 2"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 2 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 2. exd5 { Besser: 2.exd5. Gespielt wurde 2.Sf3? (kostet 1,6 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 d6 2.d4 c5 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. d4 c5 3. d5 Be6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4. dxe6 { Besser: 4.dxe6. Gespielt wurde 4.c4? (kostet 4,9 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 d6 2.Sf3 Sf6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nf3 Nf6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3. Nc3 { Besser: 3.Sc3. Gespielt wurde 3.Lc4? (kostet 1,3 Bauern). Auch gut: Ld3, c3, d3. } 0-1
+
+[Event "Weiß: 1.e4 d6 2.Sf3 Sf6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.09.17"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nf3 Nf6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3. Nc3 { Besser: 3.Sc3. Gespielt wurde 3.Lc4? (kostet 1,3 Bauern). Auch gut: Ld3, c3, d3. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sc3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nc3 Nc6 3. Nf3 d6 4. Bb5 Nh6 5. d3 Bd7 6. Bg5 f6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7. Bxh6 { Besser: 7.Lxh6. Gespielt wurde 7.Lh4? (kostet 2,8 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 d6 5. h3 f6 6. Be3 Nd4 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7. Bxd4 { Besser: 7.Lxd4. Gespielt wurde 7.c3? (kostet 1,4 Bauern). Auch gut: Sxd4, Sc3. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Nc3 Bc5 4. Bc4 h6 5. d3 Nf6 6. Be3 Bb6 7. Nd5 Nxd5 8. exd5 Na5 9. Nxe5 d6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. Bxb6 { Besser: 10.Lxb6. Gespielt wurde 10.Sxf7? (kostet 3,1 Bauern). Auch gut: Lb5+, Sf3. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4. c3 { Besser: 4.c3. Gespielt wurde 4.Sxe5? (kostet 3,1 Bauern). Auch gut: a4, O-O, d3. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. O-O Nf6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5. d4 { Besser: 5.d4. Gespielt wurde 5.c3? (kostet 1,1 Bauern). Auch gut: Te1. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5. h3 { Besser: 5.h3. Gespielt wurde 5.Sxe5? (kostet 2,4 Bauern). Auch gut: O-O, c3, a4. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O b6 5. c3 Bb7 6. d3 Nf6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7. d4 { Besser: 7.d4. Gespielt wurde 7.Sg5? (kostet 1,2 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.09.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4 4. Nxd4 exd4 5. c3 d6 6. cxd4 h6 7. Qe2 Nf6 8. e5 dxe5 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9. dxe5 { Besser: 9.dxe5. Gespielt wurde 9.Dxe5+? (kostet 2,4 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Nc3 Be7 5. b3 O-O 6. Bb2 d6 7. d3 Bg4 8. Qd2 Bxf3 9. gxf3 Nd4 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. O-O-O { Besser: 10.O-O-O. Gespielt wurde 10.De3? (kostet 4,7 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4. Ba4 { Besser: 4.La4. Gespielt wurde 4.O-O? (kostet 4,6 Bauern). Auch gut: Lc4, Lxc6. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Nc3 Bc5 5. d3 Ng4 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6. Bxf7+ { Besser: 6.Lxf7+. Gespielt wurde 6.Lg5? (kostet 1,9 Bauern). Auch gut: O-O. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 8"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 8 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O d6 5. h3 h5 6. c3 Bg4 7. hxg4 hxg4 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 8. d4 { Besser: 8.d4. Gespielt wurde 8.Sh2? (kostet 11,8 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. Nc3 a6 5. Ba4 b5 6. Bb3 Nf6 7. Ng5 Be6 8. Nxe6 fxe6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9. Bxe6 { Besser: 9.Lxe6. Gespielt wurde 9.O-O? (kostet 1,7 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.26"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. O-O Bc5 5. c3 Qf6 6. d4 exd4 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7. b4 { Besser: 7.b4. Gespielt wurde 7.cxd4? (kostet 2 Bauern). Auch gut: e5. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. O-O Nf6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5. d4 { Besser: 5.d4. Gespielt wurde 5.c3? (kostet 1 Bauern). Auch gut: Te1. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 f6 4. O-O d6 5. d3 Nge7 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6. a4 { Besser: 6.a4. Gespielt wurde 6.Le3? (kostet 1,3 Bauern). Auch gut: d4, a3. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d6 5. Be3 g6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6. Ng5 { Besser: 6.Sg5. Gespielt wurde 6.Sbd2? (kostet 1,4 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 d5 · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 d5 3. Nxe5 dxe4 4. Qe2 Nf6 5. d3 Bd6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6. Nc4 { Besser: 6.Sc4. Gespielt wurde 6.Sxf7? (kostet 2,1 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 d6 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 d6 3. d4 Bg4 4. dxe5 Bxf3 5. gxf3 dxe5 6. Qxd8+ Kxd8 7. Be3 a6 8. Nc3 Nc6 9. O-O-O+ Bd6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. Rg1 { Besser: 10.Tg1. Gespielt wurde 10.f4? (kostet 1,3 Bauern). Auch gut: Sd5, h4. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Df6 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 4. Nc3 Ne7 5. d3 h6 6. Be3 Bb4 7. Qd2 O-O 8. h4 Nbc6 9. O-O-O a6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. d4 { Besser: 10.d4. Gespielt wurde 10.g4? (kostet 3,5 Bauern). Auch gut: a3. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Lc5 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Bc5 3. Nxe5 Nc6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4. Nf3 { Besser: 4.Sf3. Gespielt wurde 4.Sxf7? (kostet 3,6 Bauern). Auch gut: Sxc6. } 0-1
+
+[Event "Weiß: 1.e4 e5 2.Sf3 Ld6 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Bd6 3. Nc3 Nf6 4. Bc4 O-O 5. O-O b6 6. d4 exd4 7. Nxd4 Be5 8. Nf5 Bxc3 9. bxc3 Nxe4 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. Qg4 { Besser: 10.Dg4. Gespielt wurde 10.Dd5? (kostet 1,9 Bauern). } 0-1
+
+[Event "Weiß: 1.e4 e6 2.e5 Sc6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e4 e6 2. e5 Nc6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3. Nf3 { Besser: 3.Sf3. Gespielt wurde 3.f4? (kostet 1,3 Bauern). Auch gut: d4. } 0-1
+
+[Event "Weiß: 1.e4 e6 2.Sf3 d6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.08.23"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e6 2. Nf3 d6 3. d4 a6 4. Bg5 Be7 5. h4 Bxg5 6. hxg5 f6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7. Nh4 { Besser: 7.Sh4. Gespielt wurde 7.Th5? (kostet 1,2 Bauern). Auch gut: Dd2. } 0-1
+
+[Event "Weiß: 1.e4 e6 2.Sf3 d6 · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. e4 e6 2. Nf3 d6 3. d4 Nf6 4. Bg5 Be7 5. Nbd2 Nfd7 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6. Bxe7 { Besser: 6.Lxe7. Gespielt wurde 6.Lb5? (kostet 5 Bauern). Auch gut: Le3, h4, Lf4. } 0-1
+
+[Event "Weiß: 1.e4 g6 2.Sf3 Lg7 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 g6 2. Nf3 Bg7 3. Nc3 e6 4. d4 Ne7 5. e5 O-O 6. Bd3 d6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7. h4 { Besser: 7.h4. Gespielt wurde 7.Sg5? (kostet 1,7 Bauern). Auch gut: Lg5, Se4. } 0-1
+
+[Event "Weiß: 1.f3 e6 2.d4 Se7 · Fehler bei Zug 1"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 1 passierte der erste Fehler — was ist dort besser? } 1. e4 { Besser: 1.e4. Gespielt wurde 1.f3? (kostet 1,3 Bauern). Auch gut: Sf3, d4, c4. } 0-1
+
+[Event "Weiß: 1.f4 d5 2.Sf3 Lf5 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. f4 d5 2. Nf3 Bf5 3. g3 Nc6 4. Bg2 Nb4 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5. d3 { Besser: 5.d3. Gespielt wurde 5.O-O? (kostet 1,9 Bauern). Auch gut: Sa3. } 0-1
+
+[Event "Weiß: 1.f4 d5 2.Sf3 d4 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. f4 d5 2. Nf3 d4 3. g3 Nc6 4. Bg2 Bg4 5. d3 Bxf3 6. Bxf3 Nf6 7. O-O h5 8. c3 h4 9. g4 h3 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10. Qb3 { Besser: 10.Db3. Gespielt wurde 10.cxd4? (kostet 1,3 Bauern). Auch gut: g5. } 0-1
+
+[Event "Weiß: 1.f4 e5 2.fxe5 Dh4+ · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. f4 e5 2. fxe5 Qh4+ 3. g3 Qh5 4. Nf3 d6 5. exd6 Bxd6 { Jetzt ist Weiß am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6. Bg2 { Besser: 6.Lg2. Gespielt wurde 6.d4? (kostet 2 Bauern). } 0-1
+
+[Event "Schwarz: 1.d4 Sc6 2.e3 d5 · Fehler bei Zug 8"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 8 passierte der erste Fehler — was ist dort besser? } 1. d4 Nc6 2. e3 d5 3. Bb5 Bd7 4. Bxc6 Bxc6 5. c3 Nf6 6. Nf3 Ne4 7. Ne5 Qd6 8. a3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 8... g6 { Besser: 8…g6. Gespielt wurde 8…f6? (kostet 1,5 Bauern). Auch gut: Sf6, e6, a6. } 1-0
+
+[Event "Schwarz: 1.d4 d5 2.Sc3 Lf5 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.08.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. d4 d5 2. Nc3 Bf5 3. Nf3 e6 4. Bf4 c6 5. e3 Bd6 6. Bg3 Bc7 7. Bd3 Bxd3 8. Qxd3 Nf6 9. O-O-O Nbd7 10. h4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10... Bxg3 { Besser: 10…Lxg3. Gespielt wurde 10…Sf8? (kostet 2,1 Bauern). } 1-0
+
+[Event "Schwarz: 1.d4 d5 2.Lf4 e6 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. d4 d5 2. Bf4 e6 3. e3 Bd6 4. Bg3 Bxg3 5. hxg3 Nc6 6. c3 Nf6 7. Bd3 O-O 8. Nf3 Bd7 9. Ne5 Nxe5 10. dxe5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10... Ne4 { Besser: 10…Se4. Gespielt wurde 10…Sg4? (kostet 9,2 Bauern). } 1-0
+
+[Event "Schwarz: 1.d4 d5 2.e3 Sc6 · Fehler bei Zug 8"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 8 passierte der erste Fehler — was ist dort besser? } 1. d4 d5 2. e3 Nc6 3. Nc3 Nf6 4. h3 e6 5. Be2 Bd6 6. Nf3 Bd7 7. a3 Qe7 8. O-O { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 8... a6 { Besser: 8…a6. Gespielt wurde 8…Sd8? (kostet 1 Bauern). Auch gut: e5, g5, O-O-O. } 1-0
+
+[Event "Schwarz: 1.d4 d5 2.h4 Sc6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. d4 d5 2. h4 Nc6 3. e3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... e5 { Besser: 3…e5. Gespielt wurde 3…Lg4? (kostet 5,5 Bauern). Auch gut: Sf6. } 1-0
+
+[Event "Schwarz: 1.d4 e6 2.Sc3 Sf6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. d4 e6 2. Nc3 Nf6 3. Bf4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... Bb4 { Besser: 3…Lb4. Gespielt wurde 3…g6? (kostet 1,1 Bauern). Auch gut: d5, Sc6, c5. } 1-0
+
+[Event "Schwarz: 1.d4 e6 2.c4 Sf6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.09.26"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. d4 e6 2. c4 Nf6 3. Nc3 g6 4. e4 Bg7 5. e5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... Ng8 { Besser: 5…Sg8. Gespielt wurde 5…Sh5? (kostet 2,6 Bauern). } 1-0
+
+[Event "Schwarz: 1.d4 Sf6 2.Sc3 g6 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. d4 Nf6 2. Nc3 g6 3. e4 d6 4. Bd3 Bg7 5. Nge2 O-O 6. O-O c6 7. Bg5 Re8 8. d5 Bg4 9. h3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9... Bxe2 { Besser: 9…Lxe2. Gespielt wurde 9…Lh5? (kostet 2,2 Bauern). Auch gut: Lc8, Ld7. } 1-0
+
+[Event "Schwarz: 1.d4 Sf6 2.c4 g6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 c6 5. e5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... Ng8 { Besser: 5…Sg8. Gespielt wurde 5…Sh5? (kostet 2,7 Bauern). } 1-0
+
+[Event "Schwarz: 1.d4 Sf6 2.c4 g6 · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. d4 Nf6 2. c4 g6 3. e3 Bg7 4. c5 d6 5. b4 b6 6. Nf3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6... bxc5 { Besser: 6…bxc5. Gespielt wurde 6…Lg4? (kostet 1,4 Bauern). Auch gut: dxc5. } 1-0
+
+[Event "Schwarz: 1.d4 Sf6 2.Sf3 g6 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. d4 Nf6 2. Nf3 g6 3. e3 Bg7 4. Bd3 O-O 5. Nc3 Re8 6. e4 c6 7. e5 Nd5 8. Nxd5 cxd5 9. O-O Nc6 10. Re1 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10... d6 { Besser: 10…d6. Gespielt wurde 10…e6? (kostet 1,3 Bauern). Auch gut: Db6. } 1-0
+
+[Event "Schwarz: 1.d4 Sf6 2.Sf3 g6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.10.01"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. d4 Nf6 2. Nf3 g6 3. e4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... Nxe4 { Besser: 3…Sxe4. Gespielt wurde 3…d6? (kostet 1,3 Bauern). } 1-0
+
+[Event "Schwarz: 1.e3 d5 2.c4 d4 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.08.01"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. e3 d5 2. c4 d4 3. exd4 Qxd4 4. Nf3 Qe4+ 5. Be2 Bg4 6. Nc3 Qc6 7. d4 Nd7 8. O-O O-O-O 9. Nb5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9... Qa6 { Besser: 9…Da6. Gespielt wurde 9…h5? (kostet 5,2 Bauern). Auch gut: Dg6, Df6. } 1-0
+
+[Event "Schwarz: 1.e3 d5 2.Se2 e5 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e3 d5 2. Ne2 e5 3. Ng3 g6 4. Bb5+ c6 5. Be2 f5 6. c3 Bd6 7. f3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... f4 { Besser: 7…f4. Gespielt wurde 7…Sf6? (kostet 1,5 Bauern). } 1-0
+
+[Event "Schwarz: 1.e3 e5 2.d4 exd4 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e3 e5 2. d4 exd4 3. exd4 Nf6 4. h3 Bb4+ 5. Bd2 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... Bxd2+ { Besser: 5…Lxd2+. Gespielt wurde 5…d6? (kostet 3,9 Bauern). Auch gut: De7+, Le7, a5. } 1-0
+
+[Event "Schwarz: 1.e3 e5 2.Sf3 e4 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e3 e5 2. Nf3 e4 3. Ne5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... c6 { Besser: 3…c6. Gespielt wurde 3…f6? (kostet 4,7 Bauern). Auch gut: d6, h5, Sf6. } 1-0
+
+[Event "Schwarz: 1.e4 a6 2.Sf3 b6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 a6 2. Nf3 b6 3. Bc4 c6 4. Ne5 e6 5. Qf3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... Nh6 { Besser: 5…Sh6. Gespielt wurde 5…f6? (kostet 2,2 Bauern). Auch gut: Sf6, Df6, De7. } 1-0
+
+[Event "Schwarz: 1.e4 b6 2.Sf3 Lb7 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 b6 2. Nf3 Bb7 3. Nc3 e6 4. d4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4... Bb4 { Besser: 4…Lb4. Gespielt wurde 4…Se7? (kostet 1 Bauern). Auch gut: Sf6, Le7, d5. } 1-0
+
+[Event "Schwarz: 1.e4 d5 2.exd5 Dxd5 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 Nf6 5. Bd2 Bg4 6. Be2 Bxe2 7. Ngxe2 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... Nc6 { Besser: 7…Sc6. Gespielt wurde 7…c6? (kostet 1,1 Bauern). Auch gut: e6, Sbd7, a6. } 1-0
+
+[Event "Schwarz: 1.e4 d5 2.exd5 Dxd5 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.26"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 2. exd5 Qxd5 3. c4 Qa5 4. Nc3 c6 5. a3 Nf6 6. b4 Qe5+ 7. Be2 Bf5 8. Nf3 Qe6 9. O-O Nbd7 10. d4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10... g6 { Besser: 10…g6. Gespielt wurde 10…O-O-O? (kostet 3,7 Bauern). Auch gut: Dd6, a5, Se4. } 1-0
+
+[Event "Schwarz: 1.e4 d5 2.exd5 Dxd5 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. Nf3 Bg4 5. h3 Bh5 6. Be2 Nd7 7. b4 Qxb4 8. Rb1 Qd6 9. Rxb7 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9... a6 { Besser: 9…a6. Gespielt wurde 9…Sb6? (kostet 3,8 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d5 2.exd5 Dxd5 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d3 Nf6 5. Bd2 Bg4 6. Ne4 Bxd1 7. Bxa5 Bxc2 8. Rc1 b6 9. Nxf6+ gxf6 10. Bb4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10... Ba4 { Besser: 10…La4. Gespielt wurde 10…c5? (kostet 1,1 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d5 2.e5 d4 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 2. e5 d4 3. Nf3 Bf5 4. h3 Nc6 5. Bb5 e6 6. d3 Bb4+ 7. c3 dxc3 8. bxc3 Ba5 9. Na3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9... Bxc3+ { Besser: 9…Lxc3+. Gespielt wurde 9…Dxd3? (kostet 8,6 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d5 2.f3 d4 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 2. f3 d4 3. c3 c5 4. Bc4 Nc6 5. Qb3 e6 6. d3 Na5 7. Qa4+ Bd7 8. Bb5 Bxb5 9. Qxb5+ Nc6 10. Qxb7 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10... Nge7 { Besser: 10…Sge7. Gespielt wurde 10…dxc3? (kostet 6,4 Bauern). Auch gut: Tc8. } 1-0
+
+[Event "Schwarz: 1.e4 d5 2.f3 dxe4 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 d5 2. f3 dxe4 3. fxe4 Nc6 4. Bc4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4... Nf6 { Besser: 4…Sf6. Gespielt wurde 4…Dd4? (kostet 1 Bauern). Auch gut: f5, e5, Se5. } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.Sc3 Sf6 · Fehler bei Zug 8"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 8 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nc3 Nf6 3. Bc4 g6 4. d3 Bg7 5. f4 O-O 6. Nf3 c6 7. O-O Bg4 8. Be3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 8... d5 { Besser: 8…d5. Gespielt wurde 8…e6? (kostet 2,5 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.d4 Sf6 · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Nf3 Bg7 5. e5 dxe5 6. dxe5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6... Qxd1+ { Besser: 6…Dxd1+. Gespielt wurde 6…Sd5? (kostet 5,9 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.d4 Sf6 · Fehler bei Zug 10"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 10 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. g3 Bg7 5. Bg2 Bg4 6. f3 Bd7 7. Nge2 O-O 8. O-O b6 9. b3 c5 10. d5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 10... b5 { Besser: 10…b5. Gespielt wurde 10…e6? (kostet 2,1 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.d4 Sf6 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. d4 Nf6 3. d5 Nxe4 4. Nd2 Nf6 5. Bc4 g6 6. Ngf3 Bg4 7. O-O Bg7 8. Re1 O-O 9. h3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9... Bxf3 { Besser: 9…Lxf3. Gespielt wurde 9…Lh5? (kostet 2,1 Bauern). Auch gut: Lc8, Lf5. } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.d4 Sf6 · Fehler bei Zug 8"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 8 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. d4 Nf6 3. Nf3 Nxe4 4. Bb5+ Bd7 5. Bd3 f5 6. Ng5 Nxg5 7. Bxg5 g6 8. O-O { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 8... h6 { Besser: 8…h6. Gespielt wurde 8…e6? (kostet 6,6 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.d4 Sf6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.10.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Nf3 Bg7 5. Bc4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... O-O { Besser: 5…O-O. Gespielt wurde 5…Tf8? (kostet 1,1 Bauern). Auch gut: Sxe4, c6, Sc6. } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.d4 Sf6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. d4 Nf6 3. Nf3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... Nxe4 { Besser: 3…Sxe4. Gespielt wurde 3…g6? (kostet 1,5 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.Sf3 Sf6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nf3 Nf6 3. Bc4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... Nxe4 { Besser: 3…Sxe4. Gespielt wurde 3…g6? (kostet 1,4 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.Sf3 Sf6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nf3 Nf6 3. Nc3 g6 4. d4 Bg7 5. Bc4 O-O 6. Bf4 Bg4 7. h3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... Bxf3 { Besser: 7…Lxf3. Gespielt wurde 7…Le6? (kostet 1,2 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.Sf3 Sf6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nf3 Nf6 3. Nc3 g6 4. Bc4 Bg7 5. d4 O-O 6. Be3 c6 7. d5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... b5 { Besser: 7…b5. Gespielt wurde 7…Lg4? (kostet 1,2 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.Sf3 Sf6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nf3 Nf6 3. Bc4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... Nxe4 { Besser: 3…Sxe4. Gespielt wurde 3…g6? (kostet 1,3 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.Sf3 Sf6 · Fehler bei Zug 8"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 8 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nf3 Nf6 3. Bc4 e6 4. d3 g6 5. Ng5 Bg7 6. Qf3 O-O 7. O-O c6 8. h3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 8... d5 { Besser: 8…d5. Gespielt wurde 8…b5? (kostet 1,1 Bauern). Auch gut: h6. } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.Sf3 Sf6 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nf3 Nf6 3. Nc3 g6 4. Bc4 Bg7 5. Ng5 e6 6. d4 c6 7. O-O b5 8. Be2 O-O 9. Re1 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9... b4 { Besser: 9…b4. Gespielt wurde 9…Lb7? (kostet 1,1 Bauern). Auch gut: Sbd7. } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.Sf3 Sf6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nf3 Nf6 3. Bc4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... Nxe4 { Besser: 3…Sxe4. Gespielt wurde 3…g6? (kostet 1,3 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 d6 2.Sf3 Sf6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e4 d6 2. Nf3 Nf6 3. Be2 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... Nxe4 { Besser: 3…Sxe4. Gespielt wurde 3…g6? (kostet 1,2 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sc3 Sf6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nc3 Nf6 3. f3 Nc6 4. b3 Bb4 5. Bb2 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... O-O { Besser: 5…O-O. Gespielt wurde 5…Lxc3? (kostet 1,1 Bauern). Auch gut: d5, a5, a6. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Df3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Qf3 Nc6 3. Bc4 Qf6 4. Qxf6 Nxf6 5. Nf3 Nxe4 6. O-O Bc5 7. d4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... Nxd4 { Besser: 7…Sxd4. Gespielt wurde 7…exd4? (kostet 2,9 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Df3 Sc6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Qf3 Nc6 3. Ne2 Nf6 4. h3 Bc5 5. Nbc3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... d5 { Besser: 5…d5. Gespielt wurde 5…Se7? (kostet 2 Bauern). Auch gut: O-O, Sb4. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Dh5 g6 · Fehler bei Zug 2"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 2 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Qh5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 2... Nc6 { Besser: 2…Sc6. Gespielt wurde 2…g6? (kostet 5,8 Bauern). Auch gut: d6, Sf6, De7. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Dh5 Sf6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Qh5 Nf6 3. Qxe5+ { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... Be7 { Besser: 3…Le7. Gespielt wurde 3…De7? (kostet 1,4 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Lc4 Sc6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. Ng5 d5 5. exd5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... Na5 { Besser: 5…Sa5. Gespielt wurde 5…Sxd5? (kostet 1,4 Bauern). Auch gut: b5, Sd4. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Lc4 Lc5 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Bc4 Bc5 3. Qh5 Qf6 4. Ne2 Qxf2+ 5. Kd1 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... Nc6 { Besser: 5…Sc6. Gespielt wurde 5…g6? (kostet 6,5 Bauern). Auch gut: d6, d5, Se7. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Lc4 Lc5 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Bc4 Bc5 3. c3 Nc6 4. Qb3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4... Qh4 { Besser: 4…Dh4. Gespielt wurde 4…Sa5? (kostet 2,4 Bauern). Auch gut: Dg5, De7, Df6. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Lc4 Sf6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Bc4 Nf6 3. Nf3 Nc6 4. Ng5 d5 5. exd5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... Na5 { Besser: 5…Sa5. Gespielt wurde 5…Sxd5? (kostet 1,1 Bauern). Auch gut: b5, Sd4. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Lc4 Sf6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. Nf3 O-O 5. Bg5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... Nc6 { Besser: 5…Sc6. Gespielt wurde 5…De8? (kostet 1,2 Bauern). Auch gut: d6, h6, c6. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Lc4 Sf6 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Bc4 Nf6 3. Nf3 Nxe4 4. Nxe5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4... d5 { Besser: 4…d5. Gespielt wurde 4…De7? (kostet 1,6 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.f4 exf4 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. f4 exf4 3. Nf3 Nf6 4. Nc3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4... d5 { Besser: 4…d5. Gespielt wurde 4…Lb4? (kostet 1,1 Bauern). Auch gut: Le7, Sc6. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 5"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 5 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 5... Qf6 { Besser: 5…Df6. Gespielt wurde 5…Ld6? (kostet 1,3 Bauern). Auch gut: d6, c6. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bc4 Bc5 5. d3 d6 6. a3 Bg4 7. O-O { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... Nd4 { Besser: 7…Sd4. Gespielt wurde 7…O-O? (kostet 1,3 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Nc3 Bb4 4. Bb5 Nf6 5. d3 Bxc3+ 6. bxc3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6... d6 { Besser: 6…d6. Gespielt wurde 6…a6? (kostet 1,4 Bauern). Auch gut: O-O, De7. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. Bxc6 bxc6 5. Nxe5 Qe7 6. d4 d6 7. Bg5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... dxe5 { Besser: 7…dxe5. Gespielt wurde 7…De6? (kostet 3,1 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. Bg5 O-O 6. Nc3 Be7 7. Nd5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... Nxd5 { Besser: 7…Sxd5. Gespielt wurde 7…Sa5? (kostet 1,6 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 8"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 8 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. Ng5 O-O 6. Nc3 d6 7. Nd5 Nd4 8. c3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 8... Ne6 { Besser: 8…Se6. Gespielt wurde 8…c6? (kostet 2,7 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6 5. O-O d6 6. Ng5 O-O 7. d3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... Bg4 { Besser: 7…Lg4. Gespielt wurde 7…Sa5? (kostet 1,4 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4... exd4 { Besser: 4…exd4. Gespielt wurde 4…Sxd4? (kostet 1,2 Bauern). Auch gut: Lb4. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 4"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 4 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 4... d5 { Besser: 4…d5. Gespielt wurde 4…Sxe4? (kostet 1,3 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 dxc3 6. bxc3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6... Bf6 { Besser: 6…Lf6. Gespielt wurde 6…Sa5? (kostet 1,3 Bauern). Auch gut: d6, Sh6, Sf6. } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 9"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 9 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 d6 5. dxe5 dxe5 6. Qxd8+ Kxd8 7. Bg5 Bb4 8. O-O-O+ Bd7 9. Nd5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 9... Be7 { Besser: 9…Le7. Gespielt wurde 9…h6? (kostet 3,8 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 c6 6. Bc4 Qa5+ 7. Bd2 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... Qc5 { Besser: 7…Dc5. Gespielt wurde 7…Db6? (kostet 1,2 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.10.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nc6 3. Nc3 Bc5 4. Bc4 Nf6 5. O-O O-O 6. d4 exd4 7. Nd5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... h6 { Besser: 7…h6. Gespielt wurde 7…Sxe4? (kostet 2,1 Bauern). } 1-0
+
+[Event "Schwarz: 1.e4 e5 2.Sf3 Sf6 · Fehler bei Zug 3"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 3 passierte der erste Fehler — was ist dort besser? } 1. e4 e5 2. Nf3 Nf6 3. Bc4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 3... Nxe4 { Besser: 3…Sxe4. Gespielt wurde 3…Lc5? (kostet 2,1 Bauern). } 1-0
+
+[Event "Schwarz: 1.f4 d5 2.e3 Lf5 · Fehler bei Zug 6"]
+[Site "?"]
+[Date "2026.09.26"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 6 passierte der erste Fehler — was ist dort besser? } 1. f4 d5 2. e3 Bf5 3. b3 Nc6 4. Bb5 Qd7 5. Nf3 O-O-O 6. Ne5 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 6... Qe8 { Besser: 6…De8. Gespielt wurde 6…Lg4? (kostet 5,1 Bauern). Auch gut: De6. } 1-0
+
+[Event "Schwarz: 1.Sf3 d5 2.d4 Sc6 · Fehler bei Zug 7"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 7 passierte der erste Fehler — was ist dort besser? } 1. Nf3 d5 2. d4 Nc6 3. e3 Bg4 4. c4 dxc4 5. Bxc4 Nf6 6. Nc3 Bxf3 7. Qxf3 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 7... e6 { Besser: 7…e6. Gespielt wurde 7…Sxd4? (kostet 3,7 Bauern). Auch gut: a6, Dd7, Tb8. } 1-0
+
+[Event "Schwarz: 1.g4 b6 2.Lg2 c6 · Fehler bei Zug 1"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[Aufgabe "1"]
+
+{ Spiele die Eröffnung nach. Bei Zug 1 passierte der erste Fehler — was ist dort besser? } 1. g4 { Jetzt ist Schwarz am Zug: Hier kam der Fehler. Finde den besseren Zug! } 1... d5 { Besser: 1…d5. Gespielt wurde 1…b6? (kostet 1,6 Bauern). Auch gut: Sc6, e5, h5. } 1-0
+
