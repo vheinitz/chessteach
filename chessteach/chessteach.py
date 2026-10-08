@@ -26,7 +26,7 @@ from tkinter import ttk, messagebox, simpledialog
 import chess
 import chess.pgn
 import chess.engine
-from PIL import Image, ImageTk
+from PIL import Image, ImageDraw, ImageTk
 
 # ---------------------------------------------------------------------------
 # Pfade & Konstanten
@@ -108,7 +108,7 @@ Maus
 ────
 Linksklick        Figur auswählen, dann Zielfeld anklicken (Zug)
 Rechtsklick+Ziehen  Pfeil zeichnen
-„Markieren“ an → Linksklick markiert Felder (aktuelle Farbe)
+Knopf „Markieren“ (farbiges Quadrat) an → Linksklick markiert Felder
 
 Markierungsfarben (Wechsel mit c)
 ────────────────────────────────
@@ -117,7 +117,7 @@ gelb, rot, blau, grün, lila
 
 Repertoire-Training
 ───────────────────
-Häkchen „Repertoire-Training“ setzen, wenn eine PGN mit Zügen geladen ist.
+Knopf „Repertoire-Training“ (Buch) einschalten, wenn eine PGN mit Zügen geladen ist.
 Du spielst die Farbe, die unten am Brett steht. Richtiger Zug → grünes
 Aufblinken + Ton, danach zieht der Gegner automatisch nach 1 Sekunde.
 ✓/✗ zählt richtige und falsche Versuche. Falsche Züge werden rot angezeigt.
@@ -328,6 +328,33 @@ def load_pgn_games(path):
     return nodes
 
 
+# Alternativvarianten nur zeigen, wenn sie mit der besten Variante mithalten:
+# Bei forciertem Matt bis MATE_ONLY_BEST oder deutlich schlechterer Bewertung
+# würden die Kinder sonst zwischen gleichwertig aussehenden Pfeilen raten.
+MATE_ONLY_BEST = 4          # Matt in bis zu 4 Zügen -> nur die beste Variante
+ALT_MAX_LOSS_RATIO = 0.5    # Alternative weg, wenn sie ≥ 50 % schlechter ist …
+ALT_MIN_LOSS_CP = 100       # … und mindestens 1 Bauer (sonst Rauschen bei ±0.2)
+
+
+def filter_alternatives(results):
+    """results: [(move, PovScore|None), ...] beste zuerst -> gefilterte Liste."""
+    if len(results) < 2 or results[0][1] is None:
+        return results
+    best = results[0][1].relative
+    if best.is_mate() and 0 < best.mate() <= MATE_ONLY_BEST:
+        return results[:1]
+    best_cp = best.score(mate_score=100000)
+    kept = [results[0]]
+    for move, score in results[1:]:
+        if score is None:
+            continue
+        loss = best_cp - score.relative.score(mate_score=100000)
+        if loss >= ALT_MIN_LOSS_CP and loss >= ALT_MAX_LOSS_RATIO * abs(best_cp):
+            continue
+        kept.append((move, score))
+    return kept
+
+
 def san_de(board, move):
     return board.san(move).replace("N", "S").replace("B", "L").replace("Q", "D").replace("R", "T")
 
@@ -426,6 +453,164 @@ class PieceSet:
 
 
 PIECES = PieceSet(PIECES_DIR)
+
+
+# ---------------------------------------------------------------------------
+# Werkzeugleisten-Piktogramme
+# ---------------------------------------------------------------------------
+# Gezeichnet statt Text: Am TV aus 3 m Entfernung sind kleine Beschriftungen
+# kaum lesbar, und die Textleiste war so breit, dass die Statuszeile (z. B.
+# „Schachmatt!“) rechts aus dem Bild geschoben wurde.
+ICON_FG = "#263238"
+ICON_RED = "#d32f2f"
+_SS = 4  # Supersampling-Faktor für Kantenglättung
+
+
+def _arrow_head(d, tip, angle, size, fill):
+    a1, a2 = angle + 2.6, angle - 2.6
+    d.polygon([tip,
+               (tip[0] + size * math.cos(a1), tip[1] + size * math.sin(a1)),
+               (tip[0] + size * math.cos(a2), tip[1] + size * math.sin(a2))], fill=fill)
+
+
+def _cross(d, s, w, cx, cy, r):
+    d.line([(cx - r, cy - r), (cx + r, cy + r)], fill=ICON_RED, width=w)
+    d.line([(cx - r, cy + r), (cx + r, cy - r)], fill=ICON_RED, width=w)
+
+
+def _mini_board(d, x0, y0, size, n=4):
+    q = size / n
+    for i in range(n):
+        for j in range(n):
+            fill = DARK if (i + j) % 2 else LIGHT
+            d.rectangle([x0 + i * q, y0 + j * q, x0 + (i + 1) * q, y0 + (j + 1) * q], fill=fill)
+    d.rectangle([x0, y0, x0 + size, y0 + size], outline=ICON_FG, width=max(1, int(size / 20)))
+
+
+def make_icon(name, size, color=None):
+    """Zeichnet das Piktogramm `name` als PhotoImage (size × size Pixel)."""
+    s = size * _SS
+    img = Image.new("RGBA", (s, s), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    w = max(2, s // 11)  # Strichstärke
+    m = s * 0.12         # Rand
+    c = s / 2
+
+    if name in ("undo", "reset"):
+        # Bogenpfeil: undo gegen, reset im Uhrzeigersinn (PIL-Winkel laufen im Uhrzeigersinn)
+        r = s * 0.3
+        a0, a1 = (200, 80) if name == "undo" else (290, 170)
+        d.arc([c - r, c - r, c + r, c + r], a0, a1, fill=ICON_FG, width=w)
+        a_tip = a0 if name == "undo" else a1
+        t = math.radians(a_tip)
+        tip = (c + r * math.cos(t), c + r * math.sin(t))
+        direction = t - math.pi / 2 if name == "undo" else t + math.pi / 2
+        tip = (tip[0] + s * 0.08 * math.cos(direction), tip[1] + s * 0.08 * math.sin(direction))
+        _arrow_head(d, tip, direction, s * 0.26, ICON_FG)
+    elif name == "new_game":
+        _mini_board(d, m, m, s - 2 * m, 4)
+        pawn = PIECES._pil.get("P")
+        if pawn is not None:
+            p = pawn.resize((int(s * 0.62), int(s * 0.62)), Image.LANCZOS)
+            img.alpha_composite(p, (int(c - p.width / 2), int(c - p.height / 2)))
+    elif name == "repertoire":  # aufgeschlagenes Buch
+        d.polygon([(c, s * 0.28), (m, s * 0.2), (m, s * 0.8), (c, s * 0.88)], fill="#fff8e1", outline=ICON_FG)
+        d.polygon([(c, s * 0.28), (s - m, s * 0.2), (s - m, s * 0.8), (c, s * 0.88)], fill="#fff8e1", outline=ICON_FG)
+        d.line([(c, s * 0.28), (c, s * 0.88)], fill=ICON_FG, width=w)
+        for k in range(3):
+            y = s * (0.4 + 0.13 * k)
+            d.line([(m + s * 0.08, y - s * 0.02), (c - s * 0.08, y + s * 0.02)], fill="#78909c", width=max(1, w // 2))
+            d.line([(c + s * 0.08, y + s * 0.02), (s - m - s * 0.08, y - s * 0.02)], fill="#78909c", width=max(1, w // 2))
+    elif name == "flip":  # Brett mit Doppelpfeil auf/ab
+        _mini_board(d, m, m, s - 2 * m, 4)
+        d.line([(c, s * 0.24), (c, s * 0.76)], fill=ICON_RED, width=w)
+        _arrow_head(d, (c, m * 0.6), math.radians(-90), s * 0.26, ICON_RED)
+        _arrow_head(d, (c, s - m * 0.6), math.radians(90), s * 0.26, ICON_RED)
+    elif name == "edit":  # Bleistift
+        d.line([(s * 0.25, s * 0.75), (s * 0.75, s * 0.25)], fill="#f9a825", width=int(s * 0.18))
+        d.line([(s * 0.66, s * 0.34), (s * 0.79, s * 0.21)], fill="#e57373", width=int(s * 0.18))
+        d.polygon([(s * 0.12, s * 0.88), (s * 0.2, s * 0.62), (s * 0.38, s * 0.8)], fill=ICON_FG)
+    elif name in ("first", "prev", "next", "last"):
+        right = name in ("next", "last")
+        tw = s * 0.42
+        x1 = c - tw / 2 if right else c + tw / 2
+        x2 = x1 + tw if right else x1 - tw
+        if name in ("first", "last"):
+            x1 -= (s * 0.1 if right else -s * 0.1)
+            x2 -= (s * 0.1 if right else -s * 0.1)
+            bx = x2 + (s * 0.04 if right else -s * 0.04)
+            d.rectangle([min(bx, bx + (s * 0.1 if right else -s * 0.1)), s * 0.24,
+                         max(bx, bx + (s * 0.1 if right else -s * 0.1)), s * 0.76], fill=ICON_FG)
+        d.polygon([(x1, s * 0.22), (x2, c), (x1, s * 0.78)], fill=ICON_FG)
+    elif name == "coords":  # Brett mit a/1 am Rand
+        _mini_board(d, s * 0.3, m * 0.5, s * 0.66, 3)
+        try:
+            from PIL import ImageFont
+            f = ImageFont.truetype("DejaVuSans-Bold.ttf", int(s * 0.3))
+        except Exception:
+            f = None
+        d.text((s * 0.04, s * 0.2), "1", fill=ICON_FG, font=f)
+        d.text((s * 0.52, s * 0.64), "a", fill=ICON_FG, font=f)
+    elif name == "mark":  # Rechteck in aktueller Markierungsfarbe
+        d.rectangle([m, m, s - m, s - m], fill=color or "#ffd54f", outline=ICON_FG, width=w // 2)
+    elif name == "cover":  # durchgestrichenes Auge
+        d.ellipse([m, s * 0.28, s - m, s * 0.72], outline=ICON_FG, width=w)
+        d.ellipse([c - s * 0.13, c - s * 0.13, c + s * 0.13, c + s * 0.13], fill=ICON_FG)
+        d.line([(s * 0.18, s * 0.82), (s * 0.82, s * 0.18)], fill=ICON_RED, width=w)
+    elif name == "clear_arrows":
+        d.line([(m, s - m), (s * 0.7, s * 0.3)], fill="#2e7d32", width=w)
+        _arrow_head(d, (s - m, m), math.radians(-45), s * 0.36, "#2e7d32")
+        _cross(d, s, w, s * 0.7, s * 0.7, s * 0.16)
+    elif name == "clear_marks":
+        d.rectangle([m, m, s * 0.7, s * 0.7], fill=color or "#ffd54f", outline=ICON_FG, width=w // 2)
+        _cross(d, s, w, s * 0.7, s * 0.7, s * 0.16)
+    elif name == "settings":  # Zahnrad
+        r_out, r_in, teeth = s * 0.42, s * 0.32, 8
+        pts = []
+        for k in range(teeth * 4):
+            a = 2 * math.pi * k / (teeth * 4)
+            r = r_out if k % 4 in (1, 2) else r_in
+            pts.append((c + r * math.cos(a), c + r * math.sin(a)))
+        d.polygon(pts, fill="#607d8b")
+        d.ellipse([c - s * 0.12, c - s * 0.12, c + s * 0.12, c + s * 0.12], fill=(0, 0, 0, 0))
+    elif name == "analyse":  # Lupe
+        r = s * 0.25
+        cx, cy = s * 0.4, s * 0.4
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill="#e3f2fd", outline=ICON_FG, width=w)
+        d.line([(cx + r * 0.7, cy + r * 0.7), (s - m, s - m)], fill=ICON_FG, width=int(w * 1.6))
+    return ImageTk.PhotoImage(img.resize((size, size), Image.LANCZOS))
+
+
+class ToolTip:
+    """Zeigt den Klartext eines Piktogramm-Knopfes beim Überfahren mit der Maus."""
+
+    def __init__(self, widget, text):
+        self.widget, self.text, self.tip, self._job = widget, text, None, None
+        widget.bind("<Enter>", self._schedule, add="+")
+        widget.bind("<Leave>", self._hide, add="+")
+        widget.bind("<ButtonPress>", self._hide, add="+")
+
+    def _schedule(self, _e=None):
+        self._job = self.widget.after(500, self._show)
+
+    def _show(self):
+        if self.tip:
+            return
+        x = self.widget.winfo_rootx()
+        y = self.widget.winfo_rooty() + self.widget.winfo_height() + 2
+        self.tip = tk.Toplevel(self.widget)
+        self.tip.wm_overrideredirect(True)
+        self.tip.wm_geometry(f"+{x}+{y}")
+        tk.Label(self.tip, text=self.text, background="#ffffe0", relief="solid",
+                 borderwidth=1, padx=4, pady=2).pack()
+
+    def _hide(self, _e=None):
+        if self._job:
+            self.widget.after_cancel(self._job)
+            self._job = None
+        if self.tip:
+            self.tip.destroy()
+            self.tip = None
 
 
 def draw_mini_board(canvas, x0, y0, size, fen):
@@ -586,6 +771,14 @@ class BoardCanvas(tk.Canvas):
             if king_sq is not None:
                 x0, y0 = self.sq_origin(king_sq)
                 self.create_rectangle(x0, y0, x0 + sq, y0 + sq, outline=CHECK_COLOR, width=5)
+                if board.is_checkmate():
+                    # Matt-Plakette (#) am geschlagenen König, auch ohne Blick auf die Statuszeile sichtbar
+                    r = sq * 0.22
+                    cx, cy = x0 + sq - r - 2, y0 + r + 2
+                    self.create_oval(cx - r, cy - r, cx + r, cy + r, fill=CHECK_COLOR,
+                                     outline="white", width=2)
+                    self.create_text(cx, cy, text="#", fill="white",
+                                     font=("DejaVu Sans", max(8, int(r * 1.1)), "bold"))
 
         if self.app.selected is not None:
             x0, y0 = self.sq_origin(self.app.selected)
@@ -742,6 +935,7 @@ class ChessTeachApp(tk.Tk):
         self.load_done()
         self.build_ui()
         self.load_config()
+        self._update_mark_icons()
         for i in self.tab_canvases:
             self.render_tab(i)
         self.update_status()
@@ -823,50 +1017,68 @@ class ChessTeachApp(tk.Tk):
         bar = ttk.Frame(self, padding=4)
         bar.pack(side="top", fill="x")
 
-        ttk.Button(bar, text="↩", width=4, command=self.undo).pack(side="left", padx=1)
-        ttk.Button(bar, text="⟲", width=4, command=self.reset).pack(side="left", padx=1)
-        ttk.Button(bar, text="Neue Partie", command=self.new_game).pack(side="left", padx=2)
+        # Piktogramme statt Beschriftung; der Klartext steht im Tooltip.
+        self.icon_size = max(24, int(tkfont.nametofont("TkDefaultFont").metrics("linespace") * 1.6))
+        self._icons = {}
+        style = ttk.Style(self)
+        style.map("Toolbutton", background=[("selected", "#90caf9"), ("active", "#e3f2fd")],
+                  relief=[("selected", "sunken"), ("!selected", "flat")])
+
+        def icon(name):
+            self._icons[name] = make_icon(name, self.icon_size, self._current_mark_color())
+            return self._icons[name]
+
+        def tbtn(name, tip, command):
+            b = ttk.Button(bar, image=icon(name), command=command, style="Toolbutton")
+            b.pack(side="left", padx=1)
+            ToolTip(b, tip)
+            return b
+
+        def ttoggle(name, tip, command, variable=None):
+            b = ttk.Checkbutton(bar, image=icon(name), command=command, style="Toolbutton",
+                                **({"variable": variable} if variable is not None else {}))
+            b.pack(side="left", padx=1)
+            ToolTip(b, tip)
+            return b
+
+        def sep():
+            ttk.Separator(bar, orient="vertical").pack(side="left", fill="y", padx=4)
+
+        tbtn("undo", "Rückgängig (Strg+Z)", self.undo)
+        tbtn("reset", "Stellung zurücksetzen (r)", self.reset)
+        tbtn("new_game", "Neue Partie (n)", self.new_game)
         self.rep_var = tk.BooleanVar(value=False)
-        ttk.Checkbutton(bar, text="Repertoire-Training", variable=self.rep_var,
-                        command=self.toggle_repertoire).pack(side="left", padx=2)
+        ttoggle("repertoire", "Repertoire-Training", self.toggle_repertoire, self.rep_var)
         self.rep_lbl = tk.Label(bar, text="", font=("DejaVu Sans", 11, "bold"), fg="#2e7d32")
         self.rep_lbl.pack(side="left", padx=4)
-        ttk.Separator(bar, orient="vertical").pack(side="left", fill="y", padx=4)
+        sep()
 
         self.flip_var = tk.BooleanVar(value=False)
-        ttk.Checkbutton(bar, text="Brett drehen", variable=self.flip_var,
-                        command=self.toggle_flip).pack(side="left", padx=2)
+        ttoggle("flip", "Brett drehen", self.toggle_flip, self.flip_var)
         self.edit_var = tk.BooleanVar(value=False)
-        ttk.Checkbutton(bar, text="Bearbeiten", variable=self.edit_var,
-                        command=self.toggle_edit_mode).pack(side="left", padx=2)
+        ttoggle("edit", "Bearbeiten (freies Spiel)", self.toggle_edit_mode, self.edit_var)
 
-        ttk.Separator(bar, orient="vertical").pack(side="left", fill="y", padx=4)
-        ttk.Button(bar, text="⏮", width=3, command=self.game_start).pack(side="left", padx=1)
-        ttk.Button(bar, text="◀", width=3, command=self.game_prev).pack(side="left", padx=1)
+        sep()
+        tbtn("first", "Zum Anfang (Home)", self.game_start)
+        tbtn("prev", "Zug zurück (←)", self.game_prev)
         self.move_lbl = tk.Label(bar, text="Zug –", font=("DejaVu Sans", 11), width=10, anchor="center")
         self.move_lbl.pack(side="left", padx=2)
-        ttk.Button(bar, text="▶", width=3, command=self.game_next).pack(side="left", padx=1)
-        ttk.Button(bar, text="⏭", width=3, command=self.game_end).pack(side="left", padx=1)
+        tbtn("next", "Zug vor (→)", self.game_next)
+        tbtn("last", "Zum Ende (Ende)", self.game_end)
 
-        ttk.Separator(bar, orient="vertical").pack(side="left", fill="y", padx=4)
-        self.coord_btn = ttk.Checkbutton(bar, text="Koordinaten", command=self.toggle_coords)
-        self.coord_btn.pack(side="left", padx=2)
+        sep()
+        self.coord_btn = ttoggle("coords", "Koordinaten an/aus (k)", self.toggle_coords)
         self.coord_btn.state(["selected"])
-        self.mark_btn = ttk.Checkbutton(bar, text="Markieren", command=self.toggle_mark_mode)
-        self.mark_btn.pack(side="left", padx=2)
+        self.mark_btn = ttoggle("mark", "Markieren an/aus (m) — Farbe wechseln mit c", self.toggle_mark_mode)
         self.cover_var = tk.BooleanVar(value=False)
-        self.cover_btn = ttk.Checkbutton(bar, text="Brett verdecken", variable=self.cover_var,
-                                         command=self.toggle_cover)
-        self.cover_btn.pack(side="left", padx=2)
-        ttk.Button(bar, text="Pfeile weg", command=self.clear_arrows).pack(side="left", padx=2)
-        ttk.Button(bar, text="Mark. weg", command=self.clear_marks).pack(side="left", padx=2)
+        self.cover_btn = ttoggle("cover", "Brett verdecken (h)", self.toggle_cover, self.cover_var)
+        tbtn("clear_arrows", "Pfeile entfernen", self.clear_arrows)
+        self.clear_marks_btn = tbtn("clear_marks", "Markierungen entfernen", self.clear_marks)
 
-        ttk.Separator(bar, orient="vertical").pack(side="left", fill="y", padx=4)
-        ttk.Button(bar, text="⚙ Einstellungen", command=self.open_settings).pack(side="left", padx=2)
+        sep()
+        tbtn("settings", "Einstellungen", self.open_settings)
         self.analyse_var = tk.BooleanVar(value=False)
-        self.analyse_btn = ttk.Checkbutton(bar, text="Analyse", variable=self.analyse_var,
-                                           command=self.toggle_analyse)
-        self.analyse_btn.pack(side="left", padx=2)
+        self.analyse_btn = ttoggle("analyse", "Analyse an/aus (a)", self.toggle_analyse, self.analyse_var)
 
         self.nav_lbl = tk.Label(bar, text="Nav: Züge", font=("DejaVu Sans", 10), fg="#555555")
         self.nav_lbl.pack(side="left", padx=4)
@@ -1677,7 +1889,17 @@ class ChessTeachApp(tk.Tk):
     def cycle_mark_color(self):
         if self.mark_colors:
             self.mark_color_index = (self.mark_color_index + 1) % len(self.mark_colors)
+            self._update_mark_icons()
             self.board_canvas.redraw()
+
+    def _current_mark_color(self):
+        return self.mark_colors[self.mark_color_index] if self.mark_colors else None
+
+    def _update_mark_icons(self):
+        """Markieren-Piktogramme zeigen immer die aktuelle Markierungsfarbe."""
+        for name, btn in (("mark", self.mark_btn), ("clear_marks", self.clear_marks_btn)):
+            self._icons[name] = make_icon(name, self.icon_size, self._current_mark_color())
+            btn.configure(image=self._icons[name])
 
     # -- Tastatur-Shortcuts ---------------------------------------
     def _typing(self):
@@ -2346,6 +2568,7 @@ class ChessTeachApp(tk.Tk):
     def _apply_analysis(self, results, fen):
         if fen != self.board.fen():
             return
+        results = filter_alternatives(results)
         self.best_moves = [m for m, s in results]
         self.best_scores = [s for m, s in results]
         self._update_eval(self.best_scores[0] if self.best_scores else None)
