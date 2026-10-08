@@ -377,6 +377,15 @@ def symbol_to_piece(sym):
     return chess.Piece(ptype, color)
 
 
+def comment_text(text):
+    """PGN-Kommentar ohne [Befehle] und [%…]-Daten, für die Anzeige."""
+    if not text:
+        return ""
+    text = re.sub(r"\[%[^\]]*\]", "", text)
+    text = re.sub(r"\[[A-Za-z]+\s*[^\]]*\]", "", text)
+    return " ".join(text.split())
+
+
 def parse_annotation_comment(text):
     """Extrahiert [Befehl ...]-Markup aus einem PGN-Kommentar -> Liste von Schritten.
 
@@ -1149,6 +1158,12 @@ class ChessTeachApp(tk.Tk):
                                     exportselection=False)
         self.move_list.pack(fill="x", padx=2, pady=2)
         self.move_list.bind("<<ListboxSelect>>", self.on_move_list_select)
+        # Kommentartext zum aktuellen Zug (PGN-Kommentar ohne [Befehle])
+        self.comment_lbl = tk.Label(side, text="", font=("DejaVu Sans", 12), fg="#1a237e",
+                                    justify="left", anchor="w", wraplength=300)
+        self.comment_lbl.pack(fill="x", padx=4, pady=(0, 2))
+        self.comment_lbl.bind("<Configure>",
+                              lambda e: self.comment_lbl.config(wraplength=max(100, e.width - 8)))
 
         # Neu
         add = ttk.LabelFrame(side, text="Neu", padding=4)
@@ -1450,6 +1465,8 @@ class ChessTeachApp(tk.Tk):
         if g is None:
             messagebox.showerror("PGN-Fehler", "PGN konnte nicht gelesen werden.")
             return
+        # [Aufgabe "1"]: Lösungszüge erst zeigen, wenn sie gespielt/aufgedeckt sind
+        self.is_puzzle = g.headers.get("Aufgabe") == "1"
         self.game_base = g.board()
         self.game_steps = self._build_steps(g)
         self.pgn_moves = mainline_moves(g)
@@ -1472,6 +1489,8 @@ class ChessTeachApp(tk.Tk):
     def _build_steps(self, game):
         steps = []
         node = game
+        # move_comments[k]: Text nach k Zügen (0 = Kommentar vor dem ersten Zug)
+        self.move_comments = [comment_text(game.comment)]
         for st in parse_annotation_comment(node.comment):
             steps.append(st)
         while node.variations:
@@ -1480,6 +1499,7 @@ class ChessTeachApp(tk.Tk):
             for st in parse_annotation_comment(node.comment):
                 steps.append(st)
             steps.append(("move", node.move))
+            self.move_comments.append(comment_text(node.comment))
         return steps
 
     def _rebuild_to_step(self, i):
@@ -1550,6 +1570,7 @@ class ChessTeachApp(tk.Tk):
     def _populate_move_list(self):
         self.move_list.delete(0, "end")
         self.move_step_index = []
+        self.move_texts = []
         b = self.game_base.copy()
         moves = 0
         step = 0
@@ -1558,6 +1579,7 @@ class ChessTeachApp(tk.Tk):
                 m = st[1]
                 prefix = f"{moves // 2 + 1}." if moves % 2 == 0 else f"{moves // 2 + 1}..."
                 self.move_list.insert("end", f"{prefix} {san_de(b, m)}")
+                self.move_texts.append((prefix, san_de(b, m)))
                 b.push(m)
                 moves += 1
                 self.move_step_index.append(step + 1)
@@ -1568,8 +1590,20 @@ class ChessTeachApp(tk.Tk):
         self.move_step_index = []
         self.move_list.selection_clear(0, "end")
         self.move_lbl.config(text="Start")
+        self.move_comments = []
+        self.comment_lbl.config(text="")
+        self.is_puzzle = False
+
+    def _fill_move_list(self, texts, shown):
+        """Zugliste neu füllen; bei Aufgaben nur die ersten `shown` Züge lesbar."""
+        self.move_list.delete(0, "end")
+        for k, (prefix, san) in enumerate(texts):
+            hide = getattr(self, "is_puzzle", False) and k >= shown
+            self.move_list.insert("end", f"{prefix} {'…' if hide else san}")
 
     def _sync_move_list_selection(self):
+        if getattr(self, "is_puzzle", False):
+            self._fill_move_list(getattr(self, "move_texts", []), self.game_index)
         self.move_list.selection_clear(0, "end")
         total = len(self.move_step_index)
         if self.game_index > 0:
@@ -1578,6 +1612,8 @@ class ChessTeachApp(tk.Tk):
             self.move_lbl.config(text=f"Zug {self.game_index}/{total}")
         else:
             self.move_lbl.config(text="Start")
+        comments = getattr(self, "move_comments", [])
+        self.comment_lbl.config(text=comments[self.game_index] if self.game_index < len(comments) else "")
 
     def on_move_list_select(self, event):
         sel = self.move_list.curselection()
@@ -1836,11 +1872,16 @@ class ChessTeachApp(tk.Tk):
         self.move_list.delete(0, "end")
         self.move_step_index = []
         b = self.repertoire_start_board.copy()
+        texts = []
         for i, m in enumerate(self.repertoire_moves):
             prefix = f"{i // 2 + 1}." if i % 2 == 0 else f"{i // 2 + 1}..."
-            self.move_list.insert("end", f"{prefix} {san_de(b, m)}")
+            texts.append((prefix, san_de(b, m)))
             b.push(m)
             self.move_step_index.append(i + 1)
+        self._fill_move_list(texts, self.repertoire_index)
+        comments = getattr(self, "move_comments", [])
+        self.comment_lbl.config(text=comments[self.repertoire_index]
+                                if self.repertoire_index < len(comments) else "")
         self.move_list.selection_clear(0, "end")
         total = len(self.repertoire_moves)
         if self.repertoire_index > 0:
