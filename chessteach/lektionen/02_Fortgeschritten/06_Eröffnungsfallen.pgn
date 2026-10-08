@@ -1,31 +1,5 @@
 [Event "Königsbauernspiel"]
 [Site "?"]
-[Date "1900.??.??"]
-[Round "?"]
-[White "Manko"]
-[Black "Jankowitz"]
-[Result "0-1"]
-[ECO "C20"]
-[PlyCount "18"]
-[EventDate "1900.??.??"]
-
-1. e4 e5 2. Ne2 Bc5 3. f4 Qf6 4. c3 Nc6 5. g3 Nh6 6. Bg2 Ng4 7. Rf1 ( 7. d4 ) 7... Nxh2 8. fxe5 ( 8. Rh1 ) 8... Qxf1+ 9. Bxf1 Nf3# 0-1
-
-[Event "Königsbauernspiel"]
-[Site "?"]
-[Date "1997.??.??"]
-[Round "?"]
-[White "Wall, Bill"]
-[Black "Nimoy"]
-[Result "1-0"]
-[ECO "C20"]
-[PlyCount "11"]
-[EventDate "1997.??.??"]
-
-1. e4 e5 2. Ne2 d5 3. exd5 Qxd5 4. Nbc3 Qc6 5. Ng3 g6 $4 6. Bb5 1-0
-
-[Event "Königsbauernspiel"]
-[Site "?"]
 [Date "1935.??.??"]
 [Round "?"]
 [White "NN"]
@@ -9097,3 +9071,4 @@
 [EventDate "2003.??.??"]
 
 1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e6 5. Nc3 a6 6. Be2 Qc7 7. O-O Nf6 8. f4 Nxd4 9. Qxd4 Bc5 0-1
+
