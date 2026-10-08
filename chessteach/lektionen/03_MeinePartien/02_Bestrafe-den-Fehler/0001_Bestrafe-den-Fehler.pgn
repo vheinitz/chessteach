@@ -1,0 +1,2093 @@
+[Event "Schwarz am Zug · Zug 13 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1q1k1/ppp2p1p/2np1p2/2b4Q/3p3N/3B4/PPP2PPP/R1B3K1 b - - 1 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13... Qe1+ { Richtig: 13…De1+ 14.Lf1 d3 (Bewertung +4,8). In der Partie geschah 13…f5? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 44 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "8/PR3pk1/8/r3p1P1/6K1/8/8/8 w - - 0 44"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 44. Kf5 { Richtig: 44.Kf5 e4+ 45.Kxe4 (Bewertung +4,7). In der Partie geschah 44.Kf3? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 8 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk2r/ppppbpp1/2n2n1p/4N3/2B5/2P5/PP1P1PPP/RNBQR1K1 w kq - 1 8"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Nxf7 { Richtig: 8.Sxf7 d5 9.Sxd8 (Bewertung +6,2). In der Partie geschah 8.Df3? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3k2r/pp1b1ppp/3bpn2/1Np5/8/2QB1q2/PPPP1P1P/R1B2RK1 b kq - 3 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Qg4+ { Richtig: 16…Dg4+ 17.Kh1 Lc6+ (Bewertung +7,3). In der Partie geschah 16…Lxh2+? und die Chance war weg. Auch gut: Lb8. } 0-1
+
+[Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rq3rk1/2p2pb1/b2p2p1/p2Pp1N1/2P3P1/4Q3/PP1N1P2/2KR3R w - - 1 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Rh8+ { Richtig: 19.Th8+ Lxh8 20.Dh3 (Bewertung +6,8). In der Partie geschah 19.Th7? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 33 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "6rk/p5qp/2R5/1p3Qp1/4pP2/4P2P/P2n2P1/6K1 b - - 0 33"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 33... Qa1+ { Richtig: 33…Da1+ 34.Kh2 Sf1+ (Bewertung +18,8). In der Partie geschah 33…gxf4? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 11 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnb1k1nr/3p1pp1/1q5p/pB2p3/4P3/3PPN2/PPP3PP/R2Q1RK1 w kq - 1 11"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Nxe5 { Richtig: 11.Sxe5 Se7 12.Df3 (Bewertung +2,5). In der Partie geschah 11.a4? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 13 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rnb1k1nr/3p2p1/5p1p/pB2p3/P3P3/3PqN2/1PP3PP/R2Q1R1K w kq - 0 13"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13. Nxe5 { Richtig: 13.Sxe5 h5 14.Sc4 (Bewertung +2,6). In der Partie geschah 13.d4? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5r2/p1pk2pp/3bp3/8/3N2nP/3b1P2/PP1P2P1/R1B1K2R b KQ - 0 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Bg3+ { Richtig: 16…Lg3+ 17.Kd1 Sf2+ (Bewertung +6,1). In der Partie geschah 16…Sh2? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 17 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5r2/p1pk2pp/3bp3/8/3N3P/3b1P2/PP1P1KPn/R1B4R b - - 2 17"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17... Ng4+ { Richtig: 17…Sg4+ 18.Kg1 Lg3 (Bewertung +2,6). In der Partie geschah 17…e5? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 31 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/p1pk2pp/8/8/3pb2P/6bR/P2P1r2/R1B1K3 b - - 11 31"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 31... Bd3 { Richtig: 31…Ld3 32.Txg3 Tf1# (Bewertung +1000,0). In der Partie geschah 31…Th2+? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 21 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2r1r1k1/ppq2p1p/5p2/5b2/3PN2R/1P1Q2P1/P3P2P/R5K1 w - - 1 21"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. Nxf6+ { Richtig: 21.Sxf6+ Kf8 22.Dxf5 (Bewertung +7,0). In der Partie geschah 21.De3? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 38 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/pp2Q2p/2p3pk/8/2Pq4/3n4/P5PP/4RK2 b - - 8 38"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 38... Qf2# { Richtig: 38…Df2# (Bewertung +1000,0). In der Partie geschah 38…Sxe1? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 55 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "8/1P6/4K3/5n2/3k2np/P7/8/8 w - - 0 55"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 55. Kxf5 { Richtig: 55.Kxf5 h3 56.b8=D (Bewertung +6,3). In der Partie geschah 55.b8=D? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 12 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.10.01"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bq1rk1/pp4bp/2n1pnp1/3p2N1/3P1B2/2NB4/PPP2PP1/R2QK2R b KQ - 3 12"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12... Ne4 { Richtig: 12…Se4 13.Scxe4 dxe4 (Bewertung +2,3). In der Partie geschah 12…Sxd4? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2kr3r/ppp3pp/2n2p2/4p3/1b2P1P1/1P2B2P/b1PNBP2/2KR3R b - - 0 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Ba3# { Richtig: 18…La3# (Bewertung +1000,0). In der Partie geschah 18…Lxd2+? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3k3/p4p1B/2ppbn2/8/8/P7/1PP2PPP/R3K2R w KQq - 1 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Bd3 { Richtig: 16.Ld3 Kd7 17.f3 (Bewertung +5,1). In der Partie geschah 16.O-O-O? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 17 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.29"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/pp1q2pp/2n2b2/2p1p3/2Np4/3PBQ1P/PPP2P1P/R4RK1 b - - 4 17"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17... b5 { Richtig: 17…b5 18.Sd2 dxe3 (Bewertung +4,8). In der Partie geschah 17…Lg5? und die Chance war weg. Auch gut: dxe3, Le7, e4. } 0-1
+
+[Event "Weiß am Zug · Zug 40 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "6Q1/p1p5/2k5/1p1p4/1K1n4/1P6/r7/6R1 w - - 0 40"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 40. Rg6+ { Richtig: 40.Tg6+ Kd7 41.Dxd5+ (Bewertung +999,9). In der Partie geschah 40.Dg6+? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 10 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.27"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "B2qkb1r/p1pb1ppp/8/4P3/4n3/2p5/PPPP1PPP/R1BQK2R w KQk - 1 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10. Bxe4 { Richtig: 10.Lxe4 De7 11.dxc3 (Bewertung +6,5). In der Partie geschah 10.d3? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 15 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.24"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qr3/p1p1k1p1/1p5p/n1pPp3/6b1/2P2N2/PP1PQPPP/R1B2RK1 w - - 5 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Qxe5+ { Richtig: 15.Dxe5+ Kf8 16.Df4+ (Bewertung +5,7). In der Partie geschah 15.De4? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 32 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.24"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "6rk/1p4R1/1p2r3/p2pP1B1/3Pb3/2P5/PP1K4/6R1 w - - 3 32"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 32. Bf6 { Richtig: 32.Lf6 Txg7 33.Txg7 (Bewertung +5,7). In der Partie geschah 32.Txb7? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.22"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2bk2r/p3npp1/3p2qp/1pp5/3BP3/2P1NP1P/PP2Q1P1/R4RK1 w kq - 0 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Qxb5+ { Richtig: 19.Dxb5+ Kf8 20.Db7 (Bewertung +3,6). In der Partie geschah 19.Sd5? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 8 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.21"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn1qkb1r/pp2p2p/3pB1p1/2p5/4n3/2P5/PP1P1PPP/RNBQK2R w KQkq - 0 8"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Qa4+ { Richtig: 8.Da4+ Sc6 9.Dxe4 (Bewertung +5,6). In der Partie geschah 8.Df3? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 20 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b4r/p1qp1kb1/1p3p2/2p1pN1p/P1P1P1n1/1NPQ2B1/1P3PP1/R4RK1 w - - 2 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Qd5+ { Richtig: 20.Dd5+ Kg6 21.Se7+ (Bewertung +5,1). In der Partie geschah 20.Sxg7? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 12 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3kbnr/ppp2pp1/1n2pq1p/4Nb2/5P2/2NP2P1/PP2P1BP/R1BQ1RK1 w kq - 3 12"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. Bxb7 { Richtig: 12.Lxb7 Tb8 13.Lc6+ (Bewertung +5,3). In der Partie geschah 12.e4? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 23 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.20"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2k4r/pp3pQ1/2p1p2p/8/P7/1B3P1P/1q1r2P1/R3R1K1 b - - 0 23"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23... Qxg7 { Richtig: 23…Dxg7 24.Lxe6+ fxe6 (Bewertung +999,9). In der Partie geschah 23…Th7? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5rk1/1r2n1pp/p2q1p2/2p5/Q1P1p3/B3P3/P1N2PPP/4K1NR b K - 1 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Rb1+ { Richtig: 18…Tb1+ 19.Lc1 Txc1+ (Bewertung +1000,0). In der Partie geschah 18…Td8? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 24 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bk3B/ppqnb2p/6p1/2Pp4/2P5/1P4P1/P4Q1P/RN2R1K1 w - - 1 24"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24. Rxe7 { Richtig: 24.Txe7 b6 25.Txh7 (Bewertung +7,7). In der Partie geschah 24.cxd5? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 26 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bk3B/ppq4p/6p1/2bPn3/8/1P2R1P1/P4Q1P/RN4K1 w - - 2 26"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26. Bf6+ { Richtig: 26.Lf6+ Kd7 27.Lxe5 (Bewertung +6,2). In der Partie geschah 26.Df8+? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 23 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/p2nQ2p/bpp2pp1/3p4/N1PP3q/1P3P2/P5P1/4RRK1 b - - 0 23"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23... Qxd4+ { Richtig: 23…Dxd4+ 24.De3 Dxe3+ (Bewertung +6,0). In der Partie geschah 23…dxc4? und die Chance war weg. Auch gut: Tf7. } 1-0
+
+[Event "Schwarz am Zug · Zug 24 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.19"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/p2nQ2p/bpp2pp1/8/N1PP3q/5P2/P5P1/4RRK1 b - - 0 24"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Qxd4+ { Richtig: 24…Dxd4+ 25.Tf2 Se5 (Bewertung +6,5). In der Partie geschah 24…Lxc4? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 31 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.17"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/p4rkp/4q1p1/1p6/1P6/P3Q3/2P1KP2/R7 b - - 3 31"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 31... Qf6 { Richtig: 31…Df6 32.Th1 Te7 (Bewertung +4,8). In der Partie geschah 31…Dc4+? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 32 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.17"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/p4rkp/6p1/1p6/1Pq5/P2Q4/2P1KP2/R7 b - - 5 32"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 32... Qe6+ { Richtig: 32…De6+ 33.De3 Df6 (Bewertung +4,5). In der Partie geschah 32…Dxd3+? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk2r/pp1p4/2p2p2/2b1p1p1/1nB1P2p/2N2N1P/PPPQ2PB/2K2R2 w kq - 0 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Nxe5 { Richtig: 16.Sxe5 d5 17.exd5 (Bewertung +2,3). In der Partie geschah 16.Kb1? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 5 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bq2nr/pppp1kpp/2n5/2b5/4P3/8/PPPP1PPP/RNBQKB1R w KQ - 0 5"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 5. Qh5+ { Richtig: 5.Dh5+ g6 6.Dxc5 (Bewertung +3,5). In der Partie geschah 5.Df3+? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2nk2r/1ppb1qp1/1b2p2p/pP1pP1B1/P1PP2nN/N2B4/6PP/R2Q1RK1 w kq - 0 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Qxg4 { Richtig: 18.Dxg4 dxc4 19.Sxc4 (Bewertung +7,1). In der Partie geschah 18.Txf7? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2nk2r/1ppb1Rp1/1b2p3/pP1pP1p1/P1PP2nN/N2B4/6PP/R2Q2K1 w kq - 0 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Re7+ { Richtig: 19.Te7+ Kxe7 20.Sg6+ (Bewertung +7,9). In der Partie geschah 19.Sg6? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 20 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.16"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3k2r/1ppb1np1/1b2p1N1/pP1pP1p1/P1PP2n1/N2B4/6PP/R2Q2K1 w kq - 0 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Qxg4 { Richtig: 20.Dxg4 dxc4 21.Sxc4 (Bewertung +6,7). In der Partie geschah 20.Sxh8? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 7 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1k1nr/ppp1q1pp/2np1p2/2b1p3/2BPP3/2P2N2/PP3PPP/RNBQ1RK1 w kq - 1 7"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 7. dxc5 { Richtig: 7.dxc5 dxc5 8.Db3 (Bewertung +5,1). In der Partie geschah 7.d5? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 12 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3k1nr/pp1bq1pp/3p1p2/nBb1p3/QP1pP3/2P2N2/P4PPP/RNB2RK1 w kq - 0 12"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. bxc5 { Richtig: 12.bxc5 b6 13.cxd6 (Bewertung +6,2). In der Partie geschah 12.Lxd7+? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 18 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.15"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqr1k1/p1p2n1p/2p3p1/2P2p2/1b2PB2/3B4/P2N2PP/2RQ1RK1 b - - 0 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Qxd3 { Richtig: 18…Dxd3 19.Tf3 Dd8 (Bewertung +5,3). In der Partie geschah 18…Lxd2? und die Chance war weg. Auch gut: Dd4+. } 0-1
+
+[Event "Weiß am Zug · Zug 29 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "6k1/1pp2p2/p5p1/4P3/P7/2Pr1PB1/4bK1P/R7 w - - 3 29"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 29. Kxe2 { Richtig: 29.Kxe2 Txc3 30.a5 (Bewertung +4,1). In der Partie geschah 29.f4? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 9 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.14"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qk2r/ppp2pp1/2nb1n1p/3p1b2/3P1B2/3BPN2/PP3PPP/RN1Q1RK1 w kq - 0 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Bxf5 { Richtig: 9.Lxf5 Lxf4 10.exf4 (Bewertung +5,6). In der Partie geschah 9.Se5? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 8 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqk1nr/2pp2pp/p1p2p2/2b5/3NP3/8/PPP2PPP/RNBQ1RK1 w kq - 1 8"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Qh5+ { Richtig: 8.Dh5+ Kf8 9.Dxc5+ (Bewertung +5,8). In der Partie geschah 8.Le3? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 26 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5rk1/2p3pp/p1p3b1/2N5/3r1P2/3p1R2/PP1R2PP/6K1 w - - 4 26"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26. Ne6 { Richtig: 26.Se6 Tc4 27.Sxf8 (Bewertung +3,8). In der Partie geschah 26.Sxd3? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 28 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.13"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "6kb/4rp2/p1nq3p/1p1p3N/3P3p/P1PQ1NP1/1P6/R5K1 w - - 0 28"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28. Nxh4 { Richtig: 28.Sxh4 Te4 29.Df3 (Bewertung +2,1). In der Partie geschah 28.a4? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 29 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3k3/p4pp1/3p1r2/2p1p1q1/1pP1P1Pp/1P1PB2n/1P4P1/R1Q2RK1 w q - 0 29"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 29. gxh3 { Richtig: 29.gxh3 Txf1+ 30.Kxf1 (Bewertung +3,7). In der Partie geschah 29.Kh2? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 21 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qr1k1/5p2/p2p2p1/2pPb2p/Pp1nPQ2/3PB3/1P4PP/R2B1RK1 w - - 2 21"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. Qxf7+ { Richtig: 21.Dxf7+ Kh8 22.Dxg6 (Bewertung +3,5). In der Partie geschah 21.Dh6? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 35 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.11"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "6k1/8/p5p1/3P3p/r6r/2P2R2/6P1/1R4K1 w - - 0 35"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 35. d6 { Richtig: 35.d6 Thd4 36.cxd4 (Bewertung +5,1). In der Partie geschah 35.Tb8+? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 4 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1qkbnr/pbpp1ppp/1p2p3/4P3/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq - 2 4"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 4... Bxg2 { Richtig: 4…Lxg2 5.Dg4 Lxh1 (Bewertung +4,4). In der Partie geschah 4…d6? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 11 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1bnr/p3kppp/1pQpp3/4P3/3P1P2/1P6/P1P4P/RNB1K3 b Q - 0 11"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11... Qc8 { Richtig: 11…Dc8 12.exd6+ Kd8 (Bewertung +4,4). In der Partie geschah 11…dxe5? und die Chance war weg. Auch gut: Tc8, f5. } 0-1
+
+[Event "Schwarz am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b3k1/pp1n3p/2pp1qp1/6N1/4P1n1/2QB4/PPP2rP1/RN2K2R b KQ - 5 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Qxg5 { Richtig: 16…Dxg5 17.Lc4+ d5 (Bewertung +7,0). In der Partie geschah 16…h5? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 12 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn3rk1/p2pqpb1/1p1Pp1pp/2p1P3/2B5/2P2b2/PP3PPP/RN1Q1RK1 w - - 0 12"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. dxe7 { Richtig: 12.dxe7 Lxd1 13.exf8=T+ (Bewertung +4,1). In der Partie geschah 12.Dxf3? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2r3k1/p2Q1pb1/1pnPp1pp/2p1q3/2B5/2P5/PP3PPP/RN3RK1 w - - 1 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Qxc8+ { Richtig: 16.Dxc8+ Lf8 17.Td1 (Bewertung +10,6). In der Partie geschah 16.f4? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 20 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.09"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2rqr1k1/p4pbp/3p2p1/6N1/3P4/1Qn5/PB3PPP/R4RK1 b - - 0 20"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20... Ne2+ { Richtig: 20…Se2+ 21.Kh1 Dxg5 (Bewertung +5,6). In der Partie geschah 20…Lxd4? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 8 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "r1bqkbnr/p2n3p/2pp1p2/1p2p1p1/3PP3/1BP2N2/PP3PPP/RNBQ1RK1 w kq - 1 8"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Nxg5 { Richtig: 8.Sxg5 Sb6 9.Sf7 (Bewertung +6,4). In der Partie geschah 8.d5? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 42 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2Q5/8/pkBp1p1r/2pPp3/8/2P3Pq/8/R4K2 w - - 7 42"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 42. Qxh3 { Richtig: 42.Dxh3 Txh3 43.Tb1+ (Bewertung +3,1). In der Partie geschah 42.Kf2? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 44 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2Q5/8/pkBp1p1r/2pPp2q/8/2P2KP1/8/R7 w - - 11 44"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 44. Ke3 { Richtig: 44.Ke3 Dg5+ 45.Kd3 (Bewertung +999,9). In der Partie geschah 44.Kf2? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 46 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2Q5/8/pkBp1p1r/2pPp2q/8/2P2KP1/8/R7 w - - 15 46"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 46. Ke3 { Richtig: 46.Ke3 Dg5+ 47.Kd3 (Bewertung +999,9). In der Partie geschah 46.Kf2? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 15 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/1pp2pp1/p1npb1Np/4p3/8/1BPPP3/PP1Q2PP/R4RK1 w - - 1 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Bxe6 { Richtig: 15.Lxe6 fxe6 16.Txf8+ (Bewertung +4,7). In der Partie geschah 15.Sxf8? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rn1/pp1qnppk/3p3p/4pN2/4P3/2P2N1Q/PP3PPP/2R1R1K1 w - - 1 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Ng5+ { Richtig: 19.Sg5+ Kh8 20.Sxh6 (Bewertung +5,5). In der Partie geschah 19.Tcd1? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 24 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3r3k/2p4p/1p4p1/p2N4/3R4/P1n2P2/2P3PP/6K1 b - - 0 24"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Ne2+ { Richtig: 24…Se2+ 25.Kf2 Sxd4 (Bewertung +6,3). In der Partie geschah 24…Txd5? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 30 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2r2r2/7k/p3p1p1/3qPp1P/2pP1R2/2P1P3/P1Q5/2KR4 w - - 0 30"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 30. hxg6+ { Richtig: 30.hxg6+ Kxg6 31.e4 (Bewertung +6,0). In der Partie geschah 30.Dh2? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 25 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r5k1/1p1n1p1p/2p3pB/p7/4P3/1P4Q1/3qp1PP/5RK1 w - - 0 25"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25. Bxd2 { Richtig: 25.Lxd2 exf1=D+ 26.Kxf1 (Bewertung +4,8). In der Partie geschah 25.De1? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 20 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/pppq1pp1/3p3p/4n2Q/4Pp2/3P1P1R/PPP2K2/6R1 w - - 2 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Rxg7+ { Richtig: 20.Txg7+ Kxg7 21.Dxh6+ (Bewertung +1000,0). In der Partie geschah 20.Dxh6? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 28 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/pp4b1/2pp2p1/4p2p/4P1n1/2PB2N1/PP3NK1/5R1R b - - 1 28"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28... Ne3+ { Richtig: 28…Se3+ 29.Kg1 Tf3 (Bewertung +3,2). In der Partie geschah 28…Sxf2? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 10 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rnbq1rk1/p1pp1ppp/1p6/5N2/2B1n3/2P5/P1P2PPP/R1BQ1RK1 w - - 0 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10. Qg4 { Richtig: 10.Dg4 Df6 11.Dxe4 (Bewertung +4,6). In der Partie geschah 10.Dd5? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2b2rk1/2Q2ppp/1pp5/5N2/8/8/P1q1nPPP/R4R1K w - - 0 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Ne7+ { Richtig: 18.Se7+ Kh8 19.Sxc8 (Bewertung +5,6). In der Partie geschah 18.Dxb6? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 9 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn1q1rk1/p3ppbp/1p1p1np1/2p5/3P1PbN/6P1/PPP1P1BP/RNBQR1K1 w - - 0 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Bxa8 { Richtig: 9.Lxa8 d5 10.Sc3 (Bewertung +3,2). In der Partie geschah 9.Lf3? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/p6p/1p1ppqp1/2p5/2P1PPn1/2N3P1/PP5P/R2QR1K1 w - - 1 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Qxg4 { Richtig: 19.Dxg4 Dd4+ 20.Kh1 (Bewertung +4,9). In der Partie geschah 19.Dd3? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 11 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qkb1r/pp1bnp1p/4p1p1/1B1pn1B1/Q2N4/2N5/PPP2PPP/R3K2R w KQkq - 0 11"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Bf6 { Richtig: 11.Lf6 a6 12.Lxd7+ (Bewertung +3,5). In der Partie geschah 11.O-O? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 21 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "1r5r/p1pqk1pp/2nb1pn1/8/2QPP3/P6P/1PP3P1/RNB2RK1 b - - 0 21"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21... Nxd4 { Richtig: 21…Sxd4 22.Sc3 Se6 (Bewertung +3,6). In der Partie geschah 21…Sf4? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 24 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/p4ppp/1p2p3/6P1/1qQp3P/nPN5/PKP5/5R1R b - - 1 24"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Nxc4+ { Richtig: 24…Sxc4+ 25.Kc1 Da3+ (Bewertung +9,8). In der Partie geschah 24…dxc3+? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 26 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3kb2/pQ6/3p4/2p5/7P/5qP1/PPP2P2/2KR4 b q - 0 26"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26... Qxb7 { Richtig: 26…Dxb7 27.a3 Kd7 (Bewertung +7,6). In der Partie geschah 26…Td8? und die Chance war weg. Auch gut: Lh6+. } 1-0
+
+[Event "Schwarz am Zug · Zug 24 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2r1r3/R3bk1p/p1b2p2/1p6/2p2B2/7P/PPP2PP1/4R1K1 b - - 6 24"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Rcd8 { Richtig: 24…Tcd8 25.Txa6 Lf8 (Bewertung +3,5). In der Partie geschah 24…Kg6? und die Chance war weg. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 25 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2r1r3/4b2p/R1b2pk1/1p6/2p2B2/7P/PPP2PP1/4R1K1 b - - 0 25"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25... Bc5 { Richtig: 25…Lc5 26.Txe8 Lxe8 (Bewertung +3,5). In der Partie geschah 25…Tg8? und die Chance war weg. Auch gut: Ld7, c3, Lf8. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1q4/ppp2kpp/4rnb1/3N2B1/2Q1P1P1/5P2/PbP4P/R3KB1R w KQ - 0 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Nxc7 { Richtig: 14.Sxc7 De7 15.Sxe6 (Bewertung +2,2). In der Partie geschah 14.Tb1? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 15 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1q4/ppp2kpp/4rnb1/3N2B1/2Q1P1P1/2b2P2/P1P4P/1R2KB1R w K - 2 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Nxc3 { Richtig: 15.Sxc3 Sc6 16.Td1 (Bewertung +2,9). In der Partie geschah 15.Dxc3? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1q4/ppp2kpp/2r2nb1/3N2B1/4P1P1/2Q2P2/P1P4P/1R2KB1R w K - 1 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Qb3 { Richtig: 16.Db3 h6 17.Td1 (Bewertung +6,0). In der Partie geschah 16.Lxf6? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 23 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r7/ppp3kp/2r2pb1/2qN4/4PPn1/1Q1B3P/P1P4K/1R3R2 w - - 0 23"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23. hxg4 { Richtig: 23.hxg4 Te8 24.Db4 (Bewertung +4,5). In der Partie geschah 23.Kg3? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 21 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3kb2/2qb3r/ppp3n1/3P2Bp/2P1P1n1/2NB4/PP1Q2PP/2KR3R w q - 5 21"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. e5 { Richtig: 21.e5 Tg7 22.d6 (Bewertung +4,0). In der Partie geschah 21.h3? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 45 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.02"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/8/p7/7R/k3r2b/P7/1P4P1/1K6 w - - 6 45"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 45. Ka2 { Richtig: 45.Ka2 Te2 46.Txh4+ (Bewertung +3,0). In der Partie geschah 45.Th6? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 7 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.01"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qkbnr/pppbpppp/2n5/3p4/1QPP1B2/4PN2/PP3PPP/RN2KB1R b KQkq - 2 7"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 7... Nxb4 { Richtig: 7…Sxb4 8.Kd2 Sf6 (Bewertung +7,1). In der Partie geschah 7…b6? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 8 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.01"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2qkbnr/p1pbpppp/1pn5/3P4/1Q1P1B2/4PN2/PP3PPP/RN2KB1R b KQkq - 0 8"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8... Nxb4 { Richtig: 8…Sxb4 9.Sc3 Sc2+ (Bewertung +6,8). In der Partie geschah 8…e6? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 9 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.01"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b2rk1/ppp2ppp/2np4/2bNp3/2B1P1nq/1P1P1N2/P1P2PPP/R1BQ1RK1 w - - 2 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Nxh4 { Richtig: 9.Sxh4 Sf6 10.Sxc7 (Bewertung +7,4). In der Partie geschah 9.Lg5? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 28 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.09.01"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2k1r3/1p6/p6p/3p2p1/6n1/1PN2P2/P1PR2PP/6K1 b - - 0 28"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28... Re1# { Richtig: 28…Te1# (Bewertung +1000,0). In der Partie geschah 28…Sf6? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 11 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1k1nr/pppp1pp1/7p/q7/1nBPP3/5N2/PPPNQ1PP/R3K2R w KQkq - 1 11"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Bxf7+ { Richtig: 11.Lxf7+ Kxf7 12.Se5+ (Bewertung +5,3). In der Partie geschah 11.Sb3? und die Chance war weg. Auch gut: O-O. } 1-0
+
+[Event "Weiß am Zug · Zug 9 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3kb1r/pppqn1pp/2n1pp2/8/3p1Pb1/5NP1/PPPPPNBP/R1BQ1RK1 w kq - 2 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Nxg4 { Richtig: 9.Sxg4 h5 10.Sf2 (Bewertung +4,7). In der Partie geschah 9.e3? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 11 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3kb1r/pppqn1pp/5p2/4n3/3p2b1/4PNP1/PPPP1NBP/R1BQ1RK1 w kq - 0 11"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Nxe5 { Richtig: 11.Sxe5 Lxd1 12.Sxd7 (Bewertung +5,7). In der Partie geschah 11.Sxg4? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr3r/pppq2p1/1n1b1p2/7p/2PN1Rn1/1P2P1PB/PB1P3P/R2Q2K1 w - - 5 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Rxg4 { Richtig: 18.Txg4 g5 19.Th4 (Bewertung +5,1). In der Partie geschah 18.Lxg4? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3kbnr/1b1p1ppp/p3p3/8/3n1P2/2P2NP1/P1Q3BP/qNB2RK1 w kq - 0 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Nxd4 { Richtig: 14.Sxd4 Lc5 15.Lxb7 (Bewertung +2,1). In der Partie geschah 14.cxd4? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 25 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.31"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2r5/5pk1/p3p3/2bp1p2/5P2/3Bq1P1/P1QN3P/5R1K w - - 0 25"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25. Nf3 { Richtig: 25.Sf3 Tc7 26.Db2+ (Bewertung +3,7). In der Partie geschah 25.Lxf5? und die Chance war weg. Auch gut: Lxa6, Dc3+. } 0-1
+
+[Event "Weiß am Zug · Zug 13 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bq1rk1/p4ppp/3b1n2/1ppNp3/2Pn4/1P1P2P1/P2BNPBP/R2Q1RK1 w - - 0 13"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13. Nxf6+ { Richtig: 13.Sxf6+ Dxf6 14.Sxd4 (Bewertung +5,2). In der Partie geschah 13.f4? und die Chance war weg. Auch gut: Sxd4. } 0-1
+
+[Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bq1rk1/p4ppp/3b1n2/2pNp3/2pn1P2/1P1P2P1/P2BN1BP/R2Q1RK1 w - - 0 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Nxf6+ { Richtig: 14.Sxf6+ Dxf6 15.Sxd4 (Bewertung +3,0). In der Partie geschah 14.bxc4? und die Chance war weg. Auch gut: Sxd4. } 0-1
+
+[Event "Weiß am Zug · Zug 28 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "4r1k1/p2P2pp/5p2/8/1qp2B2/3P2P1/P3b1BP/Q3K3 w - - 4 28"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28. Bd2 { Richtig: 28.Ld2 De7 29.dxe8=T+ (Bewertung +3,6). In der Partie geschah 28.Kf2? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 29 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "4r1k1/p2P2pp/5p2/2q5/2p2B2/3P2P1/P3bKBP/Q7 w - - 6 29"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 29. d4 { Richtig: 29.d4 De7 30.dxe8=T+ (Bewertung +5,5). In der Partie geschah 29.Ke1? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 31 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "4r1k1/p2P2pp/5p2/2q5/2p2B2/3P2P1/P3bKBP/Q7 w - - 10 31"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 31. d4 { Richtig: 31.d4 De7 32.dxe8=D+ (Bewertung +5,4). In der Partie geschah 31.Ke1? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 33 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "7r/pp6/2pk2q1/3P4/7P/P1B2pP1/1PP2P1K/R3R3 b - - 0 33"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 33... Rxh4+ { Richtig: 33…Txh4+ 34.Kg1 Dg4 (Bewertung +6,3). In der Partie geschah 33…Dxc2? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2kr3/pp2n1bp/1npBBp2/3p4/3P4/2N1Q2P/P1q2PP1/R4RK1 w - - 3 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Bc7+ { Richtig: 18.Lc7+ Kxc7 19.Dg3+ (Bewertung +1000,0). In der Partie geschah 18.Lf7? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3r3/pp1knBbp/1npB1p2/3p4/3P4/2N1Q2P/P1q2PP1/R4RK1 w - - 5 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Qe6+ { Richtig: 19.De6+ Kd8 20.Lxe8 (Bewertung +9,3). In der Partie geschah 19.Lxe8+? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 17 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r6r/pppk1pp1/3p2qp/3P4/3nP1bB/3B1NP1/PP1N1K1P/R2Q4 w - - 3 17"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17. Qa4+ { Richtig: 17.Da4+ Kc8 18.Dxd4 (Bewertung +5,6). In der Partie geschah 17.e5? und die Chance war weg. Auch gut: Tc1. } 1-0
+
+[Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r6r/pppk1pp1/3p3p/3PP2q/3n2bB/3B1NP1/PP1N1K1P/R2Q4 w - - 1 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Qa4+ { Richtig: 18.Da4+ Kc8 19.Dxd4 (Bewertung +6,5). In der Partie geschah 18.e6+? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "r2qk2r/p1p2pp1/1pnp3p/5b2/2BP3N/P3B3/1PQ2nPP/R3K2R w KQkq - 0 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Qxf2 { Richtig: 14.Dxf2 Le6 15.d5 (Bewertung +5,9). In der Partie geschah 14.Sxf5? und die Chance war weg. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 22 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.29"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr2r1/pn1bqp1p/1pp2p2/2P2B2/1P1N4/P5P1/6P1/R2Q1RK1 b - - 0 22"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22... Qe3+ { Richtig: 22…De3+ 23.Kh1 Le6 (Bewertung +2,5). In der Partie geschah 22…Lxf5? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qkb1r/pb1p2pp/1p1Ppn2/6B1/2PpN3/8/PP2QPPP/R3KB1R w KQkq - 0 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Bxf6 { Richtig: 14.Lxf6 Dxf6 15.Sxf6+ (Bewertung +5,5). In der Partie geschah 14.f4? und die Chance war weg. Auch gut: Sxf6+. } 1-0
+
+[Event "Weiß am Zug · Zug 4 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.28"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn1qkbnr/pp2pppp/3pb3/2pP4/4P3/8/PPP2PPP/RNBQKBNR w KQkq - 1 4"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 4. dxe6 { Richtig: 4.dxe6 fxe6 5.Sf3 (Bewertung +6,0). In der Partie geschah 4.c4? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 11 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b1kb1r/3pqppp/2p2n2/pp6/3pP3/1PN2N2/1PP2PPP/R1BQR1K1 w kq - 0 11"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. e5 { Richtig: 11.e5 Sd5 12.Se4 (Bewertung +4,4). In der Partie geschah 11.Sxd4? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qk2r/1b1p1ppp/2p5/pp1nP3/3NN3/1P6/1PPQ1PPP/R3R1K1 w kq - 1 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Nd6+ { Richtig: 16.Sd6+ Kf8 17.Sxb7 (Bewertung +6,6). In der Partie geschah 16.Txa5? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 40 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "8/p2RR3/2p5/8/1P1N3k/2Kb2r1/P4r2/8 b - - 7 40"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 40... Bb5+ { Richtig: 40…Lb5+ 41.Sf3+ Tgxf3+ (Bewertung +4,3). In der Partie geschah 40…Lf5+? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3k2r/pQ1b2R1/2n1p3/3pP3/3P1p2/8/PP2P1B1/RNB3Kq w kq - 1 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Bxh1 { Richtig: 19.Lxh1 Td8 20.Lxf4 (Bewertung +10,2). In der Partie geschah 19.Kf2? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 12 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.25"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3kb1r/p1p2ppp/2bp1B2/8/3P4/8/PPP1KPPP/RN2R3 b kq - 1 12"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12... gxf6 { Richtig: 12…gxf6 13.Kf1+ Kd8 (Bewertung +4,1). In der Partie geschah 12…Lxg2? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.24"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r3k2r/ppp1bppp/5q2/8/2Pp2P1/1P3NP1/P3Q3/RNB2K2 b kq - 2 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... d3 { Richtig: 16…d3 17.Dxd3 Dxa1 (Bewertung +5,0). In der Partie geschah 16…O-O-O? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 13 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppp1nppp/3p3B/2bPp3/2B5/P2P2QP/1PP2PP1/R4RK1 b - - 4 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13... Nf5 { Richtig: 13…Sf5 14.Dg5 Sxh6 (Bewertung +5,1). In der Partie geschah 13…Kh8? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 22 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/pp3ppp/2p5/3pR3/5n2/1B6/PPP3PP/2K2R2 b - - 5 22"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22... Ng6 { Richtig: 22…Sg6 23.Th5 Tfe8 (Bewertung +3,8). In der Partie geschah 22…Sxg2? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 24 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/pp3ppp/2p5/4R3/2p5/8/PPB3nP/2K2R2 b - - 1 24"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Rfe8 { Richtig: 24…Tfe8 25.Txe8+ Txe8 (Bewertung +4,9). In der Partie geschah 24…b5? und die Chance war weg. Auch gut: Tae8. } 1-0
+
+[Event "Schwarz am Zug · Zug 9 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "rn2k2r/pppb1pp1/3p1b1p/8/4P3/3P1P2/PPP1B1PP/RN2K1NR b KQkq - 1 9"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9... Bxb2 { Richtig: 9…Lxb2 10.Sh3 Lxa1 (Bewertung +5,7). In der Partie geschah 9…Sc6? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 10 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r3k2r/pppb1pp1/2np1b1p/8/4P3/3P1P1N/PPP1B1PP/RN2K2R b KQkq - 3 10"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10... Bxb2 { Richtig: 10…Lxb2 11.Sf4 Lxa1 (Bewertung +5,7). In der Partie geschah 10…O-O-O? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 11 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.22"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2kr3r/pppb1pp1/2np1b1p/8/4PN2/3P1P2/PPP1B1PP/RN2K2R b KQ - 5 11"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11... Bxb2 { Richtig: 11…Lxb2 12.Kd2 Lxa1 (Bewertung +4,8). In der Partie geschah 11…Lg5? und die Chance war weg. Auch gut: g5. } 1-0
+
+[Event "Schwarz am Zug · Zug 9 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r2qk1nr/ppp2ppp/2n1p3/bB2Pb2/8/N1PP1N1P/P4PP1/R1BQK2R b KQkq - 2 9"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9... Bxc3+ { Richtig: 9…Lxc3+ 10.Ld2 Lxa1 (Bewertung +4,4). In der Partie geschah 9…Dxd3? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 13 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppp3pp/4b3/1Bb1npB1/P2pp3/6Q1/1PP2PPP/RN2R1K1 b - - 1 13"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13... Qd5 { Richtig: 13…Dd5 14.Sc3 dxc3 (Bewertung +2,9). In der Partie geschah 13…Le7? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 14 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/ppp1b1pp/4b3/1B2npB1/P2pp2P/6Q1/1PP2PP1/RN2R1K1 b - - 0 14"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14... f4 { Richtig: 14…f4 15.Lxf4 Lxh4 (Bewertung +5,2). In der Partie geschah 14…Lxg5? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 25 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/pp4p1/2p4q/3b1p1Q/P2p1P2/3Bn3/1PPN1K2/R6R b - - 6 25"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25... Qxf4+ { Richtig: 25…Dxf4+ 26.Ke2 Tae8 (Bewertung +7,1). In der Partie geschah 25…Dxh5? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 21 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "4rrk1/p1p2pp1/1p2pn2/3p2Q1/3P4/2P2P2/2P4P/qNKR3R w - - 1 21"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. Rhg1 { Richtig: 21.Thg1 g6 22.Dxf6 (Bewertung +999,9). In der Partie geschah 21.h4? und die Chance war weg. Auch gut: Tdg1. } 1-0
+
+[Event "Weiß am Zug · Zug 22 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "4rrk1/p1p2pp1/1p3n2/3pp1Q1/3P3P/2P2P2/2P5/qNKR3R w - - 0 22"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22. Rhg1 { Richtig: 22.Thg1 Sh5 23.Dxh5 (Bewertung +4,8). In der Partie geschah 22.h5? und die Chance war weg. Auch gut: Tdg1. } 1-0
+
+[Event "Weiß am Zug · Zug 26 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.14"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2k2r2/1ppr4/p1n5/P1Bb3p/1P4pN/2PPR3/5PpP/1R4K1 w - - 1 26"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26. Bxf8 { Richtig: 26.Lxf8 Tf7 27.c4 (Bewertung +5,7). In der Partie geschah 26.Tbe1? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 15 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.12"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r2q1rk1/p1p2ppp/1p6/b2pPp2/5B2/2R1P3/P2N1PPP/3Q1RK1 b - - 1 15"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15... Bxc3 { Richtig: 15…Lxc3 16.Sf3 c5 (Bewertung +3,5). In der Partie geschah 15…c5? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 19 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.12"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5rk1/6pp/p1p2p2/qrPpp3/3nP3/1P6/P2N1PPP/R1Q2RK1 b - - 2 19"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19... Ne2+ { Richtig: 19…Se2+ 20.Kh1 Sxc1 (Bewertung +6,1). In der Partie geschah 19…Txc5? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 20 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.11"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2r1r1k1/pp2qppp/4b3/8/4B3/2P1P2P/PP2Q1P1/R3KR2 b Q - 0 20"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20... Qh4+ { Richtig: 20…Dh4+ 21.Tf2 Dxe4 (Bewertung +5,3). In der Partie geschah 20…Lc4? und die Chance war weg. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 36 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "7R/3N1k2/7p/pp2Rq2/8/b7/5P1P/7K b - - 1 36"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 36... Qxf2 { Richtig: 36…Dxf2 37.h3 Ld6 (Bewertung +5,9). In der Partie geschah 36…Df3+? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 15 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rn2k2r/pp3ppp/2p1p3/4P1q1/Q2P3b/2N1PB1P/PP2K1P1/R6R w kq - 3 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. g3 { Richtig: 15.g3 Lxg3 16.Se4 (Bewertung +4,0). In der Partie geschah 15.Tag1? und die Chance war weg. Auch gut: Se4, Db3. } 0-1
+
+[Event "Weiß am Zug · Zug 22 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1r3rk1/3Q1ppp/2p1p1q1/4P3/p2PN1Bb/1P2P2P/P3K1P1/6RR w - - 0 22"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22. Bf3 { Richtig: 22.Lf3 Tfd8 23.Da7 (Bewertung +3,8). In der Partie geschah 22.Kf3? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 27 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "6k1/1p1N1ppp/p1p2n2/4R3/1P6/Pr5P/5PP1/6K1 b - - 1 27"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 27... Nxd7 { Richtig: 27…Sxd7 28.Te8+ Sf8 (Bewertung +5,1). In der Partie geschah 27…Txa3? und die Chance war weg. Auch gut: Tb1+. } 0-1
+
+[Event "Schwarz am Zug · Zug 28 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "6k1/1p1N1ppp/p1p2n2/4R3/1P4P1/r6P/5P2/6K1 b - - 0 28"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28... Nxd7 { Richtig: 28…Sxd7 29.Te8+ Sf8 (Bewertung +5,2). In der Partie geschah 28…Txh3? und die Chance war weg. Auch gut: Ta1+. } 0-1
+
+[Event "Weiß am Zug · Zug 27 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.10"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "5q2/ppk5/2n5/4R2p/4Q3/2P2pP1/PP1r1P1P/R5K1 w - - 1 27"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 27. Rf5 { Richtig: 27.Tf5 Dd6 28.Dxf3 (Bewertung +6,0). In der Partie geschah 27.Df4? und die Chance war weg. Auch gut: Txh5. } 1-0
+
+[Event "Weiß am Zug · Zug 20 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.08"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "1k2rb1r/3q3p/BBpp1p1n/p5p1/P7/8/1PPQ1PPP/R3R1K1 w - - 0 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Rxe8+ { Richtig: 20.Txe8+ Dxe8 21.Dxa5 (Bewertung +999,9). In der Partie geschah 20.Dxa5? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 33 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.08"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "5r1k/6p1/2QR2r1/pP2p3/P3P2p/5PP1/4q2P/5RK1 b - - 0 33"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 33... hxg3 { Richtig: 33…hxg3 34.Dc2 gxh2+ (Bewertung +1000,0). In der Partie geschah 33…De3+? und die Chance war weg. Auch gut: h3. } 0-1
+
+[Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1br2k1/2q2ppp/p3p3/1pbnP3/5B2/P1NB4/1PQ2PPP/R4RK1 w - - 2 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Nxd5 { Richtig: 16.Sxd5 Txd5 17.Lxh7+ (Bewertung +4,1). In der Partie geschah 16.Lxh7+? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 10 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1b1kb1r/ppp1qpp1/5n1p/1B2p3/3nN3/4QP1N/PPP3PP/R1B1K2R b KQkq - 3 10"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10... Nxb5 { Richtig: 10…Sxb5 11.Sxf6+ Dxf6 (Bewertung +6,2). In der Partie geschah 10…c6? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 22 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2rqr1k1/4pp1p/6pQ/p7/1p6/1B6/PPP3PP/R4RK1 w - - 2 22"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22. Rxf7 { Richtig: 22.Txf7 Db6+ 23.Kh1 (Bewertung +1000,0). In der Partie geschah 22.Lxf7+? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/1pp3pp/pbn3q1/4p3/1PP2p2/P4NPb/1B1PBP2/R2QR1K1 b - - 0 16"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Qxg3+ { Richtig: 16…Dxg3+ 17.Kh1 Dg2# (Bewertung +1000,0). In der Partie geschah 16…fxg3? und die Chance war weg. Auch gut: Lxf2+. } 1-0
+
+[Event "Schwarz am Zug · Zug 19 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/1pp3pp/pbn3q1/4p3/1PP4N/P6b/1B1P3K/R2QRB2 b - - 0 19"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19... Qg1+ { Richtig: 19…Dg1+ 20.Kxh3 Dh1+ (Bewertung +1000,0). In der Partie geschah 19…Tf2+? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 17 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b5/ppp1n1pp/3q1k2/4Nn2/8/2N5/PPP1Q1PP/R3K2R w KQ - 2 17"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17. Ne4+ { Richtig: 17.Se4+ Kxe5 18.Sxd6+ (Bewertung +7,1). In der Partie geschah 17.Td1? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b5/ppp1n1pp/3q1k2/4N3/3n4/2N5/PPP1Q1PP/3RK2R w K - 4 18"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Qf2+ { Richtig: 18.Df2+ Lf5 19.O-O (Bewertung +6,0). In der Partie geschah 18.Se4+? und die Chance war weg. Auch gut: O-O+. } 1-0
+
+[Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1b5/ppp1n1pp/3qk3/4N3/3nN3/8/PPP1Q1PP/3RK2R w K - 6 19"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Ng5+ { Richtig: 19.Sg5+ Kf6 20.Sxh7+ (Bewertung +7,8). In der Partie geschah 19.Sxd6? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 12 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.05"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "1r1qkb1r/pQ3ppp/2p1pn2/3p4/3P1B2/4PN2/PP1NKPPP/R7 w k - 1 12"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. Bxb8 { Richtig: 12.Lxb8 Dd7 13.Da6 (Bewertung +6,1). In der Partie geschah 12.Dxa7? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.05"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "3qk2r/2Q2ppp/2pbpn2/3p4/3P1B2/4PN2/Pr1NKPPP/R7 w k - 2 14"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Qxd8+ { Richtig: 14.Dxd8+ Kxd8 15.Lxd6 (Bewertung +3,6). In der Partie geschah 14.Dxc6+? und die Chance war weg. Auch gut: Dxd6. } 1-0
+
+[Event "Weiß am Zug · Zug 20 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.05"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "7r/4kppp/4p3/3pB3/3P4/4PN2/Pr1nKPPP/2R5 w - - 0 20"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Rc7+ { Richtig: 20.Tc7+ Kd8 21.Sxd2 (Bewertung +4,4). In der Partie geschah 20.Sxd2? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 7 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "rn1qkbnr/p1p3pp/1p1p1p2/4p3/2B1P3/1Q6/PPPP1PPP/RNB2RK1 w kq - 0 7"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 7. Bf7+ { Richtig: 7.Lf7+ Kd7 8.Dh3+ (Bewertung +999,9). In der Partie geschah 7.Lb5+? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 9 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "rn1qkbnr/p5pp/2pp1p2/1p2p3/2B1P3/1Q6/PPPP1PPP/RNB2RK1 w kq - 0 9"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Bxg8 { Richtig: 9.Lxg8 d5 10.Le6 (Bewertung +5,8). In der Partie geschah 9.Lxb5? und die Chance war weg. Auch gut: Lf7+. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 15 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2kr2r1/pp1q1p1p/2pp1p2/2b1p2b/1PP1P3/P2P1BPP/5P2/R1BQ1RK1 b - - 0 15"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15... Rxg3+ { Richtig: 15…Txg3+ 16.Lg2 Dxh3 (Bewertung +1000,0). In der Partie geschah 15…Lxf3? und die Chance war weg. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 18 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2kr2r1/pp3p1p/2pp1p2/4p3/1PPbP3/P2P2Pq/R4PQ1/2B2RK1 b - - 1 18"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Rxg3 { Richtig: 18…Txg3 19.Dxg3 Dxg3+ (Bewertung +1000,0). In der Partie geschah 18…Dxg2+? und die Chance war weg. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 10 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pp2p1pp/2n5/3p4/3PpB2/2Q5/PPP1B1PP/R3K1NR b KQkq - 3 10"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10... e5 { Richtig: 10…e5 11.Ld2 Lb4 (Bewertung +4,1). In der Partie geschah 10…Da5? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 15 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2kr1b1r/p1pq1p2/1p3n1p/3p2p1/3QP3/2P1BP1P/PP4P1/RN3RK1 w - - 0 15"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Qxf6 { Richtig: 15.Dxf6 Tg8 16.Df5 (Bewertung +3,5). In der Partie geschah 15.exd5? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "2kr1br1/p1pq1p2/1p3n1p/3P2p1/3Q4/2P1BP1P/PP4P1/RN3RK1 w - - 1 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Qxf6 { Richtig: 16.Dxf6 Dxd5 17.Lf2 (Bewertung +2,4). In der Partie geschah 16.Sd2? und die Chance war weg. } 1/2-1/2
+
+[Event "Weiß am Zug · Zug 23 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "2rk1q1r/1b3ppp/3b4/pQ2P3/P4P2/8/1P4PP/R1B2R1K w - - 2 23"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23. Qb6+ { Richtig: 23.Db6+ Lc7 24.Td1+ (Bewertung +6,3). In der Partie geschah 23.exd6? und die Chance war weg. Auch gut: Dxb7, Le3. } 0-1
+
+[Event "Schwarz am Zug · Zug 11 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3rk1nr/ppp1pp1p/6pb/8/1P4b1/2P2N2/PB1N2PP/R2K1B1R b k - 2 11"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11... Rxd2+ { Richtig: 11…Txd2+ 12.Ke1 Txb2 (Bewertung +6,6). In der Partie geschah 11…Lxd2? und die Chance war weg. } 0-1
+
+[Event "Weiß am Zug · Zug 10 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r1bqk2r/pp3ppp/4p3/3pP3/1b4Q1/6P1/PPP1P1BP/RNB1K2R w KQkq - 1 10"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10. Qxb4 { Richtig: 10.Dxb4 Db6 11.Da3 (Bewertung +7,2). In der Partie geschah 10.c3? und die Chance war weg. } 1-0
+
+[Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4rk1/ppp2ppp/2q5/2b1n3/8/2N1P1P1/PPPP3P/R1B1QRK1 w - - 5 16"]
+[Aufgabe "1"]
+
+{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. d4 { Richtig: 16.d4 Sf3+ 17.Txf3 (Bewertung +2,4). In der Partie geschah 16.Df2? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 9 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.03"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "r4bnr/ppp2kpp/2nq4/4p3/2Q1P1b1/5N2/PPPP2PP/RNB2RK1 b - - 1 9"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9... Ke8 { Richtig: 9…Ke8 10.Kh1 Sf6 (Bewertung +4,0). In der Partie geschah 9…Ke7? und die Chance war weg. } 1-0
+
+[Event "Schwarz am Zug · Zug 4 · Gegner hat gepatzt"]
+[Site "?"]
+[Date "2026.08.01"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "rnbqkbnr/ppp2ppp/8/3p4/2B1Pp2/5N2/PPPP2PP/RNBQK2R b KQkq - 1 4"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 4... dxc4 { Richtig: 4…dxc4 5.Sc3 Se7 (Bewertung +5,0). In der Partie geschah 4…dxe4? und die Chance war weg. } 0-1
+
