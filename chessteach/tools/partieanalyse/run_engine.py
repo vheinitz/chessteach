@@ -1,5 +1,5 @@
 """Stockfish-Bewertung aller Stellungen. Args: pgn out.json depth"""
-import sys, json, chess, chess.pgn, chess.engine
+import os, sys, json, chess, chess.pgn, chess.engine
 from multiprocessing import Pool
 PGN, OUT, DEPTH = sys.argv[1], sys.argv[2], int(sys.argv[3])
 
@@ -34,7 +34,7 @@ def work(item):
 
 if __name__ == "__main__":
     games = load()
-    with Pool(18, initializer=init) as p:
+    with Pool(os.cpu_count() or 4, initializer=init) as p:
         res = []
         for k, r in enumerate(p.imap_unordered(work, list(enumerate(games)), chunksize=2)):
             res.append(r)

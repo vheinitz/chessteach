@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .DS_Store
 .pytest_cache/
+
+# Lektionen aus Partien von Kindern (tools/partien_lektionen.py) – nicht veröffentlichen
+chessteach/lektionen/*_Partien-*/
