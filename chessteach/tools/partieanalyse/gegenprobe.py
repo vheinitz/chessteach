@@ -28,7 +28,7 @@ def chk(t):
 random.seed(1)
 S=sys.argv[1]
 sample=random.sample(items(S+"/01_Was-haengt/0001_Was-haengt.pgn"),20)+random.sample(items(S+"/02_Bestrafe-den-Fehler/0001_Bestrafe-den-Fehler.pgn"),20)
-with Pool(18) as p: res=p.map(chk,sample)
+with Pool(os.cpu_count() or 4) as p: res=p.map(chk,sample)
 bad=[(f,r) for f,r in res if r["played"] is None or r["sol"]-r["played"]<150]
 print("geprüft",len(res),"Lösung >= 1,5 Bauern besser als Partiezug:",len(res)-len(bad))
 for f,r in bad: print("  auffällig:",f,r)

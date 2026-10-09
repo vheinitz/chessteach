@@ -106,7 +106,7 @@ for gi, g in enumerate(games):
 
 fens = sorted({games[gi]["boards"][m["i"]].fen() for L in (1, 2, 4) for gi, m, _, _ in cand[L]})
 print({k: len(v) for k, v in cand.items()}, "zu prüfende Stellungen:", len(fens), flush=True)
-with Pool(18, initializer=init) as p:
+with Pool(os.cpu_count() or 4, initializer=init) as p:
     ver = dict(p.imap_unordered(verify, fens, chunksize=4))
 
 

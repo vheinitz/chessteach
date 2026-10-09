@@ -134,7 +134,7 @@ for gi, g in enumerate(games):
             cands.append((gi, mv[k + 1]))
 
 fens = sorted({games[gi]["boards"][m["i"]].fen() for gi, m in cands})
-with Pool(18, initializer=init) as p:
+with Pool(os.cpu_count() or 4, initializer=init) as p:
     res = dict(p.imap_unordered(ana, fens, chunksize=2))
 
 refute = chess.engine.SimpleEngine.popen_uci("/usr/games/stockfish")

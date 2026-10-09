@@ -200,6 +200,8 @@ python3 lektionen_mehrzuegig.py evals.json <ziel>/03_MeinePartien   # Lektion 05
 python3 kontext_einfuegen.py <partien.pgn> <aufgaben.pgn …>          # zuletzt: Vorlauf + Partiezug
 ```
 
+**Alles in einem Schritt** (2026-10-09, Auftrag: „baue das Werkzeug für die Partien der Kinder“): `tools/partien_lektionen.py --lichess|--chesscom <name> --anzeige <Vorname>` holt die Partien, führt die Schritte unten aus und legt einen Reiter `lektionen/NN_Partien-<Vorname>/` an. Mit `--pgn <datei> --name <name>` arbeitet es mit einer lokalen PGN-Datei. Diese Reiter stehen in `.gitignore` und kommen nicht ins öffentliche Repo.
+
 `kontext_einfuegen.py` (2026-10-09, Auftrag: „zu jeder meiner übung … einige Züge zu der Position und einen Zug, was ich gemacht gatte integrieren“) lässt jede Aufgabe 3 Züge früher beginnen. Den Partiezug hängt es als Nebenvariante mit ?/?? an. Die App zeigt ihn bei Aufgaben-PGNs vor der Lösung als roten Pfeil mit eigenem Text. Die Lektion-Skripte erzeugen Aufgaben ohne diese Ergänzung; nach einem Neubau muss `kontext_einfuegen.py` deshalb noch einmal laufen.
 
 Spielernamen in den PGNs sind anonymisiert („Ich“ und „Gegner“). Die Skripte erkennen die eigene Seite über `CHESS_ME` (Vorgabe `Ich`). Für einen frischen chess.com-Export setzt man `CHESS_ME=<Benutzername>`; vor dem Einchecken anonymisiert man die neue PGN mit `CHESS_ME=<Benutzername> python3 anonymisieren.py <verzeichnis>`.
