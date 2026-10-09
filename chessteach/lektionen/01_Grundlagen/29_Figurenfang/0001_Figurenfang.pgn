@@ -1,0 +1,220 @@
+[Event "Schwarz am Zug · Figurenfang · Lichess 907"]
+[Site "https://lichess.org/8q26mk7a#101"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/5k2/1p1p4/p1pP1KP1/P1Pbp3/1P6/3B4 b - - 1 51"]
+[Aufgabe "1"]
+
+{ [Ar g3f4] Zuletzt zog der Gegner 51.Kf4. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 51... e2 52. Bxe2 Bxe2 { Gelöst: 51…e2 52.Lxe2 Lxe2. (Aufgabe 5JbYk von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Figurenfang · Lichess 1113"]
+[Site "https://lichess.org/Ctn86THr/black#20"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "rn2k1nr/pp3ppp/2pbp1b1/8/3P2Pq/2P2P1N/PP2K2P/R1BQ1B1R w kq - 2 11"]
+[Aufgabe "1"]
+
+{ [Ar g3d6] Zuletzt zog der Gegner 10…Ld6. Weiß am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 11. Bg5 Qxg5 12. Nxg5 { Gelöst: 11.Lg5 Dxg5 12.Sxg5. (Aufgabe q0hw5 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Figurenfang · Lichess 1167"]
+[Site "https://lichess.org/yrwFFRnX/black#70"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r2k2/3nrp2/3Qp3/p2pP3/3P4/7R/PP6/1qNK4 w - - 8 36"]
+[Aufgabe "1"]
+
+{ [Ar d8c8] Zuletzt zog der Gegner 35…Tc8. Weiß am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 36. Rh8+ Kg7 37. Rxc8 Qxb2 38. Qxe7 { Gelöst: 36.Th8+ Kg7 37.Txc8 Dxb2 38.Dxe7. (Aufgabe beyxC von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Figurenfang · Lichess 1200"]
+[Site "https://lichess.org/DH2aI4Yn#55"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/ppkr4/2p2pp1/3np3/8/2P2RPP/PP3P2/2K2B2 b - - 2 28"]
+[Aufgabe "1"]
+
+{ [Ar e3f3] Zuletzt zog der Gegner 28.Tf3. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 28... e4 29. c4 exf3 { Gelöst: 28…e4 29.c4 exf3. (Aufgabe 4r0WG von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Figurenfang · Lichess 1236"]
+[Site "https://lichess.org/dguvxBeh/black#60"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6r1/pp3p2/2p2b1k/5Pq1/1P2Q1P1/P3PR2/5RK1/3r4 w - - 1 31"]
+[Aufgabe "1"]
+
+{ [Ar d8g8] Zuletzt zog der Gegner 30…Tg8. Weiß am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 31. Rh3+ Kg7 32. Rh5 Qxg4+ 33. Qxg4+ { Gelöst: 31.Th3+ Kg7 32.Th5 Dxg4+ 33.Dxg4+. (Aufgabe evZwO von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Figurenfang · Lichess 1267"]
+[Site "https://lichess.org/xyDcksMP/black#24"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4rk1/5pbp/p1npbqp1/1pp1p3/4P3/P2PBN2/BPP2PPP/R2QR1K1 w - - 0 13"]
+[Aufgabe "1"]
+
+{ [Ar d8f6] Zuletzt zog der Gegner 12…Dxf6. Weiß am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 13. Bg5 Qxg5 14. Nxg5 { Gelöst: 13.Lg5 Dxg5 14.Sxg5. (Aufgabe mXT5w von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Figurenfang · Lichess 1291"]
+[Site "https://lichess.org/4gtOffAl#27"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4rk1/1p1n1p1p/p2p1qp1/2pPpb2/2P1n3/1P2NP2/PQ2P1PP/R3KBNR b KQ - 0 14"]
+[Aufgabe "1"]
+
+{ [Ar f2f3] Zuletzt zog der Gegner 14.f3. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 14... Qh4+ 15. g3 Nxg3 16. hxg3 Qxh1 { Gelöst: 14…Dh4+ 15.g3 Sxg3 16.hxg3 Dxh1. (Aufgabe 5Gi4X von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Figurenfang · Lichess 1314"]
+[Site "https://lichess.org/YFeUjqbK/black#36"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "rnb1k2r/p4ppp/1p6/3p1p2/2p5/q4NP1/P1P1N1KP/R2Q1R2 w kq - 0 19"]
+[Aufgabe "1"]
+
+{ [Ar e6f5] Zuletzt zog der Gegner 18…exf5. Weiß am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 19. Qxd5 O-O 20. Qxa8 { Gelöst: 19.Dxd5 O-O 20.Dxa8. (Aufgabe pV7jO von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Figurenfang · Lichess 1335"]
+[Site "https://lichess.org/K8If87Ez#55"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5rk1/3bQ3/2q4p/2p2pp1/8/2PP3P/3B1PP1/1R4K1 b - - 0 28"]
+[Aufgabe "1"]
+
+{ [Ar e2e7] Zuletzt zog der Gegner 28.Dxe7. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 28... Re8 29. Bxg5 Rxe7 { Gelöst: 28…Te8 29.Lxg5 Txe7. (Aufgabe AT0iY von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Figurenfang · Lichess 1353"]
+[Site "https://lichess.org/bgXn28m9/black#66"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1B4k1/p5p1/4pnbp/8/P2p2P1/3Pq2P/2P1B3/5Q1K w - - 0 34"]
+[Aufgabe "1"]
+
+{ [Ar d5d4] Zuletzt zog der Gegner 33…d4. Weiß am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 34. Bf4 Nd5 35. Bxe3 { Gelöst: 34.Lf4 Sd5 35.Lxe3. (Aufgabe 6TdKC von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Figurenfang · Lichess 1370"]
+[Site "https://lichess.org/c3BtbQLJ/black#42"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r3k1/5pp1/1p2pn1p/2r5/R1P5/3Q1N2/1q3PPP/5RK1 w - - 0 22"]
+[Aufgabe "1"]
+
+{ [Ar h7h6] Zuletzt zog der Gegner 21…h6. Weiß am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 22. Rb1 Qxb1+ 23. Qxb1 { Gelöst: 22.Tb1 Dxb1+ 23.Dxb1. (Aufgabe QPiEW von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Figurenfang · Lichess 1386"]
+[Site "https://lichess.org/2PTaR0GR#77"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/pp3kpp/3bNp2/5B2/6P1/P2N1b2/1PP5/1K6 b - - 8 39"]
+[Aufgabe "1"]
+
+{ [Ar c1b1] Zuletzt zog der Gegner 39.Kb1. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 39... g6 40. Nd4 gxf5 41. Nxf3 fxg4 { Gelöst: 39…g6 40.Sd4 gxf5 41.Sxf3 fxg4. (Aufgabe MXSZ3 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Figurenfang · Lichess 1401"]
+[Site "https://lichess.org/dYbOI8TR#45"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5k2/3qn1pQ/r7/pbBp4/3Pp3/2P1P1P1/6BP/R5K1 b - - 0 23"]
+[Aufgabe "1"]
+
+{ [Ar h5h7] Zuletzt zog der Gegner 23.Dxh7. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 23... Rh6 24. Qxh6 gxh6 { Gelöst: 23…Th6 24.Dxh6 gxh6. (Aufgabe dmZhH von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Figurenfang · Lichess 1416"]
+[Site "https://lichess.org/ITNSTiwg#31"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "Q1b2rk1/2qp1pp1/p4n1p/1p6/4P3/1P3P2/PP1N2PP/2R2RK1 b - - 4 16"]
+[Aufgabe "1"]
+
+{ [Ar a1c1] Zuletzt zog der Gegner 16.Tac1. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 16... Qb6+ 17. Kh1 Bb7 18. Qxf8+ Kxf8 { Gelöst: 16…Db6+ 17.Kh1 Lb7 18.Dxf8+ Kxf8. (Aufgabe dOTYt von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Figurenfang · Lichess 1431"]
+[Site "https://lichess.org/TLEP3FQq/black#20"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r2qk2r/pp1nbppp/4p3/2ppB3/3P4/2PQP3/PP1N1PPP/R3K2R w KQkq - 1 11"]
+[Aufgabe "1"]
+
+{ [Ar f6d7] Zuletzt zog der Gegner 10…Sd7. Weiß am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 11. Bxg7 Rg8 12. Qxh7 Rxg7 13. Qxg7 { Gelöst: 11.Lxg7 Tg8 12.Dxh7 Txg7 13.Dxg7. (Aufgabe Dnjkx von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Figurenfang · Lichess 1445"]
+[Site "https://lichess.org/Fvhp5v60/black#22"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r2qk2r/1pp2pp1/p2pbb1p/4p3/P3P3/1BPn1Q2/1P2NPPP/R1B1K2R w KQkq - 0 12"]
+[Aufgabe "1"]
+
+{ [Ar b4d3] Zuletzt zog der Gegner 11…Sxd3+. Weiß am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 12. Qxd3 Bxb3 13. c4 Bxc4 14. Qxc4 { Gelöst: 12.Dxd3 Lxb3 13.c4 Lxc4 14.Dxc4. (Aufgabe 9U8cR von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Figurenfang · Lichess 1459"]
+[Site "https://lichess.org/e9WXnzsg#59"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r2k2/1pr2p1R/p3p2p/3p3P/5P2/B7/P5P1/1R4K1 b - - 0 30"]
+[Aufgabe "1"]
+
+{ [Ar b2a3] Zuletzt zog der Gegner 30.Lxa3+. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 30... Kg8 31. Rxh6 Kg7 32. Rxe6 fxe6 { Gelöst: 30…Kg8 31.Txh6 Kg7 32.Txe6 fxe6. (Aufgabe MyHSv von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Figurenfang · Lichess 1472"]
+[Site "https://lichess.org/ozUHcfvR#63"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "7k/p1b1r2p/2p2qpQ/2Pp4/3P2P1/2NR1P1P/P7/3R2K1 b - - 6 32"]
+[Aufgabe "1"]
+
+{ [Ar e2c3] Zuletzt zog der Gegner 32.Sc3. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 32... Bf4 33. g5 Bxg5 34. Qxg5 Qxg5+ { Gelöst: 32…Lf4 33.g5 Lxg5 34.Dxg5 Dxg5+. (Aufgabe AKY5X von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Figurenfang · Lichess 1486"]
+[Site "https://lichess.org/dYpumUPo#55"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3k1r2/1p1n4/p1qpQN1p/P1p3r1/2P1Pp2/1P3B1P/R5P1/4R1K1 b - - 0 28"]
+[Aufgabe "1"]
+
+{ [Ar d5f6] Zuletzt zog der Gegner 28.Sxf6. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 28... Rxf6 29. Qxf6+ Nxf6 { Gelöst: 28…Txf6 29.Dxf6+ Sxf6. (Aufgabe FIZpJ von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Figurenfang · Lichess 1500"]
+[Site "https://lichess.org/8kcdPvye#25"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r3k2r/2pq1pp1/p2pbn1p/1pb1p3/4P3/1B1PBQN1/PPP2PPP/R4RK1 b kq - 0 13"]
+[Aufgabe "1"]
+
+{ [Ar d1f3] Zuletzt zog der Gegner 13.Dxf3. Schwarz am Zug. Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie! } 13... Bg4 14. Qxf6 gxf6 { Gelöst: 13…Lg4 14.Dxf6 gxf6. (Aufgabe y7U0J von lichess.org, CC0) } *
+

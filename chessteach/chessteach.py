@@ -2498,7 +2498,7 @@ class ChessTeachApp(tk.Tk):
             else:
                 txt += "  ·  Gegner am Zug"
         if self.analyse_on and self.analyse_opp_only and b.turn != self._opponent_color():
-            txt += "  ·  Analyse nur für Gegnerzüge"
+            txt += "  ·  Pfeile nur für Gegnerzüge"
         self.status_lbl.config(text=txt)
 
     def update_content_field(self):
@@ -2645,9 +2645,10 @@ class ChessTeachApp(tk.Tk):
             return
         self._last_analysis = (results, fen)
         if getattr(self, "analyse_opp_only", False) and self.board.turn != self._opponent_color():
+            # Eigener Zug: keine Pfeile (nicht vorsagen), Bewertung bleibt sichtbar
             self.best_moves = []
             self.best_scores = []
-            self._reset_eval()
+            self._update_eval(results[0][1] if results else None)
             self.board_canvas.redraw()
             self.update_status()
             return

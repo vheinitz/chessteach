@@ -155,6 +155,28 @@ In allen 40 ist die Lösung mindestens 1,5 Bauern besser als der Partiezug.
 - Unter der Zugliste zeigt ein Feld den Kommentartext zum aktuellen Zug. Die `[Befehle]` im Kommentar werden dabei ausgeblendet.
 - Der PGN-Kopf `[Aufgabe "1"]` verdeckt künftige Züge in der Zugliste mit „…“, im Repertoire-Training genauso.
 
+**Nachtrag 2026-10-09** (Frage: „Wie übt man das? Z.B. zu erkennen, dass vermeintlich
+geschützte Figuren in wirklichkeit nicht geschützt sind …“; Auftrag: „baue 05 und 06,
+wenn es einfach geht je 20 übungen pro thema aus lichess übernehmen“).
+Die nicht bestraften Gegner-Patzer (197, ohne 12.09.) zerfallen in diese Gruppen:
+- 21 % sofort sichtbarer Gewinn, etwa eine hängende Figur
+- 39 % mehrzügiger Gewinn, Material erst nach 2–7 Zügen
+- 10 % Matt erzwingbar
+- 22 % Angriff oder Stellungsvorteil ohne schnellen Materialgewinn
+- Rest: scheinbar gedeckte Figuren
+
+Die strenge Prüfung (`lektionen_mehrzuegig.py`) stellt eine Überlastung nur dann fest, wenn das Zurückschlagen legal ist und der nächste Zug auf ein Feld geht, das der Verteidiger vorher gedeckt hat. Sie findet in den eigenen Partien keine Überlastung, sondern nur 2 Fesselungen.
+
+| Lektion | Inhalt | Anzahl |
+|---|---|---|
+| 03_MeinePartien/05 Mehrzügig bestrafen | ganze Lösungsfolge, 2–4 eigene Züge, Tiefe 20 | 80 |
+| 03_MeinePartien/06 Scheinbar gedeckt | 2 eigene Fesselungen, 20 Lichess-Aufgaben mit derselben Prüfung | 22 |
+| 01_Grundlagen/23–30 | Lichess-Themen (CC0, Rating 900–1500): Überlastung, Ablenkung, Hinlenkung, Fesselung, Beseitigung des Verteidigers, Grundreihenmatt, Figurenfang, Stiller Zug | je 20 |
+
+Lichess kennt kein eigenes Thema „Überlastung“. Lektion 23 enthält deshalb Aufgaben, die die strenge Prüfung bestehen. Werkzeug: `tools/lichess_themen.py`.
+
+In der Analyse „nur für den Gegner“ bleibt die Bewertung auch beim eigenen Zug sichtbar, nur die Pfeile fehlen. Ein Sprung der Bewertung ohne sichtbaren Schlagzug ist damit selbst eine Aufgabe.
+
 **Offen:**
 - Im Repertoire-Training zählt nur der Lösungszug als richtig. Gleichwertige Züge („Auch gut: …“ im Kommentar) gelten dort als falsch.
 - Das Brett dreht sich bei Aufgaben mit Schwarz am Zug nicht automatisch. Der Titel sagt, wer am Zug ist.

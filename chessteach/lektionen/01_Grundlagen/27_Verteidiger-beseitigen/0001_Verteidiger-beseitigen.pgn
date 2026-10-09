@@ -1,0 +1,220 @@
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 902"]
+[Site "https://lichess.org/QECBA2O3#57"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/pb4pp/2p1kp2/2p5/2PrPB1P/1P2NP1K/P2b2P1/3R4 b - - 4 29"]
+[Aufgabe "1"]
+
+{ [Ar h2h3] Zuletzt zog der Gegner 29.Kh3. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 29... Bxe3 30. Bxe3 Rxd1 { Gelöst: 29…Lxe3 30.Lxe3 Txd1. (Aufgabe CwnHe von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 1030"]
+[Site "https://lichess.org/qekdDEYu#51"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2b1qr1k/2p3pp/1p3r2/pP5R/P1P1pN2/1Q2P1P1/5P1P/5RK1 b - - 7 26"]
+[Aufgabe "1"]
+
+{ [Ar d5h5] Zuletzt zog der Gegner 26.Th5. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 26... Rxf4 27. exf4 Qxh5 { Gelöst: 26…Txf4 27.exf4 Dxh5. (Aufgabe OUX2s von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 1102"]
+[Site "https://lichess.org/HW0TxLz1#49"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r3r1k1/pp3ppp/8/2PQ4/1P6/5PPq/4B2P/2R2RK1 b - - 0 25"]
+[Aufgabe "1"]
+
+{ [Ar e5d5] Zuletzt zog der Gegner 25.Dxd5. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 25... Rxe2 26. Rf2 Rxf2 27. Kxf2 Qxh2+ { Gelöst: 25…Txe2 26.Tf2 Txf2 27.Kxf2 Dxh2+. (Aufgabe wlsLN von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Beseitigung des Verteidigers · Lichess 1154"]
+[Site "https://lichess.org/15zmxVmZ/black#42"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r2r2k1/1R4pp/4qp2/pPb5/4p3/P2n4/1BQ1BPPP/5RK1 w - - 1 22"]
+[Aufgabe "1"]
+
+{ [Ar e7c5] Zuletzt zog der Gegner 21…Lc5. Weiß am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 22. Bxd3 exd3 23. Qxc5 { Gelöst: 22.Lxd3 exd3 23.Dxc5. (Aufgabe HVPmQ von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Beseitigung des Verteidigers · Lichess 1179"]
+[Site "https://lichess.org/H3XwOWjz/black#54"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2kr4/ppb3p1/7p/2p1r3/8/1P4Pq/P1Q2P2/2R1R1K1 w - - 0 28"]
+[Aufgabe "1"]
+
+{ [Ar e8e5] Zuletzt zog der Gegner 27…Txe5. Weiß am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 28. Rxe5 Bxe5 29. Qxc5+ Kb8 30. Qxe5+ { Gelöst: 28.Txe5 Lxe5 29.Dxc5+ Kb8 30.Dxe5+. (Aufgabe QATvL von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 1209"]
+[Site "https://lichess.org/ZQyP5ZmB#41"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4rk1/2q2ppp/b1N1p3/1PPp4/p2Nn3/2P4P/P1Q2PP1/R4RK1 b - - 2 21"]
+[Aufgabe "1"]
+
+{ [Ar e5c6] Zuletzt zog der Gegner 21.Sec6. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 21... Bxb5 22. Nxb5 Qxc6 { Gelöst: 21…Lxb5 22.Sxb5 Dxc6. (Aufgabe JOlOD von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Beseitigung des Verteidigers · Lichess 1244"]
+[Site "https://lichess.org/dRHpcLpi/black#48"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r2q2k1/3p3p/p1bbr1p1/2p1np2/2p2Q2/P1N3B1/1PB2PPP/3R1RK1 w - - 4 25"]
+[Aufgabe "1"]
+
+{ [Ar e8e6] Zuletzt zog der Gegner 24…Te6. Weiß am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 25. Rxd6 Rxd6 26. Qxe5 { Gelöst: 25.Txd6 Txd6 26.Dxe5. (Aufgabe LyvB2 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Beseitigung des Verteidigers · Lichess 1274"]
+[Site "https://lichess.org/TiYK7bqR/black#28"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "rn1q1rk1/p2b1pp1/3bpn1p/3pN3/Q1pP1B2/2P1P3/PR1NBPPP/5RK1 w - - 12 15"]
+[Aufgabe "1"]
+
+{ [Ar c8d7] Zuletzt zog der Gegner 14…Ld7. Weiß am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 15. Nxd7 Qxd7 16. Qxd7 Nbxd7 17. Bxd6 { Gelöst: 15.Sxd7 Dxd7 16.Dxd7 Sbxd7 17.Lxd6. (Aufgabe n9uy4 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 1300"]
+[Site "https://lichess.org/JDRbcZ0S#41"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1q3rk1/2r2ppp/p2Rpn2/8/1PNQ4/P3P1P1/5PKP/5R2 b - - 2 21"]
+[Aufgabe "1"]
+
+{ [Ar d1d4] Zuletzt zog der Gegner 21.Dd4. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 21... Rxc4 22. Qxc4 Qxd6 { Gelöst: 21…Txc4 22.Dxc4 Dxd6. (Aufgabe 51Uk4 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Beseitigung des Verteidigers · Lichess 1320"]
+[Site "https://lichess.org/7ZZd2w8A/black#56"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5r2/2r2p1k/1R4np/p2P1Q2/8/2q4P/P5P1/3R3K w - - 0 29"]
+[Aufgabe "1"]
+
+{ [Ar a6a5] Zuletzt zog der Gegner 28…a5. Weiß am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 29. Rxg6 fxg6 30. Qxf8 { Gelöst: 29.Txg6 fxg6 30.Dxf8. (Aufgabe Q4dw8 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 1342"]
+[Site "https://lichess.org/v0ib7DQc#31"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "q3k2r/1p1b1ppp/1nn1p3/3pP3/1b1P1P2/1PNBBN2/5KPP/Q6R b k - 4 16"]
+[Aufgabe "1"]
+
+{ [Ar e2c3] Zuletzt zog der Gegner 16.Sc3. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 16... Qxa1 17. Rxa1 Bxc3 { Gelöst: 16…Dxa1 17.Txa1 Lxc3. (Aufgabe OnTjo von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Beseitigung des Verteidigers · Lichess 1359"]
+[Site "https://lichess.org/aHdwyKWH/black#14"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "rn1qkb1r/pp3ppp/2p2n2/3p2B1/3P2b1/2N1P3/PP3P1P/R2QKBNR w KQkq - 0 8"]
+[Aufgabe "1"]
+
+{ [Ar f5g4] Zuletzt zog der Gegner 7…Lxg4. Weiß am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 8. Bxf6 Qxf6 9. Qxg4 { Gelöst: 8.Lxf6 Dxf6 9.Dxg4. (Aufgabe tYIPA von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 1378"]
+[Site "https://lichess.org/58NUY6Dd#27"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1r3rk1/p2bbppp/2p1pn2/q7/2B1P3/2N5/PBP2PPP/1R1Q1R1K b - - 7 14"]
+[Aufgabe "1"]
+
+{ [Ar g1h1] Zuletzt zog der Gegner 14.Kh1. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 14... Rxb2 15. Rxb2 Qxc3 { Gelöst: 14…Txb2 15.Txb2 Dxc3. (Aufgabe aMZjD von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Beseitigung des Verteidigers · Lichess 1396"]
+[Site "https://lichess.org/PqOMUlDv/black#56"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2k4r/nqp3pp/1n2p3/2Q5/3p4/RR4P1/PP3P1P/2K5 w - - 1 29"]
+[Aufgabe "1"]
+
+{ [Ar b8c8] Zuletzt zog der Gegner 28…Kc8. Weiß am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 29. Rxb6 Qxb6 30. Qxb6 cxb6 31. Rxa7 { Gelöst: 29.Txb6 Dxb6 30.Dxb6 cxb6 31.Txa7. (Aufgabe 9DOlR von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 1411"]
+[Site "https://lichess.org/xwzNhadA#47"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r1rk1/4Qpp1/p6p/1p2p2P/2p5/2R5/1q1B1PP1/3BKN2 b - - 1 24"]
+[Aufgabe "1"]
+
+{ [Ar h3c3] Zuletzt zog der Gegner 24.Tc3. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 24... Rxd2 25. Nxd2 Qxc3 { Gelöst: 24…Txd2 25.Sxd2 Dxc3. (Aufgabe 47STd von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Beseitigung des Verteidigers · Lichess 1428"]
+[Site "https://lichess.org/leq5JG7Z/black#34"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4r1k/7p/n1p1b1q1/ppbp3Q/3N4/2N1P2P/PPP2PP1/2K2R1R w - - 0 18"]
+[Aufgabe "1"]
+
+{ [Ar f6g6] Zuletzt zog der Gegner 17…Dxg6. Weiß am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 18. Qxg6 hxg6 19. Nxe6 { Gelöst: 18.Dxg6 hxg6 19.Sxe6. (Aufgabe kqxgf von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Beseitigung des Verteidigers · Lichess 1446"]
+[Site "https://lichess.org/PqMcKV92/black#52"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4rk1/7p/p4pnQ/3pp3/4P3/Pq6/1P4PP/2R2R1K w - - 0 27"]
+[Aufgabe "1"]
+
+{ [Ar e7g6] Zuletzt zog der Gegner 26…Sxg6. Weiß am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 27. Rc7 Rf7 28. Rxf7 Kxf7 29. Qxh7+ { Gelöst: 27.Tc7 Tf7 28.Txf7 Kxf7 29.Dxh7+. (Aufgabe E7EJM von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 1463"]
+[Site "https://lichess.org/EC0ZqdTB#27"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r2q1rk1/pp3ppp/1bn5/8/3P2b1/5NP1/PPQB1PBP/R4RK1 b - - 0 14"]
+[Aufgabe "1"]
+
+{ [Ar e3d4] Zuletzt zog der Gegner 14.exd4. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 14... Bxf3 15. Bxf3 Nxd4 { Gelöst: 14…Lxf3 15.Lxf3 Sxd4. (Aufgabe Z8FA2 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 1481"]
+[Site "https://lichess.org/aWksSsPh#35"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r1b2k2/ppp2p2/4pn1q/3P4/1bP1BQ2/2N3P1/PP3P1P/R4RK1 b - - 2 18"]
+[Aufgabe "1"]
+
+{ [Ar g4f4] Zuletzt zog der Gegner 18.Df4. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 18... Qxf4 19. gxf4 Bxc3 20. bxc3 Nxe4 { Gelöst: 18…Dxf4 19.gxf4 Lxc3 20.bxc3 Sxe4. (Aufgabe Cpvgi von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Beseitigung des Verteidigers · Lichess 1500"]
+[Site "https://lichess.org/IVa83dGe#39"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4rk1/1bq2pbp/p3p1p1/1pP5/1P2B3/P1N4P/2P2PP1/3RQRK1 b - - 3 20"]
+[Aufgabe "1"]
+
+{ [Ar d3e4] Zuletzt zog der Gegner 20.Le4. Schwarz am Zug. Schlage die Figur, die alles zusammenhält – danach fällt der Rest! } 20... Bxc3 21. Qxc3 Bxe4 { Gelöst: 20…Lxc3 21.Dxc3 Lxe4. (Aufgabe wK5Hd von lichess.org, CC0) } *
+

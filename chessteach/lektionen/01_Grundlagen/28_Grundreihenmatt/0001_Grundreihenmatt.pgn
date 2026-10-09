@@ -1,0 +1,220 @@
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 900"]
+[Site "https://lichess.org/HvTKEmjT#65"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6kn/b3qpp1/7p/5P2/Q7/PB6/1P1p2PP/3R3K b - - 1 33"]
+[Aufgabe "1"]
+
+{ [Ar a1d1] Zuletzt zog der Gegner 33.Td1. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 33... Qe1+ 34. Rxe1 dxe1=Q# { Gelöst: 33…De1+ 34.Txe1 dxe1=D#. (Aufgabe 2fYlD von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 938"]
+[Site "https://lichess.org/e7EV7AZd#83"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/5k1p/q3ppp1/3n4/1P1P4/1QR4P/5PPB/6K1 b - - 0 42"]
+[Aufgabe "1"]
+
+{ [Ar c1c3] Zuletzt zog der Gegner 42.Txc3. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 42... Qa1+ 43. Rc1 Qxc1+ 44. Qd1 Qxd1# { Gelöst: 42…Da1+ 43.Tc1 Dxc1+ 44.Dd1 Dxd1#. (Aufgabe A1NXj von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 968"]
+[Site "https://lichess.org/nFCr2B6L#57"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r5/6k1/5p1p/ppq5/3Q4/5P2/PP4PP/1K1R4 b - - 0 29"]
+[Aufgabe "1"]
+
+{ [Ar d3d4] Zuletzt zog der Gegner 29.Dxd4. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 29... Qc2+ 30. Ka1 Qc1+ 31. Rxc1 Rxc1# { Gelöst: 29…Dc2+ 30.Ka1 Dc1+ 31.Txc1 Txc1#. (Aufgabe zS5d3 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 988"]
+[Site "https://lichess.org/aqzcU4v9#59"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1k6/1pr2p1Q/4pBp1/3pP3/8/2q5/Rb3PPP/1R4K1 b - - 2 30"]
+[Aufgabe "1"]
+
+{ [Ar a1a2] Zuletzt zog der Gegner 30.Ta2. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 30... Qc1+ 31. Rxc1 Rxc1# { Gelöst: 30…Dc1+ 31.Txc1 Txc1#. (Aufgabe ayxA8 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Grundreihenmatt · Lichess 1021"]
+[Site "https://lichess.org/q3tR14tQ/black#58"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3q2k1/pp4pp/2p1p3/4P3/3r4/5Q1P/6P1/5R1K w - - 2 30"]
+[Aufgabe "1"]
+
+{ [Ar b6d8] Zuletzt zog der Gegner 29…Dd8. Weiß am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 30. Qf7+ Kh8 31. Qf8+ Qxf8 32. Rxf8# { Gelöst: 30.Df7+ Kh8 31.Df8+ Dxf8 32.Txf8#. (Aufgabe kaviE von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 1060"]
+[Site "https://lichess.org/uEfPs88X#57"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2rN4/2q1n1k1/3p2p1/p2Pp1P1/1p4Q1/8/PPP1B3/1K5R b - - 0 29"]
+[Aufgabe "1"]
+
+{ [Ar c6d8] Zuletzt zog der Gegner 29.Sxd8. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 29... Qxc2+ 30. Ka1 Qc1+ 31. Rxc1 Rxc1# { Gelöst: 29…Dxc2+ 30.Ka1 Dc1+ 31.Txc1 Txc1#. (Aufgabe 4CKPt von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Grundreihenmatt · Lichess 1093"]
+[Site "https://lichess.org/smPkMv8s/black#54"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r5k1/2p3pp/p1pp2p1/8/4q1P1/7P/P4Q2/5RK1 w - - 0 28"]
+[Aufgabe "1"]
+
+{ [Ar d3e4] Zuletzt zog der Gegner 27…Dxe4. Weiß am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 28. Qf7+ Kh8 29. Qf8+ Rxf8 30. Rxf8# { Gelöst: 28.Df7+ Kh8 29.Df8+ Txf8 30.Txf8#. (Aufgabe nILL9 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Grundreihenmatt · Lichess 1114"]
+[Site "https://lichess.org/9XA9mQaL/black#36"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r1bbr1k1/pp3ppp/8/2pPq1P1/2P2Q2/8/P3B1P1/R4RK1 w - - 0 19"]
+[Aufgabe "1"]
+
+{ [Ar c3e5] Zuletzt zog der Gegner 18…Dxe5. Weiß am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 19. Qxf7+ Kh8 20. Qf8+ Rxf8 21. Rxf8# { Gelöst: 19.Dxf7+ Kh8 20.Df8+ Txf8 21.Txf8#. (Aufgabe uJaL0 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Grundreihenmatt · Lichess 1132"]
+[Site "https://lichess.org/4ncCNnrE/black#60"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1k2rb2/pppQ2p1/3p4/rq6/8/6P1/1P5P/2R2R1K w - - 3 31"]
+[Aufgabe "1"]
+
+{ [Ar b6b5] Zuletzt zog der Gegner 30…Db5. Weiß am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 31. Qxc7+ Ka8 32. Qc8+ Rxc8 33. Rxc8# { Gelöst: 31.Dxc7+ Ka8 32.Dc8+ Txc8 33.Txc8#. (Aufgabe aGaBa von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 1147"]
+[Site "https://lichess.org/EKStct8d#45"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r3k1/5ppp/1q6/pB1p2B1/Q2pnP2/8/PP4PP/1KR5 b - - 1 23"]
+[Aufgabe "1"]
+
+{ [Ar h1c1] Zuletzt zog der Gegner 23.Tc1. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 23... Nd2+ 24. Ka1 Rxc1# { Gelöst: 23…Sd2+ 24.Ka1 Txc1#. (Aufgabe sa9J8 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Grundreihenmatt · Lichess 1164"]
+[Site "https://lichess.org/FcWRC7lg/black#48"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/pp4pp/2np4/1B6/3Pr3/P3B3/1PP4q/2K2R2 w - - 0 25"]
+[Aufgabe "1"]
+
+{ [Ar e8e4] Zuletzt zog der Gegner 24…Txe4. Weiß am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 25. Bc4+ d5 26. Bxd5+ Re6 27. Bxe6+ Kh8 28. Rf8# { Gelöst: 25.Lc4+ d5 26.Lxd5+ Te6 27.Lxe6+ Kh8 28.Tf8#. (Aufgabe A47A9 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Grundreihenmatt · Lichess 1182"]
+[Site "https://lichess.org/tbzgexl8/black#62"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r3k/2p1bRpp/pp6/3Q4/8/7P/PPP3P1/4q1BK w - - 0 32"]
+[Aufgabe "1"]
+
+{ [Ar d6e7] Zuletzt zog der Gegner 31…Lxe7. Weiß am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 32. Qxd8+ Bxd8 33. Rf8# { Gelöst: 32.Dxd8+ Lxd8 33.Tf8#. (Aufgabe TER4C von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 1209"]
+[Site "https://lichess.org/awkRSYtb#57"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1R6/5bpk/p1p3pp/2Bp4/r3Q3/2P5/2P2PPP/6K1 b - - 0 29"]
+[Aufgabe "1"]
+
+{ [Ar e2e4] Zuletzt zog der Gegner 29.Dxe4. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 29... Ra1+ 30. Rb1 Rxb1+ 31. Qe1 Rxe1# { Gelöst: 29…Ta1+ 30.Tb1 Txb1+ 31.De1 Txe1#. (Aufgabe BgNXR von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 1251"]
+[Site "https://lichess.org/ro1G2zws#59"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r4k/3Q1p1p/p2B4/8/1p1q4/4p3/PPP4P/2K3R1 b - - 0 30"]
+[Aufgabe "1"]
+
+{ [Ar f5d7] Zuletzt zog der Gegner 30.Dxd7. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 30... Qd2+ 31. Kb1 Qxc2+ 32. Ka1 Qc1+ 33. Rxc1 Rxc1# { Gelöst: 30…Dd2+ 31.Kb1 Dxc2+ 32.Ka1 Dc1+ 33.Txc1 Txc1#. (Aufgabe MHsEP von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 1290"]
+[Site "https://lichess.org/yzuNBvQZ#41"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3rr1k1/ppp2pp1/7p/3P4/Pq6/1P2RQ2/5PPP/4R1K1 b - - 4 21"]
+[Aufgabe "1"]
+
+{ [Ar d1e1] Zuletzt zog der Gegner 21.Tde1. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 21... Qxe1+ 22. Rxe1 Rxe1# { Gelöst: 21…Dxe1+ 22.Txe1 Txe1#. (Aufgabe hEBeZ von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Grundreihenmatt · Lichess 1326"]
+[Site "https://lichess.org/MUXEvKjR/black#66"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3Rr2k/p5pp/8/2Q1r3/8/1P2p1qP/P1P1RbP1/7K w - - 3 34"]
+[Aufgabe "1"]
+
+{ [Ar e7e8] Zuletzt zog der Gegner 33…Te8. Weiß am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 34. Qf8+ Rxf8 35. Rxf8# { Gelöst: 34.Df8+ Txf8 35.Txf8#. (Aufgabe y3hzh von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Grundreihenmatt · Lichess 1365"]
+[Site "https://lichess.org/yj1PAVKE/black#80"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r5k1/1qPQ1ppp/b7/p7/1p6/1P1p1P2/P5PP/5R1K w - - 6 41"]
+[Aufgabe "1"]
+
+{ [Ar a7b7] Zuletzt zog der Gegner 40…Db7. Weiß am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 41. Qd8+ Rxd8 42. cxd8=Q# { Gelöst: 41.Dd8+ Txd8 42.cxd8=D#. (Aufgabe XhuX4 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 1405"]
+[Site "https://lichess.org/voLAq6gw#65"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r2k1/5ppp/3R1b2/8/1P2Q3/Pq2P3/1B3PPP/6K1 b - - 0 33"]
+[Aufgabe "1"]
+
+{ [Ar d2d6] Zuletzt zog der Gegner 33.Txd6. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 33... Qd1+ 34. Rxd1 Rxd1# { Gelöst: 33…Dd1+ 34.Txd1 Txd1#. (Aufgabe JX8sZ von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Grundreihenmatt · Lichess 1450"]
+[Site "https://lichess.org/QsJ7YqBf#45"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r1r1k1/p2Q1ppp/8/q7/8/4B3/4RPPP/2R3K1 b - - 0 23"]
+[Aufgabe "1"]
+
+{ [Ar d2e2] Zuletzt zog der Gegner 23.Txe2. Schwarz am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 23... Rxc1+ 24. Bxc1 Qe1+ 25. Rxe1 Rxe1# { Gelöst: 23…Txc1+ 24.Lxc1 De1+ 25.Txe1 Txe1#. (Aufgabe ty1tn von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Grundreihenmatt · Lichess 1500"]
+[Site "https://lichess.org/QAJ3JCTQ/black#46"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6rk/pp3Qpp/q7/3Nn3/8/8/2P3PP/5R1K w - - 6 24"]
+[Aufgabe "1"]
+
+{ [Ar c6e5] Zuletzt zog der Gegner 23…Se5. Weiß am Zug. Der König ist auf der Grundreihe eingesperrt. Finde das Matt! } 24. Qxg8+ Kxg8 25. Ne7+ Kh8 26. Rf8# { Gelöst: 24.Dxg8+ Kxg8 25.Se7+ Kh8 26.Tf8#. (Aufgabe vdtqj von lichess.org, CC0) } *
+
