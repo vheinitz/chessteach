@@ -1,880 +1,1120 @@
 [Event "Schwarz am Zug · Zug 13 · Gewinn in 4 Zügen"]
+[Site "?"]
 [Date "2026.10.08"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b1q1k1/ppp2p1p/2np1p2/2b4Q/3p3N/3B4/PPP2PPP/R1B3K1 b - - 1 13"]
+[FEN "r1bqr1k1/pppp1ppp/2n2N2/2b5/3p4/3B1N2/PPP2PPP/R1BQR1K1 b - - 0 10"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +4,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 13... Qe1+ 14. Bf1 d3 15. Qf3 d2 16. Bxd2 Qxd2 17. Bd3 { Material gewonnen. Lösung: 13…De1+ 14.Lf1 d3 15.Df3 d2 16.Lxd2 Dxd2 17.Ld3 (Bewertung +4,9). In der Partie geschah 13…f5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 10... gxf6 11. Rxe8+ Qxe8 12. Nh4 d6 13. Qh5 { Schwarz am Zug. Bewertung +4,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 13... Qe1+ ( 13... f5 $2 { Rot: In der Partie geschah 13…f5? und die Chance war weg. } ) 14. Bf1 d3 15. Qf3 d2 16. Bxd2 Qxd2 17. Bd3 { Material gewonnen. Lösung: 13…De1+ 14.Lf1 d3 15.Df3 d2 16.Lxd2 Dxd2 17.Ld3 (Bewertung +4,9). } 1-0
 
 [Event "Weiß am Zug · Zug 19 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.10.06"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rq3rk1/2p2pb1/b2p2p1/p2Pp1N1/2P3P1/4Q3/PP1N1P2/2KR3R w - - 1 19"]
+[FEN "r2q1rk1/2p1npb1/b2p2p1/p2Pp3/2P5/4BN2/PP1NQPP1/2KR3R w - - 0 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +7,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 19. Rh8+ Bxh8 20. Qh3 Qxb2+ 21. Kxb2 Rfb8+ { Material gewonnen. Lösung: 19.Th8+ Lxh8 20.Dh3 Dxb2+ 21.Kxb2 Tfb8+ (Bewertung +7,8). In der Partie geschah 19.Th7? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Ng5 Nf5 17. g4 Nxe3 18. Qxe3 Qb8 { Weiß am Zug. Bewertung +7,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 19. Rh8+ ( 19. Rh7 $2 { Rot: In der Partie geschah 19.Th7? und die Chance war weg. } ) 19... Bxh8 20. Qh3 Qxb2+ 21. Kxb2 Rfb8+ { Material gewonnen. Lösung: 19.Th8+ Lxh8 20.Dh3 Dxb2+ 21.Kxb2 Tfb8+ (Bewertung +7,8). } 0-1
 
 [Event "Schwarz am Zug · Zug 33 · Gewinn in 4 Zügen"]
+[Site "?"]
 [Date "2026.10.04"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "6rk/p5qp/2R5/1p3Qp1/4pP2/4P2P/P2n2P1/6K1 b - - 0 33"]
+[FEN "2r3qk/p6p/2p2Qp1/1p3p2/4pP2/4P2P/P2n2P1/2R3K1 b - - 5 30"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +17,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 33... Qa1+ 34. Kh2 Nf1+ 35. Kg1 Nxe3+ 36. Kh2 Nxf5 37. fxg5 { Material gewonnen. Lösung: 33…Da1+ 34.Kh2 Sf1+ 35.Kg1 Sxe3+ 36.Kh2 Sxf5 37.fxg5 (Bewertung +17,8). In der Partie geschah 33…gxf4? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 30... Qg7 31. Qe6 Rg8 32. Rxc6 g5 33. Qxf5 { Schwarz am Zug. Bewertung +17,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 33... Qa1+ ( 33... gxf4 $2 { Rot: In der Partie geschah 33…gxf4? und die Chance war weg. } ) 34. Kh2 Nf1+ 35. Kg1 Nxe3+ 36. Kh2 Nxf5 37. fxg5 { Material gewonnen. Lösung: 33…Da1+ 34.Kh2 Sf1+ 35.Kg1 Sxe3+ 36.Kh2 Sxf5 37.fxg5 (Bewertung +17,8). } 0-1
 
 [Event "Schwarz am Zug · Zug 16 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.10.03"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5r2/p1pk2pp/3bp3/8/3N2nP/3b1P2/PP1P2P1/R1B1K2R b KQ - 0 16"]
+[FEN "r6N/p1pk2pp/3bpn2/8/7P/3b4/PP1P1PP1/R1B1K1NR b KQ - 0 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +6,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 16... Bg3+ 17. Kd1 Nf2+ 18. Ke1 Nxh1+ 19. Kd1 { Material gewonnen. Lösung: 16…Lg3+ 17.Kd1 Sf2+ 18.Ke1 Sxh1+ 19.Kd1 (Bewertung +6,3). In der Partie geschah 16…Sh2? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13... Rxh8 14. Nf3 Ng4 15. Nd4 Rf8 16. f3 { Schwarz am Zug. Bewertung +6,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 16... Bg3+ ( 16... Nh2 $2 { Rot: In der Partie geschah 16…Sh2? und die Chance war weg. } ) 17. Kd1 Nf2+ 18. Ke1 Nxh1+ 19. Kd1 { Material gewonnen. Lösung: 16…Lg3+ 17.Kd1 Sf2+ 18.Ke1 Sxh1+ 19.Kd1 (Bewertung +6,3). } 0-1
 
 [Event "Weiß am Zug · Zug 21 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.10.02"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "2r1r1k1/ppq2p1p/5p2/5b2/3PN2R/1P1Q2P1/P3P2P/R5K1 w - - 1 21"]
+[FEN "2r2rk1/ppq2p1p/3n1p2/3B4/3P1R2/1P1Q2Pb/P2NP2P/R5K1 w - - 4 18"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +7,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 21. Nxf6+ Kf8 22. Qxf5 Rxe2 { Material gewonnen. Lösung: 21.Sxf6+ Kf8 22.Dxf5 Txe2 (Bewertung +7,0). In der Partie geschah 21.De3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 18. Rh4 Bf5 19. Be4 Nxe4 20. Nxe4 Rfe8 { Weiß am Zug. Bewertung +7,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 21. Nxf6+ ( 21. Qe3 $2 { Rot: In der Partie geschah 21.De3? und die Chance war weg. } ) 21... Kf8 22. Qxf5 Rxe2 { Material gewonnen. Lösung: 21.Sxf6+ Kf8 22.Dxf5 Txe2 (Bewertung +7,0). } 0-1
 
 [Event "Schwarz am Zug · Zug 12 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.10.01"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1bq1rk1/pp4bp/2n1pnp1/3p2N1/3P1B2/2NB4/PPP2PP1/R2QK2R b KQ - 3 12"]
+[FEN "rnbq1rk1/pp4bp/2pppnp1/6N1/2BPP3/2N5/PPP2PP1/R1BQK2R b KQ - 1 9"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +2,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 12... Ne4 13. Ncxe4 dxe4 14. Be3 exd3 15. Qxd3 { Material gewonnen. Lösung: 12…Se4 13.Scxe4 dxe4 14.Le3 exd3 15.Dxd3 (Bewertung +2,3). In der Partie geschah 12…Sxd4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 9... d5 10. exd5 cxd5 11. Bd3 Nc6 12. Bf4 { Schwarz am Zug. Bewertung +2,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 12... Ne4 ( 12... Nxd4 $2 { Rot: In der Partie geschah 12…Sxd4? und die Chance war weg. } ) 13. Ncxe4 dxe4 14. Be3 exd3 15. Qxd3 { Material gewonnen. Lösung: 12…Se4 13.Scxe4 dxe4 14.Le3 exd3 15.Dxd3 (Bewertung +2,3). } 1-0
 
 [Event "Weiß am Zug · Zug 40 · Matt in 4"]
+[Site "?"]
 [Date "2026.09.29"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "6Q1/p1p5/2k5/1p1p4/1K1n4/1P6/r7/6R1 w - - 0 40"]
+[FEN "8/p1p3n1/2k3P1/1p1p4/1K1P1N2/1P6/P1r5/6R1 w - - 0 37"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gepatzt: Du kannst in 4 Zügen mattsetzen. Rechne die ganze Folge! } 40. Rg6+ Kd7 41. Qxd5+ Ke8 42. Rg8+ Ke7 43. Rg7+ { Matt! Lösung: 40.Tg6+ Kd7 41.Dxd5+ Ke8 42.Tg8+ Ke7 43.Tg7+. In der Partie geschah 40.Dg6+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 37. Ne6 Nxe6 38. g7 Rxa2 39. g8=Q Nxd4 { Weiß am Zug. Dein Gegner hat gepatzt: Du kannst in 4 Zügen mattsetzen. Rechne die ganze Folge! } 40. Rg6+ ( 40. Qg6+ $2 { Rot: In der Partie geschah 40.Dg6+? und die Chance war weg. } ) 40... Kd7 41. Qxd5+ Ke8 42. Rg8+ Ke7 43. Rg7+ { Matt! Lösung: 40.Tg6+ Kd7 41.Dxd5+ Ke8 42.Tg8+ Ke7 43.Tg7+. } 1-0
 
 [Event "Weiß am Zug · Zug 15 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.09.24"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qr3/p1p1k1p1/1p5p/n1pPp3/6b1/2P2N2/PP1PQPPP/R1B2RK1 w - - 5 15"]
+[FEN "r1bq3r/p1p1k1p1/1p5p/nQpnp3/4P3/2P2N2/PP1P1PPP/R1B1K2R w KQ - 0 12"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 15. Qxe5+ Kf7 16. Qf4+ Kg8 17. Qxg4 Qxd5 { Material gewonnen. Lösung: 15.Dxe5+ Kf7 16.Df4+ Kg8 17.Dxg4 Dxd5 (Bewertung +5,9). In der Partie geschah 15.De4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12. exd5 Bd7 13. Qe2 Re8 14. O-O Bg4 { Weiß am Zug. Bewertung +5,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 15. Qxe5+ ( 15. Qe4 $2 { Rot: In der Partie geschah 15.De4? und die Chance war weg. } ) 15... Kf7 16. Qf4+ Kg8 17. Qxg4 Qxd5 { Material gewonnen. Lösung: 15.Dxe5+ Kf7 16.Df4+ Kg8 17.Dxg4 Dxd5 (Bewertung +5,9). } 1-0
 
 [Event "Weiß am Zug · Zug 8 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.21"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "rn1qkb1r/pp2p2p/3pB1p1/2p5/4n3/2P5/PP1P1PPP/RNBQK2R w KQkq - 0 8"]
+[FEN "rnbqkb1r/pp2pp1p/3p1np1/2p5/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq - 1 5"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 8. Qa4+ Nc6 9. Qxe4 Bh6 { Material gewonnen. Lösung: 8.Da4+ Sc6 9.Dxe4 Lh6 (Bewertung +5,5). In der Partie geschah 8.Df3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 5. Ng5 Be6 6. Nxe6 fxe6 7. Bxe6 Nxe4 { Weiß am Zug. Bewertung +5,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 8. Qa4+ ( 8. Qf3 $2 { Rot: In der Partie geschah 8.Df3? und die Chance war weg. } ) 8... Nc6 9. Qxe4 Bh6 { Material gewonnen. Lösung: 8.Da4+ Sc6 9.Dxe4 Lh6 (Bewertung +5,5). } 1-0
 
 [Event "Weiß am Zug · Zug 20 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.09.20"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1b4r/p1qp1kb1/1p3p2/2p1pN1p/P1P1P1n1/1NPQ2B1/1P3PP1/R4RK1 w - - 2 20"]
+[FEN "r1b1k2r/p1qp2bp/1p3p1n/2p1p3/P1P1P1p1/1NPQ1NBP/1P3PP1/R4RK1 w kq - 0 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 20. Qd5+ Kg6 21. Ne7+ Kh7 22. Qxa8 d5 { Material gewonnen. Lösung: 20.Dd5+ Kg6 21.Se7+ Kh7 22.Dxa8 d5 (Bewertung +5,3). In der Partie geschah 20.Sxg7? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17. hxg4 Nxg4 18. Nh4 h5 19. Nf5 Kf7 { Weiß am Zug. Bewertung +5,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 20. Qd5+ ( 20. Nxg7 $2 { Rot: In der Partie geschah 20.Sxg7? und die Chance war weg. } ) 20... Kg6 21. Ne7+ Kh7 22. Qxa8 d5 { Material gewonnen. Lösung: 20.Dd5+ Kg6 21.Se7+ Kh7 22.Dxa8 d5 (Bewertung +5,3). } 0-1
 
 [Event "Weiß am Zug · Zug 12 · Gewinn in 4 Zügen"]
+[Site "?"]
 [Date "2026.09.20"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3kbnr/ppp2pp1/1n2pq1p/4Nb2/5P2/2NP2P1/PP2P1BP/R1BQ1RK1 w kq - 3 12"]
+[FEN "r2qkbnr/ppp2pp1/4p2p/3n1b2/3pNP2/3P1NP1/PPP1P1BP/R1BQ1RK1 w kq - 2 9"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 12. Bxb7 Rb8 13. Bc6+ Kd8 14. Bb5 a6 15. Bxa6 Nd7 { Material gewonnen. Lösung: 12.Lxb7 Tb8 13.Lc6+ Kd8 14.Lb5 a6 15.Lxa6 Sd7 (Bewertung +5,8). In der Partie geschah 12.e4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 9. c3 dxc3 10. Nxc3 Nb6 11. Ne5 Qf6 { Weiß am Zug. Bewertung +5,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 12. Bxb7 ( 12. e4 $2 { Rot: In der Partie geschah 12.e4? und die Chance war weg. } ) 12... Rb8 13. Bc6+ Kd8 14. Bb5 a6 15. Bxa6 Nd7 { Material gewonnen. Lösung: 12.Lxb7 Tb8 13.Lc6+ Kd8 14.Lb5 a6 15.Lxa6 Sd7 (Bewertung +5,8). } 1-0
 
 [Event "Schwarz am Zug · Zug 23 · Matt in 3"]
+[Site "?"]
 [Date "2026.09.20"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2k4r/pp3pQ1/2p1p2p/8/P7/1B3P1P/1q1r2P1/R3R1K1 b - - 0 23"]
+[FEN "2kr3r/pp3ppp/2p1p3/4q3/8/PB2QP1P/1P4P1/R3R1K1 b - - 0 20"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 3 Zügen mattsetzen. Rechne die ganze Folge! } 23... Qxg7 24. g4 Qd4+ 25. Kh1 Qf2 26. Bxe6+ { Matt! Lösung: 23…Dxg7 24.g4 Dd4+ 25.Kh1 Df2 26.Lxe6+. In der Partie geschah 23…Th7? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 20... Qxb2 21. a4 Rd2 22. Qg5 h6 23. Qxg7 { Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 3 Zügen mattsetzen. Rechne die ganze Folge! } 23... Qxg7 ( 23... Rh7 $2 { Rot: In der Partie geschah 23…Th7? und die Chance war weg. } ) 24. g4 Qd4+ 25. Kh1 Qf2 26. Bxe6+ { Matt! Lösung: 23…Dxg7 24.g4 Dd4+ 25.Kh1 Df2 26.Lxe6+. } 1-0
 
 [Event "Schwarz am Zug · Zug 18 · Matt in 2"]
+[Site "?"]
 [Date "2026.09.19"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5rk1/1r2n1pp/p2q1p2/2p5/Q1P1p3/B3P3/P1N2PPP/4K1NR b K - 1 18"]
+[FEN "3q1rk1/rP2n1pp/p2b1p2/2p5/2P1p3/1Q2P3/PBN2PPP/3RK1NR b K - 1 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 18... Rb1+ 19. Bc1 Rxc1+ { Matt! Lösung: 18…Tb1+ 19.Lc1 Txc1+. In der Partie geschah 18…Td8? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15... Qc7 16. Rxd6 Rxb7 17. Qa4 Qxd6 18. Ba3 { Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 18... Rb1+ ( 18... Rd8 $2 { Rot: In der Partie geschah 18…Td8? und die Chance war weg. } ) 19. Bc1 Rxc1+ { Matt! Lösung: 18…Tb1+ 19.Lc1 Txc1+. } 0-1
 
 [Event "Weiß am Zug · Zug 26 · Gewinn in 4 Zügen"]
+[Site "?"]
 [Date "2026.09.19"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1bk3B/ppq4p/6p1/2bPn3/8/1P2R1P1/P4Q1P/RN4K1 w - - 2 26"]
+[FEN "r1b1k2r/ppqnb2p/6p1/2Pp4/2P5/1P4P1/PB3Q1P/RN2R1K1 w kq - 1 23"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +6,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 26. Bf6+ Kd7 27. Bxe5 Qxe5 28. Rxe5 Bxf2+ 29. Kxf2 Kd6 { Material gewonnen. Lösung: 26.Lf6+ Kd7 27.Lxe5 Dxe5 28.Txe5 Lxf2+ 29.Kxf2 Kd6 (Bewertung +6,1). Auch gut war Lxe5. In der Partie geschah 26.Df8+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 23. Bxh8 Kd8 24. cxd5 Bxc5 25. Re3 Ne5 { Weiß am Zug. Bewertung +6,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 26. Bf6+ ( 26. Qf8+ $2 { Rot: In der Partie geschah 26.Df8+? und die Chance war weg. } ) 26... Kd7 27. Bxe5 Qxe5 28. Rxe5 Bxf2+ 29. Kxf2 Kd6 { Material gewonnen. Lösung: 26.Lf6+ Kd7 27.Lxe5 Dxe5 28.Txe5 Lxf2+ 29.Kxf2 Kd6 (Bewertung +6,1). Auch gut war Lxe5. } 1-0
 
 [Event "Schwarz am Zug · Zug 23 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.09.19"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/p2nQ2p/bpp2pp1/3p4/N1PP3q/1P3P2/P5P1/4RRK1 b - - 0 23"]
+[FEN "r1b2rk1/pp1nQ2p/2p2pp1/3p3q/3P3B/2N2P2/PPP3P1/4RRK1 b - - 1 20"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +6,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 23... Qxd4+ 24. Qe3 Qxe3+ 25. Rxe3 dxc4 26. Re7 { Material gewonnen. Lösung: 23…Dxd4+ 24.De3 Dxe3+ 25.Txe3 dxc4 26.Te7 (Bewertung +6,2). In der Partie geschah 23…dxc4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 20... Qxh4 21. Na4 b6 22. c4 Ba6 23. b3 { Schwarz am Zug. Bewertung +6,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 23... Qxd4+ ( 23... dxc4 $2 { Rot: In der Partie geschah 23…dxc4? und die Chance war weg. } ) 24. Qe3 Qxe3+ 25. Rxe3 dxc4 26. Re7 { Material gewonnen. Lösung: 23…Dxd4+ 24.De3 Dxe3+ 25.Txe3 dxc4 26.Te7 (Bewertung +6,2). } 1-0
 
 [Event "Schwarz am Zug · Zug 24 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.19"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/p2nQ2p/bpp2pp1/8/N1PP3q/5P2/P5P1/4RRK1 b - - 0 24"]
+[FEN "r1b2rk1/pp1nQ2p/2p2pp1/3p4/N2P3q/5P2/PPP3P1/4RRK1 b - - 1 21"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +6,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 24... Qxd4+ 25. Qe3 Qxc4 26. Rd1 { Material gewonnen. Lösung: 24…Dxd4+ 25.De3 Dxc4 26.Td1 (Bewertung +6,5). In der Partie geschah 24…Lxc4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 21... b6 22. c4 Ba6 23. b3 dxc4 24. bxc4 { Schwarz am Zug. Bewertung +6,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 24... Qxd4+ ( 24... Bxc4 $2 { Rot: In der Partie geschah 24…Lxc4? und die Chance war weg. } ) 25. Qe3 Qxc4 26. Rd1 { Material gewonnen. Lösung: 24…Dxd4+ 25.De3 Dxc4 26.Td1 (Bewertung +6,5). } 1-0
 
 [Event "Schwarz am Zug · Zug 31 · Gewinn in 4 Zügen"]
+[Site "?"]
 [Date "2026.09.17"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "8/p4rkp/4q1p1/1p6/1P6/P3Q3/2P1KP2/R7 b - - 3 31"]
+[FEN "8/p4rkp/3Q2p1/1pp3q1/1P6/P6P/2P2P2/R4K2 b - - 0 28"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +4,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 31... Qf6 32. Rg1 Re7 33. Rxg6+ hxg6 34. Qxe7+ Qxe7+ 35. Kd3 { Material gewonnen. Lösung: 31…Df6 32.Tg1 Te7 33.Txg6+ hxg6 34.Dxe7+ Dxe7+ 35.Kd3 (Bewertung +4,7). In der Partie geschah 31…Dc4+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 28... Qf5 29. Qxc5 Qxh3+ 30. Ke2 Qe6+ 31. Qe3 { Schwarz am Zug. Bewertung +4,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 31... Qf6 ( 31... Qc4+ $2 { Rot: In der Partie geschah 31…Dc4+? und die Chance war weg. } ) 32. Rg1 Re7 33. Rxg6+ hxg6 34. Qxe7+ Qxe7+ 35. Kd3 { Material gewonnen. Lösung: 31…Df6 32.Tg1 Te7 33.Txg6+ hxg6 34.Dxe7+ Dxe7+ 35.Kd3 (Bewertung +4,7). } 0-1
 
 [Event "Weiß am Zug · Zug 5 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.16"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bq2nr/pppp1kpp/2n5/2b5/4P3/8/PPPP1PPP/RNBQKB1R w KQ - 0 5"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +3,4, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 5. Qh5+ g6 6. Qxc5 Nf6 { Material gewonnen. Lösung: 5.Dh5+ g6 6.Dxc5 Sf6 (Bewertung +3,4). In der Partie geschah 5.Df3+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 2. Nf3 Bc5 3. Nxe5 Nc6 4. Nxf7 Kxf7 { Weiß am Zug. Bewertung +3,4, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 5. Qh5+ ( 5. Qf3+ $2 { Rot: In der Partie geschah 5.Df3+? und die Chance war weg. } ) 5... g6 6. Qxc5 Nf6 { Material gewonnen. Lösung: 5.Dh5+ g6 6.Dxc5 Sf6 (Bewertung +3,4). } 0-1
 
 [Event "Weiß am Zug · Zug 9 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.14"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qk2r/ppp2pp1/2nb1n1p/3p1b2/3P1B2/3BPN2/PP3PPP/RN1Q1RK1 w kq - 0 9"]
+[FEN "r2qkb1r/ppp2ppp/2n1pn2/3p1b2/3P1B2/3BPN2/PPP2PPP/RN1QK2R w KQkq - 0 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 9. Bxf5 Bxf4 10. exf4 Qd6 { Material gewonnen. Lösung: 9.Lxf5 Lxf4 10.exf4 Dd6 (Bewertung +5,5). In der Partie geschah 9.Se5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6. O-O Bd6 7. c4 h6 8. cxd5 exd5 { Weiß am Zug. Bewertung +5,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 9. Bxf5 ( 9. Ne5 $2 { Rot: In der Partie geschah 9.Se5? und die Chance war weg. } ) 9... Bxf4 10. exf4 Qd6 { Material gewonnen. Lösung: 9.Lxf5 Lxf4 10.exf4 Dd6 (Bewertung +5,5). } 1-0
 
 [Event "Weiß am Zug · Zug 8 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.13"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bqk1nr/2pp2pp/p1p2p2/2b5/3NP3/8/PPP2PPP/RNBQ1RK1 w kq - 1 8"]
+[FEN "r1bqkbnr/1ppp2pp/p1n2p2/1B2p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 5"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 8. Qh5+ Kf8 9. Qxc5+ Qe7 { Material gewonnen. Lösung: 8.Dh5+ Kf8 9.Dxc5+ De7 (Bewertung +5,6). In der Partie geschah 8.Le3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 5. Bxc6 bxc6 6. d4 exd4 7. Nxd4 Bc5 { Weiß am Zug. Bewertung +5,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 8. Qh5+ ( 8. Be3 $2 { Rot: In der Partie geschah 8.Le3? und die Chance war weg. } ) 8... Kf8 9. Qxc5+ Qe7 { Material gewonnen. Lösung: 8.Dh5+ Kf8 9.Dxc5+ De7 (Bewertung +5,6). } 0-1
 
 [Event "Weiß am Zug · Zug 26 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.13"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5rk1/2p3pp/p1p3b1/2N5/3r1P2/3p1R2/PP1R2PP/6K1 w - - 4 26"]
+[FEN "r4rk1/2p3pp/p1p3b1/8/3pNP2/8/PP3RPP/5RK1 w - - 0 23"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +3,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 26. Ne6 Rc4 27. Nxf8 Be4 { Material gewonnen. Lösung: 26.Se6 Tc4 27.Sxf8 Le4 (Bewertung +3,8). In der Partie geschah 26.Sxd3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 23. Nc5 d3 24. Rd2 Rad8 25. Rf3 Rd4 { Weiß am Zug. Bewertung +3,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 26. Ne6 ( 26. Nxd3 $2 { Rot: In der Partie geschah 26.Sxd3? und die Chance war weg. } ) 26... Rc4 27. Nxf8 Be4 { Material gewonnen. Lösung: 26.Se6 Tc4 27.Sxf8 Le4 (Bewertung +3,8). } 0-1
 
 [Event "Weiß am Zug · Zug 29 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.11"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r3k3/p4pp1/3p1r2/2p1p1q1/1pP1P1Pp/1P1PB2n/1P4P1/R1Q2RK1 w q - 0 29"]
+[FEN "r3k2r/p4pp1/3p4/2p1p1q1/1pP1PnPp/1P1P3P/1P3BP1/R2QR1K1 w kq - 1 26"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +3,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 29. gxh3 Rxf1+ 30. Kxf1 Qd8 { Material gewonnen. Lösung: 29.gxh3 Txf1+ 30.Kxf1 Dd8 (Bewertung +3,9). In der Partie geschah 29.Kh2? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 26. Qc1 Rh6 27. Be3 Rf6 28. Rf1 Nxh3+ { Weiß am Zug. Bewertung +3,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 29. gxh3 ( 29. Kh2 $2 { Rot: In der Partie geschah 29.Kh2? und die Chance war weg. } ) 29... Rxf1+ 30. Kxf1 Qd8 { Material gewonnen. Lösung: 29.gxh3 Txf1+ 30.Kxf1 Dd8 (Bewertung +3,9). } 0-1
 
 [Event "Schwarz am Zug · Zug 4 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.09"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rn1qkbnr/pbpp1ppp/1p2p3/4P3/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq - 2 4"]
+[FEN "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +4,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 4... Bxg2 5. Qg4 Bxh1 6. f3 { Material gewonnen. Lösung: 4…Lxg2 5.Dg4 Lxh1 6.f3 (Bewertung +4,5). In der Partie geschah 4…d6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 1... b6 2. d4 e6 3. e5 Bb7 4. Bd3 { Schwarz am Zug. Bewertung +4,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 4... Bxg2 ( 4... d6 $2 { Rot: In der Partie geschah 4…d6? und die Chance war weg. } ) 5. Qg4 Bxh1 6. f3 { Material gewonnen. Lösung: 4…Lxg2 5.Dg4 Lxh1 6.f3 (Bewertung +4,5). } 0-1
 
 [Event "Weiß am Zug · Zug 12 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.09"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "rn3rk1/p2pqpb1/1p1Pp1pp/2p1P3/2B5/2P2b2/PP3PPP/RN1Q1RK1 w - - 0 12"]
+[FEN "rn1q1rk1/pb1pnpbp/1p2p1p1/2p1P1B1/2BP4/2P2N2/PP3PPP/RN1Q1RK1 w - - 0 9"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +4,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 12. dxe7 Bxd1 13. exf8=Q+ Kxf8 { Material gewonnen. Lösung: 12.dxe7 Lxd1 13.exf8=D+ Kxf8 (Bewertung +4,2). In der Partie geschah 12.Dxf3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 9. d5 h6 10. Bxe7 Qxe7 11. d6 Bxf3 { Weiß am Zug. Bewertung +4,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 12. dxe7 ( 12. Qxf3 $2 { Rot: In der Partie geschah 12.Dxf3? und die Chance war weg. } ) 12... Bxd1 13. exf8=Q+ Kxf8 { Material gewonnen. Lösung: 12.dxe7 Lxd1 13.exf8=D+ Kxf8 (Bewertung +4,2). } 1-0
 
 [Event "Schwarz am Zug · Zug 20 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.09"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2rqr1k1/p4pbp/3p2p1/6N1/3P4/1Qn5/PB3PPP/R4RK1 b - - 0 20"]
+[FEN "r2qr1k1/p3ppbp/3p2p1/6N1/3P4/B1n1P3/P1Q2PPP/R4RK1 b - - 3 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +5,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 20... Ne2+ 21. Kh1 Qxg5 22. Rae1 { Material gewonnen. Lösung: 20…Se2+ 21.Kh1 Dxg5 22.Tae1 (Bewertung +5,6). In der Partie geschah 20…Lxd4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17... Rc8 18. Qb3 e5 19. Bb2 exd4 20. exd4 { Schwarz am Zug. Bewertung +5,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 20... Ne2+ ( 20... Bxd4 $2 { Rot: In der Partie geschah 20…Lxd4? und die Chance war weg. } ) 21. Kh1 Qxg5 22. Rae1 { Material gewonnen. Lösung: 20…Se2+ 21.Kh1 Dxg5 22.Tae1 (Bewertung +5,6). } 1-0
 
 [Event "Weiß am Zug · Zug 8 · Gewinn in 4 Zügen"]
+[Site "?"]
 [Date "2026.09.08"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "r1bqkbnr/p2n3p/2pp1p2/1p2p1p1/3PP3/1BP2N2/PP3PPP/RNBQ1RK1 w kq - 1 8"]
+[FEN "rnbqkbnr/pp4pp/2pp1p2/4p3/2B1P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 5"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +6,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 8. Nxg5 Nb6 9. Nf7 Qd7 10. Qh5 Qg4 11. Nxd6+ Kd8 { Material gewonnen. Lösung: 8.Sxg5 Sb6 9.Sf7 Dd7 10.Dh5 Dg4 11.Sxd6+ Kd8 (Bewertung +6,3). In der Partie geschah 8.d5? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 5. c3 b5 6. Bb3 g5 7. d4 Nd7 { Weiß am Zug. Bewertung +6,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 8. Nxg5 ( 8. d5 $2 { Rot: In der Partie geschah 8.d5? und die Chance war weg. } ) 8... Nb6 9. Nf7 Qd7 10. Qh5 Qg4 11. Nxd6+ Kd8 { Material gewonnen. Lösung: 8.Sxg5 Sb6 9.Sf7 Dd7 10.Dh5 Dg4 11.Sxd6+ Kd8 (Bewertung +6,3). } 1/2-1/2
 
 [Event "Weiß am Zug · Zug 15 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.09.08"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2q1rk1/1pp2pp1/p1npb1Np/4p3/8/1BPPP3/PP1Q2PP/R4RK1 w - - 1 15"]
+[FEN "r1bq1rk1/1pp2pp1/p1np1n1p/4p3/4P3/1BPPPN2/PP1N2PP/R2Q1RK1 w - - 3 12"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +4,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 15. Bxe6 fxe6 16. Rxf8+ Qxf8 17. Nxf8 Rxf8 { Material gewonnen. Lösung: 15.Lxe6 fxe6 16.Txf8+ Dxf8 17.Sxf8 Txf8 (Bewertung +4,6). In der Partie geschah 15.Sxf8? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12. Nh4 Nxe4 13. Ng6 Nxd2 14. Qxd2 Be6 { Weiß am Zug. Bewertung +4,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 15. Bxe6 ( 15. Nxf8 $2 { Rot: In der Partie geschah 15.Sxf8? und die Chance war weg. } ) 15... fxe6 16. Rxf8+ Qxf8 17. Nxf8 Rxf8 { Material gewonnen. Lösung: 15.Lxe6 fxe6 16.Txf8+ Dxf8 17.Sxf8 Txf8 (Bewertung +4,6). } 0-1
 
 [Event "Weiß am Zug · Zug 19 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.09.08"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r4rn1/pp1qnppk/3p3p/4pN2/4P3/2P2N1Q/PP3PPP/2R1R1K1 w - - 1 19"]
+[FEN "r4rn1/pp1qbppk/2np3p/4pN2/4P3/2P4Q/PP3PPP/RNB1R1K1 w - - 6 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 19. Ng5+ Kh8 20. Nxh6 gxh6 21. Qxd7 hxg5 { Material gewonnen. Lösung: 19.Sg5+ Kh8 20.Sxh6 gxh6 21.Dxd7 hxg5 (Bewertung +5,3). In der Partie geschah 19.Tcd1? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Nd2 Bg5 17. Nf3 Bxc1 18. Raxc1 Nce7 { Weiß am Zug. Bewertung +5,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 19. Ng5+ ( 19. Rcd1 $2 { Rot: In der Partie geschah 19.Tcd1? und die Chance war weg. } ) 19... Kh8 20. Nxh6 gxh6 21. Qxd7 hxg5 { Material gewonnen. Lösung: 19.Sg5+ Kh8 20.Sxh6 gxh6 21.Dxd7 hxg5 (Bewertung +5,3). } 0-1
 
 [Event "Schwarz am Zug · Zug 24 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.08"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "3r3k/2p4p/1p4p1/p2N4/3R4/P1n2P2/2P3PP/6K1 b - - 0 24"]
+[FEN "5r1k/2p4p/1p2n1p1/p2N4/4n3/2P1BP2/P1P3PP/3R2K1 b - - 0 21"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +6,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 24... Ne2+ 25. Kf1 Nxd4 26. Nxc7 { Material gewonnen. Lösung: 24…Se2+ 25.Kf1 Sxd4 26.Sxc7 (Bewertung +6,1). In der Partie geschah 24…Txd5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 21... Rd8 22. Bd4+ Nxd4 23. Rxd4 Nxc3 24. a3 { Schwarz am Zug. Bewertung +6,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 24... Ne2+ ( 24... Rxd5 $2 { Rot: In der Partie geschah 24…Txd5? und die Chance war weg. } ) 25. Kf1 Nxd4 26. Nxc7 { Material gewonnen. Lösung: 24…Se2+ 25.Kf1 Sxd4 26.Sxc7 (Bewertung +6,1). } 0-1
 
 [Event "Weiß am Zug · Zug 8 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.09.07"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "rn2kb1r/pp3ppp/2p5/3pNb2/B3n2q/8/PPPPQPPP/RNB1K2R w KQkq - 1 8"]
+[FEN "rnbqkb1r/ppp2ppp/8/3pp3/2B1n3/5N2/PPPPQPPP/RNB1K2R w KQkq - 0 5"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +2,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 8. d3 Nd7 9. Nf3 Qg4 10. dxe4 Bxe4 { Material gewonnen. Lösung: 8.d3 Sd7 9.Sf3 Dg4 10.dxe4 Lxe4 (Bewertung +2,1). In der Partie geschah 8.Sf3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 5. Bb5+ c6 6. Ba4 Bf5 7. Nxe5 Qh4 { Weiß am Zug. Bewertung +2,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 8. d3 ( 8. Nf3 $2 { Rot: In der Partie geschah 8.Sf3? und die Chance war weg. } ) 8... Nd7 9. Nf3 Qg4 10. dxe4 Bxe4 { Material gewonnen. Lösung: 8.d3 Sd7 9.Sf3 Dg4 10.dxe4 Lxe4 (Bewertung +2,1). } 1-0
 
 [Event "Weiß am Zug · Zug 25 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.07"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r5k1/1p1n1p1p/2p3pB/p7/4P3/1P4Q1/3qp1PP/5RK1 w - - 0 25"]
+[FEN "r3r1k1/1p1n1p1p/2p3pB/p7/8/1P2pPQ1/q2N2PP/1N3RK1 w - - 0 22"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +4,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 25. Bxd2 exf1=Q+ 26. Kxf1 a4 { Material gewonnen. Lösung: 25.Lxd2 exf1=D+ 26.Kxf1 a4 (Bewertung +4,8). In der Partie geschah 25.De1? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 22. Nc3 Qxd2 23. Ne4 Rxe4 24. fxe4 e2 { Weiß am Zug. Bewertung +4,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 25. Bxd2 ( 25. Qe1 $2 { Rot: In der Partie geschah 25.De1? und die Chance war weg. } ) 25... exf1=Q+ 26. Kxf1 a4 { Material gewonnen. Lösung: 25.Lxd2 exf1=D+ 26.Kxf1 a4 (Bewertung +4,8). } 1-0
 
 [Event "Weiß am Zug · Zug 20 · Matt in 2"]
+[Site "?"]
 [Date "2026.09.07"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/pppq1pp1/3p3p/4n2Q/4Pp2/3P1P1R/PPP2K2/6R1 w - - 2 20"]
+[FEN "r4rk1/pppq1ppp/3p4/4n2Q/2B1Pp2/3P1P1b/PPP2K2/R3R3 w - - 3 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 20. Rxg7+ Kxg7 21. Qxh6+ { Matt! Lösung: 20.Txg7+ Kxg7 21.Dxh6+. In der Partie geschah 20.Dxh6? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17. Rh1 Nxc4 18. Rxh3 h6 19. Rg1 Ne5 { Weiß am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 20. Rxg7+ ( 20. Qxh6 $2 { Rot: In der Partie geschah 20.Dxh6? und die Chance war weg. } ) 20... Kxg7 21. Qxh6+ { Matt! Lösung: 20.Txg7+ Kxg7 21.Dxh6+. } 1-0
 
 [Event "Schwarz am Zug · Zug 28 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.06"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r4rk1/pp4b1/2pp2p1/4p2p/4P1n1/2PB2N1/PP3NK1/5R1R b - - 1 28"]
+[FEN "r3r1k1/pp3pb1/2ppp1P1/7p/4P1n1/3B2N1/PPP3K1/3N2RR b - - 0 25"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +3,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 28... Ne3+ 29. Kh3 Nxf1 30. Rxf1 { Material gewonnen. Lösung: 28…Se3+ 29.Kh3 Sxf1 30.Txf1 (Bewertung +3,1). In der Partie geschah 28…Sxf2? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 25... fxg6 26. c3 Rf8 27. Rf1 e5 28. Nf2 { Schwarz am Zug. Bewertung +3,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 28... Ne3+ ( 28... Nxf2 $2 { Rot: In der Partie geschah 28…Sxf2? und die Chance war weg. } ) 29. Kh3 Nxf1 30. Rxf1 { Material gewonnen. Lösung: 28…Se3+ 29.Kh3 Sxf1 30.Txf1 (Bewertung +3,1). } 0-1
 
 [Event "Weiß am Zug · Zug 10 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.09.04"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rnbq1rk1/p1pp1ppp/1p6/5N2/2B1n3/2P5/P1P2PPP/R1BQ1RK1 w - - 0 10"]
+[FEN "rnbq1rk1/p1pp1ppp/1p1b1n2/8/2BpP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 7"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 10. Qg4 Qf6 11. Nh6+ Kh8 12. Qxe4 Nc6 { Material gewonnen. Lösung: 10.Dg4 Df6 11.Sh6+ Kh8 12.Dxe4 Sc6 (Bewertung +5,1). In der Partie geschah 10.Dd5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 7. Nxd4 Be5 8. Nf5 Bxc3 9. bxc3 Nxe4 { Weiß am Zug. Bewertung +5,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 10. Qg4 ( 10. Qd5 $2 { Rot: In der Partie geschah 10.Dd5? und die Chance war weg. } ) 10... Qf6 11. Nh6+ Kh8 12. Qxe4 Nc6 { Material gewonnen. Lösung: 10.Dg4 Df6 11.Sh6+ Kh8 12.Dxe4 Sc6 (Bewertung +5,1). } 0-1
 
 [Event "Weiß am Zug · Zug 18 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.04"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "2b2rk1/2Q2ppp/1pp5/5N2/8/8/P1q1nPPP/R4R1K w - - 0 18"]
+[FEN "2b2rk1/Q1p2ppp/1pp5/4qN2/8/2n5/P1P2PPP/R1B2RK1 w - - 1 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 18. Ne7+ Kh8 19. Nxc8 h5 { Material gewonnen. Lösung: 18.Se7+ Kh8 19.Sxc8 h5 (Bewertung +5,7). In der Partie geschah 18.Dxb6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15. Bb2 Ne2+ 16. Kh1 Qxb2 17. Qxc7 Qxc2 { Weiß am Zug. Bewertung +5,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 18. Ne7+ ( 18. Qxb6 $2 { Rot: In der Partie geschah 18.Dxb6? und die Chance war weg. } ) 18... Kh8 19. Nxc8 h5 { Material gewonnen. Lösung: 18.Se7+ Kh8 19.Sxc8 h5 (Bewertung +5,7). } 0-1
 
 [Event "Weiß am Zug · Zug 11 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.04"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2qkb1r/pp1bnp1p/4p1p1/1B1pn1B1/Q2N4/2N5/PPP2PPP/R3K2R w KQkq - 0 11"]
+[FEN "r2qkbnr/pp1b1p1p/2npp1p1/1B6/Q3P3/2N2N2/PPP2PPP/R1B1K2R w KQkq - 0 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +4,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 11. Bf6 N5c6 12. Bxh8 a6 { Material gewonnen. Lösung: 11.Lf6 S5c6 12.Lxh8 a6 (Bewertung +4,2). In der Partie geschah 11.O-O? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8. e5 d5 9. Bg5 Nge7 10. Nd4 Nxe5 { Weiß am Zug. Bewertung +4,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 11. Bf6 ( 11. O-O $2 { Rot: In der Partie geschah 11.O-O? und die Chance war weg. } ) 11... N5c6 12. Bxh8 a6 { Material gewonnen. Lösung: 11.Lf6 S5c6 12.Lxh8 a6 (Bewertung +4,2). } 0-1
 
 [Event "Schwarz am Zug · Zug 26 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.03"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3kb2/pQ6/3p4/2p5/7P/5qP1/PPP2P2/2KR4 b q - 0 26"]
+[FEN "r3kb2/pp5Q/3p4/2p5/6bP/5qP1/PPPRBP2/2K4R b q - 4 23"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +8,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 26... Bh6+ 27. Rd2 Qxb7 28. f4 { Material gewonnen. Lösung: 26…Lh6+ 27.Td2 Dxb7 28.f4 (Bewertung +8,2). In der Partie geschah 26…Td8? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 23... Qxh1+ 24. Bd1 Bxd1 25. Rxd1 Qf3 26. Qxb7 { Schwarz am Zug. Bewertung +8,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 26... Bh6+ ( 26... Rd8 $2 { Rot: In der Partie geschah 26…Td8? und die Chance war weg. } ) 27. Rd2 Qxb7 28. f4 { Material gewonnen. Lösung: 26…Lh6+ 27.Td2 Dxb7 28.f4 (Bewertung +8,2). } 1-0
 
 [Event "Schwarz am Zug · Zug 18 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.03"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2kr1n1r/pp2qpp1/2p1b2p/4p2P/1b2Q1PB/2N4B/PPP1NP2/R3K2R b KQ - 0 18"]
+[FEN "2kr1n1r/pp2qpp1/2ppbn1p/4p2P/1b2P1PB/2NP1Q2/PPP1NP2/R3KB1R b KQ - 0 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +2,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 18... Bxc3+ 19. bxc3 Qxh4 20. Rb1 { Material gewonnen. Lösung: 18…Lxc3+ 19.bxc3 Dxh4 20.Tb1 (Bewertung +2,3). In der Partie geschah 18…f6? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15... d5 16. Bh3 dxe4 17. dxe4 Nxe4 18. Qxe4 { Schwarz am Zug. Bewertung +2,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 18... Bxc3+ ( 18... f6 $2 { Rot: In der Partie geschah 18…f6? und die Chance war weg. } ) 19. bxc3 Qxh4 20. Rb1 { Material gewonnen. Lösung: 18…Lxc3+ 19.bxc3 Dxh4 20.Tb1 (Bewertung +2,3). } 1-0
 
 [Event "Weiß am Zug · Zug 14 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.09.02"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rn1q4/ppp2kpp/4rnb1/3N2B1/2Q1P1P1/5P2/PbP4P/R3KB1R w KQ - 0 14"]
+[FEN "rn1qr3/ppp2kpp/3b1nb1/6B1/4P1P1/5P2/PPP1Q2P/RN2KB1R w KQ - 1 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +2,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 14. Nxc7 Qe7 15. Rb1 Nc6 16. Nxe6 Ne5 { Material gewonnen. Lösung: 14.Sxc7 De7 15.Tb1 Sc6 16.Sxe6 Se5 (Bewertung +2,7). In der Partie geschah 14.Tb1? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11. Qc4+ Re6 12. Nc3 Be5 13. Nd5 Bxb2 { Weiß am Zug. Bewertung +2,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 14. Nxc7 ( 14. Rb1 $2 { Rot: In der Partie geschah 14.Tb1? und die Chance war weg. } ) 14... Qe7 15. Rb1 Nc6 16. Nxe6 Ne5 { Material gewonnen. Lösung: 14.Sxc7 De7 15.Tb1 Sc6 16.Sxe6 Se5 (Bewertung +2,7). } 0-1
 
 [Event "Weiß am Zug · Zug 16 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.02"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rn1q4/ppp2kpp/2r2nb1/3N2B1/4P1P1/2Q2P2/P1P4P/1R2KB1R w K - 1 16"]
+[FEN "rn1q4/ppp2kpp/4rnb1/4b1B1/2Q1P1P1/2N2P2/PPP4P/R3KB1R w KQ - 5 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +6,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 16. Qb3 Qd6 17. Nxf6+ Qe6 { Material gewonnen. Lösung: 16.Db3 Dd6 17.Sxf6+ De6 (Bewertung +6,3). In der Partie geschah 16.Lxf6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13. Nd5 Bxb2 14. Rb1 Bc3+ 15. Qxc3 Rc6 { Weiß am Zug. Bewertung +6,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 16. Qb3 ( 16. Bxf6 $2 { Rot: In der Partie geschah 16.Lxf6? und die Chance war weg. } ) 16... Qd6 17. Nxf6+ Qe6 { Material gewonnen. Lösung: 16.Db3 Dd6 17.Sxf6+ De6 (Bewertung +6,3). } 0-1
 
 [Event "Weiß am Zug · Zug 45 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.09.02"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "8/8/p7/7R/k3r2b/P7/1P4P1/1K6 w - - 6 45"]
+[FEN "8/1k6/p7/7R/4r2b/P7/1P4P1/1K6 w - - 0 42"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +3,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 45. Ka2 Re2 46. Rxh4+ Kb5 { Material gewonnen. Lösung: 45.Ka2 Te2 46.Txh4+ Kb5 (Bewertung +3,0). In der Partie geschah 45.Th6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 42. Rh7+ Kb6 43. Rh6+ Kb5 44. Rh5+ Ka4 { Weiß am Zug. Bewertung +3,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 45. Ka2 ( 45. Rh6 $2 { Rot: In der Partie geschah 45.Th6? und die Chance war weg. } ) 45... Re2 46. Rxh4+ Kb5 { Material gewonnen. Lösung: 45.Ka2 Te2 46.Txh4+ Kb5 (Bewertung +3,0). } 0-1
 
 [Event "Weiß am Zug · Zug 11 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.31"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3kb1r/pppqn1pp/5p2/4n3/3p2b1/4PNP1/PPPP1NBP/R1BQ1RK1 w kq - 0 11"]
+[FEN "r3kbnr/pppq2pp/2n1pp2/8/3pNPb1/5NP1/PPPPP1BP/R1BQ1RK1 w kq - 0 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 11. Nxe5 Bxd1 12. Nxd7 Bxc2 { Material gewonnen. Lösung: 11.Sxe5 Lxd1 12.Sxd7 Lxc2 (Bewertung +5,5). In der Partie geschah 11.Sxg4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8. Nf2 Nge7 9. e3 e5 10. fxe5 Nxe5 { Weiß am Zug. Bewertung +5,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 11. Nxe5 ( 11. Nxg4 $2 { Rot: In der Partie geschah 11.Sxg4? und die Chance war weg. } ) 11... Bxd1 12. Nxd7 Bxc2 { Material gewonnen. Lösung: 11.Sxe5 Lxd1 12.Sxd7 Lxc2 (Bewertung +5,5). } 1-0
 
 [Event "Weiß am Zug · Zug 13 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.08.30"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bq1rk1/p4ppp/3b1n2/1ppNp3/2Pn4/1P1P2P1/P2BNPBP/R2Q1RK1 w - - 0 13"]
+[FEN "r1bqk2r/pp3ppp/2nb1n2/2pNp3/8/3P2P1/PPPBNPBP/R2QK2R w KQkq - 4 10"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +5,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 13. Nxd4 cxd4 14. Nxf6+ Qxf6 15. Bxa8 Qg6 { Material gewonnen. Lösung: 13.Sxd4 cxd4 14.Sxf6+ Dxf6 15.Lxa8 Dg6 (Bewertung +5,1). Auch gut war Sxf6+. In der Partie geschah 13.f4? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 10. c4 O-O 11. O-O Nd4 12. b3 b5 { Weiß am Zug. Bewertung +5,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 13. Nxd4 ( 13. f4 $2 { Rot: In der Partie geschah 13.f4? und die Chance war weg. } ) 13... cxd4 14. Nxf6+ Qxf6 15. Bxa8 Qg6 { Material gewonnen. Lösung: 13.Sxd4 cxd4 14.Sxf6+ Dxf6 15.Lxa8 Dg6 (Bewertung +5,1). Auch gut war Sxf6+. } 0-1
 
 [Event "Weiß am Zug · Zug 14 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.08.30"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bq1rk1/p4ppp/3b1n2/2pNp3/2pn1P2/1P1P2P1/P2BN1BP/R2Q1RK1 w - - 0 14"]
+[FEN "r1bq1rk1/pp3ppp/2nb1n2/2pNp3/2P5/3P2P1/PP1BNPBP/R2QK2R w KQ - 1 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +3,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 14. Nxf6+ Qxf6 15. Nxd4 exd4 16. Bxa8 c3 { Material gewonnen. Lösung: 14.Sxf6+ Dxf6 15.Sxd4 exd4 16.Lxa8 c3 (Bewertung +3,0). Auch gut war Sxd4. In der Partie geschah 14.bxc4? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11. O-O Nd4 12. b3 b5 13. f4 bxc4 { Weiß am Zug. Bewertung +3,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 14. Nxf6+ ( 14. bxc4 $2 { Rot: In der Partie geschah 14.bxc4? und die Chance war weg. } ) 14... Qxf6 15. Nxd4 exd4 16. Bxa8 c3 { Material gewonnen. Lösung: 14.Sxf6+ Dxf6 15.Sxd4 exd4 16.Lxa8 c3 (Bewertung +3,0). Auch gut war Sxd4. } 0-1
 
 [Event "Weiß am Zug · Zug 28 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "4r1k1/p5pp/1q1P1p2/2p5/5Bb1/3P2P1/P5BP/Q5K1 w - - 1 25"]
+[Aufgabe "1"]
+[Kontext "6"]
+
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 25. d7 c4+ 26. Kf1 Be2+ 27. Ke1 Qb4+ { Weiß am Zug. Bewertung +3,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 28. Bd2 ( 28. Kf2 $2 { Rot: In der Partie geschah 28.Kf2? und die Chance war weg. } ) 28... Qe7 29. dxe8=Q+ Qxe8 { Material gewonnen. Lösung: 28.Ld2 De7 29.dxe8=D+ Dxe8 (Bewertung +3,9). } 0-1
+
+[Event "Weiß am Zug · Zug 29 · Gewinn in 2 Zügen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
+[White "Ich"]
+[Black "Gegner"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "4r1k1/p2P2pp/1q3p2/8/2p2Bb1/3P2P1/P5BP/Q5K1 w - - 0 26"]
+[Aufgabe "1"]
+[Kontext "6"]
+
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 26. Kf1 Be2+ 27. Ke1 Qb4+ 28. Kf2 Qc5+ { Weiß am Zug. Bewertung +5,4, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 29. d4 ( 29. Ke1 $2 { Rot: In der Partie geschah 29.Ke1? und die Chance war weg. } ) 29... Qf8 30. dxe8=Q Qxe8 { Material gewonnen. Lösung: 29.d4 Df8 30.dxe8=D Dxe8 (Bewertung +5,4). } 0-1
+
+[Event "Weiß am Zug · Zug 31 · Gewinn in 2 Zügen"]
+[Site "?"]
+[Date "2026.08.30"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
 [FEN "4r1k1/p2P2pp/5p2/8/1qp2B2/3P2P1/P3b1BP/Q3K3 w - - 4 28"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +3,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 28. Bd2 Qe7 29. dxe8=Q+ Qxe8 { Material gewonnen. Lösung: 28.Ld2 De7 29.dxe8=D+ Dxe8 (Bewertung +3,9). In der Partie geschah 28.Kf2? und die Chance war weg. } 0-1
-
-[Event "Weiß am Zug · Zug 29 · Gewinn in 2 Zügen"]
-[Date "2026.08.30"]
-[White "Ich"]
-[Black "Gegner"]
-[Result "0-1"]
-[SetUp "1"]
-[FEN "4r1k1/p2P2pp/5p2/2q5/2p2B2/3P2P1/P3bKBP/Q7 w - - 6 29"]
-[Aufgabe "1"]
-
-{ Weiß am Zug. Bewertung +5,4, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 29. d4 Qf8 30. dxe8=Q Qxe8 { Material gewonnen. Lösung: 29.d4 Df8 30.dxe8=D Dxe8 (Bewertung +5,4). In der Partie geschah 29.Ke1? und die Chance war weg. } 0-1
-
-[Event "Weiß am Zug · Zug 31 · Gewinn in 2 Zügen"]
-[Date "2026.08.30"]
-[White "Ich"]
-[Black "Gegner"]
-[Result "0-1"]
-[SetUp "1"]
-[FEN "4r1k1/p2P2pp/5p2/2q5/2p2B2/3P2P1/P3bKBP/Q7 w - - 10 31"]
-[Aufgabe "1"]
-
-{ Weiß am Zug. Bewertung +5,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 31. d4 Qf8 32. dxe8=R Qxe8 { Material gewonnen. Lösung: 31.d4 Df8 32.dxe8=T Dxe8 (Bewertung +5,5). In der Partie geschah 31.Ke1? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 28. Kf2 Qc5+ 29. Ke1 Qb4+ 30. Kf2 Qc5+ { Weiß am Zug. Bewertung +5,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 31. d4 ( 31. Ke1 $2 { Rot: In der Partie geschah 31.Ke1? und die Chance war weg. } ) 31... Qf8 32. dxe8=R Qxe8 { Material gewonnen. Lösung: 31.d4 Df8 32.dxe8=T Dxe8 (Bewertung +5,5). } 0-1
 
 [Event "Weiß am Zug · Zug 18 · Matt in 2"]
+[Site "?"]
 [Date "2026.08.30"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2kr3/pp2n1bp/1npBBp2/3p4/3P4/2N1Q2P/P1q2PP1/R4RK1 w - - 3 18"]
+[FEN "r2k2nr/pp1n2bp/2pBpp2/3p3B/3P4/2N2Q1P/P1q2PP1/R4RK1 w - - 0 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 18. Bc7+ Kxc7 19. Qf4+ Kd8 { Matt! Lösung: 18.Lc7+ Kxc7 19.Df4+ Kd8. In der Partie geschah 18.Lf7? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15. Bf7 Ne7 16. Bxe6 Re8 17. Qe3 Nb6 { Weiß am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 18. Bc7+ ( 18. Bf7 $2 { Rot: In der Partie geschah 18.Lf7? und die Chance war weg. } ) 18... Kxc7 19. Qf4+ Kd8 { Matt! Lösung: 18.Lc7+ Kxc7 19.Df4+ Kd8. } 1-0
 
 [Event "Weiß am Zug · Zug 19 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.30"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3r3/pp1knBbp/1npB1p2/3p4/3P4/2N1Q2P/P1q2PP1/R4RK1 w - - 5 19"]
+[FEN "r2k3r/pp1nnBbp/2pBpp2/3p4/3P4/2N2Q1P/P1q2PP1/R4RK1 w - - 2 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +10,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 19. Qe6+ Kd8 20. Bxe8 Bf8 { Material gewonnen. Lösung: 19.De6+ Kd8 20.Lxe8 Lf8 (Bewertung +10,5). In der Partie geschah 19.Lxe8+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Bxe6 Re8 17. Qe3 Nb6 18. Bf7 Kd7 { Weiß am Zug. Bewertung +10,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 19. Qe6+ ( 19. Bxe8+ $2 { Rot: In der Partie geschah 19.Lxe8+? und die Chance war weg. } ) 19... Kd8 20. Bxe8 Bf8 { Material gewonnen. Lösung: 19.De6+ Kd8 20.Lxe8 Lf8 (Bewertung +10,5). } 1-0
 
 [Event "Weiß am Zug · Zug 17 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.29"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r6r/pppk1pp1/3p2qp/3P4/3nP1bB/3B1NP1/PP1N1K1P/R2Q4 w - - 3 17"]
+[FEN "r3k2r/ppp2pp1/2np2qp/8/2BpP2B/2P2NPb/PP1N1K1P/R2Q4 w kq - 0 14"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +6,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 17. Qa4+ Kc8 18. Nxd4 Qh7 { Material gewonnen. Lösung: 17.Da4+ Kc8 18.Sxd4 Dh7 (Bewertung +6,0). In der Partie geschah 17.e5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 14. cxd4 Bg4 15. d5 Nd4 16. Bd3 Kd7 { Weiß am Zug. Bewertung +6,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 17. Qa4+ ( 17. e5 $2 { Rot: In der Partie geschah 17.e5? und die Chance war weg. } ) 17... Kc8 18. Nxd4 Qh7 { Material gewonnen. Lösung: 17.Da4+ Kc8 18.Sxd4 Dh7 (Bewertung +6,0). } 1-0
 
 [Event "Weiß am Zug · Zug 18 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.29"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r6r/pppk1pp1/3p3p/3PP2q/3n2bB/3B1NP1/PP1N1K1P/R2Q4 w - - 1 18"]
+[FEN "r3k2r/ppp2pp1/2np2qp/8/2BPP1bB/5NP1/PP1N1K1P/R2Q4 w kq - 1 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +6,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 18. Qa4+ Kc8 19. Qxd4 f6 { Material gewonnen. Lösung: 18.Da4+ Kc8 19.Dxd4 f6 (Bewertung +6,5). In der Partie geschah 18.e6+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15. d5 Nd4 16. Bd3 Kd7 17. e5 Qh5 { Weiß am Zug. Bewertung +6,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 18. Qa4+ ( 18. e6+ $2 { Rot: In der Partie geschah 18.e6+? und die Chance war weg. } ) 18... Kc8 19. Qxd4 f6 { Material gewonnen. Lösung: 18.Da4+ Kc8 19.Dxd4 f6 (Bewertung +6,5). } 1-0
 
 [Event "Schwarz am Zug · Zug 22 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.08.29"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2kr2r1/pn1bqp1p/1pp2p2/2P2B2/1P1N4/P5P1/6P1/R2Q1RK1 b - - 0 22"]
+[FEN "2kr2r1/pnb1qp1p/1pp2p2/2P1p3/1P1P4/P2B1NNb/5PP1/R2Q1RK1 b - - 1 19"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +2,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 22... Qe3+ 23. Kh1 Be6 24. Nxe6 Rxd1 25. Nd4+ { Material gewonnen. Lösung: 22…De3+ 23.Kh1 Le6 24.Sxe6 Txd1 25.Sd4+ (Bewertung +2,9). In der Partie geschah 22…Lxf5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 19... Bd7 20. Bf5 exd4 21. Nxd4 Bxg3 22. fxg3 { Schwarz am Zug. Bewertung +2,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 22... Qe3+ ( 22... Bxf5 $2 { Rot: In der Partie geschah 22…Lxf5? und die Chance war weg. } ) 23. Kh1 Be6 24. Nxe6 Rxd1 25. Nd4+ { Material gewonnen. Lösung: 22…De3+ 23.Kh1 Le6 24.Sxe6 Txd1 25.Sd4+ (Bewertung +2,9). } 1-0
 
 [Event "Weiß am Zug · Zug 14 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.28"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qkb1r/pb1p2pp/1p1Ppn2/6B1/2PpN3/8/PP2QPPP/R3KB1R w KQkq - 0 14"]
+[FEN "r2qkbnr/pb1p2pp/1pnPpp2/2p1P1B1/2P5/2N2N2/PP2QPPP/R3KB1R w KQkq - 0 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +6,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 14. Bxf6 Qxf6 15. Nxf6+ gxf6 { Material gewonnen. Lösung: 14.Lxf6 Dxf6 15.Sxf6+ gxf6 (Bewertung +6,0). In der Partie geschah 14.f4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11. exf6 Nxf6 12. Ne4 Nd4 13. Nxd4 cxd4 { Weiß am Zug. Bewertung +6,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 14. Bxf6 ( 14. f4 $2 { Rot: In der Partie geschah 14.f4? und die Chance war weg. } ) 14... Qxf6 15. Nxf6+ gxf6 { Material gewonnen. Lösung: 14.Lxf6 Dxf6 15.Sxf6+ gxf6 (Bewertung +6,0). } 1-0
 
 [Event "Weiß am Zug · Zug 16 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.25"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qk2r/1b1p1ppp/2p5/pp1nP3/3NN3/1P6/1PPQ1PPP/R3R1K1 w kq - 1 16"]
+[FEN "r1bqkb1r/3p1ppp/2p5/pp1nP3/3N4/1PN5/1PP2PPP/R1BQR1K1 w kq - 1 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +6,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 16. Nd6+ Kf8 17. Nxb7 Qb6 { Material gewonnen. Lösung: 16.Sd6+ Kf8 17.Sxb7 Db6 (Bewertung +6,5). In der Partie geschah 16.Txa5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13. Bd2 Bb4 14. Ne4 Bxd2 15. Qxd2 Bb7 { Weiß am Zug. Bewertung +6,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 16. Nd6+ ( 16. Rxa5 $2 { Rot: In der Partie geschah 16.Txa5? und die Chance war weg. } ) 16... Kf8 17. Nxb7 Qb6 { Material gewonnen. Lösung: 16.Sd6+ Kf8 17.Sxb7 Db6 (Bewertung +6,5). } 1-0
 
 [Event "Schwarz am Zug · Zug 40 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.25"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "8/p2RR3/2p5/8/1P1N3k/2Kb2r1/P4r2/8 b - - 7 40"]
+[FEN "6r1/p2RR3/2p3r1/8/1P1N3k/3b4/P4K2/8 b - - 1 37"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +4,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 40... Bb5+ 41. Nf3+ Rgxf3+ 42. Kd4 { Material gewonnen. Lösung: 40…Lb5+ 41.Sf3+ Tgxf3+ 42.Kd4 (Bewertung +4,8). In der Partie geschah 40…Lf5+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 37... Rf8+ 38. Ke3 Rg3+ 39. Kd2 Rf2+ 40. Kc3 { Schwarz am Zug. Bewertung +4,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 40... Bb5+ ( 40... Bf5+ $2 { Rot: In der Partie geschah 40…Lf5+? und die Chance war weg. } ) 41. Nf3+ Rgxf3+ 42. Kd4 { Material gewonnen. Lösung: 40…Lb5+ 41.Sf3+ Tgxf3+ 42.Kd4 (Bewertung +4,8). } 0-1
 
 [Event "Schwarz am Zug · Zug 16 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.24"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r3k2r/ppp1bppp/5q2/8/2Pp2P1/1P3NP1/P3Q3/RNB2K2 b kq - 2 16"]
+[FEN "r3kb1r/ppp2ppp/8/8/2Pp2P1/6P1/PP2Q3/RNB1K1Nq b Qkq - 1 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +5,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 16... d3 17. Qxd3 Qxa1 18. Bf4 { Material gewonnen. Lösung: 16…d3 17.Dxd3 Dxa1 18.Lf4 (Bewertung +5,3). In der Partie geschah 16…O-O-O? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13... Be7 14. Kf1 Qc6 15. b3 Qf6+ 16. Nf3 { Schwarz am Zug. Bewertung +5,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 16... d3 ( 16... O-O-O $2 { Rot: In der Partie geschah 16…O-O-O? und die Chance war weg. } ) 17. Qxd3 Qxa1 18. Bf4 { Material gewonnen. Lösung: 16…d3 17.Dxd3 Dxa1 18.Lf4 (Bewertung +5,3). } 0-1
 
 [Event "Schwarz am Zug · Zug 13 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.08.22"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2q1rk1/ppp1nppp/3p3B/2bPp3/2B5/P2P2QP/1PP2PP1/R4RK1 b - - 4 13"]
+[FEN "r2q1rk1/ppp2ppp/2np1n2/3Np3/1bB1P3/P2P1Q1P/1PP2PP1/R1B2RK1 b - - 2 10"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +5,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 13... Nf5 14. Qg5 Nxh6 15. Qxd8 Rfxd8 16. c3 { Material gewonnen. Lösung: 13…Sf5 14.Dg5 Sxh6 15.Dxd8 Tfxd8 16.c3 (Bewertung +5,2). In der Partie geschah 13…Kh8? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 10... Nxd5 11. exd5 Bc5 12. Qg3 Ne7 13. Bh6 { Schwarz am Zug. Bewertung +5,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 13... Nf5 ( 13... Kh8 $2 { Rot: In der Partie geschah 13…Kh8? und die Chance war weg. } ) 14. Qg5 Nxh6 15. Qxd8 Rfxd8 16. c3 { Material gewonnen. Lösung: 13…Sf5 14.Dg5 Sxh6 15.Dxd8 Tfxd8 16.c3 (Bewertung +5,2). } 1-0
 
 [Event "Schwarz am Zug · Zug 9 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.22"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "rn2k2r/pppb1pp1/3p1b1p/8/4P3/3P1P2/PPP1B1PP/RN2K1NR b KQkq - 1 9"]
+[FEN "rnb1k2r/ppp1bppp/3p1n2/8/4P3/3P1P2/PPP3PP/RNB1KBNR b KQkq - 0 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +5,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 9... Bxb2 10. f4 Bxa1 11. c3 { Material gewonnen. Lösung: 9…Lxb2 10.f4 Lxa1 11.c3 (Bewertung +5,6). In der Partie geschah 9…Sc6? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6... Bd7 7. Bg5 h6 8. Bxf6 Bxf6 9. Be2 { Schwarz am Zug. Bewertung +5,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 9... Bxb2 ( 9... Nc6 $2 { Rot: In der Partie geschah 9…Sc6? und die Chance war weg. } ) 10. f4 Bxa1 11. c3 { Material gewonnen. Lösung: 9…Lxb2 10.f4 Lxa1 11.c3 (Bewertung +5,6). } 1-0
 
 [Event "Schwarz am Zug · Zug 10 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.22"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3k2r/pppb1pp1/2np1b1p/8/4P3/3P1P1N/PPP1B1PP/RN2K2R b KQkq - 3 10"]
+[FEN "rn2k2r/pppbbppp/3p1n2/6B1/4P3/3P1P2/PPP3PP/RN2KBNR b KQkq - 2 7"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +5,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 10... Bxb2 11. Nf4 Bxa1 12. c3 { Material gewonnen. Lösung: 10…Lxb2 11.Sf4 Lxa1 12.c3 (Bewertung +5,8). In der Partie geschah 10…O-O-O? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 7... h6 8. Bxf6 Bxf6 9. Be2 Nc6 10. Nh3 { Schwarz am Zug. Bewertung +5,8, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 10... Bxb2 ( 10... O-O-O $2 { Rot: In der Partie geschah 10…O-O-O? und die Chance war weg. } ) 11. Nf4 Bxa1 12. c3 { Material gewonnen. Lösung: 10…Lxb2 11.Sf4 Lxa1 12.c3 (Bewertung +5,8). } 1-0
 
 [Event "Schwarz am Zug · Zug 11 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.22"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2kr3r/pppb1pp1/2np1b1p/8/4PN2/3P1P2/PPP1B1PP/RN2K2R b KQ - 5 11"]
+[FEN "rn2k2r/pppbbpp1/3p1B1p/8/4P3/3P1P2/PPP3PP/RN2KBNR b KQkq - 0 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +4,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 11... Bxb2 12. Kd2 Bxa1 13. c3 { Material gewonnen. Lösung: 11…Lxb2 12.Kd2 Lxa1 13.c3 (Bewertung +4,7). Auch gut war g5. In der Partie geschah 11…Lg5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8... Bxf6 9. Be2 Nc6 10. Nh3 O-O-O 11. Nf4 { Schwarz am Zug. Bewertung +4,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 11... Bxb2 ( 11... Bg5 $2 { Rot: In der Partie geschah 11…Lg5? und die Chance war weg. } ) 12. Kd2 Bxa1 13. c3 { Material gewonnen. Lösung: 11…Lxb2 12.Kd2 Lxa1 13.c3 (Bewertung +4,7). Auch gut war g5. } 1-0
 
 [Event "Schwarz am Zug · Zug 9 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.14"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qk1nr/ppp2ppp/2n1p3/bB2Pb2/8/N1PP1N1P/P4PP1/R1BQK2R b KQkq - 2 9"]
+[FEN "r2qkbnr/ppp2ppp/2n1p3/1B2Pb2/3p4/3P1N1P/PPP2PP1/RNBQK2R b KQkq - 0 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +4,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 9... Bxc3+ 10. Bd2 Bxa1 11. Qxa1 { Material gewonnen. Lösung: 9…Lxc3+ 10.Ld2 Lxa1 11.Dxa1 (Bewertung +4,3). In der Partie geschah 9…Dxd3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6... Bb4+ 7. c3 dxc3 8. bxc3 Ba5 9. Na3 { Schwarz am Zug. Bewertung +4,3, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 9... Bxc3+ ( 9... Qxd3 $2 { Rot: In der Partie geschah 9…Dxd3? und die Chance war weg. } ) 10. Bd2 Bxa1 11. Qxa1 { Material gewonnen. Lösung: 9…Lxc3+ 10.Ld2 Lxa1 11.Dxa1 (Bewertung +4,3). } 1-0
 
 [Event "Schwarz am Zug · Zug 13 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.14"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2q1rk1/ppp3pp/4b3/1Bb1npB1/P2pp3/6Q1/1PP2PPP/RN2R1K1 b - - 1 13"]
+[FEN "r1bq1rk1/ppp2ppp/8/1Bbpn3/P2pn3/1Q1P4/1PP2PPP/RNB1R1K1 b - - 0 10"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +3,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 13... Qd5 14. Nc3 dxc3 15. Rad1 { Material gewonnen. Lösung: 13…Dd5 14.Sc3 dxc3 15.Tad1 (Bewertung +3,5). In der Partie geschah 13…Le7? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 10... Be6 11. dxe4 dxe4 12. Qg3 f5 13. Bg5 { Schwarz am Zug. Bewertung +3,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 13... Qd5 ( 13... Be7 $2 { Rot: In der Partie geschah 13…Le7? und die Chance war weg. } ) 14. Nc3 dxc3 15. Rad1 { Material gewonnen. Lösung: 13…Dd5 14.Sc3 dxc3 15.Tad1 (Bewertung +3,5). } 0-1
 
 [Event "Schwarz am Zug · Zug 14 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.08.14"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2q1rk1/ppp1b1pp/4b3/1B2npB1/P2pp2P/6Q1/1PP2PP1/RN2R1K1 b - - 0 14"]
+[FEN "r2q1rk1/ppp2ppp/4b3/1Bbpn3/P2pP3/1Q6/1PP2PPP/RNB1R1K1 b - - 0 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +5,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 14... f4 15. Bxf4 Bxh4 16. Rxe4 Bxg3 17. Bxg3 { Material gewonnen. Lösung: 14…f4 15.Lxf4 Lxh4 16.Txe4 Lxg3 17.Lxg3 (Bewertung +5,1). In der Partie geschah 14…Lxg5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11... dxe4 12. Qg3 f5 13. Bg5 Be7 14. h4 { Schwarz am Zug. Bewertung +5,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 14... f4 ( 14... Bxg5 $2 { Rot: In der Partie geschah 14…Lxg5? und die Chance war weg. } ) 15. Bxf4 Bxh4 16. Rxe4 Bxg3 17. Bxg3 { Material gewonnen. Lösung: 14…f4 15.Lxf4 Lxh4 16.Txe4 Lxg3 17.Lxg3 (Bewertung +5,1). } 0-1
 
 [Event "Weiß am Zug · Zug 21 · Matt in 4"]
+[Site "?"]
 [Date "2026.08.14"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "4rrk1/p1p2pp1/1p2pn2/3p2Q1/3P4/2P2P2/2P4P/qNKR3R w - - 1 21"]
+[FEN "r4rk1/p1pn1pp1/1p2p2p/3p4/3P2PQ/2P5/2P2P1P/qNKR3R w - - 1 18"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gepatzt: Du kannst in 4 Zügen mattsetzen. Rechne die ganze Folge! } 21. Rhg1 g6 22. Qxf6 Qb2+ 23. Kxb2 e5 24. Rxg6+ fxg6 { Matt! Lösung: 21.Thg1 g6 22.Dxf6 Db2+ 23.Kxb2 e5 24.Txg6+ fxg6. In der Partie geschah 21.h4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 18. g5 hxg5 19. Qxg5 Nf6 20. f3 Rae8 { Weiß am Zug. Dein Gegner hat gepatzt: Du kannst in 4 Zügen mattsetzen. Rechne die ganze Folge! } 21. Rhg1 ( 21. h4 $2 { Rot: In der Partie geschah 21.h4? und die Chance war weg. } ) 21... g6 22. Qxf6 Qb2+ 23. Kxb2 e5 24. Rxg6+ fxg6 { Matt! Lösung: 21.Thg1 g6 22.Dxf6 Db2+ 23.Kxb2 e5 24.Txg6+ fxg6. } 1-0
 
 [Event "Weiß am Zug · Zug 22 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.14"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "4rrk1/p1p2pp1/1p3n2/3pp1Q1/3P3P/2P2P2/2P5/qNKR3R w - - 0 22"]
+[FEN "r4rk1/p1pn1pp1/1p2p3/3p2p1/3P3Q/2P5/2P2P1P/qNKR3R w - - 0 19"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +4,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 22. Rhg1 Nh5 23. Qxh5 Re6 { Material gewonnen. Lösung: 22.Thg1 Sh5 23.Dxh5 Te6 (Bewertung +4,9). Auch gut war Tdg1. In der Partie geschah 22.h5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 19. Qxg5 Nf6 20. f3 Rae8 21. h4 e5 { Weiß am Zug. Bewertung +4,9, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 22. Rhg1 ( 22. h5 $2 { Rot: In der Partie geschah 22.h5? und die Chance war weg. } ) 22... Nh5 23. Qxh5 Re6 { Material gewonnen. Lösung: 22.Thg1 Sh5 23.Dxh5 Te6 (Bewertung +4,9). Auch gut war Tdg1. } 1-0
 
 [Event "Schwarz am Zug · Zug 19 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.12"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5rk1/6pp/p1p2p2/qrPpp3/3nP3/1P6/P2N1PPP/R1Q2RK1 b - - 2 19"]
+[FEN "1r3rk1/4n1pp/p1p2p2/q1PppN2/8/1P2P3/P2N1PPP/R2Q1RK1 b - - 0 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +6,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 19... Ne2+ 20. Kh1 Nxc1 21. Nc4 { Material gewonnen. Lösung: 19…Se2+ 20.Kh1 Sxc1 21.Sc4 (Bewertung +6,2). In der Partie geschah 19…Txc5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16... Nxf5 17. Qc2 Rb5 18. e4 Nd4 19. Qc1 { Schwarz am Zug. Bewertung +6,2, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 19... Ne2+ ( 19... Rxc5 $2 { Rot: In der Partie geschah 19…Txc5? und die Chance war weg. } ) 20. Kh1 Nxc1 21. Nc4 { Material gewonnen. Lösung: 19…Se2+ 20.Kh1 Sxc1 21.Sc4 (Bewertung +6,2). } 0-1
 
 [Event "Schwarz am Zug · Zug 20 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.11"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2r1r1k1/pp2qppp/4b3/8/4B3/2P1P2P/PP2Q1P1/R3KR2 b Q - 0 20"]
+[FEN "r1b1r1k1/pp3ppp/5q2/8/4p3/1BP1P2P/PP2Q1P1/R3K2R b KQ - 0 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +5,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 20... Qh4+ 21. Rf2 Qxe4 22. Rf4 { Material gewonnen. Lösung: 20…Dh4+ 21.Tf2 Dxe4 22.Tf4 (Bewertung +5,5). In der Partie geschah 20…Lc4? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17... Be6 18. Rf1 Qe7 19. Bc2 Rac8 20. Bxe4 { Schwarz am Zug. Bewertung +5,5, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 20... Qh4+ ( 20... Bc4 $2 { Rot: In der Partie geschah 20…Lc4? und die Chance war weg. } ) 21. Rf2 Qxe4 22. Rf4 { Material gewonnen. Lösung: 20…Dh4+ 21.Tf2 Dxe4 22.Tf4 (Bewertung +5,5). } 1/2-1/2
 
 [Event "Schwarz am Zug · Zug 36 · Gewinn in 4 Zügen"]
+[Site "?"]
 [Date "2026.08.10"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "7R/3N1k2/7p/pp2Rq2/8/b7/5P1P/7K b - - 1 36"]
+[FEN "4R1kr/3N4/7p/pp3B1q/8/b7/5PKP/4R3 b - - 4 33"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +6,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 36... Qxf2 37. h3 Kg7 38. Rhe8 Bd6 39. R8e7+ Bxe7 40. Rxe7+ { Material gewonnen. Lösung: 36…Dxf2 37.h3 Kg7 38.The8 Ld6 39.T8e7+ Lxe7 40.Txe7+ (Bewertung +6,0). In der Partie geschah 36…Df3+? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 33... Kf7 34. Rxh8 Qg5+ 35. Kh1 Qxf5 36. Re5 { Schwarz am Zug. Bewertung +6,0, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 36... Qxf2 ( 36... Qf3+ $2 { Rot: In der Partie geschah 36…Df3+? und die Chance war weg. } ) 37. h3 Kg7 38. Rhe8 Bd6 39. R8e7+ Bxe7 40. Rxe7+ { Material gewonnen. Lösung: 36…Dxf2 37.h3 Kg7 38.The8 Ld6 39.T8e7+ Lxe7 40.Txe7+ (Bewertung +6,0). } 1/2-1/2
 
 [Event "Weiß am Zug · Zug 15 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.10"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rn2k2r/pp3ppp/2p1p3/4P1q1/Q2P3b/2N1PB1P/PP2K1P1/R6R w kq - 3 15"]
+[FEN "rn1qk2r/pp2bppp/2p1p3/4Pn2/Q2P4/2N2B1P/PP3PP1/R1B1K2R w KQkq - 1 12"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +4,4, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 15. g3 Qh6 16. gxh4 O-O { Material gewonnen. Lösung: 15.g3 Dh6 16.gxh4 O-O (Bewertung +4,4). In der Partie geschah 15.Tag1? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12. Be3 Nxe3 13. fxe3 Bh4+ 14. Ke2 Qg5 { Weiß am Zug. Bewertung +4,4, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 15. g3 ( 15. Rag1 $2 { Rot: In der Partie geschah 15.Tag1? und die Chance war weg. } ) 15... Qh6 16. gxh4 O-O { Material gewonnen. Lösung: 15.g3 Dh6 16.gxh4 O-O (Bewertung +4,4). } 0-1
 
 [Event "Schwarz am Zug · Zug 33 · Matt in 3"]
+[Site "?"]
 [Date "2026.08.08"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5r1k/6p1/2QR2r1/pP2p3/P3P2p/5PP1/4q2P/5RK1 b - - 0 33"]
+[FEN "5r1k/6p1/2Qp2r1/pP2p2p/P3P3/5PP1/3q3P/3R1RK1 b - - 1 30"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 3 Zügen mattsetzen. Rechne die ganze Folge! } 33... hxg3 34. Rd2 gxh2+ 35. Kh1 Qxf1+ { Matt! Lösung: 33…hxg3 34.Td2 gxh2+ 35.Kh1 Dxf1+. Auch gut war h3. In der Partie geschah 33…De3+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 30... Qe3+ 31. Kg2 Qe2+ 32. Kg1 h4 33. Rxd6 { Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 3 Zügen mattsetzen. Rechne die ganze Folge! } 33... hxg3 ( 33... Qe3+ $2 { Rot: In der Partie geschah 33…De3+? und die Chance war weg. } ) 34. Rd2 gxh2+ 35. Kh1 Qxf1+ { Matt! Lösung: 33…hxg3 34.Td2 gxh2+ 35.Kh1 Dxf1+. Auch gut war h3. } 0-1
 
 [Event "Schwarz am Zug · Zug 10 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.07"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1b1kb1r/ppp1qpp1/5n1p/1B2p3/3nN3/4QP1N/PPP3PP/R1B1K2R b KQkq - 3 10"]
+[FEN "r1b1kb1r/ppp1qppp/2np1n2/4P3/8/2N1QP2/PPP3PP/R1B1KBNR b KQkq - 0 7"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Bewertung +6,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 10... Nxb5 11. Nxf6+ Qxf6 12. Nf2 { Material gewonnen. Lösung: 10…Sxb5 11.Sxf6+ Dxf6 12.Sf2 (Bewertung +6,1). In der Partie geschah 10…c6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 7... dxe5 8. Nh3 h6 9. Ne4 Nd4 10. Bb5+ { Schwarz am Zug. Bewertung +6,1, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 10... Nxb5 ( 10... c6 $2 { Rot: In der Partie geschah 10…c6? und die Chance war weg. } ) 11. Nxf6+ Qxf6 12. Nf2 { Material gewonnen. Lösung: 10…Sxb5 11.Sxf6+ Dxf6 12.Sf2 (Bewertung +6,1). } 0-1
 
 [Event "Weiß am Zug · Zug 22 · Matt in 2"]
+[Site "?"]
 [Date "2026.08.07"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2rqr1k1/4pp1p/6pQ/p7/1p6/1B6/PPP3PP/R4RK1 w - - 2 22"]
+[FEN "2rq1rk1/4pp1p/p5p1/8/1p1b1Q2/1B6/PPP3PP/R1B2RK1 w - - 1 19"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 22. Rxf7 Qb6+ 23. Kh1 Qg1+ { Matt! Lösung: 22.Txf7 Db6+ 23.Kh1 Dg1+. In der Partie geschah 22.Lxf7+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 19. Be3 Bxe3+ 20. Qxe3 a5 21. Qh6 Re8 { Weiß am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 22. Rxf7 ( 22. Bxf7+ $2 { Rot: In der Partie geschah 22.Lxf7+? und die Chance war weg. } ) 22... Qb6+ 23. Kh1 Qg1+ { Matt! Lösung: 22.Txf7 Db6+ 23.Kh1 Dg1+. } 1-0
 
 [Event "Schwarz am Zug · Zug 19 · Matt in 2"]
+[Site "?"]
 [Date "2026.08.06"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/1pp3pp/pbn3q1/4p3/1PP4N/P6b/1B1P3K/R2QRB2 b - - 0 19"]
+[FEN "r4rk1/1pp3pp/pbn3q1/4p3/1PP2p2/P4NPb/1B1PBP2/R2QR1K1 b - - 0 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 19... Qg1+ 20. Kxh3 Qh1+ 21. Kg4 { Matt! Lösung: 19…Dg1+ 20.Kxh3 Dh1+ 21.Kg4. In der Partie geschah 19…Tf2+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16... fxg3 17. Nh4 gxf2+ 18. Kh2 f1=Q 19. Bxf1 { Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 19... Qg1+ ( 19... Rf2+ $2 { Rot: In der Partie geschah 19…Tf2+? und die Chance war weg. } ) 20. Kxh3 Qh1+ 21. Kg4 { Matt! Lösung: 19…Dg1+ 20.Kxh3 Dh1+ 21.Kg4. } 1-0
 
 [Event "Weiß am Zug · Zug 17 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.06"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b5/ppp1n1pp/3q1k2/4Nn2/8/2N5/PPP1Q1PP/R3K2R w KQ - 2 17"]
+[FEN "r1bq2k1/ppp1nrpp/8/3P1n2/2B5/2N2N2/PPP1Q1PP/R3K2R w KQ - 0 14"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +7,4, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 17. Ne4+ Kxe5 18. Nxd6+ Kxd6 { Material gewonnen. Lösung: 17.Se4+ Kxe5 18.Sxd6+ Kxd6 (Bewertung +7,4). In der Partie geschah 17.Td1? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 14. d6 Qxd6 15. Bxf7+ Kxf7 16. Ne5+ Kf6 { Weiß am Zug. Bewertung +7,4, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 17. Ne4+ ( 17. Rd1 $2 { Rot: In der Partie geschah 17.Td1? und die Chance war weg. } ) 17... Kxe5 18. Nxd6+ Kxd6 { Material gewonnen. Lösung: 17.Se4+ Kxe5 18.Sxd6+ Kxd6 (Bewertung +7,4). } 1-0
 
 [Event "Weiß am Zug · Zug 18 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.08.06"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b5/ppp1n1pp/3q1k2/4N3/3n4/2N5/PPP1Q1PP/3RK2R w K - 4 18"]
+[FEN "r1b3k1/ppp1nrpp/3q4/5n2/2B5/2N2N2/PPP1Q1PP/R3K2R w KQ - 0 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +6,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 18. Qf2+ Bf5 19. Ne4+ Kxe5 20. Nxd6 Nxc2+ { Material gewonnen. Lösung: 18.Df2+ Lf5 19.Se4+ Kxe5 20.Sxd6 Sxc2+ (Bewertung +6,6). In der Partie geschah 18.Se4+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15. Bxf7+ Kxf7 16. Ne5+ Kf6 17. Rd1 Nd4 { Weiß am Zug. Bewertung +6,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 18. Qf2+ ( 18. Ne4+ $2 { Rot: In der Partie geschah 18.Se4+? und die Chance war weg. } ) 18... Bf5 19. Ne4+ Kxe5 20. Nxd6 Nxc2+ { Material gewonnen. Lösung: 18.Df2+ Lf5 19.Se4+ Kxe5 20.Sxd6 Sxc2+ (Bewertung +6,6). } 1-0
 
 [Event "Weiß am Zug · Zug 14 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.05"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "3qk2r/2Q2ppp/2pbpn2/3p4/3P1B2/4PN2/Pr1NKPPP/R7 w k - 2 14"]
+[FEN "r2qkb1r/pQ3ppp/2p1pn2/3p4/3P1B2/4PN2/PP1NKPPP/n6R w kq - 0 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +3,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 14. Qxd8+ Kxd8 15. Bxd6 Kd7 { Material gewonnen. Lösung: 14.Dxd8+ Kxd8 15.Lxd6 Kd7 (Bewertung +3,6). Auch gut war Dxd6. In der Partie geschah 14.Dxc6+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11. Rxa1 Rb8 12. Qxa7 Rxb2 13. Qc7 Bd6 { Weiß am Zug. Bewertung +3,6, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 14. Qxd8+ ( 14. Qxc6+ $2 { Rot: In der Partie geschah 14.Dxc6+? und die Chance war weg. } ) 14... Kxd8 15. Bxd6 Kd7 { Material gewonnen. Lösung: 14.Dxd8+ Kxd8 15.Lxd6 Kd7 (Bewertung +3,6). Auch gut war Dxd6. } 1-0
 
 [Event "Weiß am Zug · Zug 20 · Gewinn in 2 Zügen"]
+[Site "?"]
 [Date "2026.08.05"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "7r/4kppp/4p3/3pB3/3P4/4PN2/Pr1nKPPP/2R5 w - - 0 20"]
+[FEN "3qk2r/5ppp/3Qp3/3p4/3PnB2/4PN2/Pr1NKPPP/2R5 w k - 3 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +4,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 20. Rc7+ Kd8 21. Nxd2 Rxa2 { Material gewonnen. Lösung: 20.Tc7+ Kd8 21.Sxd2 Txa2 (Bewertung +4,7). In der Partie geschah 20.Sxd2? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17. Qxd8+ Kxd8 18. Bc7+ Ke7 19. Be5 Nxd2 { Weiß am Zug. Bewertung +4,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 20. Rc7+ ( 20. Nxd2 $2 { Rot: In der Partie geschah 20.Sxd2? und die Chance war weg. } ) 20... Kd8 21. Nxd2 Rxa2 { Material gewonnen. Lösung: 20.Tc7+ Kd8 21.Sxd2 Txa2 (Bewertung +4,7). } 1-0
 
 [Event "Schwarz am Zug · Zug 15 · Matt in 2"]
+[Site "?"]
 [Date "2026.08.04"]
+[Round "?"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "r3k2r/pp1q1p1p/2pp1p2/2b1p2b/2PnP3/1P1P1NPP/P4PB1/R1BQ1RK1 b kq - 0 12"]
+[Aufgabe "1"]
+[Kontext "6"]
+
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12... O-O-O 13. a3 Rhg8 14. b4 Nxf3+ 15. Bxf3 { Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 15... Rxg3+ ( 15... Bxf3 $2 { Rot: In der Partie geschah 15…Lxf3? und die Chance war weg. } ) 16. Bg2 Qxh3 17. Qf3 { Matt! Lösung: 15…Txg3+ 16.Lg2 Dxh3 17.Df3. } 1/2-1/2
+
+[Event "Schwarz am Zug · Zug 18 · Matt in 3"]
+[Site "?"]
+[Date "2026.08.04"]
+[Round "?"]
 [White "Gegner"]
 [Black "Ich"]
 [Result "1/2-1/2"]
 [SetUp "1"]
 [FEN "2kr2r1/pp1q1p1p/2pp1p2/2b1p2b/1PP1P3/P2P1BPP/5P2/R1BQ1RK1 b - - 0 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 2 Zügen mattsetzen. Rechne die ganze Folge! } 15... Rxg3+ 16. Bg2 Qxh3 17. Qf3 { Matt! Lösung: 15…Txg3+ 16.Lg2 Dxh3 17.Df3. In der Partie geschah 15…Lxf3? und die Chance war weg. } 1/2-1/2
-
-[Event "Schwarz am Zug · Zug 18 · Matt in 3"]
-[Date "2026.08.04"]
-[White "Gegner"]
-[Black "Ich"]
-[Result "1/2-1/2"]
-[SetUp "1"]
-[FEN "2kr2r1/pp3p1p/2pp1p2/4p3/1PPbP3/P2P2Pq/R4PQ1/2B2RK1 b - - 1 18"]
-[Aufgabe "1"]
-
-{ Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 3 Zügen mattsetzen. Rechne die ganze Folge! } 18... Rxg3 19. Qxg3 Qxg3+ 20. Kh1 Qh3+ { Matt! Lösung: 18…Txg3 19.Dxg3 Dxg3+ 20.Kh1 Dh3+. In der Partie geschah 18…Dxg2+? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15... Bxf3 16. Qxf3 Bd4 17. Ra2 Qxh3 18. Qg2 { Schwarz am Zug. Dein Gegner hat gepatzt: Du kannst in 3 Zügen mattsetzen. Rechne die ganze Folge! } 18... Rxg3 ( 18... Qxg2+ $2 { Rot: In der Partie geschah 18…Dxg2+? und die Chance war weg. } ) 19. Qxg3 Qxg3+ 20. Kh1 Qh3+ { Matt! Lösung: 18…Txg3 19.Dxg3 Dxg3+ 20.Kh1 Dh3+. } 1/2-1/2
 
 [Event "Weiß am Zug · Zug 23 · Gewinn in 3 Zügen"]
+[Site "?"]
 [Date "2026.08.03"]
+[Round "?"]
 [White "Ich"]
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "2rk1q1r/1b3ppp/3b4/pQ2P3/P4P2/8/1P4PP/R1B2R1K w - - 2 23"]
+[FEN "2r1kq1r/1b1p1ppp/8/pBb1PN2/P1Q2P2/8/1P4PP/R1B2R1K w k - 7 20"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Bewertung +6,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 23. Qb6+ Bc7 24. Rd1+ Ke7 25. Qxb7 Qe8 { Material gewonnen. Lösung: 23.Db6+ Lc7 24.Td1+ Ke7 25.Dxb7 De8 (Bewertung +6,7). In der Partie geschah 23.exd6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 20. Nd6+ Bxd6 21. Bxd7+ Kxd7 22. Qb5+ Kd8 { Weiß am Zug. Bewertung +6,7, aber direkt zu holen gibt es nichts. Finde den Plan über mehrere Züge – Schach, Schlagen, Drohen! } 23. Qb6+ ( 23. exd6 $2 { Rot: In der Partie geschah 23.exd6? und die Chance war weg. } ) 23... Bc7 24. Rd1+ Ke7 25. Qxb7 Qe8 { Material gewonnen. Lösung: 23.Db6+ Lc7 24.Td1+ Ke7 25.Dxb7 De8 (Bewertung +6,7). } 0-1
 

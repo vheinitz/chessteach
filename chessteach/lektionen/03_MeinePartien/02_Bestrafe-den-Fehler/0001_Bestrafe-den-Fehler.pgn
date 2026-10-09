@@ -6,10 +6,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b1q1k1/ppp2p1p/2np1p2/2b4Q/3p3N/3B4/PPP2PPP/R1B3K1 b - - 1 13"]
+[FEN "r1bqr1k1/pppp1ppp/2n2N2/2b5/3p4/3B1N2/PPP2PPP/R1BQR1K1 b - - 0 10"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13... Qe1+ { Richtig: 13…De1+ 14.Lf1 d3 (Bewertung +4,8). In der Partie geschah 13…f5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 10... gxf6 11. Rxe8+ Qxe8 12. Nh4 d6 13. Qh5 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13... Qe1+ { Richtig: 13…De1+ 14.Lf1 d3 (Bewertung +4,8). } ( 13... f5 $2 { Rot: In der Partie geschah 13…f5? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 44 · Gegner hat gepatzt"]
 [Site "?"]
@@ -19,10 +20,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "8/PR3pk1/8/r3p1P1/6K1/8/8/8 w - - 0 44"]
+[FEN "8/R4pk1/P3p3/4Prp1/5PK1/8/8/8 w - - 0 41"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 44. Kf5 { Richtig: 44.Kf5 e4+ 45.Kxe4 (Bewertung +4,7). In der Partie geschah 44.Kf3? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 41. fxg5 Rxe5 42. Rb7 Ra5 43. a7 e5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 44. Kf5 { Richtig: 44.Kf5 e4+ 45.Kxe4 (Bewertung +4,7). } ( 44. Kf3 $2 { Rot: In der Partie geschah 44.Kf3? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 8 · Gegner hat gepatzt"]
 [Site "?"]
@@ -32,10 +34,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bqk2r/ppppbpp1/2n2n1p/4N3/2B5/2P5/PP1P1PPP/RNBQR1K1 w kq - 1 8"]
+[FEN "r1bqkb1r/pppp1pp1/2n2n1p/4p3/2B1P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 2 5"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Nxf7 { Richtig: 8.Sxf7 d5 9.Sxd8 (Bewertung +6,2). In der Partie geschah 8.Df3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 5. c3 Nxe4 6. Re1 Nf6 7. Nxe5 Be7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Nxf7 { Richtig: 8.Sxf7 d5 9.Sxd8 (Bewertung +6,2). } ( 8. Qf3 $2 { Rot: In der Partie geschah 8.Df3? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -45,10 +48,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r3k2r/pp1b1ppp/3bpn2/1Np5/8/2QB1q2/PPPP1P1P/R1B2RK1 b kq - 3 16"]
+[FEN "r1q1kb1r/pp1b1ppp/4pn2/2p5/8/2QB1P2/PPPP1P1P/RNB1K2R b KQkq - 0 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Qg4+ { Richtig: 16…Dg4+ 17.Kh1 Lc6+ (Bewertung +7,3). In der Partie geschah 16…Lxh2+? und die Chance war weg. Auch gut: Lb8. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13... Qc6 14. O-O Qxf3 15. Na3 Bd6 16. Nb5 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Qg4+ { Richtig: 16…Dg4+ 17.Kh1 Lc6+ (Bewertung +7,3). Auch gut: Lb8. } ( 16... Bxh2+ $2 { Rot: In der Partie geschah 16…Lxh2+? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
 [Site "?"]
@@ -58,10 +62,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rq3rk1/2p2pb1/b2p2p1/p2Pp1N1/2P3P1/4Q3/PP1N1P2/2KR3R w - - 1 19"]
+[FEN "r2q1rk1/2p1npb1/b2p2p1/p2Pp3/2P5/4BN2/PP1NQPP1/2KR3R w - - 0 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Rh8+ { Richtig: 19.Th8+ Lxh8 20.Dh3 (Bewertung +6,8). In der Partie geschah 19.Th7? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Ng5 Nf5 17. g4 Nxe3 18. Qxe3 Qb8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Rh8+ { Richtig: 19.Th8+ Lxh8 20.Dh3 (Bewertung +6,8). } ( 19. Rh7 $2 { Rot: In der Partie geschah 19.Th7? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 33 · Gegner hat gepatzt"]
 [Site "?"]
@@ -71,10 +76,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "6rk/p5qp/2R5/1p3Qp1/4pP2/4P2P/P2n2P1/6K1 b - - 0 33"]
+[FEN "2r3qk/p6p/2p2Qp1/1p3p2/4pP2/4P2P/P2n2P1/2R3K1 b - - 5 30"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 33... Qa1+ { Richtig: 33…Da1+ 34.Kh2 Sf1+ (Bewertung +18,8). In der Partie geschah 33…gxf4? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 30... Qg7 31. Qe6 Rg8 32. Rxc6 g5 33. Qxf5 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 33... Qa1+ { Richtig: 33…Da1+ 34.Kh2 Sf1+ (Bewertung +18,8). } ( 33... gxf4 $2 { Rot: In der Partie geschah 33…gxf4? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 11 · Gegner hat gepatzt"]
 [Site "?"]
@@ -84,10 +90,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "rnb1k1nr/3p1pp1/1q5p/pB2p3/4P3/3PPN2/PPP3PP/R2Q1RK1 w kq - 1 11"]
+[FEN "rnb1k1nr/1p1p1pp1/2p2q1p/p3p3/2B1P3/2NPbN2/PPP2PPP/R2Q1RK1 w kq - 0 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Nxe5 { Richtig: 11.Sxe5 Se7 12.Df3 (Bewertung +2,5). In der Partie geschah 11.a4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8. fxe3 b5 9. Nxb5 cxb5 10. Bxb5 Qb6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Nxe5 { Richtig: 11.Sxe5 Se7 12.Df3 (Bewertung +2,5). } ( 11. a4 $2 { Rot: In der Partie geschah 11.a4? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 13 · Gegner hat gepatzt"]
 [Site "?"]
@@ -97,10 +104,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "rnb1k1nr/3p2p1/5p1p/pB2p3/P3P3/3PqN2/1PP3PP/R2Q1R1K w kq - 0 13"]
+[FEN "rnb1k1nr/3p1pp1/5q1p/pp2p3/2B1P3/3PPN2/PPP3PP/R2Q1RK1 w kq - 0 10"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13. Nxe5 { Richtig: 13.Sxe5 h5 14.Sc4 (Bewertung +2,6). In der Partie geschah 13.d4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 10. Bxb5 Qb6 11. a4 Qxe3+ 12. Kh1 f6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13. Nxe5 { Richtig: 13.Sxe5 h5 14.Sc4 (Bewertung +2,6). } ( 13. d4 $2 { Rot: In der Partie geschah 13.d4? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -110,10 +118,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5r2/p1pk2pp/3bp3/8/3N2nP/3b1P2/PP1P2P1/R1B1K2R b KQ - 0 16"]
+[FEN "r6N/p1pk2pp/3bpn2/8/7P/3b4/PP1P1PP1/R1B1K1NR b KQ - 0 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Bg3+ { Richtig: 16…Lg3+ 17.Kd1 Sf2+ (Bewertung +6,1). In der Partie geschah 16…Sh2? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13... Rxh8 14. Nf3 Ng4 15. Nd4 Rf8 16. f3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Bg3+ { Richtig: 16…Lg3+ 17.Kd1 Sf2+ (Bewertung +6,1). } ( 16... Nh2 $2 { Rot: In der Partie geschah 16…Sh2? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 17 · Gegner hat gepatzt"]
 [Site "?"]
@@ -123,10 +132,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5r2/p1pk2pp/3bp3/8/3N3P/3b1P2/PP1P1KPn/R1B4R b - - 2 17"]
+[FEN "7r/p1pk2pp/3bpn2/8/7P/3b1N2/PP1P1PP1/R1B1K2R b KQ - 1 14"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17... Ng4+ { Richtig: 17…Sg4+ 18.Kg1 Lg3 (Bewertung +2,6). In der Partie geschah 17…e5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 14... Ng4 15. Nd4 Rf8 16. f3 Nh2 17. Kf2 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17... Ng4+ { Richtig: 17…Sg4+ 18.Kg1 Lg3 (Bewertung +2,6). } ( 17... e5 $2 { Rot: In der Partie geschah 17…e5? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 31 · Gegner hat gepatzt"]
 [Site "?"]
@@ -136,10 +146,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "8/p1pk2pp/8/8/3pb2P/6bR/P2P1r2/R1B1K3 b - - 11 31"]
+[FEN "8/p1pk2pp/3b4/8/3pb2P/7R/P2PK3/R1B3r1 b - - 5 28"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 31... Bd3 { Richtig: 31…Ld3 32.Txg3 Tf1# (Bewertung +1000,0). In der Partie geschah 31…Th2+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 28... Rg2+ 29. Ke1 Bg3+ 30. Kf1 Rf2+ 31. Ke1 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 31... Bd3 { Richtig: 31…Ld3 32.Txg3 Tf1# (Bewertung +1000,0). } ( 31... Rh2+ $2 { Rot: In der Partie geschah 31…Th2+? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 21 · Gegner hat gepatzt"]
 [Site "?"]
@@ -149,10 +160,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "2r1r1k1/ppq2p1p/5p2/5b2/3PN2R/1P1Q2P1/P3P2P/R5K1 w - - 1 21"]
+[FEN "2r2rk1/ppq2p1p/3n1p2/3B4/3P1R2/1P1Q2Pb/P2NP2P/R5K1 w - - 4 18"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. Nxf6+ { Richtig: 21.Sxf6+ Kf8 22.Dxf5 (Bewertung +7,0). In der Partie geschah 21.De3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 18. Rh4 Bf5 19. Be4 Nxe4 20. Nxe4 Rfe8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. Nxf6+ { Richtig: 21.Sxf6+ Kf8 22.Dxf5 (Bewertung +7,0). } ( 21. Qe3 $2 { Rot: In der Partie geschah 21.De3? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 38 · Gegner hat gepatzt"]
 [Site "?"]
@@ -162,10 +174,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "8/pp2Q2p/2p3pk/8/2Pq4/3n4/P5PP/4RK2 b - - 8 38"]
+[FEN "8/pp2Q2p/2p3pk/4R3/2Pq4/2n5/P5PP/7K b - - 2 35"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 38... Qf2# { Richtig: 38…Df2# (Bewertung +1000,0). In der Partie geschah 38…Sxe1? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 35... Nd1 36. Re1 Nf2+ 37. Kg1 Nd3+ 38. Kf1 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 38... Qf2# { Richtig: 38…Df2# (Bewertung +1000,0). } ( 38... Nxe1 $2 { Rot: In der Partie geschah 38…Sxe1? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 55 · Gegner hat gepatzt"]
 [Site "?"]
@@ -175,10 +188,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "8/1P6/4K3/5n2/3k2np/P7/8/8 w - - 0 55"]
+[FEN "8/8/3K4/1P5p/3k2nP/P7/6n1/8 w - - 0 52"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 55. Kxf5 { Richtig: 55.Kxf5 h3 56.b8=D (Bewertung +6,3). In der Partie geschah 55.b8=D? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 52. b6 Nxh4 53. b7 Nf5+ 54. Ke6 h4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 55. Kxf5 { Richtig: 55.Kxf5 h3 56.b8=D (Bewertung +6,3). } ( 55. b8=Q $2 { Rot: In der Partie geschah 55.b8=D? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 12 · Gegner hat gepatzt"]
 [Site "?"]
@@ -188,10 +202,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1bq1rk1/pp4bp/2n1pnp1/3p2N1/3P1B2/2NB4/PPP2PP1/R2QK2R b KQ - 3 12"]
+[FEN "rnbq1rk1/pp4bp/2pppnp1/6N1/2BPP3/2N5/PPP2PP1/R1BQK2R b KQ - 1 9"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12... Ne4 { Richtig: 12…Se4 13.Scxe4 dxe4 (Bewertung +2,3). In der Partie geschah 12…Sxd4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 9... d5 10. exd5 cxd5 11. Bd3 Nc6 12. Bf4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12... Ne4 { Richtig: 12…Se4 13.Scxe4 dxe4 (Bewertung +2,3). } ( 12... Nxd4 $2 { Rot: In der Partie geschah 12…Sxd4? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 18 · Gegner hat gepatzt"]
 [Site "?"]
@@ -201,10 +216,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "2kr3r/ppp3pp/2n2p2/4p3/1b2P1P1/1P2B2P/b1PNBP2/2KR3R b - - 0 18"]
+[FEN "2kr3r/ppp3pp/2n2p2/4p3/1b2P1b1/4BN1P/PPP1BPP1/2KR3R b - - 0 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Ba3# { Richtig: 18…La3# (Bewertung +1000,0). In der Partie geschah 18…Lxd2+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15... Bh5 16. g4 Bf7 17. Nd2 Bxa2 18. b3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Ba3# { Richtig: 18…La3# (Bewertung +1000,0). } ( 18... Bxd2+ $2 { Rot: In der Partie geschah 18…Lxd2+? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -214,10 +230,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3k3/p4p1B/2ppbn2/8/8/P7/1PP2PPP/R3K2R w KQq - 1 16"]
+[FEN "r1b1k1nB/p4p1p/2pp4/8/4n3/P7/1PP2PPP/R3KB1R w KQq - 0 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Bd3 { Richtig: 16.Ld3 Kd7 17.f3 (Bewertung +5,1). In der Partie geschah 16.O-O-O? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13. Bd3 Ngf6 14. Bxf6 Nxf6 15. Bxh7 Be6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Bd3 { Richtig: 16.Ld3 Kd7 17.f3 (Bewertung +5,1). } ( 16. O-O-O $2 { Rot: In der Partie geschah 16.O-O-O? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 17 · Gegner hat gepatzt"]
 [Site "?"]
@@ -227,10 +244,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r4rk1/pp1q2pp/2n2b2/2p1p3/2Np4/3PBQ1P/PPP2P1P/R4RK1 b - - 4 17"]
+[FEN "rnb2rk1/ppq3pp/5b2/2p1p3/2Np4/3P3B/PPP2PPP/R1BQ1RK1 b - - 1 14"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17... b5 { Richtig: 17…b5 18.Sd2 dxe3 (Bewertung +4,8). In der Partie geschah 17…Lg5? und die Chance war weg. Auch gut: dxe3, Le7, e4. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 14... Bxh3 15. gxh3 Qd7 16. Qf3 Nc6 17. Be3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17... b5 { Richtig: 17…b5 18.Sd2 dxe3 (Bewertung +4,8). Auch gut: dxe3, Le7, e4. } ( 17... Bg5 $2 { Rot: In der Partie geschah 17…Lg5? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 40 · Gegner hat gepatzt"]
 [Site "?"]
@@ -240,10 +258,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "6Q1/p1p5/2k5/1p1p4/1K1n4/1P6/r7/6R1 w - - 0 40"]
+[FEN "8/p1p3n1/2k3P1/1p1p4/1K1P1N2/1P6/P1r5/6R1 w - - 0 37"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 40. Rg6+ { Richtig: 40.Tg6+ Kd7 41.Dxd5+ (Bewertung +999,9). In der Partie geschah 40.Dg6+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 37. Ne6 Nxe6 38. g7 Rxa2 39. g8=Q Nxd4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 40. Rg6+ { Richtig: 40.Tg6+ Kd7 41.Dxd5+ (Bewertung +999,9). } ( 40. Qg6+ $2 { Rot: In der Partie geschah 40.Dg6+? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 10 · Gegner hat gepatzt"]
 [Site "?"]
@@ -253,10 +272,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "B2qkb1r/p1pb1ppp/8/4P3/4n3/2p5/PPPP1PPP/R1BQK2R w KQk - 1 10"]
+[FEN "r1bqkb1r/p1p2ppp/2p2n2/1B6/3pP3/2N5/PPPP1PPP/R1BQK2R w KQkq - 0 7"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10. Bxe4 { Richtig: 10.Lxe4 De7 11.dxc3 (Bewertung +6,5). In der Partie geschah 10.d3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 7. Bxc6+ Bd7 8. Bxa8 dxc3 9. e5 Ne4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10. Bxe4 { Richtig: 10.Lxe4 De7 11.dxc3 (Bewertung +6,5). } ( 10. d3 $2 { Rot: In der Partie geschah 10.d3? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 15 · Gegner hat gepatzt"]
 [Site "?"]
@@ -266,10 +286,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qr3/p1p1k1p1/1p5p/n1pPp3/6b1/2P2N2/PP1PQPPP/R1B2RK1 w - - 5 15"]
+[FEN "r1bq3r/p1p1k1p1/1p5p/nQpnp3/4P3/2P2N2/PP1P1PPP/R1B1K2R w KQ - 0 12"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Qxe5+ { Richtig: 15.Dxe5+ Kf8 16.Df4+ (Bewertung +5,7). In der Partie geschah 15.De4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12. exd5 Bd7 13. Qe2 Re8 14. O-O Bg4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Qxe5+ { Richtig: 15.Dxe5+ Kf8 16.Df4+ (Bewertung +5,7). } ( 15. Qe4 $2 { Rot: In der Partie geschah 15.De4? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 32 · Gegner hat gepatzt"]
 [Site "?"]
@@ -279,10 +300,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "6rk/1p4R1/1p2r3/p2pP1B1/3Pb3/2P5/PP1K4/6R1 w - - 3 32"]
+[FEN "r7/1p5k/1p2r3/p2pp3/3PbP2/2P1B1R1/PP1K4/6R1 w - - 0 29"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 32. Bf6 { Richtig: 32.Lf6 Txg7 33.Txg7 (Bewertung +5,7). In der Partie geschah 32.Txb7? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 29. Rg7+ Kh8 30. fxe5 Rb8 31. Bg5 Rg8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 32. Bf6 { Richtig: 32.Lf6 Txg7 33.Txg7 (Bewertung +5,7). } ( 32. Rxb7 $2 { Rot: In der Partie geschah 32.Txb7? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
 [Site "?"]
@@ -292,10 +314,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2bk2r/p3npp1/3p2qp/1pp5/3BP3/2P1NP1P/PP2Q1P1/R4RK1 w kq - 0 19"]
+[FEN "r2bk2r/pp2npp1/2pp1q1p/8/4P3/2P1BP1P/PP1NQ1P1/R4RK1 w kq - 3 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Qxb5+ { Richtig: 19.Dxb5+ Kf8 20.Db7 (Bewertung +3,6). In der Partie geschah 19.Sd5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Nc4 b5 17. Bd4 Qg6 18. Ne3 c5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Qxb5+ { Richtig: 19.Dxb5+ Kf8 20.Db7 (Bewertung +3,6). } ( 19. Nd5 $2 { Rot: In der Partie geschah 19.Sd5? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 8 · Gegner hat gepatzt"]
 [Site "?"]
@@ -305,10 +328,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "rn1qkb1r/pp2p2p/3pB1p1/2p5/4n3/2P5/PP1P1PPP/RNBQK2R w KQkq - 0 8"]
+[FEN "rnbqkb1r/pp2pp1p/3p1np1/2p5/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq - 1 5"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Qa4+ { Richtig: 8.Da4+ Sc6 9.Dxe4 (Bewertung +5,6). In der Partie geschah 8.Df3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 5. Ng5 Be6 6. Nxe6 fxe6 7. Bxe6 Nxe4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Qa4+ { Richtig: 8.Da4+ Sc6 9.Dxe4 (Bewertung +5,6). } ( 8. Qf3 $2 { Rot: In der Partie geschah 8.Df3? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 20 · Gegner hat gepatzt"]
 [Site "?"]
@@ -318,10 +342,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1b4r/p1qp1kb1/1p3p2/2p1pN1p/P1P1P1n1/1NPQ2B1/1P3PP1/R4RK1 w - - 2 20"]
+[FEN "r1b1k2r/p1qp2bp/1p3p1n/2p1p3/P1P1P1p1/1NPQ1NBP/1P3PP1/R4RK1 w kq - 0 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Qd5+ { Richtig: 20.Dd5+ Kg6 21.Se7+ (Bewertung +5,1). In der Partie geschah 20.Sxg7? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17. hxg4 Nxg4 18. Nh4 h5 19. Nf5 Kf7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Qd5+ { Richtig: 20.Dd5+ Kg6 21.Se7+ (Bewertung +5,1). } ( 20. Nxg7 $2 { Rot: In der Partie geschah 20.Sxg7? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 12 · Gegner hat gepatzt"]
 [Site "?"]
@@ -331,10 +356,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3kbnr/ppp2pp1/1n2pq1p/4Nb2/5P2/2NP2P1/PP2P1BP/R1BQ1RK1 w kq - 3 12"]
+[FEN "r2qkbnr/ppp2pp1/4p2p/3n1b2/3pNP2/3P1NP1/PPP1P1BP/R1BQ1RK1 w kq - 2 9"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. Bxb7 { Richtig: 12.Lxb7 Tb8 13.Lc6+ (Bewertung +5,3). In der Partie geschah 12.e4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 9. c3 dxc3 10. Nxc3 Nb6 11. Ne5 Qf6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. Bxb7 { Richtig: 12.Lxb7 Tb8 13.Lc6+ (Bewertung +5,3). } ( 12. e4 $2 { Rot: In der Partie geschah 12.e4? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 23 · Gegner hat gepatzt"]
 [Site "?"]
@@ -344,10 +370,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2k4r/pp3pQ1/2p1p2p/8/P7/1B3P1P/1q1r2P1/R3R1K1 b - - 0 23"]
+[FEN "2kr3r/pp3ppp/2p1p3/4q3/8/PB2QP1P/1P4P1/R3R1K1 b - - 0 20"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23... Qxg7 { Richtig: 23…Dxg7 24.Lxe6+ fxe6 (Bewertung +999,9). In der Partie geschah 23…Th7? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 20... Qxb2 21. a4 Rd2 22. Qg5 h6 23. Qxg7 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23... Qxg7 { Richtig: 23…Dxg7 24.Lxe6+ fxe6 (Bewertung +999,9). } ( 23... Rh7 $2 { Rot: In der Partie geschah 23…Th7? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 18 · Gegner hat gepatzt"]
 [Site "?"]
@@ -357,10 +384,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5rk1/1r2n1pp/p2q1p2/2p5/Q1P1p3/B3P3/P1N2PPP/4K1NR b K - 1 18"]
+[FEN "3q1rk1/rP2n1pp/p2b1p2/2p5/2P1p3/1Q2P3/PBN2PPP/3RK1NR b K - 1 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Rb1+ { Richtig: 18…Tb1+ 19.Lc1 Txc1+ (Bewertung +1000,0). In der Partie geschah 18…Td8? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15... Qc7 16. Rxd6 Rxb7 17. Qa4 Qxd6 18. Ba3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Rb1+ { Richtig: 18…Tb1+ 19.Lc1 Txc1+ (Bewertung +1000,0). } ( 18... Rd8 $2 { Rot: In der Partie geschah 18…Td8? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 24 · Gegner hat gepatzt"]
 [Site "?"]
@@ -370,10 +398,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1bk3B/ppqnb2p/6p1/2Pp4/2P5/1P4P1/P4Q1P/RN2R1K1 w - - 1 24"]
+[FEN "r1bqk2r/pppnb2p/6p1/3p4/3P4/1P4P1/PBP2Q1P/RN2R1K1 w kq - 2 21"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24. Rxe7 { Richtig: 24.Txe7 b6 25.Txh7 (Bewertung +7,7). In der Partie geschah 24.cxd5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 21. c4 c5 22. dxc5 Qc7 23. Bxh8 Kd8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24. Rxe7 { Richtig: 24.Txe7 b6 25.Txh7 (Bewertung +7,7). } ( 24. cxd5 $2 { Rot: In der Partie geschah 24.cxd5? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 26 · Gegner hat gepatzt"]
 [Site "?"]
@@ -383,10 +412,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1bk3B/ppq4p/6p1/2bPn3/8/1P2R1P1/P4Q1P/RN4K1 w - - 2 26"]
+[FEN "r1b1k2r/ppqnb2p/6p1/2Pp4/2P5/1P4P1/PB3Q1P/RN2R1K1 w kq - 1 23"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26. Bf6+ { Richtig: 26.Lf6+ Kd7 27.Lxe5 (Bewertung +6,2). In der Partie geschah 26.Df8+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 23. Bxh8 Kd8 24. cxd5 Bxc5 25. Re3 Ne5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26. Bf6+ { Richtig: 26.Lf6+ Kd7 27.Lxe5 (Bewertung +6,2). } ( 26. Qf8+ $2 { Rot: In der Partie geschah 26.Df8+? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 23 · Gegner hat gepatzt"]
 [Site "?"]
@@ -396,10 +426,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/p2nQ2p/bpp2pp1/3p4/N1PP3q/1P3P2/P5P1/4RRK1 b - - 0 23"]
+[FEN "r1b2rk1/pp1nQ2p/2p2pp1/3p3q/3P3B/2N2P2/PPP3P1/4RRK1 b - - 1 20"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23... Qxd4+ { Richtig: 23…Dxd4+ 24.De3 Dxe3+ (Bewertung +6,0). In der Partie geschah 23…dxc4? und die Chance war weg. Auch gut: Tf7. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 20... Qxh4 21. Na4 b6 22. c4 Ba6 23. b3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23... Qxd4+ { Richtig: 23…Dxd4+ 24.De3 Dxe3+ (Bewertung +6,0). Auch gut: Tf7. } ( 23... dxc4 $2 { Rot: In der Partie geschah 23…dxc4? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 24 · Gegner hat gepatzt"]
 [Site "?"]
@@ -409,10 +440,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/p2nQ2p/bpp2pp1/8/N1PP3q/5P2/P5P1/4RRK1 b - - 0 24"]
+[FEN "r1b2rk1/pp1nQ2p/2p2pp1/3p4/N2P3q/5P2/PPP3P1/4RRK1 b - - 1 21"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Qxd4+ { Richtig: 24…Dxd4+ 25.Tf2 Se5 (Bewertung +6,5). In der Partie geschah 24…Lxc4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 21... b6 22. c4 Ba6 23. b3 dxc4 24. bxc4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Qxd4+ { Richtig: 24…Dxd4+ 25.Tf2 Se5 (Bewertung +6,5). } ( 24... Bxc4 $2 { Rot: In der Partie geschah 24…Lxc4? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 31 · Gegner hat gepatzt"]
 [Site "?"]
@@ -422,10 +454,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "8/p4rkp/4q1p1/1p6/1P6/P3Q3/2P1KP2/R7 b - - 3 31"]
+[FEN "8/p4rkp/3Q2p1/1pp3q1/1P6/P6P/2P2P2/R4K2 b - - 0 28"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 31... Qf6 { Richtig: 31…Df6 32.Th1 Te7 (Bewertung +4,8). In der Partie geschah 31…Dc4+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 28... Qf5 29. Qxc5 Qxh3+ 30. Ke2 Qe6+ 31. Qe3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 31... Qf6 { Richtig: 31…Df6 32.Th1 Te7 (Bewertung +4,8). } ( 31... Qc4+ $2 { Rot: In der Partie geschah 31…Dc4+? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 32 · Gegner hat gepatzt"]
 [Site "?"]
@@ -435,10 +468,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "8/p4rkp/6p1/1p6/1Pq5/P2Q4/2P1KP2/R7 b - - 5 32"]
+[FEN "8/p4rkp/6p1/1pQ2q2/1P6/P6P/2P2P2/R4K2 b - - 0 29"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 32... Qe6+ { Richtig: 32…De6+ 33.De3 Df6 (Bewertung +4,5). In der Partie geschah 32…Dxd3+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 29... Qxh3+ 30. Ke2 Qe6+ 31. Qe3 Qc4+ 32. Qd3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 32... Qe6+ { Richtig: 32…De6+ 33.De3 Df6 (Bewertung +4,5). } ( 32... Qxd3+ $2 { Rot: In der Partie geschah 32…Dxd3+? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -448,10 +482,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bqk2r/pp1p4/2p2p2/2b1p1p1/1nB1P2p/2N2N1P/PPPQ2PB/2K2R2 w kq - 0 16"]
+[FEN "r1bqk2r/pppp4/2n2p2/2b1p1p1/2B1P2p/2NP1N1P/PPP1QnPB/2KR4 w kq - 2 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Nxe5 { Richtig: 16.Sxe5 d5 17.exd5 (Bewertung +2,3). In der Partie geschah 16.Kb1? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13. Rf1 Nxd3+ 14. Qxd3 Nb4 15. Qd2 c6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Nxe5 { Richtig: 16.Sxe5 d5 17.exd5 (Bewertung +2,3). } ( 16. Kb1 $2 { Rot: In der Partie geschah 16.Kb1? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 5 · Gegner hat gepatzt"]
 [Site "?"]
@@ -461,10 +496,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bq2nr/pppp1kpp/2n5/2b5/4P3/8/PPPP1PPP/RNBQKB1R w KQ - 0 5"]
+[FEN "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 5. Qh5+ { Richtig: 5.Dh5+ g6 6.Dxc5 (Bewertung +3,5). In der Partie geschah 5.Df3+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 2. Nf3 Bc5 3. Nxe5 Nc6 4. Nxf7 Kxf7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 5. Qh5+ { Richtig: 5.Dh5+ g6 6.Dxc5 (Bewertung +3,5). } ( 5. Qf3+ $2 { Rot: In der Partie geschah 5.Df3+? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
 [Site "?"]
@@ -474,10 +510,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2nk2r/1ppb1qp1/1b2p2p/pP1pP1B1/P1PP2nN/N2B4/6PP/R2Q1RK1 w kq - 0 18"]
+[FEN "r2nk2r/1ppbq1pp/1b2p2n/pP1pp3/P1PP1P2/N2B1N2/3B2PP/R2Q1RK1 w kq - 0 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Qxg4 { Richtig: 18.Dxg4 dxc4 19.Sxc4 (Bewertung +7,1). In der Partie geschah 18.Txf7? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15. fxe5 Ng4 16. Bg5 Qf7 17. Nh4 h6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Qxg4 { Richtig: 18.Dxg4 dxc4 19.Sxc4 (Bewertung +7,1). } ( 18. Rxf7 $2 { Rot: In der Partie geschah 18.Txf7? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
 [Site "?"]
@@ -487,10 +524,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2nk2r/1ppb1Rp1/1b2p3/pP1pP1p1/P1PP2nN/N2B4/6PP/R2Q2K1 w kq - 0 19"]
+[FEN "r2nk2r/1ppbq1pp/1b2p3/pP1pP3/P1PP2n1/N2B1N2/3B2PP/R2Q1RK1 w kq - 1 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Re7+ { Richtig: 19.Te7+ Kxe7 20.Sg6+ (Bewertung +7,9). In der Partie geschah 19.Sg6? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Bg5 Qf7 17. Nh4 h6 18. Rxf7 hxg5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Re7+ { Richtig: 19.Te7+ Kxe7 20.Sg6+ (Bewertung +7,9). } ( 19. Ng6 $2 { Rot: In der Partie geschah 19.Sg6? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 20 · Gegner hat gepatzt"]
 [Site "?"]
@@ -500,10 +538,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3k2r/1ppb1np1/1b2p1N1/pP1pP1p1/P1PP2n1/N2B4/6PP/R2Q2K1 w kq - 0 20"]
+[FEN "r2nk2r/1ppb1qpp/1b2p3/pP1pP1B1/P1PP2n1/N2B1N2/6PP/R2Q1RK1 w kq - 3 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Qxg4 { Richtig: 20.Dxg4 dxc4 21.Sxc4 (Bewertung +6,7). In der Partie geschah 20.Sxh8? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17. Nh4 h6 18. Rxf7 hxg5 19. Ng6 Nxf7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Qxg4 { Richtig: 20.Dxg4 dxc4 21.Sxc4 (Bewertung +6,7). } ( 20. Nxh8 $2 { Rot: In der Partie geschah 20.Sxh8? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 7 · Gegner hat gepatzt"]
 [Site "?"]
@@ -513,10 +552,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b1k1nr/ppp1q1pp/2np1p2/2b1p3/2BPP3/2P2N2/PP3PPP/RNBQ1RK1 w kq - 1 7"]
+[FEN "r1bqkbnr/pppp2pp/2n2p2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 7. dxc5 { Richtig: 7.dxc5 dxc5 8.Db3 (Bewertung +5,1). In der Partie geschah 7.d5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 4. O-O Bc5 5. c3 d6 6. d4 Qe7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 7. dxc5 { Richtig: 7.dxc5 dxc5 8.Db3 (Bewertung +5,1). } ( 7. d5 $2 { Rot: In der Partie geschah 7.d5? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 12 · Gegner hat gepatzt"]
 [Site "?"]
@@ -526,10 +566,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3k1nr/pp1bq1pp/3p1p2/nBb1p3/QP1pP3/2P2N2/P4PPP/RNB2RK1 w kq - 0 12"]
+[FEN "r1b1k1nr/pp2q1pp/2pp1p2/n1bPp3/4P3/2PB1N2/PP3PPP/RNBQ1RK1 w kq - 0 9"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. bxc5 { Richtig: 12.bxc5 b6 13.cxd6 (Bewertung +6,2). In der Partie geschah 12.Lxd7+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 9. Qa4 Bd7 10. b4 cxd5 11. Bb5 d4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. bxc5 { Richtig: 12.bxc5 b6 13.cxd6 (Bewertung +6,2). } ( 12. Bxd7+ $2 { Rot: In der Partie geschah 12.Lxd7+? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 18 · Gegner hat gepatzt"]
 [Site "?"]
@@ -539,10 +580,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bqr1k1/p1p2n1p/2p3p1/2P2p2/1b2PB2/3B4/P2N2PP/2RQ1RK1 b - - 0 18"]
+[FEN "r1bqr1k1/p1p2n1p/2p3p1/2Ppbp2/1P3B2/3BPP2/P2N2PP/R2Q1RK1 b - - 1 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Qxd3 { Richtig: 18…Dxd3 19.Tf3 Dd8 (Bewertung +5,3). In der Partie geschah 18…Lxd2? und die Chance war weg. Auch gut: Dd4+. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15... Bc3 16. Rc1 Bxb4 17. e4 dxe4 18. fxe4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Qxd3 { Richtig: 18…Dxd3 19.Tf3 Dd8 (Bewertung +5,3). Auch gut: Dd4+. } ( 18... Bxd2 $2 { Rot: In der Partie geschah 18…Lxd2? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 29 · Gegner hat gepatzt"]
 [Site "?"]
@@ -552,10 +594,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "6k1/1pp2p2/p5p1/4P3/P7/2Pr1PB1/4bK1P/R7 w - - 3 29"]
+[FEN "3rr1k1/1pp2p2/p5p1/1b2P3/3R4/2P2PB1/P6P/R5K1 w - - 1 26"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 29. Kxe2 { Richtig: 29.Kxe2 Txc3 30.a5 (Bewertung +4,1). In der Partie geschah 29.f4? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 26. Rxd8 Rxd8 27. a4 Be2 28. Kf2 Rd3 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 29. Kxe2 { Richtig: 29.Kxe2 Txc3 30.a5 (Bewertung +4,1). } ( 29. f4 $2 { Rot: In der Partie geschah 29.f4? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 9 · Gegner hat gepatzt"]
 [Site "?"]
@@ -565,10 +608,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qk2r/ppp2pp1/2nb1n1p/3p1b2/3P1B2/3BPN2/PP3PPP/RN1Q1RK1 w kq - 0 9"]
+[FEN "r2qkb1r/ppp2ppp/2n1pn2/3p1b2/3P1B2/3BPN2/PPP2PPP/RN1QK2R w KQkq - 0 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Bxf5 { Richtig: 9.Lxf5 Lxf4 10.exf4 (Bewertung +5,6). In der Partie geschah 9.Se5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6. O-O Bd6 7. c4 h6 8. cxd5 exd5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Bxf5 { Richtig: 9.Lxf5 Lxf4 10.exf4 (Bewertung +5,6). } ( 9. Ne5 $2 { Rot: In der Partie geschah 9.Se5? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 8 · Gegner hat gepatzt"]
 [Site "?"]
@@ -578,10 +622,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bqk1nr/2pp2pp/p1p2p2/2b5/3NP3/8/PPP2PPP/RNBQ1RK1 w kq - 1 8"]
+[FEN "r1bqkbnr/1ppp2pp/p1n2p2/1B2p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 5"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Qh5+ { Richtig: 8.Dh5+ Kf8 9.Dxc5+ (Bewertung +5,8). In der Partie geschah 8.Le3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 5. Bxc6 bxc6 6. d4 exd4 7. Nxd4 Bc5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Qh5+ { Richtig: 8.Dh5+ Kf8 9.Dxc5+ (Bewertung +5,8). } ( 8. Be3 $2 { Rot: In der Partie geschah 8.Le3? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 26 · Gegner hat gepatzt"]
 [Site "?"]
@@ -591,10 +636,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5rk1/2p3pp/p1p3b1/2N5/3r1P2/3p1R2/PP1R2PP/6K1 w - - 4 26"]
+[FEN "r4rk1/2p3pp/p1p3b1/8/3pNP2/8/PP3RPP/5RK1 w - - 0 23"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26. Ne6 { Richtig: 26.Se6 Tc4 27.Sxf8 (Bewertung +3,8). In der Partie geschah 26.Sxd3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 23. Nc5 d3 24. Rd2 Rad8 25. Rf3 Rd4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26. Ne6 { Richtig: 26.Se6 Tc4 27.Sxf8 (Bewertung +3,8). } ( 26. Nxd3 $2 { Rot: In der Partie geschah 26.Sxd3? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 28 · Gegner hat gepatzt"]
 [Site "?"]
@@ -604,10 +650,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "6kb/4rp2/p1nq3p/1p1p3N/3P3p/P1PQ1NP1/1P6/R5K1 w - - 0 28"]
+[FEN "4r1k1/4rp2/p1nq1b1p/1p1p2p1/3P1N2/P1PQ1NP1/1P5P/R3R1K1 w - - 0 25"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28. Nxh4 { Richtig: 28.Sxh4 Te4 29.Df3 (Bewertung +2,1). In der Partie geschah 28.a4? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 25. Nh5 Bh8 26. Rxe7 Rxe7 27. h4 gxh4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28. Nxh4 { Richtig: 28.Sxh4 Te4 29.Df3 (Bewertung +2,1). } ( 28. a4 $2 { Rot: In der Partie geschah 28.a4? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 29 · Gegner hat gepatzt"]
 [Site "?"]
@@ -617,10 +664,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r3k3/p4pp1/3p1r2/2p1p1q1/1pP1P1Pp/1P1PB2n/1P4P1/R1Q2RK1 w q - 0 29"]
+[FEN "r3k2r/p4pp1/3p4/2p1p1q1/1pP1PnPp/1P1P3P/1P3BP1/R2QR1K1 w kq - 1 26"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 29. gxh3 { Richtig: 29.gxh3 Txf1+ 30.Kxf1 (Bewertung +3,7). In der Partie geschah 29.Kh2? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 26. Qc1 Rh6 27. Be3 Rf6 28. Rf1 Nxh3+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 29. gxh3 { Richtig: 29.gxh3 Txf1+ 30.Kxf1 (Bewertung +3,7). } ( 29. Kh2 $2 { Rot: In der Partie geschah 29.Kh2? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 21 · Gegner hat gepatzt"]
 [Site "?"]
@@ -630,10 +678,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qr1k1/5p2/p2p2p1/2pPb2p/Pp1nPQ2/3PB3/1P4PP/R2B1RK1 w - - 2 21"]
+[FEN "r2qr1k1/5p1p/p2p1bpB/1ppP4/3nP1Q1/3P4/PP4PP/R2B1RK1 w - - 2 18"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. Qxf7+ { Richtig: 21.Dxf7+ Kh8 22.Dxg6 (Bewertung +3,5). In der Partie geschah 21.Dh6? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 18. a4 b4 19. Be3 h5 20. Qf4 Be5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. Qxf7+ { Richtig: 21.Dxf7+ Kh8 22.Dxg6 (Bewertung +3,5). } ( 21. Qh6 $2 { Rot: In der Partie geschah 21.Dh6? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 35 · Gegner hat gepatzt"]
 [Site "?"]
@@ -643,10 +692,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "6k1/8/p5p1/3P3p/r6r/2P2R2/6P1/1R4K1 w - - 0 35"]
+[FEN "6k1/6b1/p5p1/3P3p/P1r1r2P/2B2n2/1P4P1/R4RK1 w - - 0 32"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 35. d6 { Richtig: 35.d6 Thd4 36.cxd4 (Bewertung +5,1). In der Partie geschah 35.Tb8+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 32. Rxf3 Bxc3 33. bxc3 Rxh4 34. Rb1 Rxa4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 35. d6 { Richtig: 35.d6 Thd4 36.cxd4 (Bewertung +5,1). } ( 35. Rb8+ $2 { Rot: In der Partie geschah 35.Tb8+? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 4 · Gegner hat gepatzt"]
 [Site "?"]
@@ -656,10 +706,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rn1qkbnr/pbpp1ppp/1p2p3/4P3/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq - 2 4"]
+[FEN "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 4... Bxg2 { Richtig: 4…Lxg2 5.Dg4 Lxh1 (Bewertung +4,4). In der Partie geschah 4…d6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 1... b6 2. d4 e6 3. e5 Bb7 4. Bd3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 4... Bxg2 { Richtig: 4…Lxg2 5.Dg4 Lxh1 (Bewertung +4,4). } ( 4... d6 $2 { Rot: In der Partie geschah 4…d6? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 11 · Gegner hat gepatzt"]
 [Site "?"]
@@ -669,10 +720,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2q1bnr/p3kppp/1pQpp3/4P3/3P1P2/1P6/P1P4P/RNB1K3 b Q - 0 11"]
+[FEN "rn1qkbnr/p1p2ppp/1p1pp3/4P3/3PBP2/5Q2/PPP4P/RNB1K3 b Qkq - 0 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11... Qc8 { Richtig: 11…Dc8 12.exd6+ Kd8 (Bewertung +4,4). In der Partie geschah 11…dxe5? und die Chance war weg. Auch gut: Tc8, f5. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8... c6 9. Bxc6+ Nxc6 10. Qxc6+ Ke7 11. b3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11... Qc8 { Richtig: 11…Dc8 12.exd6+ Kd8 (Bewertung +4,4). Auch gut: Tc8, f5. } ( 11... dxe5 $2 { Rot: In der Partie geschah 11…dxe5? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -682,10 +734,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1b3k1/pp1n3p/2pp1qp1/6N1/4P1n1/2QB4/PPP2rP1/RN2K2R b KQ - 5 16"]
+[FEN "r1bq1r2/pp1n2kp/2pp2p1/8/3NP1n1/3B4/PPPQ1PP1/RN2K2R b KQ - 0 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Qxg5 { Richtig: 16…Dxg5 17.Lc4+ d5 (Bewertung +7,0). In der Partie geschah 16…h5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13... Rxf2 14. Ne6+ Kg8 15. Qc3 Qf6 16. Ng5 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Qxg5 { Richtig: 16…Dxg5 17.Lc4+ d5 (Bewertung +7,0). } ( 16... h5 $2 { Rot: In der Partie geschah 16…h5? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 12 · Gegner hat gepatzt"]
 [Site "?"]
@@ -695,10 +748,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "rn3rk1/p2pqpb1/1p1Pp1pp/2p1P3/2B5/2P2b2/PP3PPP/RN1Q1RK1 w - - 0 12"]
+[FEN "rn1q1rk1/pb1pnpbp/1p2p1p1/2p1P1B1/2BP4/2P2N2/PP3PPP/RN1Q1RK1 w - - 0 9"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. dxe7 { Richtig: 12.dxe7 Lxd1 13.exf8=T+ (Bewertung +4,1). In der Partie geschah 12.Dxf3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 9. d5 h6 10. Bxe7 Qxe7 11. d6 Bxf3 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. dxe7 { Richtig: 12.dxe7 Lxd1 13.exf8=T+ (Bewertung +4,1). } ( 12. Qxf3 $2 { Rot: In der Partie geschah 12.Dxf3? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -708,10 +762,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2r3k1/p2Q1pb1/1pnPp1pp/2p1q3/2B5/2P5/PP3PPP/RN3RK1 w - - 1 16"]
+[FEN "rn3rk1/p2p1pb1/1p1Pp1pp/2p1P1q1/2B5/2P2Q2/PP3PPP/RN3RK1 w - - 1 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Qxc8+ { Richtig: 16.Dxc8+ Lf8 17.Td1 (Bewertung +10,6). In der Partie geschah 16.f4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13. Qxa8 Nc6 14. Qb7 Qxe5 15. Qxd7 Rc8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Qxc8+ { Richtig: 16.Dxc8+ Lf8 17.Td1 (Bewertung +10,6). } ( 16. f4 $2 { Rot: In der Partie geschah 16.f4? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 20 · Gegner hat gepatzt"]
 [Site "?"]
@@ -721,10 +776,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2rqr1k1/p4pbp/3p2p1/6N1/3P4/1Qn5/PB3PPP/R4RK1 b - - 0 20"]
+[FEN "r2qr1k1/p3ppbp/3p2p1/6N1/3P4/B1n1P3/P1Q2PPP/R4RK1 b - - 3 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20... Ne2+ { Richtig: 20…Se2+ 21.Kh1 Dxg5 (Bewertung +5,6). In der Partie geschah 20…Lxd4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17... Rc8 18. Qb3 e5 19. Bb2 exd4 20. exd4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20... Ne2+ { Richtig: 20…Se2+ 21.Kh1 Dxg5 (Bewertung +5,6). } ( 20... Bxd4 $2 { Rot: In der Partie geschah 20…Lxd4? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 8 · Gegner hat gepatzt"]
 [Site "?"]
@@ -734,10 +790,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "r1bqkbnr/p2n3p/2pp1p2/1p2p1p1/3PP3/1BP2N2/PP3PPP/RNBQ1RK1 w kq - 1 8"]
+[FEN "rnbqkbnr/pp4pp/2pp1p2/4p3/2B1P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 5"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Nxg5 { Richtig: 8.Sxg5 Sb6 9.Sf7 (Bewertung +6,4). In der Partie geschah 8.d5? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 5. c3 b5 6. Bb3 g5 7. d4 Nd7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8. Nxg5 { Richtig: 8.Sxg5 Sb6 9.Sf7 (Bewertung +6,4). } ( 8. d5 $2 { Rot: In der Partie geschah 8.d5? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 42 · Gegner hat gepatzt"]
 [Site "?"]
@@ -747,10 +804,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2Q5/8/pkBp1p1r/2pPp3/8/2P3Pq/8/R4K2 w - - 7 42"]
+[FEN "2Q5/8/pkBp1p1r/2pPp3/8/2P1q1P1/8/R5K1 w - - 1 39"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 42. Qxh3 { Richtig: 42.Dxh3 Txh3 43.Tb1+ (Bewertung +3,1). In der Partie geschah 42.Kf2? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 39. Kg2 Qe2+ 40. Kg1 Qh2+ 41. Kf1 Qh3+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 42. Qxh3 { Richtig: 42.Dxh3 Txh3 43.Tb1+ (Bewertung +3,1). } ( 42. Kf2 $2 { Rot: In der Partie geschah 42.Kf2? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 44 · Gegner hat gepatzt"]
 [Site "?"]
@@ -760,10 +818,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2Q5/8/pkBp1p1r/2pPp2q/8/2P2KP1/8/R7 w - - 11 44"]
+[FEN "2Q5/8/pkBp1p1r/2pPp3/8/2P3P1/7q/R5K1 w - - 5 41"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 44. Ke3 { Richtig: 44.Ke3 Dg5+ 45.Kd3 (Bewertung +999,9). In der Partie geschah 44.Kf2? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 41. Kf1 Qh3+ 42. Kf2 Qh2+ 43. Kf3 Qh5+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 44. Ke3 { Richtig: 44.Ke3 Dg5+ 45.Kd3 (Bewertung +999,9). } ( 44. Kf2 $2 { Rot: In der Partie geschah 44.Kf2? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 46 · Gegner hat gepatzt"]
 [Site "?"]
@@ -773,10 +832,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2Q5/8/pkBp1p1r/2pPp2q/8/2P2KP1/8/R7 w - - 15 46"]
+[FEN "2Q5/8/pkBp1p1r/2pPp3/8/2P3P1/5K1q/R7 w - - 9 43"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 46. Ke3 { Richtig: 46.Ke3 Dg5+ 47.Kd3 (Bewertung +999,9). In der Partie geschah 46.Kf2? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 43. Kf3 Qh5+ 44. Kf2 Qh2+ 45. Kf3 Qh5+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 46. Ke3 { Richtig: 46.Ke3 Dg5+ 47.Kd3 (Bewertung +999,9). } ( 46. Kf2 $2 { Rot: In der Partie geschah 46.Kf2? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 15 · Gegner hat gepatzt"]
 [Site "?"]
@@ -786,10 +846,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2q1rk1/1pp2pp1/p1npb1Np/4p3/8/1BPPP3/PP1Q2PP/R4RK1 w - - 1 15"]
+[FEN "r1bq1rk1/1pp2pp1/p1np1n1p/4p3/4P3/1BPPPN2/PP1N2PP/R2Q1RK1 w - - 3 12"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Bxe6 { Richtig: 15.Lxe6 fxe6 16.Txf8+ (Bewertung +4,7). In der Partie geschah 15.Sxf8? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12. Nh4 Nxe4 13. Ng6 Nxd2 14. Qxd2 Be6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Bxe6 { Richtig: 15.Lxe6 fxe6 16.Txf8+ (Bewertung +4,7). } ( 15. Nxf8 $2 { Rot: In der Partie geschah 15.Sxf8? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
 [Site "?"]
@@ -799,10 +860,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r4rn1/pp1qnppk/3p3p/4pN2/4P3/2P2N1Q/PP3PPP/2R1R1K1 w - - 1 19"]
+[FEN "r4rn1/pp1qbppk/2np3p/4pN2/4P3/2P4Q/PP3PPP/RNB1R1K1 w - - 6 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Ng5+ { Richtig: 19.Sg5+ Kh8 20.Sxh6 (Bewertung +5,5). In der Partie geschah 19.Tcd1? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Nd2 Bg5 17. Nf3 Bxc1 18. Raxc1 Nce7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Ng5+ { Richtig: 19.Sg5+ Kh8 20.Sxh6 (Bewertung +5,5). } ( 19. Rcd1 $2 { Rot: In der Partie geschah 19.Tcd1? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 24 · Gegner hat gepatzt"]
 [Site "?"]
@@ -812,10 +874,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "3r3k/2p4p/1p4p1/p2N4/3R4/P1n2P2/2P3PP/6K1 b - - 0 24"]
+[FEN "5r1k/2p4p/1p2n1p1/p2N4/4n3/2P1BP2/P1P3PP/3R2K1 b - - 0 21"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Ne2+ { Richtig: 24…Se2+ 25.Kf2 Sxd4 (Bewertung +6,3). In der Partie geschah 24…Txd5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 21... Rd8 22. Bd4+ Nxd4 23. Rxd4 Nxc3 24. a3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Ne2+ { Richtig: 24…Se2+ 25.Kf2 Sxd4 (Bewertung +6,3). } ( 24... Rxd5 $2 { Rot: In der Partie geschah 24…Txd5? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 30 · Gegner hat gepatzt"]
 [Site "?"]
@@ -825,10 +888,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2r2r2/7k/p3p1p1/3qPp1P/2pP1R2/2P1P3/P1Q5/2KR4 w - - 0 30"]
+[FEN "2r2rk1/5ppp/p3p3/3qP1PP/2pPR3/2P1P3/P1Q5/2KR4 w - - 2 27"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 30. hxg6+ { Richtig: 30.hxg6+ Kxg6 31.e4 (Bewertung +6,0). In der Partie geschah 30.Dh2? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 27. g6 f5 28. gxh7+ Kxh7 29. Rf4 g6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 30. hxg6+ { Richtig: 30.hxg6+ Kxg6 31.e4 (Bewertung +6,0). } ( 30. Qh2 $2 { Rot: In der Partie geschah 30.Dh2? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 25 · Gegner hat gepatzt"]
 [Site "?"]
@@ -838,10 +902,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r5k1/1p1n1p1p/2p3pB/p7/4P3/1P4Q1/3qp1PP/5RK1 w - - 0 25"]
+[FEN "r3r1k1/1p1n1p1p/2p3pB/p7/8/1P2pPQ1/q2N2PP/1N3RK1 w - - 0 22"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25. Bxd2 { Richtig: 25.Lxd2 exf1=D+ 26.Kxf1 (Bewertung +4,8). In der Partie geschah 25.De1? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 22. Nc3 Qxd2 23. Ne4 Rxe4 24. fxe4 e2 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25. Bxd2 { Richtig: 25.Lxd2 exf1=D+ 26.Kxf1 (Bewertung +4,8). } ( 25. Qe1 $2 { Rot: In der Partie geschah 25.De1? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 20 · Gegner hat gepatzt"]
 [Site "?"]
@@ -851,10 +916,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/pppq1pp1/3p3p/4n2Q/4Pp2/3P1P1R/PPP2K2/6R1 w - - 2 20"]
+[FEN "r4rk1/pppq1ppp/3p4/4n2Q/2B1Pp2/3P1P1b/PPP2K2/R3R3 w - - 3 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Rxg7+ { Richtig: 20.Txg7+ Kxg7 21.Dxh6+ (Bewertung +1000,0). In der Partie geschah 20.Dxh6? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17. Rh1 Nxc4 18. Rxh3 h6 19. Rg1 Ne5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Rxg7+ { Richtig: 20.Txg7+ Kxg7 21.Dxh6+ (Bewertung +1000,0). } ( 20. Qxh6 $2 { Rot: In der Partie geschah 20.Dxh6? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 28 · Gegner hat gepatzt"]
 [Site "?"]
@@ -864,10 +930,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r4rk1/pp4b1/2pp2p1/4p2p/4P1n1/2PB2N1/PP3NK1/5R1R b - - 1 28"]
+[FEN "r3r1k1/pp3pb1/2ppp1P1/7p/4P1n1/3B2N1/PPP3K1/3N2RR b - - 0 25"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28... Ne3+ { Richtig: 28…Se3+ 29.Kg1 Tf3 (Bewertung +3,2). In der Partie geschah 28…Sxf2? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 25... fxg6 26. c3 Rf8 27. Rf1 e5 28. Nf2 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28... Ne3+ { Richtig: 28…Se3+ 29.Kg1 Tf3 (Bewertung +3,2). } ( 28... Nxf2 $2 { Rot: In der Partie geschah 28…Sxf2? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 10 · Gegner hat gepatzt"]
 [Site "?"]
@@ -877,10 +944,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rnbq1rk1/p1pp1ppp/1p6/5N2/2B1n3/2P5/P1P2PPP/R1BQ1RK1 w - - 0 10"]
+[FEN "rnbq1rk1/p1pp1ppp/1p1b1n2/8/2BpP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 7"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10. Qg4 { Richtig: 10.Dg4 Df6 11.Dxe4 (Bewertung +4,6). In der Partie geschah 10.Dd5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 7. Nxd4 Be5 8. Nf5 Bxc3 9. bxc3 Nxe4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10. Qg4 { Richtig: 10.Dg4 Df6 11.Dxe4 (Bewertung +4,6). } ( 10. Qd5 $2 { Rot: In der Partie geschah 10.Dd5? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
 [Site "?"]
@@ -890,10 +958,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "2b2rk1/2Q2ppp/1pp5/5N2/8/8/P1q1nPPP/R4R1K w - - 0 18"]
+[FEN "2b2rk1/Q1p2ppp/1pp5/4qN2/8/2n5/P1P2PPP/R1B2RK1 w - - 1 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Ne7+ { Richtig: 18.Se7+ Kh8 19.Sxc8 (Bewertung +5,6). In der Partie geschah 18.Dxb6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15. Bb2 Ne2+ 16. Kh1 Qxb2 17. Qxc7 Qxc2 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Ne7+ { Richtig: 18.Se7+ Kh8 19.Sxc8 (Bewertung +5,6). } ( 18. Qxb6 $2 { Rot: In der Partie geschah 18.Dxb6? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 9 · Gegner hat gepatzt"]
 [Site "?"]
@@ -903,10 +972,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "rn1q1rk1/p3ppbp/1p1p1np1/2p5/3P1PbN/6P1/PPP1P1BP/RNBQR1K1 w - - 0 9"]
+[FEN "rnbq1rk1/ppp1ppbp/3p1np1/8/5P2/5NP1/PPPPP1BP/RNBQ1RK1 w - - 5 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Bxa8 { Richtig: 9.Lxa8 d5 10.Sc3 (Bewertung +3,2). In der Partie geschah 9.Lf3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6. Re1 Bg4 7. d4 b6 8. Nh4 c5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Bxa8 { Richtig: 9.Lxa8 d5 10.Sc3 (Bewertung +3,2). } ( 9. Bf3 $2 { Rot: In der Partie geschah 9.Lf3? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
 [Site "?"]
@@ -916,10 +986,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/p6p/1p1ppqp1/2p5/2P1PPn1/2N3P1/PP5P/R2QR1K1 w - - 1 19"]
+[FEN "r2q1rk1/p3pp1p/1p1p2p1/2pP4/2P2Pn1/2b3P1/PP2P2P/RN1QR1K1 w - - 0 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Qxg4 { Richtig: 19.Dxg4 Dd4+ 20.Kh1 (Bewertung +4,9). In der Partie geschah 19.Dd3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Nxc3 e5 17. dxe6 fxe6 18. e4 Qf6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Qxg4 { Richtig: 19.Dxg4 Dd4+ 20.Kh1 (Bewertung +4,9). } ( 19. Qd3 $2 { Rot: In der Partie geschah 19.Dd3? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 11 · Gegner hat gepatzt"]
 [Site "?"]
@@ -929,10 +1000,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2qkb1r/pp1bnp1p/4p1p1/1B1pn1B1/Q2N4/2N5/PPP2PPP/R3K2R w KQkq - 0 11"]
+[FEN "r2qkbnr/pp1b1p1p/2npp1p1/1B6/Q3P3/2N2N2/PPP2PPP/R1B1K2R w KQkq - 0 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Bf6 { Richtig: 11.Lf6 a6 12.Lxd7+ (Bewertung +3,5). In der Partie geschah 11.O-O? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8. e5 d5 9. Bg5 Nge7 10. Nd4 Nxe5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Bf6 { Richtig: 11.Lf6 a6 12.Lxd7+ (Bewertung +3,5). } ( 11. O-O $2 { Rot: In der Partie geschah 11.O-O? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 21 · Gegner hat gepatzt"]
 [Site "?"]
@@ -942,10 +1014,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "1r5r/p1pqk1pp/2nb1pn1/8/2QPP3/P6P/1PP3P1/RNB2RK1 b - - 0 21"]
+[FEN "r6r/p1pq1kpp/3b1pn1/4n3/3P4/4P2P/PPP1Q1P1/RNB2RK1 b - - 0 18"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21... Nxd4 { Richtig: 21…Sxd4 22.Sc3 Se6 (Bewertung +3,6). In der Partie geschah 21…Sf4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 18... Nc6 19. Qc4+ Ke7 20. e4 Rab8 21. a3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21... Nxd4 { Richtig: 21…Sxd4 22.Sc3 Se6 (Bewertung +3,6). } ( 21... Nf4 $2 { Rot: In der Partie geschah 21…Sf4? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 24 · Gegner hat gepatzt"]
 [Site "?"]
@@ -955,10 +1028,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r4rk1/p4ppp/1p2p3/6P1/1qQp3P/nPN5/PKP5/5R1R b - - 1 24"]
+[FEN "r4rk1/p3qppp/1p2p3/3p2P1/2n4P/2N5/PPP1Q3/1K3R1R b - - 0 21"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Nxc4+ { Richtig: 24…Sxc4+ 25.Kc1 Da3+ (Bewertung +9,8). In der Partie geschah 24…dxc3+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 21... Qb4 22. b3 Na3+ 23. Kb2 d4 24. Qc4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Nxc4+ { Richtig: 24…Sxc4+ 25.Kc1 Da3+ (Bewertung +9,8). } ( 24... dxc3+ $2 { Rot: In der Partie geschah 24…dxc3+? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 26 · Gegner hat gepatzt"]
 [Site "?"]
@@ -968,10 +1042,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3kb2/pQ6/3p4/2p5/7P/5qP1/PPP2P2/2KR4 b q - 0 26"]
+[FEN "r3kb2/pp5Q/3p4/2p5/6bP/5qP1/PPPRBP2/2K4R b q - 4 23"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26... Qxb7 { Richtig: 26…Dxb7 27.a3 Kd7 (Bewertung +7,6). In der Partie geschah 26…Td8? und die Chance war weg. Auch gut: Lh6+. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 23... Qxh1+ 24. Bd1 Bxd1 25. Rxd1 Qf3 26. Qxb7 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26... Qxb7 { Richtig: 26…Dxb7 27.a3 Kd7 (Bewertung +7,6). Auch gut: Lh6+. } ( 26... Rd8 $2 { Rot: In der Partie geschah 26…Td8? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 24 · Gegner hat gepatzt"]
 [Site "?"]
@@ -981,10 +1056,11 @@
 [Black "Ich"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2r1r3/R3bk1p/p1b2p2/1p6/2p2B2/7P/PPP2PP1/4R1K1 b - - 6 24"]
+[FEN "r1b1r3/4bk1p/p4p2/1p1R4/2p2B2/7P/PPP2PP1/4R1K1 b - - 0 21"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Rcd8 { Richtig: 24…Tcd8 25.Txa6 Lf8 (Bewertung +3,5). In der Partie geschah 24…Kg6? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 21... Bb7 22. Rd7 Bc6 23. Rc7 Rac8 24. Ra7 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Rcd8 { Richtig: 24…Tcd8 25.Txa6 Lf8 (Bewertung +3,5). } ( 24... Kg6 $2 { Rot: In der Partie geschah 24…Kg6? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Schwarz am Zug · Zug 25 · Gegner hat gepatzt"]
 [Site "?"]
@@ -994,10 +1070,11 @@
 [Black "Ich"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2r1r3/4b2p/R1b2pk1/1p6/2p2B2/7P/PPP2PP1/4R1K1 b - - 0 25"]
+[FEN "r3r3/1b1Rbk1p/p4p2/1p6/2p2B2/7P/PPP2PP1/4R1K1 b - - 2 22"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25... Bc5 { Richtig: 25…Lc5 26.Txe8 Lxe8 (Bewertung +3,5). In der Partie geschah 25…Tg8? und die Chance war weg. Auch gut: Ld7, c3, Lf8. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 22... Bc6 23. Rc7 Rac8 24. Ra7 Kg6 25. Rxa6 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25... Bc5 { Richtig: 25…Lc5 26.Txe8 Lxe8 (Bewertung +3,5). Auch gut: Ld7, c3, Lf8. } ( 25... Rg8 $2 { Rot: In der Partie geschah 25…Tg8? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1007,10 +1084,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rn1q4/ppp2kpp/4rnb1/3N2B1/2Q1P1P1/5P2/PbP4P/R3KB1R w KQ - 0 14"]
+[FEN "rn1qr3/ppp2kpp/3b1nb1/6B1/4P1P1/5P2/PPP1Q2P/RN2KB1R w KQ - 1 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Nxc7 { Richtig: 14.Sxc7 De7 15.Sxe6 (Bewertung +2,2). In der Partie geschah 14.Tb1? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11. Qc4+ Re6 12. Nc3 Be5 13. Nd5 Bxb2 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Nxc7 { Richtig: 14.Sxc7 De7 15.Sxe6 (Bewertung +2,2). } ( 14. Rb1 $2 { Rot: In der Partie geschah 14.Tb1? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 15 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1020,10 +1098,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rn1q4/ppp2kpp/4rnb1/3N2B1/2Q1P1P1/2b2P2/P1P4P/1R2KB1R w K - 2 15"]
+[FEN "rn1q4/ppp2kpp/3brnb1/6B1/2Q1P1P1/5P2/PPP4P/RN2KB1R w KQ - 3 12"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Nxc3 { Richtig: 15.Sxc3 Sc6 16.Td1 (Bewertung +2,9). In der Partie geschah 15.Dxc3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12. Nc3 Be5 13. Nd5 Bxb2 14. Rb1 Bc3+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Nxc3 { Richtig: 15.Sxc3 Sc6 16.Td1 (Bewertung +2,9). } ( 15. Qxc3 $2 { Rot: In der Partie geschah 15.Dxc3? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1033,10 +1112,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rn1q4/ppp2kpp/2r2nb1/3N2B1/4P1P1/2Q2P2/P1P4P/1R2KB1R w K - 1 16"]
+[FEN "rn1q4/ppp2kpp/4rnb1/4b1B1/2Q1P1P1/2N2P2/PPP4P/R3KB1R w KQ - 5 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Qb3 { Richtig: 16.Db3 h6 17.Td1 (Bewertung +6,0). In der Partie geschah 16.Lxf6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13. Nd5 Bxb2 14. Rb1 Bc3+ 15. Qxc3 Rc6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Qb3 { Richtig: 16.Db3 h6 17.Td1 (Bewertung +6,0). } ( 16. Bxf6 $2 { Rot: In der Partie geschah 16.Lxf6? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 23 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1046,10 +1126,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r7/ppp3kp/2r2pb1/2qN4/4PPn1/1Q1B3P/P1P4K/1R3R2 w - - 0 23"]
+[FEN "r2q4/ppp3kp/2r2pb1/3Nn3/4P1P1/1Q1B1P2/P1P4P/1R3RK1 w - - 6 20"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23. hxg4 { Richtig: 23.hxg4 Te8 24.Db4 (Bewertung +4,5). In der Partie geschah 23.Kg3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 20. h3 Qd6 21. f4 Qc5+ 22. Kh2 Nxg4+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23. hxg4 { Richtig: 23.hxg4 Te8 24.Db4 (Bewertung +4,5). } ( 23. Kg3 $2 { Rot: In der Partie geschah 23.Kg3? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 21 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1059,10 +1140,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r3kb2/2qb3r/ppp3n1/3P2Bp/2P1P1n1/2NB4/PP1Q2PP/2KR3R w q - 5 21"]
+[FEN "r2qkb2/3bn2r/ppp2B1n/3Pp2p/2P1P3/2NB4/PP1Q2PP/2KR3R w q - 2 18"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. e5 { Richtig: 21.e5 Tg7 22.d6 (Bewertung +4,0). In der Partie geschah 21.h3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 18. Bxe5 Ng4 19. Bf4 Ng6 20. Bg5 Qc7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. e5 { Richtig: 21.e5 Tg7 22.d6 (Bewertung +4,0). } ( 21. h3 $2 { Rot: In der Partie geschah 21.h3? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 45 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1072,10 +1154,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "8/8/p7/7R/k3r2b/P7/1P4P1/1K6 w - - 6 45"]
+[FEN "8/1k6/p7/7R/4r2b/P7/1P4P1/1K6 w - - 0 42"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 45. Ka2 { Richtig: 45.Ka2 Te2 46.Txh4+ (Bewertung +3,0). In der Partie geschah 45.Th6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 42. Rh7+ Kb6 43. Rh6+ Kb5 44. Rh5+ Ka4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 45. Ka2 { Richtig: 45.Ka2 Te2 46.Txh4+ (Bewertung +3,0). } ( 45. Rh6 $2 { Rot: In der Partie geschah 45.Th6? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 7 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1085,10 +1168,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2qkbnr/pppbpppp/2n5/3p4/1QPP1B2/4PN2/PP3PPP/RN2KB1R b KQkq - 2 7"]
+[FEN "r2qkbnr/ppp1pppp/2n5/3p1b2/2PP1B2/5N2/PP2PPPP/RN1QKB1R b KQkq - 0 4"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 7... Nxb4 { Richtig: 7…Sxb4 8.Kd2 Sf6 (Bewertung +7,1). In der Partie geschah 7…b6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 4... Nb4 5. Qa4+ Nc6 6. e3 Bd7 7. Qb4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 7... Nxb4 { Richtig: 7…Sxb4 8.Kd2 Sf6 (Bewertung +7,1). } ( 7... b6 $2 { Rot: In der Partie geschah 7…b6? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 8 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1098,10 +1182,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2qkbnr/p1pbpppp/1pn5/3P4/1Q1P1B2/4PN2/PP3PPP/RN2KB1R b KQkq - 0 8"]
+[FEN "r2qkbnr/ppp1pppp/8/3p1b2/QnPP1B2/5N2/PP2PPPP/RN2KB1R b KQkq - 2 5"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8... Nxb4 { Richtig: 8…Sxb4 9.Sc3 Sc2+ (Bewertung +6,8). In der Partie geschah 8…e6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 5... Nc6 6. e3 Bd7 7. Qb4 b6 8. cxd5 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 8... Nxb4 { Richtig: 8…Sxb4 9.Sc3 Sc2+ (Bewertung +6,8). } ( 8... e6 $2 { Rot: In der Partie geschah 8…e6? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 9 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1111,10 +1196,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b2rk1/ppp2ppp/2np4/2bNp3/2B1P1nq/1P1P1N2/P1P2PPP/R1BQ1RK1 w - - 2 9"]
+[FEN "r1bq1rk1/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQ - 1 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Nxh4 { Richtig: 9.Sxh4 Sf6 10.Sxc7 (Bewertung +7,4). In der Partie geschah 9.Lg5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6. b3 Ng4 7. O-O d6 8. Nd5 Qh4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Nxh4 { Richtig: 9.Sxh4 Sf6 10.Sxc7 (Bewertung +7,4). } ( 9. Bg5 $2 { Rot: In der Partie geschah 9.Lg5? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 28 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1124,10 +1210,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2k1r3/1p6/p6p/3p2p1/6n1/1PN2P2/P1PR2PP/6K1 b - - 0 28"]
+[FEN "2kr3r/1p6/p3p2p/3pn1p1/8/1PN5/P1PR1PPP/4R1K1 b - - 1 25"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28... Re1# { Richtig: 28…Te1# (Bewertung +1000,0). In der Partie geschah 28…Sf6? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 25... Ng4 26. Rxe6 Rhe8 27. Rxe8 Rxe8 28. f3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28... Re1# { Richtig: 28…Te1# (Bewertung +1000,0). } ( 28... Nf6 $2 { Rot: In der Partie geschah 28…Sf6? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 11 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1137,10 +1224,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b1k1nr/pppp1pp1/7p/q7/1nBPP3/5N2/PPPNQ1PP/R3K2R w KQkq - 1 11"]
+[FEN "r1b1k1nr/pppp1pp1/2n4p/2q1p3/2B1P3/3PPN2/PPPN2PP/R2QK2R w KQkq - 1 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Bxf7+ { Richtig: 11.Lxf7+ Kxf7 12.Se5+ (Bewertung +5,3). In der Partie geschah 11.Sb3? und die Chance war weg. Auch gut: O-O. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8. Qe2 Nb4 9. d4 exd4 10. exd4 Qa5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Bxf7+ { Richtig: 11.Lxf7+ Kxf7 12.Se5+ (Bewertung +5,3). Auch gut: O-O. } ( 11. Nb3 $2 { Rot: In der Partie geschah 11.Sb3? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 9 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1150,10 +1238,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3kb1r/pppqn1pp/2n1pp2/8/3p1Pb1/5NP1/PPPPPNBP/R1BQ1RK1 w kq - 2 9"]
+[FEN "r3kbnr/pppqp1pp/2n2p2/3p4/5Pb1/5NP1/PPPPP1BP/RNBQ1RK1 w kq - 5 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Nxg4 { Richtig: 9.Sxg4 h5 10.Sf2 (Bewertung +4,7). In der Partie geschah 9.e3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6. Nc3 d4 7. Ne4 e6 8. Nf2 Nge7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Nxg4 { Richtig: 9.Sxg4 h5 10.Sf2 (Bewertung +4,7). } ( 9. e3 $2 { Rot: In der Partie geschah 9.e3? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 11 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1163,10 +1252,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3kb1r/pppqn1pp/5p2/4n3/3p2b1/4PNP1/PPPP1NBP/R1BQ1RK1 w kq - 0 11"]
+[FEN "r3kbnr/pppq2pp/2n1pp2/8/3pNPb1/5NP1/PPPPP1BP/R1BQ1RK1 w kq - 0 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Nxe5 { Richtig: 11.Sxe5 Lxd1 12.Sxd7 (Bewertung +5,7). In der Partie geschah 11.Sxg4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8. Nf2 Nge7 9. e3 e5 10. fxe5 Nxe5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. Nxe5 { Richtig: 11.Sxe5 Lxd1 12.Sxd7 (Bewertung +5,7). } ( 11. Nxg4 $2 { Rot: In der Partie geschah 11.Sxg4? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1176,10 +1266,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2kr3r/pppq2p1/1n1b1p2/7p/2PN1Rn1/1P2P1PB/PB1P3P/R2Q2K1 w - - 5 18"]
+[FEN "r3kb1r/pppq2p1/1n3p2/7p/2PN2n1/4P1PB/PP1P3P/R1BQ1RK1 w kq - 1 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Rxg4 { Richtig: 18.Txg4 g5 19.Th4 (Bewertung +5,1). In der Partie geschah 18.Lxg4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15. b3 Bc5 16. Bb2 O-O-O 17. Rf4 Bd6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Rxg4 { Richtig: 18.Txg4 g5 19.Th4 (Bewertung +5,1). } ( 18. Bxg4 $2 { Rot: In der Partie geschah 18.Lxg4? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1189,10 +1280,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r3kbnr/1b1p1ppp/p3p3/8/3n1P2/2P2NP1/P1Q3BP/qNB2RK1 w kq - 0 14"]
+[FEN "r3kbnr/1b1p1ppp/pqn1p3/8/3P1P2/2p2NP1/PP1B2BP/RN1Q1RK1 w kq - 0 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Nxd4 { Richtig: 14.Sxd4 Lc5 15.Lxb7 (Bewertung +2,1). In der Partie geschah 14.cxd4? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11. bxc3 Qb2 12. Bc1 Qxa1 13. Qc2 Nxd4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Nxd4 { Richtig: 14.Sxd4 Lc5 15.Lxb7 (Bewertung +2,1). } ( 14. cxd4 $2 { Rot: In der Partie geschah 14.cxd4? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 25 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1202,10 +1294,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "2r5/5pk1/p3p3/2bp1p2/5P2/3Bq1P1/P1QN3P/5R1K w - - 0 25"]
+[FEN "2r3k1/3p1p1p/p3pp2/2b5/5P2/4q1P1/P1QN2BP/5R1K w - - 4 22"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25. Nf3 { Richtig: 25.Sf3 Tc7 26.Db2+ (Bewertung +3,7). In der Partie geschah 25.Lxf5? und die Chance war weg. Auch gut: Lxa6, Dc3+. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 22. Be4 d5 23. Bxh7+ Kg7 24. Bd3 f5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25. Nf3 { Richtig: 25.Sf3 Tc7 26.Db2+ (Bewertung +3,7). Auch gut: Lxa6, Dc3+. } ( 25. Bxf5 $2 { Rot: In der Partie geschah 25.Lxf5? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 13 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1215,10 +1308,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bq1rk1/p4ppp/3b1n2/1ppNp3/2Pn4/1P1P2P1/P2BNPBP/R2Q1RK1 w - - 0 13"]
+[FEN "r1bqk2r/pp3ppp/2nb1n2/2pNp3/8/3P2P1/PPPBNPBP/R2QK2R w KQkq - 4 10"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13. Nxf6+ { Richtig: 13.Sxf6+ Dxf6 14.Sxd4 (Bewertung +5,2). In der Partie geschah 13.f4? und die Chance war weg. Auch gut: Sxd4. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 10. c4 O-O 11. O-O Nd4 12. b3 b5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13. Nxf6+ { Richtig: 13.Sxf6+ Dxf6 14.Sxd4 (Bewertung +5,2). Auch gut: Sxd4. } ( 13. f4 $2 { Rot: In der Partie geschah 13.f4? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1228,10 +1322,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bq1rk1/p4ppp/3b1n2/2pNp3/2pn1P2/1P1P2P1/P2BN1BP/R2Q1RK1 w - - 0 14"]
+[FEN "r1bq1rk1/pp3ppp/2nb1n2/2pNp3/2P5/3P2P1/PP1BNPBP/R2QK2R w KQ - 1 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Nxf6+ { Richtig: 14.Sxf6+ Dxf6 15.Sxd4 (Bewertung +3,0). In der Partie geschah 14.bxc4? und die Chance war weg. Auch gut: Sxd4. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11. O-O Nd4 12. b3 b5 13. f4 bxc4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Nxf6+ { Richtig: 14.Sxf6+ Dxf6 15.Sxd4 (Bewertung +3,0). Auch gut: Sxd4. } ( 14. bxc4 $2 { Rot: In der Partie geschah 14.bxc4? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 28 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1241,10 +1336,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "4r1k1/p2P2pp/5p2/8/1qp2B2/3P2P1/P3b1BP/Q3K3 w - - 4 28"]
+[FEN "4r1k1/p5pp/1q1P1p2/2p5/5Bb1/3P2P1/P5BP/Q5K1 w - - 1 25"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28. Bd2 { Richtig: 28.Ld2 De7 29.dxe8=T+ (Bewertung +3,6). In der Partie geschah 28.Kf2? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 25. d7 c4+ 26. Kf1 Be2+ 27. Ke1 Qb4+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28. Bd2 { Richtig: 28.Ld2 De7 29.dxe8=T+ (Bewertung +3,6). } ( 28. Kf2 $2 { Rot: In der Partie geschah 28.Kf2? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 29 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1254,10 +1350,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "4r1k1/p2P2pp/5p2/2q5/2p2B2/3P2P1/P3bKBP/Q7 w - - 6 29"]
+[FEN "4r1k1/p2P2pp/1q3p2/8/2p2Bb1/3P2P1/P5BP/Q5K1 w - - 0 26"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 29. d4 { Richtig: 29.d4 De7 30.dxe8=T+ (Bewertung +5,5). In der Partie geschah 29.Ke1? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 26. Kf1 Be2+ 27. Ke1 Qb4+ 28. Kf2 Qc5+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 29. d4 { Richtig: 29.d4 De7 30.dxe8=T+ (Bewertung +5,5). } ( 29. Ke1 $2 { Rot: In der Partie geschah 29.Ke1? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 31 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1267,10 +1364,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "4r1k1/p2P2pp/5p2/2q5/2p2B2/3P2P1/P3bKBP/Q7 w - - 10 31"]
+[FEN "4r1k1/p2P2pp/5p2/8/1qp2B2/3P2P1/P3b1BP/Q3K3 w - - 4 28"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 31. d4 { Richtig: 31.d4 De7 32.dxe8=D+ (Bewertung +5,4). In der Partie geschah 31.Ke1? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 28. Kf2 Qc5+ 29. Ke1 Qb4+ 30. Kf2 Qc5+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 31. d4 { Richtig: 31.d4 De7 32.dxe8=D+ (Bewertung +5,4). } ( 31. Ke1 $2 { Rot: In der Partie geschah 31.Ke1? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 33 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1280,10 +1378,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "7r/pp6/2pk2q1/3P4/7P/P1B2pP1/1PP2P1K/R3R3 b - - 0 33"]
+[FEN "4Rb1r/ppk5/2p4q/8/2NP3P/P1B2pP1/1PP2P1K/R7 b - - 0 30"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 33... Rxh4+ { Richtig: 33…Txh4+ 34.Kg1 Dg4 (Bewertung +6,3). In der Partie geschah 33…Dxc2? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 30... Bd6 31. Nxd6 Kxd6 32. Ree1 Qg6 33. d5 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 33... Rxh4+ { Richtig: 33…Txh4+ 34.Kg1 Dg4 (Bewertung +6,3). } ( 33... Qxc2 $2 { Rot: In der Partie geschah 33…Dxc2? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1293,10 +1392,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2kr3/pp2n1bp/1npBBp2/3p4/3P4/2N1Q2P/P1q2PP1/R4RK1 w - - 3 18"]
+[FEN "r2k2nr/pp1n2bp/2pBpp2/3p3B/3P4/2N2Q1P/P1q2PP1/R4RK1 w - - 0 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Bc7+ { Richtig: 18.Lc7+ Kxc7 19.Dg3+ (Bewertung +1000,0). In der Partie geschah 18.Lf7? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15. Bf7 Ne7 16. Bxe6 Re8 17. Qe3 Nb6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Bc7+ { Richtig: 18.Lc7+ Kxc7 19.Dg3+ (Bewertung +1000,0). } ( 18. Bf7 $2 { Rot: In der Partie geschah 18.Lf7? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1306,10 +1406,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3r3/pp1knBbp/1npB1p2/3p4/3P4/2N1Q2P/P1q2PP1/R4RK1 w - - 5 19"]
+[FEN "r2k3r/pp1nnBbp/2pBpp2/3p4/3P4/2N2Q1P/P1q2PP1/R4RK1 w - - 2 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Qe6+ { Richtig: 19.De6+ Kd8 20.Lxe8 (Bewertung +9,3). In der Partie geschah 19.Lxe8+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Bxe6 Re8 17. Qe3 Nb6 18. Bf7 Kd7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Qe6+ { Richtig: 19.De6+ Kd8 20.Lxe8 (Bewertung +9,3). } ( 19. Bxe8+ $2 { Rot: In der Partie geschah 19.Lxe8+? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 17 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1319,10 +1420,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r6r/pppk1pp1/3p2qp/3P4/3nP1bB/3B1NP1/PP1N1K1P/R2Q4 w - - 3 17"]
+[FEN "r3k2r/ppp2pp1/2np2qp/8/2BpP2B/2P2NPb/PP1N1K1P/R2Q4 w kq - 0 14"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17. Qa4+ { Richtig: 17.Da4+ Kc8 18.Dxd4 (Bewertung +5,6). In der Partie geschah 17.e5? und die Chance war weg. Auch gut: Tc1. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 14. cxd4 Bg4 15. d5 Nd4 16. Bd3 Kd7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17. Qa4+ { Richtig: 17.Da4+ Kc8 18.Dxd4 (Bewertung +5,6). Auch gut: Tc1. } ( 17. e5 $2 { Rot: In der Partie geschah 17.e5? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1332,10 +1434,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r6r/pppk1pp1/3p3p/3PP2q/3n2bB/3B1NP1/PP1N1K1P/R2Q4 w - - 1 18"]
+[FEN "r3k2r/ppp2pp1/2np2qp/8/2BPP1bB/5NP1/PP1N1K1P/R2Q4 w kq - 1 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Qa4+ { Richtig: 18.Da4+ Kc8 19.Dxd4 (Bewertung +6,5). In der Partie geschah 18.e6+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15. d5 Nd4 16. Bd3 Kd7 17. e5 Qh5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Qa4+ { Richtig: 18.Da4+ Kc8 19.Dxd4 (Bewertung +6,5). } ( 18. e6+ $2 { Rot: In der Partie geschah 18.e6+? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1345,10 +1448,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "r2qk2r/p1p2pp1/1pnp3p/5b2/2BP3N/P3B3/1PQ2nPP/R3K2R w KQkq - 0 14"]
+[FEN "r1bqk2r/p1p2pp1/1pnp1n1p/8/2BPP3/P3BN2/1P1b1PPP/R2QK2R w KQkq - 0 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Qxf2 { Richtig: 14.Dxf2 Le6 15.d5 (Bewertung +5,9). In der Partie geschah 14.Sxf5? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11. Qxd2 Nxe4 12. Qc2 Bf5 13. Nh4 Nxf2 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Qxf2 { Richtig: 14.Dxf2 Le6 15.d5 (Bewertung +5,9). } ( 14. Nxf5 $2 { Rot: In der Partie geschah 14.Sxf5? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Schwarz am Zug · Zug 22 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1358,10 +1462,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2kr2r1/pn1bqp1p/1pp2p2/2P2B2/1P1N4/P5P1/6P1/R2Q1RK1 b - - 0 22"]
+[FEN "2kr2r1/pnb1qp1p/1pp2p2/2P1p3/1P1P4/P2B1NNb/5PP1/R2Q1RK1 b - - 1 19"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22... Qe3+ { Richtig: 22…De3+ 23.Kh1 Le6 (Bewertung +2,5). In der Partie geschah 22…Lxf5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 19... Bd7 20. Bf5 exd4 21. Nxd4 Bxg3 22. fxg3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22... Qe3+ { Richtig: 22…De3+ 23.Kh1 Le6 (Bewertung +2,5). } ( 22... Bxf5 $2 { Rot: In der Partie geschah 22…Lxf5? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1371,10 +1476,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qkb1r/pb1p2pp/1p1Ppn2/6B1/2PpN3/8/PP2QPPP/R3KB1R w KQkq - 0 14"]
+[FEN "r2qkbnr/pb1p2pp/1pnPpp2/2p1P1B1/2P5/2N2N2/PP2QPPP/R3KB1R w KQkq - 0 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Bxf6 { Richtig: 14.Lxf6 Dxf6 15.Sxf6+ (Bewertung +5,5). In der Partie geschah 14.f4? und die Chance war weg. Auch gut: Sxf6+. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11. exf6 Nxf6 12. Ne4 Nd4 13. Nxd4 cxd4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Bxf6 { Richtig: 14.Lxf6 Dxf6 15.Sxf6+ (Bewertung +5,5). Auch gut: Sxf6+. } ( 14. f4 $2 { Rot: In der Partie geschah 14.f4? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 4 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1384,10 +1490,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rn1qkbnr/pp2pppp/3pb3/2pP4/4P3/8/PPP2PPP/RNBQKBNR w KQkq - 1 4"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 4. dxe6 { Richtig: 4.dxe6 fxe6 5.Sf3 (Bewertung +6,0). In der Partie geschah 4.c4? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 1. e4 d6 2. d4 c5 3. d5 Be6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 4. dxe6 { Richtig: 4.dxe6 fxe6 5.Sf3 (Bewertung +6,0). } ( 4. c4 $2 { Rot: In der Partie geschah 4.c4? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 11 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1397,10 +1504,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b1kb1r/3pqppp/2p2n2/pp6/3pP3/1PN2N2/1PP2PPP/R1BQR1K1 w kq - 0 11"]
+[FEN "r1b1kb1r/p2pqppp/2p2n2/1p2p3/B2nP3/2N2N2/PPPP1PPP/R1BQR1K1 w kq - 0 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. e5 { Richtig: 11.e5 Sd5 12.Se4 (Bewertung +4,4). In der Partie geschah 11.Sxd4? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8. Bb3 Nxb3 9. axb3 a5 10. d4 exd4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11. e5 { Richtig: 11.e5 Sd5 12.Se4 (Bewertung +4,4). } ( 11. Nxd4 $2 { Rot: In der Partie geschah 11.Sxd4? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1410,10 +1518,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qk2r/1b1p1ppp/2p5/pp1nP3/3NN3/1P6/1PPQ1PPP/R3R1K1 w kq - 1 16"]
+[FEN "r1bqkb1r/3p1ppp/2p5/pp1nP3/3N4/1PN5/1PP2PPP/R1BQR1K1 w kq - 1 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Nd6+ { Richtig: 16.Sd6+ Kf8 17.Sxb7 (Bewertung +6,6). In der Partie geschah 16.Txa5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13. Bd2 Bb4 14. Ne4 Bxd2 15. Qxd2 Bb7 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Nd6+ { Richtig: 16.Sd6+ Kf8 17.Sxb7 (Bewertung +6,6). } ( 16. Rxa5 $2 { Rot: In der Partie geschah 16.Txa5? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 40 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1423,10 +1532,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "8/p2RR3/2p5/8/1P1N3k/2Kb2r1/P4r2/8 b - - 7 40"]
+[FEN "6r1/p2RR3/2p3r1/8/1P1N3k/3b4/P4K2/8 b - - 1 37"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 40... Bb5+ { Richtig: 40…Lb5+ 41.Sf3+ Tgxf3+ (Bewertung +4,3). In der Partie geschah 40…Lf5+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 37... Rf8+ 38. Ke3 Rg3+ 39. Kd2 Rf2+ 40. Kc3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 40... Bb5+ { Richtig: 40…Lb5+ 41.Sf3+ Tgxf3+ (Bewertung +4,3). } ( 40... Bf5+ $2 { Rot: In der Partie geschah 40…Lf5+? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1436,10 +1546,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3k2r/pQ1b2R1/2n1p3/3pP3/3P1p2/8/PP2P1B1/RNB3Kq w kq - 1 19"]
+[FEN "rnb1k2r/pp4R1/4p3/3pP3/3P1p1q/8/PP2P1B1/RNBQ2K1 w kq - 1 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Bxh1 { Richtig: 19.Lxh1 Td8 20.Lxf4 (Bewertung +10,2). In der Partie geschah 19.Kf2? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Qa4+ Bd7 17. Qb4 Nc6 18. Qxb7 Qh1+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Bxh1 { Richtig: 19.Lxh1 Td8 20.Lxf4 (Bewertung +10,2). } ( 19. Kf2 $2 { Rot: In der Partie geschah 19.Kf2? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 12 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1449,10 +1560,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3kb1r/p1p2ppp/2bp1B2/8/3P4/8/PPP1KPPP/RN2R3 b kq - 1 12"]
+[FEN "r1b1kb1r/p1p2ppp/2Np1n2/6B1/3Pq3/8/PPP1QPPP/RN2K2R b KQkq - 1 9"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12... gxf6 { Richtig: 12…gxf6 13.Kf1+ Kd8 (Bewertung +4,1). In der Partie geschah 12…Lxg2? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 9... Qxe2+ 10. Kxe2 Bb7 11. Bxf6 Bxc6 12. Re1 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12... gxf6 { Richtig: 12…gxf6 13.Kf1+ Kd8 (Bewertung +4,1). } ( 12... Bxg2 $2 { Rot: In der Partie geschah 12…Lxg2? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1462,10 +1574,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r3k2r/ppp1bppp/5q2/8/2Pp2P1/1P3NP1/P3Q3/RNB2K2 b kq - 2 16"]
+[FEN "r3kb1r/ppp2ppp/8/8/2Pp2P1/6P1/PP2Q3/RNB1K1Nq b Qkq - 1 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... d3 { Richtig: 16…d3 17.Dxd3 Dxa1 (Bewertung +5,0). In der Partie geschah 16…O-O-O? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13... Be7 14. Kf1 Qc6 15. b3 Qf6+ 16. Nf3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... d3 { Richtig: 16…d3 17.Dxd3 Dxa1 (Bewertung +5,0). } ( 16... O-O-O $2 { Rot: In der Partie geschah 16…O-O-O? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 13 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1475,10 +1588,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2q1rk1/ppp1nppp/3p3B/2bPp3/2B5/P2P2QP/1PP2PP1/R4RK1 b - - 4 13"]
+[FEN "r2q1rk1/ppp2ppp/2np1n2/3Np3/1bB1P3/P2P1Q1P/1PP2PP1/R1B2RK1 b - - 2 10"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13... Nf5 { Richtig: 13…Sf5 14.Dg5 Sxh6 (Bewertung +5,1). In der Partie geschah 13…Kh8? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 10... Nxd5 11. exd5 Bc5 12. Qg3 Ne7 13. Bh6 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13... Nf5 { Richtig: 13…Sf5 14.Dg5 Sxh6 (Bewertung +5,1). } ( 13... Kh8 $2 { Rot: In der Partie geschah 13…Kh8? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 22 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1488,10 +1602,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/pp3ppp/2p5/3pR3/5n2/1B6/PPP3PP/2K2R2 b - - 5 22"]
+[FEN "r4rk1/pp3ppp/2pp4/4n3/3R4/1B6/PPP3PP/2K2R2 b - - 1 19"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22... Ng6 { Richtig: 22…Sg6 23.Th5 Tfe8 (Bewertung +3,8). In der Partie geschah 22…Sxg2? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 19... d5 20. Rh4 Ng6 21. Rh5 Nf4 22. Re5 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22... Ng6 { Richtig: 22…Sg6 23.Th5 Tfe8 (Bewertung +3,8). } ( 22... Nxg2 $2 { Rot: In der Partie geschah 22…Sxg2? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 24 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1501,10 +1616,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/pp3ppp/2p5/4R3/2p5/8/PPB3nP/2K2R2 b - - 1 24"]
+[FEN "r4rk1/pp3ppp/2p3n1/3p3R/8/1B6/PPP3PP/2K2R2 b - - 3 21"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Rfe8 { Richtig: 24…Tfe8 25.Txe8+ Txe8 (Bewertung +4,9). In der Partie geschah 24…b5? und die Chance war weg. Auch gut: Tae8. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 21... Nf4 22. Re5 Nxg2 23. c4 dxc4 24. Bc2 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 24... Rfe8 { Richtig: 24…Tfe8 25.Txe8+ Txe8 (Bewertung +4,9). Auch gut: Tae8. } ( 24... b5 $2 { Rot: In der Partie geschah 24…b5? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 9 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1514,10 +1630,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "rn2k2r/pppb1pp1/3p1b1p/8/4P3/3P1P2/PPP1B1PP/RN2K1NR b KQkq - 1 9"]
+[FEN "rnb1k2r/ppp1bppp/3p1n2/8/4P3/3P1P2/PPP3PP/RNB1KBNR b KQkq - 0 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9... Bxb2 { Richtig: 9…Lxb2 10.Sh3 Lxa1 (Bewertung +5,7). In der Partie geschah 9…Sc6? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6... Bd7 7. Bg5 h6 8. Bxf6 Bxf6 9. Be2 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9... Bxb2 { Richtig: 9…Lxb2 10.Sh3 Lxa1 (Bewertung +5,7). } ( 9... Nc6 $2 { Rot: In der Partie geschah 9…Sc6? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 10 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1527,10 +1644,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r3k2r/pppb1pp1/2np1b1p/8/4P3/3P1P1N/PPP1B1PP/RN2K2R b KQkq - 3 10"]
+[FEN "rn2k2r/pppbbppp/3p1n2/6B1/4P3/3P1P2/PPP3PP/RN2KBNR b KQkq - 2 7"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10... Bxb2 { Richtig: 10…Lxb2 11.Sf4 Lxa1 (Bewertung +5,7). In der Partie geschah 10…O-O-O? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 7... h6 8. Bxf6 Bxf6 9. Be2 Nc6 10. Nh3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10... Bxb2 { Richtig: 10…Lxb2 11.Sf4 Lxa1 (Bewertung +5,7). } ( 10... O-O-O $2 { Rot: In der Partie geschah 10…O-O-O? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 11 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1540,10 +1658,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2kr3r/pppb1pp1/2np1b1p/8/4PN2/3P1P2/PPP1B1PP/RN2K2R b KQ - 5 11"]
+[FEN "rn2k2r/pppbbpp1/3p1B1p/8/4P3/3P1P2/PPP3PP/RN2KBNR b KQkq - 0 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11... Bxb2 { Richtig: 11…Lxb2 12.Kd2 Lxa1 (Bewertung +4,8). In der Partie geschah 11…Lg5? und die Chance war weg. Auch gut: g5. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8... Bxf6 9. Be2 Nc6 10. Nh3 O-O-O 11. Nf4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11... Bxb2 { Richtig: 11…Lxb2 12.Kd2 Lxa1 (Bewertung +4,8). Auch gut: g5. } ( 11... Bg5 $2 { Rot: In der Partie geschah 11…Lg5? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 9 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1553,10 +1672,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r2qk1nr/ppp2ppp/2n1p3/bB2Pb2/8/N1PP1N1P/P4PP1/R1BQK2R b KQkq - 2 9"]
+[FEN "r2qkbnr/ppp2ppp/2n1p3/1B2Pb2/3p4/3P1N1P/PPP2PP1/RNBQK2R b KQkq - 0 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9... Bxc3+ { Richtig: 9…Lxc3+ 10.Ld2 Lxa1 (Bewertung +4,4). In der Partie geschah 9…Dxd3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6... Bb4+ 7. c3 dxc3 8. bxc3 Ba5 9. Na3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9... Bxc3+ { Richtig: 9…Lxc3+ 10.Ld2 Lxa1 (Bewertung +4,4). } ( 9... Qxd3 $2 { Rot: In der Partie geschah 9…Dxd3? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 13 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1566,10 +1686,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2q1rk1/ppp3pp/4b3/1Bb1npB1/P2pp3/6Q1/1PP2PPP/RN2R1K1 b - - 1 13"]
+[FEN "r1bq1rk1/ppp2ppp/8/1Bbpn3/P2pn3/1Q1P4/1PP2PPP/RNB1R1K1 b - - 0 10"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13... Qd5 { Richtig: 13…Dd5 14.Sc3 dxc3 (Bewertung +2,9). In der Partie geschah 13…Le7? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 10... Be6 11. dxe4 dxe4 12. Qg3 f5 13. Bg5 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 13... Qd5 { Richtig: 13…Dd5 14.Sc3 dxc3 (Bewertung +2,9). } ( 13... Be7 $2 { Rot: In der Partie geschah 13…Le7? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 14 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1579,10 +1700,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2q1rk1/ppp1b1pp/4b3/1B2npB1/P2pp2P/6Q1/1PP2PP1/RN2R1K1 b - - 0 14"]
+[FEN "r2q1rk1/ppp2ppp/4b3/1Bbpn3/P2pP3/1Q6/1PP2PPP/RNB1R1K1 b - - 0 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14... f4 { Richtig: 14…f4 15.Lxf4 Lxh4 (Bewertung +5,2). In der Partie geschah 14…Lxg5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11... dxe4 12. Qg3 f5 13. Bg5 Be7 14. h4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14... f4 { Richtig: 14…f4 15.Lxf4 Lxh4 (Bewertung +5,2). } ( 14... Bxg5 $2 { Rot: In der Partie geschah 14…Lxg5? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 25 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1592,10 +1714,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r4rk1/pp4p1/2p4q/3b1p1Q/P2p1P2/3Bn3/1PPN1K2/R6R b - - 6 25"]
+[FEN "r4rk1/pp4p1/2p2q1n/3b1p1Q/P2p1P2/3B4/1PP5/RN2R1K1 b - - 0 22"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25... Qxf4+ { Richtig: 25…Dxf4+ 26.Ke2 Tae8 (Bewertung +7,1). In der Partie geschah 25…Dxh5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 22... Ng4 23. Nd2 Ne3 24. Kf2 Qh6 25. Rh1 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 25... Qxf4+ { Richtig: 25…Dxf4+ 26.Ke2 Tae8 (Bewertung +7,1). } ( 25... Qxh5 $2 { Rot: In der Partie geschah 25…Dxh5? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 21 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1605,10 +1728,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "4rrk1/p1p2pp1/1p2pn2/3p2Q1/3P4/2P2P2/2P4P/qNKR3R w - - 1 21"]
+[FEN "r4rk1/p1pn1pp1/1p2p2p/3p4/3P2PQ/2P5/2P2P1P/qNKR3R w - - 1 18"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. Rhg1 { Richtig: 21.Thg1 g6 22.Dxf6 (Bewertung +999,9). In der Partie geschah 21.h4? und die Chance war weg. Auch gut: Tdg1. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 18. g5 hxg5 19. Qxg5 Nf6 20. f3 Rae8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 21. Rhg1 { Richtig: 21.Thg1 g6 22.Dxf6 (Bewertung +999,9). Auch gut: Tdg1. } ( 21. h4 $2 { Rot: In der Partie geschah 21.h4? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 22 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1618,10 +1742,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "4rrk1/p1p2pp1/1p3n2/3pp1Q1/3P3P/2P2P2/2P5/qNKR3R w - - 0 22"]
+[FEN "r4rk1/p1pn1pp1/1p2p3/3p2p1/3P3Q/2P5/2P2P1P/qNKR3R w - - 0 19"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22. Rhg1 { Richtig: 22.Thg1 Sh5 23.Dxh5 (Bewertung +4,8). In der Partie geschah 22.h5? und die Chance war weg. Auch gut: Tdg1. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 19. Qxg5 Nf6 20. f3 Rae8 21. h4 e5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22. Rhg1 { Richtig: 22.Thg1 Sh5 23.Dxh5 (Bewertung +4,8). Auch gut: Tdg1. } ( 22. h5 $2 { Rot: In der Partie geschah 22.h5? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 26 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1631,10 +1756,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2k2r2/1ppr4/p1n5/P1Bb3p/1P4pN/2PPR3/5PpP/1R4K1 w - - 1 26"]
+[FEN "2kr3r/1ppq4/p1n4b/P1Bbp2p/1PN3pN/2PPQ3/5PpP/1R2R1K1 w - - 2 23"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26. Bxf8 { Richtig: 26.Lxf8 Tf7 27.c4 (Bewertung +5,7). In der Partie geschah 26.Tbe1? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 23. Nxe5 Bxe3 24. Nxd7 Rxd7 25. Rxe3 Rf8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 26. Bxf8 { Richtig: 26.Lxf8 Tf7 27.c4 (Bewertung +5,7). } ( 26. Rbe1 $2 { Rot: In der Partie geschah 26.Tbe1? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 15 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1644,10 +1770,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r2q1rk1/p1p2ppp/1p6/b2pPp2/5B2/2R1P3/P2N1PPP/3Q1RK1 b - - 1 15"]
+[FEN "r2qk2r/ppp2ppp/8/3pPp2/5B2/2b1P3/P2N1PPP/2RQK2R b Kkq - 1 12"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15... Bxc3 { Richtig: 15…Lxc3 16.Sf3 c5 (Bewertung +3,5). In der Partie geschah 15…c5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12... Ba5 13. O-O O-O 14. Rc5 b6 15. Rc3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15... Bxc3 { Richtig: 15…Lxc3 16.Sf3 c5 (Bewertung +3,5). } ( 15... c5 $2 { Rot: In der Partie geschah 15…c5? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 19 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1657,10 +1784,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5rk1/6pp/p1p2p2/qrPpp3/3nP3/1P6/P2N1PPP/R1Q2RK1 b - - 2 19"]
+[FEN "1r3rk1/4n1pp/p1p2p2/q1PppN2/8/1P2P3/P2N1PPP/R2Q1RK1 b - - 0 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19... Ne2+ { Richtig: 19…Se2+ 20.Kh1 Sxc1 (Bewertung +6,1). In der Partie geschah 19…Txc5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16... Nxf5 17. Qc2 Rb5 18. e4 Nd4 19. Qc1 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19... Ne2+ { Richtig: 19…Se2+ 20.Kh1 Sxc1 (Bewertung +6,1). } ( 19... Rxc5 $2 { Rot: In der Partie geschah 19…Txc5? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 20 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1670,10 +1798,11 @@
 [Black "Ich"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2r1r1k1/pp2qppp/4b3/8/4B3/2P1P2P/PP2Q1P1/R3KR2 b Q - 0 20"]
+[FEN "r1b1r1k1/pp3ppp/5q2/8/4p3/1BP1P2P/PP2Q1P1/R3K2R b KQ - 0 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20... Qh4+ { Richtig: 20…Dh4+ 21.Tf2 Dxe4 (Bewertung +5,3). In der Partie geschah 20…Lc4? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17... Be6 18. Rf1 Qe7 19. Bc2 Rac8 20. Bxe4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20... Qh4+ { Richtig: 20…Dh4+ 21.Tf2 Dxe4 (Bewertung +5,3). } ( 20... Bc4 $2 { Rot: In der Partie geschah 20…Lc4? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Schwarz am Zug · Zug 36 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1683,10 +1812,11 @@
 [Black "Ich"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "7R/3N1k2/7p/pp2Rq2/8/b7/5P1P/7K b - - 1 36"]
+[FEN "4R1kr/3N4/7p/pp3B1q/8/b7/5PKP/4R3 b - - 4 33"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 36... Qxf2 { Richtig: 36…Dxf2 37.h3 Ld6 (Bewertung +5,9). In der Partie geschah 36…Df3+? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 33... Kf7 34. Rxh8 Qg5+ 35. Kh1 Qxf5 36. Re5 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 36... Qxf2 { Richtig: 36…Dxf2 37.h3 Ld6 (Bewertung +5,9). } ( 36... Qf3+ $2 { Rot: In der Partie geschah 36…Df3+? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 15 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1696,10 +1826,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rn2k2r/pp3ppp/2p1p3/4P1q1/Q2P3b/2N1PB1P/PP2K1P1/R6R w kq - 3 15"]
+[FEN "rn1qk2r/pp2bppp/2p1p3/4Pn2/Q2P4/2N2B1P/PP3PP1/R1B1K2R w KQkq - 1 12"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. g3 { Richtig: 15.g3 Lxg3 16.Se4 (Bewertung +4,0). In der Partie geschah 15.Tag1? und die Chance war weg. Auch gut: Se4, Db3. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12. Be3 Nxe3 13. fxe3 Bh4+ 14. Ke2 Qg5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. g3 { Richtig: 15.g3 Lxg3 16.Se4 (Bewertung +4,0). Auch gut: Se4, Db3. } ( 15. Rag1 $2 { Rot: In der Partie geschah 15.Tag1? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 22 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1709,10 +1840,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "1r3rk1/3Q1ppp/2p1p1q1/4P3/p2PN1Bb/1P2P2P/P3K1P1/6RR w - - 0 22"]
+[FEN "r4rk1/pQ1n1ppp/2p1p1q1/4P3/3PN2b/4PB1P/PP2K1P1/6RR w - - 1 19"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22. Bf3 { Richtig: 22.Lf3 Tfd8 23.Da7 (Bewertung +3,8). In der Partie geschah 22.Kf3? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 19. Qxd7 Rab8 20. b3 a5 21. Bg4 a4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22. Bf3 { Richtig: 22.Lf3 Tfd8 23.Da7 (Bewertung +3,8). } ( 22. Kf3 $2 { Rot: In der Partie geschah 22.Kf3? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 27 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1722,10 +1854,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "6k1/1p1N1ppp/p1p2n2/4R3/1P6/Pr5P/5PP1/6K1 b - - 1 27"]
+[FEN "6k1/1p3ppp/p1p2n2/4pR2/NP2P3/PP1r3P/5PP1/6K1 b - - 2 24"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 27... Nxd7 { Richtig: 27…Sxd7 28.Te8+ Sf8 (Bewertung +5,1). In der Partie geschah 27…Txa3? und die Chance war weg. Auch gut: Tb1+. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 24... Nxe4 25. Rxe5 Nf6 26. Nb6 Rxb3 27. Nd7 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 27... Nxd7 { Richtig: 27…Sxd7 28.Te8+ Sf8 (Bewertung +5,1). Auch gut: Tb1+. } ( 27... Rxa3 $2 { Rot: In der Partie geschah 27…Txa3? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 28 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1735,10 +1868,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "6k1/1p1N1ppp/p1p2n2/4R3/1P4P1/r6P/5P2/6K1 b - - 0 28"]
+[FEN "6k1/1p3ppp/p1p5/4R3/NP2n3/PP1r3P/5PP1/6K1 b - - 0 25"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28... Nxd7 { Richtig: 28…Sxd7 29.Te8+ Sf8 (Bewertung +5,2). In der Partie geschah 28…Txh3? und die Chance war weg. Auch gut: Ta1+. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 25... Nf6 26. Nb6 Rxb3 27. Nd7 Rxa3 28. g4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 28... Nxd7 { Richtig: 28…Sxd7 29.Te8+ Sf8 (Bewertung +5,2). Auch gut: Ta1+. } ( 28... Rxh3 $2 { Rot: In der Partie geschah 28…Txh3? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 27 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1748,10 +1882,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "5q2/ppk5/2n5/4R2p/4Q3/2P2pP1/PP1r1P1P/R5K1 w - - 1 27"]
+[FEN "2kr1q2/ppr5/2n1R3/1N5p/6n1/2P2pP1/PP3P1P/R3Q1K1 w - - 0 24"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 27. Rf5 { Richtig: 27.Tf5 Dd6 28.Dxf3 (Bewertung +6,0). In der Partie geschah 27.Df4? und die Chance war weg. Auch gut: Txh5. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 24. Nxc7 Kxc7 25. Qe4 Nge5 26. Rxe5 Rd2 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 27. Rf5 { Richtig: 27.Tf5 Dd6 28.Dxf3 (Bewertung +6,0). Auch gut: Txh5. } ( 27. Qf4 $2 { Rot: In der Partie geschah 27.Df4? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 20 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1761,10 +1896,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "1k2rb1r/3q3p/BBpp1p1n/p5p1/P7/8/1PPQ1PPP/R3R1K1 w - - 0 20"]
+[FEN "1k1r1b1r/3q2pp/2pp1p1n/pB6/P2B4/8/1PP2PPP/R2QR1K1 w - - 0 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Rxe8+ { Richtig: 20.Txe8+ Dxe8 21.Dxa5 (Bewertung +999,9). In der Partie geschah 20.Dxa5? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17. Bb6 Rc8 18. Ba6 Re8 19. Qd2 g5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Rxe8+ { Richtig: 20.Txe8+ Dxe8 21.Dxa5 (Bewertung +999,9). } ( 20. Qxa5 $2 { Rot: In der Partie geschah 20.Dxa5? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 33 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1774,10 +1910,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "5r1k/6p1/2QR2r1/pP2p3/P3P2p/5PP1/4q2P/5RK1 b - - 0 33"]
+[FEN "5r1k/6p1/2Qp2r1/pP2p2p/P3P3/5PP1/3q3P/3R1RK1 b - - 1 30"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 33... hxg3 { Richtig: 33…hxg3 34.Dc2 gxh2+ (Bewertung +1000,0). In der Partie geschah 33…De3+? und die Chance war weg. Auch gut: h3. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 30... Qe3+ 31. Kg2 Qe2+ 32. Kg1 h4 33. Rxd6 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 33... hxg3 { Richtig: 33…hxg3 34.Dc2 gxh2+ (Bewertung +1000,0). Auch gut: h3. } ( 33... Qe3+ $2 { Rot: In der Partie geschah 33…De3+? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1787,10 +1924,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1br2k1/2q2ppp/p3p3/1pbnP3/5B2/P1NB4/1PQ2PPP/R4RK1 w - - 2 16"]
+[FEN "r1b2rk1/1pq1nppp/p3p3/2b1P3/5B2/P7/1P2BPPP/RN1Q1RK1 w - - 5 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Nxd5 { Richtig: 16.Sxd5 Txd5 17.Lxh7+ (Bewertung +4,1). In der Partie geschah 16.Lxh7+? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13. Nc3 Rd8 14. Qc2 b5 15. Bd3 Nd5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Nxd5 { Richtig: 16.Sxd5 Txd5 17.Lxh7+ (Bewertung +4,1). } ( 16. Bxh7+ $2 { Rot: In der Partie geschah 16.Lxh7+? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 10 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1800,10 +1938,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1b1kb1r/ppp1qpp1/5n1p/1B2p3/3nN3/4QP1N/PPP3PP/R1B1K2R b KQkq - 3 10"]
+[FEN "r1b1kb1r/ppp1qppp/2np1n2/4P3/8/2N1QP2/PPP3PP/R1B1KBNR b KQkq - 0 7"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10... Nxb5 { Richtig: 10…Sxb5 11.Sxf6+ Dxf6 (Bewertung +6,2). In der Partie geschah 10…c6? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 7... dxe5 8. Nh3 h6 9. Ne4 Nd4 10. Bb5+ { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10... Nxb5 { Richtig: 10…Sxb5 11.Sxf6+ Dxf6 (Bewertung +6,2). } ( 10... c6 $2 { Rot: In der Partie geschah 10…c6? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 22 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1813,10 +1952,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "2rqr1k1/4pp1p/6pQ/p7/1p6/1B6/PPP3PP/R4RK1 w - - 2 22"]
+[FEN "2rq1rk1/4pp1p/p5p1/8/1p1b1Q2/1B6/PPP3PP/R1B2RK1 w - - 1 19"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22. Rxf7 { Richtig: 22.Txf7 Db6+ 23.Kh1 (Bewertung +1000,0). In der Partie geschah 22.Lxf7+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 19. Be3 Bxe3+ 20. Qxe3 a5 21. Qh6 Re8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 22. Rxf7 { Richtig: 22.Txf7 Db6+ 23.Kh1 (Bewertung +1000,0). } ( 22. Bxf7+ $2 { Rot: In der Partie geschah 22.Lxf7+? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1826,10 +1966,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/1pp3pp/pbn3q1/4p3/1PP2p2/P4NPb/1B1PBP2/R2QR1K1 b - - 0 16"]
+[FEN "r1b2rk1/1pp3pp/pbn5/4pp2/1PP1q3/P4N1P/1B1PBPP1/R2QR1K1 b - - 1 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Qxg3+ { Richtig: 16…Dxg3+ 17.Kh1 Dg2# (Bewertung +1000,0). In der Partie geschah 16…fxg3? und die Chance war weg. Auch gut: Lxf2+. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13... f4 14. Ng5 Qg6 15. Nf3 Bxh3 16. g3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16... Qxg3+ { Richtig: 16…Dxg3+ 17.Kh1 Dg2# (Bewertung +1000,0). Auch gut: Lxf2+. } ( 16... fxg3 $2 { Rot: In der Partie geschah 16…fxg3? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 19 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1839,10 +1980,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/1pp3pp/pbn3q1/4p3/1PP4N/P6b/1B1P3K/R2QRB2 b - - 0 19"]
+[FEN "r4rk1/1pp3pp/pbn3q1/4p3/1PP2p2/P4NPb/1B1PBP2/R2QR1K1 b - - 0 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19... Qg1+ { Richtig: 19…Dg1+ 20.Kxh3 Dh1+ (Bewertung +1000,0). In der Partie geschah 19…Tf2+? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16... fxg3 17. Nh4 gxf2+ 18. Kh2 f1=Q 19. Bxf1 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19... Qg1+ { Richtig: 19…Dg1+ 20.Kxh3 Dh1+ (Bewertung +1000,0). } ( 19... Rf2+ $2 { Rot: In der Partie geschah 19…Tf2+? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 17 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1852,10 +1994,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b5/ppp1n1pp/3q1k2/4Nn2/8/2N5/PPP1Q1PP/R3K2R w KQ - 2 17"]
+[FEN "r1bq2k1/ppp1nrpp/8/3P1n2/2B5/2N2N2/PPP1Q1PP/R3K2R w KQ - 0 14"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17. Ne4+ { Richtig: 17.Se4+ Kxe5 18.Sxd6+ (Bewertung +7,1). In der Partie geschah 17.Td1? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 14. d6 Qxd6 15. Bxf7+ Kxf7 16. Ne5+ Kf6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 17. Ne4+ { Richtig: 17.Se4+ Kxe5 18.Sxd6+ (Bewertung +7,1). } ( 17. Rd1 $2 { Rot: In der Partie geschah 17.Td1? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 18 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1865,10 +2008,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b5/ppp1n1pp/3q1k2/4N3/3n4/2N5/PPP1Q1PP/3RK2R w K - 4 18"]
+[FEN "r1b3k1/ppp1nrpp/3q4/5n2/2B5/2N2N2/PPP1Q1PP/R3K2R w KQ - 0 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Qf2+ { Richtig: 18.Df2+ Lf5 19.O-O (Bewertung +6,0). In der Partie geschah 18.Se4+? und die Chance war weg. Auch gut: O-O+. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15. Bxf7+ Kxf7 16. Ne5+ Kf6 17. Rd1 Nd4 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18. Qf2+ { Richtig: 18.Df2+ Lf5 19.O-O (Bewertung +6,0). Auch gut: O-O+. } ( 18. Ne4+ $2 { Rot: In der Partie geschah 18.Se4+? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 19 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1878,10 +2022,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1b5/ppp1n1pp/3qk3/4N3/3nN3/8/PPP1Q1PP/3RK2R w K - 6 19"]
+[FEN "r1b5/ppp1nkpp/3q4/5n2/8/2N2N2/PPP1Q1PP/R3K2R w KQ - 0 16"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Ng5+ { Richtig: 19.Sg5+ Kf6 20.Sxh7+ (Bewertung +7,8). In der Partie geschah 19.Sxd6? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 16. Ne5+ Kf6 17. Rd1 Nd4 18. Ne4+ Ke6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 19. Ng5+ { Richtig: 19.Sg5+ Kf6 20.Sxh7+ (Bewertung +7,8). } ( 19. Nxd6 $2 { Rot: In der Partie geschah 19.Sxd6? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 12 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1891,10 +2036,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "1r1qkb1r/pQ3ppp/2p1pn2/3p4/3P1B2/4PN2/PP1NKPPP/R7 w k - 1 12"]
+[FEN "r2qkb1r/pp3ppp/2p1pn2/1Q1p4/1n1P1B2/4PN2/PPPN1PPP/R3K2R w KQkq - 0 9"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. Bxb8 { Richtig: 12.Lxb8 Dd7 13.Da6 (Bewertung +6,1). In der Partie geschah 12.Dxa7? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 9. Qxb7 Nxc2+ 10. Ke2 Nxa1 11. Rxa1 Rb8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 12. Bxb8 { Richtig: 12.Lxb8 Dd7 13.Da6 (Bewertung +6,1). } ( 12. Qxa7 $2 { Rot: In der Partie geschah 12.Dxa7? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 14 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1904,10 +2050,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "3qk2r/2Q2ppp/2pbpn2/3p4/3P1B2/4PN2/Pr1NKPPP/R7 w k - 2 14"]
+[FEN "r2qkb1r/pQ3ppp/2p1pn2/3p4/3P1B2/4PN2/PP1NKPPP/n6R w kq - 0 11"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Qxd8+ { Richtig: 14.Dxd8+ Kxd8 15.Lxd6 (Bewertung +3,6). In der Partie geschah 14.Dxc6+? und die Chance war weg. Auch gut: Dxd6. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 11. Rxa1 Rb8 12. Qxa7 Rxb2 13. Qc7 Bd6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 14. Qxd8+ { Richtig: 14.Dxd8+ Kxd8 15.Lxd6 (Bewertung +3,6). Auch gut: Dxd6. } ( 14. Qxc6+ $2 { Rot: In der Partie geschah 14.Dxc6+? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 20 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1917,10 +2064,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "7r/4kppp/4p3/3pB3/3P4/4PN2/Pr1nKPPP/2R5 w - - 0 20"]
+[FEN "3qk2r/5ppp/3Qp3/3p4/3PnB2/4PN2/Pr1NKPPP/2R5 w k - 3 17"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Rc7+ { Richtig: 20.Tc7+ Kd8 21.Sxd2 (Bewertung +4,4). In der Partie geschah 20.Sxd2? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 17. Qxd8+ Kxd8 18. Bc7+ Ke7 19. Be5 Nxd2 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 20. Rc7+ { Richtig: 20.Tc7+ Kd8 21.Sxd2 (Bewertung +4,4). } ( 20. Nxd2 $2 { Rot: In der Partie geschah 20.Sxd2? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 7 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1930,10 +2078,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "rn1qkbnr/p1p3pp/1p1p1p2/4p3/2B1P3/1Q6/PPPP1PPP/RNB2RK1 w kq - 0 7"]
+[FEN "rn1qkbnr/ppp2ppp/3p4/4p3/2B1P1b1/5N2/PPPP1PPP/RNBQK2R w KQkq - 2 4"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 7. Bf7+ { Richtig: 7.Lf7+ Kd7 8.Dh3+ (Bewertung +999,9). In der Partie geschah 7.Lb5+? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 4. O-O Bxf3 5. Qxf3 f6 6. Qb3 b6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 7. Bf7+ { Richtig: 7.Lf7+ Kd7 8.Dh3+ (Bewertung +999,9). } ( 7. Bb5+ $2 { Rot: In der Partie geschah 7.Lb5+? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 9 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1943,10 +2092,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "rn1qkbnr/p5pp/2pp1p2/1p2p3/2B1P3/1Q6/PPPP1PPP/RNB2RK1 w kq - 0 9"]
+[FEN "rn1qkbnr/ppp3pp/3p1p2/4p3/2B1P3/5Q2/PPPP1PPP/RNB2RK1 w kq - 0 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Bxg8 { Richtig: 9.Lxg8 d5 10.Le6 (Bewertung +5,8). In der Partie geschah 9.Lxb5? und die Chance war weg. Auch gut: Lf7+. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6. Qb3 b6 7. Bb5+ c6 8. Bc4 b5 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9. Bxg8 { Richtig: 9.Lxg8 d5 10.Le6 (Bewertung +5,8). Auch gut: Lf7+. } ( 9. Bxb5 $2 { Rot: In der Partie geschah 9.Lxb5? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Schwarz am Zug · Zug 15 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1956,10 +2106,11 @@
 [Black "Ich"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2kr2r1/pp1q1p1p/2pp1p2/2b1p2b/1PP1P3/P2P1BPP/5P2/R1BQ1RK1 b - - 0 15"]
+[FEN "r3k2r/pp1q1p1p/2pp1p2/2b1p2b/2PnP3/1P1P1NPP/P4PB1/R1BQ1RK1 b kq - 0 12"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15... Rxg3+ { Richtig: 15…Txg3+ 16.Lg2 Dxh3 (Bewertung +1000,0). In der Partie geschah 15…Lxf3? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12... O-O-O 13. a3 Rhg8 14. b4 Nxf3+ 15. Bxf3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15... Rxg3+ { Richtig: 15…Txg3+ 16.Lg2 Dxh3 (Bewertung +1000,0). } ( 15... Bxf3 $2 { Rot: In der Partie geschah 15…Lxf3? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Schwarz am Zug · Zug 18 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1969,10 +2120,11 @@
 [Black "Ich"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2kr2r1/pp3p1p/2pp1p2/4p3/1PPbP3/P2P2Pq/R4PQ1/2B2RK1 b - - 1 18"]
+[FEN "2kr2r1/pp1q1p1p/2pp1p2/2b1p2b/1PP1P3/P2P1BPP/5P2/R1BQ1RK1 b - - 0 15"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Rxg3 { Richtig: 18…Txg3 19.Dxg3 Dxg3+ (Bewertung +1000,0). In der Partie geschah 18…Dxg2+? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 15... Bxf3 16. Qxf3 Bd4 17. Ra2 Qxh3 18. Qg2 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 18... Rxg3 { Richtig: 18…Txg3 19.Dxg3 Dxg3+ (Bewertung +1000,0). } ( 18... Qxg2+ $2 { Rot: In der Partie geschah 18…Dxg2+? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Schwarz am Zug · Zug 10 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1982,10 +2134,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "r1bqkb1r/pp2p1pp/2n5/3p4/3PpB2/2Q5/PPP1B1PP/R3K1NR b KQkq - 3 10"]
+[FEN "rnbqkb1r/pp2p1pp/2p5/3N1p2/3PpB2/5P2/PPP1B1PP/R2QK1NR b KQkq - 0 7"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10... e5 { Richtig: 10…e5 11.Ld2 Lb4 (Bewertung +4,1). In der Partie geschah 10…Da5? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 7... cxd5 8. fxe4 fxe4 9. Qd2 Nc6 10. Qc3 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10... e5 { Richtig: 10…e5 11.Ld2 Lb4 (Bewertung +4,1). } ( 10... Qa5 $2 { Rot: In der Partie geschah 10…Da5? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 15 · Gegner hat gepatzt"]
 [Site "?"]
@@ -1995,10 +2148,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2kr1b1r/p1pq1p2/1p3n1p/3p2p1/3QP3/2P1BP1P/PP4P1/RN3RK1 w - - 0 15"]
+[FEN "r3kb1r/pppq1p2/3p1n1p/6p1/2Q1P3/2P4P/PP3PP1/RNB2RK1 w kq - 1 12"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Qxf6 { Richtig: 15.Dxf6 Tg8 16.Df5 (Bewertung +3,5). In der Partie geschah 15.exd5? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 12. f3 O-O-O 13. Be3 d5 14. Qd4 b6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 15. Qxf6 { Richtig: 15.Dxf6 Tg8 16.Df5 (Bewertung +3,5). } ( 15. exd5 $2 { Rot: In der Partie geschah 15.exd5? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -2008,10 +2162,11 @@
 [Black "Gegner"]
 [Result "1/2-1/2"]
 [SetUp "1"]
-[FEN "2kr1br1/p1pq1p2/1p3n1p/3P2p1/3Q4/2P1BP1P/PP4P1/RN3RK1 w - - 1 16"]
+[FEN "2kr1b1r/pppq1p2/3p1n1p/6p1/2Q1P3/2P2P1P/PP4P1/RNB2RK1 w - - 1 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Qxf6 { Richtig: 16.Dxf6 Dxd5 17.Lf2 (Bewertung +2,4). In der Partie geschah 16.Sd2? und die Chance war weg. } 1/2-1/2
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13. Be3 d5 14. Qd4 b6 15. exd5 Rg8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. Qxf6 { Richtig: 16.Dxf6 Dxd5 17.Lf2 (Bewertung +2,4). } ( 16. Nd2 $2 { Rot: In der Partie geschah 16.Sd2? und die Chance war weg. } ) 1/2-1/2
 
 [Event "Weiß am Zug · Zug 23 · Gegner hat gepatzt"]
 [Site "?"]
@@ -2021,10 +2176,11 @@
 [Black "Gegner"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "2rk1q1r/1b3ppp/3b4/pQ2P3/P4P2/8/1P4PP/R1B2R1K w - - 2 23"]
+[FEN "2r1kq1r/1b1p1ppp/8/pBb1PN2/P1Q2P2/8/1P4PP/R1B2R1K w k - 7 20"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23. Qb6+ { Richtig: 23.Db6+ Lc7 24.Td1+ (Bewertung +6,3). In der Partie geschah 23.exd6? und die Chance war weg. Auch gut: Dxb7, Le3. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 20. Nd6+ Bxd6 21. Bxd7+ Kxd7 22. Qb5+ Kd8 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 23. Qb6+ { Richtig: 23.Db6+ Lc7 24.Td1+ (Bewertung +6,3). Auch gut: Dxb7, Le3. } ( 23. exd6 $2 { Rot: In der Partie geschah 23.exd6? und die Chance war weg. } ) 0-1
 
 [Event "Schwarz am Zug · Zug 11 · Gegner hat gepatzt"]
 [Site "?"]
@@ -2034,10 +2190,11 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "3rk1nr/ppp1pp1p/6pb/8/1P4b1/2P2N2/PB1N2PP/R2K1B1R b k - 2 11"]
+[FEN "r3kbnr/ppp1pppp/8/8/4N1b1/2P2N2/PP4PP/R1BK1B1R b kq - 0 8"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11... Rxd2+ { Richtig: 11…Txd2+ 12.Ke1 Txb2 (Bewertung +6,6). In der Partie geschah 11…Lxd2? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 8... Rd8+ 9. Nd2 g6 10. b4 Bh6 11. Bb2 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 11... Rxd2+ { Richtig: 11…Txd2+ 12.Ke1 Txb2 (Bewertung +6,6). } ( 11... Bxd2 $2 { Rot: In der Partie geschah 11…Lxd2? und die Chance war weg. } ) 0-1
 
 [Event "Weiß am Zug · Zug 10 · Gegner hat gepatzt"]
 [Site "?"]
@@ -2047,10 +2204,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r1bqk2r/pp3ppp/4p3/3pP3/1b4Q1/6P1/PPP1P1BP/RNB1K2R w KQkq - 1 10"]
+[FEN "r1bqkb1r/pp2pppp/8/2ppP3/6n1/6P1/PPPPP1BP/RNBQK2R w KQkq - 1 7"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10. Qxb4 { Richtig: 10.Dxb4 Db6 11.Da3 (Bewertung +7,2). In der Partie geschah 10.c3? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 7. d4 cxd4 8. Qxd4 e6 9. Qxg4 Bb4+ { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 10. Qxb4 { Richtig: 10.Dxb4 Db6 11.Da3 (Bewertung +7,2). } ( 10. c3 $2 { Rot: In der Partie geschah 10.c3? und die Chance war weg. } ) 1-0
 
 [Event "Weiß am Zug · Zug 16 · Gegner hat gepatzt"]
 [Site "?"]
@@ -2060,10 +2218,11 @@
 [Black "Gegner"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4rk1/ppp2ppp/2q5/2b1n3/8/2N1P1P1/PPPP3P/R1B1QRK1 w - - 5 16"]
+[FEN "r2q1rk1/ppp2ppp/2n5/2b5/8/4P1P1/PPPP2bP/RNB1QRK1 w - - 0 13"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. d4 { Richtig: 16.d4 Sf3+ 17.Txf3 (Bewertung +2,4). In der Partie geschah 16.Df2? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 13. Kxg2 Qd5+ 14. Kg1 Ne5 15. Nc3 Qc6 { Weiß am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 16. d4 { Richtig: 16.d4 Sf3+ 17.Txf3 (Bewertung +2,4). } ( 16. Qf2 $2 { Rot: In der Partie geschah 16.Df2? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 9 · Gegner hat gepatzt"]
 [Site "?"]
@@ -2073,10 +2232,11 @@
 [Black "Ich"]
 [Result "1-0"]
 [SetUp "1"]
-[FEN "r4bnr/ppp2kpp/2nq4/4p3/2Q1P1b1/5N2/PPPP2PP/RNB2RK1 b - - 1 9"]
+[FEN "r1b1kbnr/ppp2ppp/2n5/4p3/2BqP3/5N2/PPPPQ1PP/RNB1K2R b KQkq - 1 6"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9... Ke8 { Richtig: 9…Ke8 10.Kh1 Sf6 (Bewertung +4,0). In der Partie geschah 9…Ke7? und die Chance war weg. } 1-0
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 6... Qd6 7. O-O Bg4 8. Bxf7+ Kxf7 9. Qc4+ { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 9... Ke8 { Richtig: 9…Ke8 10.Kh1 Sf6 (Bewertung +4,0). } ( 9... Ke7 $2 { Rot: In der Partie geschah 9…Ke7? und die Chance war weg. } ) 1-0
 
 [Event "Schwarz am Zug · Zug 4 · Gegner hat gepatzt"]
 [Site "?"]
@@ -2086,8 +2246,9 @@
 [Black "Ich"]
 [Result "0-1"]
 [SetUp "1"]
-[FEN "rnbqkbnr/ppp2ppp/8/3p4/2B1Pp2/5N2/PPPP2PP/RNBQK2R b KQkq - 1 4"]
+[FEN "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"]
 [Aufgabe "1"]
+[Kontext "6"]
 
-{ Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 4... dxc4 { Richtig: 4…dxc4 5.Sc3 Se7 (Bewertung +5,0). In der Partie geschah 4…dxe4? und die Chance war weg. } 0-1
+{ So kam es zur Stellung – spiele die Züge mit ▶ durch. } 1... e5 2. f4 exf4 3. Nf3 d5 4. Bc4 { Schwarz am Zug. Dein Gegner hat gerade einen groben Fehler gemacht. Bestrafe ihn! } 4... dxc4 { Richtig: 4…dxc4 5.Sc3 Se7 (Bewertung +5,0). } ( 4... dxe4 $2 { Rot: In der Partie geschah 4…dxe4? und die Chance war weg. } ) 0-1
 
