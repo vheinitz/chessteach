@@ -2037,6 +2037,13 @@ class ChessTeachApp(tk.Tk):
             self.load_fen(node["fen"])
         elif "pgn" in node:
             self.load_pgn(node["pgn"])
+        else:
+            return
+        # Übung angeklickt: Wer in der Ausgangsstellung am Zug ist, sitzt unten
+        flip = self.game_base.turn == chess.BLACK
+        if flip != self.flipped:
+            self.flip_var.set(flip)
+            self.toggle_flip()
 
     def _update_nav_label(self):
         names = {"tabs": "Tabs", "moves": "Züge", "lessons": "Lektionen", "exercises": "Übungen"}

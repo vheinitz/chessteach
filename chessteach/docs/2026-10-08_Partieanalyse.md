@@ -170,10 +170,13 @@ Die strenge Prüfung (`lektionen_mehrzuegig.py`) stellt eine Überlastung nur da
 | Lektion | Inhalt | Anzahl |
 |---|---|---|
 | 03_MeinePartien/05 Mehrzügig bestrafen | ganze Lösungsfolge, 2–4 eigene Züge, Tiefe 20 | 80 |
-| 03_MeinePartien/06 Scheinbar gedeckt | 2 eigene Fesselungen, 20 Lichess-Aufgaben mit derselben Prüfung | 22 |
-| 01_Grundlagen/23–30 | Lichess-Themen (CC0, Rating 900–1500): Überlastung, Ablenkung, Hinlenkung, Fesselung, Beseitigung des Verteidigers, Grundreihenmatt, Figurenfang, Stiller Zug | je 20 |
+| 03_MeinePartien/06 Scheinbar gedeckt | 2 eigene Fesselungen | 2 |
+| 04_Lichess/09 Scheinbar gedeckt | Lichess-Aufgaben, die dieselbe Prüfung bestehen | 20 |
+| 04_Lichess/01–08 | Lichess-Themen (CC0, Rating 900–1500): Überlastung, Ablenkung, Hinlenkung, Fesselung, Beseitigung des Verteidigers, Grundreihenmatt, Figurenfang, Stiller Zug | je 20 |
 
-Lichess kennt kein eigenes Thema „Überlastung“. Lektion 23 enthält deshalb Aufgaben, die die strenge Prüfung bestehen. Werkzeug: `tools/lichess_themen.py`.
+Die Lichess-Aufgaben stehen in einem eigenen Reiter „Lichess-Aufgaben“ (Auftrag: „Die Lichess-aufgaben bitte als solche markieren in eigenen subkapitel“). Zum Löschen kamen 19 PGN-Dateien mit illegalen Zügen aus Geschlossene Spiele, Verteidigungen, Mattvarianten und Quadratregel. Sie stammten vom pi-Agenten („es waren sionnfreie stellungen von pi-agenten kannst alle fehlerhgaften sogar löschen“).
+
+Lichess kennt kein eigenes Thema „Überlastung“. Lektion 01 enthält deshalb Aufgaben, die die strenge Prüfung bestehen. Werkzeug: `tools/lichess_themen.py`.
 
 In der Analyse „nur für den Gegner“ bleibt die Bewertung auch beim eigenen Zug sichtbar, nur die Pfeile fehlen. Ein Sprung der Bewertung ohne sichtbaren Schlagzug ist damit selbst eine Aufgabe.
 

@@ -2,7 +2,8 @@
 
 Args: lichess_db_puzzle.csv.zst  lektionen-verzeichnis  [aufgaben-pro-thema=20]
 Download: https://database.lichess.org/lichess_db_puzzle.csv.zst
-Je Thema eine Lektion in 01_Grundlagen (23…), dazu Ergänzung von 03_MeinePartien/06_Scheinbar-gedeckt.
+Eigener Reiter 04_Lichess: je Thema eine Lektion, dazu 09_Scheinbar-gedeckt (Gegenstück zu
+03_MeinePartien/06 mit fremden Stellungen).
 Auswahl: Rating 900–1500 (passt zu ~600–800 Elo chess.com), beliebt und oft gespielt,
 nach Rating sortiert gleichmäßig verteilt, damit die Lektion leicht beginnt und schwerer wird.
 """
@@ -15,21 +16,21 @@ from chessteach import san_de
 
 THEMEN = [  # (Lichess-Thema, Ordner, Titel, Hinweis für die Aufgabe)
     # Lichess kennt kein Thema „Überlastung“ (steckt in deflection); ausgewählt wird per scheinbar_gedeckt()
-    ("overloading", "23_Ueberlastung", "Überlastung",
+    ("overloading", "01_Ueberlastung", "Überlastung",
      "Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun!"),
-    ("deflection", "24_Ablenkung", "Ablenkung",
+    ("deflection", "02_Ablenkung", "Ablenkung",
      "Lenke einen Verteidiger weg von dem, was er schützen muss!"),
-    ("attraction", "25_Hinlenkung", "Hinlenkung",
+    ("attraction", "03_Hinlenkung", "Hinlenkung",
      "Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld!"),
-    ("pin", "26_Fesselung", "Fesselung",
+    ("pin", "04_Fesselung", "Fesselung",
      "Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus!"),
-    ("capturingDefender", "27_Verteidiger-beseitigen", "Beseitigung des Verteidigers",
+    ("capturingDefender", "05_Verteidiger-beseitigen", "Beseitigung des Verteidigers",
      "Schlage die Figur, die alles zusammenhält – danach fällt der Rest!"),
-    ("backRankMate", "28_Grundreihenmatt", "Grundreihenmatt",
+    ("backRankMate", "06_Grundreihenmatt", "Grundreihenmatt",
      "Der König ist auf der Grundreihe eingesperrt. Finde das Matt!"),
-    ("trappedPiece", "29_Figurenfang", "Figurenfang",
+    ("trappedPiece", "07_Figurenfang", "Figurenfang",
      "Eine gegnerische Figur hat keine sicheren Felder mehr. Fang sie!"),
-    ("quietMove", "30_Stiller-Zug", "Stiller Zug",
+    ("quietMove", "08_Stiller-Zug", "Stiller Zug",
      "Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn!"),
 ]
 SEEN_IDS = set()
@@ -137,18 +138,19 @@ for r in read_rows():
 for t, ordner, titel, hinweis in THEMEN:
     pick = [r for r in spread([r for r in pool[t] if r["PuzzleId"] not in SEEN_IDS], N)]
     SEEN_IDS.update(r["PuzzleId"] for r in pick)
-    folder = os.path.join(LEK, "01_Grundlagen", ordner)
+    folder = os.path.join(LEK, "04_Lichess", ordner)
     path = lesson_file(folder, titel)
     with open(path, "w", encoding="utf-8") as f:
         for r in pick:
             print(game(r, titel, hinweis), file=f, end="\n\n")
     print(ordner, len(pick), "aus", len(pool[t]))
 
-# 06_Scheinbar-gedeckt: eigene Stellungen stehen in 0001_…, Lichess ergänzt als 0002_…
-folder = os.path.join(LEK, "03_MeinePartien", "06_Scheinbar-gedeckt")
+os.makedirs(os.path.join(LEK, "04_Lichess"), exist_ok=True)
+if not os.path.exists(os.path.join(LEK, "04_Lichess", "_meta.txt")):
+    open(os.path.join(LEK, "04_Lichess", "_meta.txt"), "w", encoding="utf-8").write("Lichess-Aufgaben\n")
+folder = os.path.join(LEK, "04_Lichess", "09_Scheinbar-gedeckt")
 pick = spread([r for r in schein if r["PuzzleId"] not in SEEN_IDS], N)
-os.makedirs(folder, exist_ok=True)
-with open(os.path.join(folder, "0002_Scheinbar-gedeckt-Lichess.pgn"), "w", encoding="utf-8") as f:
+with open(lesson_file(folder, "Scheinbar gedeckt"), "w", encoding="utf-8") as f:
     for r in pick:
         kind = scheinbar_gedeckt(r)
         task = ("Eine Figur des Gegners sieht gedeckt aus – ist sie es wirklich? "
@@ -160,4 +162,4 @@ with open(os.path.join(folder, "0002_Scheinbar-gedeckt-Lichess.pgn"), "w", encod
                f"Der Verteidiger ist überlastet: Nach dem Zurückschlagen fehlt er auf {chess.square_name(sol[2].to_square)}.")
         end = gm.end(); end.comment = f"{why} " + end.comment
         print(gm, file=f, end="\n\n")
-print("06_Scheinbar-gedeckt (Lichess)", len(pick), "aus", len(schein))
+print("09_Scheinbar-gedeckt", len(pick), "aus", len(schein))
