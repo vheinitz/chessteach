@@ -1,0 +1,220 @@
+[Event "Weiß am Zug · Fesselung · Lichess 900"]
+[Site "https://lichess.org/bFikZT3W/black#48"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4rk1/7p/3pqpp1/p1p5/1p2P2P/1P3N2/P1P1BPP1/2K2R1R w - - 0 25"]
+[Aufgabe "1"]
+
+{ [Ar a7a5] Zuletzt zog der Gegner 24…a5. Weiß am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 25. Bc4 Qxc4 26. bxc4 { Gelöst: 25.Lc4 Dxc4 26.bxc4. (Aufgabe ZL0Sy von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Fesselung · Lichess 1050"]
+[Site "https://lichess.org/cG8xJoe7/black#84"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "7k/p2p2pp/1p6/3q4/3B2P1/2P4P/PP1K1Q2/r7 w - - 0 43"]
+[Aufgabe "1"]
+
+{ [Ar h1a1] Zuletzt zog der Gegner 42…Txa1. Weiß am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 43. Qf8+ Qg8 44. Bxg7# { Gelöst: 43.Df8+ Dg8 44.Lxg7#. (Aufgabe tLr5D von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1117"]
+[Site "https://lichess.org/dPZQQk4K#27"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r2q1rk1/pb1nppbp/1p1p2p1/2pP1P2/4P3/2N1Q1N1/PPP1B1PP/R4RK1 b - - 0 14"]
+[Aufgabe "1"]
+
+{ [Ar f4f5] Zuletzt zog der Gegner 14.f5. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 14... Bd4 15. Qxd4 cxd4 { Gelöst: 14…Ld4 15.Dxd4 cxd4. (Aufgabe by2Kn von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1149"]
+[Site "https://lichess.org/Tav8mw1p#145"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/8/8/2p5/1b3K2/4R3/1k6 b - - 4 73"]
+[Aufgabe "1"]
+
+{ [Ar g3f3] Zuletzt zog der Gegner 73.Kf3. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 73... Bd1 74. Kf2 Bxe2 { Gelöst: 73…Ld1 74.Kf2 Lxe2. (Aufgabe smL7l von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Fesselung · Lichess 1175"]
+[Site "https://lichess.org/CvB12DTH/black#42"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4rk1/5qbp/p4p2/1pp1pN2/5nQP/1P1P1P2/1PP2P2/R4RK1 w - - 1 22"]
+[Aufgabe "1"]
+
+{ [Ar c7f7] Zuletzt zog der Gegner 21…Df7. Weiß am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 22. Nh6+ Kh8 23. Nxf7+ { Gelöst: 22.Sh6+ Kh8 23.Sxf7+. (Aufgabe aoNbm von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1199"]
+[Site "https://lichess.org/1oroYdsu#35"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2kr4/1p3p1p/1np3Pn/p1b1P3/P2r4/1B2N3/1PPB3P/2KR2R1 b - - 0 18"]
+[Aufgabe "1"]
+
+{ [Ar f5g6] Zuletzt zog der Gegner 18.fxg6. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 18... Rxd2 19. Rxd2 Bxe3 { Gelöst: 18…Txd2 19.Txd2 Lxe3. (Aufgabe 82eGT von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1235"]
+[Site "https://lichess.org/Gmwp27sC#27"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4kn1/ppp2p2/2n5/8/3PQ1b1/4K3/PPqN1PPP/R4B1R b - - 0 14"]
+[Aufgabe "1"]
+
+{ [Ar h7e4] Zuletzt zog der Gegner 14.Dxe4. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 14... Re8 15. Qxe8+ Kxe8 { Gelöst: 14…Te8 15.Dxe8+ Kxe8. (Aufgabe Xbt3b von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Fesselung · Lichess 1266"]
+[Site "https://lichess.org/QHRFDExk/black#82"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1kb3R1/2r1N3/p6p/Pp5P/6P1/1K6/8 w - - 6 42"]
+[Aufgabe "1"]
+
+{ [Ar c3c6] Zuletzt zog der Gegner 41…Tc6. Weiß am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 42. Nd8+ Kb6 43. Nxc6 { Gelöst: 42.Sd8+ Kb6 43.Sxc6. (Aufgabe p3J5H von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Fesselung · Lichess 1291"]
+[Site "https://lichess.org/58lkT4Hs/black#56"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/p2q2k1/5p2/1p1p1npp/3Pr3/P2Q2BP/2R2PPK/8 w - - 0 29"]
+[Aufgabe "1"]
+
+{ [Ar c6b5] Zuletzt zog der Gegner 28…cxb5. Weiß am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 29. Rc7 Qxc7 30. Bxc7 { Gelöst: 29.Tc7 Dxc7 30.Lxc7. (Aufgabe uLqu8 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1313"]
+[Site "https://lichess.org/lDwFUQMo#39"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4rk1/pp3pp1/2p3pn/3p3n/3P3q/3BP2P/PPQ2PPK/1R2R1N1 b - - 2 20"]
+[Aufgabe "1"]
+
+{ [Ar e2g1] Zuletzt zog der Gegner 20.Sg1. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 20... Ng4+ 21. Kh1 Nxf2+ 22. Qxf2 Qxf2 { Gelöst: 20…Sg4+ 21.Kh1 Sxf2+ 22.Dxf2 Dxf2. (Aufgabe TcNvZ von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1333"]
+[Site "https://lichess.org/x8qmU7om#57"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2q3k1/1b2ppb1/6pp/p1P1P3/1pPQ4/1P5P/PB4P1/3R3K b - - 1 29"]
+[Aufgabe "1"]
+
+{ [Ar e3d4] Zuletzt zog der Gegner 29.Dd4. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 29... Qxh3+ 30. Kg1 Qxg2# { Gelöst: 29…Dxh3+ 30.Kg1 Dxg2#. (Aufgabe O3WUu von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1352"]
+[Site "https://lichess.org/zVHrVTZi#49"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3rk3/1bp5/pp2pbn1/4N3/7p/2N4P/PPP2Q1K/5R2 b - - 0 25"]
+[Aufgabe "1"]
+
+{ [Ar f3e5] Zuletzt zog der Gegner 25.Sxe5. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 25... Bxe5+ 26. Kg1 Bd4 27. Qxd4 Rxd4 { Gelöst: 25…Lxe5+ 26.Kg1 Ld4 27.Dxd4 Txd4. (Aufgabe KiUvw von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Fesselung · Lichess 1371"]
+[Site "https://lichess.org/N3BH7vUY/black#46"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r3rn1k/p4p1P/5p2/2pP4/2q2N2/P1Qb4/1P3PP1/2K3RR w - - 3 24"]
+[Aufgabe "1"]
+
+{ [Ar a6c4] Zuletzt zog der Gegner 23…Dc4. Weiß am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 24. Nxd3 Qxc3+ 25. bxc3 { Gelöst: 24.Sxd3 Dxc3+ 25.bxc3. (Aufgabe FEHsk von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Fesselung · Lichess 1389"]
+[Site "https://lichess.org/hBD3ZC3s/black#44"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5rk1/pp3ppp/2p2b2/8/2Qq4/7P/BP3PP1/4R1K1 w - - 0 23"]
+[Aufgabe "1"]
+
+{ [Ar b6d4] Zuletzt zog der Gegner 22…Dxd4. Weiß am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 23. Qxf7+ Rxf7 24. Re8# { Gelöst: 23.Dxf7+ Txf7 24.Te8#. (Aufgabe ctqNa von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1407"]
+[Site "https://lichess.org/4sR3asDC#45"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4Nk1/pp3pp1/2b4p/2p5/8/1QP1q2P/PP4P1/R4R1K b - - 0 23"]
+[Aufgabe "1"]
+
+{ [Ar g6f8] Zuletzt zog der Gegner 23.Sxf8. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 23... Qxh3+ 24. Kg1 Qxg2# { Gelöst: 23…Dxh3+ 24.Kg1 Dxg2#. (Aufgabe eToAq von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1426"]
+[Site "https://lichess.org/Ob0hr6XJ#57"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r2k1/p4ppp/2p5/1pq5/2p1P3/2Q1B1P1/PP2KP2/3R4 b - - 4 29"]
+[Aufgabe "1"]
+
+{ [Ar d2e3] Zuletzt zog der Gegner 29.Le3. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 29... Qh5+ 30. f3 Qh2+ 31. Bf2 Rxd1 { Gelöst: 29…Dh5+ 30.f3 Dh2+ 31.Lf2 Txd1. (Aufgabe W6s60 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1445"]
+[Site "https://lichess.org/s87KY0k5#57"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r2k1/1b2pp1p/6p1/2R5/2B1q3/1N2PQ2/P5PP/6K1 b - - 5 29"]
+[Aufgabe "1"]
+
+{ [Ar e2f3] Zuletzt zog der Gegner 29.Df3. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 29... Qb1+ 30. Qf1 Rd1 { Gelöst: 29…Db1+ 30.Df1 Td1. (Aufgabe DOKUI von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Fesselung · Lichess 1463"]
+[Site "https://lichess.org/5apP60O6/black#48"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r3k1/pR3ppp/2P1p3/3p4/2r5/7P/5PP1/2R3K1 w - - 1 25"]
+[Aufgabe "1"]
+
+{ [Ar a4c4] Zuletzt zog der Gegner 24…Tc4. Weiß am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 25. Rxc4 dxc4 26. c7 h6 27. Rb8 { Gelöst: 25.Txc4 dxc4 26.c7 h6 27.Tb8. (Aufgabe KJSFk von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1481"]
+[Site "https://lichess.org/rgB9p6pY#61"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1n2r3/1b5p/ppqp2p1/5pBk/1PP2P2/PQ1B4/4R1PP/4R2K b - - 6 31"]
+[Aufgabe "1"]
+
+{ [Ar f1e1] Zuletzt zog der Gegner 31.Tfe1. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 31... Qxg2+ 32. Rxg2 Rxe1+ 33. Bf1 Rxf1# { Gelöst: 31…Dxg2+ 32.Txg2 Txe1+ 33.Lf1 Txf1#. (Aufgabe Tcc69 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Fesselung · Lichess 1500"]
+[Site "https://lichess.org/cypVK9jn#27"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2k3nB/ppp4p/5p2/8/1b1nN1b1/8/Pr1NPPPP/1R2KB1R b K - 3 14"]
+[Aufgabe "1"]
+
+{ [Ar a1b1] Zuletzt zog der Gegner 14.Tb1. Schwarz am Zug. Eine Figur kann nicht ziehen, weil dahinter etwas Wertvolleres steht. Nutze das aus! } 14... Rxb1# { Gelöst: 14…Txb1#. (Aufgabe yl1MD von lichess.org, CC0) } *
+

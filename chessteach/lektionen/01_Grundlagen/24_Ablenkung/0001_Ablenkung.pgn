@@ -1,0 +1,220 @@
+[Event "Schwarz am Zug · Ablenkung · Lichess 900"]
+[Site "https://lichess.org/yZaXnvcp#59"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/5p1p/b2k2p1/p7/2pbP3/P3NPP1/B1PK3P/8 b - - 3 30"]
+[Aufgabe "1"]
+
+{ [Ar d5e3] Zuletzt zog der Gegner 30.Se3. Schwarz am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 30... c3+ 31. Ke1 Bxe3 { Gelöst: 30…c3+ 31.Ke1 Lxe3. (Aufgabe 27dbe von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Ablenkung · Lichess 1008"]
+[Site "https://lichess.org/ODiivFMS#55"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5rk1/5pp1/p2Np2p/2p1P3/Q2P1n2/2P3B1/5PPP/1r3BK1 b - - 1 28"]
+[Aufgabe "1"]
+
+{ [Ar c4f1] Zuletzt zog der Gegner 28.Lf1. Schwarz am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 28... Ne2+ 29. Kh1 Rxf1# { Gelöst: 28…Se2+ 29.Kh1 Txf1#. (Aufgabe uiALb von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1094"]
+[Site "https://lichess.org/bE28pnZj/black#54"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r1rk1/2q1b3/ppn4p/2p2p1B/2Pp1P2/3P2P1/PP2Q2P/R4RK1 w - - 3 28"]
+[Aufgabe "1"]
+
+{ [Ar a8d8] Zuletzt zog der Gegner 27…Tad8. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 28. Qe6+ Kh7 29. Qg6+ Kh8 30. Qxh6+ { Gelöst: 28.De6+ Kh7 29.Dg6+ Kh8 30.Dxh6+. (Aufgabe s7xT4 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Ablenkung · Lichess 1130"]
+[Site "https://lichess.org/YS7rb1Nz#35"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r2qk2r/4ppb1/6p1/p1p3Pp/1p5P/4Q3/PPP1N1R1/2KR2N1 b kq - 1 18"]
+[Aufgabe "1"]
+
+{ [Ar d2e3] Zuletzt zog der Gegner 18.De3. Schwarz am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 18... Bxb2+ 19. Kxb2 Qxd1 { Gelöst: 18…Lxb2+ 19.Kxb2 Dxd1. (Aufgabe 9XA04 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1151"]
+[Site "https://lichess.org/7rMiLpjn/black#52"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/pp3rpp/4Qp2/8/6B1/3P3P/Pqr2PP1/4R1K1 w - - 0 27"]
+[Aufgabe "1"]
+
+{ [Ar f8f7] Zuletzt zog der Gegner 26…Txf7. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 27. Qe8+ Rf8 28. Be6+ Kh8 29. Qxf8# { Gelöst: 27.De8+ Tf8 28.Le6+ Kh8 29.Dxf8#. (Aufgabe tG47c von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1170"]
+[Site "https://lichess.org/w3rgCVyK/black#78"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3kbQ1R/5p2/2q1pPp1/3p4/5rP1/Np6/1P6/1K6 w - - 2 40"]
+[Aufgabe "1"]
+
+{ [Ar b6c6] Zuletzt zog der Gegner 39…Dc6. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 40. Qe7+ Kc8 41. Rxe8+ Qxe8 42. Qxe8+ { Gelöst: 40.De7+ Kc8 41.Txe8+ Dxe8 42.Dxe8+. (Aufgabe XvLMB von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1189"]
+[Site "https://lichess.org/R92e4Vm5/black#58"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/p1p3pp/5q2/5N2/1Pr2P2/P2pQ3/6PP/7K w - - 0 30"]
+[Aufgabe "1"]
+
+{ [Ar e4d3] Zuletzt zog der Gegner 29…exd3. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 30. Qe8+ Qf8 31. Ne7+ Kh8 32. Qxf8# { Gelöst: 30.De8+ Df8 31.Se7+ Kh8 32.Dxf8#. (Aufgabe GTsTq von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Ablenkung · Lichess 1216"]
+[Site "https://lichess.org/GglC030z#63"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3n1k2/pp3pp1/3N3p/PP1K4/8/4P2P/2r2PP1/R7 b - - 0 32"]
+[Aufgabe "1"]
+
+{ [Ar d4d5] Zuletzt zog der Gegner 32.Kxd5. Schwarz am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 32... Rd2+ 33. Ke5 f6+ 34. Ke4 Rxd6 { Gelöst: 32…Td2+ 33.Ke5 f6+ 34.Ke4 Txd6. (Aufgabe A8WnY von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1250"]
+[Site "https://lichess.org/JPlfbP91/black#40"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "7r/pbk3pp/3rp3/2p4Q/8/2q5/P4PPP/1R2R1K1 w - - 0 21"]
+[Aufgabe "1"]
+
+{ [Ar c6b7] Zuletzt zog der Gegner 20…Lxb7. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 21. Qf7+ Rd7 22. Rxb7+ Kxb7 23. Qxd7+ { Gelöst: 21.Df7+ Td7 22.Txb7+ Kxb7 23.Dxd7+. (Aufgabe KpIqV von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1278"]
+[Site "https://lichess.org/gQpae31X/black#80"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1p3B2/2pk4/3pp3/3P4/2PKP3/6r1/2B5 w - - 0 41"]
+[Aufgabe "1"]
+
+{ [Ar e7e5] Zuletzt zog der Gegner 40…e5. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 41. Ba3+ Kc7 42. dxe5 { Gelöst: 41.La3+ Kc7 42.dxe5. (Aufgabe j0NG8 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Ablenkung · Lichess 1303"]
+[Site "https://lichess.org/JVmTeSuu#87"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/5p1k/6pr/6R1/6P1/5PKP/5Q2/4q3 b - - 4 44"]
+[Aufgabe "1"]
+
+{ [Ar c5f2] Zuletzt zog der Gegner 44.Df2. Schwarz am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 44... Rxh3+ 45. Kxh3 Qxf2 { Gelöst: 44…Txh3+ 45.Kxh3 Dxf2. (Aufgabe onUeL von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Ablenkung · Lichess 1326"]
+[Site "https://lichess.org/ZOkRh3N4#81"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r2r1k/6p1/7p/5p2/5P2/Pq1Q2P1/1P5P/K2R3R b - - 9 41"]
+[Aufgabe "1"]
+
+{ [Ar e2d3] Zuletzt zog der Gegner 41.Dd3. Schwarz am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 41... Rc1+ 42. Rxc1 Qxd3 { Gelöst: 41…Tc1+ 42.Txc1 Dxd3. (Aufgabe R6dum von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1348"]
+[Site "https://lichess.org/0EgpDqHs/black#64"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5r2/p2Brk2/1p4Rp/3p4/2p5/P1P1n3/2P5/2K3R1 w - - 3 33"]
+[Aufgabe "1"]
+
+{ [Ar e8e7] Zuletzt zog der Gegner 32…Te7. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 33. Rg7+ Kf6 34. R1g6+ Ke5 35. Rxe7+ { Gelöst: 33.Tg7+ Kf6 34.T1g6+ Ke5 35.Txe7+. (Aufgabe VYZEP von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1370"]
+[Site "https://lichess.org/UKCAXXsU/black#64"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "7r/4k3/p1n1q2p/1p4p1/2ppN3/P1P1P3/1PK2R1Q/8 w - - 0 33"]
+[Aufgabe "1"]
+
+{ [Ar e5d4] Zuletzt zog der Gegner 32…exd4. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 33. Qc7+ Qd7 34. Rf7+ Kxf7 35. Qxd7+ { Gelöst: 33.Dc7+ Dd7 34.Tf7+ Kxf7 35.Dxd7+. (Aufgabe 0Ck4z von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Ablenkung · Lichess 1390"]
+[Site "https://lichess.org/QLd1vfFb#23"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "N1b2b1r/p3kpp1/7p/8/8/8/PqP2PPP/R2QKB1R b KQ - 0 12"]
+[Aufgabe "1"]
+
+{ [Ar c7a8] Zuletzt zog der Gegner 12.Sxa8. Schwarz am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 12... Qc3+ 13. Qd2 Qxa1+ { Gelöst: 12…Dc3+ 13.Dd2 Dxa1+. (Aufgabe T092R von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1411"]
+[Site "https://lichess.org/uUejdkg4/black#46"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "rn3r1k/pb3B2/1p4Pb/3p4/2pp1q2/2P5/PPQNK3/R6R w - - 2 24"]
+[Aufgabe "1"]
+
+{ [Ar g7h6] Zuletzt zog der Gegner 23…Lh6. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 24. g7+ Kxg7 25. Qg6+ Kh8 26. Rxh6+ Qxh6 27. Qxh6# { Gelöst: 24.g7+ Kxg7 25.Dg6+ Kh8 26.Txh6+ Dxh6 27.Dxh6#. (Aufgabe cmYB7 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Ablenkung · Lichess 1433"]
+[Site "https://lichess.org/yX2pUW08#23"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r1b1k2r/ppp2pp1/2p5/2b1q3/4PB1p/2NP1BP1/PPP2P1K/R2Q1R2 b kq - 1 12"]
+[Aufgabe "1"]
+
+{ [Ar c1f4] Zuletzt zog der Gegner 12.Lf4. Schwarz am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 12... hxg3+ 13. Kxg3 Rh3+ 14. Kg2 Qxf4 { Gelöst: 12…hxg3+ 13.Kxg3 Th3+ 14.Kg2 Dxf4. (Aufgabe rS5nC von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1455"]
+[Site "https://lichess.org/uAEEwape/black#72"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r4/ppk5/5p1r/P4bp1/3R4/6P1/5KP1/4R3 w - - 1 37"]
+[Aufgabe "1"]
+
+{ [Ar d6c7] Zuletzt zog der Gegner 36…Kc7. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 37. Rc1+ Bc2 38. Rxc2+ Kb8 39. Rxd8# { Gelöst: 37.Tc1+ Lc2 38.Txc2+ Kb8 39.Txd8#. (Aufgabe YXwtR von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Ablenkung · Lichess 1477"]
+[Site "https://lichess.org/bO5NfSyA#35"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4rk1/p1p2ppp/2pb4/5q2/P3p3/B1P3PP/3P1P1K/RN1QR3 b - - 1 18"]
+[Aufgabe "1"]
+
+{ [Ar c1a3] Zuletzt zog der Gegner 18.La3. Schwarz am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 18... Qxf2+ 19. Kh1 Bxg3 20. Qe2 Qxe1+ 21. Qxe1 Bxe1 { Gelöst: 18…Dxf2+ 19.Kh1 Lxg3 20.De2 Dxe1+ 21.Dxe1 Lxe1. (Aufgabe BxhGY von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Ablenkung · Lichess 1500"]
+[Site "https://lichess.org/1GQktbXs/black#62"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1r5k/4Nnp1/4ppp1/7P/5P2/4P3/rB5R/2K5 w - - 0 32"]
+[Aufgabe "1"]
+
+{ [Ar h7g6] Zuletzt zog der Gegner 31…hxg6. Weiß am Zug. Lenke einen Verteidiger weg von dem, was er schützen muss! } 32. hxg6+ Nh6 33. Rxh6+ gxh6 34. Bxf6# { Gelöst: 32.hxg6+ Sh6 33.Txh6+ gxh6 34.Lxf6#. (Aufgabe xB64h von lichess.org, CC0) } *
+

@@ -1,0 +1,22 @@
+[Event "Schwarz am Zug · Zug 24 · Scheinbar gedeckt"]
+[Date "2026.09.03"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "r4rk1/p4ppp/1p2p3/6P1/1qQp3P/nPN5/PKP5/5R1R b - - 1 24"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Eine Figur des Gegners sieht gedeckt aus – ist sie es wirklich? Prüfe jeden Verteidiger: Ist er gefesselt? Muss er noch etwas anderes decken? } 24... Nxc4+ 25. Kb1 { [Sq b3] Dame c4 war nur scheinbar gedeckt (Bauer b3), aber Bauer b3 ist gefesselt und darf nicht zurückschlagen. Lösung: 24…Sxc4+ 25.Kb1 (Bewertung +12,8). In der Partie geschah 24…dxc3+? und die Chance war weg. } 0-1
+
+[Event "Schwarz am Zug · Zug 11 · Scheinbar gedeckt"]
+[Date "2026.08.03"]
+[White "Gegner"]
+[Black "Ich"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "3rk1nr/ppp1pp1p/6pb/8/1P4b1/2P2N2/PB1N2PP/R2K1B1R b k - 2 11"]
+[Aufgabe "1"]
+
+{ Schwarz am Zug. Eine Figur des Gegners sieht gedeckt aus – ist sie es wirklich? Prüfe jeden Verteidiger: Ist er gefesselt? Muss er noch etwas anderes decken? } 11... Rxd2+ 12. Ke1 { [Sq d1] [Sq f3] Springer d2 war nur scheinbar gedeckt (König d1, Springer f3), aber Springer f3 ist gefesselt und darf nicht zurückschlagen. Lösung: 11…Txd2+ 12.Ke1 (Bewertung +6,7). In der Partie geschah 11…Lxd2? und die Chance war weg. } 0-1
+

@@ -1,0 +1,220 @@
+[Event "Weiß am Zug · Hinlenkung · Lichess 900"]
+[Site "https://lichess.org/zlXubq1K/black#56"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5r2/3p2p1/p3p1k1/1p2P3/3N4/PP1PKNr1/1B4b1/6R1 w - - 3 29"]
+[Aufgabe "1"]
+
+{ [Ar h3g3] Zuletzt zog der Gegner 28…Tg3. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 29. Rxg2 Rxg2 30. Nh4+ Kg5 31. Nxg2 { Gelöst: 29.Txg2 Txg2 30.Sh4+ Kg5 31.Sxg2. (Aufgabe PykdU von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Hinlenkung · Lichess 1121"]
+[Site "https://lichess.org/ApcVtIFF/black#50"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1r3r1k/2q3pp/p2p1p2/3B3R/1pP1P1Q1/8/Pb4PP/R5K1 w - - 0 26"]
+[Aufgabe "1"]
+
+{ [Ar e5b2] Zuletzt zog der Gegner 25…Lxb2. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 26. Rxh7+ Kxh7 27. Qh5# { Gelöst: 26.Txh7+ Kxh7 27.Dh5#. (Aufgabe 4HRsS von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Hinlenkung · Lichess 1159"]
+[Site "https://lichess.org/dZ2vdh89#99"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1k1n4/3p2p1/1P1P4/3N2rP/1K1R2P1/8/8 b - - 6 50"]
+[Aufgabe "1"]
+
+{ [Ar e6d4] Zuletzt zog der Gegner 50.Sd4. Schwarz am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 50... Nc5+ 51. Kc2 Nxd3 52. Kxd3 Rxg3+ { Gelöst: 50…Sc5+ 51.Kc2 Sxd3 52.Kxd3 Txg3+. (Aufgabe 9JzGm von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Hinlenkung · Lichess 1186"]
+[Site "https://lichess.org/Nh5OMj6e#39"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "4r1k1/ppp2ppp/2p5/8/8/qPPP1QP1/P1KBr2P/R6R b - - 2 20"]
+[Aufgabe "1"]
+
+{ [Ar d1c2] Zuletzt zog der Gegner 20.Kc2. Schwarz am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 20... Rxd2+ 21. Kxd2 Qb2+ 22. Kd1 Qxa1+ { Gelöst: 20…Txd2+ 21.Kxd2 Db2+ 22.Kd1 Dxa1+. (Aufgabe 5OxR1 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Hinlenkung · Lichess 1220"]
+[Site "https://lichess.org/AUjvuS6G#63"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/6pk/1p6/5p1p/P1R1bPq1/4P1P1/5Q1P/6K1 b - - 5 32"]
+[Aufgabe "1"]
+
+{ [Ar c1c4] Zuletzt zog der Gegner 32.Tc4. Schwarz am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 32... Qd1+ 33. Qf1 Qxf1+ 34. Kxf1 Bd3+ 35. Kf2 Bxc4 { Gelöst: 32…Dd1+ 33.Df1 Dxf1+ 34.Kxf1 Ld3+ 35.Kf2 Lxc4. (Aufgabe ocIRg von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Hinlenkung · Lichess 1256"]
+[Site "https://lichess.org/tW4yp8De#77"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/4kp2/8/2rb2P1/P2R2P1/5p1p/4qP1B/5QK1 b - - 2 39"]
+[Aufgabe "1"]
+
+{ [Ar f4d4] Zuletzt zog der Gegner 39.Td4. Schwarz am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 39... Qxf1+ 40. Kxf1 Rc1+ 41. Rd1 Rxd1# { Gelöst: 39…Dxf1+ 40.Kxf1 Tc1+ 41.Td1 Txd1#. (Aufgabe 647fV von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Hinlenkung · Lichess 1282"]
+[Site "https://lichess.org/qi5agYC5#37"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1rbq3r/1p2ppk1/p2p2p1/2pP2P1/P3PPn1/2N5/1PPQB1P1/R4RK1 b - - 2 19"]
+[Aufgabe "1"]
+
+{ [Ar d3e2] Zuletzt zog der Gegner 19.Le2. Schwarz am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 19... Rh1+ 20. Kxh1 Qh8+ 21. Kg1 Qh2# { Gelöst: 19…Th1+ 20.Kxh1 Dh8+ 21.Kg1 Dh2#. (Aufgabe AQHTb von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Hinlenkung · Lichess 1304"]
+[Site "https://lichess.org/8QkY6ZrX#53"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "rr4k1/p6p/4pQp1/7P/2qP4/5P2/PP6/1K1R2R1 b - - 0 27"]
+[Aufgabe "1"]
+
+{ [Ar h4h5] Zuletzt zog der Gegner 27.h5. Schwarz am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 27... Rxb2+ 28. Kxb2 Rb8+ 29. Ka1 Qc3# { Gelöst: 27…Txb2+ 28.Kxb2 Tb8+ 29.Ka1 Dc3#. (Aufgabe giytP von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Hinlenkung · Lichess 1325"]
+[Site "https://lichess.org/jDwt85hR#69"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/4kppp/1p1p4/1PnPpP2/4P3/8/2rN2PP/R2K4 b - - 9 35"]
+[Aufgabe "1"]
+
+{ [Ar e2d1] Zuletzt zog der Gegner 35.Kd1. Schwarz am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 35... Rxd2+ 36. Kxd2 Nb3+ 37. Kc3 Nxa1 { Gelöst: 35…Txd2+ 36.Kxd2 Sb3+ 37.Kc3 Sxa1. (Aufgabe H3ekw von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Hinlenkung · Lichess 1343"]
+[Site "https://lichess.org/Llck1SQZ#59"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2k5/pp1q2p1/2pB4/2PpR1rr/1P1Q4/P6P/5PPK/5R2 b - - 0 30"]
+[Aufgabe "1"]
+
+{ [Ar e1e5] Zuletzt zog der Gegner 30.Txe5. Schwarz am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 30... Rxg2+ 31. Kxg2 Qxh3+ 32. Kg1 Qh1# { Gelöst: 30…Txg2+ 31.Kxg2 Dxh3+ 32.Kg1 Dh1#. (Aufgabe Qvnhp von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Hinlenkung · Lichess 1359"]
+[Site "https://lichess.org/8s2VJ5WE/black#78"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1p5k/2p1br1p/p4p2/P1P4K/1P1BR3/6P1/8 w - - 3 40"]
+[Aufgabe "1"]
+
+{ [Ar f8f6] Zuletzt zog der Gegner 39…Tf6. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 40. Rxe6 Rxe6 41. Bxf5+ Kg7 42. Bxe6 { Gelöst: 40.Txe6 Txe6 41.Lxf5+ Kg7 42.Lxe6. (Aufgabe vO9Ex von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Hinlenkung · Lichess 1376"]
+[Site "https://lichess.org/UUBhlemY/black#50"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4r2/2qknR2/4p2p/3pQ2B/1PpP4/2P5/6PP/6K1 w - - 0 26"]
+[Aufgabe "1"]
+
+{ [Ar b6c7] Zuletzt zog der Gegner 25…Dxc7. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 26. Rxe7+ Kxe7 27. Qxc7+ { Gelöst: 26.Txe7+ Kxe7 27.Dxc7+. (Aufgabe PKa8q von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Hinlenkung · Lichess 1392"]
+[Site "https://lichess.org/btKN26ol#77"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5rk1/p3p3/1p5p/3p1B1P/3P1Kn1/1P6/1PP5/5R2 b - - 1 39"]
+[Aufgabe "1"]
+
+{ [Ar e3f4] Zuletzt zog der Gegner 39.Kf4. Schwarz am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 39... Rxf5+ 40. Kxf5 Ne3+ 41. Ke6 Nxf1 { Gelöst: 39…Txf5+ 40.Kxf5 Se3+ 41.Ke6 Sxf1. (Aufgabe 5LSOb von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Hinlenkung · Lichess 1407"]
+[Site "https://lichess.org/zbfpHX5c/black#30"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3rkb1r/pp2pppp/8/1N1n4/8/4BP2/PP3P1P/3RK2R w Kk - 2 16"]
+[Aufgabe "1"]
+
+{ [Ar a8d8] Zuletzt zog der Gegner 15…Td8. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 16. Rxd5 Rxd5 17. Nc7+ Kd7 18. Nxd5 { Gelöst: 16.Txd5 Txd5 17.Sc7+ Kd7 18.Sxd5. (Aufgabe kG3Fr von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Hinlenkung · Lichess 1423"]
+[Site "https://lichess.org/NewJXTgu/black#40"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r5k1/pp1bq1p1/4p1PR/2b5/8/1P6/P2NQr2/B2K1B2 w - - 1 21"]
+[Aufgabe "1"]
+
+{ [Ar f8f2] Zuletzt zog der Gegner 20…Tf2. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 21. Rh8+ Kxh8 22. Qh5+ Kg8 23. Qh7+ Kf8 24. Qh8# { Gelöst: 21.Th8+ Kxh8 22.Dh5+ Kg8 23.Dh7+ Kf8 24.Dh8#. (Aufgabe 2kFyd von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Hinlenkung · Lichess 1438"]
+[Site "https://lichess.org/gfRyO9Mw/black#32"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5rk1/2p2pbp/1p2p1p1/3q4/1n6/3P1N2/1BP2PPP/2Q2RK1 w - - 0 17"]
+[Aufgabe "1"]
+
+{ [Ar a8d5] Zuletzt zog der Gegner 16…Dxd5. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 17. Bxg7 Kxg7 18. Qb2+ e5 19. Qxb4 { Gelöst: 17.Lxg7 Kxg7 18.Db2+ e5 19.Dxb4. (Aufgabe T7vPu von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Hinlenkung · Lichess 1454"]
+[Site "https://lichess.org/VcagUNCB/black#50"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "k6r/pp2p1bp/1nq1rnp1/3pB3/8/1P1B4/2P2PPP/RN2Q1K1 w - - 0 26"]
+[Aufgabe "1"]
+
+{ [Ar d6e6] Zuletzt zog der Gegner 25…Txe6. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 26. Rxa7+ Kxa7 27. Qa5# { Gelöst: 26.Txa7+ Kxa7 27.Da5#. (Aufgabe 9BoMf von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Hinlenkung · Lichess 1469"]
+[Site "https://lichess.org/I8mxoilw/black#50"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1r4k1/p2q2p1/2p2pNp/3p1n2/1P1P4/2P5/P1Q4P/4R1K1 w - - 0 26"]
+[Aufgabe "1"]
+
+{ [Ar d6f5] Zuletzt zog der Gegner 25…Sxf5. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 26. Qxf5 Qxf5 27. Ne7+ Kf8 28. Nxf5 { Gelöst: 26.Dxf5 Dxf5 27.Se7+ Kf8 28.Sxf5. (Aufgabe 1M7st von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Hinlenkung · Lichess 1484"]
+[Site "https://lichess.org/yFitQjxa/black#84"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/5r1p/2pB4/2P5/5p2/4pK2/4R2P/r7 w - - 2 43"]
+[Aufgabe "1"]
+
+{ [Ar a8a1] Zuletzt zog der Gegner 42…Ta1. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 43. Rg2+ Rg7 44. Rxg7+ Kxg7 45. Be5+ Kg8 46. Bxa1 { Gelöst: 43.Tg2+ Tg7 44.Txg7+ Kxg7 45.Le5+ Kg8 46.Lxa1. (Aufgabe mGCna von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Hinlenkung · Lichess 1500"]
+[Site "https://lichess.org/yqcy9Jp9/black#30"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2rq1rk1/1p2b1pp/p2p1p1n/3N4/4P3/2Q2P2/PPP3PP/2KR3R w - - 1 16"]
+[Aufgabe "1"]
+
+{ [Ar a8c8] Zuletzt zog der Gegner 15…Tc8. Weiß am Zug. Locke eine gegnerische Figur (oft den König) auf ein schlechtes Feld! } 16. Qxc8 Qxc8 17. Nxe7+ Kf7 18. Nxc8 { Gelöst: 16.Dxc8 Dxc8 17.Sxe7+ Kf7 18.Sxc8. (Aufgabe zgr4u von lichess.org, CC0) } *
+

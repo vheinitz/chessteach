@@ -1,0 +1,220 @@
+[Event "Weiß am Zug · Stiller Zug · Lichess 906"]
+[Site "https://lichess.org/vFjcpTid/black#88"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/8/5p2/7P/4pkP1/8/5K2 w - - 4 45"]
+[Aufgabe "1"]
+
+{ [Ar e4f3] Zuletzt zog der Gegner 44…Kf3. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 45. h5 Kxg3 46. h6 f4 47. h7 { Gelöst: 45.h5 Kxg3 46.h6 f4 47.h7. (Aufgabe N8Jlw von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1138"]
+[Site "https://lichess.org/Nh1tBcxV/black#62"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/ppk5/3p4/2pn2K1/7P/2P3P1/P5P1/8 w - - 0 32"]
+[Aufgabe "1"]
+
+{ [Ar e3d5] Zuletzt zog der Gegner 31…Sxd5. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 32. h5 Nxc3 33. h6 { Gelöst: 32.h5 Sxc3 33.h6. (Aufgabe yrJn9 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Stiller Zug · Lichess 1182"]
+[Site "https://lichess.org/OOTO7mTd#107"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/2p5/8/8/kp6/pB6/P6K/8 b - - 1 54"]
+[Aufgabe "1"]
+
+{ [Ar e6b3] Zuletzt zog der Gegner 54.Lb3+. Schwarz am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 54... Kb5 55. Kg2 c5 56. Bd5 c4 { Gelöst: 54…Kb5 55.Kg2 c5 56.Ld5 c4. (Aufgabe MzeKm von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1228"]
+[Site "https://lichess.org/7AAmSsNl/black#110"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/1K6/3k4/P1pn4/8/1P3P2/8 w - - 1 56"]
+[Aufgabe "1"]
+
+{ [Ar f3d4] Zuletzt zog der Gegner 55…Sd4. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 56. a5 c3 57. bxc3 { Gelöst: 56.a5 c3 57.bxc3. (Aufgabe WDMdN von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Stiller Zug · Lichess 1269"]
+[Site "https://lichess.org/fTEEk0ok#109"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/7K/7p/8/5k1P/8/8 b - - 1 55"]
+[Aufgabe "1"]
+
+{ [Ar g7h6] Zuletzt zog der Gegner 55.Kh6. Schwarz am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 55... h4 56. Kh5 Kg3 57. Kg5 Kxh3 58. Kf4 Kg2 { Gelöst: 55…h4 56.Kh5 Kg3 57.Kg5 Kxh3 58.Kf4 Kg2. (Aufgabe crfVL von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1299"]
+[Site "https://lichess.org/Po1CQVGA/black#26"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4rk1/p3ppbp/2p3p1/q1p5/3PP3/1QPb1N1P/P2B1PP1/1R2K2R w K - 6 14"]
+[Aufgabe "1"]
+
+{ [Ar a6d3] Zuletzt zog der Gegner 13…Ld3. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 14. c4 Qc7 15. Qxd3 { Gelöst: 14.c4 Dc7 15.Dxd3. (Aufgabe qbeDF von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1323"]
+[Site "https://lichess.org/Pt7Rursq/black#84"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/5p2/2k1p2p/p1P3pP/1pK1P1P1/1P6/8/8 w - - 2 43"]
+[Aufgabe "1"]
+
+{ [Ar d7c6] Zuletzt zog der Gegner 42…Kc6. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 43. e5 a4 44. bxa4 { Gelöst: 43.e5 a4 44.bxa4. (Aufgabe OTazo von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1340"]
+[Site "https://lichess.org/zZpzndLj/black#48"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r2q2k1/pp3p1p/6p1/4Q3/3P4/1P6/2bB1PPP/3R2K1 w - - 1 25"]
+[Aufgabe "1"]
+
+{ [Ar f5c2] Zuletzt zog der Gegner 24…Lc2. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 25. Bh6 Qf8 26. Bxf8 { Gelöst: 25.Lh6 Df8 26.Lxf8. (Aufgabe VEGVQ von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Stiller Zug · Lichess 1356"]
+[Site "https://lichess.org/1R7QD68h#137"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6K1/5Q2/6pk/p7/1q2P2P/5P2/8/8 b - - 3 69"]
+[Aufgabe "1"]
+
+{ [Ar f8g8] Zuletzt zog der Gegner 69.Kg8. Schwarz am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 69... Qb8+ 70. Qf8+ Qxf8+ 71. Kxf8 a4 72. e5 a3 { Gelöst: 69…Db8+ 70.Df8+ Dxf8+ 71.Kxf8 a4 72.e5 a3. (Aufgabe LMjUm von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1373"]
+[Site "https://lichess.org/iI3GuoHv/black#66"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/p3p1k1/1p1pB3/2PPnKP1/8/8/8 w - - 0 34"]
+[Aufgabe "1"]
+
+{ [Ar c6b5] Zuletzt zog der Gegner 33…cxb5. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 34. c5 Nd2 35. c6 { Gelöst: 34.c5 Sd2 35.c6. (Aufgabe sVO1K von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Stiller Zug · Lichess 1390"]
+[Site "https://lichess.org/2vTAiiWy#67"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/4r1pp/p2B1p2/1p1p4/1P3P2/P7/5KPP/RBr5 b - - 1 34"]
+[Aufgabe "1"]
+
+{ [Ar e5d6] Zuletzt zog der Gegner 34.Ld6. Schwarz am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 34... Ree1 35. Bxh7+ Kxh7 36. Rxc1 Rxc1 { Gelöst: 34…Tee1 35.Lxh7+ Kxh7 36.Txc1 Txc1. (Aufgabe HhIsS von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Stiller Zug · Lichess 1403"]
+[Site "https://lichess.org/bHJeZKPp#83"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1p2n1P1/8/8/4P3/8/Rk2K3/8 b - - 0 42"]
+[Aufgabe "1"]
+
+{ [Ar a1a2] Zuletzt zog der Gegner 42.Txa2+. Schwarz am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 42... Kxa2 43. Ke3 b5 44. Kd4 b4 { Gelöst: 42…Kxa2 43.Ke3 b5 44.Kd4 b4. (Aufgabe ddsBj von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1416"]
+[Site "https://lichess.org/Adl2Zbtw/black#54"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1k5r/2p2p2/1pp5/4p2p/4q1pP/2P5/5PPK/R1Q5 w - - 0 28"]
+[Aufgabe "1"]
+
+{ [Ar c4e4] Zuletzt zog der Gegner 27…Dxe4. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 28. Qa3 Kc8 29. Qa8+ { Gelöst: 28.Da3 Kc8 29.Da8+. (Aufgabe 4LfsU von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Stiller Zug · Lichess 1428"]
+[Site "https://lichess.org/U36GJHTU#63"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/5kp1/p7/1p1pP3/1P3K1P/P7/8/8 b - - 1 32"]
+[Aufgabe "1"]
+
+{ [Ar g4f4] Zuletzt zog der Gegner 32.Kf4. Schwarz am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 32... Ke6 33. h5 d4 34. Ke4 d3 { Gelöst: 32…Ke6 33.h5 d4 34.Ke4 d3. (Aufgabe qgiVS von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Stiller Zug · Lichess 1441"]
+[Site "https://lichess.org/NubfBKfb#79"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/p2K4/2P5/6pp/4P3/1P4b1/P2p4/7R b - - 0 40"]
+[Aufgabe "1"]
+
+{ [Ar e3e4] Zuletzt zog der Gegner 40.e4. Schwarz am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 40... Be1 41. Ke8 d1=Q { Gelöst: 40…Le1 41.Ke8 d1=D. (Aufgabe hLNe9 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1453"]
+[Site "https://lichess.org/EbCfKCGb/black#108"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1r6/7P/3k1Np1/8/8/p5P1/5PK1/8 w - - 1 55"]
+[Aufgabe "1"]
+
+{ [Ar b2b8] Zuletzt zog der Gegner 54…Tb8. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 55. Ng8 Ra8 56. h8=Q { Gelöst: 55.Sg8 Ta8 56.h8=D. (Aufgabe 98OBl von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1465"]
+[Site "https://lichess.org/tCjUgBnR/black#134"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1b3p2/1P6/5pK1/7P/5k2/8/8 w - - 0 68"]
+[Aufgabe "1"]
+
+{ [Ar g6f5] Zuletzt zog der Gegner 67…gxf5. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 68. h5 f4 69. h6 { Gelöst: 68.h5 f4 69.h6. (Aufgabe rmTsq von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1476"]
+[Site "https://lichess.org/b1m9Kegf/black#84"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "7k/R5r1/2p4p/6p1/8/3P4/PP4K1/8 w - - 1 43"]
+[Aufgabe "1"]
+
+{ [Ar g8g7] Zuletzt zog der Gegner 42…Tg7. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 43. Rxg7 Kxg7 44. a4 Kf6 45. a5 { Gelöst: 43.Txg7 Kxg7 44.a4 Kf6 45.a5. (Aufgabe Jfhx9 von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Stiller Zug · Lichess 1488"]
+[Site "https://lichess.org/p3r2PjdN/black#30"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r2qk2r/1pp2pb1/p2p3p/2nPp1p1/4P3/P1NBQ1Pb/1PP1KP1N/3R3R w kq - 0 16"]
+[Aufgabe "1"]
+
+{ [Ar c8h3] Zuletzt zog der Gegner 15…Lxh3. Weiß am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 16. g4 Bxg4+ 17. Nxg4 { Gelöst: 16.g4 Lxg4+ 17.Sxg4. (Aufgabe bRmGH von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Stiller Zug · Lichess 1500"]
+[Site "https://lichess.org/YnSUfx7c#75"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/p4p2/Pp3k2/1P5p/4KP1P/8/8 b - - 0 38"]
+[Aufgabe "1"]
+
+{ [Ar h2h3] Zuletzt zog der Gegner 38.h3. Schwarz am Zug. Kein Schach, kein Schlagen – und trotzdem gewinnt ein ruhiger Zug. Finde ihn! } 38... Ke5 39. f4+ Kd5 40. Kd3 f5 41. Ke3 Kc4 { Gelöst: 38…Ke5 39.f4+ Kd5 40.Kd3 f5 41.Ke3 Kc4. (Aufgabe yVshO von lichess.org, CC0) } *
+

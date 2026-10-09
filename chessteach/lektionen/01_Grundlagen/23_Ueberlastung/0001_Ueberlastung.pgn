@@ -1,0 +1,220 @@
+[Event "Weiß am Zug · Überlastung · Lichess 900"]
+[Site "https://lichess.org/lmLW0fd8/black#38"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r1b2rk1/pp3ppp/2p2q2/8/1QP1B3/8/PP3PPP/4RRK1 w - - 4 20"]
+[Aufgabe "1"]
+
+{ [Ar h8g8] Zuletzt zog der Gegner 19…Kg8. Weiß am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 20. Bxh7+ Kxh7 21. Qxf8 { Gelöst: 20.Lxh7+ Kxh7 21.Dxf8. (Aufgabe ufwN5 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Überlastung · Lichess 1073"]
+[Site "https://lichess.org/YoAqZojR#73"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/5p2/1pb2p2/2p2P1p/3rP2P/3RRK2/5P2/8 b - - 3 37"]
+[Aufgabe "1"]
+
+{ [Ar c3d3] Zuletzt zog der Gegner 37.Tcd3. Schwarz am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 37... Bxe4+ 38. Rxe4 Rxd3+ { Gelöst: 37…Lxe4+ 38.Txe4 Txd3+. (Aufgabe oM4Vq von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Überlastung · Lichess 1135"]
+[Site "https://lichess.org/Vj1SaZZT/black#16"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pp2pppp/1np5/4P3/2B5/4p3/PP3PPP/RN1QK1NR w KQkq - 0 9"]
+[Aufgabe "1"]
+
+{ [Ar d4e3] Zuletzt zog der Gegner 8…dxe3. Weiß am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 9. Bxf7+ Kxf7 10. Qxd8 exf2+ 11. Kxf2 { Gelöst: 9.Lxf7+ Kxf7 10.Dxd8 exf2+ 11.Kxf2. (Aufgabe 5itaF von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Überlastung · Lichess 1159"]
+[Site "https://lichess.org/qHFOKksW/black#56"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r4k/2q3p1/2NbQrPp/p1pPp3/1p6/8/PPPR1P2/1K5R w - - 2 29"]
+[Aufgabe "1"]
+
+{ [Ar f8f6] Zuletzt zog der Gegner 28…Tf6. Weiß am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 29. Rxh6+ gxh6 30. Qxf6+ { Gelöst: 29.Txh6+ gxh6 30.Dxf6+. (Aufgabe al1yF von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Überlastung · Lichess 1185"]
+[Site "https://lichess.org/DJOnIUjl/black#48"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r4r1k/5ppp/p2p1P2/1pn1q1BQ/4b3/P1P2R1P/1P4B1/R5K1 w - - 0 25"]
+[Aufgabe "1"]
+
+{ [Ar b7e4] Zuletzt zog der Gegner 24…Lxe4. Weiß am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 25. fxg7+ Qxg7 26. Bf6 { Gelöst: 25.fxg7+ Dxg7 26.Lf6. (Aufgabe XPcWd von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Überlastung · Lichess 1218"]
+[Site "https://lichess.org/TqLfhglU/black#44"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r1rk1/pp2Qp1p/6p1/8/P2q4/1P3B1P/5nP1/3R1R1K w - - 3 23"]
+[Aufgabe "1"]
+
+{ [Ar d3f2] Zuletzt zog der Gegner 22…Sf2+. Weiß am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 23. Rxf2 Qxf2 24. Rxd8 Rxd8 25. Qxd8+ { Gelöst: 23.Txf2 Dxf2 24.Txd8 Txd8 25.Dxd8+. (Aufgabe ac7z8 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Überlastung · Lichess 1255"]
+[Site "https://lichess.org/f6sg2Zzy#37"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1r3rk1/pR3p1p/3bp1p1/q7/2B2P2/3QB3/P1P3PP/1R4K1 b - - 0 19"]
+[Aufgabe "1"]
+
+{ [Ar b3b7] Zuletzt zog der Gegner 19.Txb7. Schwarz am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 19... Rxb7 20. Rxb7 Qe1+ 21. Qf1 Qxe3+ { Gelöst: 19…Txb7 20.Txb7 De1+ 21.Df1 Dxe3+. (Aufgabe 2AgHr von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Überlastung · Lichess 1284"]
+[Site "https://lichess.org/ZyBxPorg/black#56"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/p4pkp/5q2/8/5p2/P1Q4R/1PP3rP/1K6 w - - 2 29"]
+[Aufgabe "1"]
+
+{ [Ar g5f6] Zuletzt zog der Gegner 28…Df6. Weiß am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 29. Rxh7+ Kxh7 30. Qxf6 { Gelöst: 29.Txh7+ Kxh7 30.Dxf6. (Aufgabe l76no von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Überlastung · Lichess 1307"]
+[Site "https://lichess.org/K7ZmKviF/black#48"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r1b2rk1/1p3ppp/5n2/p2Q1P2/2B5/3RB1K1/P1q4P/3R4 w - - 2 25"]
+[Aufgabe "1"]
+
+{ [Ar d7f6] Zuletzt zog der Gegner 24…Sf6. Weiß am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 25. Qxf7+ Rxf7 26. Rd8+ Ne8 27. Rxe8# { Gelöst: 25.Dxf7+ Txf7 26.Td8+ Se8 27.Txe8#. (Aufgabe XQcGW von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Überlastung · Lichess 1328"]
+[Site "https://lichess.org/nz1QD2Gh/black#44"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "4r1kr/p1R3pp/4q3/8/8/1Q1P2P1/P1P5/1N1K4 w - - 5 23"]
+[Aufgabe "1"]
+
+{ [Ar e5e6] Zuletzt zog der Gegner 22…De6. Weiß am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 23. Qxe6+ Rxe6 24. Rc8+ Kf7 25. Rxh8 { Gelöst: 23.Dxe6+ Txe6 24.Tc8+ Kf7 25.Txh8. (Aufgabe 2oxJ9 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Überlastung · Lichess 1348"]
+[Site "https://lichess.org/Tw2VVa64#47"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r5r1/2pk4/pp1p4/7p/2PQ1P1P/2N1q1P1/PP2N1K1/5R2 b - - 0 24"]
+[Aufgabe "1"]
+
+{ [Ar d5d4] Zuletzt zog der Gegner 24.Dxd4. Schwarz am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 24... Rxg3+ 25. Nxg3 Qxd4 { Gelöst: 24…Txg3+ 25.Sxg3 Dxd4. (Aufgabe MG1Nk von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Überlastung · Lichess 1367"]
+[Site "https://lichess.org/ifwbwLmi#55"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2rr4/1b2kppp/pp2p3/8/P5P1/1PNRKP2/2P3P1/3R4 b - - 4 28"]
+[Aufgabe "1"]
+
+{ [Ar a1d1] Zuletzt zog der Gegner 28.Tad1. Schwarz am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 28... Rxc3 29. Rxc3 Rxd1 { Gelöst: 28…Txc3 29.Txc3 Txd1. (Aufgabe rHaFf von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Überlastung · Lichess 1386"]
+[Site "https://lichess.org/kzYiwNzE#45"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r3r1k1/1ppb1pb1/p2p2pp/3P4/2P4q/1P2BP2/P1BQ2PP/1R3RK1 b - - 2 23"]
+[Aufgabe "1"]
+
+{ [Ar e1f1] Zuletzt zog der Gegner 23.Tf1. Schwarz am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 23... Rxe3 24. Qxe3 Bd4 { Gelöst: 23…Txe3 24.Dxe3 Ld4. (Aufgabe Wz0uL von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Überlastung · Lichess 1403"]
+[Site "https://lichess.org/HnvafFZ8#65"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1QQ5/6kp/3p2p1/3P4/5b2/3qp3/5PPP/5RK1 b - - 0 33"]
+[Aufgabe "1"]
+
+{ [Ar b7b8] Zuletzt zog der Gegner 33.b8=D. Schwarz am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 33... exf2+ 34. Rxf2 Qd1+ 35. Rf1 Be3+ 36. Kh1 Qxf1# { Gelöst: 33…exf2+ 34.Txf2 Dd1+ 35.Tf1 Le3+ 36.Kh1 Dxf1#. (Aufgabe ktBf6 von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Überlastung · Lichess 1420"]
+[Site "https://lichess.org/2bBrLAIt#55"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5k2/5p2/2p3pp/5p2/3b1P2/3PN3/2P2KPP/r3R3 b - - 5 28"]
+[Aufgabe "1"]
+
+{ [Ar d1e3] Zuletzt zog der Gegner 28.Se3. Schwarz am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 28... Rxe1 29. Kxe1 Bxe3 { Gelöst: 28…Txe1 29.Kxe1 Lxe3. (Aufgabe 7w5so von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Überlastung · Lichess 1437"]
+[Site "https://lichess.org/Q02ZQaD0#31"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "rn2r1k1/pp3p2/q2P2pp/2p2b2/8/2P2N2/PP1QBPPP/R4K1R b - - 4 16"]
+[Aufgabe "1"]
+
+{ [Ar e1f1] Zuletzt zog der Gegner 16.Kf1. Schwarz am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 16... Rxe2 17. Qxe2 Bd3 18. Qxd3 Qxd3+ { Gelöst: 16…Txe2 17.Dxe2 Ld3 18.Dxd3 Dxd3+. (Aufgabe 0ZF0r von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Überlastung · Lichess 1453"]
+[Site "https://lichess.org/FxwRCEKS#65"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5r1k/pp4bp/1q4p1/8/8/3RQ1P1/PP5P/R5K1 b - - 0 33"]
+[Aufgabe "1"]
+
+{ [Ar e7e3] Zuletzt zog der Gegner 33.Dxe3. Schwarz am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 33... Qxe3+ 34. Rxe3 Bd4 35. Kg2 Bxe3 { Gelöst: 33…Dxe3+ 34.Txe3 Ld4 35.Kg2 Lxe3. (Aufgabe fNaRt von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Überlastung · Lichess 1469"]
+[Site "https://lichess.org/0v8uTu3c/black#84"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/p1nq2k1/2RN4/5p2/3p1p2/5P2/P6P/3K4 w - - 4 43"]
+[Aufgabe "1"]
+
+{ [Ar e7d7] Zuletzt zog der Gegner 42…Dd7. Weiß am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 43. Rxc7 Qxc7 44. Ne8+ Kf7 45. Nxc7 { Gelöst: 43.Txc7 Dxc7 44.Se8+ Kf7 45.Sxc7. (Aufgabe cvsmg von lichess.org, CC0) } *
+
+[Event "Schwarz am Zug · Überlastung · Lichess 1485"]
+[Site "https://lichess.org/4jvxWOSX#65"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5rk1/5p2/3q4/6p1/PQ5p/7P/2rp1PP1/1R1R2K1 b - - 1 33"]
+[Aufgabe "1"]
+
+{ [Ar b7b4] Zuletzt zog der Gegner 33.Db4. Schwarz am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 33... Qxb4 34. Rxb4 Rc1 { Gelöst: 33…Dxb4 34.Txb4 Tc1. (Aufgabe 2MBKi von lichess.org, CC0) } *
+
+[Event "Weiß am Zug · Überlastung · Lichess 1500"]
+[Site "https://lichess.org/fJbTCkKW/black#88"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1Qnk4/2p1p3/p1q2p2/P4N2/4PP2/1P3K2/8 w - - 1 45"]
+[Aufgabe "1"]
+
+{ [Ar e5c5] Zuletzt zog der Gegner 44…Dc5. Weiß am Zug. Eine gegnerische Figur hat zwei Aufgaben auf einmal. Gib ihr zu viel zu tun! } 45. Qxc7+ Kxc7 46. Nxe6+ Kb6 47. Nxc5 { Gelöst: 45.Dxc7+ Kxc7 46.Sxe6+ Kb6 47.Sxc5. (Aufgabe zR72z von lichess.org, CC0) } *
+
