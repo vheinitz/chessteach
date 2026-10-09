@@ -196,7 +196,11 @@ python3 stats.py evals.json stats.json              # Kennzahlen
 python3 zusatzstatistik.py evals.json               # Patzer, Tilt, Verwertung
 python3 lektionen_bauen.py evals.json <ziel>/03_MeinePartien   # ~2 min
 python3 gegenprobe.py <ziel>/03_MeinePartien        # Stichprobe bei Tiefe 22
+python3 lektionen_mehrzuegig.py evals.json <ziel>/03_MeinePartien   # Lektion 05 und 06
+python3 kontext_einfuegen.py <partien.pgn> <aufgaben.pgn …>          # zuletzt: Vorlauf + Partiezug
 ```
+
+`kontext_einfuegen.py` (2026-10-09, Auftrag: „zu jeder meiner übung … einige Züge zu der Position und einen Zug, was ich gemacht gatte integrieren“) lässt jede Aufgabe 3 Züge früher beginnen. Den Partiezug hängt es als Nebenvariante mit ?/?? an. Die App zeigt ihn bei Aufgaben-PGNs vor der Lösung als roten Pfeil mit eigenem Text. Die Lektion-Skripte erzeugen Aufgaben ohne diese Ergänzung; nach einem Neubau muss `kontext_einfuegen.py` deshalb noch einmal laufen.
 
 Spielernamen in den PGNs sind anonymisiert („Ich“ und „Gegner“). Die Skripte erkennen die eigene Seite über `CHESS_ME` (Vorgabe `Ich`). Für einen frischen chess.com-Export setzt man `CHESS_ME=<Benutzername>`; vor dem Einchecken anonymisiert man die neue PGN mit `CHESS_ME=<Benutzername> python3 anonymisieren.py <verzeichnis>`.
 Der Partien-Filter für den 12.09. steckt nicht in den Skripten: Die Partien

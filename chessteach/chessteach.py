@@ -47,6 +47,7 @@ THREAT_COLOR = "#e53935"
 MARK_COLOR = "#ffd54f"
 ARROW_COLOR = "#1e88e5"
 BESTMOVE_COLOR = "#8e24aa"
+PLAYED_COLOR = "#e53935"   # tatsächlich gespielter Fehlzug in Aufgaben
 SUGGEST_COLOR = "#1e88e5"
 WINNABLE_COLOR = "#00a651"
 HIGHLIGHT_COLOR = "#4fc3f7"
@@ -822,6 +823,9 @@ class BoardCanvas(tk.Canvas):
 
         for a, b in self.app.arrows:
             self.draw_arrow(a, b, ARROW_COLOR, draft=False)
+        played = getattr(self.app, "played_arrow", None)
+        if played is not None:
+            self.draw_arrow(played.from_square, played.to_square, PLAYED_COLOR, draft=False, width=6)
 
         for i, move in enumerate(self.app.best_moves):
             color = BESTMOVE_COLOR if i == 0 else SUGGEST_COLOR
@@ -1452,6 +1456,8 @@ class ChessTeachApp(tk.Tk):
             return
         self.loaded_fen = fen
         self.game_base = self.board.copy()
+        self.played_arrow = None
+        self.step_comment = None
         self.game_steps = []
         self.step_index = 0
         self.game_index = 0
@@ -1504,6 +1510,12 @@ class ChessTeachApp(tk.Tk):
         for st in parse_annotation_comment(node.comment):
             steps.append(st)
         while node.variations:
+            # Aufgaben: Nebenvariante mit ?/?? = der in der Partie gespielte Zug;
+            # als roter Pfeil mit eigenem Text vor der Lösung zeigen
+            if getattr(self, "is_puzzle", False):
+                for alt in node.variations[1:]:
+                    if alt.nags & {chess.pgn.NAG_MISTAKE, chess.pgn.NAG_BLUNDER}:
+                        steps.append(("played", alt.move, comment_text(alt.comment)))
             node = node.variations[0]
             # Markierungen VOR dem Zug zeigen (sie erklären den Plan)
             for st in parse_annotation_comment(node.comment):
@@ -1520,12 +1532,18 @@ class ChessTeachApp(tk.Tk):
         self.highlights = []
         self.lines = []
         self.last_move = None
+        self.played_arrow = None
+        self.step_comment = None
         move_count = 0
         for st in self.game_steps[:i]:
             kind = st[0]
             if kind == "move":
                 b.push(st[1]); self.last_move = st[1]; move_count += 1
                 self.arrows = []; self.marks = {}; self.highlights = []; self.lines = []
+                self.played_arrow = None; self.step_comment = None
+            elif kind == "played":
+                self.played_arrow = st[1]
+                self.step_comment = st[2]
             elif kind == "arrow":
                 self.arrows.append((st[1], st[2]))
             elif kind == "mark":
@@ -1623,7 +1641,8 @@ class ChessTeachApp(tk.Tk):
         else:
             self.move_lbl.config(text="Start")
         comments = getattr(self, "move_comments", [])
-        self.comment_lbl.config(text=comments[self.game_index] if self.game_index < len(comments) else "")
+        text = comments[self.game_index] if self.game_index < len(comments) else ""
+        self.comment_lbl.config(text=getattr(self, "step_comment", None) or text)
 
     def on_move_list_select(self, event):
         sel = self.move_list.curselection()
@@ -1634,6 +1653,57 @@ class ChessTeachApp(tk.Tk):
                 self.game_replay_to(self.move_step_index[sel[0]])
 
     # -- Züge / Aktionen ----------------------------------------------------
+    def choose_move(self, board, frm, to):
+        """Legaler Zug frm→to; bei Bauernumwandlung wird die Figur erfragt.
+        -> chess.Move, None (kein legaler Zug) oder "cancel" (Auswahl abgebrochen)."""
+        cands = [m for m in board.legal_moves if m.from_square == frm and m.to_square == to]
+        if not cands:
+            return None
+        if cands[0].promotion is None:
+            return cands[0]
+        # Unterverwandlung kann nötig sein (Springer mit Schach/Gabel, Turm/Läufer gegen Patt)
+        pt = self.ask_promotion(board.turn)
+        return chess.Move(frm, to, promotion=pt) if pt else "cancel"
+
+    def ask_promotion(self, color):
+        win = tk.Toplevel(self)
+        win.title("Umwandlung")
+        win.transient(self)
+        win.resizable(False, False)
+        size = max(48, int(self.board_canvas.sq))
+        choice = {"pt": None}
+
+        def pick(pt):
+            choice["pt"] = pt
+            win.destroy()
+
+        frm = tk.Frame(win, bg="#f0d9b5", padx=6, pady=6)
+        frm.pack()
+        keys = [(chess.QUEEN, "Q", "d"), (chess.ROOK, "R", "t"),
+                (chess.BISHOP, "B", "l"), (chess.KNIGHT, "N", "s")]
+        for i, (pt, sym, key) in enumerate(keys):
+            img = PIECES.get(sym if color == chess.WHITE else sym.lower(), size)
+            b = tk.Button(frm, image=img, command=lambda pt=pt: pick(pt), bg="#f0d9b5",
+                          activebackground="#ffe08a", relief="flat", bd=2)
+            b.grid(row=0, column=i, padx=3)
+            ToolTip(b, {chess.QUEEN: "Dame (D)", chess.ROOK: "Turm (T)", chess.BISHOP: "Läufer (L)",
+                        chess.KNIGHT: "Springer (S)"}[pt])
+            win.bind(key, lambda e, pt=pt: pick(pt))
+            win.bind(sym.lower(), lambda e, pt=pt: pick(pt))
+            win.bind(str(i + 1), lambda e, pt=pt: pick(pt))
+        win.bind("<Return>", lambda e: pick(chess.QUEEN))
+        win.bind("<Escape>", lambda e: win.destroy())
+        # mittig über dem Brett (am Zielfeld würde es bei gedrehtem Brett aus dem Bild ragen)
+        bc = self.board_canvas
+        win.update_idletasks()
+        wx = bc.winfo_rootx() + (bc.winfo_width() - win.winfo_reqwidth()) // 2
+        wy = bc.winfo_rooty() + (bc.winfo_height() - win.winfo_reqheight()) // 2
+        win.geometry(f"+{max(0, wx)}+{max(0, wy)}")
+        win.grab_set()
+        win.focus_set()
+        self.wait_window(win)
+        return choice["pt"]
+
     def board_click(self, sq):
         if self.repertoire_mode:
             self.repertoire_click(sq)
@@ -1644,23 +1714,29 @@ class ChessTeachApp(tk.Tk):
         board = self.board
         piece = board.piece_at(sq)
         if self.selected is not None:
-            for m in board.legal_moves:
-                if m.from_square == self.selected and m.to_square == sq:
-                    # Pfad an der aktuellen Stelle abschneiden und neuen Zug aufzeichnen
-                    self.game_steps = self.game_steps[:self.step_index]
-                    self.game_steps.append(("move", m))
-                    self.board.push(m)
-                    self.last_move = m
-                    self.step_index = len(self.game_steps)
-                    self.game_index += 1
-                    self.selected = None
-                    self.best_moves = []
-                    self._populate_move_list()
-                    self._sync_move_list_selection()
-                    self.update_content_field()
-                    self.board_canvas.redraw()
-                    self.update_status()
-                    return
+            m = self.choose_move(board, self.selected, sq)
+            if m == "cancel":
+                self.selected = None
+                self.board_canvas.redraw()
+                return
+            if m is not None:
+                # Pfad an der aktuellen Stelle abschneiden und neuen Zug aufzeichnen
+                self.game_steps = self.game_steps[:self.step_index]
+                self.game_steps.append(("move", m))
+                self.board.push(m)
+                self.last_move = m
+                self.played_arrow = None
+                self.step_comment = None
+                self.step_index = len(self.game_steps)
+                self.game_index += 1
+                self.selected = None
+                self.best_moves = []
+                self._populate_move_list()
+                self._sync_move_list_selection()
+                self.update_content_field()
+                self.board_canvas.redraw()
+                self.update_status()
+                return
         if piece and piece.color == board.turn:
             self.selected = sq
         else:
@@ -1803,9 +1879,12 @@ class ChessTeachApp(tk.Tk):
                 self.selected = None
                 self.board_canvas.redraw()
                 return
-            try:
-                move = board.find_move(self.selected, sq)
-            except ValueError:
+            move = self.choose_move(board, self.selected, sq)
+            if move == "cancel":
+                self.selected = None
+                self.board_canvas.redraw()
+                return
+            if move is None:
                 if piece is not None and piece.color == self.repertoire_player_color:
                     self.selected = sq
                 else:
@@ -2240,6 +2319,8 @@ class ChessTeachApp(tk.Tk):
         self.step_index = 0
         self.game_index = 0
         self.move_step_index = []
+        self.played_arrow = None
+        self.step_comment = None
         self.selected = None
         self.last_move = None
         self.best_moves = []
