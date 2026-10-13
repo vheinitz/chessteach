@@ -54,6 +54,7 @@ HIGHLIGHT_COLOR = "#4fc3f7"
 LINE_COLOR = "#ffb74d"
 LAST_COLOR = "#f9a825"
 CHECK_COLOR = "#d32f2f"
+MARK_X = 360          # x-Mitte der Abhak-Spalte in der Lektionsliste
 
 
 def square_color(s):
@@ -99,7 +100,7 @@ k             Koordinaten an/aus
 m             Markieren an/aus
 c             Markierungsfarbe wechseln
 a             Analyse an/aus
-g             Analyse nur für den Gegner (Seite oben) an/aus
+g             Gegner (Seite oben) antwortet mit dem Engine-Zug an/aus
 d             Erledigt markieren (aktuelle Übung/Lektion)
 F1            Diese Hilfe
 F5            Lektionen neu laden
@@ -153,6 +154,57 @@ def title_from_name(name):
 def truncate(s, n):
     s = str(s)
     return s if len(s) <= n else s[:n - 1] + "…"
+
+
+_fonts = {}
+_fit_cache = {}
+_char_w = {}
+
+
+def fit_lines(s, font, width, max_lines=1):
+    """Bricht s nach Pixelbreite auf höchstens max_lines Zeilen um; Rest wird mit … gekürzt.
+    Zeichenzahl reicht nicht: breite Buchstaben liefen sonst in die Abhak-Spalte."""
+    key = (s, font, width, max_lines)
+    if key in _fit_cache:
+        return _fit_cache[key]
+    f = _fonts.get(font)
+    if f is None:
+        f = _fonts[font] = tkfont.Font(family=font[0], size=font[1],
+                                       weight=font[2] if len(font) > 2 else "normal")
+    cw = _char_w.setdefault(font, {})
+
+    def fits(t):                                    # Zeichenbreiten einzeln gecacht: f.measure
+        w = 0                                       # je Text kostet ~4 ms, bei 7000 Zeilen zu viel
+        for ch in t.rstrip():
+            if ch not in cw:
+                cw[ch] = f.measure(ch)
+            w += cw[ch]
+        return w <= width
+
+    def longest(t, tail=""):                        # längster passender Anfang (binäre Suche)
+        lo, hi = 1, len(t)
+        while lo < hi:
+            mid = (lo + hi + 1) // 2
+            lo, hi = (mid, hi) if fits(t[:mid] + tail) else (lo, mid - 1)
+        return lo
+
+    # Trennstellen nach Leerzeichen und Bindestrich („Nimzowitsch-|Larsen-|Eröffnung“)
+    parts = re.findall(r"[^\s-]+-?\s*|-\s*", " ".join(str(s).split()))
+    lines = []
+    while parts and len(lines) < max_lines:
+        line = parts.pop(0)
+        if not fits(line) and len(lines) < max_lines - 1:
+            k = longest(line)                       # überlanges Einzelwort am Zeichen trennen
+            parts.insert(0, line[k:])
+            line = line[:k]
+        while parts and fits(line + parts[0]):
+            line += parts.pop(0)
+        lines.append(line.rstrip())
+    if parts or (lines and not fits(lines[-1])):
+        rest = (lines[-1] + " " + "".join(parts)).strip()
+        lines[-1] = rest[:longest(rest, "…")].rstrip() + "…"
+    out = _fit_cache[key] = "\n".join(lines)
+    return out
 
 
 def read_text(path):
@@ -895,6 +947,7 @@ class ChessTeachApp(tk.Tk):
         self.show_coords = True
         self.show_legal_moves = True
         self.analyse_opp_only = False
+        self._auto_reply_fen = None
         self.board_hidden = False
         self.mark_colors = ["#ffd54f", "#f44336", "#2196f3", "#4caf50", "#9c27b0"]
         self.mark_color_index = 0
@@ -1100,7 +1153,7 @@ class ChessTeachApp(tk.Tk):
         self.analyse_var = tk.BooleanVar(value=False)
         self.analyse_btn = ttoggle("analyse", "Analyse an/aus (a)", self.toggle_analyse, self.analyse_var)
         self.analyse_opp_var = tk.BooleanVar(value=False)
-        ttoggle("analyse_opp", "Analyse nur, wenn der Gegner (Seite oben) am Zug ist (g)",
+        ttoggle("analyse_opp", "Gegner (Seite oben) zieht automatisch den Engine-Zug (g)",
                 self.toggle_analyse_opp, self.analyse_opp_var)
 
         self.nav_lbl = tk.Label(bar, text="Nav: Züge", font=("DejaVu Sans", 10), fg="#555555")
@@ -1235,15 +1288,19 @@ class ChessTeachApp(tk.Tk):
         fen = self._node_preview_fen(node)
         draw_mini_board(canvas, x, y, size, fen)
         tx = x + size + 8
+        tw = MARK_X - 14 - tx                       # Platz bis vor das Abhak-Symbol
         meta = node.get("meta", "")
+        title = node.get("title", "?")
         if meta:
-            canvas.create_text(tx, y + 20, text=truncate(node.get("title", "?"), 28),
-                               anchor="w", font=("DejaVu Sans", 12, "bold"), fill="#222")
-            canvas.create_text(tx, y + 44, text=truncate(meta, 40),
-                               anchor="w", font=("DejaVu Sans", 11), fill="#666")
+            f1, f2 = ("DejaVu Sans", 12, "bold"), ("DejaVu Sans", 11)
+            canvas.create_text(tx, y + 6, text=fit_lines(title, f1, tw, 2),
+                               anchor="nw", font=f1, fill="#222")
+            canvas.create_text(tx, y + size - 6, text=fit_lines(meta, f2, tw),
+                               anchor="sw", font=f2, fill="#666")
         else:
-            canvas.create_text(tx, y + size // 2, text=truncate(node.get("title", "?"), 30),
-                               anchor="w", font=("DejaVu Sans", 12), fill="#222")
+            f1 = ("DejaVu Sans", 12)
+            canvas.create_text(tx, y + size // 2, text=fit_lines(title, f1, tw, 3),
+                               anchor="w", font=f1, fill="#222")
 
     def render_tab(self, tab_index):
         if tab_index not in self.tab_canvases:
@@ -1257,7 +1314,7 @@ class ChessTeachApp(tk.Tk):
         size = 84
         ind = 26
         del_x = 396
-        mark_x = 360
+        mark_x = MARK_X
         tab = self.tabs[tab_index]
         expanded = self.expanded.get(tab_index, set())
 
@@ -1271,7 +1328,8 @@ class ChessTeachApp(tk.Tk):
             canvas.create_rectangle(x, y, x + 400, y + 24, fill=bg, width=0)
             canvas.create_text(x + 10, y + 12, text="▾" if exp else "▸",
                                anchor="w", font=("DejaVu Sans", 12), fill="#333")
-            canvas.create_text(x + 30, y + 12, text=lesson["title"],
+            canvas.create_text(x + 30, y + 12,
+                               text=fit_lines(lesson["title"], ("DejaVu Sans", 12, "bold"), mark_x - 14 - x - 30),
                                anchor="w", font=("DejaVu Sans", 12, "bold"),
                                fill="#888888" if lesson_done else "#222222")
             mark_char = "✓" if lesson_done else "○"
@@ -1720,28 +1778,40 @@ class ChessTeachApp(tk.Tk):
                 self.board_canvas.redraw()
                 return
             if m is not None:
-                # Pfad an der aktuellen Stelle abschneiden und neuen Zug aufzeichnen
-                self.game_steps = self.game_steps[:self.step_index]
-                self.game_steps.append(("move", m))
-                self.board.push(m)
-                self.last_move = m
-                self.played_arrow = None
-                self.step_comment = None
-                self.step_index = len(self.game_steps)
-                self.game_index += 1
-                self.selected = None
-                self.best_moves = []
-                self._populate_move_list()
-                self._sync_move_list_selection()
-                self.update_content_field()
-                self.board_canvas.redraw()
-                self.update_status()
+                self._push_free_move(m)
+                # Gegner-Analyse an: der Gegner antwortet mit dem Engine-Zug (_apply_analysis)
+                self._auto_reply_fen = self.board.fen()
                 return
         if piece and piece.color == board.turn:
             self.selected = sq
         else:
             self.selected = None
         self.board_canvas.redraw()
+
+    def _push_free_move(self, m):
+        # Pfad an der aktuellen Stelle abschneiden und neuen Zug aufzeichnen
+        self.game_steps = self.game_steps[:self.step_index]
+        self.game_steps.append(("move", m))
+        self.board.push(m)
+        self.last_move = m
+        self.played_arrow = None
+        self.step_comment = None
+        self.step_index = len(self.game_steps)
+        self.game_index += 1
+        self.selected = None
+        self.best_moves = []
+        self._populate_move_list()
+        self._sync_move_list_selection()
+        self.update_content_field()
+        self.board_canvas.redraw()
+        self.update_status()
+
+    def _auto_reply(self, fen, move):
+        """Engine-Zug für den Gegner ausführen, falls die Stellung noch dieselbe ist."""
+        if (self.board.fen() != fen or not (self.analyse_on and self.analyse_opp_only)
+                or self.repertoire_mode or self.edit_mode or move not in self.board.legal_moves):
+            return
+        self._push_free_move(move)
 
     # -- Repertoire-Training -------------------------------------------------
     def _stop_repertoire_state(self):
@@ -2623,7 +2693,7 @@ class ChessTeachApp(tk.Tk):
             self.update_status()
 
     def toggle_analyse_opp(self):
-        """Analyse nur für den Gegner: eigene Züge ohne Hilfe, Gegnerzüge mit Pfeilen."""
+        """Analyse nur für den Gegner: eigene Züge ohne Hilfe, der Gegner antwortet automatisch mit dem besten Zug."""
         self.analyse_opp_only = self.analyse_opp_var.get()
         if self.analyse_opp_only and not self.analyse_on:
             self.analyse_var.set(True)
@@ -2741,6 +2811,13 @@ class ChessTeachApp(tk.Tk):
             self.update_status()
             return
         results = filter_alternatives(results)
+        if (getattr(self, "_auto_reply_fen", None) == fen and results
+                and self.analyse_opp_only and not self.repertoire_mode and not self.edit_mode
+                and not self.board.is_game_over()):
+            # nur direkt nach einem eigenen Zug, nicht beim Blättern durch die Partie;
+            # Pfeil kurz zeigen, dann ziehen
+            self._auto_reply_fen = None
+            self.after(700, self._auto_reply, fen, results[0][0])
         self.best_moves = [m for m, s in results]
         self.best_scores = [s for m, s in results]
         self._update_eval(self.best_scores[0] if self.best_scores else None)
