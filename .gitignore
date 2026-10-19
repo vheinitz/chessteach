@@ -5,3 +5,5 @@ __pycache__/
 
 # Lektionen aus Partien von Kindern (tools/partien_lektionen.py) – nicht veröffentlichen
 chessteach/lektionen/*_Partien-*/
+# Buchinhalte (urheberrechtlich geschützte Ausgaben) nur lokal
+chessteach/buecher/

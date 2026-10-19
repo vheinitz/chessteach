@@ -28,6 +28,8 @@ import chess.pgn
 import chess.engine
 from PIL import Image, ImageDraw, ImageTk
 
+import buchleser
+
 # ---------------------------------------------------------------------------
 # Pfade & Konstanten
 # ---------------------------------------------------------------------------
@@ -410,6 +412,8 @@ def filter_alternatives(results):
 
 
 def san_de(board, move):
+    if not move:                    # Nullzug (Buch: Drohung der anderen Seite)
+        return "(Drohung)"
     return board.san(move).replace("N", "S").replace("B", "L").replace("Q", "D").replace("R", "T")
 
 
@@ -1219,6 +1223,13 @@ class ChessTeachApp(tk.Tk):
                   "Ohne Auswahl: Figur anklicken und frei verschieben.",
                   wraplength=230, justify="left").pack(anchor="w", padx=6, pady=8)
 
+        # Bücher (Lesemodus), nur wenn buecher/*/buch.json vorhanden
+        self.book_reader = None
+        books = buchleser.find_books(APP_DIR)
+        if books:
+            self.book_reader = buchleser.BookReader(self.notebook, self, books, draw_mini_board)
+            self.notebook.add(self.book_reader, text="Bücher")
+
         # Züge (gemeinsam für alle Tabs)
         ttk.Label(side, text="Züge", font=("DejaVu Sans", 11, "bold")).pack(anchor="w")
         self.move_list = tk.Listbox(side, height=7, font=("DejaVu Sans Mono", 12),
@@ -1493,6 +1504,10 @@ class ChessTeachApp(tk.Tk):
 
     def on_tab_changed(self, event):
         idx = self.notebook.index("current")
+        if self.book_reader is not None and self.notebook.select() == str(self.book_reader):
+            if self.book_reader.data is None:
+                self.book_reader.open_book(0)
+            return                  # current_tab_index bleibt beim letzten Lektionsreiter
         if idx == self.figures_index:
             self.current_tab_index = "figures"
         else:
@@ -1622,6 +1637,8 @@ class ChessTeachApp(tk.Tk):
         if not self.game_steps:
             return
         self._rebuild_to_step(i)
+        if getattr(self, "book_reader", None) is not None:
+            self.book_reader.sync(sum(1 for st in self.game_steps[:self.step_index] if st[0] == "move"))
         self.selected = None
         self.best_moves = []
         self._sync_move_list_selection()
@@ -1663,7 +1680,8 @@ class ChessTeachApp(tk.Tk):
         for st in self.game_steps:
             if st[0] == "move":
                 m = st[1]
-                prefix = f"{moves // 2 + 1}." if moves % 2 == 0 else f"{moves // 2 + 1}..."
+                # Nummer aus der Stellung: Buchbeispiele beginnen auch mit „4... ♘e4“
+                prefix = f"{b.fullmove_number}." if b.turn == chess.WHITE else f"{b.fullmove_number}..."
                 self.move_list.insert("end", f"{prefix} {san_de(b, m)}")
                 self.move_texts.append((prefix, san_de(b, m)))
                 b.push(m)
@@ -3073,6 +3091,9 @@ class ChessTeachApp(tk.Tk):
                 self.load_fen(cfg["last_fen"])
             except Exception:
                 pass
+        bs = cfg.get("buch")
+        if self.book_reader is not None and isinstance(bs, dict):
+            self.book_reader.open_book(int(bs.get("buch", 0)), float(bs.get("pos", 0)))
 
     def save_config(self):
         os.makedirs(CONFIG_DIR, exist_ok=True)
@@ -3091,6 +3112,7 @@ class ChessTeachApp(tk.Tk):
             "analyse_opp_only": getattr(self, "analyse_opp_only", False),
             "font_scale": self.font_scale,
             "last_fen": self.loaded_fen,
+            "buch": self.book_reader.state() if self.book_reader is not None else None,
         }
         with open(CONFIG_FILE, "w", encoding="utf-8") as f:
             json.dump(cfg, f)
