@@ -15,6 +15,7 @@ from tkinter import ttk
 
 import chess
 import chess.pgn
+from PIL import Image, ImageTk
 
 MAIN_COLOR = "#0d47a1"
 VAR_COLOR = "#2e7d32"
@@ -44,6 +45,8 @@ class BookReader(ttk.Frame):
         self.node_tags = {}         # (partie, knoten) -> [Tags]
         self.loaded = None          # (game_steps-Objekt, [(partie, knoten) je Halbzug])
         self.canvases = []
+        self.images = []            # PhotoImage-Referenzen der Abbildungen
+        self.book_dir = None
 
         top = ttk.Frame(self)
         top.pack(fill="x", padx=2, pady=2)
@@ -74,6 +77,7 @@ class BookReader(ttk.Frame):
         t.tag_configure("mv", font=("DejaVu Sans", 12))
         t.tag_configure("mv_main", foreground=MAIN_COLOR, font=("DejaVu Sans", 12, "bold"))
         t.tag_configure("mv_var", foreground=VAR_COLOR)
+        t.tag_configure("fix", underline=True, foreground="#bf360c")
         t.tag_configure("cur", background=CUR_BG)
         t.tag_raise("cur")
         for tag in ("mv_main", "mv_var"):
@@ -89,6 +93,7 @@ class BookReader(ttk.Frame):
             return
         self.combo.current(index)
         self.data = self.books[index][1]
+        self.book_dir = os.path.dirname(self.books[index][0])
         self.render()
         if yview is not None:
             self.after(50, lambda: self.text.yview_moveto(yview))
@@ -99,7 +104,7 @@ class BookReader(ttk.Frame):
         t.delete("1.0", "end")
         for c in self.canvases:
             c.destroy()
-        self.canvases = []
+        self.canvases, self.images = [], []
         self.span_node, self.node_tags = {}, {}
         k = 0
         page = None
@@ -114,6 +119,8 @@ class BookReader(ttk.Frame):
                 t.insert("end", bl["text"] + "\n", "cap")
             elif kind == "dia":
                 self._insert_diagram(bl)
+            elif kind == "bild":
+                self._insert_image(bl)
             elif kind == "p":
                 base = ("fn",) if bl.get("fn") else ()
                 for s in bl["spans"]:
@@ -125,7 +132,12 @@ class BookReader(ttk.Frame):
                     key = (s["g"], s["n"])
                     self.span_node[tag] = key
                     self.node_tags.setdefault(key, []).append(tag)
-                    t.insert("end", s["m"], base + ("mv", "mv_main" if s["b"] else "mv_var", tag))
+                    tags = base + ("mv", "mv_main" if s["b"] else "mv_var", tag)
+                    if "k" in s:    # vermuteter Druckfehler: Buchtext dahinter in Klammern
+                        t.insert("end", s["m"], tags + ("fix",))
+                        t.insert("end", f" [im Buch: {s['k']}]", base + ("fn",))
+                    else:
+                        t.insert("end", s["m"], tags)
                 t.insert("end", "\n\n" if not bl.get("fn") else "\n", base)
         t.configure(state="disabled")
 
@@ -143,6 +155,21 @@ class BookReader(ttk.Frame):
         self.canvases.append(c)
         self.text.insert("end", "\n", "dia")
         self.text.window_create("end", window=c)
+        self.text.insert("end", "\n", "dia")
+        self.text.tag_add("dia", "end-3l", "end-1c")
+
+    def _insert_image(self, bl):
+        """Abbildung (Schema) aus dem Buchverzeichnis, auf Lesebreite verkleinert."""
+        try:
+            img = Image.open(os.path.join(self.book_dir, bl["datei"]))
+        except OSError:
+            return
+        if img.width > 520:
+            img = img.resize((520, round(img.height * 520 / img.width)), Image.LANCZOS)
+        photo = ImageTk.PhotoImage(img)
+        self.images.append(photo)
+        self.text.insert("end", "\n", "dia")
+        self.text.image_create("end", image=photo)
         self.text.insert("end", "\n", "dia")
         self.text.tag_add("dia", "end-3l", "end-1c")
 
@@ -193,7 +220,7 @@ class BookReader(ttk.Frame):
 
     def show_node(self, g, n, anchor=None):
         game = self.data["partien"][g]
-        path, tail = self.line_of(g, n) if n >= 0 else ([], [])
+        path, tail = self.line_of(g, n)        # n = -1: Ausgangsstellung (Diagramm)
         pg = chess.pgn.Game()
         root = chess.Board(game["root"])
         if root.fen() != chess.STARTING_FEN:

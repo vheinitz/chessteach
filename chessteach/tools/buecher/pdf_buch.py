@@ -7,10 +7,14 @@ Zug von der Ausgangsstellung aus nachspielbar ist.
 
   python3 tools/buecher/pdf_buch.py <buch.pdf> <ausgabe-verz> --seiten 16-31 [--titel …]
 
-Ergebnis: <ausgabe-verz>/buch.json (Lesemodus) und bericht.md (nicht auflösbare Züge,
-Diagramme, die nicht zur Notation passen). Buchspezifisches (Schriften, Figurine,
-Diagramm-Glyphen) steht in PROFIL; vorerst nur für die russische Nimzowitsch-Ausgabe
-„Моя система“ (Kalinichenko 2020) ermittelt.
+Ergebnis: <ausgabe-verz>/buch.json (Lesemodus), abbildungen/*.png (Schemata, die keine
+Stellung zeigen) und bericht.md (vermutete Druckfehler, nicht auflösbare Züge, Diagramme,
+die nicht zur Notation passen). Vermutete Druckfehler werden ersetzt und im Lesemodus mit
+dem Buchtext daneben gezeigt. Buchspezifisches (Schriften, Figurine, Diagramm-Glyphen,
+Spaltenrinne) steht in PROFIL; vorerst nur für die russische Nimzowitsch-Ausgabe
+„Моя система“ (Kalinichenko 2020) ermittelt. Deren vier Werke (PDF-Seiten):
+Моя система 16-305, Моя система на практике 309-553, Шахматная блокада 556-597,
+Как я стал гроссмейстером 600-640.
 """
 import argparse, collections, json, os, re, sys
 import chess
@@ -19,7 +23,7 @@ import pdfplumber
 # --- Buchprofil ------------------------------------------------------------------------
 PROFIL = {
     "kopf_bis": 35,                 # laufender Kolumnentitel + Seitenzahl oberhalb
-    "spalten": [(40, 205.5), (205.5, 400)],
+    "rinne": (205.5, 211.3),        # Lücke zwischen den Spalten (zweispaltiger Satz)
     "spalte_links": [49, 211.7],    # linker Rand je Spalte (Einzug = Absatzbeginn)
     # ISChess-Figurine: Buchstabe der Glyphe -> Figur
     "figurine": {"C": chess.KNIGHT, "E": chess.BISHOP, "G": chess.ROOK,
@@ -40,7 +44,7 @@ PROFIL = {
     # Eine Figur fehlt im Diagramm-Font und ist als Vektorgrafik gesetzt (S. 5, 19 …):
     # stets der schwarze Turm auf dunklem Feld.
     "vektor_figur": "r",
-    "fussnote_unter": 9.5,          # Schriftgröße (pt), darunter Fußnote
+    "fussnote_unter": 9.5,          # Schriftgröße (pt), darunter Fußnote (nur Fließtextschrift)
 }
 FIG = {chess.KNIGHT: "♘", chess.BISHOP: "♗", chess.ROOK: "♖", chess.QUEEN: "♕", chess.KING: "♔"}
 FIG_TYPE = {v: k for k, v in FIG.items()}
@@ -67,25 +71,107 @@ def style_of(font):
 
 
 def page_items(page):
-    """Liefert je Spalte eine Liste von Zeilen [(top, x0, [(char, style, x0, x1)])] und Diagramme."""
-    cols = [[] for _ in PROFIL["spalten"]]
-    foot = []
+    """Seite -> (Abschnitte in Lesereihenfolge, Fußnotenzeilen).
+
+    Abschnitt = (linker Rand, Zeilen [(top, x0, [(char, style, x0, x1)])], Diagramme, Abbildungen).
+    Die Seite ist meist zweispaltig, Einleitungen und Kapitelköpfe laufen aber über die ganze
+    Breite. Daher wird zeilenweise entschieden: Zweispaltiger Satz lässt zwischen den Spalten
+    eine Lücke von knapp 6 pt (PROFIL „rinne“), Text über die ganze Breite füllt sie bis auf
+    Wortabstände (~2 pt)."""
+    figs = figure_regions(page)
+    body, foot = [], []
     for c in page.chars:
         if c["top"] < PROFIL["kopf_bis"]:
             continue
-        if c["size"] < PROFIL["fussnote_unter"] and style_of(c["fontname"]) != "dia":
-            foot.append(c)          # Fußnoten: kleiner, über die ganze Seitenbreite
+        cx, cy = (c["x0"] + c["x1"]) / 2, (c["top"] + c["bottom"]) / 2
+        if any(f["x0"] <= cx <= f["x1"] and f["top"] <= cy <= f["bottom"] for f in figs):
+            continue                # Text im Schema steckt im Bild
+        st = style_of(c["fontname"])
+        # Fußnoten: kleiner Fließtext über die ganze Seitenbreite; kleine AvantGarde-Zeilen
+        # sind dagegen Partieköpfe („Рига, 1910“) und gehören in den Text
+        if c["size"] < PROFIL["fussnote_unter"] and st in ("n", "i", "b", "fig"):
+            foot.append(c)
             continue
-        cx = (c["x0"] + c["x1"]) / 2
-        for i, (a, b) in enumerate(PROFIL["spalten"]):
-            if a <= cx < b:
-                cols[i].append(c)
-    out = []
-    for ci, chars in enumerate(cols):
-        dia = [c for c in chars if style_of(c["fontname"]) == "dia"]
-        txt = [c for c in chars if style_of(c["fontname"]) != "dia"]
-        out.append((text_rows(txt), diagrams(dia, page.curves)))
-    return out, text_rows(foot)
+        body.append(c)
+    a, b = PROFIL["rinne"]
+    mid = (a + b) / 2
+    rows = text_rows([c for c in body if style_of(c["fontname"]) != "dia"])
+    cls = []
+    for i, (top, x0, chars) in enumerate(rows):
+        left = any((x0_ + x1_) / 2 < mid for _, _, x0_, x1_ in chars)
+        right = any((x0_ + x1_) / 2 >= mid for _, _, x0_, x1_ in chars)
+        if left and right:
+            cls.append("breit" if max_gap(chars, a, b) < 3.5 else "spalten")
+        elif left and cls and cls[-1] == "breit" and top - rows[i - 1][0] <= 15:
+            cls.append("breit")     # kurze Schlusszeile eines breiten Absatzes
+        else:
+            cls.append("spalten")
+    bands = []                      # [art, top, Zeilen]
+    for row, k in zip(rows, cls):
+        if bands and bands[-1][0] == k:
+            bands[-1][2].append(row)
+        else:
+            bands.append([k, row[0], [row]])
+    if not bands:
+        bands = [["spalten", 0, []]]
+    dias = []
+    for side in (0, 1):             # Diagramme stehen je Spalte oder mittig
+        dias += diagrams([c for c in body if style_of(c["fontname"]) == "dia"
+                          and (((c["x0"] + c["x1"]) / 2 < mid) == (side == 0))], page.curves)
+
+    def band_of(top):
+        k = 0
+        for i, bd in enumerate(bands):
+            if bd[1] <= top + 2:
+                k = i
+        return k
+    segs = []
+    for i, (kind, _, brows) in enumerate(bands):
+        bd = [d for d in dias if band_of(d["top"]) == i]
+        bf = [f for f in figs if band_of(f["top"]) == i]
+        if kind == "breit":
+            segs.append((PROFIL["spalte_links"][0], brows, bd, bf))
+            continue
+        for side in (0, 1):
+            def mine(x0, x1, side=side):
+                return ((x0 + x1) / 2 < mid) == (side == 0)
+            srows = []
+            for top, x0, chars in brows:
+                cs = [c for c in chars if mine(c[2], c[3])]
+                if cs:
+                    srows.append((top, cs[0][2], cs))
+            sd = [d for d in bd if mine(d["x0"], d["x0"] + 10 * PROFIL["feld"])]
+            sf = [f for f in bf if mine(f["x0"], f["x1"]) or f["x0"] < mid < f["x1"] and side == 0]
+            segs.append((PROFIL["spalte_links"][side], srows, sd, sf))
+    return segs, text_rows(foot)
+
+
+def max_gap(chars, a, b):
+    """Größte von keinem Zeichen bedeckte Strecke im Bereich [a, b]."""
+    iv = sorted((max(x0, a), min(x1, b)) for _, _, x0, x1 in chars if x1 > a and x0 < b)
+    pos, gap = a, 0.0
+    for x0, x1 in iv:
+        gap = max(gap, x0 - pos)
+        pos = max(pos, x1)
+    return max(gap, b - pos)
+
+
+def figure_regions(page):
+    """Schemata (Kästen mit Text, z. B. „Схема к главе …“): Gruppen von Rechtecken -> Bildbereiche."""
+    rects = sorted((r for r in page.rects if r["height"] > 5 and r["width"] > 20),
+                   key=lambda r: r["top"])
+    groups = []
+    for r in rects:
+        if groups and r["top"] - groups[-1]["bottom"] < 30:
+            g = groups[-1]
+            g.update(x0=min(g["x0"], r["x0"]), x1=max(g["x1"], r["x1"]),
+                     bottom=max(g["bottom"], r["bottom"]))
+            g["n"] += 1
+        else:
+            groups.append({"x0": r["x0"], "x1": r["x1"], "top": r["top"], "bottom": r["bottom"], "n": 1})
+    pad = 3
+    return [{"x0": g["x0"] - pad, "x1": g["x1"] + pad, "top": g["top"] - pad,
+             "bottom": g["bottom"] + pad} for g in groups if g["n"] >= 2]
 
 
 def text_rows(txt):
@@ -187,15 +273,20 @@ def blocks_of(pdf, first, last):
     blocks = []
     for pn in range(first, last + 1):
         page = pdf.pages[pn - 1]
-        cols, foot = page_items(page)
-        for ci, (rows, dias) in enumerate(cols):
-            left = PROFIL["spalte_links"][ci]
-            events = [("line", r[0], r) for r in rows] + [("dia", d["top"], d) for d in dias]
+        segs, foot = page_items(page)
+        for left, rows, dias, figs in segs:
+            events = [("line", r[0], r) for r in rows] + [("dia", d["top"], d) for d in dias] \
+                + [("bild", f["top"], f) for f in figs]
             events.sort(key=lambda e: e[1])
             last_bottom = None
             for kind, top, obj in events:
                 if kind == "dia":
                     blocks.append({"type": "dia", "page": pn, **obj})
+                    last_bottom = obj["bottom"]
+                    continue
+                if kind == "bild":
+                    blocks.append({"type": "bild", "page": pn,
+                                   "bbox": [obj["x0"], obj["top"], obj["x1"], obj["bottom"]]})
                     last_bottom = obj["bottom"]
                     continue
                 _, x0, chars = obj
@@ -217,18 +308,21 @@ def blocks_of(pdf, first, last):
                     if text.isdigit() and len(text) <= 3:
                         blocks.append({"type": "dianr", "page": pn, "text": text, "top": top})
                         continue
-                    if blocks and blocks[-1]["type"] == kind2 and blocks[-1]["page"] == pn:
-                        blocks[-1]["runs"] += [(" ", "n")] + runs
+                    if blocks and blocks[-1]["type"] == kind2 and blocks[-1]["page"] == pn \
+                            and last_bottom is not None and top - last_bottom < 20:
+                        blocks[-1]["runs"] += [("\n", "h")] + runs
                     else:
                         blocks.append({"type": kind2, "page": pn, "runs": runs})
                     last_bottom = obj[0] + 10
                     continue
                 gap = (top - last_bottom) if last_bottom is not None else 0
-                new_par = (x0 - left > 6) or gap > 9 or not blocks or blocks[-1]["type"] != "p"
+                # Fortsetzung gehört zum letzten Absatz, nicht zur Fußnote der Vorseite
+                prev = next((b for b in reversed(blocks) if not b.get("fn")), None)
+                new_par = (x0 - left > 6) or gap > 9 or not prev or prev["type"] != "p"
                 if new_par:
                     blocks.append({"type": "p", "page": pn, "runs": runs})
                 else:
-                    join_line(blocks[-1]["runs"], runs)
+                    join_line(prev["runs"], runs)
                 last_bottom = top + 10
         fn = None
         for top, x0, chars in foot:
@@ -251,7 +345,8 @@ def join_line(runs, nxt):
     tail = "".join(c for c, s in runs[-4:])
     head = "".join(c for c, s in nxt[:3]).lstrip()
     if tail.endswith("-") and not tail.endswith("--"):
-        if re.search(r"[a-h][1-8]-$", tail.translate(LOOKALIKE)) and re.match(r"[a-h♘♗♖♕♔]", head.translate(LOOKALIKE)):
+        if re.search(r"[a-h][1-8]-$", tail.translate(LOOKALIKE)) and re.match(r"[a-h♘♗♖♕♔]", head.translate(LOOKALIKE)) \
+                or re.search(r"[0OО]-$", tail) and re.match(r"[0OО]", head):
             runs.extend(nxt)        # lange Notation über den Zeilenumbruch
             return
         if re.search(r"\w-$", tail) and head[:1].islower():
@@ -296,7 +391,7 @@ def candidates(board, m, prev_piece, check=False):
     """Legale Züge, die zum Zugtext passen. Figurenzüge: „:“ genau dann, wenn geschlagen
     wird; „+“ nur bei Schachgebot. Sonst zu viele Zufallstreffer in fremden Stellungen."""
     res = _candidates(board, m, prev_piece)
-    if check:
+    if check and board.king(not board.turn) is not None:    # Textstellungen ohne König
         res = [mv for mv in res if board.gives_check(mv)]
     return res
 
@@ -445,6 +540,7 @@ class Tree:
         self.nodes = []             # [parent, move, board_after, san]
         self.main = [-1]            # Knoten der Hauptlinie, -1 = Wurzel
         self.first_child = {}
+        self.pages = set()          # Seiten, auf denen Züge dieser Partie stehen
 
     def board(self, n):
         return self.root if n < 0 else self.nodes[n][2]
@@ -481,26 +577,130 @@ class Tree:
                 yield n
 
 
-def try_line(board, frag, num, black):
-    """Wendet die Züge des Fragments an -> (anzahl gelöst, [(move|None, Kandidaten)])."""
+POS_SIDE = re.compile(r"([Бб]елые|[Чч]ерные)\s*[—–:-]\s*")
+POS_ITEM = re.compile(r"\s*(?:,|\sи\s)?\s*(?:(?P<fig>[♔♕♖♗♘])(?P<fsq>[a-hа-х][1-8])"
+                      r"|(?:пп?\.\s*)(?P<psq>[a-hа-х][1-8])|(?P<sq>[a-hа-х][1-8])(?![\w-]))")
+
+
+def text_positions(text):
+    """Stellungen in Worten: „белые — ♔с5, п. b5; черные — ♔b7, пп. с7, е5“ ->
+    [(ende im Text, placement)]."""
+    out = []
+    for m in re.finditer(r"[Бб]елые\s*[—–:-]", text):
+        board = chess.Board(None)
+        pos, sides, pawns = m.start(), 0, False
+        while sides < 2:
+            sm = POS_SIDE.match(text, pos)
+            if not sm:
+                break
+            color = chess.WHITE if sm.group(1).lower().startswith("б") else chess.BLACK
+            pos, n = sm.end(), 0
+            while True:
+                im = POS_ITEM.match(text, pos)
+                if not im or (im.group("sq") and not pawns):
+                    break
+                if im.group("fig"):
+                    pt, sq, pawns = FIG_TYPE[im.group("fig")], im.group("fsq"), False
+                else:
+                    pt, sq, pawns = chess.PAWN, im.group("psq") or im.group("sq"), True
+                board.set_piece_at(chess.parse_square(sq.translate(LOOKALIKE)), chess.Piece(pt, color))
+                pos, n = im.end(), n + 1
+            if not n:
+                break
+            sides += 1
+            pawns = False
+            sep = re.match(r"\s*[;,]?\s*", text[pos:])
+            pos += sep.end()
+        if sides == 2:
+            out.append((pos, board.board_fen()))
+    return out
+
+
+def try_line(board, frag, num, black, repair=False):
+    """Wendet die Züge des Fragments an -> (anzahl gelöst, [(move|None, Kandidaten)], vollständig,
+    {index: (Buchtext, ersetzt durch)}). repair: einen Druckfehler pro Fragment vermuten."""
     b = board.copy(stack=False)
-    res, ok, prev_piece = [], 0, None
-    for x in frag["moves"]:
+    res, ok, prev_piece, fixes = [], 0, None, {}
+    moves = frag["moves"]
+    for i, x in enumerate(moves):
         if "renum" in x:
             n2, b2 = x["renum"]
             if b.fullmove_number != n2 or (b.turn == chess.BLACK) != b2:
-                return ok, res, False   # Nummer passt nicht zum Verlauf -> Abbruch
+                return ok, res, False, fixes   # Nummer passt nicht zum Verlauf -> Abbruch
             continue
         c = candidates(b, x["m"], prev_piece, "+" in x["txt"] or "#" in x["txt"])
+        if len(c) != 1 and repair and len(fixes) < 3:
+            alt = repair_move(b, x["txt"], moves[i + 1:])
+            if alt:
+                c = [alt]
+                fixes[len(res)] = (x["txt"], fig_san(b.san(alt)))
         if len(c) != 1:
             res.append((None, c))
-            return ok, res, False
+            return ok, res, False, fixes
         mv = c[0]
         prev_piece = b.piece_at(mv.from_square).piece_type
         res.append((mv, c))
         b.push(mv)
         ok += 1
-    return ok, res, True
+    return ok, res, True, fixes
+
+
+def _core(t):
+    """Zugtext ohne Zusatzzeichen, in Buchschreibweise (Schlagen „:“, lateinische Linien)."""
+    t = t.translate(LOOKALIKE).replace("x", ":").replace("O", "0")
+    return re.sub(r"[+#!?]", "", t).strip()
+
+
+def _book_forms(board, mv):
+    """Schreibweisen eines Zuges, wie sie im Buch vorkommen können."""
+    san = _core(fig_san(board.san(mv)))
+    forms = {san, san.replace(":", "")}
+    if board.piece_at(mv.from_square).piece_type == chess.PAWN and board.is_capture(mv):
+        f, t = chess.square_name(mv.from_square)[0], chess.square_name(mv.to_square)
+        forms |= {f + t[0], f + t, f + ":" + t}          # „cd“, „cd5“, „c:d5“
+    return forms
+
+
+def _dist1(a, b):
+    """Levenshtein-Abstand höchstens 1?"""
+    if a == b:
+        return True
+    if abs(len(a) - len(b)) > 1:
+        return False
+    if len(a) == len(b):
+        return sum(x != y for x, y in zip(a, b)) == 1
+    s, l = (a, b) if len(a) < len(b) else (b, a)
+    return any(l[:i] + l[i + 1:] == s for i in range(len(l)))
+
+
+def repair_move(board, txt, rest):
+    """Druckfehler vermuten: legaler Zug, dessen Schreibweise bis auf Schlag-/Schachzeichen
+    gleich ist, sonst bis auf ein Zeichen. Gewählt wird der Zug, mit dem die Zugfolge danach
+    am weitesten trägt – nur wenn er darin eindeutig ist und noch Züge folgen, die er trägt
+    (bei einem Zeichen Unterschied die nächsten drei bzw. alle restlichen)."""
+    core = _core(txt)
+    nrest = sum(1 for x in rest if "m" in x)
+    if nrest == 0:
+        return None                 # einzelner Zug: eher falsche Stellung als Druckfehler
+    for level in (0, 1):
+        scored = []
+        for mv in board.legal_moves:
+            forms = _book_forms(board, mv)
+            hit = core in forms or core.replace(":", "") in forms if level == 0 else \
+                any(_dist1(core, f) for f in forms)
+            if hit:
+                b = board.copy(stack=False)
+                b.push(mv)
+                scored.append((try_line(b, {"moves": rest}, None, None)[0], mv))
+        if not scored:
+            continue
+        scored.sort(key=lambda t: -t[0])
+        top = scored[0][0]
+        if len(scored) > 1 and scored[1][0] == top:
+            return None             # mehrdeutig: lieber offen lassen
+        if top >= min(3 - 2 * (level == 0), nrest):
+            return scored[0][1]
+    return None
 
 
 class Book:
@@ -512,6 +712,8 @@ class Book:
         self.seq = 0                # laufende Nummer der Fragmente/Diagramme
         self.used = {}              # id(tree) -> seq der letzten Benutzung
         self.problems = []
+        self.fixes = []             # vermutete Druckfehler: (seite, Buchtext, ersetzt durch, …)
+        self.fixed = {}             # (id(tree), knoten, fragmentanfang) -> Buchtext
         self.learned = {}
 
     def _cands(self, num, black, bold, par_start, same_par, fen):
@@ -568,6 +770,15 @@ class Book:
 
     def _dia_board(self, turn, num):
         b = chess.Board(f"{self.last_dia[0]} {'b' if turn == chess.BLACK else 'w'} - - 0 {num}")
+        # Diagramme kennen keine Rochaderechte: König und Turm auf Ausgangsfeldern -> erlaubt
+        rights = ""
+        for color, rank, ks, qs in ((chess.WHITE, 0, "K", "Q"), (chess.BLACK, 7, "k", "q")):
+            if b.piece_at(chess.square(4, rank)) == chess.Piece(chess.KING, color):
+                if b.piece_at(chess.square(7, rank)) == chess.Piece(chess.ROOK, color):
+                    rights += ks
+                if b.piece_at(chess.square(0, rank)) == chess.Piece(chess.ROOK, color):
+                    rights += qs
+        b.set_castling_fen(rights or "-")
         return b
 
     def resolve(self, frag, bold, page, par_start, same_par, fen=None):
@@ -588,16 +799,30 @@ class Book:
                 if kind == "drohung":
                     board = board.copy(stack=False)
                     board.push(chess.Move.null())
-            ok, res, full = try_line(board, frag, num, black)
+            ok, res, full, _ = try_line(board, frag, num, black)
             score = (ok, full, -prio)
             if best is None or score > best[0]:
-                best = (score, tree, node, kind, res)
+                best = (score, tree, node, kind, res, {})
+        if best and not best[0][1]:
+            # Druckfehler? Nur übernehmen, wenn die Zugfolge damit deutlich weiter trägt
+            plain = best
+            for prio, (tree, node, kind) in enumerate(
+                    self._cands(num, black, bold, par_start, same_par, fen)):
+                board = node if tree is None else tree.board(node)
+                if kind == "drohung":
+                    board = board.copy(stack=False)
+                    board.push(chess.Move.null())
+                ok, res, full, fixes = try_line(board, frag, num, black, repair=True)
+                score = (ok, full, -prio)
+                better = ok >= plain[0][0] + 2 or (full and ok > plain[0][0])
+                if fixes and better and (best is plain or score > best[0]):
+                    best = (score, tree, node, kind, res, fixes)
         if best is None or best[0][0] == 0:
             self.problems.append((page, "nicht zuordenbar", frag["text"], frag["before"],
                                   "kein passender Zug in der laufenden oder einer früheren "
                                   "Partie, im letzten Diagramm oder in der Grundstellung"))
             return None
-        (ok, full, _), tree, node, kind, res = best
+        (ok, full, _), tree, node, kind, res, fixes = best
         if tree is None:            # neue Partie (Grundstellung, Diagramm, Korrektur)
             tree = Tree(node, {"diagramm": "Diagramm", "korrektur": "Korrektur"}.get(kind, "Partie")
                         + f" S. {page}")
@@ -606,6 +831,7 @@ class Book:
         if kind == "drohung":
             node = tree.add(node, chess.Move.null())
         self.cur = tree
+        tree.pages.add(page)
         self.used[id(tree)] = self.seq
         # Hauptlinie: fette Züge, oder unmarkierte Fortsetzung am Ende der Hauptlinie
         cue = VAR_CUES.search(frag["before"]) is not None
@@ -619,8 +845,14 @@ class Book:
             out.append((tree, n))
         if extends_main or reroute_main:
             base = tree.path(node) if node >= 0 else []
-            tree.main = [-1] + base + [t[1] for t in out]
+            line = base + [t[1] for t in out]
+            if all(tree.nodes[x][1] for x in line):   # Drohung (Nullzug) nie in die Hauptlinie
+                tree.main = [-1] + line
         self.last_end = (tree, n)
+        for i, (was, wird) in fixes.items():
+            self.fixes.append((page, was, wird, frag["text"], frag["before"]))
+            if i < len(out):
+                self.fixed[(id(out[i][0]), out[i][1], frag["start"])] = was
         if not full:
             c = res[-1][1] if res and res[-1][0] is None else []
             why = ("mehrdeutig: " + ", ".join(tree.board(n).san(m) for m in c)) if len(c) > 1 \
@@ -644,19 +876,22 @@ class Book:
         if d["unknown"]:
             self.learn(d, page)
             pl = grid_placement(d["grid"])
-        self.seq += 1
-        self.last_dia = (pl, self.seq, bool(match))
-        if match:
-            return match
-        # Diagramm passt zu keiner Stellung der laufenden Partie: knapp daneben = Widerspruch
-        if self.cur and self.last_end and self.last_end[0] is self.cur:
+        # Diagramm passt zu keiner Stellung der laufenden Partie: knapp daneben = Widerspruch.
+        # Bei höchstens zwei Feldern gilt die Partiestellung (Satzfehler im Diagramm, S. 428:
+        # schwarzer statt weißer Läufer), sonst ginge der Faden der Partie verloren.
+        if not match and self.cur and self.last_end and self.last_end[0] is self.cur:
             b = self.cur.board(self.last_end[1])
             diff = placement_diff(b, d["grid"])
             if 0 < len(diff) <= 3:
                 self.problems.append((page, "Diagramm weicht ab", "", "",
                                       f"Diagramm vs. Stellung nach {self.cur.nodes[self.last_end[1]][3] if self.last_end[1] >= 0 else 'Beginn'}: "
-                                      + ", ".join(diff)))
-        return None
+                                      + ", ".join(diff)
+                                      + ("; gezeigt wird die Partiestellung" if len(diff) <= 2 else "")))
+                if len(diff) <= 2:
+                    match = (self.cur, self.last_end[1])
+        self.seq += 1
+        self.last_dia = (pl, self.seq, bool(match))
+        return match
 
     def learn(self, d, page):
         """Unbekannte Glyphen aus der Stellung der laufenden Partie ableiten."""
@@ -711,9 +946,15 @@ def convert(pdf_path, first, last, title, korr=()):
     book = Book()
     out_blocks = []
     pend_nr = None
+    n_bild = 0
     for bl in blocks:
         if bl["type"] == "dianr":
             pend_nr = bl["text"]
+            continue
+        if bl["type"] == "bild":
+            n_bild += 1
+            out_blocks.append({"t": "bild", "page": bl["page"], "bbox": bl["bbox"],
+                               "datei": f"abbildungen/s{bl['page']:03d}_{n_bild}.png"})
             continue
         if bl["type"] == "dia":
             m = book.diagram(bl, bl["page"])
@@ -730,12 +971,15 @@ def convert(pdf_path, first, last, title, korr=()):
             pend_nr = None
             continue
         text = "".join(c for c, s in bl["runs"])
-        text = re.sub(r"\s+", " ", text).strip()
-        text = re.sub(r"(?<!\S)((?:[а-яё] ){2,}[а-яё])(?!\S)",
-                      lambda m: m.group(1).replace(" ", ""), text)   # Sperrsatz
+        # Sperrsatz (Hervorhebung „ц е н т р е“): Buchstaben mit genau einem Leerzeichen;
+        # echte Wortgrenzen davor/danach haben im PDF mehrere Leerzeichen
+        text = re.sub(r"(?:(?<=  )|^|(?<=[«(]))((?:[а-яёА-ЯЁ] ){3,}[а-яёА-ЯЁ])(?=  |$|[,.;:!?»)])",
+                      lambda m: m.group(1).replace(" ", ""), text)
         if bl["type"] in ("h", "cap"):
-            out_blocks.append({"t": bl["type"], "text": text, "page": bl["page"]})
+            text = "\n".join(re.sub(r"\s+", " ", ln).strip() for ln in text.split("\n"))
+            out_blocks.append({"t": bl["type"], "text": text.strip(), "page": bl["page"]})
             continue
+        text = fix_spaces(re.sub(r"\s+", " ", text).strip())
         for k in korr:
             if k.get("ersetze") and k["seite"] == bl["page"] and k["ersetze"] in text:
                 text = text.replace(k["ersetze"], k["durch"])
@@ -743,10 +987,17 @@ def convert(pdf_path, first, last, title, korr=()):
         bold_at = bold_mask(bl["runs"], text)
         spans = []
         first_frag = True
+        # Fußnoten stehen am Seitenende, beziehen sich aber auf weiter oben: danach
+        # gilt wieder die Partie, die der Haupttext gerade bespricht
+        saved = (book.cur, book.last_end, book.last_dia) if bl.get("fn") else None
+        tpos = text_positions(text)
         for part in scan(text):
             if isinstance(part, str):
                 spans.append(part)
                 continue
+            while tpos and tpos[0][0] <= part["start"] + 1:
+                book.seq += 1       # Stellung in Worten gilt wie ein frisches Diagramm
+                book.last_dia = (tpos.pop(0)[1], book.seq, False)
             fl = [f for f in bold_at[part["start"]:part["end"]] if f is not None]
             bold = sum(fl) > len(fl) / 2
             par_start = not text[:part["start"]].strip(" (")
@@ -758,16 +1009,20 @@ def convert(pdf_path, first, last, title, korr=()):
             res = book.resolve(part, bold, bl["page"], par_start, not first_frag, fen)
             first_frag = False
             spans.extend(render_frag(part, res, book, bold))
-        out_blocks.append({"t": "p", "spans": merge(spans), "page": bl["page"]})
+        out = {"t": "p", "spans": merge(spans), "page": bl["page"]}
+        if saved:
+            book.cur, book.last_end, book.last_dia = saved
+            out["fn"] = True
+        out_blocks.append(out)
     for bl in out_blocks:
         if bl["t"] == "dia" and not bl["ref"] and "/" in bl["fen"]:
             pl = bl["fen"].split()[0]
             for gi, tr in enumerate(book.trees):
-                hit = next((i for i, nd in enumerate(tr.nodes) if nd[2].board_fen() == pl), None)
-                if hit is not None and tr.label.endswith(f"S. {bl['page']}") or (
-                        hit is not None and abs(int(tr.label.split()[-1]) - bl["page"]) <= 1):
+                hit = -1 if tr.root.board_fen() == pl else \
+                    next((i for i, nd in enumerate(tr.nodes) if nd[2].board_fen() == pl), None)
+                if hit is not None and tr.pages and min(tr.pages) - 1 <= bl["page"] <= max(tr.pages) + 1:
                     bl["ref"] = {"g": gi, "n": hit}
-                    bl["fen"] = tr.nodes[hit][2].fen()
+                    bl["fen"] = tr.board(hit).fen()
                     break
     games = []
     for tr in book.trees:
@@ -778,6 +1033,17 @@ def convert(pdf_path, first, last, title, korr=()):
         games.append({"root": tr.root.fen(), "label": tr.label, "nodes": nodes})
     return {"titel": title, "quelle": os.path.basename(pdf_path), "seiten": [first, last],
             "bloecke": out_blocks, "partien": games}, book
+
+
+def fix_spaces(text):
+    """Satzfehler mit echtem Leerzeichen im PDF: „17... ♗:е5 1 8. ♘d4“, „♖ае 8“, „♗: f3“."""
+    def num(m):
+        prev = [int(x) for x in re.findall(r"(\d+)\s?\.", text[:m.start()])][-1:]
+        n = int(m.group(1) + m.group(2))
+        return f"{n}." if prev and 0 <= n - prev[0] <= 2 else m.group(0)
+    text = re.sub(r"(?<!- )(?<![\d.\-])([1-9]) (\d)\.", num, text)
+    text = re.sub(r"([♘♗♖♕♔a-hа-х]:) ([a-hа-х][1-8])", r"\1\2", text)    # „♗: f3“
+    return re.sub(r"([♘♗♖♕♔][a-hа-х]{1,2}) ([1-8])(?![\d.])", r"\1\2", text)
 
 
 def bold_mask(runs, text):
@@ -811,8 +1077,10 @@ def render_frag(frag, res, book, bold):
         orig = text[a - frag["start"]:e - frag["start"]]
         marks = re.search(r"(!!|\?\?|!\?|\?!|!|\?)$", orig)
         san = fig_san(tree.nodes[n][3]) + (marks.group(1) if marks else "")
-        out.append({"m": san, "g": book.trees.index(tree), "n": n, "b": 1 if bold else 0,
-                    "o": orig})
+        sp = {"m": san, "g": book.trees.index(tree), "n": n, "b": 1 if bold else 0, "o": orig}
+        if (id(tree), n, frag["start"]) in book.fixed:
+            sp["k"] = orig          # Druckfehler vermutet: im Buch steht orig
+        out.append(sp)
         pos = e
         k += 1
     if pos < frag["end"]:
@@ -845,6 +1113,11 @@ def write_report(path, book, data, args):
         for k in args.korrekturen:
             lines.append(f"- S. {k['seite']}: {k.get('grund', '')}")
         lines.append("")
+    if book.fixes:
+        lines += ["## Vermutete Druckfehler (automatisch ersetzt, bitte prüfen)", ""]
+        for page, was, wird, txt, before in book.fixes:
+            lines.append(f"- S. {page}: „{was}“ → **{wird}** in …{before[-30:]}{txt}")
+        lines.append("")
     lines += ["## Widersprüche und nicht auflösbare Stellen", ""]
     if not book.problems:
         lines.append("keine")
@@ -875,6 +1148,12 @@ def main():
         if not k.pop("benutzt", False):
             book.problems.append((k["seite"], "Korrektur nicht angewendet", "", "", json.dumps(k, ensure_ascii=False)))
     os.makedirs(a.ausgabe, exist_ok=True)
+    pdf = pdfplumber.open(a.pdf)
+    for bl in data["bloecke"]:
+        if bl["t"] == "bild":       # Schemata als Bild ins Buchverzeichnis
+            os.makedirs(os.path.join(a.ausgabe, "abbildungen"), exist_ok=True)
+            pdf.pages[bl["page"] - 1].crop(bl.pop("bbox")).to_image(resolution=150) \
+                .save(os.path.join(a.ausgabe, bl["datei"]))
     with open(os.path.join(a.ausgabe, "buch.json"), "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=0)
     a.korrekturen = korr
