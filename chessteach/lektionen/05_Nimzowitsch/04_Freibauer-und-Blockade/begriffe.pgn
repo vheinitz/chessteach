@@ -1,0 +1,176 @@
+[Event "36. Unbequemer Nachbar, unangenehmes Gegenüber"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "79"]
+[FEN "8/6pp/1pk5/8/1KP5/8/5PPP/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Unbequemer Nachbar, unangenehmes Gegenüber (неудобный сосед, неприятное визави, S. 79): So beschreibt Nimzowitsch den Freibauern. } *
+
+[Event "37. Der Kandidat"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "80"]
+[FEN "8/6pp/1pk5/8/1KP5/8/5PPP/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Der Kandidat (кандидат, S. 80): In einer Bauernmehrheit geht der Bauer ohne Gegenbauer voran. } *
+
+[Event "38. Der Freibauer ist ein Verbrecher – hinter Gitter!"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "82"]
+[FEN "3r1rk1/1p2n1qp/p1p4n/3pPpp1/1QPP4/5BP1/PP2N2P/R4RK1 b - - 0 19"]
+[SetUp "1"]
+
+{ Der Freibauer ist ein Verbrecher – hinter Gitter! (опасный преступник — посадить за решетку, S. 82): Bloße Überwachung genügt nicht: blockieren! } 19... f4 20. gxf4 g4 21. Bg2 Nhf5 22. Qb3 dxc4 23. Qxc4+ *
+
+[Event "39. Polizeiaufsicht reicht nicht – ins Gefängnis"]
+[Buch "nimzowitsch-3-blokada"]
+[Seite "560"]
+[FEN "r1b3k1/pp6/4p3/PP1pN3/3N4/6K1/8/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Polizeiaufsicht reicht nicht – ins Gefängnis (ей место в тюрьме, S. 560): Volle Freiheitsberaubung durch Blockade. } *
+
+[Event "40. Blockade"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "81"]
+[FEN "8/6pp/1pk5/8/1KP5/8/5PPP/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Blockade (блокирование, S. 81): Der Bauer wird durch eine Figur mechanisch gebremst. } *
+
+[Event "41. Expansionsdrang"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "85"]
+[FEN "6rk/1bpq2rp/p3n1p1/2ppPp2/1P3P2/2Q1BR2/P1P1B1PP/3R3K w - - 0 29"]
+[SetUp "1"]
+
+{ Expansionsdrang (стремление пешки к продвижению, S. 85): Der Freibauer will vorwärts – je weiter, desto gefährlicher. } 29. Rg3 d4 30. Qa3 g5 31. Bc4 gxf4 32. Bxe6 Bxg2+ *
+
+[Event "42. Die Lähmung greift aufs Hinterland über"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "88"]
+[FEN "3r2k1/p2r1pp1/7p/1p6/1P2qP2/PQ1n2P1/2R2B1P/5RK1 b - - 0 42"]
+[SetUp "1"]
+
+{ Die Lähmung greift aufs Hinterland über (паралич распространяется на тыл, S. 88): Ist der Bauer blockiert, erstarrt oft die ganze Stellung dahinter. } 42... g5 43. Qa2 gxf4 44. Re2 Qg6 45. Qc2 Kh7 46. Qc3 *
+
+[Event "43. Gefangener im eigenen Lager"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "251"]
+[FEN "r1b2rk1/p1q1bppp/2p1pn2/2ppN3/2P2P2/1P1PP3/PB1NQ1PP/R4RK1 w - - 0 1"]
+[SetUp "1"]
+
+{ Gefangener im eigenen Lager (пленник в собственном лагере, S. 251): Der „tote“ Läufer hinter den eigenen Bauern. } *
+
+[Event "44. Elastischer Blockeur"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "89"]
+[FEN "k6r/8/8/7p/1p5R/8/8/3K4 w - - 0 1"]
+[SetUp "1"]
+
+{ Elastischer Blockeur (эластичность блокера, S. 89): Der Blockeur blockiert und droht zugleich. } 1. Rxb4 h4 2. Rb2 h3 3. Rh2 *
+
+[Event "45. Urlaub des Blockeurs – mit dem Schnellzug"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "89"]
+[FEN "k6r/8/8/7p/1p5R/8/8/3K4 w - - 0 1"]
+[SetUp "1"]
+
+{ Urlaub des Blockeurs – mit dem Schnellzug (отпуск, «скорыми поездами», S. 89): Er darf das Feld verlassen, muss aber rechtzeitig zurück sein. } 1. Rxb4 h4 2. Rb2 h3 3. Rh2 *
+
+[Event "46. Dickhäutig"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "92"]
+[FEN "8/n7/6k1/6P1/6K1/8/8/3B4 w - - 0 1"]
+[SetUp "1"]
+
+{ Dickhäutig (толстокожий, S. 92): Der gute Blockeur verträgt Angriffe; die Dame ist zu empfindlich, der Springer am besten. } 1. Bc2+ *
+
+[Event "47. Ein „menschlicherer“ Blockeur"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "93"]
+[FEN "b5k1/P7/K3p3/4Pr2/8/8/8/1R6 w - - 0 1"]
+[SetUp "1"]
+
+{ Ein „menschlicherer“ Blockeur (более «человечная» блокирующая фигура, S. 93): Einen unangreifbaren Blockeur gegen einen angreifbaren tauschen. } 1. Rb8+ Rf8 2. Rxa8 Rxa8 3. Kb7 Rf8 4. a8=Q Rxa8 *
+
+[Event "48. Tauschmanöver auf dem Blockadefeld"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "170"]
+[FEN "r3k2r/pp1bb1pp/1q2pn2/3pB3/1P6/2PB4/P4PPP/RN1Q1RK1 w kq - 0 1"]
+[SetUp "1"]
+
+{ Tauschmanöver auf dem Blockadefeld (разменный маневр на блокирующем поле, S. 170): Tausch lohnt nur, wenn der neue Blockeur schwächer ist. } 1. Nd2 O-O 2. Nf3 *
+
+[Event "49. Der König als Führer des Bauern"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "99"]
+[FEN "8/8/1k6/8/2K5/1P6/8/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Der König als Führer des Bauern (водитель пешки, S. 99): Der König vor dem Bauern führt ihn; dagegen hilft das Reserve-Blockadefeld. } 1. Kb4 Ka6 2. Kc5 Kb7 3. Kb5 Ka7 4. Kc6 *
+
+[Event "50. Loch"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "101"]
+[FEN "8/k6p/6p1/PPK1Bp2/5P1P/8/4b3/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Loch (дыра, S. 101): Das freie Feld hinter einem vorgerückten Bauern. } 1. a6 Bd3 2. Bd4 Bf1 3. Kb4+ Ka8 4. Ka5 Be2 *
+
+[Event "51. Plombieren"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "101"]
+[FEN "8/k6p/6p1/PPK1Bp2/5P1P/8/4b3/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Plombieren (пломбирование, S. 101): Das Loch mit König oder Figur stopfen. } 1. a6 Bd3 2. Bd4 Bf1 3. Kb4+ Ka8 4. Ka5 Be2 *
+
+[Event "52. Spiritistische Sitzung"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "105"]
+[FEN "8/8/8/p6k/P7/6K1/7P/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Spiritistische Sitzung (спиритический сеанс, S. 105): Endspiel: mit Bauer auf a2 gewonnen, auf a3 nur remis. } 1. Kf4 Kh4 2. Ke5 Kh3 3. Kd5 *
+
+[Event "53. Triumphzug des Bauern"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "110"]
+[FEN "r2br3/1p4kp/1Pp2pp1/p1P1Pb2/8/4QBPq/1B1R3P/5RK1 w - - 0 1"]
+[SetUp "1"]
+
+{ Triumphzug des Bauern (триумфальное шествие пешки, S. 110): Der Freibauer marschiert bis zur Umwandlung. } *
+
+[Event "54. Gedeckter und entfernter Freibauer"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "102"]
+[FEN "7R/8/3kp3/P4pp1/1PP4p/3KP3/8/r7 b - - 0 1"]
+[SetUp "1"]
+
+{ Gedeckter und entfernter Freibauer (защищенная / отдаленная проходная, S. 102): Der entfernte Freibauer lenkt den König ab. } 1... g4 2. Rxh4 g3 *
+
+[Event "55. Blockadenetz"]
+[Buch "nimzowitsch-2-na-praktike"]
+[Seite "392"]
+[FEN "8/2p4p/kp3B2/p2p4/3P4/2P1K3/6P1/1b6 w - - 6 49"]
+[SetUp "1"]
+
+{ Blockadenetz (блокадная сеть, S. 392): Die Blockade über die ganze Stellung werfen. } 49. Kd2 Be4 50. g3 Kb5 51. Kc1 Kc4 52. Kb2 c5 *
+
+[Event "56. Opfer für die Blockade"]
+[Buch "nimzowitsch-2-na-praktike"]
+[Seite "355"]
+[FEN "1k1r3r/pp2b1p1/1q2p1p1/3pP3/bP6/8/P1NQ1PPP/R1B2RK1 w - - 3 18"]
+[SetUp "1"]
+
+{ Opfer für die Blockade (жертва ради блокады, S. 355): Material geben, um ein Blockadefeld zu bekommen. } 18. Nd4 Rh5 19. Qd3 Rdh8 20. h3 g5 21. Be3 g4 *
+
+[Event "57. Mit dem Blockadedolch unter dem Mantel"]
+[Buch "nimzowitsch-3-blokada"]
+[Seite "586"]
+[FEN "8/6kp/5p2/1n1N2p1/2p5/6P1/1P3PKP/8 w - - 0 36"]
+[SetUp "1"]
+
+{ Mit dem Blockadedolch unter dem Mantel (с «кинжалом блокады» под полою, S. 586): Still den Hintergedanken der Blockade behalten. } 36. Kf3 Kf7 37. Nc3 Nd4+ 38. Ke4 Nb3 39. Kd5 Nd2 *
+

@@ -1,0 +1,72 @@
+[Event "58. Den Verteidiger vernichten"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "116"]
+[FEN "1br3k1/5pp1/2p4p/3p4/4P3/Pr3P1N/1P2R1Pn/2B1R2K w - - 0 1"]
+[SetUp "1"]
+
+{ Den Verteidiger vernichten (уничтожение защищающей фигуры, S. 116): Das Hauptmotiv beim Abtausch. } 1. exd5 cxd5 2. Re8+ Rxe8 3. Rxe8+ Kh7 4. Rxb8 Rxb8 *
+
+[Event "59. Der König: ängstlich und Held"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "96"]
+[FEN "6k1/8/8/5p1p/8/6P1/5PKP/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Der König: ängstlich und Held (король в середине игры и в эндшпиле, S. 96): Im Mittelspiel im Unterstand, im Endspiel ein Held. } 1. Kf3 Kg7 2. Kf4 Kf6 3. h4 Kg6 4. Ke5 *
+
+[Event "60. Zentralisation des Königs"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "121"]
+[FEN "6k1/ppp5/8/8/5P2/1r4P1/1P1R3P/6K1 w - - 0 1"]
+[SetUp "1"]
+
+{ Zentralisation des Königs (централизация короля, S. 121): Im Endspiel gehört der König in die Mitte. } *
+
+[Event "61. Brückenbau und Unterstand"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "124"]
+[FEN "3k4/8/8/3PK3/8/8/r7/6R1 w - - 0 1"]
+[SetUp "1"]
+
+{ Brückenbau und Unterstand (постройка мостов, убежище, S. 124): Dem König einen Schutz vor Schachs bauen. } 1. Ke6 Re2+ 2. Kd6 *
+
+[Event "62. Aggressiver Turm"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "125"]
+[FEN "8/r5kp/pR4p1/P4p2/5K2/6P1/5P1P/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Aggressiver Turm (агрессивная позиция ладьи, S. 125): Im Endspiel greift der Turm an, statt zu verteidigen. } *
+
+[Event "63. „Mit geschlossenen Kräften vorwärts!“"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "129"]
+[FEN "8/1r3p1p/3kb1p1/2R4P/3N2P1/1pK1PP2/1P6/8 w - - 0 42"]
+[SetUp "1"]
+
+{ „Mit geschlossenen Kräften vorwärts!“ («сплоченными силами вперед!», S. 129): Die Figuren greifen wie Zahnräder ineinander. } 42. Rc6+ Kd7 43. hxg6 hxg6 44. Nxe6 fxe6 45. Rc5 *
+
+[Event "64. Die gedemütigte Rivalin"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "126"]
+[FEN "6k1/1r4pp/8/p1R5/P7/8/6PP/6K1 b - - 0 1"]
+[SetUp "1"]
+
+{ Die gedemütigte Rivalin («униженная» соперница, S. 126): Eine Figur in der Nebenrolle „meldet sich krank“. } 1... Rb2 2. Rxa5 Ra2 *
+
+[Event "65. Materialisation der Linie"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "129"]
+[FEN "8/1r3p1p/3kb1p1/2R4P/3N2P1/1pK1PP2/1P6/8 w - - 0 42"]
+[SetUp "1"]
+
+{ Materialisation der Linie (материализация понятия «линия», S. 129): Eine Linie wird durch Figuren greifbar gemacht. } 42. Rc6+ Kd7 43. hxg6 hxg6 44. Nxe6 fxe6 45. Rc5 *
+
+[Event "66. „Opposition ist Arithmetik“"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "100"]
+[FEN "8/1k6/8/1PK5/8/8/8/8 b - - 0 1"]
+[SetUp "1"]
+
+{ „Opposition ist Arithmetik“ (оппозиция, S. 100): Nimzowitschs Spott über die verworrene Oppositionslehre. } 1... Kb8 2. Kb6 *
+

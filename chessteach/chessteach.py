@@ -368,15 +368,16 @@ def load_pgn_games(path):
                 meta_parts.append(eco)
             meta = " · ".join(meta_parts)
 
-            if has_fen and not moves:
-                nodes.append({"title": title, "fen": h["FEN"], "meta": meta,
+            book = {"buch": h["Buch"], "seite": int(h.get("Seite") or 0)} if h.get("Buch") else None
+            if has_fen and not moves and not g.comment:
+                nodes.append({"title": title, "fen": h["FEN"], "meta": meta, "book": book,
                               "_path": path, "_index": i, "_total": len(games)})
             else:
                 try:
                     pgn_text = str(g)
                 except Exception:
                     continue  # Spiel mit ungültigem Zug überspringen
-                nodes.append({"title": title, "pgn": pgn_text, "meta": meta,
+                nodes.append({"title": title, "pgn": pgn_text, "meta": meta, "book": book,
                               "_path": path, "_index": i, "_total": len(games),
                               "_preview_fen": g.board().fen()})
         except Exception:
@@ -1242,6 +1243,9 @@ class ChessTeachApp(tk.Tk):
         self.comment_lbl.pack(fill="x", padx=4, pady=(0, 2))
         self.comment_lbl.bind("<Configure>",
                               lambda e: self.comment_lbl.config(wraplength=max(100, e.width - 8)))
+        # Übung mit [Buch]/[Seite]-Header (z. B. Begriffskarten): Sprung an die Buchstelle
+        self.book_ref = None
+        self.book_btn = ttk.Button(side, text="", command=self.show_book_ref)
 
         # Neu
         add = ttk.LabelFrame(side, text="Neu", padding=4)
@@ -2200,6 +2204,7 @@ class ChessTeachApp(tk.Tk):
                 self.render_tab(tab_index)
 
     def _load_node(self, node):
+        self._set_book_ref(node.get("book"))
         if "fen" in node:
             self.load_fen(node["fen"])
         elif "pgn" in node:
@@ -2211,6 +2216,19 @@ class ChessTeachApp(tk.Tk):
         if flip != self.flipped:
             self.flip_var.set(flip)
             self.toggle_flip()
+
+    def _set_book_ref(self, ref):
+        self.book_ref = ref if ref and self.book_reader is not None else None
+        if self.book_ref:
+            self.book_btn.config(text=f"📖 Im Buch zeigen (S. {ref['seite']})")
+            self.book_btn.pack(after=self.comment_lbl, anchor="w", padx=4, pady=(0, 4))
+        else:
+            self.book_btn.pack_forget()
+
+    def show_book_ref(self):
+        if self.book_ref:
+            self.notebook.select(self.book_reader)
+            self.book_reader.goto(self.book_ref["buch"], self.book_ref["seite"])
 
     def _update_nav_label(self):
         names = {"tabs": "Tabs", "moves": "Züge", "lessons": "Lektionen", "exercises": "Übungen"}
@@ -2730,11 +2748,16 @@ class ChessTeachApp(tk.Tk):
             fen = self.board.fen()
             if fen != last_fen:
                 last_fen = fen
+                board = chess.Board(fen)
+                if not board.is_valid():
+                    # Stockfish stürzt bei Stellungen ohne König oder mit Schach für die Seite,
+                    # die nicht am Zug ist, ab (z. B. Schema-Diagramme, Drohzüge im Buch)
+                    self._result_queue.put(("error", "Stellung ungültig (König fehlt / Schach)"))
+                    continue
                 try:
                     with self._engine_lock:
                         if self.engine is None:
                             self.engine = chess.engine.SimpleEngine.popen_uci(STOCKFISH)
-                        board = chess.Board(fen)
                         if self.engine_multi > 1:
                             infos = self.engine.analyse(board, chess.engine.Limit(time=self.engine_time),
                                                         multipv=self.engine_multi)
@@ -2747,6 +2770,8 @@ class ChessTeachApp(tk.Tk):
                             results.append((pv[0], info.get("score")))
                     self._result_queue.put(("ok", (results, fen)))
                 except Exception as e:
+                    if isinstance(e, chess.engine.EngineTerminatedError):
+                        self.engine = None      # abgestürzt: beim nächsten Zug neu starten
                     self._result_queue.put(("error", str(e)))
             time.sleep(0.2)
 

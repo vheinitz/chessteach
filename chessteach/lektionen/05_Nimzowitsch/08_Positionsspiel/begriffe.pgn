@@ -1,0 +1,144 @@
+[Event "83. Prophylaxe"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "200"]
+[FEN "r1b2rk1/1pq1bppp/p1n1pn2/2Pp4/3P4/P1NB1N2/1P3PPP/R1BQ1RK1 w - - 0 1"]
+[SetUp "1"]
+
+{ Prophylaxe (профилактика, S. 200): Vorbeugen: den Plan des Gegners verhindern, bevor er droht. } 1. Re1 e5 2. dxe5 Nxe5 3. Bf4 Nxf3+ 4. Qxf3 Qd8 *
+
+[Event "84. Überdeckung"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "281"]
+[FEN "2r1k2r/pp1b1pp1/2n1p3/q2pPn1p/3P4/P1N2N2/1P2BPPP/R2Q1RK1 w k - 2 15"]
+[SetUp "1"]
+
+{ Überdeckung (избыточная защита, S. 281): Wichtige Punkte mehrfach decken – kein Akt „christlicher Barmherzigkeit“. } 15. Qd2 Qd8 16. h3 Na5 17. Rad1 Qb6 18. Rfe1 Nc4 *
+
+[Event "85. Reserve-Verteidiger"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "203"]
+[FEN "r3kbnr/pp1n1ppp/q1p1p3/3pP3/3P4/8/PPP1NPPP/RNBQ1RK1 w kq - 0 9"]
+[SetUp "1"]
+
+{ Reserve-Verteidiger (запасные защитники, S. 203): Verteidiger auf Vorrat. } 9. Nd2 Ne7 10. Nf3 Ng6 11. Re1 Bb4 12. c3 Ba5 *
+
+[Event "86. Befreiende Züge bremsen"]
+[Buch "nimzowitsch-2-na-praktike"]
+[Seite "357"]
+[FEN "rq3r1k/pppbbppp/n2p4/1N1Pp3/PPQ1P3/4BN2/2P2PPP/R4RK1 b - - 0 14"]
+[SetUp "1"]
+
+{ Befreiende Züge bremsen (торможение высвобождающих ходов, S. 357): Den Hebel des Gegners verhindern. } 14... g6 15. c3 h6 16. Nd2 g5 17. Rfe1 f5 18. exf5 *
+
+[Event "87. Statische und dynamische Schwäche"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "229"]
+[FEN "r1b2rk1/6pp/p1n1pq2/1ppp4/2nP1P2/2N2NP1/PPP2QBP/2KRR3 w - - 0 16"]
+[SetUp "1"]
+
+{ Statische und dynamische Schwäche (статическая и динамическая слабость, S. 229): Am Beispiel der Doppelbauern. } 16. dxc5 Nxb2 17. Kxb2 b4 18. Nd4 bxc3+ 19. Ka1 Nxd4 *
+
+[Event "88. Erstickung"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "229"]
+[FEN "r1b2rk1/6pp/p1n1pq2/1ppp4/2nP1P2/2N2NP1/PPP2QBP/2KRR3 w - - 0 16"]
+[SetUp "1"]
+
+{ Erstickung («удушье», S. 229): Absolute Beschränkung der Beweglichkeit. } 16. dxc5 Nxb2 17. Kxb2 b4 18. Nd4 bxc3+ 19. Ka1 Nxd4 *
+
+[Event "89. Der geheimnisvolle Turmzug"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "241"]
+[FEN "r2q1rk1/pp4pp/2nbbp2/2p1p3/4P3/2PPBN2/PP2Q1PP/R2N1RK1 w - - 0 1"]
+[SetUp "1"]
+
+{ Der geheimnisvolle Turmzug («таинственный» ход ладьей, S. 241): Der Turm geht vorbeugend auf eine noch geschlossene Linie. } *
+
+[Event "90. Qualitative Bauernmehrheit"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "247"]
+[FEN "rnbq1rk1/ppp3bp/3p4/2PPpp2/1P6/P2B2N1/1B2QPPP/2R2RK1 b - - 1 3"]
+[SetUp "1"]
+
+{ Qualitative Bauernmehrheit (качественное пешечное превосходство, S. 247): Die Mehrheit, die mehr wert ist als die bloße Zahl. } 3... f4 *
+
+[Event "91. Energie des Vorrückens"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "261"]
+[FEN "r2q1rk1/pb2bppp/1p2pn2/8/1nBP4/2N1BN2/PP2QPPP/R2R2K1 w - - 0 1"]
+[SetUp "1"]
+
+{ Energie des Vorrückens («энергия продвижения», S. 261): Die Kraft des Isolani: der Vorstoß d4-d5. } *
+
+[Event "92. Das Zoo-Prinzip"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "265"]
+[FEN "8/pp1k1ppp/4p3/3n4/3P4/2N5/PP2KPPP/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Das Zoo-Prinzip (принцип больших зоологических садов, S. 265): Dem kleinen Raubtier Isolani die Illusion der Freiheit lassen. } *
+
+[Event "93. Die „Großmutter“"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "268"]
+[FEN "r2q1rk1/p4ppp/4bn2/2pp4/8/2NBP1P1/PP3PP1/2RQ1RK1 w - - 0 1"]
+[SetUp "1"]
+
+{ Die „Großmutter“ («бабушка», S. 268): Der Isolani ist die Großmutter der hängenden Bauern. } *
+
+[Event "94. Hängende Bauern – in der Luft schweben"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "271"]
+[FEN "r4rk1/p3qppp/Q4n2/2pp4/8/2R1PN2/PP3PPP/5RK1 w - - 0 29"]
+[SetUp "1"]
+
+{ Hängende Bauern – in der Luft schweben (висячие пешки, «паришь в воздухе», S. 271): Hohe „Säuglingssterblichkeit“: gleich nach ihrer Entstehung am gefährdetsten. } 29. Qa4 *
+
+[Event "95. Selbstblockade"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "268"]
+[FEN "r2q1rk1/p4ppp/4bn2/2pp4/8/2NBP1P1/PP3PP1/2RQ1RK1 w - - 0 1"]
+[SetUp "1"]
+
+{ Selbstblockade (самоблокада, S. 268): Eigene Bauern freiwillig in die blockierte Stellung schieben. } *
+
+[Event "96. Kurzatmiger Springer"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "272"]
+[FEN "6B1/8/8/1k5P/p5K1/8/8/4n3 w - - 0 1"]
+[SetUp "1"]
+
+{ Kurzatmiger Springer (конь, «страдающий одышкой», S. 272): Gegen den weitreichenden Läufer kommt er nicht an. } *
+
+[Event "97. Lavieren gegen die Schwäche"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "292"]
+[FEN "r2q2k1/5ppp/3p4/p1pN4/2QnP3/5P2/PP4PP/3R3K w - - 0 1"]
+[SetUp "1"]
+
+{ Lavieren gegen die Schwäche (лавирование, плацдарм, ось, S. 292): Mit Aufmarschgebiet und Lavierachse; Figuren besetzen abwechselnd dasselbe Feld. } *
+
+[Event "98. Kulisse"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "292"]
+[FEN "r2q2k1/5ppp/3p4/p1pN4/2QnP3/5P2/PP4PP/3R3K w - - 0 1"]
+[SetUp "1"]
+
+{ Kulisse (кулиса, S. 292): Ein Hindernis, hinter dem die Figuren die Seite wechseln. } *
+
+[Event "99. Panzer"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "144"]
+[FEN "r1bqk2r/ppp2p2/2np1n1p/2b1p1p1/2B1P3/2NP1NB1/PPP2PPP/R2QK2R w KQkq - 2 9"]
+[SetUp "1"]
+
+{ Panzer (танк, S. 144): Ein geschwächter Flügel wird zur langsam vorrückenden Angriffswalze. } 9. d4 *
+
+[Event "100. Schlummernde Kombinationen und heroische Verteidigung"]
+[Buch "nimzowitsch-2-na-praktike"]
+[Seite "546"]
+[FEN "3qk2r/r1p1n3/p2p3p/2bBpp1b/4P1pP/3P2B1/PPPN1PP1/R2QK2R w KQk - 0 16"]
+[SetUp "1"]
+
+{ Schlummernde Kombinationen und heroische Verteidigung («комбинации, дремлющие под тонким покровом», героическая защита, S. 546): Die Kombination liegt unter der Oberfläche bereit. } 16. f4 gxf3 17. gxf3 Nxd5 18. exd5 Rg8 19. Nf1 Qb8 *
+

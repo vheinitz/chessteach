@@ -98,6 +98,18 @@ class BookReader(ttk.Frame):
         if yview is not None:
             self.after(50, lambda: self.text.yview_moveto(yview))
 
+    def goto(self, name, page):
+        """Buch (Verzeichnisname unter buecher/) öffnen und an den Anfang von Seite page springen."""
+        index = next((i for i, b in enumerate(self.books)
+                      if os.path.basename(os.path.dirname(b[0])) == name), None)
+        if index is None:
+            return
+        if self.data is not self.books[index][1]:
+            self.open_book(index)
+        mark = f"seite{page}"
+        if mark in self.text.mark_names():
+            self.after(50, lambda: self.text.yview(mark))   # erst nach dem Reiterwechsel
+
     def render(self):
         t = self.text
         t.configure(state="normal")
@@ -111,6 +123,8 @@ class BookReader(ttk.Frame):
         for bl in self.data["bloecke"]:
             if bl.get("page") != page:
                 page = bl.get("page")
+                t.mark_set(f"seite{page}", "end-1c")
+                t.mark_gravity(f"seite{page}", "left")
                 t.insert("end", f"— S. {page} —\n", "page")
             kind = bl["t"]
             if kind == "h":

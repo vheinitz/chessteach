@@ -1,0 +1,64 @@
+[Event "75. Bauernkette und Basis"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "162"]
+[FEN "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+[SetUp "1"]
+
+{ Bauernkette und Basis (пешечная цепь, база, S. 162): Der hinterste Bauer der Kette ist ihre Basis. } 2. d4 d5 3. e5 f5 *
+
+[Event "76. Zwei Kriegsschauplätze"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "162"]
+[FEN "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+[SetUp "1"]
+
+{ Zwei Kriegsschauplätze (два театра военных действий, S. 162): Jede Seite spielt dort, wohin ihre Kette zeigt. } 2. d4 d5 3. e5 f5 *
+
+[Event "77. Erst den „Anführer“ vernichten"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "168"]
+[FEN "rnbqkbnr/ppp2ppp/4p3/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3"]
+[SetUp "1"]
+
+{ Erst den „Anführer“ vernichten (уничтожить «главаря», S. 168): Erst den Bauern d4, dann e5. } 3... c5 4. dxc5 Bxc5 5. Nc3 f6 6. exf6 Nxf6 7. Nf3 *
+
+[Event "78. Angriff auf die Basis"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "168"]
+[FEN "rnbqkbnr/ppp2ppp/4p3/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3"]
+[SetUp "1"]
+
+{ Angriff auf die Basis (атака против базы, S. 168): Die Kette greift man an ihrer Basis an. } 3... c5 4. dxc5 Bxc5 5. Nc3 f6 6. exf6 Nxf6 7. Nf3 *
+
+[Event "79. „Weg von der Basis!“"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "178"]
+[FEN "r3k2r/pp1b1ppp/1qn1p3/3pPn2/1b1P4/1P3N2/PB2BPPP/RN1Q1K1R b kq - 4 11"]
+[SetUp "1"]
+
+{ „Weg von der Basis!“ («прочь от базы!», S. 178): Den Basisbauern weglocken. } 11... O-O 12. g4 Nh6 13. Rg1 f6 14. exf6 Rxf6 15. g5 *
+
+[Event "80. Belagerung"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "174"]
+[FEN "r3kb1r/pp1b1ppp/1qn1p3/3pPn2/3P4/1P3N2/PB2BPPP/RN1QK2R b KQkq - 2 10"]
+[SetUp "1"]
+
+{ Belagerung (осада, S. 174): Langsames, mehrfaches Belagern der ungeschützten Basis. } 10... Bb4+ 11. Kf1 Be7 12. g4 *
+
+[Event "81. Angriffsverlagerung"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "180"]
+[FEN "r1b1kbnr/pp3ppp/1qn1p3/2ppP3/3P4/2PB1N2/PP3PPP/RNBQK2R b KQkq - 4 6"]
+[SetUp "1"]
+
+{ Angriffsverlagerung (перенесение атаки, S. 180): Vom Basisbauern auf den nächsten Kettenbauern wechseln. } 6... cxd4 7. cxd4 Bd7 8. Be2 Nge7 9. b3 Nf5 10. Bb2 *
+
+[Event "82. Die Säge"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "248"]
+[FEN "3rrbk1/2qb1ppp/p1pp1nn1/8/1pPNPP2/1PNQ3P/PB4P1/1B2RR1K w - - 0 19"]
+[SetUp "1"]
+
+{ Die Säge (пила, S. 248): d4 gegen c6/e6 – rückt der Zentrumsbauer vor, zeigt die Kette ihre Zähne. } 19. Nd1 Bc8 20. Qf3 Nd7 21. Nf5 Nc5 22. g4 Ne6 *
+

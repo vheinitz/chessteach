@@ -1,0 +1,64 @@
+[Event "67. Schutz durch gefesselte Figur – Fiktion!"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "136"]
+[FEN "rnbq1rk1/ppp2pp1/3b1n1p/3p4/3P4/3B1N1P/PPP2PP1/RNBQ1RK1 w - - 0 8"]
+[SetUp "1"]
+
+{ Schutz durch gefesselte Figur – Fiktion! (защита связанной фигурой — фикция, S. 136): Die gefesselte Figur deckt nur zum Schein. } 8. Nc3 c6 9. Ne2 Re8 10. Ng3 Ne4 11. Nh5 Nd7 *
+
+[Event "68. Korridorsystem"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "143"]
+[FEN "r1bqk2r/ppp2ppp/2np1n2/2b1p1B1/2B1P3/2NP1N2/PPP2PPP/R2QK2R b KQkq - 1 6"]
+[SetUp "1"]
+
+{ Korridorsystem (коридорная система, S. 143): Entfesselung über einen freien Korridor. } 6... h6 7. Bh4 g5 *
+
+[Event "69. Verteidigungsbündnis"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "143"]
+[FEN "r1bqk2r/ppp2ppp/2np1n2/2b1p1B1/2B1P3/2NP1N2/PPP2PPP/R2QK2R b KQkq - 1 6"]
+[SetUp "1"]
+
+{ Verteidigungsbündnis (оборонительный союз фигур, S. 143): Bedrohte Figuren schützen sich gegenseitig. } 6... h6 7. Bh4 g5 *
+
+[Event "70. Verdrängung in die Einöde"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "149"]
+[FEN "1rr3k1/p1p2p1p/2bp1p2/8/4R3/2P2Q2/1qP2PPP/3R2K1 w - - 0 24"]
+[SetUp "1"]
+
+{ Verdrängung in die Einöde (оттеснение, «глушь», S. 149): Eine Figur auf einen schlechten Platz abdrängen. } 24. Rg4+ Kf8 25. Qxf6 Bd7 26. Rg7 Be6 27. Rxh7 Ke8 *
+
+[Event "71. Ödland und blühender Garten"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "144"]
+[FEN "r1bqk2r/ppp2p2/2np1n1p/2b1p1p1/2B1P3/2NP1NB1/PPP2PPP/R2QK2R w KQkq - 2 9"]
+[SetUp "1"]
+
+{ Ödland und blühender Garten («пустырь» и «цветущий сад», S. 144): Der abgedrängte Läufer blüht auf, sobald sich das Zentrum öffnet. } 9. d4 *
+
+[Event "72. Was „schlecht liegt“"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "156"]
+[FEN "8/1k6/1p4p1/p2R3p/P7/4q3/1N4B1/r5BK w - - 0 1"]
+[SetUp "1"]
+
+{ Was „schlecht liegt“ (берет все, что «плохо лежит», S. 156): Die abziehende Figur nimmt, was ungedeckt ist. } 1. Rd1+ *
+
+[Event "73. Die Mühle"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "157"]
+[FEN "8/1k6/1p4p1/p2R3p/P7/4q3/1N4B1/r5BK w - - 0 1"]
+[SetUp "1"]
+
+{ Die Mühle (мельница, S. 157): Abzugsschach hin und her – jedes Mal fällt etwas. } 1. Rd1+ *
+
+[Event "74. Antriebskraft des Doppelschachs"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "160"]
+[FEN "7k/2R3p1/7p/2q4n/4B3/P6P/1P3rP1/1Q4K1 b - - 0 1"]
+[SetUp "1"]
+
+{ Antriebskraft des Doppelschachs (движущая сила, S. 160): Doppelschach treibt den König weit weg. } 1... Rf1+ 2. Kxf1 Ng3+ 3. Ke1 Qe3+ 4. Kd1 Qe2+ 5. Kc1 *
+

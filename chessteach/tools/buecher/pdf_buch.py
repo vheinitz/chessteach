@@ -310,7 +310,11 @@ def blocks_of(pdf, first, last):
                         continue
                     if blocks and blocks[-1]["type"] == kind2 and blocks[-1]["page"] == pn \
                             and last_bottom is not None and top - last_bottom < 20:
-                        blocks[-1]["runs"] += [("\n", "h")] + runs
+                        prev_txt = "".join(c for c, _ in blocks[-1]["runs"]).rstrip()
+                        if prev_txt.endswith("-") or text[:1].islower():
+                            join_line(blocks[-1]["runs"], runs)   # umbrochener Satz am Rand
+                        else:
+                            blocks[-1]["runs"] += [("\n", "h")] + runs
                     else:
                         blocks.append({"type": kind2, "page": pn, "runs": runs})
                     last_bottom = obj[0] + 10
@@ -673,6 +677,15 @@ def _dist1(a, b):
     return any(l[:i] + l[i + 1:] == s for i in range(len(l)))
 
 
+# Im Satz leicht verwechselte Zeichen („♘е6“ für ♘c6): entscheidet bei Gleichstand
+SIMILAR = {frozenset("ec"), frozenset("38"), frozenset("bh"), frozenset("68")}
+
+
+def _similar(a, b):
+    diff = [(x, y) for x, y in zip(a, b) if x != y] if len(a) == len(b) else []
+    return len(diff) == 1 and frozenset(diff[0]) in SIMILAR
+
+
 def repair_move(board, txt, rest):
     """Druckfehler vermuten: legaler Zug, dessen Schreibweise bis auf Schlag-/Schachzeichen
     gleich ist, sonst bis auf ein Zeichen. Gewählt wird der Zug, mit dem die Zugfolge danach
@@ -691,13 +704,18 @@ def repair_move(board, txt, rest):
             if hit:
                 b = board.copy(stack=False)
                 b.push(mv)
-                scored.append((try_line(b, {"moves": rest}, None, None)[0], mv))
+                scored.append((try_line(b, {"moves": rest}, None, None)[0], mv,
+                               any(_similar(core, f) for f in forms)))
         if not scored:
             continue
         scored.sort(key=lambda t: -t[0])
         top = scored[0][0]
-        if len(scored) > 1 and scored[1][0] == top:
-            return None             # mehrdeutig: lieber offen lassen
+        tied = [t for t in scored if t[0] == top]
+        if len(tied) > 1:
+            tied = [t for t in tied if t[2]]
+            if len(tied) != 1:
+                return None         # mehrdeutig: lieber offen lassen
+            scored = tied
         if top >= min(3 - 2 * (level == 0), nrest):
             return scored[0][1]
     return None
@@ -744,9 +762,13 @@ class Book:
             if ti == 0:
                 tb = (num - 1, True) if not black else (num, False)
                 for n in tree.find(tb[0], tb[1], prefer):
-                    out.append((tree, n, "drohung"))
+                    if not tree.board(n).is_check():    # Nullzug aus dem Schach: ungültig
+                        out.append((tree, n, "drohung"))
                     break
-        if self.last_dia and not dia_new:
+        # Schon verwendetes Diagramm nur, wenn noch keine Partie davon ausgeht – sonst würde es
+        # bei einer späteren, unpassenden Zugnummer als neue Ausgangsstellung missbraucht
+        if self.last_dia and not dia_new and not self.last_dia[2] and not any(
+                t.root.board_fen() == self.last_dia[0] for t in self.trees[-5:]):
             out.append((None, self._dia_board(want, num), "diagramm"))
         return out
 
@@ -759,6 +781,8 @@ class Book:
         x = frag["moves"][0]
         for null in (False, True):
             b = tree.board(n)
+            if null and b.is_check():
+                break
             if null:
                 b = b.copy(stack=False)
                 b.push(chess.Move.null())
@@ -1041,8 +1065,16 @@ def fix_spaces(text):
         prev = [int(x) for x in re.findall(r"(\d+)\s?\.", text[:m.start()])][-1:]
         n = int(m.group(1) + m.group(2))
         return f"{n}." if prev and 0 <= n - prev[0] <= 2 else m.group(0)
+
+    def num_comma(m):
+        prev = [int(x) for x in re.findall(r"(\d+)\s?\.", text[:m.start()])][-1:]
+        n = int(m.group(1))
+        return f"{n}." if prev and 0 <= n - prev[0] <= 1 else m.group(0)
     text = re.sub(r"(?<!- )(?<![\d.\-])([1-9]) (\d)\.", num, text)
     text = re.sub(r"([♘♗♖♕♔a-hа-х]:) ([a-hа-х][1-8])", r"\1\2", text)    # „♗: f3“
+    # „20, gf g4!“: Komma statt Punkt nach der Zugnummer
+    text = re.sub(r"(?<![\d.,])(\d{1,3}),(?= (?:[♘♗♖♕♔]|[a-hасе][a-hасе]?:?[1-8]|[a-hасе][a-hасе]\b|0-0))",
+                  num_comma, text)
     return re.sub(r"([♘♗♖♕♔][a-hа-х]{1,2}) ([1-8])(?![\d.])", r"\1\2", text)
 
 

@@ -1,0 +1,48 @@
+[Event "30. „Schwimmen verboten!“"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "45"]
+[FEN "r5k1/p1pR2pp/1p6/8/8/8/PPP3PP/2K5 b - - 0 1"]
+[SetUp "1"]
+
+{ „Schwimmen verboten!“ («плавать воспрещается!», S. 45): Der Turm auf der 7. Reihe irrt nicht planlos umher – er braucht ein Ziel. } 1... Rc8 *
+
+[Event "31. Absolute 7. Reihe"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "50"]
+[FEN "7k/R5p1/4r3/1P6/8/1Q5b/3r4/7K w - - 0 1"]
+[SetUp "1"]
+
+{ Absolute 7. Reihe (абсолютное владение 7-й горизонталью, S. 50): Die Reihe schneidet den König ab. } 1. Qxh3+ Rh6 2. Qxh6+ gxh6 3. b6 *
+
+[Event "32. Hetzjagd auf den König"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "49"]
+[FEN "r4rk1/5p2/5p2/5P1Q/3P4/4P3/8/5K1n w - - 0 1"]
+[SetUp "1"]
+
+{ Hetzjagd auf den König (травля, S. 49): Mit Schachs den König treiben und dabei Felder erobern. } 1. Qg4+ Kh7 2. Qh3+ Kg7 3. Qg2+ Kh6 4. Qxh1+ *
+
+[Event "33. Umgehung von der Ecke"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "49"]
+[FEN "r4rk1/5p2/5p2/5P1Q/3P4/4P3/8/5K1n w - - 0 1"]
+[SetUp "1"]
+
+{ Umgehung von der Ecke (обход с угла, S. 49): Kombiniertes Spiel auf 7. und 8. Reihe. } 1. Qg4+ Kh7 2. Qh3+ Kg7 3. Qg2+ Kh6 4. Qxh1+ *
+
+[Event "34. Kontaktunterbrechung"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "53"]
+[FEN "rr4k1/2RR4/5p2/3ppP2/2b5/7N/6PK/8 w - - 0 1"]
+[SetUp "1"]
+
+{ Kontaktunterbrechung (перерыв контакта, S. 53): Der König sucht Kontakt zum Turm, der Turm meidet ihn. } 1. Rg7+ Kf8 2. Rh7 Kg8 3. Rcg7+ Kf8 4. Ng5 d4 *
+
+[Event "35. Remis-Apparat"]
+[Buch "nimzowitsch-1-moya-sistema"]
+[Seite "49"]
+[FEN "r4rk1/5p2/5p2/5P1Q/3P4/4P3/8/5K1n w - - 0 1"]
+[SetUp "1"]
+
+{ Remis-Apparat (аппарат для достижения ничьей, S. 49): Zwei Türme auf der 7. geben Dauerschach. } 1. Qg4+ Kh7 2. Qh3+ Kg7 3. Qg2+ Kh6 4. Qxh1+ *
+
