@@ -1,0 +1,4 @@
+[
+ {"seite": 18, "beginnt": "1. е4 е5 2.", "fen": "rnbqkbnr/pppppppp/8/8/8/P7/1PPPPPPP/1NBQKBNR w Kkq - 0 1",
+  "grund": "Vorgabepartie Nimzowitsch – Любитель, Riga 1910: „Белые играют без ладьи а1, пешка а2 передвинута на а3“. Widerspruch zu data/mysystem_pgn.pgn (englische Ausgabe): dort Bauer auf a2. Die Zugfolge ist in beiden Quellen gleich und mit beiden Stellungen legal; gewählt wie im Buchtext."}
+]
