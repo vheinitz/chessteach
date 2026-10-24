@@ -132,3 +132,7 @@ its docstring):
 - Chess logic: [python-chess](https://github.com/niklasf/python-chess)
 - Engine: [Stockfish](https://stockfishchess.org/)
 - Pieces: Cburnett set (as shipped with [PyChess](https://github.com/pychess/pychess))
+
+## License
+
+GPL-3.0, see [LICENSE](LICENSE); python-chess is GPL-3.0.
